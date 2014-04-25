@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome CAT Database Oracle
+Bundle-SymbolicName: net.heartsome.cat.database.oracle
+Bundle-Version: 8.1.0.R8b_v20131116
+Bundle-Activator: net.heartsome.cat.database.oracle.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ net.heartsome.cat.database;bundle-version="1.0.0",
+ net.heartsome.cat.thirdpartlibrary;bundle-version="1.0.0",
+ net.heartsome.cat.common.core;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ClassPath: lib/ojdbc14.jar,
+ .
+Bundle-Vendor: Heartsome Technologies Ltd.

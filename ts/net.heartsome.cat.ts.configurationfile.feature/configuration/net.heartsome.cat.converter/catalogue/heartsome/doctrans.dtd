@@ -1,0 +1,491 @@
+<!-- ======================================================= -->
+<!-- Copyright 2002, 2005 (c) Heartsome Holdings Pte Ltd     -->
+<!-- All rights reserved.                                    -->
+<!-- Revision: 7D5-7-A                                       -->
+<!-- Author: RMR                                             -->
+<!-- Updates: MRF                                            -->
+<!--                                                         -->    
+<!-- Use with the following PUBLIC identifier:               -->
+<!--                                                         -->    
+<!--  "-//HEARTSOME//DTD DocTrans 3.0.0//EN"                 -->
+<!--                                                         -->    
+<!-- ======================================================= -->
+
+<!--
+    * in: inches, 1 inch is equal to 2.54 centimeters.
+    * cm: centimeters
+    * mm: millimeters
+    * pt: points, the points used by CSS2 are equal to 1/72th of an inch.
+    * pc: picas, 1 pica is equal to 12 points.
+    * px: pixel, 1 pixel is equal to 1/96th of inch
+-->
+
+<!ELEMENT doctrans (header?,pageheader?,pagefooter?,(section|reference)+)>
+<!ATTLIST doctrans
+     version     CDATA #FIXED "3.0.0"
+     units       (in|cm|mm|pt|px|pc) #REQUIRED
+     chunits     (in|cm|mm|pt|px|pc) #REQUIRED
+     pageheight  CDATA #REQUIRED
+     pagewidth   CDATA #REQUIRED
+     orientation (Portrait | Landscape) #REQUIRED
+     xml:lang    CDATA #REQUIRED
+     xml:space   (default|preserve) "default"
+     cropmarks   (Yes|No) "No"
+     bookmarks     (Yes|No) "No"
+     printheight CDATA #IMPLIED
+     printwidth  CDATA #IMPLIED
+     configfile  CDATA "doctransconf.xml" 
+     doctitle    CDATA #IMPLIED
+     autoArrows  (Yes|No) "Yes"
+     fixedTableWidth (Yes|No) "No"
+     bgcolor     CDATA #IMPLIED
+     bgimage     CDATA #IMPLIED
+>
+
+<!ELEMENT header          (note|metainfo)* >
+<!ATTLIST header     
+     sourcelanguage      CDATA #REQUIRED
+     datatype            CDATA "XML" 
+     creationtool        CDATA "DocTrans X-Publishing WorkBench" 
+     creationtoolversion CDATA "3.0.0" 
+     creationdate        CDATA #IMPLIED
+     creationid          CDATA #IMPLIED 
+     adminlanguage       CDATA #IMPLIED
+     targetlanguage      CDATA #IMPLIED
+     targetencoding      CDATA #IMPLIED
+     translationtool     CDATA #IMPLIED
+     translationdate     CDATA #IMPLIED
+     changeid            CDATA #IMPLIED  
+>
+
+<!ELEMENT note (#PCDATA) >
+<!ATTLIST note
+     xml:lang  CDATA #IMPLIED
+>
+
+<!ELEMENT metainfo (#PCDATA) >
+<!ATTLIST metainfo
+     orgname         CDATA #IMPLIED
+     author          CDATA #IMPLIED
+     authorinitials  CDATA #IMPLIED
+     affiliation     CDATA #IMPLIED
+     collab          CDATA #IMPLIED
+     othercredit     CDATA #IMPLIED
+     editor          CDATA #IMPLIED
+     contractnum     CDATA #IMPLIED
+     contractsponsor CDATA #IMPLIED
+     edition         CDATA #IMPLIED
+     copyright       CDATA #IMPLIED
+     legalnotice     CDATA #IMPLIED
+     invpartnumber   CDATA #IMPLIED
+     productname     CDATA #IMPLIED
+     productnumber   CDATA #IMPLIED
+     releaseinfo     CDATA #IMPLIED
+     publishdate     CDATA #IMPLIED 
+     printhistory    CDATA #IMPLIED
+     revhistory      CDATA #IMPLIED  
+>     
+   
+
+<!ELEMENT title (#PCDATA|entry|glyph)*>
+<!ATTLIST title
+    id             ID       #IMPLIED
+    showintoc        (Yes|No)  "Yes"
+>
+<!ELEMENT subtitle (#PCDATA|entry|glyph)*>
+<!ATTLIST subtitle
+    id          ID #IMPLIED
+>
+
+<!ELEMENT section (title?,subtitle?,pageheader?,pagefooter?,(para+|code+|bridgehead+|image+|table+|bulletedlist+|orderedlist+|numberedlist+|separator+|reference+|toc|tocentry+|index|line+|pagebreak+|columnbreak+|note+|form+|script+|object+)*)>
+<!ATTLIST section
+     id                ID    #IMPLIED
+     numberofcolumns  (1|2|3|4) "1"
+     bottommargin      CDATA #IMPLIED
+     topmargin          CDATA #IMPLIED
+     leftmargin          CDATA #IMPLIED
+     rightmargin      CDATA #IMPLIED
+     backgroundimg      CDATA #IMPLIED
+     topleftbleed     CDATA #IMPLIED
+     toprightbleed    CDATA #IMPLIED
+     bottomleftbleed  CDATA #IMPLIED
+     bottomrightbleed CDATA #IMPLIED
+     alignment  (left|center|right) #IMPLIED
+>
+
+<!ELEMENT script (#PCDATA)>
+<!ATTLIST script
+    type    CDATA #IMPLIED
+    src     CDATA #IMPLIED     
+    xml:space   CDATA #FIXED "preserve"
+>
+
+<!ELEMENT para (#PCDATA|emphasis|remark|underline|glyph|link|entry|font|linebreak|tooltip)*>
+<!ATTLIST para
+     id          ID    #IMPLIED
+     ffamily     CDATA #IMPLIED
+     fheight     CDATA #IMPLIED
+     fcolor      CDATA #IMPLIED
+     alignment   (left | center | right | justify) #IMPLIED
+     background  CDATA #IMPLIED
+     lineheight  CDATA #IMPLIED
+     spaceAfter     CDATA #IMPLIED
+     spaceBefore CDATA #IMPLIED
+>
+
+
+<!ELEMENT code (#PCDATA|font)*>
+<!ATTLIST code
+    id            ID       #IMPLIED
+    ffamily        CDATA #IMPLIED
+    fheight        CDATA #IMPLIED
+    fcolor        CDATA #IMPLIED
+    xml:space   CDATA #FIXED "preserve"
+>
+
+<!ELEMENT linebreak EMPTY>
+<!ELEMENT pagebreak EMPTY>
+<!ELEMENT columnbreak EMPTY>
+
+<!ELEMENT link (#PCDATA|entry|image|glyph)*>
+<!ATTLIST link
+    idref     IDREF #REQUIRED
+    url       CDATA #IMPLIED
+    color     CDATA #IMPLIED
+    ffamily      CDATA #IMPLIED
+    fheight      CDATA #IMPLIED
+    underline (Yes|No) "No"
+>
+
+<!ELEMENT reference EMPTY>
+<!ATTLIST reference
+     idref    CDATA #REQUIRED
+     filename CDATA #IMPLIED    
+>
+
+<!ELEMENT bridgehead (#PCDATA|entry|glyph|link)*>
+<!ATTLIST bridgehead
+     id              ID #IMPLIED
+     forcenewcolumn  (Yes|No) "No"
+     showintoc       (Yes|No) "Yes"
+     level           (1|2|3|4) "1"
+>
+
+<!ELEMENT pageheader (#PCDATA|leftcontent|rightcontent)*>
+<!ATTLIST pageheader
+     id                CDATA #IMPLIED
+     showeven       (Yes|No) "Yes"
+     showodd        (Yes|No) "Yes"
+     showPageNumber (Yes|No) "No"
+     backgroundimg  CDATA #IMPLIED
+     alignment      (top|middle|bottom)  #IMPLIED
+>
+<!ELEMENT leftcontent (#PCDATA|font|emphasis|underline|remark|entry|link)*>
+<!ATTLIST leftcontent
+   id            ID    #REQUIRED
+   backgroundimg CDATA #IMPLIED
+>
+
+<!ELEMENT rightcontent (#PCDATA|font|emphasis|underline|remark|entry|link)*>
+<!ATTLIST rightcontent
+   id            ID    #REQUIRED
+   backgroundimg CDATA #IMPLIED
+>
+
+<!ELEMENT pagefooter (#PCDATA|leftcontent|rightcontent)*>
+<!ATTLIST pagefooter
+     id                CDATA    #IMPLIED
+     showPageNumber (Yes|No) #REQUIRED
+     backgroundimg  CDATA    #IMPLIED
+>
+<!ELEMENT separator EMPTY>
+<!ATTLIST separator
+     height  CDATA #IMPLIED
+     columns (all|1) "1"
+>
+
+<!ELEMENT index EMPTY>
+<!ATTLIST index
+     width      CDATA #REQUIRED
+     ffamily    CDATA #IMPLIED
+     fheight    CDATA #IMPLIED
+     separation CDATA #IMPLIED
+     indent     CDATA #IMPLIED
+>
+
+<!ELEMENT emphasis (#PCDATA|remark|underline|link|entry|font)*>
+<!ELEMENT remark (#PCDATA|emphasis|underline|link|entry|font)*>
+<!ELEMENT underline (#PCDATA|emphasis|remark|link|entry|font)*>
+<!ELEMENT entry (#PCDATA|remark|underline|link|emphasis|font)*>
+<!ELEMENT font (#PCDATA|remark|underline|link|emphasis|entry)*>
+
+<!ATTLIST entry
+   id     ID #REQUIRED
+>
+
+<!ATTLIST font
+  ffamily CDATA #IMPLIED
+  fheight CDATA #IMPLIED
+  fcolor  CDATA #IMPLIED
+>
+
+<!ELEMENT line EMPTY>
+<!ATTLIST line
+   style (dotted|solid|dashed) "solid"
+   color CDATA #IMPLIED
+>
+
+<!ELEMENT glyph EMPTY>
+<!ATTLIST glyph 
+     url    CDATA #REQUIRED
+     alt    CDATA #IMPLIED
+     height CDATA #IMPLIED
+>
+
+<!ELEMENT image (title?,epigraph?)>
+<!ATTLIST image
+     id            ID    #IMPLIED
+     url           CDATA #REQUIRED
+     alt           CDATA #IMPLIED
+     height        CDATA #IMPLIED
+     width         CDATA #IMPLIED
+     topborder     CDATA "0" 
+     bottomborder  CDATA "0"
+     leftborder    CDATA "0"
+     rightborder   CDATA "0" 
+     bordercolor   CDATA #IMPLIED
+     toppadding    CDATA #IMPLIED
+     bottompadding CDATA #IMPLIED
+     leftpadding   CDATA #IMPLIED
+     rightpadding  CDATA #IMPLIED
+     halignment    (left | center | right ) #IMPLIED
+     valignment    (top | middle | bottom) #IMPLIED
+>
+<!ELEMENT epigraph (#PCDATA)>
+<!ATTLIST epigraph 
+     id           ID #IMPLIED
+ >
+
+<!ELEMENT table (title?,row+,epigraph?)>
+<!ATTLIST table
+     id           ID #IMPLIED
+     topborder    CDATA "0" 
+     bottomborder CDATA "0"
+     leftborder   CDATA "0"
+     rightborder  CDATA "0" 
+     alignment    (left | center | right) "center"
+     bordercolor  CDATA #IMPLIED
+	 borderspacing CDATA #IMPLIED
+>
+
+<!ELEMENT row (column+)>
+<!ATTLIST row
+     id          ID    #IMPLIED
+     height   CDATA #IMPLIED
+>
+
+<!ELEMENT column (para*|code*|image*|table*|bulletedlist*|numberedlist*|orderedlist*|separator*|reference*|toc|index|line*|form*|input*|select*|textarea*|button*|checkbox*|radio*|bridgehead*|script*|object*)+>
+<!ATTLIST column
+     id            ID    #IMPLIED
+     colwidth      CDATA #REQUIRED
+     cellcolor     CDATA #IMPLIED
+     topborder     CDATA "0" 
+     bottomborder  CDATA "0"
+     leftborder    CDATA "0"
+     rightborder   CDATA "0" 
+     bordercolor   CDATA #IMPLIED
+     backgroundimg CDATA #IMPLIED
+     alignment     (top|middle|bottom) "top"
+     halignment    (left|center|right) #IMPLIED 
+     paddingtop       CDATA "0"
+     paddingbottom CDATA "0"
+     paddingleft   CDATA "0"
+     paddingright  CDATA "0"
+>
+
+<!ELEMENT toc EMPTY>
+<!ATTLIST toc
+     id            ID    #IMPLIED
+     width         CDATA #REQUIRED
+     ffamily       CDATA #IMPLIED
+     fheight       CDATA #IMPLIED
+     separation    CDATA #IMPLIED
+     indent        CDATA #IMPLIED
+     numberprefix  CDATA #IMPLIED
+>
+
+<!ELEMENT tocentry (#PCDATA) >
+<!ATTLIST tocentry
+    id  ID #REQUIRED
+>
+    
+<!ELEMENT numberedlist (listitem+)>
+<!ATTLIST numberedlist
+     id         ID       #IMPLIED
+     sublist    (Yes|No) #IMPLIED
+     ffamily    CDATA    #IMPLIED
+     fontheight CDATA    #IMPLIED
+     firstvalue CDATA #IMPLIED
+     style      (style1|style2|style3|style4) "style1"
+     bold       (Yes|No) "No"
+>
+
+<!ELEMENT orderedlist (listitem+)>
+<!ATTLIST orderedlist
+     id         ID       #IMPLIED
+     sublist    (Yes|No) #IMPLIED
+     ffamily    CDATA    #IMPLIED
+     fontheight    CDATA    #IMPLIED
+     firstvalue    CDATA    #IMPLIED
+     style      (lowercase|uppercase|roman) "lowercase"
+>
+
+<!ELEMENT bulletedlist (listitem+)>
+<!ATTLIST bulletedlist
+     id         ID    #IMPLIED
+     ffamily    CDATA #IMPLIED
+     fontheight    CDATA #IMPLIED
+     bulletchar    CDATA #IMPLIED
+     showbullet (Yes|No) "Yes"
+     style      (style1|style2|style3|style4) #IMPLIED
+>
+
+<!ELEMENT listitem (para*|code*|image*|table*|bulletedlist*|numberedlist*|orderedlist*|separator*|reference*|line*|script*|object*)+>
+<!ATTLIST listitem
+    id         ID #IMPLIED
+>
+
+<!-- ==================================================================== -->
+<!--   The following elements are intended to be used in web pages only   -->
+<!-- ==================================================================== -->
+
+
+<!ELEMENT form (#PCDATA|para|code|image|table|bulletedlist|numberedlist|orderedlist|reference|line|input|select|textarea|button|checkbox|radio|script|object)*>
+<!ATTLIST form
+     id         ID    #IMPLIED
+     action     CDATA #REQUIRED
+     name       CDATA #IMPLIED  
+     onsubmit   CDATA #IMPLIED  
+     onreset    CDATA #IMPLIED  
+      halignment (left | center | right ) #IMPLIED
+  >
+
+<!ELEMENT input (#PCDATA)>
+<!ATTLIST input 
+   id          ID      #IMPLIED
+   type        (text|password) "text"      
+   name        CDATA   #REQUIRED
+   status      (enabled|disabled) "enabled"
+   readonly    (Yes|No) "No"
+   size        CDATA   #IMPLIED  
+   maxlength   CDATA   #IMPLIED  
+   background  CDATA   #IMPLIED
+   halignment  (left | center | right ) #IMPLIED
+   valignment  (top | middle | bottom) #IMPLIED 
+   ffamily     CDATA   #IMPLIED
+   fheight     CDATA   #IMPLIED
+   fcolor      CDATA   #IMPLIED
+>
+
+<!ELEMENT select (option)+ >
+<!ATTLIST select
+   id           ID      #IMPLIED
+   name        CDATA   #REQUIRED  
+   size        CDATA   #IMPLIED  
+   ffamily     CDATA   #IMPLIED
+   fheight     CDATA   #IMPLIED
+   fcolor      CDATA   #IMPLIED
+   valignment  (top | middle | bottom) #IMPLIED 
+   halignment  (left | center | right ) #IMPLIED
+   background  CDATA   #IMPLIED
+  >
+
+<!ELEMENT option (#PCDATA) >
+<!ATTLIST option
+   id          CDATA  #IMPLIED
+   selected    (Yes|No)    "No"
+   value       CDATA  #IMPLIED
+  >
+
+<!ELEMENT textarea (#PCDATA) >
+<!ATTLIST textarea
+  id        ID      #IMPLIED
+  name      CDATA   #REQUIRED
+  rows      CDATA   #REQUIRED
+  cols      CDATA   #REQUIRED
+  valignment (top|middle|bottom) "middle"
+  halignment (left|center|right) #IMPLIED
+>
+
+<!ELEMENT button (#PCDATA) >
+<!ATTLIST button
+   id         ID     #IMPLIED
+   name       CDATA  #REQUIRED
+   type          (button|submit|reset) "submit"
+   status     (enabled|disabled) "enabled"
+   ffamily    CDATA  #IMPLIED
+   fheight    CDATA  #IMPLIED
+   fcolor     CDATA  #IMPLIED
+   valignment (top|middle|bottom) "middle"
+   halignment (left|center|right) #IMPLIED
+   background CDATA  #IMPLIED
+  >
+  
+<!ELEMENT checkbox EMPTY>
+<!ATTLIST checkbox 
+   id          ID     #IMPLIED
+   name        CDATA  #REQUIRED
+   value       CDATA  #IMPLIED  
+   checked     (Yes|No) "No"
+   status      (enabled|disabled) "enabled"
+  >
+
+<!ELEMENT radio EMPTY>
+<!ATTLIST radio 
+   id       ID    #IMPLIED
+   name     CDATA #REQUIRED
+   value    CDATA #IMPLIED  
+   checked  (Yes|No)     "No"
+   status   (enabled|disabled) "enabled"
+  >
+
+<!ELEMENT tooltip EMPTY>
+<!ATTLIST tooltip 
+    tip     CDATA #REQUIRED
+>
+
+<!ELEMENT object (param)*>
+<!ATTLIST object
+	name       CDATA #REQUIRED
+	src        CDATA #REQUIRED
+	type       CDATA #IMPLIED
+	codebase   CDATA #IMPLIED
+	codetype   CDATA #IMPLIED
+	height     CDATA #IMPLIED
+	width      CDATA #IMPLIED
+	
+>
+
+<!ELEMENT param EMPTY>
+<!ATTLIST param
+	name       CDATA #REQUIRED
+	value      CDATA #REQUIRED
+>
+
+<!--  ===
+<OBJECT CLASSID="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+ CODEBASE="http://active.macromedia.com/flash2/cabs/swflash.cab#version=4,0,0,0"
+ WIDTH="200" HEIGHT="155">
+ <PARAM NAME="MOVIE" VALUE="movie_name.swf">
+ <PARAM NAME="QUALITY" VALUE="HIGH">
+ <PARAM NAME="PLAY" VALUE="TRUE">
+ <PARAM NAME="LOOP" VALUE="TRUE">
+ <PARAM NAME="BGCOLOR" VALUE="#FFFFFF">
+   <EMBED SRC="movie_name.swf" QUALITY="HIGH" BGCOLOR="#FFFFFF" 
+      WIDTH="200" HEIGHT="155"
+      TYPE="application/x-shockwave-flash"
+      PLUGINSPAGE="http://www.macromedia.com/shockwave/download/
+          index.cgi?P1_Prod_Version=ShockwaveFlash">
+   </EMBED>
+</OBJECT>
+-->

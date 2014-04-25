@@ -1,0 +1,136 @@
+<document>
+  <properties>
+    <author email="peter.kliem@jaret.de">Peter Kliem</author>
+    <title>jaret table</title>
+  </properties>
+ <head>
+    <meta name="keywords" content="java, SWT, component, table, custom drawn, widget"/>
+  </head>
+  <body>
+    <section name="de.jaret.util.ui.table">
+		<p>
+		The jaret table is a custom drawn table for the SWT gui toolkit. The native tables available in swt do
+		lack some functionality and flexibility. 
+		</p>
+		<p><b>NOTE:</b>
+		The SWT team added support for custom drawing, multiline text to the native SWT table. This might solve a lot of
+		the most common problems. See the documentation of the SWT table!. 
+		</p>
+		<p>
+		<b>NOTE:</b>If you are interested in alternative tables for SWT be sure to check <a href="http://sourceforge.net/projects/ktable">KTable</a>.
+		KTable is a another custom drawn table for SWT (EPL) that is out there for some time. The jaret table has been developed due two several reasons.
+		Those include separation of data model and viewstate
+		and support for different row heights. Also look for the <a href="http://eclipse.org/nebula">nebula project</a> which includes the
+		nebula grid and the component table that allow for flexible visualizations. 
+		</p>
+		<p>
+		However, do consider using the native table supplied by SWT. This is the strength of SWT and your application will be conforming
+		to the platform look and feel. If you use a custom drawn widget it is up to you ...
+		</p>
+		<p> If you like you can comment and rate the jaret table at 
+		<a href="http://www.eclipseplugincentral.com/Web_Links-index-req-ratelink-lid-894.html" target="_blank">Eclipse Plugin Central</a>.
+		</p>
+		
+		<p>
+		Features include:
+		<ul>
+ 		<li>
+ 			Split model (data and viewstate). 
+ 		</li>
+  		<li>
+  			Renderers and editors (including print rendering)
+  		</li>
+  		<li>
+  			Different row heights and column widths (draggable)
+  		</li>
+  		<li>
+  			fixed rows and columns (row header)
+  		</li>
+  		<li>
+  			simple drag fill (like excel)
+  		</li>
+  		<li>
+  			default cut/copy/paste works against excel
+  		</li>
+  		<li>
+  			integrated filtering (autofilter-style, customizable) and sorting (does not sort the model)
+  		</li>
+  		<li>
+  			support for a hierarchical model (table tree)
+  		</li>
+  		<li>
+  			addons supporting saving the viewstate in an IMemento (and in future some other RCP related utilities)
+  		</li>
+ 		</ul>
+		</p>
+		<subsection name="geexel">
+			The <a href="http://www.geexel.de">geexel plugin</a> can be seen as test code for the jaret table (very outdated JaretTable version).
+		</subsection>
+		<subsection name="Licensing">
+		<p>
+			The package is licensed under the Common Public License 1.0 (CPL) (see <a href="LICENSE.html">LICENSE</a>) allowing
+			the usage in other projects. It can optionally be used under th GPL for compatability with GPLed projects. 
+			If you are interested in a commercial license contact info@jaret.de.
+		</p>
+		</subsection>
+		<subsection name="Download / javadoc">
+		<p>
+			There are several different packages available for download (please note that you need the jaretutils as well):
+		</p>
+			<table>
+				<tr>
+					<td>
+						<a href="data/jarettable-0.85-src.zip">jarettable-0.85-src.zip</a>
+					</td>
+					<td>
+						Contains the complete project. Including some examples. Recommeded download. Depends on jaret.util package and the
+						jaret datechooser (this is only needed for the date cell editor and the dependency can be removed easily). 
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="data/jarettable-0.85-bin.zip">jarettable-0.85-bin.zip</a>
+					</td>
+					<td>
+						Contains ready built jar.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="../jarettable.addon/index.html">jarettable.addon page</a>
+					</td>
+					<td>
+						Contains addons for the jaret table.
+					</td>
+				</tr>
+			</table>
+		<p>
+			View the javadoc <a href="apidocs/index.html">here</a>.
+		</p>
+		</subsection>
+		<subsection name="Screenshots">
+		<p>
+			There are some screenshots available <a href="table_screenshots.html">here.</a>
+		</p>
+		</subsection>
+		<subsection name="Status and platforms">
+		<p>
+			The jaret table is in early beta stage!
+			<b>However: This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+			without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</b>
+		</p>
+		<p>
+			The jaret table should run on every platform supporting Java 1.5 and SWT. The main testing of the SWT
+			component was done on Win32. Some tests have been performed on Linux with the GTK+ version of SWT. Due to the
+			nature of the SWT toolkit it can not be guaranteed that the component will work on all platforms. Additional tests
+			are planned; feedback is welcome.
+		</p>
+		</subsection>
+		<subsection name="Bugs">
+		<p>
+			This component is not free of bugs. Please report bugs to info@jaret.de.
+		</p>
+		</subsection>
+    </section>
+  </body>
+</document>

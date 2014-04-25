@@ -1,0 +1,176 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>2. 记忆库管理</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<meta content="DocBook XSL Stylesheets V1.75.2 / ZoeeyDoc http://zoeeydoc.googlecode.com " name="generator">
+<link rel="home" href="index.html" title="用户手册">
+<link rel="up" href="ch06.html" title="记忆库和术语库的维护和管理">
+<link rel="prev" href="ch06.html" title="记忆库和术语库的维护和管理">
+<link rel="next" href="ch06s03.html" title="3. 将记忆库导出为 TMX">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="sect1" title="2. 记忆库管理">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title" style="clear: both">
+<a name="tm-management"></a>2. 记忆库管理</h2>
+</div>
+</div>
+</div>
+      
+
+      
+<p>除了在创建项目时创建记忆库，HSTS
+      还提供了专门的记忆库管理功能，不需要打开项目也可以对数据库服务器上的记忆库进行创建和删除。记忆库管理界面可以通过<span class="guimenu">数据库</span>菜单
+      &gt; <span class="guimenuitem">记忆库管理</span>打开。</p>
+
+      
+<div class="note" title="注意" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+        
+<p>文件型记忆库就是独立的 <span class="type">.hstm</span> 文件，可以像普通文件一样直接执行移动、重命名、删除等操作，无需在
+        HSTS 中管理。</p>
+      
+</div>
+
+      
+<div class="sect2" title="创建">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="ch6s2a"></a>创建</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>在<code class="interfacename">记忆库管理</code>对话框中创建记忆库的步骤如下：</p>
+
+        
+<div class="figure">
+<a name="N223DE"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 130. 记忆库管理</b>
+</p>
+<div class="figure-contents">
+          
+
+          
+<div class="screenshot">
+            
+<div class="mediaobject" align="center">
+<img src="images/tm-management-1.png" align="middle" alt="记忆库管理"></div>
+          
+</div>
+        
+</div>
+</div>
+<br class="figure-break">
+
+        
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+            
+<p>在左边选择数据库服务器的类型；</p>
+<div class="figure">
+<a name="N223FA"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 131. 记忆库管理对话框</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="screenshot">
+                  
+<div class="mediaobject" align="center">
+<img src="images/tm-management-2.png" align="middle" alt="记忆库管理对话框"></div>
+                
+</div>
+              
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+          
+</li>
+<li class="listitem">
+            
+<p>在右边输入相应的数据库服务器连接信息，点击<span class="guibutton">搜索</span>按钮；</p>
+          
+</li>
+<li class="listitem">
+            
+<p>若填写的数据库信息无误、且该服务器和网络均正常，则会显示该数据库服务器上的记忆库列表；</p>
+          
+</li>
+<li class="listitem">
+            
+<p>点击<span class="guibutton">创建</span>按钮，输入记忆库名称并<span class="guibutton">确定</span>。</p>
+<div class="figure">
+<a name="N2242A"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 132. 创建记忆库</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="screenshot">
+                  
+<div class="mediaobject" align="center">
+<img src="images/tm-management-3.png" align="middle" alt="创建记忆库"></div>
+                
+</div>
+              
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+          
+</li>
+</ol>
+</div>
+
+        
+<p>第 3
+        步中，正确连接后的数据库信息会自动保存在对话框左边的对应数据库类型中。当需要再次查询该数据库服务器的时候，只需单击相应的数据库即可，无需重新输入数据库信息。</p>
+      
+</div>
+
+      
+<div class="sect2" title="删除">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="ch6s2b"></a>删除</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>在<code class="interfacename">记忆库管理</code>对话框中删除数据库的步骤与创建类似，不同之处就是在最后一步应点击<span class="guibutton">删除</span>按钮并<span class="guibutton">确定</span>。</p>
+
+        
+<div class="warning" title="警告" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">警告</h3>
+          
+<p>被删除的记忆库将<span class="emphasis"><em>无法恢复</em></span>，请务必在删除记忆库前确认该记忆库已导出为 TMX
+          备份，或确认其中的内容确实已经不再需要。</p>
+        
+</div>
+      
+</div>
+    
+</div>
+</body>
+</html>

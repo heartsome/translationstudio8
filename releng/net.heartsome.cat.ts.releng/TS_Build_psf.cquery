@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cq:componentQuery xmlns:cq="http://www.eclipse.org/buckminster/CQuery-1.0" resourceMap="TS_Build_psf.rmap">
+    <cq:rootRequest name="net.heartsome.cat.ts.releng" componentType="eclipse.feature"/>
+    <cq:advisorNode namePattern="^org\.eclipse\.rap\..*" componentType="osgi.bundle" skipComponent="true"/>
+    <cq:advisorNode namePattern="^org\.eclipse\.rwt\..*" componentType="osgi.bundle" skipComponent="true"/>
+</cq:componentQuery>

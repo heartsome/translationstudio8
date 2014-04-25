@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="net.heartsome.cat.ts.tm.match.extension" name="TmMatch" schema="schema/net.heartsome.cat.ts.tm.match.extension.exsd"/>
+   <extension-point id="net.heartsome.cat.ts.tm.importer.extension" name="TmImporter" schema="schema/net.heartsome.cat.ts.tm.importer.extension.exsd"/>
+   <extension-point id="net.heartsome.cat.ts.tm.simplematch.extension" name="simpleMatcher" schema="schema/net.heartsome.cat.ts.tm.simplematch.extension.exsd"/>
+   <extension-point id="net.heartsome.cat.ts.tm.complexmatch.extension" name="ComplexMatch" schema="schema/net.heartsome.cat.ts.tm.complexmatch.extension.exsd"/>
+
+</plugin>

@@ -1,0 +1,7 @@
+# Debugging options for the net.heartsome.cat.converter.ui
+
+# Turn on debugging for the net.heartsome.cat.converter.ui
+net.heartsome.cat.converter.ui/debug=false
+
+# Print debug information for the conversion configuration info
+net.heartsome.cat.converter.ui/debug/conversion=false

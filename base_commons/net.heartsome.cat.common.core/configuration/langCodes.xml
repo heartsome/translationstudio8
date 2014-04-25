@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<languages>
+  <lang bidi="false" code="aa">Afar</lang>
+  <lang bidi="false" code="ab" image="images/lang/ab.png">Abkhazian</lang>
+  <lang bidi="false" code="ae" image="images/lang/ae.png">Avestan</lang>
+  <lang bidi="false" code="af" image="images/lang/af.png">Afrikaans</lang>
+  <lang bidi="No" code="af-ZA">Afrikaans (South Africa)</lang>
+  <lang bidi="No" code="ak">Akan</lang>
+  <lang bidi="false" code="am" image="images/lang/am.png">Amharic</lang>
+  <lang bidi="false" code="an" image="images/lang/an.png">Aragonese</lang>
+  <lang bidi="Yes" code="ar">Arabic</lang>
+  <lang bidi="Yes" code="ar-AE">Arabic (U.A.E.)</lang>
+  <lang bidi="true" code="ar-BH" image="images/lang/ar-BH.png">Arabic (Bahrain)</lang>
+  <lang bidi="false" code="ar-DZ" image="images/lang/ar-DZ.png">Arabic (Algeria)</lang>
+  <lang bidi="false" code="ar-EG" image="images/lang/ar-EG.png">Arabic (Egypt)</lang>
+  <lang bidi="true" code="ar-IQ" image="images/lang/ar-IQ.png">Arabic (Iraq)</lang>
+  <lang bidi="true" code="ar-JO" image="images/lang/ar-JO.png">Arabic (Jordan)</lang>
+  <lang bidi="true" code="ar-KW" image="images/lang/ar-KW.png">Arabic (Kuwait)</lang>
+  <lang bidi="true" code="ar-LB" image="images/lang/ar-LB.png">Arabic (Lebanon)</lang>
+  <lang bidi="true" code="ar-LY" image="images/lang/ar-LY.png">Arabic (Libya)</lang>
+  <lang bidi="true" code="ar-MA" image="images/lang/ar-MA.png">Arabic (Morocco)</lang>
+  <lang bidi="true" code="ar-OM" image="images/lang/ar-OM.png">Arabic (Oman)</lang>
+  <lang bidi="true" code="ar-QA" image="images/lang/ar-QA.png">Arabic (Qatar)</lang>
+  <lang bidi="true" code="ar-SA" image="images/lang/ar-SA.png">Arabic (Saudi Arabia)</lang>
+  <lang bidi="true" code="ar-SY" image="images/lang/ar-SY.png">Arabic (Syria)</lang>
+  <lang bidi="true" code="ar-TN" image="images/lang/ar-TN.png">Arabic (Tunisia)</lang>
+  <lang bidi="true" code="ar-YE" image="images/lang/ar-YE.png">Arabic (Yemen)</lang>
+  <lang bidi="false" code="as" image="images/lang/as.png">Assamese</lang>
+  <lang bidi="No" code="av">Avaric</lang>
+  <lang bidi="No" code="ay">Aymara</lang>
+  <lang bidi="false" code="az" image="images/lang/az.png">Azerbaijani</lang>
+  <lang bidi="false" code="ba" image="images/lang/ba.png">Bashkir</lang>
+  <lang bidi="false" code="be" image="images/lang/be.png">Belarusian</lang>
+  <lang bidi="false" code="bg" image="images/lang/bg.png">Bulgarian</lang>
+  <lang bidi="No" code="bh">Bihari</lang>
+  <lang bidi="false" code="bi" image="images/lang/bi.png">Bislama</lang>
+  <lang bidi="false" code="bm" image="images/lang/bm.png">Bambara</lang>
+  <lang bidi="false" code="bn" image="images/lang/bn.png">Bengali</lang>
+  <lang bidi="No" code="bo">Tibetan</lang>
+  <lang bidi="false" code="br" image="images/lang/br.png">Breton</lang>
+  <lang bidi="false" code="bs" image="images/lang/bs.png">Bosnian</lang>
+  <lang bidi="false" code="ca" image="images/lang/ca.png">Catalan</lang>
+  <lang bidi="No" code="ce">Chechen</lang>
+  <lang bidi="false" code="ch" image="images/lang/ch.png">Chamorro</lang>
+  <lang bidi="false" code="co" image="images/lang/co.png">Corsican</lang>
+  <lang bidi="No" code="cr">Cree</lang>
+  <lang bidi="false" code="cs" image="images/lang/cs.png">Czech</lang>
+  <lang bidi="false" code="cs-CZ">Czech (Czech Republic)</lang>
+  <lang bidi="false" code="cu" image="images/lang/cu.png">Church Slavic; Old Bulgarian</lang>
+  <lang bidi="false" code="cv" image="images/lang/cv.png">Chuvash</lang>
+  <lang bidi="false" code="cy" image="images/lang/cy.png">Welsh</lang>
+  <lang bidi="No" code="da">Danish</lang>
+  <lang bidi="No" code="de">German</lang>
+  <lang bidi="No" code="de-AT">German (Austrian)</lang>
+  <lang bidi="No" code="de-CH">German (Swiss)</lang>
+  <lang bidi="false" code="de-DE" image="images/lang/de-DE.png">German (Germany)</lang>
+  <lang bidi="false" code="de-LI" image="images/lang/de-LI.png">German (Liechtenstein)</lang>
+  <lang bidi="false" code="de-LU" image="images/lang/de-LU.png">German (Luxembourg)</lang>
+  <lang bidi="No" code="dv">Divehi</lang>
+  <lang bidi="false" code="dz" image="images/lang/dz.png">Dzongkha</lang>
+  <lang bidi="false" code="ee" image="images/lang/ee.png">Ewe</lang>
+  <lang bidi="No" code="el">Greek</lang>
+  <lang bidi="false" code="en" image="images/lang/en.png">English</lang>
+  <lang bidi="false" code="en-AU" image="images/lang/en-AU.png">English (Australian)</lang>
+  <lang bidi="false" code="en-BZ" image="images/lang/en-BZ.png">English (Belize)</lang>
+  <lang bidi="false" code="en-CA" image="images/lang/en-CA.png">English (Canadian)</lang>
+  <lang bidi="No" code="en-CB">English (Caribbean)</lang>
+  <lang bidi="No" code="en-GB">English (British)</lang>
+  <lang bidi="false" code="en-IE" image="images/lang/en-IE.png">English (Ireland)</lang>
+  <lang bidi="false" code="en-JM" image="images/lang/en-JM.png">English (Jamaica)</lang>
+  <lang bidi="false" code="en-NZ" image="images/lang/en-NZ.png">English (New Zealand)</lang>
+  <lang bidi="No" code="en-TT">English (Trinidad)</lang>
+  <lang bidi="false" code="en-US" image="images/lang/en-US.png">English (United States)</lang>
+  <lang bidi="false" code="en-ZA" image="images/lang/en-ZA.png">English (South Africa)</lang>
+  <lang bidi="No" code="eo">Esperanto</lang>
+  <lang bidi="false" code="es" image="images/lang/es.png">Spanish</lang>
+  <lang bidi="false" code="es-AR" image="images/lang/es-AR.png">Spanish (Argentina)</lang>
+  <lang bidi="false" code="es-BO" image="images/lang/es-BO.png">Spanish (Bolivia)</lang>
+  <lang bidi="false" code="es-CL" image="images/lang/es-CL.png">Spanish (Chile)</lang>
+  <lang bidi="false" code="es-CO" image="images/lang/es-CO.png">Spanish (Colombia)</lang>
+  <lang bidi="false" code="es-CR" image="images/lang/es-CR.png">Spanish (Costa Rica)</lang>
+  <lang bidi="false" code="es-DO" image="images/lang/es-DO.png">Spanish (Dominican Republic)</lang>
+  <lang bidi="false" code="es-EC" image="images/lang/es-EC.png">Spanish (Ecuador)</lang>
+  <lang bidi="false" code="es-ES" image="images/lang/es-ES.png">Spanish (Spain)</lang>
+  <lang bidi="false" code="es-GT" image="images/lang/es-GT.png">Spanish (Guatemala)</lang>
+  <lang bidi="false" code="es-HN" image="images/lang/es-HN.png">Spanish (Honduras)</lang>
+  <lang bidi="false" code="es-MX" image="images/lang/es-MX.png">Spanish (Mexican)</lang>
+  <lang bidi="false" code="es-NI" image="images/lang/es-NI.png">Spanish (Nicaragua)</lang>
+  <lang bidi="false" code="es-PA" image="images/lang/es-PA.png">Spanish (Panama)</lang>
+  <lang bidi="false" code="es-PE" image="images/lang/es-PE.png">Spanish (Peru)</lang>
+  <lang bidi="false" code="es-PR" image="images/lang/es-PR.png">Spanish (Puerto Rico)</lang>
+  <lang bidi="false" code="es-PY" image="images/lang/es-PY.png">Spanish (Paraguay)</lang>
+  <lang bidi="false" code="es-SV" image="images/lang/es-SV.png">Spanish (El Salvador)</lang>
+  <lang bidi="false" code="es-UY" image="images/lang/es-UY.png">Spanish (Uruguay)</lang>
+  <lang bidi="false" code="es-VE" image="images/lang/es-VE.png">Spanish (Venezuela)</lang>
+  <lang bidi="false" code="et" image="images/lang/et.png">Estonian</lang>
+  <lang bidi="false" code="eu" image="images/lang/eu.png">Basque</lang>
+  <lang bidi="Yes" code="fa">Farsi</lang>
+  <lang bidi="No" code="ff">Fulah</lang>
+  <lang bidi="false" code="fi" image="images/lang/fi.png">Finnish</lang>
+  <lang bidi="false" code="fj" image="images/lang/fj.png">Fijian</lang>
+  <lang bidi="false" code="fo" image="images/lang/fo.png">Faeroese</lang>
+  <lang bidi="false" code="fr" image="images/lang/fr.png">French</lang>
+  <lang bidi="false" code="fr-BE" image="images/lang/fr-BE.png">French (Belgium)</lang>
+  <lang bidi="No" code="fr-CA">French (Canadian)</lang>
+  <lang bidi="No" code="fr-CH">French (Swiss)</lang>
+  <lang bidi="false" code="fr-FR" image="images/lang/fr-FR.png">French (France)</lang>
+  <lang bidi="false" code="fr-LU" image="images/lang/fr-LU.png">French (Luxembourg)</lang>
+  <lang bidi="No" code="fy">Frisian</lang>
+  <lang bidi="false" code="ga" image="images/lang/ga.png">Irish</lang>
+  <lang bidi="false" code="gd" image="images/lang/gd.png">Gaelic; Scottish Gaelic</lang>
+  <lang bidi="false" code="gl" image="images/lang/gl.png">Galician</lang>
+  <lang bidi="false" code="gn" image="images/lang/gn.png">Guarani</lang>
+  <lang bidi="false" code="gu" image="images/lang/gu.png">Gujarati</lang>
+  <lang bidi="No" code="gv">Manx</lang>
+  <lang bidi="No" code="ha">Hausa</lang>
+  <lang bidi="Yes" code="he">Hebrew</lang>
+  <lang bidi="true" code="he-IL" image="images/lang/he-IL.png">Hebrew (Israel)</lang>
+  <lang bidi="No" code="hi">Hindi</lang>
+  <lang bidi="No" code="ho">Hiri Motu</lang>
+  <lang bidi="false" code="hr" image="images/lang/hr.png">Croatian</lang>
+  <lang bidi="false" code="ht" image="images/lang/ht.png">Haitian; Haitian Creole</lang>
+  <lang bidi="false" code="hu" image="images/lang/hu.png">Hungarian</lang>
+  <lang bidi="false" code="hy" image="images/lang/hy.png">Armenian</lang>
+  <lang bidi="No" code="hz">Herero</lang>
+  <lang bidi="No" code="ia">Interlingua</lang>
+  <lang bidi="false" code="id" image="images/lang/id.png">Indonesian</lang>
+  <lang bidi="false" code="ie" image="images/lang/ie.png">Interlingue</lang>
+  <lang bidi="No" code="ig">Igbo</lang>
+  <lang bidi="No" code="ii">Sichuan Yi</lang>
+  <lang bidi="No" code="ik">Inupiaq</lang>
+  <lang bidi="false" code="in" image="images/lang/in.png">Indonesian</lang>
+  <lang bidi="false" code="io" image="images/lang/io.png">Ido</lang>
+  <lang bidi="false" code="is" image="images/lang/is.png">Icelandic</lang>
+  <lang bidi="false" code="it" image="images/lang/it.png">Italian</lang>
+  <lang bidi="No" code="it-CH">Italian (Swiss)</lang>
+  <lang bidi="false" code="it-IT" image="images/lang/it-IT.png">Italian (Italy)</lang>
+  <lang bidi="No" code="iu">Inuktitut</lang>
+  <lang bidi="false" code="ja" image="images/lang/ja.png">Japanese</lang>
+  <lang bidi="No" code="jv">Javanese</lang>
+  <lang bidi="No" code="ka">Georgian</lang>
+  <lang bidi="false" code="kg" image="images/lang/kg.png">Kongo</lang>
+  <lang bidi="false" code="ki" image="images/lang/ki.png">Kikuyu; Gikuyu</lang>
+  <lang bidi="No" code="kj">Kuanyama; Kwanyama</lang>
+  <lang bidi="Yes" code="kk">Kazakh</lang>
+  <lang bidi="false" code="kl" image="images/lang/kl.png">Kalaallisut; Greenlandic</lang>
+  <lang bidi="false" code="km" image="images/lang/km.png">Khmer</lang>
+  <lang bidi="false" code="kn" image="images/lang/kn.png">Kannada</lang>
+  <lang bidi="No" code="ko">Korean</lang>
+  <lang bidi="No" code="ko-JB">Korean (Johab)</lang>
+  <lang bidi="false" code="kr" image="images/lang/kr.png">Kanuri</lang>
+  <lang bidi="No" code="ks">Kashmiri</lang>
+  <lang bidi="No" code="ku">Kurdish</lang>
+  <lang bidi="No" code="kv">Komi</lang>
+  <lang bidi="false" code="kw" image="images/lang/kw.png">Cornish</lang>
+  <lang bidi="false" code="ky" image="images/lang/ky.png">Kirghiz</lang>
+  <lang bidi="false" code="la" image="images/lang/la.png">Latin</lang>
+  <lang bidi="false" code="lb" image="images/lang/lb.png">Luxembourgish; Letzeburgesch</lang>
+  <lang bidi="No" code="lg">Ganda</lang>
+  <lang bidi="false" code="li" image="images/lang/li.png">Limburgan; Limburger; Limburgish</lang>
+  <lang bidi="No" code="ln">Lingala</lang>
+  <lang bidi="false" code="lo" image="images/lang/lo.png">Lao</lang>
+  <lang bidi="false" code="lt" image="images/lang/lt.png">Lithuanian</lang>
+  <lang bidi="false" code="lu" image="images/lang/lu.png">Luba-Katanga</lang>
+  <lang bidi="false" code="lv" image="images/lang/lv.png">Latvian</lang>
+  <lang bidi="false" code="mg" image="images/lang/mg.png">Malagasy</lang>
+  <lang bidi="false" code="mh" image="images/lang/mh.png">Marshallese</lang>
+  <lang bidi="No" code="mi">Maori</lang>
+  <lang bidi="false" code="mk" image="images/lang/mk.png">Macedonian</lang>
+  <lang bidi="false" code="ml" image="images/lang/ml.png">Malayalam</lang>
+  <lang bidi="false" code="mn" image="images/lang/mn.png">Mongolian</lang>
+  <lang bidi="false" code="mo" image="images/lang/mo.png">Moldavian</lang>
+  <lang bidi="false" code="mr" image="images/lang/mr.png">Marathi</lang>
+  <lang bidi="false" code="ms" image="images/lang/ms.png">Malay</lang>
+  <lang bidi="false" code="mt" image="images/lang/mt.png">Maltese</lang>
+  <lang bidi="false" code="my" image="images/lang/my.png">Burmese</lang>
+  <lang bidi="false" code="na" image="images/lang/na.png">Nauru</lang>
+  <lang bidi="false" code="nb" image="images/lang/nb.png">Norwegian Bokmål</lang>
+  <lang bidi="false" code="nd" image="images/lang/nd.png">Ndebele, North</lang>
+  <lang bidi="false" code="ne" image="images/lang/ne.png">Nepali</lang>
+  <lang bidi="false" code="ng" image="images/lang/ng.png">Ndonga</lang>
+  <lang bidi="No" code="nl">Dutch</lang>
+  <lang bidi="false" code="nl-BE" image="images/lang/nl-BE.png">Dutch (Belgium)</lang>
+  <lang bidi="false" code="nn" image="images/lang/nn.png">Norwegian Nynorsk</lang>
+  <lang bidi="false" code="no" image="images/lang/no.png">Norwegian</lang>
+  <lang bidi="false" code="nr" image="images/lang/nr.png">Ndebele, South</lang>
+  <lang bidi="No" code="nv">Navajo; Navaho</lang>
+  <lang bidi="No" code="ny">Chichewa; Chewa; Nyanja</lang>
+  <lang bidi="No" code="oc">Occitan; Provençal</lang>
+  <lang bidi="No" code="oj">Ojibwa</lang>
+  <lang bidi="false" code="om" image="images/lang/om.png">Oromo</lang>
+  <lang bidi="No" code="or">Oriya</lang>
+  <lang bidi="No" code="os">Ossetian; Ossetic</lang>
+  <lang bidi="false" code="pa" image="images/lang/pa.png">Panjabi; Punjabi</lang>
+  <lang bidi="No" code="pi">Pali</lang>
+  <lang bidi="false" code="pl" image="images/lang/pl.png">Polish</lang>
+  <lang bidi="false" code="ps" image="images/lang/ps.png">Pushto</lang>
+  <lang bidi="false" code="pt" image="images/lang/pt.png">Portuguese</lang>
+  <lang bidi="false" code="pt-BR" image="images/lang/pt-BR.png">Portuguese (Brazilian)</lang>
+  <lang bidi="No" code="qu">Quechua</lang>
+  <lang bidi="No" code="rm">Raeto-Romance</lang>
+  <lang bidi="No" code="rn">Rundi</lang>
+  <lang bidi="false" code="ro" image="images/lang/ro.png">Romanian</lang>
+  <lang bidi="false" code="ru" image="images/lang/ru.png">Russian</lang>
+  <lang bidi="false" code="ru-RU">Russian (Russia)</lang>
+  <lang bidi="false" code="rw" image="images/lang/rw.png">Kinyarwanda</lang>
+  <lang bidi="false" code="sa" image="images/lang/sa.png">Sanskrit</lang>
+  <lang bidi="false" code="sc" image="images/lang/sc.png">Sardinian</lang>
+  <lang bidi="false" code="sd" image="images/lang/sd.png">Sindhi</lang>
+  <lang bidi="false" code="se" image="images/lang/se.png">Northern Sami</lang>
+  <lang bidi="false" code="sg" image="images/lang/sg.png">Sango</lang>
+  <lang bidi="false" code="si" image="images/lang/si.png">Sinhala; Sinhalese</lang>
+  <lang bidi="false" code="sk" image="images/lang/sk.png">Slovak</lang>
+  <lang bidi="false" code="sl" image="images/lang/sl.png">Slovenian</lang>
+  <lang bidi="false" code="sm" image="images/lang/sm.png">Samoan</lang>
+  <lang bidi="false" code="sn" image="images/lang/sn.png">Shona</lang>
+  <lang bidi="false" code="so" image="images/lang/so.png">Somali</lang>
+  <lang bidi="false" code="sq" image="images/lang/sq.png">Albanian</lang>
+  <lang bidi="false" code="sr" image="images/lang/sr.png">Serbian</lang>
+  <lang bidi="No" code="ss">Swati</lang>
+  <lang bidi="false" code="st" image="images/lang/st.png">Sotho, Southern</lang>
+  <lang bidi="false" code="su" image="images/lang/su.png">Sundanese</lang>
+  <lang bidi="false" code="sv" image="images/lang/sv.png">Swedish</lang>
+  <lang bidi="No" code="sv-FI">Swedish (Finland)</lang>
+  <lang bidi="No" code="sw">Swahili</lang>
+  <lang bidi="No" code="ta">Tamil</lang>
+  <lang bidi="No" code="te">Telugu</lang>
+  <lang bidi="false" code="tg" image="images/lang/tg.png">Tajik</lang>
+  <lang bidi="false" code="th" image="images/lang/th.png">Thai</lang>
+  <lang bidi="No" code="ti">Tigrinya</lang>
+  <lang bidi="false" code="tk" image="images/lang/tk.png">Turkmen</lang>
+  <lang bidi="false" code="tl" image="images/lang/tl.png">Tagalog</lang>
+  <lang bidi="false" code="tn" image="images/lang/tn.png">Tswana</lang>
+  <lang bidi="false" code="to" image="images/lang/to.png">Tonga</lang>
+  <lang bidi="false" code="tr" image="images/lang/tr.png">Turkish</lang>
+  <lang bidi="No" code="ts">Tsonga</lang>
+  <lang bidi="false" code="tt" image="images/lang/tt.png">Tatar</lang>
+  <lang bidi="No" code="tw">Twi</lang>
+  <lang bidi="No" code="ty">Tahitian</lang>
+  <lang bidi="true" code="ug" image="images/lang/ug.png">Uighur; Uyghur</lang>
+  <lang bidi="No" code="uk">Ukrainian</lang>
+  <lang bidi="true" code="ur" image="images/lang/ur.png">Urdu</lang>
+  <lang bidi="false" code="uz" image="images/lang/uz.png">Uzbek</lang>
+  <lang bidi="false" code="ve" image="images/lang/ve.png">Venda</lang>
+  <lang bidi="false" code="vi" image="images/lang/vi.png">Vietnamese</lang>
+  <lang bidi="No" code="vo">Volapük</lang>
+  <lang bidi="No" code="wa">Walloon</lang>
+  <lang bidi="No" code="wo">Wolof</lang>
+  <lang bidi="No" code="xh">Xhosa</lang>
+  <lang bidi="No" code="yi">Yiddish</lang>
+  <lang bidi="No" code="yo">Yoruba</lang>
+  <lang bidi="No" code="za">Zhuang; Chuang</lang>
+  <lang bidi="false" code="zh" image="images/lang/zh.png">Chinese</lang>
+  <lang bidi="false" code="zh-CN" image="images/lang/zh-CN.png">Chinese (People's Republic)</lang>
+  <lang bidi="false" code="zh-HK" image="images/lang/zh-HK.png">Chinese (Hong Kong)</lang>
+  <lang bidi="false" code="zh-SG" image="images/lang/zh-SG.png">Chinese (Singapore)</lang>
+  <lang bidi="false" code="zh-TW" image="images/lang/zh-TW.png">Chinese (Taiwan)</lang>
+  <lang bidi="No" code="zu">Zulu</lang>
+ </languages>

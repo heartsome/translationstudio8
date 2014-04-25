@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome CAT TS Web Search
+Bundle-SymbolicName: net.heartsome.cat.ts.websearch;singleton:=true
+Bundle-Version: 8.1.0.R8b_v20131121
+Bundle-Activator: net.heartsome.cat.ts.websearch.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ net.heartsome.cat.ts.ui;bundle-version="8.0.5",
+ net.heartsome.xml;bundle-version="8.0.4",
+ net.heartsome.cat.thirdpartlibrary;bundle-version="8.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Vendor: Heartsome Technologies Ltd.
+Import-Package: net.heartsome.cat.common.ui,
+ net.heartsome.cat.common.ui.handlers,
+ net.heartsome.cat.common.ui.listener,
+ net.heartsome.cat.common.util,
+ net.heartsome.cat.ts.ui.xliffeditor.nattable.editor
+Bundle-Localization: plugin

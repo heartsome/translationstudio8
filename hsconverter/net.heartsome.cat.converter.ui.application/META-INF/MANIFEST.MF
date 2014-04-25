@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Application
+Bundle-SymbolicName: net.heartsome.cat.converter.ui.application; singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: net.heartsome.cat.converter.ui.application.Activator
+Require-Bundle: org.eclipse.rap.ui,
+ net.heartsome.cat.converter.ui;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: javax.servlet;version="2.4.0",
+ javax.servlet.http;version="2.4.0"

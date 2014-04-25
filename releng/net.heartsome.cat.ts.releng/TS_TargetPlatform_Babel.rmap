@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rmap
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.eclipse.org/buckminster/RMap-1.0"
+	xmlns:bc="http://www.eclipse.org/buckminster/Common-1.0"
+	xmlns:mp="http://www.eclipse.org/buckminster/MavenProvider-1.0"
+	xmlns:pp="http://www.eclipse.org/buckminster/PDEMapProvider-1.0">
+	<searchPath name="wsroot">
+        <provider readerType="local" componentTypes="osgi.bundle,eclipse.feature"
+                  mutable="true" source="true">
+            <uri format="file:///{0}/{1}/">
+                <bc:propertyRef key="workspace.root" />
+                <bc:propertyRef key="buckminster.component" />
+            </uri>
+        </provider>
+    </searchPath>
+    <searchPath name="ws.base_commons">
+        <provider readerType="local" componentTypes="osgi.bundle,eclipse.feature"
+                  mutable="true" source="true">
+            <uri format="file:///{0}/CAT8NEW/base_commons/{1}/">
+                <bc:propertyRef key="workspace.root" />
+                <bc:propertyRef key="buckminster.component" />
+            </uri>
+        </provider>
+    </searchPath>
+   	<searchPath name="ws.releng">
+        <provider readerType="local" componentTypes="osgi.bundle,eclipse.feature"
+                  mutable="true" source="true">
+            <uri format="file:///{0}/CAT8NEW/releng/{1}/">
+                <bc:propertyRef key="workspace.root" />
+                <bc:propertyRef key="buckminster.component" />
+            </uri>
+        </provider>
+    </searchPath>
+   	<searchPath name="ws.releng_old">
+        <provider readerType="local" componentTypes="osgi.bundle,eclipse.feature"
+                  mutable="true" source="true">
+            <uri format="file:///{0}/HSCAT8/releng/{1}/">
+                <bc:propertyRef key="workspace.root" />
+                <bc:propertyRef key="buckminster.component" />
+            </uri>
+        </provider>
+    </searchPath>
+       	<searchPath name="ws.i18n">
+        <provider readerType="local" componentTypes="osgi.bundle,eclipse.feature"
+                  mutable="true" source="true">
+            <uri format="file:///{0}/CAT8NEW/i18n/{1}/">
+                <bc:propertyRef key="workspace.root" />
+                <bc:propertyRef key="buckminster.component" />
+            </uri>
+        </provider>
+    </searchPath>
+    <!-- 
+	<searchPath name="net.heartsome.cat">
+		<provider readerType="cvs" componentTypes="osgi.bundle,eclipse.feature" mutable="true" source="true">
+			<uri format=":pserver:felix:vqf5nuah@192.168.0.13:/data/cvs,HSCAT8/releng/{0}">
+				<bc:propertyRef key="buckminster.component"/>
+			</uri>
+		</provider>
+	</searchPath>
+	-->
+	<searchPath name="org.eclipse.indigo">
+		<provider readerType="p2" componentTypes="osgi.bundle,eclipse.feature" mutable="false" source="false">
+			<uri format="http://download.eclipse.org/releases/indigo?importType=binary"/>
+		</provider>
+	</searchPath>
+	<searchPath name="org.eclipse.platform">
+		<provider readerType="p2" componentTypes="osgi.bundle,eclipse.feature" mutable="false" source="false">
+			<uri format="http://download.eclipse.org/eclipse/updates/3.7?importType=binary"/>
+		</provider>
+	</searchPath>
+	<searchPath name="org.eclipse.platforme4">
+		<provider readerType="p2" componentTypes="osgi.bundle,eclipse.feature" mutable="false" source="false">
+			<uri format="http://download.eclipse.org/eclipse/updates/4.3?importType=binary"/>
+		</provider>
+	</searchPath>
+	<searchPath name="org.eclipse.nebula">
+		<provider readerType="p2" componentTypes="osgi.bundle,eclipse.feature" mutable="false" source="false">
+			<uri format="http://download.eclipse.org/technology/nebula/snapshot?importType=binary"/>
+		</provider>
+	</searchPath>
+	<searchPath name="org.eclipse.babel">
+		<provider readerType="p2" componentTypes="osgi.bundle,eclipse.feature" mutable="false" source="false">
+			<uri format="http://download.eclipse.org/technology/babel/update-site/R0.11.0/indigo?importType=binary" />
+		</provider>
+	</searchPath>
+	<searchPath name="ts.thirdpartyplugins">
+		<provider readerType="p2" componentTypes="osgi.bundle,eclipse.feature" mutable="false" source="false">
+			<uri format="file:///{0}?importType=binary">
+				<bc:propertyRef key="ts.thirdpartylibrary.root" />
+             </uri>
+		</provider>
+	</searchPath>
+	<locator searchPathRef="wsroot" pattern="^net\.heartsome.cat(\..+)?" failOnError="false"/>
+	<locator searchPathRef="ws.base_commons" pattern="^net\.heartsome.cat(\..+)?" failOnError="false"/>
+	<locator searchPathRef="ws.releng" pattern="^net\.heartsome.cat(\..+)?" failOnError="false"/>
+	<locator searchPathRef="ws.releng_old" pattern="^net\.heartsome.cat(\..+)?" failOnError="false"/>
+	<locator searchPathRef="ws.i18n" failOnError="false"/>
+	<locator searchPathRef="org.eclipse.platform" failOnError="false"/>
+	<locator searchPathRef="org.eclipse.platforme4" failOnError="false"/>
+	<locator searchPathRef="org.eclipse.indigo" failOnError="false"/>
+	<locator searchPathRef="org.eclipse.nebula" failOnError="false"/>
+	<locator searchPathRef="org.eclipse.babel" failOnError="false"/>
+	<locator searchPathRef="ts.thirdpartyplugins"/>
+</rmap>
+

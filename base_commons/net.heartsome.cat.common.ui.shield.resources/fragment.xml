@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<fragment>
+   <extension
+         point="org.eclipse.ui.activities">
+      <activityPatternBinding
+            activityId="net.heartsome.cat.common.ui.shield.view"
+            isEqualityPattern="true"
+            pattern="org.eclipse.ui.navigator.resources/org.eclipse.ui.navigator.ProjectExplorer">
+      </activityPatternBinding>
+      <activityPatternBinding
+            activityId="net.heartsome.cat.common.ui.shield.view"
+            pattern="org.eclipse.ui.ide/org.eclipse.ui.views.*">
+      </activityPatternBinding>
+      <activityPatternBinding
+            activityId="net.heartsome.cat.common.ui.shield.preference"
+            pattern="org.eclipse.ui.ide/org.eclipse.ui.preferencePages.*">
+      </activityPatternBinding>
+   </extension>
+   <extension
+         point="org.eclipse.ui.startup">
+      <startup
+            class="net.heartsome.cat.common.ui.shield.resources.ShieldIDECommandStartup">
+      </startup>
+   </extension>
+
+</fragment>

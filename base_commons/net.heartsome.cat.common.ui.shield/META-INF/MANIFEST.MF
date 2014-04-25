@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome Common UI Shield
+Bundle-SymbolicName: net.heartsome.cat.common.ui.shield;singleton:=true
+Bundle-Version: 8.0.2.R8b_v20130902
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Require-Bundle: org.eclipse.ui;bundle-version="3.5.0",
+ org.eclipse.core.runtime;bundle-version="3.5.0"
+Bundle-Activator: net.heartsome.cat.common.ui.shield.ShieldActivator
+Import-Package: org.slf4j
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: Heartsome Technologies Ltd.

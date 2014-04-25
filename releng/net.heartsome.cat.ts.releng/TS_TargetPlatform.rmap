@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rmap
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.eclipse.org/buckminster/RMap-1.0"
+	xmlns:bc="http://www.eclipse.org/buckminster/Common-1.0"
+	xmlns:mp="http://www.eclipse.org/buckminster/MavenProvider-1.0"
+	xmlns:pp="http://www.eclipse.org/buckminster/PDEMapProvider-1.0">
+	<searchPath name="resources">
+        <provider readerType="local" componentTypes="osgi.bundle,eclipse.feature"
+                  mutable="true" source="true">
+            <uri format="file:///{0}/{1}/">
+                <bc:propertyRef key="workspace.root" />
+                <bc:propertyRef key="buckminster.component" />
+            </uri>
+        </provider>
+    </searchPath>
+    <!--
+	<searchPath name="net.heartsome.cat">
+		<provider readerType="cvs" componentTypes="osgi.bundle,eclipse.feature" mutable="true" source="true">
+			<uri format=":pserver:felix:vqf5nuah@192.168.18.2:/data/cvs,HSCAT8/releng/{0}">
+				<bc:propertyRef key="buckminster.component"/>
+			</uri>
+		</provider>
+	</searchPath>
+	-->
+	<searchPath name="org.eclipse.indigo">
+		<provider readerType="p2" componentTypes="osgi.bundle,eclipse.feature" mutable="false" source="false">
+			<uri format="http://download.eclipse.org/releases/indigo?importType=binary"/>
+		</provider>
+	</searchPath>
+	<searchPath name="org.eclipse.platform">
+		<provider readerType="p2" componentTypes="osgi.bundle,eclipse.feature" mutable="false" source="false">
+			<uri format="http://download.eclipse.org/eclipse/updates/3.7?importType=binary"/>
+		</provider>
+	</searchPath>
+	<searchPath name="org.eclipse.nebula">
+		<provider readerType="p2" componentTypes="osgi.bundle,eclipse.feature" mutable="false" source="false">
+			<uri format="http://download.eclipse.org/technology/nebula/snapshot?importType=binary"/>
+		</provider>
+	</searchPath>
+	<searchPath name="ts.thirdpartyplugins">
+		<provider readerType="p2" componentTypes="osgi.bundle,eclipse.feature" mutable="false" source="false">
+			<uri format="file:///{0}?importType=binary">
+				<bc:propertyRef key="ts.thirdpartylibrary.root" />
+             </uri>
+		</provider>
+	</searchPath>
+	<locator searchPathRef="resources" pattern="^net\.heartsome.cat(\..+)?" failOnError="false"/>
+	<locator searchPathRef="org.eclipse.platform" failOnError="false"/>
+	<locator searchPathRef="org.eclipse.indigo" failOnError="false"/>
+	<locator searchPathRef="org.eclipse.nebula" failOnError="false"/>
+	<locator searchPathRef="ts.thirdpartyplugins"/>
+</rmap>
+

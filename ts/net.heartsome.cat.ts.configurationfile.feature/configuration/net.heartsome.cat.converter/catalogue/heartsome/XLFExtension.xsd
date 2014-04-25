@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.heartsome.net.cn/2008/XLFExtension" xmlns="http://www.heartsome.net.cn/2008/XLFExtension" elementFormDefault="qualified">
+	<!-- Import for xml:lang and xml:space -->
+	<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
+	
+<xs:complexType name="ElemType_splitInfo">
+	<xs:attribute name="id" type="xs:string" use="required"/>
+	<xs:attribute name="name" type="xs:string" use="required"/>
+	<xs:attribute name="index" type="xs:positiveInteger" use="required" />
+	<xs:attribute name="count" type="xs:positiveInteger" use="required" />
+	<xs:attribute name="depth" type="xs:positiveInteger" use="required" />
+	<xs:attribute name="splitTime" type="xs:unsignedLong" use="required" />
+</xs:complexType>
+
+<xs:complexType name="ElemType_splitInfos">
+	<xs:sequence>
+		<xs:element name="splitInfo" type="ElemType_splitInfo" minOccurs="1" maxOccurs="unbounded" />
+	</xs:sequence>
+</xs:complexType>
+	
+<xs:element name="splitInfos" type="ElemType_splitInfos"/>
+
+<xs:complexType name="ElemType_prop">
+	<xs:attribute name="prop-type" type="xs:string" use="required"/>
+	<xs:attribute ref="xml:lang" use="optional"/>
+</xs:complexType>
+
+<xs:element name="prop-group">
+	<xs:complexType>
+		<xs:sequence maxOccurs="unbounded">
+			<xs:element name="prop" type="ElemType_prop"/>
+		</xs:sequence>
+		<xs:attribute name="name" type="xs:string" use="optional"/>
+	</xs:complexType>
+</xs:element>
+</xs:schema>

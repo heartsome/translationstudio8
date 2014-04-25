@@ -1,0 +1,239 @@
+<!-- ======================================================= -->
+<!-- Copyright 2002, 2005 (c) Heartsome Holdings Pte Ltd     -->
+<!-- All rights reserved.                                    -->
+<!-- Revision: 7D5-7-A                                       -->
+<!-- Author: RMR                                             -->
+<!-- ======================================================= -->
+
+<!ELEMENT config (page, pageheader, pagefooter,title, subtitle, bridgehead1, bridgehead2,bridgehead3,bridgehead4, para, code?,list, misc, asiantext?)>
+
+<!ELEMENT page EMPTY>
+<!ATTLIST page
+  leftMargin          CDATA #REQUIRED
+  rightMargin         CDATA #REQUIRED
+  topMargin           CDATA #REQUIRED
+  bottomMargin        CDATA #REQUIRED
+>
+
+<!ELEMENT pageheader EMPTY>
+<!ATTLIST pageheader
+  headerHeight        	CDATA #REQUIRED
+  headerAlignment     	(left|center|right|alternate) #REQUIRED
+  showLineBelowHeader 	(Yes|No) #REQUIRED 
+  fontfamily 			CDATA #REQUIRED
+  fontsize 				CDATA #REQUIRED
+  background 			CDATA #REQUIRED
+  backgroundimg         CDATA #IMPLIED
+  color 				CDATA #REQUIRED
+  bold 					(Yes|No) "No"
+>
+
+<!ELEMENT pagefooter EMPTY>
+<!ATTLIST pagefooter
+  footerHeight        	CDATA #REQUIRED 
+  footerAlignment     	(left|center|right|alternate) #REQUIRED
+  showLineOverFooter  	(Yes|No) #REQUIRED
+  fontfamily			CDATA #REQUIRED
+  fontsize 				CDATA #REQUIRED
+  background 			CDATA #REQUIRED
+  backgroundimg         CDATA #IMPLIED
+  color 				CDATA #REQUIRED
+  bold					(Yes|No) "No"
+>
+
+
+<!ELEMENT title EMPTY>
+<!ATTLIST title
+  Alignment         (left|center|right) #REQUIRED
+  FontColor         CDATA #REQUIRED
+  FontFamily        CDATA #REQUIRED
+  FontHeight        CDATA #REQUIRED
+  TopBorderWidth    CDATA #REQUIRED
+  BottomBorderWidth CDATA #REQUIRED
+  LeftBorderWidth   CDATA #REQUIRED
+  RightBorderWidth  CDATA #REQUIRED
+  background 		CDATA #REQUIRED
+  leftindent		CDATA #REQUIRED
+  rightindent		CDATA #REQUIRED
+  bold 				(Yes|No) "Yes"
+  italic 			(Yes|No) "No"
+  spaceBefore		CDATA #REQUIRED
+  spaceAfter		CDATA #REQUIRED
+  paddingtop	   	CDATA "0"
+  paddingbottom 	CDATA "0"
+  paddingleft   	CDATA "1"
+  paddingright  	CDATA "1"
+>
+
+<!ELEMENT subtitle EMPTY>
+<!ATTLIST subtitle 
+  Alignment         (left|center|right) #REQUIRED 
+  FontColor         CDATA #REQUIRED 
+  FontFamily        CDATA #REQUIRED  
+  FontHeight        CDATA #REQUIRED 
+  TopBorderWidth    CDATA #REQUIRED 
+  BottomBorderWidth CDATA #REQUIRED 
+  LeftBorderWidth   CDATA #REQUIRED  
+  RightBorderWidth  CDATA #REQUIRED  
+  background 		CDATA #REQUIRED
+  leftindent		CDATA #REQUIRED
+  rightindent		CDATA #REQUIRED
+  bold 				(Yes|No) "No"
+  italic 			(Yes|No) "Yes"
+  paddingtop	   	CDATA "0"
+  paddingbottom 	CDATA "0"
+  paddingleft   	CDATA "1"
+  paddingright  	CDATA "1"
+>
+
+<!ELEMENT bridgehead1 EMPTY>
+<!ATTLIST bridgehead1                 
+  Alignment         (left|center|right) #REQUIRED 
+  FontColor         CDATA #REQUIRED 
+  FontFamily        CDATA #REQUIRED 
+  FontHeight        CDATA #REQUIRED 
+  TopBorderWidth    CDATA #REQUIRED 
+  BottomBorderWidth CDATA #REQUIRED 
+  LeftBorderWidth   CDATA #REQUIRED 
+  RightBorderWidth  CDATA #REQUIRED 
+  background 		CDATA #REQUIRED
+  leftindent		CDATA #REQUIRED
+  rightindent		CDATA #REQUIRED
+  bold 				(Yes|No) "Yes"
+  italic 			(Yes|No) "No"
+  spaceBefore		CDATA #REQUIRED
+  spaceAfter		CDATA #REQUIRED
+  paddingtop	   	CDATA "0"
+  paddingbottom 	CDATA "0"
+  paddingleft   	CDATA "1"
+  paddingright  	CDATA "1"
+>
+
+<!ELEMENT bridgehead2 EMPTY>
+<!ATTLIST bridgehead2                 
+  Alignment         (left|center|right) #REQUIRED 
+  FontColor         CDATA #REQUIRED 
+  FontFamily        CDATA #REQUIRED 
+  FontHeight        CDATA #REQUIRED 
+  TopBorderWidth    CDATA #REQUIRED 
+  BottomBorderWidth CDATA #REQUIRED 
+  LeftBorderWidth   CDATA #REQUIRED 
+  RightBorderWidth  CDATA #REQUIRED 
+  background 		CDATA #REQUIRED
+  leftindent		CDATA #REQUIRED
+  rightindent		CDATA #REQUIRED
+  bold 				(Yes|No) "Yes"
+  italic 			(Yes|No) "No"
+  spaceBefore		CDATA #REQUIRED
+  spaceAfter		CDATA #REQUIRED
+  paddingtop	   	CDATA "0"
+  paddingbottom 	CDATA "0"
+  paddingleft   	CDATA "1"
+  paddingright  	CDATA "1"
+>
+
+<!ELEMENT bridgehead3 EMPTY>
+<!ATTLIST bridgehead3                 
+  Alignment         (left|center|right) #REQUIRED 
+  FontColor         CDATA #REQUIRED 
+  FontFamily        CDATA #REQUIRED 
+  FontHeight        CDATA #REQUIRED 
+  TopBorderWidth    CDATA #REQUIRED 
+  BottomBorderWidth CDATA #REQUIRED 
+  LeftBorderWidth   CDATA #REQUIRED 
+  RightBorderWidth  CDATA #REQUIRED 
+  background 		CDATA #REQUIRED
+  leftindent		CDATA #REQUIRED
+  rightindent		CDATA #REQUIRED
+  bold 				(Yes|No) "Yes"
+  italic 			(Yes|No) "No"
+  spaceBefore		CDATA #REQUIRED
+  spaceAfter		CDATA #REQUIRED
+  paddingtop	   	CDATA "0"
+  paddingbottom 	CDATA "0"
+  paddingleft   	CDATA "1"
+  paddingright  	CDATA "1"
+>
+
+<!ELEMENT bridgehead4 EMPTY>
+<!ATTLIST bridgehead4                 
+  Alignment         (left|center|right) #REQUIRED 
+  FontColor         CDATA #REQUIRED 
+  FontFamily        CDATA #REQUIRED 
+  FontHeight        CDATA #REQUIRED 
+  TopBorderWidth    CDATA #REQUIRED 
+  BottomBorderWidth CDATA #REQUIRED 
+  LeftBorderWidth   CDATA #REQUIRED 
+  RightBorderWidth  CDATA #REQUIRED 
+  background 		CDATA #REQUIRED
+  leftindent		CDATA #REQUIRED
+  rightindent		CDATA #REQUIRED
+  bold 				(Yes|No) "Yes"
+  italic 			(Yes|No) "No"
+  spaceBefore		CDATA #REQUIRED
+  spaceAfter		CDATA #REQUIRED
+  paddingtop	   	CDATA "0"
+  paddingbottom 	CDATA "0"
+  paddingleft   	CDATA "1"
+  paddingright  	CDATA "1"
+>
+
+<!ELEMENT para EMPTY>
+<!ATTLIST para
+  FontFamily 	CDATA #REQUIRED 
+  FontHeight 	CDATA #REQUIRED 
+  spaceAfter	CDATA #REQUIRED
+  spaceBefore	CDATA #REQUIRED
+  Alignment  (left|center|right|justify) #REQUIRED 
+  Color      	CDATA #REQUIRED 
+  background 	CDATA #REQUIRED
+  lineheight 	CDATA #REQUIRED
+>
+
+<!ELEMENT code EMPTY>
+<!ATTLIST code
+  FontFamily 	CDATA #REQUIRED 
+  FontHeight 	CDATA #REQUIRED 
+  Color      	CDATA #REQUIRED 
+>
+
+<!ELEMENT list EMPTY>
+<!ATTLIST list 
+  FontFamily      	CDATA #REQUIRED
+  FontHeight      	CDATA #REQUIRED 
+  IndentBefore    	CDATA #REQUIRED
+  SpaceAfterLabel 	CDATA #REQUIRED
+  bulletfont1 		CDATA #REQUIRED
+  bulletfont2 		CDATA #REQUIRED
+  bulletfont3 		CDATA #REQUIRED
+  bulletfont4 		CDATA #REQUIRED
+  bullet1			CDATA #REQUIRED
+  bullet2			CDATA #REQUIRED
+  bullet3			CDATA #REQUIRED
+  bullet4			CDATA #REQUIRED
+>
+
+<!ELEMENT misc EMPTY>
+<!ATTLIST misc           
+  defaultImageHAlign      (left|center|right) #REQUIRED 
+  defaultImageVAlign      (top|middle|bottom) #REQUIRED 
+  defaultImageBorderWidth CDATA #REQUIRED 
+  defaultSpaceAfter		  CDATA #REQUIRED
+  defaultSpaceBefore	  CDATA #REQUIRED
+  defaultGlyphHeight      CDATA #REQUIRED 
+  defaultColumnGap        CDATA #REQUIRED
+  defaultLinkColor		  CDATA #REQUIRED
+  underlineLinks        (Yes|No) "No"
+  reverseBIDIHeader		(Yes|No) "Yes"
+  reverseBIDIFooter		(Yes|No) "Yes"
+>
+
+<!ELEMENT asiantext EMPTY>
+<!ATTLIST asiantext
+  chineseNormalFont		CDATA #REQUIRED
+  chineseBoldFont		CDATA #REQUIRED
+  japaneseNormalFont	CDATA #REQUIRED
+  japaneseBoldFont		CDATA #REQUIRED
+  koreanNormalFont		CDATA #REQUIRED
+  koreanBoldFont		CDATA #REQUIRED
+>

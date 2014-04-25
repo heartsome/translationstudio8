@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome CAT Converter XML
+Bundle-SymbolicName: net.heartsome.cat.converter.xml
+Bundle-Version: 8.0.4.R8b_v20130729
+Bundle-Activator: net.heartsome.cat.converter.xml.Activator
+Require-Bundle: org.junit4;resolution:=optional,
+ net.heartsome.cat.converter;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Import-Package: com.wutka.dtd,
+ org.eclipse.core.runtime;version="3.4.0",
+ org.osgi.framework;version="1.5.0"
+Export-Package: net.heartsome.cat.converter.xml
+Bundle-Vendor: Heartsome Technologies Ltd.

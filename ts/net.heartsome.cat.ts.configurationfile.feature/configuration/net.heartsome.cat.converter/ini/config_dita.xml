@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ini-file PUBLIC "-//HEARTSOME//Converters 2.0.0//EN" "configuration.dtd" >
+<ini-file><tag hard-break="segment">title</tag>
+<tag hard-break="segment">titlealts</tag>
+<tag hard-break="segment">navtitle</tag>
+<tag hard-break="segment">searchtitle</tag>
+<tag hard-break="segment">shortdesc</tag>
+<tag hard-break="segment">section</tag>
+<tag hard-break="segment">body</tag>
+<tag hard-break="segment" keep-format="yes">example</tag>
+<tag hard-break="segment">related-links</tag>
+<tag hard-break="segment">refsyn</tag>
+<tag hard-break="segment">proptypehd</tag>
+<tag hard-break="segment">propvaluehd</tag>
+<tag hard-break="segment">propdeschd</tag>
+<tag hard-break="segment">proptype</tag>
+<tag hard-break="segment">propvalue</tag>
+<tag hard-break="segment">propdesc</tag>
+<tag hard-break="segment">postreq</tag>
+<tag hard-break="segment">prereq</tag>
+<tag hard-break="segment">result</tag>
+<tag hard-break="segment">context</tag>
+<tag hard-break="segment">choice</tag>
+<tag hard-break="segment">stepxmp</tag>
+<tag hard-break="segment">cmd</tag>
+<tag hard-break="segment">info</tag>
+<tag hard-break="segment">stepresult</tag>
+<tag hard-break="segment">tutorialinfo</tag>
+<tag hard-break="segment">chdesc</tag>
+<tag hard-break="segment">chdechd</tag>
+<tag hard-break="segment">choption</tag>
+<tag hard-break="segment">choptionhd</tag>
+<tag hard-break="segment">alt</tag>
+<tag hard-break="segment">cite</tag>
+<tag hard-break="segment">desc</tag>
+<tag hard-break="segment">dd</tag>
+<tag hard-break="segment">ddhd</tag>
+<tag hard-break="segment">dt</tag>
+<tag hard-break="segment">dthd</tag>
+<tag attributes="alt" hard-break="segment">image</tag>
+<tag ctype="x-other" hard-break="inline">keyword</tag>
+<tag hard-break="segment">li</tag>
+<tag hard-break="segment" keep-format="yes">lines</tag>
+<tag hard-break="segment">lq</tag>
+<tag hard-break="segment">note</tag>
+<tag hard-break="segment">p</tag>
+<tag ctype="x-other" hard-break="inline">ph</tag>
+<tag hard-break="segment" keep-format="yes">pre</tag>
+<tag ctype="x-other" hard-break="inline">q</tag>
+<tag hard-break="segment">sli</tag>
+<tag ctype="x-other" hard-break="inline">xref</tag>
+<tag hard-break="segment">thead</tag>
+<tag hard-break="segment">stentry</tag>
+<tag hard-break="segment">entry</tag>
+<tag ctype="x-bold" hard-break="inline">b</tag>
+<tag ctype="x-italic" hard-break="inline">i</tag>
+<tag ctype="x-underlined" hard-break="inline">u</tag>
+<tag ctype="x-other" hard-break="inline">tt</tag>
+<tag ctype="x-other" hard-break="inline">sup</tag>
+<tag ctype="x-other" hard-break="inline">sub</tag>
+<tag ctype="x-other" hard-break="inline" keep-format="yes">codeph</tag>
+<tag hard-break="segment" keep-format="yes">codeblock</tag>
+<tag ctype="x-other" hard-break="inline">option</tag>
+<tag ctype="x-other" hard-break="inline">kwd</tag>
+<tag ctype="x-other" hard-break="inline">var</tag>
+<tag ctype="x-other" hard-break="inline">parmname</tag>
+<tag hard-break="segment" keep-format="yes">synph</tag>
+<tag ctype="x-other" hard-break="inline">oper</tag>
+<tag ctype="x-other" hard-break="inline">delim</tag>
+<tag ctype="x-other" hard-break="inline">sep</tag>
+<tag ctype="x-other" hard-break="inline">apiname</tag>
+<tag ctype="x-other" hard-break="inline">parml</tag>
+<tag ctype="x-other" hard-break="inline">pt</tag>
+<tag ctype="x-other" hard-break="inline">pd</tag>
+<tag hard-break="segment">groupseq</tag>
+<tag hard-break="segment">groupchoice</tag>
+<tag hard-break="segment">groupcomp</tag>
+<tag hard-break="segment">fragref</tag>
+<tag hard-break="segment">synnote</tag>
+<tag ctype="x-other" hard-break="inline">repsep</tag>
+<tag ctype="x-other" hard-break="inline">msgph</tag>
+<tag hard-break="segment" keep-format="yes">msgblock</tag>
+<tag ctype="x-other" hard-break="inline">msgnum</tag>
+<tag ctype="x-other" hard-break="inline">cmdname</tag>
+<tag ctype="x-other" hard-break="inline">varname</tag>
+<tag ctype="x-other" hard-break="inline">filepath</tag>
+<tag ctype="x-other" hard-break="inline">userinput</tag>
+<tag ctype="x-other" hard-break="inline">systemoutput</tag>
+<tag ctype="x-other" hard-break="inline">uicontrol</tag>
+<tag ctype="x-other" hard-break="inline">wintitle</tag>
+<tag ctype="x-other" hard-break="inline">menucascade</tag>
+<tag ctype="x-other" hard-break="inline">shortcut</tag>
+<tag hard-break="segment" keep-format="yes">screen</tag>
+<tag hard-break="segment">coords</tag>
+<tag ctype="x-other" hard-break="inline">draft-comment</tag>
+<tag ctype="x-other" hard-break="inline">fn</tag>
+<tag ctype="x-other" hard-break="inline">indexterm</tag>
+<tag ctype="x-other" hard-break="inline">indextermref</tag>
+<tag ctype="x-other" hard-break="inline">tm</tag>
+<tag hard-break="segment">author</tag>
+<tag hard-break="segment">brand</tag>
+<tag hard-break="segment">category</tag>
+<tag hard-break="segment">component</tag>
+<tag hard-break="segment">copyrholder</tag>
+<tag hard-break="segment">copyright</tag>
+<tag attributes="year" hard-break="segment">copyryear</tag>
+<tag attributes="date;golive;expiry" hard-break="segment">created</tag>
+<tag hard-break="segment">featnum</tag>
+<tag hard-break="segment">keywords</tag>
+<tag hard-break="segment">platform</tag>
+<tag hard-break="segment">prodname</tag>
+<tag hard-break="segment">prognum</tag>
+<tag hard-break="segment">publisher</tag>
+<tag attributes="modified;golive;expiry" hard-break="segment">revised</tag>
+<tag hard-break="segment">series</tag>
+<tag hard-break="segment">source</tag>
+<tag attributes="version;release;modification" hard-break="segment">vrm</tag>
+<tag hard-break="segment">linkinfo</tag>
+<tag hard-break="segment">linktext</tag>
+<tag hard-break="segment">itemgroup</tag>
+<tag ctype="x-other" hard-break="inline">state</tag>
+<tag ctype="x-other" hard-break="inline">term</tag>
+<tag attributes="title" hard-break="segment">map</tag>
+<tag attributes="navtitle" hard-break="segment">topichead</tag>
+</ini-file>

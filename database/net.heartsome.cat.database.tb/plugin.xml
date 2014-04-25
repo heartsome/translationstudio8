@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="net.heartsome.cat.ts.tb.match.extension">
+      <TbMatch
+            class="net.heartsome.cat.database.tb.match.TbMatch">
+      </TbMatch>
+   </extension>
+   <extension
+         point="net.heartsome.cat.ts.tb.importer.extension">
+      <TbImporter
+            class="net.heartsome.cat.database.tb.importer.TbImporter"></TbImporter>
+   </extension>
+
+</plugin>

@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Jarettable Plug-in
+Bundle-SymbolicName: de.jaret.util.ui.table
+Bundle-Version: 0.85.0.R8b_v20121203
+Bundle-ClassPath: .,
+ lib/datechooser-1.01.jar,
+ lib/jaretutil-0.32.jar
+Bundle-Vendor: jaret.de
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.jface,
+ org.eclipse.swt
+Export-Package: de.jaret.util.misc,
+ de.jaret.util.swt,
+ de.jaret.util.ui,
+ de.jaret.util.ui.table,
+ de.jaret.util.ui.table.editor,
+ de.jaret.util.ui.table.model,
+ de.jaret.util.ui.table.model.simple,
+ de.jaret.util.ui.table.print,
+ de.jaret.util.ui.table.renderer,
+ de.jaret.util.ui.table.strategies,
+ de.jaret.util.ui.table.util,
+ de.jaret.util.ui.table.util.action
+Bundle-RequiredExecutionEnvironment: J2SE-1.5

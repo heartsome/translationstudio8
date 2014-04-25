@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+         <menuContribution
+            allPopups="false"
+            locationURI="popup:net.heartsome.cat.common.ui.navigator.view#PopupMenu?after=group.lockRepeat">
+         <command
+               commandId="net.heartsome.cat.ts.lockrepeat.command.lockRepeatedSegment"
+               label="%menu.project.lockRepeatedSegment"
+               style="push">
+         </command>
+      </menuContribution>
+         <menuContribution
+               allPopups="false"
+               locationURI="menu:net.heartsome.cat.ts.menu.translation?after=net.heartsome.cat.ts.ui.xliffeditor.nattable.separator.lockRepeat">
+            <command
+                  commandId="net.heartsome.cat.ts.lockrepeat.command.lockRepeatedSegment"
+                  label="%menu.project.lockRepeatedSegment"
+                  style="push">
+            </command>
+         </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commandImages">
+      <image
+            commandId="net.heartsome.cat.ts.lockrepeat.command.lockRepeatedSegment"
+            icon="images/translate/locked-dup.png">
+      </image>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+         <key
+             commandId="net.heartsome.cat.ts.lockrepeat.command.lockRepeatedSegment"
+             contextId="org.eclipse.ui.contexts.window"
+             schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+             sequence="M1+M2+H">
+       </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+          <command
+            categoryId="org.eclipse.ui.category.project"
+            id="net.heartsome.cat.ts.lockrepeat.command.lockRepeatedSegment"
+            name="%command.lockRepeatedSegment">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+         <handler
+             class="net.heartsome.cat.ts.lockrepeat.handler.LockRepeatedSegmentHandler"
+             commandId="net.heartsome.cat.ts.lockrepeat.command.lockRepeatedSegment">
+          <enabledWhen>
+             <test
+                   property="navigatorPopup.projectOrXLIFF">
+             </test>
+          </enabledWhen>
+       </handler>
+   </extension>
+
+
+</plugin>

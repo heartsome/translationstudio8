@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cq:componentQuery xmlns:cq="http://www.eclipse.org/buckminster/CQuery-1.0" resourceMap="TS_TargetPlatform_dev.rmap">
+    <cq:rootRequest name="net.heartsome.cat.ts.targetplatformwithsourcecode.feature" componentType="eclipse.feature"/>
+    <cq:property key="target.arch" value="*"/>
+    <cq:property key="target.os" value="*"/>
+    <cq:property key="target.ws" value="*"/>
+    <cq:advisorNode namePattern="^net\.heartsome\.cat\..*"/>
+    <cq:advisorNode namePattern=".*" useTargetPlatform="false" useWorkspace="false"/>
+</cq:componentQuery>

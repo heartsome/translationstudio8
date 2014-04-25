@@ -1,0 +1,335 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: net.heartsome.cat.common.ui.navigator.resources;singleton:=true
+Eclipse-SourceReferences: scm:cvs:pserver:dev.eclipse.org:/cvsroot/ecl
+ ipse:org.eclipse.ui.navigator.resources;tag=I20110421-1800
+Require-Bundle: org.eclipse.ui.ide;bundle-version="[3.6.0,4.0.0)",
+ org.eclipse.core.resources;bundle-version="[3.6.0,4.0.0)",
+ org.eclipse.jface;bundle-version="[3.6.0,4.0.0)",
+ org.eclipse.ui;bundle-version="[3.6.0,4.0.0)",
+ org.eclipse.ui.navigator;bundle-version="[3.5.0,4.0.0)",
+ org.eclipse.core.runtime;bundle-version="[3.6.0,4.0.0)",
+ org.eclipse.ui.views.properties.tabbed;bundle-version="[3.5.0,4.0.0)",
+ org.eclipse.ui.workbench.texteditor;bundle-version="[3.6.0,4.0.0)",
+ org.eclipse.ltk.core.refactoring;bundle-version="3.5.200",
+ net.heartsome.xml;bundle-version="1.0.0",
+ net.heartsome.cat.common.core;bundle-version="1.0.0"
+Bundle-Activator: org.eclipse.ui.internal.navigator.resources.plugin.W
+ orkbenchNavigatorPlugin
+Export-Package: org.eclipse.ui.internal.navigator.resources;x-internal
+ :=true,org.eclipse.ui.internal.navigator.resources.actions;x-internal
+ :=true,org.eclipse.ui.internal.navigator.resources.plugin;x-internal:
+ =true,org.eclipse.ui.internal.navigator.resources.workbench;x-interna
+ l:=true,org.eclipse.ui.internal.navigator.workingsets;x-internal:=tru
+ e,org.eclipse.ui.navigator.resources
+Bundle-Version: 8.1.0.R8b_v20131113
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: Heartsome Technologies Ltd.
+Bundle-Name: Heartsome Common UI Nagivator Resources
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/PasteAction$
+ 1.class
+SHA1-Digest: iJ2C68ZhnWVps9Q6QDcGoTCJuiU=
+
+Name: org/eclipse/ui/internal/navigator/resources/plugin/messages.prop
+ erties
+SHA1-Digest: 2P0G22d/NLF5d028xy5cPNbCNoQ=
+
+Name: org/eclipse/ui/internal/navigator/resources/workbench/TabbedProp
+ ertySheetAdapterFactory.class
+SHA1-Digest: EP9WpizjIkk3511qv+iMPYvAWV8=
+
+Name: icons/full/eview16/resource_persp.gif
+SHA1-Digest: G39L7l6a0u47fgj7mvc+5otBYdw=
+
+Name: org/eclipse/ui/internal/navigator/resources/workbench/ResourceEx
+ tensionContentProvider$1.class
+SHA1-Digest: 3rfg20Xhs1Y7aiNpsgVAzVQvnuY=
+
+Name: org/eclipse/ui/navigator/resources/ResourceDropAdapterAssistant$
+ 1.class
+SHA1-Digest: 9iAiVzK4Zo1xzOljZaAbQ0Jurds=
+
+Name: org/eclipse/ui/internal/navigator/resources/workbench/ResourceEx
+ tensionContentProvider$3.class
+SHA1-Digest: yEI3IQEabroXoSLIwx5ri6NH68g=
+
+Name: org/eclipse/ui/navigator/resources/ResourceDropAdapterAssistant$
+ 3.class
+SHA1-Digest: TqDGc2nNyjDbiFXOVzIOxWamXgo=
+
+Name: org/eclipse/ui/internal/navigator/resources/workbench/TabbedProp
+ ertySheetProjectExplorerContributor.class
+SHA1-Digest: XuPWzxES8ggtDufEtPGn+HbIiZQ=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/CopyAction.c
+ lass
+SHA1-Digest: YcJIW3XhvcA6Gl1gyrlX8rCEbdI=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/RefactorActi
+ onGroup.class
+SHA1-Digest: RBlAV38MnngbyYTseyCHjoA6rsE=
+
+Name: org/eclipse/ui/internal/navigator/workingsets/WorkingSetSorter.c
+ lass
+SHA1-Digest: VXtwTC1ewUp12yE8gGeymzz/NQQ=
+
+Name: org/eclipse/ui/navigator/resources/ProjectExplorer.class
+SHA1-Digest: WZl//UeygMVuS3g5ofqVlIAyMMo=
+
+Name: icons/full/elcl16/collapseall.gif
+SHA1-Digest: X2SYkCGSP2jr+iOlYBLU19jEd4Y=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/WorkingSetRo
+ otModeActionGroup.class
+SHA1-Digest: 0y8z4By7jK5FEvWRWdIW1m+pCmo=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/RefactorActi
+ onGroup$1.class
+SHA1-Digest: 9TapiLsdvnYAdI2cW6WZ1cPTINE=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/PropertiesAc
+ tionProvider.class
+SHA1-Digest: ilVjkiqOHQYF+oh6sHO/4DOOz5g=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/WorkManageme
+ ntActionProvider.class
+SHA1-Digest: ABjTheEQKPIz8qyFHKE1UC9tWKg=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/ui/internal/navigator/resources/plugin/WorkbenchNavi
+ gatorPlugin.class
+SHA1-Digest: vpqfPnYfl4M164P2dHcmtDGVF7Y=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/ResourceMgmt
+ ActionProvider$1.class
+SHA1-Digest: yohFAfGqMlzAWaTG8Sz0LnkcPGQ=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/WorkingSetRo
+ otModeActionGroup$1.class
+SHA1-Digest: 9U7VCVnOBgAW0vbG257BVObwYBk=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/ResourceMgmt
+ ActionProvider$3.class
+SHA1-Digest: d7OJJ6cuelcncTpBmeCygxqFNuo=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/WorkingSetAc
+ tionProvider$1.class
+SHA1-Digest: wQ2TNLuHFY6lLysM+vM0Kd2N1hs=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/PropertiesAc
+ tionProvider$DelegateIAdaptable.class
+SHA1-Digest: wm6F0JqUL5A8TzjcBiLANz8upzI=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/GotoResource
+ Action.class
+SHA1-Digest: AdDm5z1xu8fNRKEbkr0ninSYKe4=
+
+Name: icons/full/ovr16/warning_co.gif
+SHA1-Digest: KmtINYlwTqc3cDLljZdq8gbw8jI=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/WorkingSetAc
+ tionProvider$3.class
+SHA1-Digest: jBpw98Eh7kkq78YGJSapAndpIzw=
+
+Name: org/eclipse/ui/internal/navigator/resources/plugin/NavigatorUIPl
+ uginImages.class
+SHA1-Digest: FaKmoruJbvZtqvoSz4TIvY3qRBc=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/WorkManageme
+ ntActionProvider$1.class
+SHA1-Digest: UTGffkMmiszpmLbu1aMh8lEQmtk=
+
+Name: icons/full/elcl16/filter_ps.gif
+SHA1-Digest: ngfJGJ/lz7Cm/kX5JfpR2rcfKXc=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/RefactorActi
+ onProvider.class
+SHA1-Digest: cW6J51yUni2b97ZzRx+QJaPI1pw=
+
+Name: org/eclipse/ui/internal/navigator/workingsets/WorkingSetsContent
+ Provider$WorkingSetHelper.class
+SHA1-Digest: gCdYXlkgI4PxQykM5HP5wHE19Ks=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/OpenActionPr
+ ovider.class
+SHA1-Digest: 9hg5yeKXTer4/JGoM+Zy3GlSn2s=
+
+Name: icons/full/obj16/workingsets.gif
+SHA1-Digest: xQY9zXthYel6C52blZuSdlhO8iQ=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/WorkingSetRo
+ otModeActionGroup$TopLevelContentAction.class
+SHA1-Digest: 1LPjIpxUlQYfJ/B3aBIQPFvxdmg=
+
+Name: org/eclipse/ui/internal/navigator/workingsets/WorkingSetsLabelPr
+ ovider.class
+SHA1-Digest: AlwqiPcsCB41XIwXDHs/jbnRKhU=
+
+Name: org/eclipse/ui/internal/navigator/resources/workbench/ResourceLi
+ nkHelper.class
+SHA1-Digest: hn2UZCfM0L1jq+EdVMFeZJEMtKs=
+
+Name: icons/full/clcl16/synced.gif
+SHA1-Digest: paTElv88mx9OZ5TanH1FW/poShg=
+
+Name: icons/full/elcl16/synced.gif
+SHA1-Digest: Ghj9SQaJ6vJj8hRCpmwiAfHF1uI=
+
+Name: org/eclipse/ui/navigator/resources/ResourceDropAdapterAssistant.
+ class
+SHA1-Digest: b27NYwhm95LhrraNYm4RJok8z4o=
+
+Name: org/eclipse/ui/internal/navigator/workingsets/WorkingSetsContent
+ Provider.class
+SHA1-Digest: zRcL3A2IgScvRfhJFa1g6viawuE=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/GotoResource
+ Dialog.class
+SHA1-Digest: 3UNWu/d7rkECZFqwOaJZxfjtVhw=
+
+Name: org/eclipse/ui/navigator/resources/GoIntoActionProvider.class
+SHA1-Digest: 6YXB4df+GlP2uilgO+n6hCWZl3w=
+
+Name: icons/full/ovr16/error_co.gif
+SHA1-Digest: P6tABf1xezsyBapSVbypjgTECpo=
+
+Name: org/eclipse/ui/navigator/resources/ResourceDragAdapterAssistant.
+ class
+SHA1-Digest: czJbX8IZfr9gseg4Fp2T9wL8o+M=
+
+Name: org/eclipse/ui/internal/navigator/resources/workbench/ResourceEx
+ tensionSorter.class
+SHA1-Digest: 2x2I9BeUi/IeQF545nkoEKHpgfE=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/EditActionGr
+ oup.class
+SHA1-Digest: Bg/wQ4RZL3aphDA2EQXVeYHWVmo=
+
+Name: org/eclipse/ui/internal/navigator/resources/workbench/ResourceEx
+ tensionContentProvider$2.class
+SHA1-Digest: lDv1TF3hKe6lzY8JumS8da945sY=
+
+Name: org/eclipse/ui/navigator/resources/ResourceDropAdapterAssistant$
+ 2.class
+SHA1-Digest: GhQJ7rCTdZzXnQYmbDjI1/z0Jmc=
+
+Name: org/eclipse/ui/internal/navigator/workingsets/WorkingSetsContent
+ Provider$1.class
+SHA1-Digest: 8LXsVO4EY1lUqJ8UypfC4DHZFPM=
+
+Name: plugin.properties
+SHA1-Digest: bCiJYSsmflU9BqOKdX4uXHIOazw=
+
+Name: org/eclipse/ui/navigator/resources/ResourceDropAdapterAssistant$
+ 4.class
+SHA1-Digest: 0ss5qPHOL6yK7tQUgyILF1M4uzE=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/GotoActionPr
+ ovider.class
+SHA1-Digest: Pj4QD8iL3lIMJmvSs7UkkjwdByM=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/NewActionPro
+ vider.class
+SHA1-Digest: jAClg56pnzi44C4uKxCrc5YfyIQ=
+
+Name: icons/full/cview16/filenav_nav.gif
+SHA1-Digest: AJrFOHo7XqvOv56cxspAgNla6Hg=
+
+Name: org/eclipse/ui/internal/navigator/resources/ResourceToItemsMappe
+ r.class
+SHA1-Digest: dfzoHXz5Go5ktCbdkon7D8JdAEI=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/EditActionGr
+ oup$1.class
+SHA1-Digest: edI6VcL6lZuqAlSE8yWMmeAfrMs=
+
+Name: plugin.xml
+SHA1-Digest: uSk5fNzRNez4zuENC6IZBA6kLXc=
+
+Name: icons/full/clcl16/collapseall.gif
+SHA1-Digest: 4rgrWtP+1dW3HKk8Aiq/qA8kou4=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/ResourceMgmt
+ ActionProvider.class
+SHA1-Digest: 3tcfzYiACKQ4je20gfU57lvzH+E=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/WorkingSetAc
+ tionProvider.class
+SHA1-Digest: X2lerO8CHw3gOVUi9KoOl+JA2JY=
+
+Name: .api_description
+SHA1-Digest: 3U6rY1BOYHxeI4Z4pfFwUd+HF78=
+
+Name: about.html
+SHA1-Digest: ejOZra0kypGLQQ2bJtGTX+LI8tU=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/ResourceMgmt
+ ActionProvider$2.class
+SHA1-Digest: E1X7lYMP7CBSkaE5apa292uwByE=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/WorkingSetAc
+ tionProvider$WorkingSetManagerListener.class
+SHA1-Digest: bZgspyPIC4gkbtzHvxmZTHUfsCk=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/WorkingSetRo
+ otModeActionGroup$2.class
+SHA1-Digest: RLoh4hDJjFL8JxFUQvru4U/aa9c=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/ResourceMgmt
+ ActionProvider$4.class
+SHA1-Digest: FZGH9bv7BKMv1sS5y1KfQJhYTPk=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/WorkingSetAc
+ tionProvider$2.class
+SHA1-Digest: 9V/C8igvDKM818Urt7aivIvgeu4=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/PropertiesAc
+ tionProvider$1.class
+SHA1-Digest: fWGJB0cwSsHSUnr4L6zeIXphjYM=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/WorkingSetAc
+ tionProvider$4.class
+SHA1-Digest: WAAN003XpLJKhoBiVgnVhb1kMHg=
+
+Name: org/eclipse/ui/internal/navigator/resources/workbench/TabbedProp
+ ertySheetTitleProvider.class
+SHA1-Digest: TnW88rMAMN1D+frYMno9Ohbt9Go=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/UndoRedoActi
+ onProvider.class
+SHA1-Digest: OKdPWWhhXYkmncSvAohgZrUUw4c=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/PortingActio
+ nProvider.class
+SHA1-Digest: 2D1o2X+U5Cpa5vEYZmgjLbSfO4I=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/PasteAction.
+ class
+SHA1-Digest: ucFmbTOu+QIGm2V96G6uVDlSDt0=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/PropertiesAc
+ tionProvider$DelegateSelectionProvider.class
+SHA1-Digest: 8QrviE5guyMRseIfnzgsXL2iZUw=
+
+Name: org/eclipse/ui/internal/navigator/resources/actions/EditActionPr
+ ovider.class
+SHA1-Digest: yUJpHoIvOXyHOVA/Ijfh79Z1rDo=
+
+Name: org/eclipse/ui/internal/navigator/resources/workbench/ResourceEx
+ tensionLabelProvider.class
+SHA1-Digest: VtQuzb4d7AVMFbeMr6c5RBVSlVo=
+
+Name: org/eclipse/ui/internal/navigator/resources/plugin/WorkbenchNavi
+ gatorMessages.class
+SHA1-Digest: W2h6mHLCLPiJn2ET1MmwN4mC9CQ=
+
+Name: org/eclipse/ui/internal/navigator/resources/workbench/ResourceEx
+ tensionContentProvider.class
+SHA1-Digest: 2731iNLGIpF7Jpe2V71uIQSfI8M=
+Import-Package: net.heartsome.cat.common.util, 
+ com.ibm.icu.text

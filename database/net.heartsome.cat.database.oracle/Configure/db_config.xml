@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbtype>
+	<!-- 参数配置 -->
+	<driver>oracle.jdbc.driver.OracleDriver</driver>
+	<url>jdbc:oracle:thin:@//__SERVER_NAME__:__PORT_NUMBER__/__INSTANCE__</url>
+	<default>
+		<property name="server">localhost</property>
+		<property name="type">Oracle</property>
+		<property name="port">1521</property>
+	</default>
+	<config-property>
+		<property name="user">__USER__</property>
+		<property name="password">__PASSWORD__</property>
+	</config-property>
+	<create-database/>
+	<drop-database/>
+	
+	<!-- 系统库匹配 -->	
+	<create-hssystables>
+		<step>
+			CREATE TABLE HSCATSYSDB
+			(
+			   DBNAME               varchar(150) not null,
+			   QUALITY              char(1) not null,
+			   USERS                varchar(4000),
+			   TYPE				    integer not null,
+			   primary key (DBNAME)
+			)
+		</step>
+	</create-hssystables>
+	<insert-db>INSERT INTO HSCATSYSDB (DBNAME,QUALITY,TYPE) VALUES (?,?,?)</insert-db>
+	<remove-db>DELETE FROM HSCATSYSDB WHERE DBNAME=?</remove-db>
+	<get-dblist>SELECT DBNAME, QUALITY, USERS FROM HSCATSYSDB WHERE TYPE=?</get-dblist>
+	
+	<!-- 记忆库／术语库表结构匹配 -->
+	<create-tables>
+		<step>
+			CREATE SEQUENCE __DATABASE_NAME___SEQ
+					INCREMENT BY 1
+					START WITH 1 
+					NOMAXVALUE
+					NOCYCLE
+					NOCACHE
+		</step>
+		<!-- 创建TMX部分相关的表 -->
+		<step>
+		CREATE TABLE __DATABASE_NAME___MHEADER
+		(
+			MHPKID               integer not null,
+			CREATIONTOOL         varchar2(200),
+			CTVERSION            varchar2(200),
+			TMF                  varchar2(255),
+			SRCLANG              varchar2(6),
+			ADMINLANG            varchar2(6),
+			DATATYPE             varchar2(10),
+			SEGTYPE              varchar2(10),
+			CREATIONID           varchar2(40),
+			CREATIONDATE         varchar2(28),
+			CHANGEID             varchar2(40),
+			CHANGEDATE           varchar2(28),
+			ENCODING             varchar2(15),
+			primary key (MHPKID)
+		)
+		</step>
+		<step>
+		CREATE TABLE __DATABASE_NAME___MHEADERNODE
+		(
+			MHNPKID              integer not null,
+			MHPKID               integer not null,
+			NNAME                varchar2(100) not null,
+			NTYPE                char(1) not null,
+			CONTENT              varchar2(4000) not null,
+			primary key (MHNPKID)
+		)
+		</step>
+		<step>
+		create table __DATABASE_NAME___MTU
+		(
+		   MTUPKID              integer not null,
+		   MHPKID               integer not null,
+		   TUID                 varchar2(100),
+		   CREATIONID           varchar2(40),
+		   CREATIONDATE         date,
+		   CHANGEID             varchar2(40),
+		   CHANGEDATE           date,
+		   CREATIONTOOL         varchar2(200),
+		   CTVERSION            varchar2(200),
+		   CLIENT               varchar2(255),
+		   PROJECTREF           varchar2(255),
+		   JOBREF               varchar2(255),
+		   primary key (MTUPKID)
+		)
+		</step>
+		<step>
+		CREATE TABLE __DATABASE_NAME___LANG
+		(
+		   LANGCODE             varchar(6) not null,
+		   primary key (LANGCODE)
+		)
+		</step>
+		<step>
+		CREATE TABLE __DATABASE_NAME___MPROP
+		(
+		   MPPKID               integer not null,
+		   PARENTNAME           varchar2(30) not null,
+		   PARENTID             integer not null,
+		   PNAME                varchar2(100) not null,
+		   LANG                 varchar2(6),
+		   ENCODING             varchar2(15),
+		   CONTENT              clob not null,
+		   primary key (MPPKID)
+		)
+		</step>
+
+		<step>
+		CREATE TABLE __DATABASE_NAME___MEXTRA
+		(
+		   MEPKID               integer not null,
+		   PARENTNAME           varchar2(30) not null,
+		   PARENTID             integer not null,
+		   NTYPE                char(1) not null,
+		   NNAME                varchar2(100) not null,
+		   CONTENT              varchar2(4000) not null,
+		   primary key (MEPKID)
+		)
+		</step>
+		<step>
+		CREATE TABLE __DATABASE_NAME___MNOTE
+		(
+		   MNPKID               integer not null,
+		   PARENTNAME           varchar2(30) not null,
+		   PARENTID             integer not null,
+		   CONTENT              varchar2(4000) not null,
+		   CREATIONID           varchar2(40),
+		   CREATIONDATE         varchar2(28),
+		   CHANGEID             varchar2(40),
+		   CHANGEDATE           varchar2(28),
+		   ENCODING             varchar2(15),
+		   LANG                 varchar2(6),
+		   primary key (MNPKID)
+		)
+		</step>
+		<step>
+		CREATE TABLE __DATABASE_NAME___TEXTDATA
+		(
+		   TPKID                integer not null,
+		   TYPE                 char(1) not null,
+		   GROUPID              integer not null,
+		   HASH                 integer not null,
+		   PURE                 clob,
+		   CONTENT              clob,
+		   LANG                 varchar2(6) not null,
+		   PRECONTEXT           varchar2(100),
+		   NEXTCONTEXT          varchar2(100),
+		   primary key (TPKID)
+		)
+		</step>
+		<!-- 创建TMX相关表结束 -->
+		
+		<!-- 创建TBX相关表 存储TBX共用TEXTDATA表，参考E-R模型-->
+		<step>
+		create table __DATABASE_NAME___BATTRIBUTE
+		(
+			BAPKID               integer not null,
+			BMTHPKID             integer not null,
+			ANAME                varchar2(100) not null,
+			AVALUE               varchar2(255) not null,
+			PARENTNAME           varchar2(100) not null,
+			primary key (BAPKID)
+		)
+		</step>
+		<step>
+		create table __DATABASE_NAME___BMARTIFHEADER
+		(
+			BMTHPKID             integer not null,
+			HID                  varchar2(100),
+			CONTENT              varchar2(4000) not null,
+			primary key (BMTHPKID)
+		)
+		</step>
+		<step>
+		create table __DATABASE_NAME___BREFOBJECTLIST
+		(
+		   BROLPKID             integer not null,
+		   BMTHPKID             integer not null,
+		   ROLID                varchar2(100),
+		   CONTENT              varchar2(4000) not null,
+		   primary key (BROLPKID)
+		)
+		</step>
+		<step>
+		create table __DATABASE_NAME___BTERMENTRY
+		(
+		   BTEPKID              integer not null,
+		   BMTHPKID             integer not null,
+		   CID                  varchar2(100),
+		   CONTENT              varchar2(4000) not null,
+		   primary key (BTEPKID)
+		)
+		</step>	
+		<step>
+		create table __DATABASE_NAME___BNODE
+		(
+		   NPKID                integer not null,
+		   PARENTPKID           integer not null,
+		   PARENTNAME           varchar2(100) not null,
+		   NTYPE                char not null,
+		   NNAME                varchar2(100) not null,
+		   NID                  varchar2(100),
+		   CONTENT              varchar2(4000) not null,
+		   primary key (NPKID)
+		)
+		</step>	
+
+	</create-tables>
+
+	<!-- 创建索引 -->
+	<create-index>
+		<step>CREATE INDEX __DATABASE_NAME___TD ON __DATABASE_NAME___TEXTDATA (GROUPID)</step>
+		<step>CREATE INDEX __DATABASE_NAME___TH ON __DATABASE_NAME___TEXTDATA (HASH)</step>
+		<step>CREATE INDEX __DATABASE_NAME___MP ON __DATABASE_NAME___MPROP (PARENTID)</step>
+		<step>CREATE INDEX __DATABASE_NAME___ME ON __DATABASE_NAME___MEXTRA (PARENTID)</step>
+		<step>CREATE INDEX __DATABASE_NAME___MN ON __DATABASE_NAME___MNOTE (PARENTID)</step>
+	</create-index>
+		
+
+	<!-- Matrix_Lang表相关SQL	 -->
+	<matrix-operation>
+		<create-table>
+			<step>
+			create table __DATABASE_NAME___MATRIX___LANG__
+				(
+				   MPKID                integer not null,
+				   TPKID                integer not null,
+				   NGRAM                integer not null,
+				   SEGSIZE              integer not null,
+				   primary key (MPKID)				  
+				)
+			</step>
+		</create-table>
+		
+		<create-index>
+			<step>CREATE INDEX IDX___DATABASE_NAME_____LANG___NGRAM ON __DATABASE_NAME___MATRIX___LANG__ (NGRAM)</step>
+			<step>CREATE INDEX IDX___DATABASE_NAME_____LANG___SEGSIZE ON __DATABASE_NAME___MATRIX___LANG__ (SEGSIZE)</step>
+		</create-index>
+		
+		<insert>
+			INSERT INTO __DATABASE_NAME___MATRIX___LANG__
+			(MPKID,TPKID,NGRAM,SEGSIZE)
+			VALUES (__DATABASE_NAME___SEQ.NEXTVAL,?,?,?)
+		</insert>
+		<delete>
+			DELETE FROM __DATABASE_NAME___MATRIX___LANG__
+			WHERE __WHERE__
+		</delete>
+		<search>
+			<!--  SELECT TPKID FROM __DATABASE_NAME___MATRIX___LANG__ 
+			WHERE  SEGSIZE &gt;=? AND SEGSIZE &lt;=? AND NGRAM IN (__SET__)-->
+			SELECT TPKID FROM __DATABASE_NAME___MATRIX___LANG__ 
+			WHERE  SEGSIZE &gt;=? AND SEGSIZE &lt;=? AND NGRAM IN (__SET__) 
+			GROUP BY (TPKID) HAVING COUNT(TPKID) BETWEEN ? AND ?
+		</search>		
+	</matrix-operation>
+	
+	<!-- 操作数据库相关SQL -->
+	<operate-db>
+		<getTMMatch1>
+			SELECT B.GROUPID, LANG, PURE, CONTENT, PRECONTEXT,NEXTCONTEXT, TUID, CREATIONID, CREATIONDATE, 
+				CHANGEID, CHANGEDATE, PROJECTREF, JOBREF, CLIENT 
+			FROM 	
+				(SELECT GROUPID FROM __DATABASE_NAME___TEXTDATA WHERE __WHERE__) A	
+			LEFT JOIN __DATABASE_NAME___TEXTDATA B ON A.GROUPID = B.GROUPID 
+			LEFT JOIN __DATABASE_NAME___MTU C ON C.MTUPKID=A.GROUPID 
+			WHERE B.TYPE='M' AND B.LANG=? OR B.LANG=? 
+		</getTMMatch1>
+		<getTMMatch>
+			SELECT B.GROUPID, LANG, PURE, CONTENT, PRECONTEXT,NEXTCONTEXT, TUID, CREATIONID, CREATIONDATE, 
+				CHANGEID, CHANGEDATE, PROJECTREF, JOBREF, CLIENT 
+			FROM 	
+				(SELECT GROUPID FROM __DATABASE_NAME___TEXTDATA WHERE TPKID=?) A	
+			LEFT JOIN __DATABASE_NAME___TEXTDATA B ON A.GROUPID = B.GROUPID 
+			LEFT JOIN __DATABASE_NAME___MTU C ON C.MTUPKID=A.GROUPID 
+			WHERE B.TYPE='M' AND B.LANG=? OR B.LANG=? 
+		</getTMMatch>
+		<insert-mheader>		
+		BEGIN
+			INSERT INTO __DATABASE_NAME___MHEADER 
+				(MHPKID, CREATIONTOOL, CTVERSION, TMF, SRCLANG, ADMINLANG, DATATYPE, SEGTYPE, CREATIONID, CREATIONDATE, CHANGEID, CHANGEDATE, ENCODING) 
+			VALUES (__DATABASE_NAME___SEQ.NEXTVAL, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+			RETURNING MHPKID INTO ?;
+		END;
+		</insert-mheader>
+		<insert-mheadernode>
+		INSERT INTO __DATABASE_NAME___MHEADERNODE
+            (MHNPKID,MHPKID, NNAME, NTYPE, CONTENT)
+		VALUES (__DATABASE_NAME___SEQ.NEXTVAL,?, ?, ?, ?)
+		</insert-mheadernode>
+		<insert-tu>
+		BEGIN
+			INSERT INTO __DATABASE_NAME___MTU	
+				(MTUPKID, MHPKID, TUID, CREATIONID, CREATIONDATE, CHANGEID, CHANGEDATE, CREATIONTOOL, CTVERSION, CLIENT, PROJECTREF, JOBREF)
+			VALUES(__DATABASE_NAME___SEQ.NEXTVAL,?,?,?,?,?,?,?,?,?,?,?) 
+			RETURNING MTUPKID INTO ?;
+		END;	
+		</insert-tu>
+		<insert-tmxextra>
+		INSERT INTO __DATABASE_NAME___MEXTRA
+            (MEPKID, PARENTNAME, PARENTID, NTYPE, NNAME, CONTENT)
+		VALUES (__DATABASE_NAME___SEQ.NEXTVAL, ?, ?, ?, ?, ?)
+		</insert-tmxextra>
+		<insert-tmxprops>
+		INSERT INTO __DATABASE_NAME___MPROP
+            (MPPKID, PARENTNAME, PARENTID, PNAME, LANG, ENCODING, CONTENT)
+		VALUES (__DATABASE_NAME___SEQ.NEXTVAL, ?, ?, ?, ?, ?, ?)
+		</insert-tmxprops>
+		<insert-tmxnotes>
+		INSERT INTO __DATABASE_NAME___MNOTE
+            (MNPKID, PARENTNAME, PARENTID, CONTENT, CREATIONID, CREATIONDATE, CHANGEID, CHANGEDATE, ENCODING, LANG)
+		VALUES (__DATABASE_NAME___SEQ.NEXTVAL, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+		</insert-tmxnotes>
+		<insert-lang>
+		INSERT INTO __DATABASE_NAME___LANG
+            (LANGCODE)
+		VALUES (?)
+		</insert-lang>
+		<insert-textdata>
+		BEGIN
+			INSERT INTO __DATABASE_NAME___TEXTDATA
+	            (TPKID, TYPE, GROUPID, HASH, PURE, CONTENT, LANG, PRECONTEXT, NEXTCONTEXT)
+			VALUES (__DATABASE_NAME___SEQ.NEXTVAL, ?, ?, ?, ?, ?, ?, ?, ?) 
+			RETURNING TPKID INTO ?;
+		END;	
+		</insert-textdata>
+		
+		<get-lang-bycode>
+			SELECT LANGCODE FROM __DATABASE_NAME___LANG WHERE LANGCODE=?
+		</get-lang-bycode>
+		<get-langs>
+			SELECT LANGCODE FROM __DATABASE_NAME___LANG
+		</get-langs>
+				<get-textdataid>
+			SELECT TPKID FROM __DATABASE_NAME___TEXTDATA WHERE HASH=? AND LANG=?
+			AND TYPE=?
+		</get-textdataid>
+		<get-textdataid-bygroupidlang>
+			SELECT TPKID, CONTENT FROM __DATABASE_NAME___TEXTDATA WHERE GROUPID=? AND TYPE=? AND LANG=?
+		</get-textdataid-bygroupidlang>	
+		<get-textdataid-bycontext>
+			SELECT TPKID FROM __DATABASE_NAME___TEXTDATA WHERE HASH=? AND
+			PRECONTEXT=? AND NEXTCONTEXT=? AND LANG=? AND TYPE=?
+		</get-textdataid-bycontext>
+		<get-textdataid-bylang>
+			SELECT TPKID FROM __DATABASE_NAME___TEXTDATA WHERE TYPE=? AND LANG=?
+		</get-textdataid-bylang>
+		<get-textdata-bygroupid>
+			SELECT 
+				TPKID, PURE, CONTENT, LANG, PRECONTEXT, NEXTCONTEXT
+			FROM __DATABASE_NAME___TEXTDATA 
+			WHERE TYPE=? AND GROUPID= ? AND LANG=?
+		</get-textdata-bygroupid>
+		
+		<get-textdatagroupid-bytextid>
+			SELECT GROUPID FROM __DATABASE_NAME___TEXTDATA WHERE
+			TPKID=? 
+		</get-textdatagroupid-bytextid>
+		<get-tu-bytupkid>
+			SELECT
+			MTUPKID,TUID,CREATIONID,CREATIONDATE,CHANGEID,CHANGEDATE,CREATIONTOOL,CTVERSION,CLIENT,PROJECTREF,JOBREF,MHPKID
+			FROM __DATABASE_NAME___MTU WHERE MTUPKID=?
+		</get-tu-bytupkid>
+		<get-tu-bytupkids>
+			SELECT 
+			  MTUPKID, TUID, CREATIONID, CREATIONDATE, CHANGEID, CHANGEDATE, CREATIONTOOL, CTVERSION, CLIENT, PROJECTREF, JOBREF, MHPKID  
+			FROM
+			   (SELECT DISTINCT GROUPID 
+			  	FROM
+			    	__DATABASE_NAME___TEXTDATA 
+			 	WHERE TPKID IN (__SET__)) A 
+			  	LEFT JOIN __DATABASE_NAME___MTU B
+			 	ON B.MTUPKID=A.GROUPID 		
+		</get-tu-bytupkids>
+		<get-tuextra-bytuid>
+			SELECT  MEPKID, NTYPE, NNAME, CONTENT, PARENTNAME, PARENTID 
+			FROM __DATABASE_NAME___MEXTRA WHERE PARENTID=? AND PARENTNAME=? AND NTYPE=?			
+		</get-tuextra-bytuid>		
+		<get-tunote-bytuid>
+			SELECT 
+			  MNPKID, PARENTNAME, PARENTID, CONTENT, CREATIONID, CREATIONDATE, CHANGEID, CHANGEDATE, ENCODING, LANG 
+			FROM
+			  __DATABASE_NAME___MNOTE WHERE PARENTNAME=? AND PARENTID = ? 
+		</get-tunote-bytuid>		
+		<get-tuinfo-bytuvinfo>
+		SELECT MTUPKID, TUID ,CHANGEID, CHANGEDATE, PRECONTEXT, NEXTCONTEXT FROM __DATABASE_NAME___MTU 
+		INNER JOIN __DATABASE_NAME___TEXTDATA ON MTUPKID = GROUPID AND HASH = ? AND LANG = ? AND TYPE = ?    	
+		</get-tuinfo-bytuvinfo>
+		<get-tuinfo-bytuvinfo-withcontext>
+			SELECT 
+			  MTUPKID, TUID, CREATIONID, CREATIONDATE, CHANGEID, CHANGEDATE, CREATIONTOOL, CTVERSION, CLIENT, PROJECTREF, JOBREF, MHPKID 
+			FROM
+			  __DATABASE_NAME___MTU 
+			  INNER JOIN __DATABASE_NAME___TEXTDATA 
+			    ON MTUPKID = GROUPID 
+			    AND HASH = ? AND LANG = ? AND TYPE = ? AND PRECONTEXT=? AND NEXTCONTEXT=?		   	
+		</get-tuinfo-bytuvinfo-withcontext>
+		
+		<get-mporp-byparentid>
+		SELECT 
+		  MPPKID, PARENTNAME, PARENTID, PNAME, LANG, ENCODING, CONTENT 
+		FROM
+		  __DATABASE_NAME___MPROP WHERE PARENTID=? AND PARENTNAME=? 		
+		</get-mporp-byparentid>
+		<get-mnote-byparentid>
+		SELECT CONTENT FROM  __DATABASE_NAME___MNOTE WHERE PARENTID=? AND PARENTNAME=? 
+		</get-mnote-byparentid>
+		<update-tu>
+		UPDATE __DATABASE_NAME___MTU SET
+			CREATIONID=?,CREATIONDATE=?,CHANGEID=?,CHANGEDATE=?,CREATIONTOOL=?,CTVERSION=?,CLIENT=?,PROJECTREF=?,JOBREF=?,TUID=? 
+			WHERE MTUPKID=?
+		</update-tu>
+		<uppdateTuChangeInfo-by-MTUPKID>
+		UPDATE __DATABASE_NAME___MTU SET TUID=?, CHANGEID=?, CHANGEDATE=?	WHERE MTUPKID=?
+		</uppdateTuChangeInfo-by-MTUPKID>
+		<updateContext-by-gruopid-lang>
+		UPDATE __DATABASE_NAME___TEXTDATA SET PRECONTEXT = ? , NEXTCONTEXT = ? WHERE GROUPID = ? AND LANG = ?
+		</updateContext-by-gruopid-lang>
+		<update-tuextra>
+			UPDATE __DATABASE_NAME___MEXTRA
+			SET CONTENT=?
+			WHERE MEPKID=?
+		</update-tuextra>
+		<update-mprop>
+			UPDATE __DATABASE_NAME___MPROP
+			SET CONTENT=?
+			WHERE MPPKID=?
+		</update-mprop>
+				
+		<delete-textdata-bytextdataid>
+			DELETE FROM __DATABASE_NAME___TEXTDATA WHERE __WHERE__ 
+		</delete-textdata-bytextdataid>
+		<delete-tuvprops>
+			DELETE FROM __DATABASE_NAME___MPROP WHERE __WHERE__ 
+		</delete-tuvprops>
+		<delete-tuvnotes>
+			DELETE FROM __DATABASE_NAME___MNOTE WHERE __WHERE__ 
+		</delete-tuvnotes>
+		<delete-tuvextra>
+			DELETE FROM __DATABASE_NAME___MEXTRA WHERE __WHERE__ 
+		</delete-tuvextra>
+		
+		<!-- ===========================TBX部分（开始）===================================================== -->
+		<insert-bmartifheader>
+		BEGIN
+			INSERT INTO __DATABASE_NAME___BMARTIFHEADER 
+				(BMTHPKID, HID, CONTENT) 
+			VALUES
+			  (__DATABASE_NAME___SEQ.NEXTVAL, ?, ?) 
+			RETURNING BMTHPKID INTO ?;
+		END;	  
+		</insert-bmartifheader>
+		<insert-btermentry>
+		BEGIN
+			INSERT INTO __DATABASE_NAME___BTERMENTRY
+	            (BTEPKID, BMTHPKID, CID, CONTENT)
+			VALUES (__DATABASE_NAME___SEQ.NEXTVAL, ?, ?, ?) 
+			RETURNING BTEPKID INTO ?;
+		END;
+		</insert-btermentry>
+		<insert-brefobjectlist>
+		INSERT INTO __DATABASE_NAME___BREFOBJECTLIST
+            (BROLPKID, BMTHPKID, ROLID, CONTENT) 
+		VALUES ( __DATABASE_NAME___SEQ.NEXTVAL, ?, ?, ?)
+		</insert-brefobjectlist>
+		<insert-battribute>
+		INSERT INTO __DATABASE_NAME___BATTRIBUTE
+            (BAPKID, BMTHPKID, ANAME, AVALUE, PARENTNAME)
+		VALUES (__DATABASE_NAME___SEQ.NEXTVAL, ?, ?, ?, ?)
+		</insert-battribute>
+		<insert-bnote>
+		INSERT INTO __DATABASE_NAME___BNODE 
+			(NPKID, PARENTPKID, PARENTNAME, NTYPE, NNAME, NID, CONTENT) 
+		VALUES  (__DATABASE_NAME___SEQ.NEXTVAL,?, ?, ?, ?, ?, ?) 
+		</insert-bnote>
+		
+		<getTermEntryId-byContent>
+		SELECT BTEPKID FROM __DATABASE_NAME___BTERMENTRY WHERE 
+			CONTENT =? 
+		</getTermEntryId-byContent>
+		<getTermEntrys-bypks>
+		SELECT BTEPKID, BMTHPKID, CID, CONTENT
+			FROM __DATABASE_NAME___BTERMENTRY WHERE BTEPKID=?
+		</getTermEntrys-bypks>
+		<getTermEntryContent-bypk>
+		SELECT CONTENT
+			FROM __DATABASE_NAME___BTERMENTRY WHERE BTEPKID=?
+		</getTermEntryContent-bypk>		
+		<getTermEntry-bypk>
+		SELECT BTEPKID, BMTHPKID, CID, CONTENT
+		FROM __DATABASE_NAME___BTERMENTRY WHERE BTEPKID=?
+		</getTermEntry-bypk>
+		<getBnode-byParent>
+		SELECT NPKID, PARENTPKID, PARENTNAME, NTYPE, NNAME, NID, CONTENT 
+			FROM __DATABASE_NAME___BNODE WHERE 1=1 __WHERE__
+		</getBnode-byParent>
+		
+		<upateTermEntry-bypk>
+		UPDATE __DATABASE_NAME___BTERMENTRY
+			SET CONTENT = ?
+		WHERE BTEPKID = ?
+		</upateTermEntry-bypk>		
+		
+		<delete-textData-bygoupid>
+		DELETE FROM __DATABASE_NAME___TEXTDATA WHERE GROUPID=? AND LANG =? AND TYPE='B'
+		</delete-textData-bygoupid>
+		<delete-bnode-bypk>
+		DELETE FROM __DATABASE_NAME___BNODE WHERE NPKID=?
+		</delete-bnode-bypk>
+		<getTermEntryLangByPk>
+		SELECT DISTINCT(LANG) FROM __DATABASE_NAME___TEXTDATA WHERE GROUPID = ?
+		</getTermEntryLangByPk>
+		<!-- ===========================TBX部分（结束）===================================================== -->	
+		
+		<!-- ===========================TMX导出（开始）===================================================== -->
+		<getTuPkByFilter>
+		SELECT  DISTINCT(MTUPKID) FROM __DATABASE_NAME___MTU A 
+			LEFT JOIN __DATABASE_NAME___MNOTE B ON B.PARENTID=A.MTUPKID 
+			LEFT JOIN __DATABASE_NAME___TEXTDATA C ON C.GROUPID = A.MTUPKID
+		WHERE 1=1 __where__
+		</getTuPkByFilter>
+		<getTMXHeaderId>
+		SELECT  DISTINCT(MHPKID) FROM __DATABASE_NAME___MTU A 
+			LEFT JOIN __DATABASE_NAME___MNOTE B ON B.PARENTID=A.MTUPKID 
+			LEFT JOIN __DATABASE_NAME___TEXTDATA C ON C.GROUPID = A.MTUPKID
+		WHERE 1=1 __where__
+		</getTMXHeaderId>		
+		<!-- ===========================TMX导出（结束）===================================================== -->	
+		<getTermEntryPkByFilter>
+		SELECT	DISTINCT(GROUPID) FROM __DATABASE_NAME___TEXTDATA WHERE TYPE='B' AND (__langwhere__) __where__
+		</getTermEntryPkByFilter>
+		
+		<drop-1>
+			DROP TABLE __DATABASE_NAME___BATTRIBUTE
+		</drop-1>
+		<drop-2>
+			DROP TABLE __DATABASE_NAME___BMARTIFHEADER
+		</drop-2>
+		<drop-3>
+			DROP TABLE __DATABASE_NAME___BREFOBJECTLIST
+		</drop-3>
+		<drop-4>
+			DROP TABLE __DATABASE_NAME___BTERMENTRY
+		</drop-4>
+		<drop-5>
+			DROP TABLE __DATABASE_NAME___LANG
+		</drop-5>
+		<drop-6>
+			DROP TABLE __DATABASE_NAME___MEXTRA
+		</drop-6>
+		<drop-7>
+			DROP TABLE __DATABASE_NAME___MHEADER
+		</drop-7>
+		<drop-8>
+			DROP TABLE __DATABASE_NAME___MHEADERNODE
+		</drop-8>
+		<drop-9>
+			DROP TABLE __DATABASE_NAME___MNOTE
+		</drop-9>
+		<drop-10>
+			DROP TABLE __DATABASE_NAME___MPROP
+		</drop-10>
+		<drop-11>
+			DROP TABLE __DATABASE_NAME___MTU
+		</drop-11>
+		<drop-12>
+			DROP TABLE __DATABASE_NAME___TEXTDATA
+		</drop-12>		
+		<drop-13>
+			DROP SEQUENCE __DATABASE_NAME___SEQ
+		</drop-13>
+		<drop-14>
+			DROP TABLE __DATABASE_NAME___BNODE
+		</drop-14>
+		<drop-matrix>
+			DROP TABLE __DATABASE_NAME___MATRIX___LANG__
+		</drop-matrix>		
+		<search-Corcondance>
+		<!-- 相关搜索 
+		SELECT * FROM (SELECT C.MTUPKID TUID,C.CLIENT,C.PROJECTREF,C.JOBREF,C.CREATIONID,C.CREATIONDATE, C.CHANGEID, C.CHANGEDATE,D.MPPKID,B.LANG,__IGNORE_MARK__ 
+FROM (SELECT GROUPID FROM __DATABASE_NAME___TEXTDATA WHERE TYPE = 'M' __CONDITION__) A 
+LEFT JOIN __DATABASE_NAME___TEXTDATA B ON A.GROUPID = B.GROUPID AND B.TYPE='M' __LANGUAGE_LIST__
+LEFT JOIN __DATABASE_NAME___MTU C ON A.GROUPID = C.MTUPKID 
+LEFT JOIN __DATABASE_NAME___MPROP D ON A.GROUPID = D.PARENTID AND D.PARENTNAME = 'TU' AND D.PNAME = 'x-flag' AND D.CONTENT like 'HS-Flag' 
+ORDER BY C.CHANGEDATE DESC,B.GROUPID) WHERE rownum &lt;= __MAX__		-->
+
+SELECT C.MTUPKID TUID,C.CREATIONID,C.CREATIONDATE, C.CHANGEID, C.CHANGEDATE,D.MPPKID,B.LANG,__IGNORE_MARK__ 
+FROM (SELECT * FROM __DATABASE_NAME___TEXTDATA WHERE __GROUPID_LIST__ TYPE = 'M' __LANGUAGE_LIST__) B 
+LEFT JOIN __DATABASE_NAME___MTU C ON B.GROUPID = C.MTUPKID 
+LEFT JOIN __DATABASE_NAME___MPROP D ON B.GROUPID = D.PARENTID AND D.PARENTNAME = 'TU' AND D.PNAME = 'x-flag' AND D.CONTENT LIKE 'HS-Flag' 
+		</search-Corcondance>
+		<search-corcondance-groupid>
+SELECT A.GROUPID FROM (
+SELECT B.GROUPID FROM __DATABASE_NAME___TEXTDATA B 
+WHERE B.GROUPID IN(SELECT A.GROUPID FROM __DATABASE_NAME___TEXTDATA A __TABLE_TEXTDATA__ WHERE A.TYPE = 'M'  __CONDITION__) AND B.TYPE='M' __LANGUAGE_CONDITION__) A  
+LEFT JOIN __DATABASE_NAME___MTU C ON A.GROUPID = C.MTUPKID 
+		</search-corcondance-groupid>
+		<search-TermBase>
+		<!-- 搜索术语库 -->
+SELECT B.GROUPID,B.LANG,__IGNORE_MARK__ 
+FROM (SELECT A.GROUPID FROM __DATABASE_NAME___TEXTDATA A WHERE A.TYPE = 'B' __CONDITION__) A
+LEFT JOIN __DATABASE_NAME___TEXTDATA B ON A.GROUPID=B.GROUPID AND B.TYPE='B' __LANGUAGE_LIST__
+		</search-TermBase>
+
+		<!-- 术语面板所显示的术语查询 -->
+		<getTerm>
+			SELECT A.TPKID, A.PURE, B.PURE, C.CONTENT FROM __DATABASE_NAME___TEXTDATA  A 
+				LEFT JOIN __DATABASE_NAME___TEXTDATA  B ON A.GROUPID=B.GROUPID  AND B.LANG=? AND B.TYPE='B' 
+				LEFT JOIN __DATABASE_NAME___BNODE C ON A.GROUPID = C.PARENTPKID AND C.PARENTNAME = 'termEntry' 
+				AND C.NTYPE = 'E' AND C.NNAME = 'note' AND (C.NID = ? OR C.NID = ?)
+				WHERE A.TYPE='B' AND  A.LANG=? AND INSTR(?,LOWER(A.PURE)) &gt; 0 AND B.PURE IS NOT NULL
+		</getTerm>
+		<fuzzySearch>
+		SELECT TPKID, GROUPID, PURE, CONTENT, PRECONTEXT, NEXTCONTEXT FROM __DATABASE_NAME___TEXTDATA WHERE __WHERE__ ORDER BY GROUPID DESC
+		</fuzzySearch>
+		<fuzzySearch-target>
+		SELECT TPKID, PURE, CONTENT, CREATIONID, CREATIONDATE, CHANGEID, CHANGEDATE, PROJECTREF
+		FROM __DATABASE_NAME___TEXTDATA A INNER JOIN __DATABASE_NAME___MTU B 
+		ON B.MTUPKID = A.GROUPID AND A.GROUPID = __GROUPID__ AND A.LANG = '__LANG__'
+		</fuzzySearch-target>
+		<!-- 用于字数分析外部匹配　robert 2013-05-27 -->
+		<fuzzySearch-wordsFA>
+		SELECT A.TPKID, A.GROUPID, A.PURE, A.CONTENT, A.PRECONTEXT, A.NEXTCONTEXT FROM __DATABASE_NAME___TEXTDATA A INNER JOIN __DATABASE_NAME___TEXTDATA B 
+		ON A.GROUPID = B.GROUPID WHERE __WHERE__ AND B.LANG = '__TARGETLANG__' ORDER BY A.GROUPID DESC
+		</fuzzySearch-wordsFA>
+	</operate-db>	
+</dbtype>

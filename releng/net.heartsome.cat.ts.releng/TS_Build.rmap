@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rmap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.eclipse.org/buckminster/RMap-1.0"
+	xmlns:bc="http://www.eclipse.org/buckminster/Common-1.0" xmlns:mp="http://www.eclipse.org/buckminster/MavenProvider-1.0"
+	xmlns:pp="http://www.eclipse.org/buckminster/PDEMapProvider-1.0">
+
+	<searchPath name="resources">
+		<provider readerType="local" componentTypes="osgi.bundle,eclipse.feature"
+			mutable="true" source="true">
+			<uri format="file:///{0}/{1}/">
+				<bc:propertyRef key="workspace.root" />
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+		</provider>
+	</searchPath>
+	<searchPath name="releng">
+		<provider readerType="local" componentTypes="osgi.bundle,eclipse.feature"
+			mutable="true" source="true">
+			<uri format="file:///{0}/releng/{1}/">
+				<bc:propertyRef key="workspace.root" />
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+		</provider>
+	</searchPath>
+	<searchPath name="base_plugins">
+		<provider readerType="local" componentTypes="osgi.bundle,eclipse.feature"
+			mutable="true" source="true">
+			<uri format="file:///{0}/base_plugins/{1}/">
+				<bc:propertyRef key="workspace.root" />
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+		</provider>
+	</searchPath>
+	<searchPath name="base_commons">
+		<provider readerType="local" componentTypes="osgi.bundle,eclipse.feature"
+			mutable="true" source="true">
+			<uri format="file:///{0}/base_commons/{1}/">
+				<bc:propertyRef key="workspace.root" />
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+		</provider>
+	</searchPath>
+	<searchPath name="ts">
+		<provider readerType="local" componentTypes="osgi.bundle,eclipse.feature"
+			mutable="true" source="true">
+			<uri format="file:///{0}/ts/{1}/">
+				<bc:propertyRef key="workspace.root" />
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+		</provider>
+	</searchPath>
+	<searchPath name="database">
+		<provider readerType="local" componentTypes="osgi.bundle,eclipse.feature"
+			mutable="true" source="true">
+			<uri format="file:///{0}/database/{1}/">
+				<bc:propertyRef key="workspace.root" />
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+		</provider>
+	</searchPath>
+	<searchPath name="i18n">
+		<provider readerType="local" componentTypes="osgi.bundle,eclipse.feature"
+			mutable="true" source="true">
+			<uri format="file:///{0}/i18n/{1}/">
+				<bc:propertyRef key="workspace.root" />
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+		</provider>
+	</searchPath>
+	<searchPath name="converter">
+		<provider readerType="local" componentTypes="osgi.bundle,eclipse.feature"
+			mutable="true" source="true">
+			<uri format="file:///{0}/hsconverter/{1}/">
+				<bc:propertyRef key="workspace.root" />
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+		</provider>
+	</searchPath>
+	<searchPath name="other">
+		<provider readerType="local" componentTypes="osgi.bundle,eclipse.feature"
+			mutable="true" source="true">
+			<uri format="file:///{0}/others/{1}/">
+				<bc:propertyRef key="workspace.root" />
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+		</provider>
+	</searchPath>
+	<locator searchPathRef="resources" failOnError="false" />
+	<locator searchPathRef="releng" failOnError="false" />
+	<locator searchPathRef="base_plugins" failOnError="false" />
+	<locator searchPathRef="base_commons" failOnError="false" />
+	<locator searchPathRef="ts" failOnError="false" />
+	<locator searchPathRef="database" failOnError="false" />
+	<locator searchPathRef="i18n" failOnError="false" />
+	<locator searchPathRef="converter" failOnError="false" />
+	<locator searchPathRef="other" failOnError="true" />
+</rmap>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="net.heartsome.cat.converter.feature"
+      label="Heartsome CAT Converter"
+      version="8.2.0.20131116"
+      provider-name="Heartsome Technologies Ltd.">
+
+   <description url="http://www.heartsome.net/">
+      Heartsome CAT Converter
+   </description>
+
+   <copyright url="http://www.heartsome.net/">
+      Copyright © Heartsome Technologies Ltd. All rights reserved.
+版权所有 © 瀚特盛科技有限公司 保留所有权利
+   </copyright>
+
+   <license url="http://www.heartsome.net/">
+      Please refer to Heartsome Software End User License Agreement (EULA).
+请参考 Heartsome 软件最终用户许可协议。
+   </license>
+
+   <plugin
+         id="net.heartsome.cat.converter"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.cat.converter.html"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.cat.converter.inx"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.cat.converter.javaproperties"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.cat.converter.javascript"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.cat.converter.MIF"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.cat.converter.msoffice2003"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.cat.converter.openoffice"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.cat.converter.po"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.cat.converter.rc"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.cat.converter.resx"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.cat.converter.rtf"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.cat.converter.taggedrtf"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.cat.converter.text"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.cat.converter.ttx"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.cat.converter.xml"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.library3"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="net.heartsome.cat.converter.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.cat.converter.ui.rcp"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.cat.converter.trados2009"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.cat.converter.DejaVuX2"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.cat.converter.idml"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.cat.converter.memoQ6"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.cat.converter.pptx"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.cat.converter.msexcel2007"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.cat.converter.word2007"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.cat.converter.wordfast3"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

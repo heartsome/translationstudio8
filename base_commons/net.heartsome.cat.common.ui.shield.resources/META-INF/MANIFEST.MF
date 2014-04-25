@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome Common UI Shield Resources
+Bundle-SymbolicName: net.heartsome.cat.common.ui.shield.resources;singleton:=true
+Bundle-Version: 8.0.0.R8b_v20121112
+Fragment-Host: net.heartsome.cat.common.ui.shield;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Vendor: Heartsome Technologies Ltd.

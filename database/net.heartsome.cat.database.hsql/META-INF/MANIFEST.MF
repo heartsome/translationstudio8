@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome CAT Database HSQL
+Bundle-SymbolicName: net.heartsome.cat.database.hsql
+Bundle-Version: 8.0.1.R8b_v20130625
+Bundle-Activator: net.heartsome.cat.database.hsql.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ net.heartsome.cat.database;bundle-version="1.0.0",
+ net.heartsome.cat.thirdpartlibrary;bundle-version="1.0.0",
+ net.heartsome.cat.common.core;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ClassPath: lib/hsqldb.jar,
+ .
+Bundle-Vendor: Heartsome Technologies Ltd.
+

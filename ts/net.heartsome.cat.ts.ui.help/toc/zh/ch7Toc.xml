@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="7. 团队协作" topic="html/zh/ch07.html">
+	<topic label="7.1. 数据库的共享" href="html/zh/ch07.html#ch7s1-db-sharing" />
+	<topic label="7.2. 导出项目" href="html/zh/ch07s02.html" >
+		<topic label="7.2.1. 流程传递" href="html/zh/ch07s02.html#ch7s2a" />
+		<topic label="7.2.2. 项目分发" href="html/zh/ch07s02.html#ch7s2b" />
+	</topic>
+	<topic label="7.3. 导入项目" href="html/zh/ch07s03.html" >
+		<topic label="7.3.1. 流程传递" href="html/zh/ch07s03.html#ch7s3a" />
+		<topic label="7.3.2. 汇总更新" href="html/zh/ch07s03.html#summarizing-update-project" />
+	</topic>
+	<topic label="7.4. 外部校对" href="html/zh/ch07s04.html" />
+</toc>

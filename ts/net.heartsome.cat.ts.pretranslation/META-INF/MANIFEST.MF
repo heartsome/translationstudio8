@@ -1,0 +1,34 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome CAT TS PreTranslation
+Bundle-SymbolicName: net.heartsome.cat.ts.pretranslation;singleton:=true
+Bundle-Version: 8.0.4.R8b_v20130904
+Bundle-Activator: net.heartsome.cat.ts.pretranslation.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources;bundle-version="3.7.100",
+ net.heartsome.xml;bundle-version="1.0.0",
+ net.heartsome.cat.thirdpartlibrary;bundle-version="1.0.0",
+ org.eclipse.ui.ide;bundle-version="3.7.0",
+ net.heartsome.cat.common.core,
+ net.heartsome.cat.converter.ui;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Import-Package: net.heartsome.cat.common.core,
+ net.heartsome.cat.common.file,
+ net.heartsome.cat.common.resources,
+ net.heartsome.cat.common.ui,
+ net.heartsome.cat.common.ui.dialog,
+ net.heartsome.cat.common.ui.handlers,
+ net.heartsome.cat.ts.core.bean,
+ net.heartsome.cat.ts.core.file,
+ net.heartsome.cat.ts.core.qa,
+ net.heartsome.cat.ts.tm.bean,
+ net.heartsome.cat.ts.tm.match,
+ net.heartsome.cat.ts.tm.simpleMatch,
+ net.heartsome.cat.ts.ui.composite,
+ net.heartsome.cat.ts.ui.editors,
+ net.heartsome.cat.ts.ui.util,
+ net.heartsome.cat.ts.ui.xliffeditor.nattable.editor
+Bundle-Localization: plugin
+Bundle-Vendor: Heartsome Technologies Ltd.

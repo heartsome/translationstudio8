@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<psf version="2.0">
+<provider id="org.eclipse.egit.core.GitProvider">
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,base_plugins/de.jaret.util.ui.table"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,base_plugins/heartsome.java.tools.plugin"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,base_commons/net.heartsome.cat.common.core"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,base_commons/net.heartsome.cat.common.feature"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,base_commons/net.heartsome.cat.common.ui"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,base_commons/net.heartsome.cat.common.ui.navigator"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,base_commons/net.heartsome.cat.common.ui.navigator.resources"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,base_commons/net.heartsome.cat.common.ui.shield"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,base_commons/net.heartsome.cat.common.ui.shield.help"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,base_commons/net.heartsome.cat.common.ui.shield.resources"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,base_commons/net.heartsome.cat.common.ui.shield.workbench"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,hsconverter/net.heartsome.cat.converter"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,hsconverter/net.heartsome.cat.converter.DejaVuX2"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,hsconverter/net.heartsome.cat.converter.feature"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,hsconverter/net.heartsome.cat.converter.html"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,hsconverter/net.heartsome.cat.converter.idml"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,hsconverter/net.heartsome.cat.converter.inx"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,hsconverter/net.heartsome.cat.converter.javaproperties"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,hsconverter/net.heartsome.cat.converter.javascript"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,hsconverter/net.heartsome.cat.converter.memoQ6"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,hsconverter/net.heartsome.cat.converter.MIF"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,hsconverter/net.heartsome.cat.converter.msexcel2007"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,hsconverter/net.heartsome.cat.converter.msoffice2003"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,hsconverter/net.heartsome.cat.converter.openoffice"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,hsconverter/net.heartsome.cat.converter.po"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,hsconverter/net.heartsome.cat.converter.pptx"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,hsconverter/net.heartsome.cat.converter.rc"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,hsconverter/net.heartsome.cat.converter.resx"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,hsconverter/net.heartsome.cat.converter.rtf"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,hsconverter/net.heartsome.cat.converter.taggedrtf"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,hsconverter/net.heartsome.cat.converter.text"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,hsconverter/net.heartsome.cat.converter.trados2009"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,hsconverter/net.heartsome.cat.converter.ttx"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.converter.ui"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,hsconverter/net.heartsome.cat.converter.ui.rcp"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,hsconverter/net.heartsome.cat.converter.word2007"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,hsconverter/net.heartsome.cat.converter.wordfast3"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,hsconverter/net.heartsome.cat.converter.xml"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,database/net.heartsome.cat.database"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,database/net.heartsome.cat.database.feature"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,database/net.heartsome.cat.database.hsql"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,database/net.heartsome.cat.database.mssql"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,database/net.heartsome.cat.database.mysql"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,database/net.heartsome.cat.database.oracle"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,database/net.heartsome.cat.database.postgreSQL"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,database/net.heartsome.cat.database.sqlite"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,database/net.heartsome.cat.database.tb"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,database/net.heartsome.cat.database.tm"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,database/net.heartsome.cat.database.ui"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,database/net.heartsome.cat.database.ui.tb"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,database/net.heartsome.cat.database.ui.tm"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.p2update"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,base_commons/net.heartsome.cat.resource.feature"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,base_plugins/net.heartsome.cat.thirdpartlibrary"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.ts"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.ts.bingtrans"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.ts.configurationfile.feature"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.ts.core"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.ts.edition_lite.feature"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.ts.edition_personal.feature"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.ts.edition_professional.feature"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.ts.edition_ultimate.feature"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.ts.exportproject"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.ts.fuzzyTranslation"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.ts.googletrans"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.ts.handlexlf"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,base_plugins/net.heartsome.cat.ts.help"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.ts.importproject"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.ts.jumpsegment"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.ts.lockrepeat"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.ts.pretranslation"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.ts.quicktranslation"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.ts.tb"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.ts.tm"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.ts.ui"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.ts.ui.advanced"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.ts.ui.help"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.ts.ui.plugin"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.ts.ui.qa"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.ts.ui.rtf"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.ts.ui.term"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.ts.ui.translation"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,ts/net.heartsome.cat.ts.ui.xliffeditor.nattable"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,i18n/net.heartsome.eclipse_i18n.feature"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,hsconverter/net.heartsome.library3"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,base_plugins/net.heartsome.xml"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,others/net.sourceforge.nattable.core"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,i18n/org.eclipse.core.net.nl_zh"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,i18n/org.eclipse.core.resources.nl_zh"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,i18n/org.eclipse.equinox.p2.ui.nl_zh"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,i18n/org.eclipse.help.webapp.nl_zh"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,i18n/org.eclipse.jface.nl_en"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,i18n/org.eclipse.jface.nl_zh"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,i18n/org.eclipse.ltk.core.refactoring.nl_en"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,i18n/org.eclipse.ltk.core.refactoring.nl_zh"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,base_plugins/org.eclipse.nebula.widgets.grid"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,base_plugins/org.eclipse.nebula.widgets.tablecombo"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,i18n/org.eclipse.osgi.nl_en"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,i18n/org.eclipse.osgi.nl_zh"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,i18n/org.eclipse.ui.ide.nl_en"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,i18n/org.eclipse.ui.ide.nl_zh"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,i18n/org.eclipse.ui.net.nl_zh"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,i18n/org.eclipse.ui.nl_zh"/>
+<project reference="1.0,git@git.heartsome.org.cn:heartsome/translation-studio.git,dev,i18n/org.eclipse.ui.workbench.nl_zh"/>
+</provider>
+<workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1364378471009_9" label="base_commons" name="base_commons">
+<item elementID="=net.heartsome.cat.common.ui.shield.resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.common.ui.navigator" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/net.heartsome.cat.resource.feature" type="4"/>
+<item elementID="=net.heartsome.cat.common.ui.navigator.resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.common.ui.shield" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/net.heartsome.cat.common.feature" type="4"/>
+<item elementID="=net.heartsome.cat.common.ui" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.common.core" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.common.ui.shield.workbench" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.common.ui.shield.help" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSets>
+<workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1364378570354_10" label="base_plugins" name="base_plugins">
+<item elementID="=org.eclipse.nebula.widgets.grid" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.ts.help" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=heartsome.java.tools.plugin" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.thirdpartlibrary" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.xml" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.jaret.util.ui.table" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=org.eclipse.nebula.widgets.tablecombo" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSets>
+<workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1364378785197_11" label="database" name="database">
+<item elementID="=net.heartsome.cat.database.mysql" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.database.postgreSQL" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.database.sqlite" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.database.ui.tb" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.database.ui.tm" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.database.tb" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.database.ui" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.database" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.database.mssql" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/net.heartsome.cat.database.feature" type="4"/>
+<item elementID="=net.heartsome.cat.database.tm" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.database.hsql" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.database.oracle" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSets>
+<workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1364378811172_12" label="hsconverter" name="hsconverter">
+<item elementID="=net.heartsome.cat.converter.rc" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.converter.javaproperties" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.converter.text" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.converter.xml" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.converter.html" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.converter.openoffice" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.converter.po" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.converter" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.converter.inx" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.converter.DejaVuX2" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.converter.wordfast3" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.converter.word2007" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.converter.MIF" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.converter.trados2009" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.converter.ui" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.converter.ui.rcp" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.converter.ttx" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.converter.resx" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.converter.msexcel2007" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.converter.idml" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/net.heartsome.cat.converter.feature" type="4"/>
+<item elementID="=net.heartsome.cat.converter.javascript" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.converter.msoffice2003" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.converter.rtf" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.library3" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.converter.memoQ6" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.converter.pptx" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.converter.taggedrtf" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSets>
+<workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1364378851571_13" label="i18n" name="i18n">
+<item elementID="=org.eclipse.equinox.p2.ui.nl_zh" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=org.eclipse.ui.workbench.nl_zh" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/net.heartsome.eclipse_i18n.feature" type="4"/>
+<item elementID="=org.eclipse.jface.nl_en" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=org.eclipse.ui.ide.nl_en" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=org.eclipse.core.net.nl_zh" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=org.eclipse.ui.net.nl_zh" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=org.eclipse.help.webapp.nl_zh" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=org.eclipse.ui.ide.nl_zh" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=org.eclipse.osgi.nl_zh" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=org.eclipse.osgi.nl_en" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=org.eclipse.jface.nl_zh" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=org.eclipse.core.resources.nl_zh" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=org.eclipse.ui.nl_zh" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=org.eclipse.ltk.core.refactoring.nl_zh" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=org.eclipse.ltk.core.refactoring.nl_en" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSets>
+<workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1364378890947_14" label="others" name="others">
+<item elementID="=net.sourceforge.nattable.core" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSets>
+<workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1364372346622_7" label="ts" name="ts">
+<item elementID="=net.heartsome.cat.ts.ui.xliffeditor.nattable" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.ts.ui.translation" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.ts.fuzzyTranslation" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.ts.ui" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.p2update" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.ts.ui.rtf" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.ts.importproject" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.ts.core" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.ts.exportproject" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.ts.lockrepeat" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/net.heartsome.cat.ts.configurationfile.feature" type="4"/>
+<item elementID="=net.heartsome.cat.ts.jumpsegment" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.ts.ui.plugin" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.ts.tm" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.ts" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.ts.googletrans" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.ts.bingtrans" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.ts.pretranslation" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.ts.tb" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.ts.ui.term" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/net.heartsome.cat.ts.edition_lite.feature" type="4"/>
+<item elementID="=net.heartsome.cat.ts.ui.help" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/net.heartsome.cat.ts.edition_personal.feature" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/net.heartsome.cat.ts.edition_professional.feature" type="4"/>
+<item elementID="=net.heartsome.cat.ts.ui.advanced" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/net.heartsome.cat.ts.edition_ultimate.feature" type="4"/>
+<item elementID="=net.heartsome.cat.ts.ui.qa" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.ts.quicktranslation" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.ts.handlexlf" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSets>
+</psf>

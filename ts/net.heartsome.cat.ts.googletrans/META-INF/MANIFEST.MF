@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome CAT TS Google
+Bundle-SymbolicName: net.heartsome.cat.ts.googletrans;singleton:=true
+Bundle-Version: 8.0.3.R8b_v20130708
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Require-Bundle: org.eclipse.ui;bundle-version="3.7.0",
+ org.eclipse.jface.text;bundle-version="3.7.0",
+ org.eclipse.core.runtime;bundle-version="3.7.0",
+ net.heartsome.cat.common.core;bundle-version="1.0.0",
+ net.heartsome.cat.ts.tm;bundle-version="1.0.0",
+ net.heartsome.cat.ts.ui;bundle-version="1.0.0",
+ net.heartsome.cat.ts.core;bundle-version="1.0.0",
+ net.heartsome.cat.ts.ui.translation;bundle-version="1.0.0",
+ org.eclipse.ui.ide;bundle-version="3.7.0",
+ net.heartsome.cat.thirdpartlibrary;bundle-version="8.0.0"
+Bundle-Activator: net.heartsome.cat.ts.googletrans.Activator
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .,
+ lib/google-api-translate-java-0.97.jar,
+ lib/json-20090211.jar
+Bundle-Localization: plugin
+Import-Package: net.heartsome.cat.common.ui
+Bundle-Vendor: Heartsome Technologies Ltd.

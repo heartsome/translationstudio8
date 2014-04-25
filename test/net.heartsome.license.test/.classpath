@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="lib/ApacheJMeter_core.jar"/>
+	<classpathentry kind="lib" path="lib/ApacheJMeter_java.jar"/>
+	<classpathentry kind="lib" path="lib/bcprov-jdk14-136.jar"/>
+	<classpathentry kind="lib" path="lib/commons-httpclient-3.0.jar"/>
+	<classpathentry kind="lib" path="lib/jug.jar"/>
+	<classpathentry kind="lib" path="lib/wsdl4j-1.5.1.jar"/>
+	<classpathentry kind="lib" path="lib/xfire-all-1.2.6.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

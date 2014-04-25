@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<fragment>
+<extension point="org.eclipse.ui.bindings">
+      <key
+            commandId="org.eclipse.ui.newWizard"
+            sequence="M1+N"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.file.close"
+            sequence="M1+W"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.file.close"
+            sequence="M1+F4"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.file.closeAll"
+            sequence="M1+M2+W"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.file.closeAll"
+            sequence="M1+M2+F4"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.file.save"
+            sequence="M1+S"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.file.saveAll"
+            sequence="M1+M2+S"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.rename"
+            sequence="F2"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <!--
+      <key
+            commandId="org.eclipse.ui.file.print"
+            sequence="M1+P"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />-->
+      <key
+            commandId="org.eclipse.ui.file.properties"
+            sequence="M3+CR"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.file.refresh"
+            sequence="F5"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.undo"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            sequence="M1+Z"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.redo"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            sequence="M1+Y"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.cut"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            sequence="M1+X"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.copy"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            sequence="M1+C"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.paste"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            sequence="M1+V"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.selectAll"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            sequence="M1+A"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.delete"
+            sequence="DEL"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.findReplace"
+            sequence="M1+F"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.navigate.next"
+            sequence="M1+."
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.navigate.previous"
+            sequence="M1+,"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.navigate.backwardHistory"
+            sequence="M3+ARROW_LEFT"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            platform="carbon"
+            sequence="M3+ARROW_LEFT"
+            commandId=""
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            platform="carbon"
+            commandId="org.eclipse.ui.navigate.backwardHistory"
+            sequence="COMMAND+["
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            platform="carbon"
+            commandId="org.eclipse.ui.navigate.backwardHistory"
+            sequence="COMMAND+ALT+ARROW_LEFT"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.navigate.forwardHistory"
+            sequence="M3+ARROW_RIGHT"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            platform="carbon"
+            sequence="M3+ARROW_RIGHT"
+            commandId=""
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            platform="carbon"
+            commandId="org.eclipse.ui.navigate.forwardHistory"
+            sequence="COMMAND+]"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            platform="carbon"
+            commandId="org.eclipse.ui.navigate.forwardHistory"
+            sequence="COMMAND+ALT+ARROW_RIGHT"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.window.openEditorDropDown"
+            sequence="M1+E"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.window.switchToEditor"
+            sequence="M1+M2+E"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.window.showSystemMenu"
+            sequence="M3+-"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            platform="carbon"
+            sequence="M3+-"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.window.showSystemMenu"
+            platform="carbon"
+            sequence="M1+M2+F10"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.window.showViewMenu"
+            sequence="M1+F10"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.window.activateEditor"
+            sequence="F12"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <!-- F12 is the Dashboard on carbon -->
+      <key
+            platform="carbon"
+            sequence="F12"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.window.activateEditor"
+            platform="carbon"
+            sequence="M1+F12"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.window.maximizePart"
+            sequence="M1+M"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.window.nextEditor"
+            sequence="M1+F6"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.window.previousEditor"
+            sequence="M1+M2+F6"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.window.nextView"
+            sequence="M1+F7"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.window.previousView"
+            sequence="M1+M2+F7"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.window.nextPerspective"
+            sequence="M1+F8"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.window.previousPerspective"
+            sequence="M1+M2+F8"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            platform="carbon"
+            sequence="M1+F4"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            platform="carbon"
+            sequence="M1+M2+F4"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            platform="carbon"
+            sequence="M1+,"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.navigate.previous"
+            platform="carbon"
+            sequence="M1+M2+."
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.cut"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            sequence="M2+DEL"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            platform="carbon"
+            commandId=""
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            sequence="M2+DEL"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.copy"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            sequence="M1+INSERT"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            platform="carbon"
+            commandId=""
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            sequence="M1+INSERT"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.paste"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            sequence="M2+INSERT"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+      <key
+            platform="carbon"
+            commandId=""
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            sequence="M2+INSERT"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration" />
+
+	  <key
+	        commandId="org.eclipse.ui.edit.text.contentAssist.proposals"
+	        contextId="org.eclipse.ui.contexts.dialogAndWindow"
+			schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+	        sequence="CTRL+SPACE"/>	<!-- Command+SPACE+* is reserved on carbon, hardcode to CTRL -->
+
+	  <key
+	        commandId="org.eclipse.ui.edit.text.contentAssist.contextInformation"
+	        contextId="org.eclipse.ui.contexts.dialogAndWindow"
+			schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+	        sequence="CTRL+M2+SPACE"/>	<!-- Command+SPACE+* is reserved on carbon, hardcode to CTRL -->
+
+      <!-- Special content assist key bindings for the Chinese language to prevent conflict with IME -->
+      <key
+            locale="zh"
+   	        contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="CTRL+SPACE"/>
+      <key
+            locale="zh"
+            commandId="org.eclipse.ui.edit.text.contentAssist.proposals"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="M3+/"/>
+      <key
+            locale="zh"
+   	        contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="CTRL+M2+SPACE"/>
+      <key
+            locale="zh"
+            commandId="org.eclipse.ui.edit.text.contentAssist.contextInformation"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="M3+?"/>
+      <key
+            locale="zh"
+            commandId="org.eclipse.ui.edit.text.contentAssist.contextInformation"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="M2+M3+?"/>
+
+      <!-- Content assist key binding for the Japanese language to prevent conflict with IME on GTK -->
+      <key
+            locale="ja"
+            platform="gtk"
+   	        contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="CTRL+SPACE"/>
+      <key
+            locale="ja"
+            platform="gtk"
+            commandId="org.eclipse.ui.edit.text.contentAssist.proposals"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="M3+/"/>
+      <key
+            locale="ja"
+            platform="gtk"
+   	        contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="CTRL+M2+SPACE"/>
+      <key
+            locale="ja"
+            platform="gtk"
+            commandId="org.eclipse.ui.edit.text.contentAssist.contextInformation"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="M3+?"/>
+      <key
+            locale="ja"
+            platform="gtk"
+            commandId="org.eclipse.ui.edit.text.contentAssist.contextInformation"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="M2+M3+?"/>
+
+      <!-- Content assist key binding for the Korean language to prevent conflict with IME on GTK -->
+      <key
+            locale="ko"
+            platform="gtk"
+   	        contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="CTRL+SPACE"/>
+      <key
+            locale="ko"
+            platform="gtk"
+            commandId="org.eclipse.ui.edit.text.contentAssist.proposals"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="M3+/"/>
+      <key
+            locale="ko"
+            platform="gtk"
+   	        contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="CTRL+M2+SPACE"/>
+      <key
+            locale="ko"
+            platform="gtk"
+            commandId="org.eclipse.ui.edit.text.contentAssist.contextInformation"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="M3+?"/>
+      <key
+            locale="ko"
+            platform="gtk"
+            commandId="org.eclipse.ui.edit.text.contentAssist.contextInformation"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="M2+M3+?"/>
+            
+      <!-- Content assist key binding for the Japanese language to prevent conflict with IME on Motif -->
+      <key
+            locale="ja"
+            platform="motif"
+   	        contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="CTRL+SPACE"/>
+      <key
+            locale="ja"
+            platform="motif"
+            commandId="org.eclipse.ui.edit.text.contentAssist.proposals"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="M3+/"/>
+      <key
+            locale="ja"
+            platform="motif"
+   	        contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="CTRL+M2+SPACE"/>
+      <key
+            locale="ja"
+            platform="motif"
+            commandId="org.eclipse.ui.edit.text.contentAssist.contextInformation"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="M3+?"/>
+      <key
+            locale="ja"
+            platform="motif"
+            commandId="org.eclipse.ui.edit.text.contentAssist.contextInformation"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="M2+M3+?"/>
+
+      <!-- Content assist key binding for the Korean language to prevent conflict with IME on Motif -->
+      <key
+            locale="ko"
+            platform="motif"
+   	        contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="CTRL+SPACE"/>
+      <key
+            locale="ko"
+            platform="motif"
+            commandId="org.eclipse.ui.edit.text.contentAssist.proposals"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="M3+/"/>
+      <key
+            locale="ko"
+            platform="motif"
+   	        contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="CTRL+M2+SPACE"/>
+      <key
+            locale="ko"
+            platform="motif"
+            commandId="org.eclipse.ui.edit.text.contentAssist.contextInformation"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="M3+?"/>
+      <key
+            locale="ko"
+            platform="motif"
+            commandId="org.eclipse.ui.edit.text.contentAssist.contextInformation"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="M2+M3+?"/>
+      
+      <key
+            commandId="org.eclipse.ui.file.close"
+            sequence="CTRL+X K"
+            schemeId="org.eclipse.ui.emacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.file.closeAll"
+            sequence="CTRL+X CTRL+C"
+            schemeId="org.eclipse.ui.emacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.file.save"
+            sequence="CTRL+X CTRL+S"
+            schemeId="org.eclipse.ui.emacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.file.saveAll"
+            sequence="CTRL+X S"
+            schemeId="org.eclipse.ui.emacsAcceleratorConfiguration" />
+      <!--
+      <key
+            commandId="org.eclipse.ui.file.print"
+            sequence="M3+F9"
+            schemeId="org.eclipse.ui.emacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.file.print"
+            sequence="ESC F9"
+            schemeId="org.eclipse.ui.emacsAcceleratorConfiguration" />-->
+      <key
+            commandId="org.eclipse.ui.edit.undo"
+            sequence="F9"
+            schemeId="org.eclipse.ui.emacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.undo"
+            sequence="CTRL+X U"
+            schemeId="org.eclipse.ui.emacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.undo"
+            sequence="CTRL+M2+-"
+            schemeId="org.eclipse.ui.emacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.redo"
+            sequence="F10"
+            schemeId="org.eclipse.ui.emacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.redo"
+            sequence="CTRL+X R"
+            schemeId="org.eclipse.ui.emacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.redo"
+            sequence="CTRL+M2++"
+            schemeId="org.eclipse.ui.emacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.cut"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            sequence="CTRL+W"
+            schemeId="org.eclipse.ui.emacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.copy"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            sequence="M3+W"
+            schemeId="org.eclipse.ui.emacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.copy"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            sequence="ESC W"
+            schemeId="org.eclipse.ui.emacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.paste"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            sequence="CTRL+Y"
+            schemeId="org.eclipse.ui.emacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.selectAll"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            sequence="CTRL+X H"
+            schemeId="org.eclipse.ui.emacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.findReplace"
+            sequence="M3+R"
+            schemeId="org.eclipse.ui.emacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.findReplace"
+            sequence="ESC R"
+            schemeId="org.eclipse.ui.emacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.text.contentAssist.proposals"
+	        contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            sequence="ALT+/"
+            schemeId="org.eclipse.ui.emacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.text.contentAssist.contextInformation"
+            sequence="ALT+?"
+            schemeId="org.eclipse.ui.emacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.text.contentAssist.contextInformation"
+            sequence="ALT+SHIFT+?"
+            schemeId="org.eclipse.ui.emacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.window.openEditorDropDown"
+            sequence="CTRL+X B"
+            schemeId="org.eclipse.ui.emacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.window.switchToEditor"
+            sequence="CTRL+X CTRL+B"
+            schemeId="org.eclipse.ui.emacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.navigate.collapseAll"
+            contextId="org.eclipse.ui.contexts.window"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="M1+M2+NUMPAD_DIVIDE">
+      </key>
+      <key
+            commandId="org.eclipse.ui.navigate.nextSubTab"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="M3+PAGE_DOWN">
+      </key>
+      <key
+            commandId="org.eclipse.ui.navigate.previousSubTab"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="M3+PAGE_UP">
+      </key>
+      <key
+            commandId="org.eclipse.ui.part.nextPage"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="M3+F7">
+      </key>
+      <key
+            commandId="org.eclipse.ui.part.previousPage"
+            schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            sequence="M2+M3+F7">
+      </key>
+   </extension>
+<extension
+      point="org.eclipse.ui.startup">
+   <startup
+         class="net.heartsome.cat.common.ui.shield.workbench.ShieldWorkbenchCommandStartup">
+   </startup>
+</extension>
+
+</fragment>

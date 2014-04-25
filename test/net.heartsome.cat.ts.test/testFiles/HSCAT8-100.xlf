@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hs="http://www.heartsome.net.cn/2008/XLFExtension" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd http://www.heartsome.net.cn/2008/XLFExtension XLFExtension.xsd">
+  <file original="D:/ts.win32.win32.x86/workspace/test/Source/test file.txt" source-language="en-US" datatype="plaintext" target-language="zh-CN">
+    <header>
+      <skl>
+        <external-file href="D:/ts.win32.win32.x86/workspace/test/SKL/test file.txt.skl"/>
+      </skl>
+      <tool tool-id="XLFEditor auto-Quick Translation" tool-name="HSStudio"/>
+      <hs:prop-group name="encoding">
+        <hs:prop prop-type="encoding">UTF-8</hs:prop>
+      </hs:prop-group>
+    </header>
+    <body>
+      <trans-unit id="1" xml:space="preserve" approved="no" translate="yes">
+        <source xml:lang="en-US">Test segment 1. Text <bpt id="_1_ski_139">code Text</bpt>TEXT<ept id="_1_ski_238">code</ept>TEXT</source>
+      </trans-unit>
+      <trans-unit id="2" xml:space="preserve" approved="no" translate="yes">
+        <source xml:lang="en-US">Test segment 2. Text <bx id="_1_ski_634"/>TEXT<ex id="_1_ski_733"/>TEXT.</source>
+      </trans-unit>
+      <trans-unit id="3" xml:space="preserve" approved="no" translate="yes">
+        <source xml:lang="en-US">Test segment 3. Text <ph id="_1_ski_337"/>TEXT<x id="_1_ski_535"/>TEXT.</source>
+      </trans-unit>
+      <trans-unit id="4" xml:space="preserve" approved="no" translate="yes">
+        <source xml:lang="en-US">Test segment 4. Text <g id="_1_ski_040">text</g>TEXT.</source>
+      </trans-unit>
+      <trans-unit id="5" xml:space="preserve" approved="no" translate="yes">
+        <source xml:lang="en-US">Test segment 5. Text <it id="_1_ski_436" pos="open">code</it>TEXT.</source>
+      </trans-unit>
+      <trans-unit id="6" xml:space="preserve" approved="no" translate="no">
+        <source xml:lang="en-US">Test segment 6. Text<bpt id="_1_ski_139">code<sub>Text</sub></bpt>TEXT<ept id="_1_ski_238">code</ept>TEXT.</source>
+      </trans-unit>
+      <trans-unit id="7" xml:space="preserve" approved="yes" translate="yes">
+        <source xml:lang="en-US">Test segment 7. Text <mrk mtype="x-test">text</mrk>TEXT.</source>
+      </trans-unit>
+      <trans-unit id="8" xml:space="preserve" approved="yes" translate="no">
+        <source xml:lang="en-US">Test segment 8. Text <g id="_1_ski_040">text</g>TEXT<bpt id="_1_ski_139">code<sub>Text</sub></bpt>TEXT<ept id="_1_ski_238">code</ept>TEXT<ph id="_1_ski_337"/>TEXT<it id="_1_ski_436" pos="open">code</it>TEXT<mrk mtype="x-test">text</mrk><x id="_1_ski_535"/>TEXT<bx id="_1_ski_634"/>TEXT<ex id="_1_ski_733"/>TEXT.</source>
+      </trans-unit>
+      <trans-unit id="9" xml:space="preserve" approved="no" translate="yes">
+        <source xml:lang="en-US">Test segment 9. Text <g id="_1_ski_040">text</g>TEXT<bpt id="_1_ski_139">code<sub>Text</sub></bpt>TEXT<ept id="_1_ski_238">code</ept>TEXT<ph id="_1_ski_337"/>TEXT<it id="_1_ski_436" pos="open">code</it>TEXT<mrk mtype="x-test">text</mrk><x id="_1_ski_535"/>TEXT<bx id="_1_ski_634"/>TEXT<ex id="_1_ski_733"/>TEXT. Text <g id="_1_ski_041">text</g>TEXT<bpt id="_1_ski_140">code<sub>Text</sub></bpt>TEXT<ept id="_1_ski_239">code</ept>TEXT<ph id="_1_ski_338"/>TEXT<it id="_1_ski_437" pos="open">code</it>TEXT<mrk mtype="x-test">text</mrk><x id="_1_ski_536"/>TEXT<bx id="_1_ski_635"/>TEXT<ex id="_1_ski_734"/>TEXT. Text <g id="_1_ski_042">text</g>TEXT<bpt id="_1_ski_141">code<sub>Text</sub></bpt>TEXT<ept id="_1_ski_240">code</ept>TEXT<ph id="_1_ski_339"/>TEXT<it id="_1_ski_438" pos="open">code</it>TEXT<mrk mtype="x-test">text</mrk><x id="_1_ski_537"/>TEXT<bx id="_1_ski_636"/>TEXT<ex id="_1_ski_735"/>TEXT.</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,31 @@
+<assembly>
+  <id>src</id>
+  <formats>
+<!--    <format>tar.gz</format>
+    <format>tar.bz2</format>
+-->    <format>zip</format>
+  </formats>
+  <fileSets>
+    <fileSet>
+      <includes>
+        <include>README*</include>
+        <include>LICENSE*</include>
+        <include>NOTICE*</include>
+        <include>pom.xml</include>
+        <include>.project</include>
+        <include>.classpath</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+    	<includes>
+    		<include>src/**/*</include>
+    	</includes>
+    	<excludes>
+    		<exclude>src/**/*.zip</exclude>
+    	</excludes>
+    </fileSet>
+    <fileSet>
+      <directory>META-INF</directory>
+    </fileSet>
+  </fileSets>
+</assembly>

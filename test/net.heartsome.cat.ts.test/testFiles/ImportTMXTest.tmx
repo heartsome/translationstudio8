@@ -1,0 +1,2028 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx PUBLIC "-//LISA OSCAR:1998//DTD for Translation Memory eXchange//EN" "tmx14.dtd" >
+<tmx version="1.4">
+<header 
+      creationtool="Heartsome TM Server" 
+      creationtoolversion="2.0-1" 
+      srclang="en-US" 
+      adminlang="en"  
+      datatype="xml" 
+      o-tmf="unknown" 
+      segtype="block" 
+      creationdate="20120227T183013Z"
+>
+</header>
+<body>
+<tu tuid="_1219131555453" creationid="JANET" creationdate="20070320T054245Z" changedate="20080819T073758Z">
+<prop type="Txt::Text Field">TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>test modify date</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg>测'试'修'改'日'期</seg>
+</tuv></tu>
+<tu tuid="_1219131555468" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>H'e'a'd's'e't' 'w'i't'h' 'e'a'r'p'h'o'n'e's,</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f4 </bpt>带'听'筒'、'线'上'麦'克'风、泡沫''耳垫及衣领夹（仅<ept i="1">}</ept><bpt i="2" type="font">{\f2 </bpt> SPC505<ept i="2">}</ept><bpt i="3" type="font">{\f4 </bpt>）<ept i="3">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131555484" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>in'-'c'o'r'd' 'm'i'c'r'o'p'h'o'n'e','f'o'a'm' 'p'a''d's' 'a'n'd' 's''h'i'r't' c'l'i'p' '('S'P'C'5'05' 'o'n'l'y')'</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg>µÄ¶ú»ú</seg>
+</tuv></tu>
+<tu tuid="_1219131555500" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg><bpt i="1">{\cf18 </bpt>7 <ept i="1">}</ept><bpt i="2">{\cf17 </bpt>External microphone<ept i="2">}</ept></seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg><bpt i="1">{\f2\cf18 </bpt>7 <ept i="1">}</ept><bpt i="2">{\cf17\f4 </bpt>外置麦克风<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131555515" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg><bpt i="1" type="bold">{\b </bpt>Headset <ept i="1">}</ept><bpt i="2" type="italic">{\i </bpt>(SPC505NC only) <ept i="2">}</ept><bpt i="3" type="bold">{\b </bpt>with:<ept i="3">}</ept></seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg><bpt i="1">{\f4\b </bpt>耳机<ept i="1">}</ept><bpt i="2">{\f4\i </bpt>（仅<ept i="2">}</ept><bpt i="3">{\f2\i </bpt> SPC505NC<ept i="3">}</ept><bpt i="4">{\f4\i </bpt>）<ept i="4">}</ept><bpt i="5">{\f4\b </bpt>配有：<ept i="5">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131555531" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20070213T054959Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>Headset with headphone and microphone(SPC525NC only)</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg>带听筒和麦克风的耳机（仅<bpt i="1" type="font">{\f5 </bpt>SPC525NC<ept i="1">}</ept>）</seg>
+</tuv></tu>
+<tu tuid="_1219131555546" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>8 Earphones</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>8 <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>耳机<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131555562" creationid="JANET_YANG" creationdate="20070213T012841Z" changedate="20120227T182831Z">
+<prop type="Txt::Text Field">TI_07083 Neroc SPC220 + 225</prop>
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>Audio settings</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg>音频设置</seg>
+</tuv></tu>
+<tu tuid="_1219131555578" creationid="JANET_YANG" creationdate="20070213T012841Z" changedate="20120227T182831Z">
+<prop type="Txt::Text Field">TI_07083 Neroc SPC220 + 225</prop>
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>Volume slider</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg>音量调节滑块</seg>
+</tuv></tu>
+<tu tuid="_1219131555656" creationid="JANET_YANG" creationdate="20070213T012841Z" changedate="20120227T182831Z">
+<prop type="Txt::Text Field">TI_07083 Neroc SPC220 + 225</prop>
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>This slider provides manual control over the microphone volume.</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg>此滑块可用于手工调节麦克风的音量。</seg>
+</tuv></tu>
+<tu tuid="_1219131555671" creationid="JANET_YANG" creationdate="20070213T012841Z" changedate="20120227T182831Z">
+<prop type="Txt::Text Field">TI_07083 Neroc SPC220 + 225</prop>
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>CIF CMOS</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg>CIF CMOS</seg>
+</tuv></tu>
+<tu tuid="_1219131555687" creationid="JANET_YANG" creationdate="20070213T012841Z" changedate="20120227T182831Z">
+<prop type="Txt::Text Field">TI_07083 Neroc SPC220 + 225</prop>
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>Picture settings</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg>图片设置</seg>
+</tuv></tu>
+<tu tuid="_1219131555703" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>For listening to your meeting partner during video calling.</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg>ÊÓÆµ¶Ô»°Ê±ÓÃÓÚÌý¶Ô·½µÄÉùÒô¡£</seg>
+</tuv></tu>
+<tu tuid="_1219131555718" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>9 Foam pads</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>9 <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>泡沫耳垫<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131555734" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>Supply comfort for your ears when video chatting.</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg>ÊÓÆµÁÄÌìÊ±ÎªÄúµÄ¶ú¶ä´øÀ´ÊæÊÊ¸Ð¡£</seg>
+</tuv></tu>
+<tu tuid="_1219131555750" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>10 In-cord microphone</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>10 <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>线上麦克风<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131555765" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>For talking to your meeting partner during video calling..</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg>ÊÓÆµ¶Ô»°Ê±ÓÃÓÚÏò¶Ô·½´«ËÍÄúµÄÉùÒô¡£</seg>
+</tuv></tu>
+<tu tuid="_1219131555781" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg><bpt i="1" type="bold">{\b </bpt>11 Audio cable <ept i="1">}</ept><bpt i="2" type="italic">{\i </bpt>(SPC505NC only)<ept i="2">}</ept></seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg><bpt i="1">{\f2\b </bpt>11 <ept i="1">}</ept><bpt i="2">{\f4\b </bpt>音频缆线<ept i="2">}</ept><bpt i="3">{\f4\i </bpt>（仅<ept i="3">}</ept><bpt i="4">{\f2\i </bpt> SPC505NC<ept i="4">}</ept><bpt i="5">{\f4\i </bpt>）<ept i="5">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131555796" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>– Grey headphone plug (n) - for connecting to the headphone socket of the pc sound card.</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg>–<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>灰色耳机插头<ept i="2">}</ept><bpt i="3" type="font">{\f2 </bpt> (n) <ept i="3">}</ept>—<bpt i="4" type="font">{\f2 </bpt> <ept i="4">}</ept><bpt i="5" type="font">{\f4 </bpt>用于连接至<ept i="5">}</ept><bpt i="6" type="font">{\f2 </bpt> PC <ept i="6">}</ept><bpt i="7" type="font">{\f4 </bpt>声卡的耳机插孔。<ept i="7">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131555812" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>– White microphone plug ( ) - for connecting to the microphone or green socket of the pc sound card.</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg>–<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>白色麦克风插头<ept i="2">}</ept><bpt i="3" type="font">{\f2 </bpt> ( ) <ept i="3">}</ept>—<bpt i="4" type="font">{\f2 </bpt> <ept i="4">}</ept><bpt i="5" type="font">{\f4 </bpt>用于连接至<ept i="5">}</ept><bpt i="6" type="font">{\f2 </bpt> PC <ept i="6">}</ept><bpt i="7" type="font">{\f4 </bpt>声卡的麦克风插孔或绿色插孔。<ept i="7">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131555828" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>12 Shirt clip</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>12 <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>衣领夹<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131555843" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>For attaching the audio cable to your shirt.</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg>ÓÃÓÚ½«ÒôÆµÀÂÏß¹Ì¶¨ÔÚÄúµÄÒÂ·þÉÏ¡£</seg>
+</tuv></tu>
+<tu tuid="_1219131555859" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg><bpt i="1">{\cf18 </bpt>16 <ept i="1">}</ept><bpt i="2">{\cf17 </bpt>Operating the WebCam<ept i="2">}</ept></seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg><bpt i="1">{\f2\cf18 </bpt>16 <ept i="1">}</ept><bpt i="2">{\cf17\f4 </bpt>网络摄像头的操作<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131555875" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>16 WebCam Video Viewer</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>16 <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>网络摄像头视频查看器<ept i="2">}</ept><bpt i="3" type="font">{\f2 </bpt> (WebCam Video Viewer)<ept i="3">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131555890" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>17 Instant messenging (video chatting, video calling and VoIP)</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>17 <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>即时消息，如视频聊天、视频电话和<ept i="2">}</ept><bpt i="3" type="font">{\f2 </bpt> VoIP<ept i="3">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131555906" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>• Video:</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg>•<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>视频：<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131555921" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg><bpt i="1">{\afs18 </bpt>use the Philips SPC500NC/SPC505NC WebCam for video chatting and video calling.The WebCam works with Skype,Windows<ept i="1">}</ept><bpt i="2">{\afs14 </bpt>® <ept i="2">}</ept><bpt i="3">{\afs18 </bpt>Live Messenger,Yahoo!<ept i="3">}</ept></seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg><bpt i="1">{\afs18\f4 </bpt>使用<ept i="1">}</ept><bpt i="2">{\f2\afs18 </bpt> Philips SPC500NC/SPC505NC <ept i="2">}</ept><bpt i="3">{\afs18\f4 </bpt>网络摄像头实现视频聊天和视频电话。该网络摄像头可用于<ept i="3">}</ept><bpt i="4">{\f2\afs18 </bpt> Skype<ept i="4">}</ept><bpt i="5">{\afs18\f4 </bpt>、<ept i="5">}</ept><bpt i="6">{\f2\afs18 </bpt>Windows<ept i="6">}</ept><bpt i="7">{\f2\afs14 </bpt>® <ept i="7">}</ept><bpt i="8">{\f2\afs18 </bpt>Live Messenger<ept i="8">}</ept><bpt i="9">{\afs18\f4 </bpt>、<ept i="9">}</ept><bpt i="10">{\f2\afs18 </bpt>Yahoo!<ept i="10">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131555937" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>Messenger, AOL Messenger, QQ and other free instant messenging and VoIP (Voice over Internet Protocol) services;</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>Messenger<ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>、<ept i="2">}</ept><bpt i="3" type="font">{\f2 </bpt>AOL Messenger<ept i="3">}</ept><bpt i="4" type="font">{\f4 </bpt>、<ept i="4">}</ept><bpt i="5" type="font">{\f2 </bpt>QQ <ept i="5">}</ept><bpt i="6" type="font">{\f4 </bpt>以及其他免费即时消息和<ept i="6">}</ept><bpt i="7" type="font">{\f2 </bpt> VoIP<ept i="7">}</ept><bpt i="8" type="font">{\f4 </bpt>（基于互联网协议的语音）服务；<ept i="8">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131555953" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg><bpt i="1">{\afs18\cf18 </bpt>The software supplied only works on PCs with the operating systems <ept i="1">}</ept><bpt i="2">{\afs18\cf17 </bpt>Microsoft<ept i="2">}</ept><bpt i="3">{\afs14\cf17 </bpt>® <ept i="3">}</ept><bpt i="4">{\afs18\cf17 </bpt>Windows<ept i="4">}</ept><bpt i="5">{\afs14\cf17 </bpt>® <ept i="5">}</ept><bpt i="6">{\afs18\cf17 </bpt>98SE, ME, 2000, XP and Vista.<ept i="6">}</ept></seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg><bpt i="1">{\afs18\cf18\f4 </bpt>随附的软件只可用于安装了<ept i="1">}</ept><bpt i="2">{\f2\afs18\cf18 </bpt> <ept i="2">}</ept><bpt i="3">{\f2\afs18\cf17 </bpt>Microsoft<ept i="3">}</ept><bpt i="4">{\f2\afs14\cf17 </bpt>® <ept i="4">}</ept><bpt i="5">{\f2\afs18\cf17 </bpt>Windows<ept i="5">}</ept><bpt i="6">{\f2\afs14\cf17 </bpt>® <ept i="6">}</ept><bpt i="7">{\f2\afs18\cf17 </bpt>98SE<ept i="7">}</ept><bpt i="8">{\afs18\cf17\f4 </bpt>、<ept i="8">}</ept><bpt i="9">{\f2\afs18\cf17 </bpt>ME<ept i="9">}</ept><bpt i="10">{\afs18\cf17\f4 </bpt>、<ept i="10">}</ept><bpt i="11">{\f2\afs18\cf17 </bpt>2000<ept i="11">}</ept><bpt i="12">{\afs18\cf17\f4 </bpt>、<ept i="12">}</ept><bpt i="13">{\f2\afs18\cf17 </bpt>XP <ept i="13">}</ept><bpt i="14">{\afs18\cf17\f4 </bpt>和<ept i="14">}</ept><bpt i="15">{\f2\afs18\cf17 </bpt> Vista <ept i="15">}</ept><bpt i="16">{\afs18\cf18\f4 </bpt>操作系统的<ept i="16">}</ept><bpt i="17">{\f2\afs18\cf18 </bpt> PC<ept i="17">}</ept><bpt i="18">{\afs18\cf18\f4 </bpt>。<ept i="18">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131555968" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>&gt; After a couple of seconds the ‘Welcome’ screen appears, followed by the ‘Language selection’ screen.</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>&gt; <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>几秒钟后将显示“欢迎”<ept i="2">}</ept><bpt i="3" type="font">{\f2 </bpt>(Welcome) <ept i="3">}</ept><bpt i="4" type="font">{\f4 </bpt>画面，之后会显示“语言选择”<ept i="4">}</ept><bpt i="5" type="font">{\f2 </bpt>(Language selection) <ept i="5">}</ept><bpt i="6" type="font">{\f4 </bpt>画面。<ept i="6">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131555984" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg><bpt i="1">{\afs18\cf18\i </bpt>If the <ept i="1">}</ept><bpt i="2">{\afs18\cf17\i </bpt>'Welcome' <ept i="2">}</ept><bpt i="3">{\afs18\cf18\i </bpt>screen does not appear automatically, open the Microsoft<ept i="3">}</ept><bpt i="4">{\afs14\cf18 </bpt>®<ept i="4">}</ept><bpt i="5">{\afs18\cf18\i </bpt>Windows<ept i="5">}</ept><bpt i="6">{\afs14\cf18 </bpt>® <ept i="6">}</ept><bpt i="7">{\afs18\cf18\i </bpt>Explorer and double click on the 'Set-up.exe' icon in the CD-ROM directory.<ept i="7">}</ept></seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg><bpt i="1">{\afs18\cf18\f4\i </bpt>如果未自动显示<ept i="1">}</ept><bpt i="2">{\afs18\cf17\f4\i </bpt>“欢迎”<ept i="2">}</ept><bpt i="3">{\f2\afs18\cf17\i </bpt>(Welcome) <ept i="3">}</ept><bpt i="4">{\afs18\cf18\f4\i </bpt>画面，请打开<ept i="4">}</ept><bpt i="5">{\f2\afs18\cf18\i </bpt> Microsoft<ept i="5">}</ept><bpt i="6">{\f2\afs14\cf18 </bpt>®<ept i="6">}</ept><bpt i="7">{\f2\afs18\cf18\i </bpt>Windows<ept i="7">}</ept><bpt i="8">{\f2\afs14\cf18 </bpt>® <ept i="8">}</ept><bpt i="9">{\afs18\cf18\f4\i </bpt>资源管理器，并在<ept i="9">}</ept><bpt i="10">{\f2\afs18\cf18\i </bpt> CD-ROM <ept i="10">}</ept><bpt i="11">{\afs18\cf18\f4\i </bpt>目录下双击<ept i="11">}</ept><bpt i="12">{\f2\afs18\cf18\i </bpt> “Set-up.exe” <ept i="12">}</ept><bpt i="13">{\afs18\cf18\f4\i </bpt>图标。<ept i="13">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556000" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>&gt; Installation continues automatically.</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>&gt; <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>安装将自动继续。<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556015" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>&gt; The ‘Manual’ screen appears.</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>&gt; <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>出现“指南”<ept i="2">}</ept><bpt i="3" type="font">{\f2 </bpt>(Manual) <ept i="3">}</ept><bpt i="4" type="font">{\f4 </bpt>画面。<ept i="4">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556031" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg><bpt i="1" type="bold">{\b </bpt>3 <ept i="1">}</ept>Select the first option if you wish to read the user manual before continuing installation.You can print out the manual so you will have it at hand during the rest of the installation process.</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>3 <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>如果您希望在继续安装前阅读用户指南，请选择第一个选项。您可将指南打印出来，以便在之后的安装步骤中随时查阅。<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556046" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>After you read or printed the user manual, continue installation by selecting the second option.</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg>ÔÄ¶Á»ò´òÓ¡ÁËÓÃ»§Ö¸ÄÏÖ®ºó£¬Ñ¡ÔñµÚ¶þ¸öÑ¡Ïî±ã¿É¼ÌÐø°²×°¡£</seg>
+</tuv></tu>
+<tu tuid="_1219131556078" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>Select the second option if you wish to continue installation.</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg>Èç¹ûÄúÏ£Íû¼ÌÐø°²×°£¬ÇëÑ¡ÔñµÚ¶þ¸öÑ¡Ïî¡£</seg>
+</tuv></tu>
+<tu tuid="_1219131556093" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>&gt; The ‘Installation’ screen appears.</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>&gt; <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>出现“安装”<ept i="2">}</ept><bpt i="3" type="font">{\f2 </bpt>(Installation) <ept i="3">}</ept><bpt i="4" type="font">{\f4 </bpt>画面。<ept i="4">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556109" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>The items that can be installed are shown on the left side of the screen.</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg>ÔÚÆÁÄ»×ó±ß»áÏÔÊ¾¿É°²×°Ïî¡£</seg>
+</tuv></tu>
+<tu tuid="_1219131556125" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>An explanation of each item is given on the right side.</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg>ÆÁÄ»ÓÒ±ßÔòÏÔÊ¾Ã¿ÏîµÄËµÃ÷¡£</seg>
+</tuv></tu>
+<tu tuid="_1219131556140" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182831Z">
+<tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="en-US">
+<seg>All items are already selected for installation.</seg>
+</tuv><tuv changedate="20120227T182831Z" creationdate="20120227T182831Z" xml:lang="zh-CN">
+<seg>ÒÑÑ¡Ôñ°²×°ËùÓÐÏî¡£</seg>
+</tuv></tu>
+<tu tuid="_1219131556156" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg><bpt i="1" type="bold">{\b </bpt>4 <ept i="1">}</ept>Click the '<bpt i="2" type="bold">{\b </bpt>Next<ept i="2">}</ept>' button if you wish to install all items.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1">{\f2\b </bpt>4 <ept i="1">}</ept><bpt i="2">{\f4\b </bpt>如果您希望安装所有项，请单击<ept i="2">}</ept><bpt i="3" type="font">{\f4 </bpt>“<ept i="3">}</ept><bpt i="4">{\f4\b </bpt>下一步<ept i="4">}</ept><bpt i="5" type="font">{\f4 </bpt>”<ept i="5">}</ept><bpt i="6">{\f2\b </bpt>(Next<ept i="6">}</ept><bpt i="7" type="font">{\f2 </bpt>)<ept i="7">}</ept><bpt i="8" type="font">{\f4 </bpt>。<ept i="8">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556171" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>If there are certain items you do not wish to install, check the boxes before these items.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>Èç¹ûÄú²»Ï£Íû°²×°Ä³Ð©Ïî£¬ÇëÇå³ýÕâÐ©ÏîÇ°µÄ¸´Ñ¡¿ò¡£</seg>
+</tuv></tu>
+<tu tuid="_1219131556187" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg><bpt i="1">{\cf18 </bpt>Select at least <ept i="1">}</ept>‘<bpt i="2">{\cf18 </bpt>SPC500NC WebCam Driver<ept i="2">}</ept>’<bpt i="3">{\cf18 </bpt> and <ept i="3">}</ept>‘<bpt i="4">{\cf17 </bpt>WebCam Video Viewer<ept i="4">}</ept>’<bpt i="5">{\cf18 </bpt> for SPC500NC WebCam as well as for SPC505NC WebCam (software is the same for both WebCams).<ept i="5">}</ept></seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1">{\cf18\f4 </bpt>对于<ept i="1">}</ept><bpt i="2">{\f2\cf18 </bpt> SPC500NC <ept i="2">}</ept><bpt i="3">{\cf18\f4 </bpt>和<ept i="3">}</ept><bpt i="4">{\f2\cf18 </bpt> SPC505NC <ept i="4">}</ept><bpt i="5">{\cf18\f4 </bpt>网络摄像头，请至少选择<ept i="5">}</ept><bpt i="6">{\f2\cf18 </bpt> <ept i="6">}</ept><bpt i="7">{\cf18\f4 </bpt>“<ept i="7">}</ept><bpt i="8">{\f2\cf18 </bpt>SPC500NC <ept i="8">}</ept><bpt i="9">{\cf18\f4 </bpt>网络摄像头驱动程序”<ept i="9">}</ept><bpt i="10">{\f2\cf18 </bpt>(SPC500NC WebCam Driver) <ept i="10">}</ept><bpt i="11">{\cf18\f4 </bpt>和<ept i="11">}</ept><bpt i="12">{\cf17\f4 </bpt>“网络摄像头视频查看器”<ept i="12">}</ept><bpt i="13">{\f2\cf17 </bpt>(WebCam Video Viewer)<ept i="13">}</ept><bpt i="14">{\cf18\f4 </bpt>（这两种网络摄像头使用相同的软件）。<ept i="14">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556203" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20070213T061624Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Click the 'Next' button.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>单击“<bpt i="1" type="bold">{\b </bpt>下一步<ept i="1">}</ept>”<bpt i="2" type="font">{\f2 </bpt>(<ept i="2">}</ept><bpt i="3">{\b\f2 </bpt>Next) <ept i="3">}</ept>按钮。</seg>
+</tuv></tu>
+<tu tuid="_1219131556218" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>V(ideo)-Lounge desktop shortcut     will be installed after installation.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>安装完成后，将创建<bpt i="1" type="font">{\f5 </bpt> V(ideo)-Lounge <ept i="1">}</ept>桌面快捷方式。</seg>
+</tuv></tu>
+<tu tuid="_1219131556234" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg><bpt i="1" type="bold">{\b </bpt>6 <ept i="1">}</ept>Select the user manual.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>6 <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>选择用户指南。<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556250" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>&gt; The ’Reboot’ screen appears.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>&gt; <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>出现“重新启动<ept i="2">}</ept><bpt i="3" type="font">{\f2 </bpt> (Reboot)<ept i="3">}</ept><bpt i="4" type="font">{\f4 </bpt>”画面。<ept i="4">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556265" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg><bpt i="1" type="bold">{\b </bpt>7 <ept i="1">}</ept>Select ‘<bpt i="2" type="bold">{\b </bpt>Yes<ept i="2">}</ept>’ to restart your PC / laptop.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1">{\f2\b </bpt>7 <ept i="1">}</ept><bpt i="2">{\f4\b </bpt>选择“是”<ept i="2">}</ept><bpt i="3" type="font">{\f2 </bpt>(<ept i="3">}</ept><bpt i="4">{\f2\b </bpt>Yes<ept i="4">}</ept><bpt i="5" type="font">{\f2 </bpt>)<ept i="5">}</ept><bpt i="6" type="font">{\f4 </bpt>，重新启动您的<ept i="6">}</ept><bpt i="7" type="font">{\f2 </bpt> PC /<ept i="7">}</ept><bpt i="8" type="font">{\f4 </bpt>笔记本电脑。<ept i="8">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556281" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg><bpt i="1">{\f2\cf18 </bpt>&gt; <ept i="1">}</ept><bpt i="2">{\f2\cf17 </bpt>The WebCam Video Viewer desktop shortcut <ept i="2">}</ept><bpt i="3">{\cf17\f4 </bpt>□<ept i="3">}</ept><bpt i="4">{\f2\cf17 </bpt> will be installed after installation.<ept i="4">}</ept></seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1">{\f2\cf18 </bpt>&gt;<ept i="1">}</ept><bpt i="2">{\cf17\f4 </bpt>软件安装完毕后，将安装网络摄像头视频查看器<ept i="2">}</ept><bpt i="3">{\f2\cf17 </bpt> (WebCam Video Viewer) <ept i="3">}</ept><bpt i="4">{\cf17\f4 </bpt>桌面快捷方式<ept i="4">}</ept><bpt i="5">{\f2\cf17 </bpt> <ept i="5">}</ept><bpt i="6">{\cf17\f4 </bpt>□。<ept i="6">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556296" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg><bpt i="1">{\cf18 </bpt>&gt; <ept i="1">}</ept><bpt i="2">{\cf17 </bpt>Via the WebCam Video Viewer you have access to all camerarelated software.<ept i="2">}</ept></seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1">{\f2\cf18 </bpt>&gt; <ept i="1">}</ept><bpt i="2">{\cf17\f4 </bpt>通过网络摄像头视频查看器<ept i="2">}</ept><bpt i="3">{\f2\cf17 </bpt> (WebCam Video Viewer)<ept i="3">}</ept><bpt i="4">{\cf17\f4 </bpt>，您可访问所有摄像头相关软件。<ept i="4">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556312" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>See ‘Using the applications’.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>²Î¼û¡°Ê¹ÓÃÓ¦ÓÃ³ÌÐò¡±¡£</seg>
+</tuv></tu>
+<tu tuid="_1219131556328" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg><bpt i="1" type="bold">{\b </bpt>4 <ept i="1">}</ept>Aim the webcam as required.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>4 <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>按要求对准网络摄像头。<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556343" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg><bpt i="1" type="bold">{\b </bpt>5 <ept i="1">}</ept>Push the USB cable into the cable management slot.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1">{\f2\b </bpt>5 <ept i="1">}</ept><bpt i="2">{\f4\b </bpt>将<ept i="2">}</ept><bpt i="3" type="font">{\f2 </bpt> USB <ept i="3">}</ept><bpt i="4" type="font">{\f4 </bpt>缆线置入缆线管理插槽中。<ept i="4">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556359" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>•<bpt i="1">{\cf18 </bpt> Connect the <ept i="1">}</ept><bpt i="2">{\cf17 </bpt>grey <ept i="2">}</ept><bpt i="3">{\cf18 </bpt>headphone plug (n) to the headphone socket of the PC sound card.<ept i="3">}</ept></seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>•<bpt i="1">{\f2\cf18 </bpt> <ept i="1">}</ept><bpt i="2">{\cf18\f4 </bpt>将<ept i="2">}</ept><bpt i="3">{\cf17\f4 </bpt>灰色<ept i="3">}</ept><bpt i="4">{\cf18\f4 </bpt>耳机插头<ept i="4">}</ept><bpt i="5">{\f2\cf18 </bpt> (n) <ept i="5">}</ept><bpt i="6">{\cf18\f4 </bpt>连接至<ept i="6">}</ept><bpt i="7">{\f2\cf18 </bpt> PC <ept i="7">}</ept><bpt i="8">{\cf18\f4 </bpt>声卡的耳机插孔。<ept i="8">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556375" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>•<bpt i="1">{\cf18 </bpt> Connect the <ept i="1">}</ept><bpt i="2">{\cf17 </bpt>white <ept i="2">}</ept><bpt i="3">{\cf18 </bpt>microphone plug <ept i="3">}</ept><bpt i="4">{\cf17 </bpt>( )<ept i="4">}</ept><bpt i="5">{\cf18 </bpt>to the microphone or green socket of the sound card.<ept i="5">}</ept></seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>•<bpt i="1">{\f2\cf18 </bpt> <ept i="1">}</ept><bpt i="2">{\cf18\f4 </bpt>将<ept i="2">}</ept><bpt i="3">{\cf17\f4 </bpt>白色<ept i="3">}</ept><bpt i="4">{\cf18\f4 </bpt>麦克风插头<ept i="4">}</ept><bpt i="5">{\f2\cf18 </bpt> <ept i="5">}</ept><bpt i="6">{\f2\cf17 </bpt>( ) <ept i="6">}</ept><bpt i="7">{\cf18\f4 </bpt>连接至声卡的麦克风插孔或绿色插孔。<ept i="7">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556390" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>• If desired, attach the foam pads to the earphones for more listening comfort.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>•<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>如果需要，也可以将听筒套上泡沫耳垫，以便更加舒适。<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556406" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>• If desired, click the audio cable into the shirt clip and attach the clip to your shirt.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>•<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>如果需要，也可以将音频缆线卡入衣领夹，再将衣领夹固定在您的衣服上。<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556421" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>The Philips SPC500NC/SPC505NC video properties can be changed:</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f4 </bpt>可通过以下方式改变<ept i="1">}</ept><bpt i="2" type="font">{\f2 </bpt> Philips SPC500NC/SPC505NC <ept i="2">}</ept><bpt i="3" type="font">{\f4 </bpt>的视频属性：<ept i="3">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556437" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>- from within an application;</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>—<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>从应用程序中改变：<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556453" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>- by clicking the WebCam Video Viewer icon in the Windows taskbar, bottom right of your screen, or</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>—<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>通过单击屏幕右下角<ept i="2">}</ept><bpt i="3" type="font">{\f2 </bpt> Windows <ept i="3">}</ept><bpt i="4" type="font">{\f4 </bpt>任务栏中的网络摄像头视频查看器<ept i="4">}</ept><bpt i="5" type="font">{\f2 </bpt> (WebCam Video Viewer) <ept i="5">}</ept><bpt i="6" type="font">{\f4 </bpt>图标，或<ept i="6">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556468" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>- by selecting ‘Advance’ in the WebCam Video Viewer.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>—<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>通过选择网络摄像头视频查看器<ept i="2">}</ept><bpt i="3" type="font">{\f2 </bpt> (WebCam Video Viewer) <ept i="3">}</ept><bpt i="4" type="font">{\f4 </bpt>中的“高级”<ept i="4">}</ept><bpt i="5" type="font">{\f2 </bpt> (Advance)<ept i="5">}</ept><bpt i="6" type="font">{\f4 </bpt>。<ept i="6">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556484" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>See ‘Operating the WebCam.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>16 <ept i="1">}</ept><bpt i="2">{\cf17\f4 </bpt>参见“网络摄像头的操作”。<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556500" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Operating the WebCam</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>ÍøÂçÉãÏñÍ·µÄ²Ù×÷</seg>
+</tuv></tu>
+<tu tuid="_1219131556515" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>WebCam Video Viewer</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f4 </bpt>网络摄像头视频查看器<ept i="1">}</ept><bpt i="2" type="font">{\f2 </bpt> (WebCam Video Viewer)<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556531" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>All WebCam applications can be accessed via the WebCam Video Viewer.The WebCam Video Viewer is the central application for easy access to your Philips WebCam and all image and video applications installed during setup.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f4 </bpt>所有网络摄像头应用程序都可通过网络摄像头视频查看器<ept i="1">}</ept><bpt i="2" type="font">{\f2 </bpt> (WebCam Video Viewer) <ept i="2">}</ept><bpt i="3" type="font">{\f4 </bpt>来访问。网络摄像头视频查看器<ept i="3">}</ept><bpt i="4" type="font">{\f2 </bpt> (WebCam Video Viewer) <ept i="4">}</ept><bpt i="5" type="font">{\f4 </bpt>是一个中心应用程序，您可通过它轻松访问<ept i="5">}</ept><bpt i="6" type="font">{\f2 </bpt> Philips <ept i="6">}</ept><bpt i="7" type="font">{\f4 </bpt>网络摄像头以及在设置过程中安装的所有图像和视频应用程序。<ept i="7">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556546" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>• Start the WebCam Video Viewer:</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>•<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>可通过以下方式启动网络摄像头视频查看器<ept i="2">}</ept><bpt i="3" type="font">{\f2 </bpt> (WebCam Video Viewer)<ept i="3">}</ept><bpt i="4" type="font">{\f4 </bpt>：<ept i="4">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556562" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>- through the Windows QuickLaunch menu in your taskbar,</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>—<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>通过任务栏中的<ept i="2">}</ept><bpt i="3" type="font">{\f2 </bpt> Windows <ept i="3">}</ept><bpt i="4" type="font">{\f4 </bpt>快速启动菜单，<ept i="4">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556578" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>- via the program group ‘SPC500NC WebCam’, or</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>—<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>通过“<ept i="2">}</ept><bpt i="3" type="font">{\f2 </bpt>SPC500NC <ept i="3">}</ept><bpt i="4" type="font">{\f4 </bpt>网络摄像头”程序组，或<ept i="4">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556593" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>- by clicking the the WebCam Video Viewer icon on the desktop.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>—<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>通过单击桌面上的网络摄像头视频查看器<ept i="2">}</ept><bpt i="3" type="font">{\f2 </bpt> (WebCam Video Viewer) <ept i="3">}</ept><bpt i="4" type="font">{\f4 </bpt>图标。<ept i="4">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556609" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>&gt; The WebCam Video Viewer will now be initiated and the WebCam Video Viewer selection screen appears.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>&gt; <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>此时将初始化网络摄像头视频查看器<ept i="2">}</ept><bpt i="3" type="font">{\f2 </bpt>  (WebCam Video Viewer)<ept i="3">}</ept><bpt i="4" type="font">{\f4 </bpt>，然后会出现网络摄像头视频查看器<ept i="4">}</ept><bpt i="5" type="font">{\f2 </bpt> (WebCam Video Viewer) <ept i="5">}</ept><bpt i="6" type="font">{\f4 </bpt>的选择画面。<ept i="6">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556625" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>• Select ‘<bpt i="1" type="bold">{\b </bpt>Format<ept i="1">}</ept>’ if you wish to adjust the video format:</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>•<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>如果您想要调整视频格式，请选择“<ept i="2">}</ept><bpt i="3">{\f4\b </bpt>格式<ept i="3">}</ept><bpt i="4" type="font">{\f4 </bpt>”<ept i="4">}</ept><bpt i="5" type="font">{\f2 </bpt>(<ept i="5">}</ept><bpt i="6">{\f2\b </bpt>Format<ept i="6">}</ept><bpt i="7" type="font">{\f2 </bpt>)<ept i="7">}</ept><bpt i="8" type="font">{\f4 </bpt>：<ept i="8">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556640" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>&gt; The ‘Properties’ screen appears.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>&gt; <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>出现“属性”<ept i="2">}</ept><bpt i="3" type="font">{\f2 </bpt>(Properties) <ept i="3">}</ept><bpt i="4" type="font">{\f4 </bpt>画面。<ept i="4">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556656" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>- Frame Rate (30,000):</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>—<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>帧率<ept i="2">}</ept><bpt i="3" type="font">{\f2 </bpt> (30,000)<ept i="3">}</ept><bpt i="4" type="font">{\f4 </bpt>：<ept i="4">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556671" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>the number of frames displayed per second.The higher the frame rate, the better the video quality.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>Ã¿ÃëÏÔÊ¾µÄÖ¡Êý¡£Ö¡ÂÊÔ½¸ß£¬Í¼ÏñÖÊÁ¿Ô½ºÃ¡£</seg>
+</tuv></tu>
+<tu tuid="_1219131556687" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>- Color Space (RGB 24) / Compression (1420):</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>—<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>色彩空间<ept i="2">}</ept><bpt i="3" type="font">{\f2 </bpt> (RGB 24) / <ept i="3">}</ept><bpt i="4" type="font">{\f4 </bpt>色彩压缩<ept i="4">}</ept><bpt i="5" type="font">{\f2 </bpt> (1420)<ept i="5">}</ept><bpt i="6" type="font">{\f4 </bpt>：<ept i="6">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556703" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Compression 1420 reduces the quantity of data used to show video content without excessively reducing the picture quality.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f4 </bpt>色彩压缩<ept i="1">}</ept><bpt i="2" type="font">{\f2 </bpt> 1420 <ept i="2">}</ept><bpt i="3" type="font">{\f4 </bpt>减少了用于显示视频内容的数据量，但又不会明显降低图片质量。<ept i="3">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556718" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Compressed video files are easier to store and transmit than non-compressed video files.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>Ñ¹ËõµÄÊÓÆµÎÄ¼þ±ÈÆðÎ´Ñ¹ËõµÄÊÓÆµÎÄ¼þ¸üÒ×´æ´¢ºÍ´«ËÍ¡£</seg>
+</tuv></tu>
+<tu tuid="_1219131556734" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Select this option for Internet applications.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>ÔÚÊ¹ÓÃ»¥ÁªÍøÓ¦ÓÃ³ÌÐòÊ±£¬¿ÉÑ¡Ôñ´ËÑ¡Ïî¡£</seg>
+</tuv></tu>
+<tu tuid="_1219131556750" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Operating the camera</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>16 <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>摄像头的操作<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556765" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Color space is a representation of the amount of color gradations the WebCam is able to capture, expressed in bits per pixel (individual point of color).</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f4 </bpt>色彩空间代表了网络摄像头能捕获的色彩层次的量，单位为“位<ept i="1">}</ept><bpt i="2" type="font">{\f2 </bpt>/<ept i="2">}</ept><bpt i="3" type="font">{\f4 </bpt>像素”（颜色的每个点）。<ept i="3">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556781" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>RGB24, also known as Truecolor, refers to 8 bit per color component (Red, Green, Blue), resluting in 24 bits per pixel.This modes makes it possible to represent 256 gradations of each color component.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>RGB24<ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>（即“真彩色”）指每种色彩元素（红、绿、篮）占用<ept i="2">}</ept><bpt i="3" type="font">{\f2 </bpt> 8 <ept i="3">}</ept><bpt i="4" type="font">{\f4 </bpt>位，因此，每个像素便占用<ept i="4">}</ept><bpt i="5" type="font">{\f2 </bpt> 24 <ept i="5">}</ept><bpt i="6" type="font">{\f4 </bpt>位。通过这种模式，可以将每种色彩元素以<ept i="6">}</ept><bpt i="7" type="font">{\f2 </bpt> 256 <ept i="7">}</ept><bpt i="8" type="font">{\f4 </bpt>个层次表现出来。<ept i="8">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556796" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Select this option for non-Internet applications.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>Ê¹ÓÃ·Ç»¥ÁªÍøÓ¦ÓÃ³ÌÐòÊ±£¬¿ÉÑ¡Ôñ´ËÑ¡Ïî¡£</seg>
+</tuv></tu>
+<tu tuid="_1219131556812" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>- Output size (resolution):</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>—<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>输出大小（分辨率）：<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556828" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Resolution is the number of pixels (individual points of color) on both horizontal and vertical axis of a monitor.The sharpness of the displayed image depends on the resolution and the size of the monitor.The higher the output size, the higher the resolution (and sharpness) of the displayed image.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>·Ö±æÂÊÊÇÖ¸Ò»¸öÏÔÊ¾Æ÷ºáÏòÖáºÍ×ÝÏòÖáÉÏµÄÏñËØ£¨ÑÕÉ«µÄÃ¿¸öµã£©¸öÊý¡£ÏÔÊ¾µÄÍ¼ÏñÊÇ·ñ±ÆÕæÒÀÀµÓÚÏÔÊ¾Æ÷µÄ·Ö±æÂÊºÍ´óÐ¡¡£Êä³öÔ½¸ß£¬ÏÔÊ¾Í¼ÏñµÄ·Ö±æÂÊ£¨±ÆÕæ¶È£©¾ÍÔ½¸ß¡£</seg>
+</tuv></tu>
+<tu tuid="_1219131556843" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>• Select ‘<bpt i="1" type="bold">{\b </bpt>Advance<ept i="1">}</ept>’ to access the WebCam settings.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>•<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>选择“<ept i="2">}</ept><bpt i="3">{\f4\b </bpt>高级<ept i="3">}</ept><bpt i="4" type="font">{\f4 </bpt>”<ept i="4">}</ept><bpt i="5" type="font">{\f2 </bpt>(<ept i="5">}</ept><bpt i="6">{\f2\b </bpt>Advance<ept i="6">}</ept><bpt i="7" type="font">{\f2 </bpt>)<ept i="7">}</ept><bpt i="8" type="font">{\f4 </bpt>，进入网络摄像头设置<ept i="8">}</ept><bpt i="9" type="font">{\f2 </bpt> (WebCam settings) <ept i="9">}</ept><bpt i="10" type="font">{\f4 </bpt>界面。<ept i="10">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556859" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>See ‘WebCam settings’.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f4 </bpt>参见“网络摄像头设置”<ept i="1">}</ept><bpt i="2" type="font">{\f2 </bpt>(WebCam settings)<ept i="2">}</ept><bpt i="3" type="font">{\f4 </bpt>。<ept i="3">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556875" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>• Check the ‘<bpt i="1" type="bold">{\b </bpt>Capture Audio<ept i="1">}</ept>’ box if you wish to capture your voice as well during video recording.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>•<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>如果您希望在录像过程中捕获声音，请勾选“<ept i="2">}</ept><bpt i="3">{\f4\b </bpt>捕获音频<ept i="3">}</ept><bpt i="4" type="font">{\f4 </bpt>”<ept i="4">}</ept><bpt i="5" type="font">{\f2 </bpt>(<ept i="5">}</ept><bpt i="6">{\f2\b </bpt>Capture Audio<ept i="6">}</ept><bpt i="7" type="font">{\f2 </bpt>) <ept i="7">}</ept><bpt i="8" type="font">{\f4 </bpt>复选框。<ept i="8">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556890" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Making a video recording</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>Â¼ÖÆÊÓÆµ</seg>
+</tuv></tu>
+<tu tuid="_1219131556906" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg><bpt i="1" type="bold">{\b </bpt>1 <ept i="1">}</ept>Select ‘<bpt i="2" type="bold">{\b </bpt>Record<ept i="2">}</ept>’.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>1 <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>选择“录制”<ept i="2">}</ept><bpt i="3" type="font">{\f2 </bpt>(Record)<ept i="3">}</ept><bpt i="4" type="font">{\f4 </bpt>。<ept i="4">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556921" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg><bpt i="1" type="bold">{\b </bpt>2 <ept i="1">}</ept>Select a folder to store the recording in.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>2 <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>选择用来存储录像文件的文件夹。<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556937" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>&gt; Recording starts immediately.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>&gt; <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>录制便会立即开始。<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556953" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>&gt; Elapsed playing time, file size and free disk space are shown.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>&gt; <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>显示已播放的时间、文件大小和可用磁盘空间。<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556968" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>• Select ‘<bpt i="1" type="bold">{\b </bpt>Stop<ept i="1">}</ept>’ to stop recording.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>•<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>选择“<ept i="2">}</ept><bpt i="3">{\f4\b </bpt>停止<ept i="3">}</ept><bpt i="4" type="font">{\f4 </bpt>”<ept i="4">}</ept><bpt i="5" type="font">{\f2 </bpt>(<ept i="5">}</ept><bpt i="6">{\f2\b </bpt>Stop<ept i="6">}</ept><bpt i="7" type="font">{\f2 </bpt>) <ept i="7">}</ept><bpt i="8" type="font">{\f4 </bpt>可停止录制。<ept i="8">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131556984" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>• Select ‘<bpt i="1" type="bold">{\b </bpt>Playback<ept i="1">}</ept>’ to play the recording.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>•<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>选择“<ept i="2">}</ept><bpt i="3">{\f4\b </bpt>重放<ept i="3">}</ept><bpt i="4" type="font">{\f4 </bpt>”<ept i="4">}</ept><bpt i="5" type="font">{\f2 </bpt>(<ept i="5">}</ept><bpt i="6">{\f2\b </bpt>Playback<ept i="6">}</ept><bpt i="7" type="font">{\f2 </bpt>) <ept i="7">}</ept><bpt i="8" type="font">{\f4 </bpt>可播放录制的视频。<ept i="8">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131557000" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Instant messenging and Internet calling</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>¼´Ê±ÏûÏ¢ºÍÍøÂçµç»°</seg>
+</tuv></tu>
+<tu tuid="_1219131557015" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>(video chatting, video calling and VoIP)</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>(<ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>视频聊天、视频电话和<ept i="2">}</ept><bpt i="3" type="font">{\f2 </bpt> VoIP)<ept i="3">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131557031" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg><bpt i="1">{\afs18 </bpt>The Philips SPC500NC/SPC505NC WebCam works with <ept i="1">}</ept><bpt i="2">{\afs18\i </bpt>all <ept i="2">}</ept><bpt i="3">{\afs18 </bpt>free instant messenging and VoIP (Voice over Internet Protocol) applications such as Skype,Windows<ept i="3">}</ept><bpt i="4">{\afs14 </bpt>® <ept i="4">}</ept><bpt i="5">{\afs18 </bpt>Live Messenger,Yahoo!<ept i="5">}</ept></seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1">{\f2\afs18 </bpt>Philips SPC500NC/SPC505NC <ept i="1">}</ept><bpt i="2">{\afs18\f4 </bpt>网络摄像头可用于<ept i="2">}</ept><bpt i="3">{\afs18\f4\i </bpt>所有<ept i="3">}</ept><bpt i="4">{\afs18\f4 </bpt>免费的即时消息和<ept i="4">}</ept><bpt i="5">{\f2\afs18 </bpt> VoIP <ept i="5">}</ept><bpt i="6">{\afs18\f4 </bpt>（基于互联网协议的语音）应用程序，如<ept i="6">}</ept><bpt i="7">{\f2\afs18 </bpt> Skype<ept i="7">}</ept><bpt i="8">{\afs18\f4 </bpt>、<ept i="8">}</ept><bpt i="9">{\f2\afs18 </bpt>Windows<ept i="9">}</ept><bpt i="10">{\f2\afs14 </bpt>® <ept i="10">}</ept><bpt i="11">{\f2\afs18 </bpt>Live Messenger<ept i="11">}</ept><bpt i="12">{\afs18\f4 </bpt>、<ept i="12">}</ept><bpt i="13">{\f2\afs18 </bpt>Yahoo!<ept i="13">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131557046" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Messenger,AOL Messenger and QQ.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>Messenger<ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>、<ept i="2">}</ept><bpt i="3" type="font">{\f2 </bpt>AOL Messenger <ept i="3">}</ept><bpt i="4" type="font">{\f4 </bpt>和<ept i="4">}</ept><bpt i="5" type="font">{\f2 </bpt> QQ<ept i="5">}</ept><bpt i="6" type="font">{\f4 </bpt>。<ept i="6">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131557062" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>• Download and install the desired applications via their websites.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>•<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>通过各自的网站下载并安装所需应用程序。<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131557078" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>• Follow the on-screen instructions during downloading and installing.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>•<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>按照屏幕显示说明下载并安装软件。<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131557093" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>• After installing an application, make the required WebCam settings <bpt i="1" type="italic">{\i </bpt>within <ept i="1">}</ept>the application in order to be able to properly use the WebCam via the application.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>•<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>安装应用程序后，为了能通过应用程序正确地使用网络摄像头，应在应用程序中进行必要的设置。<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131557109" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg><bpt i="1">{\cf17 </bpt>Real video resolution (Max.) <ept i="1">}</ept><bpt i="2">{\cf18 </bpt>..................................VGA (640 x 480)<ept i="2">}</ept></seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1">{\cf17\f4 </bpt>实际视频分辨率（最大）<ept i="1">}</ept><bpt i="2">{\f2\cf17 </bpt> <ept i="2">}</ept><bpt i="3">{\f2\cf18 </bpt>..................................VGA (640 x 480)<ept i="3">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131557125" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Real still image resolution (Max.) .........................</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f4 </bpt>实际静止画面分辨率（最大）<ept i="1">}</ept><bpt i="2" type="font">{\f2 </bpt> .........................<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131557140" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>VGA (640 x 480)</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>VGA (640 x 480)</seg>
+</tuv></tu>
+<tu tuid="_1219131557156" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Interpolated still image resolution (Max.)Super VGA (800 x 600)</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f4 </bpt>插值静止画面分辨率（最大）超级<ept i="1">}</ept><bpt i="2" type="font">{\f2 </bpt> VGA (800 x 600)<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131557171" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Frames per second ........................................................................30 fps</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f4 </bpt>每秒帧数<ept i="1">}</ept><bpt i="2" type="font">{\f2 </bpt> ........................................................................30 fps<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131557187" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>F-number ...............................................................................................2.2</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f4 </bpt>光圈值<ept i="1">}</ept><bpt i="2" type="font">{\f2 </bpt> ...............................................................................................2.2<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131557203" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Lens view angle......................................................................54 degrees</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f4 </bpt>镜头可视角度<ept i="1">}</ept><bpt i="2" type="font">{\f2 </bpt>......................................................................54 <ept i="2">}</ept><bpt i="3" type="font">{\f4 </bpt>度<ept i="3">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131557218" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg><bpt i="1">{\cf17 </bpt>Minimum subject illumination .................................................<ept i="1">}</ept><bpt i="2">{\cf18 </bpt>&lt;<ept i="2">}</ept></seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1">{\cf17\f4 </bpt>物体最低照明度<ept i="1">}</ept><bpt i="2">{\f2\cf17 </bpt> .................................................<ept i="2">}</ept><bpt i="3">{\f2\cf18 </bpt>&lt;<ept i="3">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131557234" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>10 lux</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>10 <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>勒克斯<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131557250" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Interfacing.....................................................................................USB 1.1</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f4 </bpt>接口<ept i="1">}</ept><bpt i="2" type="font">{\f2 </bpt>.....................................................................................USB 1.1<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131557265" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>USB cable length ............................................................................1.5 m</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>USB <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>缆线长度<ept i="2">}</ept><bpt i="3" type="font">{\f2 </bpt> ............................................................................1.5 m<ept i="3">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131557281" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Microphone ...........</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f4 </bpt>麦克风<ept i="1">}</ept><bpt i="2" type="font">{\f2 </bpt> ...........<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131557296" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg><bpt i="1">{\cf18 </bpt>- <ept i="1">}</ept><bpt i="2">{\cf17 </bpt>External microphone supplied (SPC500NC)<ept i="2">}</ept></seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>—<bpt i="1">{\f2\cf18 </bpt> <ept i="1">}</ept><bpt i="2">{\cf17\f4 </bpt>随附外置麦克风<ept i="2">}</ept><bpt i="3">{\f2\cf17 </bpt> (SPC500NC)<ept i="3">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131557312" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>- In-ear headset supplied (SPC505NC)</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>- <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>随附入耳式耳机<ept i="2">}</ept><bpt i="3" type="font">{\f2 </bpt> (SPC505NC)<ept i="3">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131557328" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>•<bpt i="1">{\afs18 </bpt> Microsoft<ept i="1">}</ept><bpt i="2">{\afs14 </bpt>® <ept i="2">}</ept><bpt i="3">{\afs18 </bpt>Windows<ept i="3">}</ept><bpt i="4">{\afs14 </bpt>® <ept i="4">}</ept><bpt i="5">{\afs18 </bpt>98SE/2000/ME/XP or Vista;<ept i="5">}</ept></seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>•<bpt i="1">{\f2\afs18 </bpt> Microsoft<ept i="1">}</ept><bpt i="2">{\f2\afs14 </bpt>® <ept i="2">}</ept><bpt i="3">{\f2\afs18 </bpt>Windows<ept i="3">}</ept><bpt i="4">{\f2\afs14 </bpt>® <ept i="4">}</ept><bpt i="5">{\f2\afs18 </bpt>98SE/2000/ME/XP <ept i="5">}</ept><bpt i="6">{\afs18\f4 </bpt>或<ept i="6">}</ept><bpt i="7">{\f2\afs18 </bpt> Vista;<ept i="7">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131557343" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Where to go for information and support?</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>´ÓÄÄÀï¿É»ñµÃÐÅÏ¢ºÍÖ§³Ö£¿</seg>
+</tuv></tu>
+<tu tuid="_1219131557359" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Please visit our website:</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>Çë·ÃÎÊÎÒÃÇµÄÍøÕ¾»ñÈ¡×îÐÂ²úÆ·ÐÅÏ¢£º</seg>
+</tuv></tu>
+<tu tuid="_1219131557375" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>www.philips.com for the latest product information.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>www.philips.com<ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>。<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131557390" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Go to:</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>Çë·ÃÎÊ£º</seg>
+</tuv></tu>
+<tu tuid="_1219131557406" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>www.philips.com/support for the latest version of drivers and for troubleshooting tips.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>www.philips.com/support <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>获取最新版本的驱动程序及故障排除方法。<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131557421" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Specifications are subject to change without notice.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>ÈçÓÐ¸ü¸Ä£¬Ë¡²»ÉùÃ÷¡£</seg>
+</tuv></tu>
+<tu tuid="_1219131557437" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Trademarks are the property of Koninklijke Philips Electronics N.V. or their respective owners.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f4 </bpt>所有商标均属<ept i="1">}</ept><bpt i="2" type="font">{\f2 </bpt> Koninklijke Philips Electronics N.V. <ept i="2">}</ept><bpt i="3" type="font">{\f4 </bpt>或其各自拥有者所有。<ept i="3">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131557453" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>2005 © Koninklijke Philips Electronics N.V. All rights reserved.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>2005 © Koninklijke Philips Electronics N.V. <ept i="1">}</ept><bpt i="2" type="font">{\f4 </bpt>版权所有。<ept i="2">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131557468" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>www.philips.com</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>www.philips.com</seg>
+</tuv></tu>
+<tu tuid="_1219131557484" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>For adding voice and sound when video chatting and video recording.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>用于在进行视频聊天或录制视频时增加语音或声音。</seg>
+</tuv></tu>
+<tu tuid="_1219131557500" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>For talking and listening to your meeting partner during video chatting.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>用于在视频聊天过程中听对方的声音或与对方通话。</seg>
+</tuv></tu>
+<tu tuid="_1219131557515" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Selecting your WebCam</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>选择网络摄像头</seg>
+</tuv></tu>
+<tu tuid="_1219131557531" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Capturing images / making video recordings</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>抓拍图像<bpt i="1" type="font">{\f5 </bpt>/<ept i="1">}</ept>录制视频</seg>
+</tuv></tu>
+<tu tuid="_1219131557546" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Select at least ‘SPC520NCWebCam Driver’ and ‘PhilipsVLounge’ for SPC520NCWebCam as well as for SPC525NCWebCam (software is the same for both WebCams).</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>对于<bpt i="1" type="font">{\f5 </bpt> SPC520NCWebCam <ept i="1">}</ept>以及<bpt i="2" type="font">{\f5 </bpt> SPC525NCWebCam<ept i="2">}</ept>，请至少选择“<bpt i="3" type="font">{\f5 </bpt>SPC520NC <ept i="3">}</ept>网络摄像头驱动程序”<bpt i="4" type="font">{\f5 </bpt>(SPC520NCWebCam Driver) <ept i="4">}</ept>和“<bpt i="5" type="font">{\f5 </bpt>PhilipsVLounge<ept i="5">}</ept>”（这两种网络摄像头使用相同的软件）。</seg>
+</tuv></tu>
+<tu tuid="_1219131557562" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Features settings</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>功能设置</seg>
+</tuv></tu>
+<tu tuid="_1219131557578" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Grey microphone plug (!) - for connecting to the headphone or green socket of the PC sound card.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg><bpt i="1">{\cf14 </bpt>灰色麦克风插头 <ept i="1">}</ept><bpt i="2" type="font">{\f5 </bpt>(!)<ept i="2">}</ept><bpt i="3">{\cf14\f2 </bpt> - <ept i="3">}</ept><bpt i="4">{\cf14 </bpt>用于连接<ept i="4">}</ept><bpt i="5">{\cf14\f2 </bpt> PC <ept i="5">}</ept><bpt i="6">{\cf14 </bpt>声卡上的耳机插孔或绿色插孔。<ept i="6">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131557593" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Audio cable (SPC525NC only)</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>音频缆线（仅<bpt i="1" type="font">{\f5 </bpt> SPC525NC<ept i="1">}</ept>）</seg>
+</tuv></tu>
+<tu tuid="_1219131557609" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182832Z">
+<tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="en-US">
+<seg>Black headphone plug (n)- for connecting to the microphone socket of the PC sound card.</seg>
+</tuv><tuv changedate="20120227T182832Z" creationdate="20120227T182832Z" xml:lang="zh-CN">
+<seg>黑色耳机插头<bpt i="1" type="font">{\f2 </bpt> (n) - <ept i="1">}</ept>用于连接<bpt i="2" type="font">{\f2 </bpt> PC <ept i="2">}</ept>声卡上的麦克风插孔。</seg>
+</tuv></tu>
+<tu tuid="_1219131557625" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Digital microphone</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>数字麦克风</seg>
+</tuv></tu>
+<tu tuid="_1219131557640" creationid="CYNTHIA" creationdate="20070319T014319Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Change background</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>更换背景</seg>
+</tuv></tu>
+<tu tuid="_1219131557656" creationid="JANET_YANG" creationdate="20070213T012724Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Or:</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>或者：</seg>
+</tuv></tu>
+<tu tuid="_1219131557687" creationid="CYNTHIA" creationdate="20070319T011118Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>For manually adjusting the focus of the lens.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>用于手动调节镜头焦距。</seg>
+</tuv></tu>
+<tu tuid="_1219131557703" creationid="CYNTHIA" creationdate="20070319T011713Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Clamp with rubber rims / camera foot</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>带橡胶镶边的固定夹<bpt i="1" type="font">{\f2 </bpt>/<ept i="1">}</ept>摄像头底座</seg>
+</tuv></tu>
+<tu tuid="_1219131557718" creationid="CYNTHIA" creationdate="20070319T012559Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>For attaching the WebCam to your (flat panel) PC monitor or laptop screen.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>用于将网络摄像头固定到<bpt i="1" type="font">{\f2 </bpt> PC <ept i="1">}</ept>平板显示器或笔记本电脑的屏幕上。</seg>
+</tuv></tu>
+<tu tuid="_1219131557734" creationid="CYNTHIA" creationdate="20070319T012657Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>The clamp can be folded when the WebCam is placed on a desk or (large) desktop monitor.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>将网络摄像头放置于桌面或（大型）台式显示器上时，固定夹可收合。</seg>
+</tuv></tu>
+<tu tuid="_1219131557750" creationid="CYNTHIA" creationdate="20070319T012752Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>For adding voice and sound when video calling and video recording.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>可在进行视频通话和视频录制时，添加语音或声音。</seg>
+</tuv></tu>
+<tu tuid="_1219131557765" creationid="CYNTHIA" creationdate="20070319T012945Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Lights up <bpt i="1">{\cf6 </bpt>blue<ept i="1">}</ept> when the WebCam is in use.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>网络摄像头正在使用时，<bpt i="1" type="font">{\f2 </bpt>LED <ept i="1">}</ept>会亮起<bpt i="2">{\cf6 </bpt>蓝<ept i="2">}</ept>灯。</seg>
+</tuv></tu>
+<tu tuid="_1219131557781" creationid="CYNTHIA" creationdate="20070319T012952Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Page 5</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>Page 5</seg>
+</tuv></tu>
+<tu tuid="_1219131557796" creationid="CYNTHIA" creationdate="20070319T013002Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>VLounge</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>VLounge</seg>
+</tuv></tu>
+<tu tuid="_1219131557812" creationid="CYNTHIA" creationdate="20070319T013518Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Motion detection</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>动作捕捉</seg>
+</tuv></tu>
+<tu tuid="_1219131557828" creationid="CYNTHIA" creationdate="20070319T013546Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Broadcasting your videos over the Internet</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>在互联网上发布您的视频</seg>
+</tuv></tu>
+<tu tuid="_1219131557843" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Via VLounge you have access to all camera-related software.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>通过<bpt i="1" type="font">{\f5 </bpt> Vlounge<ept i="1">}</ept>，您可以访问与摄像头相关的所有软件。</seg>
+</tuv></tu>
+<tu tuid="_1219131557859" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>See ‘Operating the WebCam’.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>请参阅“网络摄像头的操作”。</seg>
+</tuv></tu>
+<tu tuid="_1219131557875" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>(SPC525NC only)</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>（仅<bpt i="1" type="font">{\f5 </bpt> SPC525NC<ept i="1">}</ept>）</seg>
+</tuv></tu>
+<tu tuid="_1219131557890" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>• Connect the black headphone plug (n) to the headphone socket of the PC sound card.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>•<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept>将黑色耳机插头<bpt i="2" type="font">{\f2 </bpt> (n) <ept i="2">}</ept>连接至<bpt i="3" type="font">{\f2 </bpt> PC <ept i="3">}</ept>声卡上的耳机插孔。</seg>
+</tuv></tu>
+<tu tuid="_1219131557906" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>• Connect the grey microphone plug (!) to the microphone orgreen socket of the sound card.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>•<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept>将灰色麦克风插头 <bpt i="2" type="font">{\f5 </bpt>(!)<ept i="2">}</ept> 连接至声卡上的麦克风插孔或绿色插孔。</seg>
+</tuv></tu>
+<tu tuid="_1219131557921" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>by clicking the VProperty icon █ in the Windows taskbar, bottom right of your screen;</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>单击画面右下角<bpt i="1" type="font">{\f5 </bpt> Windows <ept i="1">}</ept>任务栏上的<bpt i="2" type="font">{\f5 </bpt> VProperty <ept i="2">}</ept>图标<bpt i="3" type="font">{\f5 </bpt> █<ept i="3">}</ept>；</seg>
+</tuv></tu>
+<tu tuid="_1219131557937" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>by selecting ‘PC Camera Settings’ under ‘Preferences’ in the VLounge selection screen;</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>在<bpt i="1" type="font">{\f5 </bpt> Vlounge <ept i="1">}</ept>选择画面的“首选项”<bpt i="2" type="font">{\f5 </bpt>(Preferences) <ept i="2">}</ept>选项卡下，选择“<bpt i="3" type="font">{\f5 </bpt>PC <ept i="3">}</ept>摄像头设置”<bpt i="4" type="font">{\f5 </bpt>(PC Camera Settings)<ept i="4">}</ept>；</seg>
+</tuv></tu>
+<tu tuid="_1219131557953" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>by clicking the █ icon in the VLounge selection screen.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>在<bpt i="1" type="font">{\f5 </bpt> Vlounge <ept i="1">}</ept>画面中单击<bpt i="2" type="font">{\f5 </bpt> █ <ept i="2">}</ept>图标。</seg>
+</tuv></tu>
+<tu tuid="_1219131557968" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Shutter speed</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>快门速度</seg>
+</tuv></tu>
+<tu tuid="_1219131557984" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>The shutter speed determines how long the camera shutter remains open as a picture is taken.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>快门速度决定摄像头的快门在拍照时打开的时间。</seg>
+</tuv></tu>
+<tu tuid="_1219131558000" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>The slower the shutter speed, the longer the exposure time.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>快门速度越慢，曝光时间越长。</seg>
+</tuv></tu>
+<tu tuid="_1219131558015" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>The shutter speed controls the total amount of light reaching the sensor.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>快门速度控制到达传感器的光线总量。</seg>
+</tuv></tu>
+<tu tuid="_1219131558031" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Use the slider to set the desired shutter speed.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>使用滑块设置理想的快门速度。</seg>
+</tuv></tu>
+<tu tuid="_1219131558046" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Gain</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>增益</seg>
+</tuv></tu>
+<tu tuid="_1219131558062" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>In video, gain is the amount of white in a video picture.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>在视频中，增益是指视频图片的白光量。</seg>
+</tuv></tu>
+<tu tuid="_1219131558078" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Use the slider to set the desired gain level.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>使用滑块设置理想的增益值。</seg>
+</tuv></tu>
+<tu tuid="_1219131558093" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>This slider provides manual control over the microphone.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>此滑块可用于手工调节麦克风的音量。</seg>
+</tuv></tu>
+<tu tuid="_1219131558109" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Face tracking</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>面部跟踪</seg>
+</tuv></tu>
+<tu tuid="_1219131558125" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>If you enable the face tracking option the WebCam will track your face.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>如果启用了面部跟踪选项，网络摄像头将跟踪您的面部。</seg>
+</tuv></tu>
+<tu tuid="_1219131558140" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>This will give your more convenience while video chatting, because you don’t need to sit still during your video conversation.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>这样将使视频聊天更加方便，因为您在进行视频对话时无需安静地坐着。</seg>
+</tuv></tu>
+<tu tuid="_1219131558156" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Digital zoom</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>数字变焦</seg>
+</tuv></tu>
+<tu tuid="_1219131558171" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Use the digital zoom option to get an object closer.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>使用数字变焦选项可以将镜头拉近。</seg>
+</tuv></tu>
+<tu tuid="_1219131558187" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Digital zoom magnifies the pixels but not the actual image.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>数字变焦功能可以放大图像的像素，但不改变实际图像。</seg>
+</tuv></tu>
+<tu tuid="_1219131558203" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>It degrades image quality.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>图像的质量将下降。</seg>
+</tuv></tu>
+<tu tuid="_1219131558218" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Use the slider to set the desired volume level.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>使用滑块设置理想的音量。</seg>
+</tuv></tu>
+<tu tuid="_1219131558234" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>All applications can be accessed via the Philips V(ideo)-Lounge application.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>通过<bpt i="1" type="font">{\f5 </bpt> Philips V(ideo)-Lounge <ept i="1">}</ept>应用程序，可以访问所有的应用程序。</seg>
+</tuv></tu>
+<tu tuid="_1219131558250" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>VLounge is the central application for easy access to your Philips WebCam.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f5 </bpt>VLounge <ept i="1">}</ept>是访问<bpt i="2" type="font">{\f5 </bpt> Philips <ept i="2">}</ept>网络摄像头的核心应用程序。</seg>
+</tuv></tu>
+<tu tuid="_1219131558265" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Start VLounge:</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>启动<bpt i="1" type="font">{\f5 </bpt> Vlounge<ept i="1">}</ept>：</seg>
+</tuv></tu>
+<tu tuid="_1219131558281" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>through the Windows QuickLaunch menu in your taskbar;</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>通过任务栏中的<bpt i="1" type="font">{\f2 </bpt> Windows <ept i="1">}</ept>快速启动菜单；</seg>
+</tuv></tu>
+<tu tuid="_1219131558296" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>via the program group ‘SPC520NC WebCam’;</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>通过“<bpt i="1" type="font">{\f5 </bpt>SPC520NC <ept i="1">}</ept>网络摄像头”程序组；</seg>
+</tuv></tu>
+<tu tuid="_1219131558312" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>by clicking the VLounge icon on the desktop.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>单击桌面上的<bpt i="1" type="font">{\f5 </bpt> VLounge <ept i="1">}</ept>图标。</seg>
+</tuv></tu>
+<tu tuid="_1219131558328" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>The VLounge application will now be initiated and the Vlounge selection screen appears.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f5 </bpt>VLounge <ept i="1">}</ept>应用程序即将启动，<bpt i="2" type="font">{\f5 </bpt>Vlounge <ept i="2">}</ept>选择画面出现。</seg>
+</tuv></tu>
+<tu tuid="_1219131558343" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>When more than one WebCam is installed and connected to your PC / laptop, you can select the WebCam you wish to operate.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>如果您的<bpt i="1" type="font">{\f5 </bpt> PC/<ept i="1">}</ept>笔记本电脑安装并连接了一个以上网络摄像头，您可以从中选择您想使用的。</seg>
+</tuv></tu>
+<tu tuid="_1219131558359" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>1  Open the ‘Preferences’ menu.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f5 </bpt>1  <ept i="1">}</ept>打开“首选项”<bpt i="2" type="font">{\f5 </bpt>(Preferences) <ept i="2">}</ept>菜单。</seg>
+</tuv></tu>
+<tu tuid="_1219131558375" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Select ‘Video Device’.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>选择“视频设备”<bpt i="1" type="font">{\f5 </bpt>(Video Device)<ept i="1">}</ept>。</seg>
+</tuv></tu>
+<tu tuid="_1219131558390" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>All WebCams connected are shown.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>连接的所有网络摄像头显示出来。</seg>
+</tuv></tu>
+<tu tuid="_1219131558406" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Select the WebCam you wish to operate.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>选择您想要使用的网络摄像头。</seg>
+</tuv></tu>
+<tu tuid="_1219131558421" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Click the ‘OK’ button.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>单击“<bpt i="1" type="bold">{\b </bpt>确定<ept i="1">}</ept>”<bpt i="2" type="font">{\f2 </bpt>(<ept i="2">}</ept><bpt i="3">{\b\f2 </bpt>OK<ept i="3">}</ept><bpt i="4" type="font">{\f2 </bpt>)<ept i="4">}</ept><bpt i="5" type="bold">{\b </bpt> <ept i="5">}</ept>按钮。</seg>
+</tuv></tu>
+<tu tuid="_1219131558437" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>The VLoungeselection screen for the selected WebCam appears.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>显示所选网络摄像头的<bpt i="1" type="font">{\f5 </bpt> Vlounge <ept i="1">}</ept>选择画面出现。</seg>
+</tuv></tu>
+<tu tuid="_1219131558453" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>In the ‘Capture’ menu you can capture images and make video recordings and transfer, preview, edit, e-mail, print and organise your photos and video recordings.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>在“抓拍”<bpt i="1" type="font">{\f5 </bpt>(Capture) <ept i="1">}</ept>菜单中，您可以抓拍图像和录制视频，并对照片和视频进行传输、预览、编辑、电子邮件发送、打印和整理操作。</seg>
+</tuv></tu>
+<tu tuid="_1219131558468" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Click the ‘Capture’ tab to open the Capture menu.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>单击“抓拍”<bpt i="1" type="font">{\f5 </bpt>(Capture) <ept i="1">}</ept>选项卡打开“抓拍”<bpt i="2" type="font">{\f5 </bpt>(Capture) <ept i="2">}</ept>菜单。</seg>
+</tuv></tu>
+<tu tuid="_1219131558484" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>&gt; The camera starts operating immediately.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f5 </bpt>&gt; <ept i="1">}</ept>摄像头立即开始工作。</seg>
+</tuv></tu>
+<tu tuid="_1219131558500" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Click ‘IMAGE’ to capture an image.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>单击“图像”<bpt i="1" type="font">{\f5 </bpt>(IMAGE) <ept i="1">}</ept>抓拍图像。</seg>
+</tuv></tu>
+<tu tuid="_1219131558515" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Click ‘VIDEO’ to start a video recording.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>单击“视频”<bpt i="1" type="font">{\f5 </bpt>(VIDEO) <ept i="1">}</ept>开始录制视频。</seg>
+</tuv></tu>
+<tu tuid="_1219131558531" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Click ‘VIDEO’ again to stop recording.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>再次单击“视频”<bpt i="1" type="font">{\f5 </bpt>(VIDEO) <ept i="1">}</ept>停止录制。</seg>
+</tuv></tu>
+<tu tuid="_1219131558546" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Click █ to maximize the lower part of the screen and display the camera preview.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>单击<bpt i="1" type="font">{\f5 </bpt> █ <ept i="1">}</ept>最大化画面的下部，并显示摄像预览。</seg>
+</tuv></tu>
+<tu tuid="_1219131558562" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Click █ to maximize the upper part of the screen and display your captured images and video recordings.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>单击<bpt i="1" type="font">{\f5 </bpt> █ <ept i="1">}</ept>最大化画面的上部，并显示您拍摄的图像和录制的视频。</seg>
+</tuv></tu>
+<tu tuid="_1219131558578" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Move your cursor onto a button to see a brief explanation of the button function.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>将光标移至按钮，显示相应按钮功能的简介。</seg>
+</tuv></tu>
+<tu tuid="_1219131558593" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>If you need assistance select ‘Application Help’ in the ‘Help’ menu.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>如果需要帮助，请在“帮助”<bpt i="1" type="font">{\f5 </bpt>(Help) <ept i="1">}</ept>菜单中选择“应用程序帮助”<bpt i="2" type="font">{\f5 </bpt>(Application Help)<ept i="2">}</ept>。</seg>
+</tuv></tu>
+<tu tuid="_1219131558609" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Click the ‘Communicate’ tab to open the Communicate menu.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>单击“通讯”<bpt i="1" type="font">{\f5 </bpt>(Communicate) <ept i="1">}</ept>选项卡打开“通讯”<bpt i="2" type="font">{\f5 </bpt>(Communicate) <ept i="2">}</ept>菜单。</seg>
+</tuv></tu>
+<tu tuid="_1219131558625" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>&gt; The available applications are shown by their icons.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f5 </bpt>&gt; <ept i="1">}</ept>可用应用程序的图标显示出来。</seg>
+</tuv></tu>
+<tu tuid="_1219131558640" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Click the appropriate ‘Install’ button to download and install an application.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>单击相应的“安装”<bpt i="1" type="font">{\f5 </bpt>(Install) <ept i="1">}</ept>按钮，下载并安装应用程序。</seg>
+</tuv></tu>
+<tu tuid="_1219131558656" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Follow the on-screen instructions during downloading and installing.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>按照屏幕显示的说明下载和安装软件。</seg>
+</tuv></tu>
+<tu tuid="_1219131558671" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>After installing an application, make the required WebCam settings within the application in order to be able to properly use the WebCam via the application.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>安装了应用程序后，为了能够正确地通过应用程序使用网络摄像头，应在应用程序中进行必要的网络摄像头设置。</seg>
+</tuv></tu>
+<tu tuid="_1219131558687" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Click the appropriate ‘Launch’ button to start an application.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>单击相应的“运行”<bpt i="1" type="font">{\f5 </bpt>(Launch) <ept i="1">}</ept>按钮启动应用程序。</seg>
+</tuv></tu>
+<tu tuid="_1219131558703" creationid="RONALDO" creationdate="20070213T054959Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Digital built-in</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>数字内置</seg>
+</tuv></tu>
+<tu tuid="_1219131558718" creationid="RONALDO" creationdate="20070213T055000Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Multimedia headset supplied (SPC525NC)</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>多媒体耳机随附<bpt i="1" type="font">{\f5 </bpt> (SPC525NC)<ept i="1">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131558734" creationid="RONALDO" creationdate="20070213T055000Z" changedate="20120227T182833Z">
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>•Microsoft® Windows® XP or Vista;</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>•<bpt i="1" type="font">{\f5 </bpt>Microsoft® Windows® XP <ept i="1">}</ept>或<bpt i="2" type="font">{\f5 </bpt> Vista<ept i="2">}</ept>；</seg>
+</tuv></tu>
+<tu tuid="_1219131558750" creationid="CYNTHIA" creationdate="20070319T013706Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>If the ‘Language selection’ screen does not appear automatically, open ‘My computer’, double click on the CD, then double click on the 'Setup.exe' icon.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="italic">{\i </bpt>如果未自动显示“语言选择”<ept i="1">}</ept><bpt i="2" type="font">{\f2 </bpt>(<ept i="2">}</ept><bpt i="3">{\i\f2 </bpt>Language selection<ept i="3">}</ept><bpt i="4" type="font">{\f2 </bpt>)<ept i="4">}</ept><bpt i="5" type="italic">{\i </bpt> 画面，请打开“我的电脑”，双击<ept i="5">}</ept><bpt i="6">{\i\f2 </bpt> CD <ept i="6">}</ept><bpt i="7" type="italic">{\i </bpt>光盘，然后双击“<ept i="7">}</ept><bpt i="8">{\i\f2 </bpt>Set-up.exe<ept i="8">}</ept><bpt i="9" type="italic">{\i </bpt>”图标。<ept i="9">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131558765" creationid="CYNTHIA" creationdate="20070319T013713Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>All required items are selected by default.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>默认状态下所有必要项都已选中。</seg>
+</tuv></tu>
+<tu tuid="_1219131558781" creationid="CYNTHIA" creationdate="20070319T013801Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Select at least ‘SPC620NCWebCam Driver’ and ‘Philips VLounge’.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>至少应选择“<bpt i="1" type="font">{\f2 </bpt>SPC620NC <ept i="1">}</ept>网络摄像头驱动程序”<bpt i="2" type="font">{\f2 </bpt>(SPC620NCWebCam Driver) <ept i="2">}</ept>和“<bpt i="3" type="font">{\f2 </bpt>Philips VLounge<ept i="3">}</ept>”。</seg>
+</tuv></tu>
+<tu tuid="_1219131558812" creationid="CYNTHIA" creationdate="20070319T013803Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>&gt; The following screen appears.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>&gt; <ept i="1">}</ept>出现以下画面。</seg>
+</tuv></tu>
+<tu tuid="_1219131558828" creationid="CYNTHIA" creationdate="20070319T014056Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Select ‘<bpt i="1" type="bold">{\b </bpt>Yes<ept i="1">}</ept>’, then click ‘<bpt i="2" type="bold">{\b </bpt>Finish<ept i="2">}</ept>’ to restart your PC / laptop.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>选择<bpt i="1" type="bold">{\b </bpt>“是”<ept i="1">}</ept><bpt i="2">{\b\f2 </bpt>(Yes)<ept i="2">}</ept>，然后单击“<bpt i="3" type="bold">{\b </bpt>完成<ept i="3">}</ept>”<bpt i="4">{\b\f2 </bpt>(Finish) <ept i="4">}</ept>重新启动您的<bpt i="5" type="font">{\f2 </bpt> PC /<ept i="5">}</ept>笔记本电脑。</seg>
+</tuv></tu>
+<tu tuid="_1219131558843" creationid="CYNTHIA" creationdate="20070319T014118Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Use the clamp and the two rubber rims to attach the WebCam to your (flat panel) PC monitor or laptop screen.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>利用固定夹和两个橡胶镶边将网络摄像头固定到<bpt i="1" type="font">{\f2 </bpt> PC <ept i="1">}</ept>平板显示器或笔记本电脑的屏幕上。</seg>
+</tuv></tu>
+<tu tuid="_1219131558890" creationid="CYNTHIA" creationdate="20070319T014132Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>•<bpt i="1" type="bold">{\b </bpt> <ept i="1">}</ept>Fold the clamp to place the WebCam on a desk or (large) desktop monitor.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>•<bpt i="1">{\b\f2 </bpt> <ept i="1">}</ept>收合固定夹后，可将网络摄像头放置于桌面或（大型）台式显示器上。</seg>
+</tuv></tu>
+<tu tuid="_1219131558906" creationid="CYNTHIA" creationdate="20070319T014228Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>If you enable the face tracking option, the WebCam will track your face.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>如果启用了面部跟踪选项，网络摄像头将会跟踪您的面部。</seg>
+</tuv></tu>
+<tu tuid="_1219131558921" creationid="CYNTHIA" creationdate="20070319T014316Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>This gives <bpt i="1">{\cf6 </bpt>you<ept i="1">}</ept> more convenience while video chatting, because you don’t need to sit still during your video conversation.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>这样将使<bpt i="1">{\cf6 </bpt>视频聊天<ept i="1">}</ept>更加方便，因为您在进行视频对话时不必一动不动地坐着。</seg>
+</tuv></tu>
+<tu tuid="_1219131558937" creationid="ROBIN_HUANG" creationdate="20070328T032526Z" changedate="20120227T182833Z">
+<prop type="Txt::Text Field">Neroc SPC1300 NC</prop>
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>18 <bpt i="1" type="bold">{\b </bpt>Audio enhancement<ept i="1">}</ept></seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>18 <ept i="1">}</ept>音频增强</seg>
+</tuv></tu>
+<tu tuid="_1219131558953" creationid="ROBIN_HUANG" creationdate="20070328T032606Z" changedate="20120227T182833Z">
+<prop type="Txt::Text Field">Neroc SPC1300 NC</prop>
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>This option helps you to enhance the audio quality of the WebCam in order to achieve optimal voice quality when video calling.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>该选项可帮助增强网络摄像头的音频质量，以便在视频通话时获得最佳音质。</seg>
+</tuv></tu>
+<tu tuid="_1219131558968" creationid="ROBIN_HUANG" creationdate="20070328T032639Z" changedate="20120227T182833Z">
+<prop type="Txt::Text Field">Neroc SPC1300 NC</prop>
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Use the slider to adjust audio quality to your own personal preference.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>使用滑块，根据您的个人喜好调节音频质量。</seg>
+</tuv></tu>
+<tu tuid="_1219131558984" creationid="ROBIN_HUANG" creationdate="20070328T032917Z" changedate="20120227T182833Z">
+<prop type="Txt::Text Field">Neroc SPC1300 NC</prop>
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>2 digital built-in omni directional microphones</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>2 <ept i="1">}</ept>个内置全向数字麦克风</seg>
+</tuv></tu>
+<tu tuid="_1219131559000" creationid="ROBIN_HUANG" creationdate="20070328T032352Z" changedate="20120227T182833Z">
+<prop type="Txt::Text Field">Neroc SPC1300 NC</prop>
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Select ‘Demo mode’ to see a 'live preview' video image on your monitor so you can see the effect of the adjustment on your screen.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>选择“演示模式”<bpt i="1" type="font">{\f2 </bpt>(Demo mode) <ept i="1">}</ept>在显示器上观看“实时预览”<bpt i="2" type="font">{\f2 </bpt>(live preview) <ept i="2">}</ept>视频图像，您可以在屏幕上观看调节效果。</seg>
+</tuv></tu>
+<tu tuid="_1219131559015" creationid="ROBIN_HUANG" creationdate="20070328T031444Z" changedate="20120227T182833Z">
+<prop type="Txt::Text Field">Neroc SPC1300 NC</prop>
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>helps you to enhance the image and video quality of the WebCam, giving you ultimate sharpness, vivid colors and smooth, natural motion.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>可帮助增强网络摄像头的图像和视频质量，还您以终极的色彩锐度、逼真的色彩和流畅自然的动作。</seg>
+</tuv></tu>
+<tu tuid="_1219131559031" creationid="ROBIN_HUANG" creationdate="20070328T031659Z" changedate="20120227T182833Z">
+<prop type="Txt::Text Field">Neroc SPC1300 NC</prop>
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Use the slider to adjust the level of Pixel Plus, added to the live video of your WebCam.</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>使用滑块调节 <bpt i="1" type="font">{\f2 </bpt>Pixel Plus <ept i="1">}</ept>的水平，以提高网络摄像头的实时视频质量。</seg>
+</tuv></tu>
+<tu tuid="_1219131559046" creationid="ROBIN_HUANG" creationdate="20070328T031801Z" changedate="20120227T182833Z">
+<prop type="Txt::Text Field">Neroc SPC1300 NC</prop>
+<tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="en-US">
+<seg>Demo mode</seg>
+</tuv><tuv changedate="20120227T182833Z" creationdate="20120227T182833Z" xml:lang="zh-CN">
+<seg>演示模式</seg>
+</tuv></tu>
+<tu tuid="_1219131559093" creationid="CYNTHIA" creationdate="20070319T014458Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>This option enables you to replace the actual (real-time) background image by one from the WebCam background list or by one of your own pictures.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>通过此选项，您可以使用网络摄像头背景列表中的图像或您自己的图片来更换实际（实时）背景图像。</seg>
+</tuv></tu>
+<tu tuid="_1219131559109" creationid="CYNTHIA" creationdate="20070319T014534Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>Note:</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>注：</seg>
+</tuv></tu>
+<tu tuid="_1219131559125" creationid="CYNTHIA" creationdate="20070319T014537Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>When changing the background, make sure that:</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>更改背景时，请确保：</seg>
+</tuv></tu>
+<tu tuid="_1219131559140" creationid="CYNTHIA" creationdate="20070319T014545Z" changedate="20120227T182834Z">
+<prop type="Txt::Text Field">TI-07196</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>- the actual background is static.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>— 实际背景处于静态状态；</seg>
+</tuv></tu>
+<tu tuid="_1219131559156" creationid="CYNTHIA" creationdate="20070319T014717Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>There should be no movement within the WebCam field of view.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>网络摄像头的视角范围内没有活动。</seg>
+</tuv></tu>
+<tu tuid="_1219131559171" creationid="CYNTHIA" creationdate="20070319T014743Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>Not even the movement of a curtain.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>窗帘的晃动都不允许。</seg>
+</tuv></tu>
+<tu tuid="_1219131559187" creationid="CYNTHIA" creationdate="20070319T014808Z" changedate="20120227T182834Z">
+<prop type="Txt::Text Field">TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>- there is sufficient light in the room.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>— 室内光线充足；</seg>
+</tuv></tu>
+<tu tuid="_1219131559203" creationid="CYNTHIA" creationdate="20070319T014822Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>The better the lighting conditions, the better the performance of the ‘Change background’ feature.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>光线条件越佳，“更改背景”功能的效果越好。</seg>
+</tuv></tu>
+<tu tuid="_1219131559218" creationid="CYNTHIA" creationdate="20070319T014858Z" changedate="20120227T182834Z">
+<prop type="Txt::Text Field">TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>- lighting conditions are not changed.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>— 光线条件应保持不变；</seg>
+</tuv></tu>
+<tu tuid="_1219131559234" creationid="CYNTHIA" creationdate="20070319T014939Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>Even a slight change in the lighting conditions will negatively influence the image.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>光线条件即使出现细微变化也会影响图像的质量。</seg>
+</tuv></tu>
+<tu tuid="_1219131559250" creationid="CYNTHIA" creationdate="20070319T015035Z" changedate="20120227T182834Z">
+<prop type="Txt::Text Field">TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>- the colors of the cloths you wear are not the same as the background color.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>— 您穿着的衣服颜色与背景颜色不同；</seg>
+</tuv></tu>
+<tu tuid="_1219131559265" creationid="CYNTHIA" creationdate="20070319T015058Z" changedate="20120227T182834Z">
+<prop type="Txt::Text Field">TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>- the WebCam does not move, even the slightest movement will negatively influence the image.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>— 网络摄像头没有移动；即使是轻微的移动也会影响图像质量。</seg>
+</tuv></tu>
+<tu tuid="_1219131559281" creationid="CYNTHIA" creationdate="20070319T015105Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>To change the background:</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>要更改背景：</seg>
+</tuv></tu>
+<tu tuid="_1219131559296" creationid="CYNTHIA" creationdate="20070319T015122Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>In the ‘<bpt i="1" type="bold">{\b </bpt>Features<ept i="1">}</ept>’ menu, check the ‘<bpt i="2" type="bold">{\b </bpt>Change background<ept i="2">}</ept>’ box.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>在“<bpt i="1" type="bold">{\b </bpt>功能<ept i="1">}</ept>”<bpt i="2" type="font">{\f2 </bpt>(<ept i="2">}</ept><bpt i="3">{\b\f2 </bpt>Features<ept i="3">}</ept><bpt i="4" type="font">{\f2 </bpt>) <ept i="4">}</ept>菜单中，勾选“<bpt i="5" type="bold">{\b </bpt>更改背景<ept i="5">}</ept>”<bpt i="6" type="font">{\f2 </bpt>(<ept i="6">}</ept><bpt i="7">{\b\f2 </bpt>Change background<ept i="7">}</ept><bpt i="8" type="font">{\f2 </bpt>) <ept i="8">}</ept>复选框。</seg>
+</tuv></tu>
+<tu tuid="_1219131559312" creationid="CYNTHIA" creationdate="20070319T015204Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>&gt; The last selected background is shown in the preview window.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>&gt; <ept i="1">}</ept>最后选择的背景会显示在预览窗口中。</seg>
+</tuv></tu>
+<tu tuid="_1219131559328" creationid="CYNTHIA" creationdate="20070319T015326Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>&gt; When the option is enabled for the first time, the first image from the WebCam background list is selected.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>&gt; <ept i="1">}</ept>首次启用该选项时，默认选中的是网络摄像头背景列表中的首张图像。</seg>
+</tuv></tu>
+<tu tuid="_1219131559343" creationid="CYNTHIA" creationdate="20070319T015335Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>Use ▼ to browse through the WebCam background list and select a background.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>点击<bpt i="1" type="font">{\f2 </bpt> ▼ <ept i="1">}</ept>来浏览网络摄像头背景列表，并选择一个背景。</seg>
+</tuv></tu>
+<tu tuid="_1219131559359" creationid="CYNTHIA" creationdate="20070319T015401Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>Use ‘<bpt i="1" type="bold">{\b </bpt>Browse<ept i="1">}</ept>’ to browse through your harddisk content and select one of your own pictures as background.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>点击“<bpt i="1" type="bold">{\b </bpt>浏览<ept i="1">}</ept>”<bpt i="2" type="font">{\f2 </bpt>(<ept i="2">}</ept><bpt i="3">{\b\f2 </bpt>Browse<ept i="3">}</ept><bpt i="4" type="font">{\f2 </bpt>) <ept i="4">}</ept>按钮来浏览硬盘内容，并选择一张自己的图片作为背景。</seg>
+</tuv></tu>
+<tu tuid="_1219131559375" creationid="CYNTHIA" creationdate="20070319T015559Z" changedate="20120227T182834Z">
+<prop type="Txt::Text Field">TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>Make sure the background is properly lit and that there is no movement within the WebCam field of view, then click ‘<bpt i="1" type="bold">{\b </bpt>Take picture<ept i="1">}</ept>’ and step out of the WebCam field of view.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>确保背景光线充足并且网络摄像头的视角范围内没有活动，然后单击“<bpt i="1" type="bold">{\b </bpt>拍照<ept i="1">}</ept>”(<bpt i="2">{\b\f2 </bpt>Take picture<ept i="2">}</ept>)，并走出网络摄像头的视角范围。</seg>
+</tuv></tu>
+<tu tuid="_1219131559390" creationid="CYNTHIA" creationdate="20070319T015721Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>&gt; Three seconds are now counted down and a picture of the actual background is taken.You will here a shutter sound.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>&gt; <ept i="1">}</ept>三秒计时后便会拍下一幅实际背景图片，并且您将会听到咔嚓一声。</seg>
+</tuv></tu>
+<tu tuid="_1219131559406" creationid="CYNTHIA" creationdate="20070319T015737Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>&gt; The actual background is now replaced by the selected background.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>&gt; <ept i="1">}</ept>此时实际背景便会被所选背景替代。</seg>
+</tuv></tu>
+<tu tuid="_1219131559421" creationid="CYNTHIA" creationdate="20070319T015757Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>Add logo</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>添加徽标</seg>
+</tuv></tu>
+<tu tuid="_1219131559437" creationid="CYNTHIA" creationdate="20070319T015852Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>If you enable this option, a logo image will be placed in one of the corners of the Video stream.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>启用此选项时，视频流的一个角落会出现徽标图像。</seg>
+</tuv></tu>
+<tu tuid="_1219131559468" creationid="CYNTHIA" creationdate="20070319T015926Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>By default, the last used logo will be selected when the option is enabled.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>默认状态下，启用此选项时选中的是上次使用的徽标。</seg>
+</tuv></tu>
+<tu tuid="_1219131559484" creationid="CYNTHIA" creationdate="20070319T020139Z" changedate="20120227T182834Z">
+<prop type="Txt::Text Field">TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>When the option is enabled for the first time, the Philips logo will be selected and shown in the upper right corner of the screen.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>首次启用该选项时，默认选中的是 <bpt i="1" type="font">{\f2 </bpt>Philips <ept i="1">}</ept>徽标，并且该徽标将显示在画面右上角。</seg>
+</tuv></tu>
+<tu tuid="_1219131559500" creationid="CYNTHIA" creationdate="20070319T020253Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>Select the desired corner for the logo to be placed in by checking the corresponding box in the ‘Add logo’ screen.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>在“添加徽标”<bpt i="1" type="font">{\f2 </bpt>(Add logo) <ept i="1">}</ept>画面中勾选相应的复选框，以选择要将徽标放在哪个角上。</seg>
+</tuv></tu>
+<tu tuid="_1219131559515" creationid="CYNTHIA" creationdate="20070319T020312Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>Use ▼ to browse through the WebCam logo list to select a logo.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>使用<bpt i="1" type="font">{\f2 </bpt> ▼ <ept i="1">}</ept>来浏览网络摄像头徽标列表，以选择一个徽标。</seg>
+</tuv></tu>
+<tu tuid="_1219131559531" creationid="CYNTHIA" creationdate="20070319T020313Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>Browse</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>浏览</seg>
+</tuv></tu>
+<tu tuid="_1219131559546" creationid="CYNTHIA" creationdate="20070319T020322Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>Browse through your harddisk content to select one of your own logos.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>浏览硬盘内容，以选择一个自己的徽标。</seg>
+</tuv></tu>
+<tu tuid="_1219131559562" creationid="CYNTHIA" creationdate="20070319T020323Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>Logo size</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>徽标大小</seg>
+</tuv></tu>
+<tu tuid="_1219131559578" creationid="CYNTHIA" creationdate="20070319T020329Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>Use the slider to set the desired logo size.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>使用滑块设置理想的徽标大小。</seg>
+</tuv></tu>
+<tu tuid="_1219131559593" creationid="CYNTHIA" creationdate="20070319T020332Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>Video frames</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>视频框</seg>
+</tuv></tu>
+<tu tuid="_1219131559609" creationid="CYNTHIA" creationdate="20070319T020433Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>This option enables you to place an overlay (frame) over the current video stream.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>通过此选项，您可在当前视频流上设置一个视频框。</seg>
+</tuv></tu>
+<tu tuid="_1219131559625" creationid="CYNTHIA" creationdate="20070319T020522Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>By default, the last used frame will be used, when the option is enabled.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>默认状态下，启用该选项时将使用上次使用的视频框。</seg>
+</tuv></tu>
+<tu tuid="_1219131559640" creationid="CYNTHIA" creationdate="20070319T020601Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>Use ▼ to browse through the WebCam frame list to select a frame.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>使用<bpt i="1" type="font">{\f2 </bpt> ▼ <ept i="1">}</ept>来浏览网络摄像头视频框列表，并选择一个视频框。</seg>
+</tuv></tu>
+<tu tuid="_1219131559656" creationid="CYNTHIA" creationdate="20070319T020602Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>Video effects</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>视频效果</seg>
+</tuv></tu>
+<tu tuid="_1219131559671" creationid="CYNTHIA" creationdate="20070319T020703Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>This option enables you to add video effects to your video recordings and video calls.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>通过此选项，您可在视频录制和视频通话时添加视频效果。</seg>
+</tuv></tu>
+<tu tuid="_1219131559687" creationid="CYNTHIA" creationdate="20070319T021132Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>For example, you can display the video with canvas effect, distortion effect, embossing effect and many more.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>例如，您可使用油画效果、变形效果、浮雕效果或更多其他效果来显示视频。</seg>
+</tuv></tu>
+<tu tuid="_1219131559703" creationid="CYNTHIA" creationdate="20070319T021200Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>By default, the last used effect will be applied to the video, when the option is enabled.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>默认状态下，启用该选项时视频会采用上次使用的效果。</seg>
+</tuv></tu>
+<tu tuid="_1219131559718" creationid="CYNTHIA" creationdate="20070319T021243Z" changedate="20120227T182834Z">
+<prop type="Txt::Text Field">TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>When the option is enabled for the first time, the first effect from the video effects list will be selected.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>首次启用时该选项，默认选中的是视频效果列表中的第一种效果。</seg>
+</tuv></tu>
+<tu tuid="_1219131559734" creationid="CYNTHIA" creationdate="20070319T021302Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>Use ▼ to browse through the WebCam video effects list to select an effect.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>使用<bpt i="1" type="font">{\f2 </bpt> ▼ <ept i="1">}</ept>来浏览网络摄像头视频效果列表，以选择一种效果。</seg>
+</tuv></tu>
+<tu tuid="_1219131559750" creationid="CYNTHIA" creationdate="20070319T021436Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>&gt; The total amount of captured items is shown above the content panel (top right).</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>&gt; <ept i="1">}</ept>抓拍项的总数会显示在内容面板的右上方（顶部）。</seg>
+</tuv></tu>
+<tu tuid="_1219131559765" creationid="CYNTHIA" creationdate="20070319T021503Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>• Click ‘<bpt i="1" type="bold">{\b </bpt>All Captures<ept i="1">}</ept>’ to display all captured items in the content panel.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>•<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept>单击“<bpt i="2" type="bold">{\b </bpt>所有抓拍<ept i="2">}</ept>”<bpt i="3" type="font">{\f2 </bpt>(<ept i="3">}</ept><bpt i="4">{\b\f2 </bpt>All Captures<ept i="4">}</ept><bpt i="5" type="font">{\f2 </bpt>)<ept i="5">}</ept>，以在内容面板中显示所有抓拍项。</seg>
+</tuv></tu>
+<tu tuid="_1219131559781" creationid="CYNTHIA" creationdate="20070319T021549Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>• Click ‘<bpt i="1" type="bold">{\b </bpt>Images<ept i="1">}</ept>’, ‘<bpt i="2" type="bold">{\b </bpt>Videos<ept i="2">}</ept>’ or ‘<bpt i="3" type="bold">{\b </bpt>Folders<ept i="3">}</ept>’ to display your captured images, video clips or folders containg captures in the content panel.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>•<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept>单击“<bpt i="2" type="bold">{\b </bpt>图像<ept i="2">}</ept>”<bpt i="3" type="font">{\f2 </bpt>(<ept i="3">}</ept><bpt i="4">{\b\f2 </bpt>Images<ept i="4">}</ept><bpt i="5" type="font">{\f2 </bpt>)<ept i="5">}</ept>、“<bpt i="6" type="bold">{\b </bpt>视频<ept i="6">}</ept>”<bpt i="7" type="font">{\f2 </bpt>(<ept i="7">}</ept><bpt i="8">{\b\f2 </bpt>Videos<ept i="8">}</ept><bpt i="9" type="font">{\f2 </bpt>) <ept i="9">}</ept>或“<bpt i="10" type="bold">{\b </bpt>文件夹<ept i="10">}</ept>”<bpt i="11" type="font">{\f2 </bpt>(<ept i="11">}</ept><bpt i="12">{\b\f2 </bpt>Folders<ept i="12">}</ept><bpt i="13" type="font">{\f2 </bpt>)<ept i="13">}</ept>，可在内容面板中显示您所抓拍的图像、视频短片或包含抓拍项的文件夹。</seg>
+</tuv></tu>
+<tu tuid="_1219131559796" creationid="CYNTHIA" creationdate="20070319T021553Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>Deleting captured items</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>删除抓拍项</seg>
+</tuv></tu>
+<tu tuid="_1219131559812" creationid="CYNTHIA" creationdate="20070319T021619Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg><bpt i="1" type="bold">{\b </bpt>1 <ept i="1">}</ept>Select the items you wish to delete in the content panel or under ‘Images’, ‘Videos’ and ‘Folders’.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg><bpt i="1">{\b\f2 </bpt>1 <ept i="1">}</ept>在内容面板中或在“图像”<bpt i="2" type="font">{\f2 </bpt>(Images)<ept i="2">}</ept>、“视频”<bpt i="3" type="font">{\f2 </bpt>(Videos) <ept i="3">}</ept>和“文件夹”<bpt i="4" type="font">{\f2 </bpt>(Folders) <ept i="4">}</ept>目录下选中您想删除的项。</seg>
+</tuv></tu>
+<tu tuid="_1219131559828" creationid="CYNTHIA" creationdate="20070319T021621Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg><bpt i="1" type="bold">{\b </bpt>2 <ept i="1">}</ept>Click ‘  ’.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg><bpt i="1">{\b\f2 </bpt>2 <ept i="1">}</ept>单击“  ”。</seg>
+</tuv></tu>
+<tu tuid="_1219131559843" creationid="CYNTHIA" creationdate="20070319T021625Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>&gt; The following dialogue screen appears.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>&gt; <ept i="1">}</ept>出现以下对话框。</seg>
+</tuv></tu>
+<tu tuid="_1219131559875" creationid="ROBIN_HUANG" creationdate="20070326T013007Z" changedate="20120227T182834Z">
+<prop type="Txt::Text Field">Neroc SPC1000 NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>Register your product and get support at www.philips.com/welcome</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>请在以下网址注册本产品并获取支持： <bpt i="1" type="font">{\f5 </bpt>www.philips.com/welcome<ept i="1">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131559890" creationid="CYNTHIA" creationdate="20070319T021655Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg><bpt i="1" type="bold">{\b </bpt>3 <ept i="1">}</ept>Click the ‘<bpt i="2" type="bold">{\b </bpt>OK<ept i="2">}</ept>’ button to delete the selected items.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg><bpt i="1">{\b\f2 </bpt>3 <ept i="1">}</ept>单击“<bpt i="2" type="bold">{\b </bpt>确定<ept i="2">}</ept>”<bpt i="3" type="font">{\f2 </bpt>(<ept i="3">}</ept><bpt i="4">{\b\f2 </bpt>OK<ept i="4">}</ept><bpt i="5" type="font">{\f2 </bpt>) <ept i="5">}</ept>按钮，删除所选项。</seg>
+</tuv></tu>
+<tu tuid="_1219131559906" creationid="ROBIN_HUANG" creationdate="20070328T030556Z" changedate="20120227T182834Z">
+<prop type="Txt::Text Field">Neroc SPC1300 NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>3 <bpt i="1" type="bold">{\b </bpt>Picture enhancement<ept i="1">}</ept></seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>3 <ept i="1">}</ept>图像增强</seg>
+</tuv></tu>
+<tu tuid="_1219131559921" creationid="CYNTHIA" creationdate="20070319T021706Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>• If you need assistance select ‘<bpt i="1" type="bold">{\b </bpt>Application Help<ept i="1">}</ept>’ in the ‘<bpt i="2" type="bold">{\b </bpt>Help<ept i="2">}</ept>’ menu.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>•<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept>如果需要帮助，请在“<bpt i="2" type="bold">{\b </bpt>帮助<ept i="2">}</ept>”<bpt i="3" type="font">{\f2 </bpt>(<ept i="3">}</ept><bpt i="4">{\b\f2 </bpt>Help<ept i="4">}</ept><bpt i="5" type="font">{\f2 </bpt>) <ept i="5">}</ept>菜单中选择“<bpt i="6" type="bold">{\b </bpt>应用程序帮助<ept i="6">}</ept>”<bpt i="7" type="font">{\f2 </bpt>(<ept i="7">}</ept><bpt i="8">{\b\f2 </bpt>Application Help<ept i="8">}</ept><bpt i="9" type="font">{\f2 </bpt>)<ept i="9">}</ept>。</seg>
+</tuv></tu>
+<tu tuid="_1219131559937" creationid="CYNTHIA" creationdate="20070319T021801Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>In the ‘<bpt i="1" type="bold">{\b </bpt>Monitor<ept i="1">}</ept>’ menu you can set up the WebCam for motion detection and videolog recording.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>在“<bpt i="1" type="bold">{\b </bpt>监测<ept i="1">}</ept>”<bpt i="2" type="font">{\f2 </bpt>(<ept i="2">}</ept><bpt i="3">{\b\f2 </bpt>Monitor<ept i="3">}</ept><bpt i="4" type="font">{\f2 </bpt>) <ept i="4">}</ept>菜单中，您可设置网络摄像头的动作捕捉和视频记录录制功能。</seg>
+</tuv></tu>
+<tu tuid="_1219131559953" creationid="CYNTHIA" creationdate="20070319T021806Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>• Click the ‘<bpt i="1" type="bold">{\b </bpt>Monitor<ept i="1">}</ept>’ tab to open the ‘Monitor’ menu.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>•<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept>单击“<bpt i="2" type="bold">{\b </bpt>监测<ept i="2">}</ept>”<bpt i="3" type="font">{\f2 </bpt>(<ept i="3">}</ept><bpt i="4">{\b\f2 </bpt>Monitor<ept i="4">}</ept><bpt i="5" type="font">{\f2 </bpt>) <ept i="5">}</ept>选项卡，打开“监测”<bpt i="6" type="font">{\f2 </bpt>(Monitor) <ept i="6">}</ept>菜单。</seg>
+</tuv></tu>
+<tu tuid="_1219131559968" creationid="CYNTHIA" creationdate="20070319T021810Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>&gt; The Monitor menu main screen appears.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>&gt; <ept i="1">}</ept>出现监测菜单的主画面。</seg>
+</tuv></tu>
+<tu tuid="_1219131559984" creationid="CYNTHIA" creationdate="20070319T021817Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>&gt; The total amount of videologs is shown above the content panel (top right).</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>&gt; <ept i="1">}</ept>视频记录的总数会显示在内容面板的右上方（顶部）。</seg>
+</tuv></tu>
+<tu tuid="_1219131560000" creationid="CYNTHIA" creationdate="20070319T021932Z" changedate="20070320T054245Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>&gt; The ‘Movement’ indicator (  ) shows the amount of movement that is detected within the Webcam field of view.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>&gt; <ept i="1">}</ept>“动作”<bpt i="2" type="font">{\f2 </bpt>(Movement) <ept i="2">}</ept>显示条（  ）显示出在网络摄像头视角范围内所捕捉到的动作量。</seg>
+</tuv></tu>
+<tu tuid="_1219131560015" creationid="CYNTHIA" creationdate="20070319T021937Z" changedate="20070320T054246Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>• Click ‘<bpt i="1" type="bold">{\b </bpt>Start monitoring<ept i="1">}</ept>’ to start monitoring.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>•<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept>单击“<bpt i="2" type="bold">{\b </bpt>开始监测<ept i="2">}</ept>”<bpt i="3" type="font">{\f2 </bpt>(<ept i="3">}</ept><bpt i="4">{\b\f2 </bpt>Start monitoring<ept i="4">}</ept><bpt i="5" type="font">{\f2 </bpt>)<ept i="5">}</ept>，开始进行监测。</seg>
+</tuv></tu>
+<tu tuid="_1219131560031" creationid="CYNTHIA" creationdate="20070319T022005Z" changedate="20070320T054246Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>&gt; If movement is detected within the field of view of the WebCam, recording starts automatically.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>&gt; <ept i="1">}</ept>如果摄像头在视角范围内捕捉到动作，录制将会自动开始。</seg>
+</tuv></tu>
+<tu tuid="_1219131560046" creationid="CYNTHIA" creationdate="20070319T022027Z" changedate="20070320T054246Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>• Click ‘<bpt i="1" type="bold">{\b </bpt>Start monitoring<ept i="1">}</ept>’ again to stop monitoring.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>•<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept>再次单击“<bpt i="2" type="bold">{\b </bpt>开始监测<ept i="2">}</ept>”<bpt i="3" type="font">{\f2 </bpt>(<ept i="3">}</ept><bpt i="4">{\b\f2 </bpt>Start monitoring<ept i="4">}</ept><bpt i="5" type="font">{\f2 </bpt>) <ept i="5">}</ept>以停止监测。</seg>
+</tuv></tu>
+<tu tuid="_1219131560062" creationid="CYNTHIA" creationdate="20070319T022103Z" changedate="20070320T054246Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>• Click ‘<bpt i="1" type="bold">{\b </bpt>All logs<ept i="1">}</ept>’ to display all available logs in the content panel.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>•<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept>单击“<bpt i="2" type="bold">{\b </bpt>所有记录<ept i="2">}</ept>”<bpt i="3" type="font">{\f2 </bpt>(<ept i="3">}</ept><bpt i="4">{\b\f2 </bpt>All logs<ept i="4">}</ept><bpt i="5" type="font">{\f2 </bpt>) <ept i="5">}</ept>以在内容面板中显示所有可用记录。</seg>
+</tuv></tu>
+<tu tuid="_1219131560078" creationid="CYNTHIA" creationdate="20070319T022246Z" changedate="20070320T054246Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>• Click ‘<bpt i="1" type="bold">{\b </bpt>By date<ept i="1">}</ept>’ to display the content of the various recording dates in the content panel.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>•<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept>单击“<bpt i="2" type="bold">{\b </bpt>按日期<ept i="2">}</ept>”<bpt i="3" type="font">{\f2 </bpt>(<ept i="3">}</ept><bpt i="4">{\b\f2 </bpt>By date<ept i="4">}</ept><bpt i="5" type="font">{\f2 </bpt>) <ept i="5">}</ept>以在内容面板中显示不同录制日期的内容。</seg>
+</tuv></tu>
+<tu tuid="_1219131560093" creationid="CYNTHIA" creationdate="20070319T022306Z" changedate="20070320T054246Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>• Click on a date to display the log(s) made on that date in the content panel.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>•<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept>单击某一日期，可在内容面板中显示在此日期录制的记录。</seg>
+</tuv></tu>
+<tu tuid="_1219131560109" creationid="CYNTHIA" creationdate="20070319T022353Z" changedate="20070320T054246Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>• Click ‘ ’ to maximize the lower part of the screen and display the camera preview.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>单击“ ”最大化画面的下半部，并显示摄像预览。</seg>
+</tuv></tu>
+<tu tuid="_1219131560125" creationid="ROBIN_HUANG" creationdate="20070328T030910Z" changedate="20120227T182834Z">
+<prop type="Txt::Text Field">Neroc SPC1300 NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>This option enables Philips patented Pixel Plus technology and</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>该选项采用了<bpt i="1" type="font">{\f2 </bpt> Philips <ept i="1">}</ept>逐点晶晰<bpt i="2" type="font">{\f2 </bpt> (Pixel Plus) <ept i="2">}</ept>专利技术，</seg>
+</tuv></tu>
+<tu tuid="_1219131560140" creationid="CYNTHIA" creationdate="20070319T022419Z" changedate="20120227T182834Z">
+<prop type="Txt::Text Field">TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>• Click ‘ ’ to maximize the upper part of the screen and display your videologs.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>单击“ ”最大化画面的上部，并显示视频记录。</seg>
+</tuv></tu>
+<tu tuid="_1219131560156" creationid="CYNTHIA" creationdate="20070319T022437Z" changedate="20070320T054246Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>• Move your cursor onto a button to see a brief explanation of the button function.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>•<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept>将光标移至按钮，显示相应按钮功能的简介。</seg>
+</tuv></tu>
+<tu tuid="_1219131560171" creationid="ROBIN_HUANG" creationdate="20070326T013858Z" changedate="20120227T182834Z">
+<prop type="Txt::Text Field">Neroc SPC1000 NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>To fully benefit from the support that Philips offers, register your product at www.philips.com/welcome.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>为能充分利用<bpt i="1" type="font">{\f5 </bpt> Philips <ept i="1">}</ept>提供的支持，请在以下网址注册本产品：<bpt i="2" type="font">{\f5 </bpt>www.philips.com/welcome<ept i="2">}</ept>。</seg>
+</tuv></tu>
+<tu tuid="_1219131560187" creationid="ROBIN_HUANG" creationdate="20070326T013714Z" changedate="20120227T182834Z">
+<prop type="Txt::Text Field">Neroc SPC1000 NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>Your WebCam</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>您的网络摄像头</seg>
+</tuv></tu>
+<tu tuid="_1219131560203" creationid="ROBIN_HUANG" creationdate="20070328T032511Z" changedate="20120227T182834Z">
+<prop type="Txt::Text Field">Neroc SPC1300 NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>The lower part of the screen will be split in two halfs; on the left you see the current picture, on the right you see the enhanced picture.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>屏幕下半部分将分为两个图像窗口，左边显示为当前图像，右边显示为增强后的图像。</seg>
+</tuv></tu>
+<tu tuid="_1219131560218" creationid="CYNTHIA" creationdate="20070319T022447Z" changedate="20070320T054246Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>Monitor settings</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>监测设置</seg>
+</tuv></tu>
+<tu tuid="_1219131560234" creationid="CYNTHIA" creationdate="20070319T022452Z" changedate="20070320T054246Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>•<bpt i="1" type="bold">{\b </bpt> <ept i="1">}</ept>Click ‘ ’ to access the ‘Monitor settings’ menu.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>•<bpt i="1">{\b\f2 </bpt> <ept i="1">}</ept>单击“ ”进入“监测设置”<bpt i="2" type="font">{\f2 </bpt>(Monitor settings) <ept i="2">}</ept>菜单。</seg>
+</tuv></tu>
+<tu tuid="_1219131560250" creationid="CYNTHIA" creationdate="20070319T022612Z" changedate="20070320T054246Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>•<bpt i="1" type="bold">{\b </bpt> <ept i="1">}</ept>Enter the minimum memory capacity you wish to remain on your harddisk during recording.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>•<bpt i="1">{\b\f2 </bpt> <ept i="1">}</ept>输入录制时希望硬盘留有的最小空间大小。</seg>
+</tuv></tu>
+<tu tuid="_1219131560265" creationid="CYNTHIA" creationdate="20070319T022624Z" changedate="20070320T054246Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>&gt; Recording stops automatically when harddisk space comes below the set amount of Mbs.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg><bpt i="1" type="font">{\f2 </bpt>&gt; <ept i="1">}</ept>当硬盘空间小于所设大小时，录制将自动停止。</seg>
+</tuv></tu>
+<tu tuid="_1219131560281" creationid="CYNTHIA" creationdate="20070319T022650Z" changedate="20070320T054246Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>•<bpt i="1" type="bold">{\b </bpt> <ept i="1">}</ept>Check the ‘Notification’ box if you wish a notification to be send to an e-mail address when movement is detected.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>•<bpt i="1">{\b\f2 </bpt> <ept i="1">}</ept>如果您希望向某一电子邮件地址发送动作捕捉通知，请勾选“通知”<bpt i="2" type="font">{\f2 </bpt>(Notification) <ept i="2">}</ept>复选框。</seg>
+</tuv></tu>
+<tu tuid="_1219131560296" creationid="CYNTHIA" creationdate="20070319T022704Z" changedate="20070320T054246Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>•<bpt i="1" type="bold">{\b </bpt> <ept i="1">}</ept>Enter the e-mail address you wish the notification to be sent to.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>•<bpt i="1">{\b\f2 </bpt> <ept i="1">}</ept>输入希望收到通知的电子邮件地址。</seg>
+</tuv></tu>
+<tu tuid="_1219131560312" creationid="CYNTHIA" creationdate="20070319T022747Z" changedate="20070320T054246Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>•<bpt i="1" type="bold">{\b </bpt> <ept i="1">}</ept>Use the ‘<bpt i="2" type="bold">{\b </bpt>Browse<ept i="2">}</ept>’ button to select an audio file if you wish an audio file to start playing as soon as movement is detected.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>•<bpt i="1">{\b\f2 </bpt> <ept i="1">}</ept>如果您希望在捕捉到动作时立即开始播放音频文件，请单击“<bpt i="2" type="bold">{\b </bpt>浏览<ept i="2">}</ept>”<bpt i="3" type="font">{\f2 </bpt>(<ept i="3">}</ept><bpt i="4">{\b\f2 </bpt>Browse<ept i="4">}</ept><bpt i="5" type="font">{\f2 </bpt>) <ept i="5">}</ept>按钮，选择音频文件。</seg>
+</tuv></tu>
+<tu tuid="_1219131560328" creationid="CYNTHIA" creationdate="20070319T023052Z" changedate="20070320T054246Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>•<bpt i="1" type="bold">{\b </bpt> <ept i="1">}</ept>Use the sensitivity slider to set the desired sensitivity level for the WebCam detector.The sensitivity level determines the minimum amount of movement that will cause the WebCam to start recording.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>•<bpt i="1">{\b\f2 </bpt> <ept i="1">}</ept>使用灵敏度滑块设置理想的网络摄像头探测器的灵敏度。灵敏度决定了促使网络摄像头开始录像的最小动作量。</seg>
+</tuv></tu>
+<tu tuid="_1219131560343" creationid="ROBIN_HUANG" creationdate="20070326T013756Z" changedate="20120227T182834Z">
+<prop type="Txt::Text Field">Neroc SPC1000 NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>Congratulations on your purchase and welcome to Philips!</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>感谢您购买并欢迎访问<bpt i="1" type="font">{\f5 </bpt> Philips <ept i="1">}</ept>网站！</seg>
+</tuv></tu>
+<tu tuid="_1219131560359" creationid="CYNTHIA" creationdate="20070319T023101Z" changedate="20070320T054246Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>The higher the sensitivity level, the sooner recording starts.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>灵敏度越高，录制便会越快开始。</seg>
+</tuv></tu>
+<tu tuid="_1219131560375" creationid="CYNTHIA" creationdate="20070319T023214Z" changedate="20070320T054246Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>•<bpt i="1" type="bold">{\b </bpt> <ept i="1">}</ept>Click the ‘<bpt i="2" type="bold">{\b </bpt>OK<ept i="2">}</ept>’ button to store your settings and close the dialogue box or click ‘ ’ or the ‘<bpt i="3" type="bold">{\b </bpt>Cancel<ept i="3">}</ept>’ button to close the dialogue box without saving any settings.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>•<bpt i="1">{\b\f2 </bpt> <ept i="1">}</ept><bpt i="2" type="bold">{\b </bpt>单击“确定”<ept i="2">}</ept><bpt i="3">{\b\f2 </bpt>(OK) <ept i="3">}</ept><bpt i="4" type="bold">{\b </bpt>按钮保存您的设置并关闭对话框，也可以单击“<ept i="4">}</ept> <bpt i="5" type="bold">{\b </bpt>”或“取消”<ept i="5">}</ept><bpt i="6">{\b\f2 </bpt>(Cancel) <ept i="6">}</ept><bpt i="7" type="bold">{\b </bpt>按钮关闭对话框而不保存设置。<ept i="7">}</ept></seg>
+</tuv></tu>
+<tu tuid="_1219131560390" creationid="CYNTHIA" creationdate="20070319T023219Z" changedate="20070320T054246Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg>Deleting videologs</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg>删除录像记录</seg>
+</tuv></tu>
+<tu tuid="_1219131560406" creationid="CYNTHIA" creationdate="20070319T023230Z" changedate="20070320T054246Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="en-US">
+<seg><bpt i="1" type="bold">{\b </bpt>1 <ept i="1">}</ept>Select the logs you wish to delete in the content panel or under ‘By date’.</seg>
+</tuv><tuv changedate="20120227T182834Z" creationdate="20120227T182834Z" xml:lang="zh-CN">
+<seg><bpt i="1">{\b\f2 </bpt>1 <ept i="1">}</ept>在内容面板中或在“按日期”<bpt i="2" type="font">{\f2 </bpt>(By date) <ept i="2">}</ept>目录下选中您想删除的记录。</seg>
+</tuv></tu>
+<tu tuid="_1219131560421" creationid="CYNTHIA" creationdate="20070319T023313Z" changedate="20070320T054246Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182835Z" creationdate="20120227T182835Z" xml:lang="en-US">
+<seg><bpt i="1" type="bold">{\b </bpt>3 <ept i="1">}</ept>Click the ‘<bpt i="2" type="bold">{\b </bpt>OK<ept i="2">}</ept>’ button to delete the selected videologs.</seg>
+</tuv><tuv changedate="20120227T182835Z" creationdate="20120227T182835Z" xml:lang="zh-CN">
+<seg><bpt i="1">{\b\f2 </bpt>3 <ept i="1">}</ept>单击“<bpt i="2" type="bold">{\b </bpt>确定<ept i="2">}</ept>”<bpt i="3" type="font">{\f2 </bpt>(<ept i="3">}</ept><bpt i="4">{\b\f2 </bpt>OK<ept i="4">}</ept><bpt i="5" type="font">{\f2 </bpt>) <ept i="5">}</ept>按钮，删除所选视频记录。</seg>
+</tuv></tu>
+<tu tuid="_1219131560437" creationid="CYNTHIA" creationdate="20070319T023349Z" changedate="20070320T054246Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182835Z" creationdate="20120227T182835Z" xml:lang="en-US">
+<seg>In the ‘<bpt i="1" type="bold">{\b </bpt>Broadcast<ept i="1">}</ept>’ menu you can select a website where you can broadcast your videos live.</seg>
+</tuv><tuv changedate="20120227T182835Z" creationdate="20120227T182835Z" xml:lang="zh-CN">
+<seg>在“<bpt i="1" type="bold">{\b </bpt>发布<ept i="1">}</ept>”<bpt i="2" type="font">{\f2 </bpt>(<ept i="2">}</ept><bpt i="3">{\b\f2 </bpt>Broadcast<ept i="3">}</ept><bpt i="4" type="font">{\f2 </bpt>) <ept i="4">}</ept>菜单中，您可以选择要发布实时视频的网站。</seg>
+</tuv></tu>
+<tu tuid="_1219131560453" creationid="ROBIN_HUANG" creationdate="20070326T013928Z" changedate="20120227T182835Z">
+<prop type="Txt::Text Field">Neroc SPC1000 NC</prop>
+<tuv changedate="20120227T182835Z" creationdate="20120227T182835Z" xml:lang="en-US">
+<seg>Volume level wizard</seg>
+</tuv><tuv changedate="20120227T182835Z" creationdate="20120227T182835Z" xml:lang="zh-CN">
+<seg>音量设置向导</seg>
+</tuv></tu>
+<tu tuid="_1219131560468" creationid="ROBIN_HUANG" creationdate="20070326T013914Z" changedate="20120227T182835Z">
+<prop type="Txt::Text Field">Neroc SPC1000 NC</prop>
+<tuv changedate="20120227T182835Z" creationdate="20120227T182835Z" xml:lang="en-US">
+<seg>Microphone volume</seg>
+</tuv><tuv changedate="20120227T182835Z" creationdate="20120227T182835Z" xml:lang="zh-CN">
+<seg>麦克风音量</seg>
+</tuv></tu>
+<tu tuid="_1219131560484" creationid="CYNTHIA" creationdate="20070319T023359Z" changedate="20070320T054246Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182835Z" creationdate="20120227T182835Z" xml:lang="en-US">
+<seg>• Click the ‘<bpt i="1" type="bold">{\b </bpt>Broadcast<ept i="1">}</ept>’ tab to open the ‘Broadcast’ menu.</seg>
+</tuv><tuv changedate="20120227T182835Z" creationdate="20120227T182835Z" xml:lang="zh-CN">
+<seg>•<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept>单击“<bpt i="2" type="bold">{\b </bpt>发布<ept i="2">}</ept>”<bpt i="3" type="font">{\f2 </bpt>(<ept i="3">}</ept><bpt i="4">{\b\f2 </bpt>Broadcast<ept i="4">}</ept><bpt i="5" type="font">{\f2 </bpt>) <ept i="5">}</ept>选项卡以打开“发布”<bpt i="6" type="font">{\f2 </bpt>(Broadcast) <ept i="6">}</ept>菜单。</seg>
+</tuv></tu>
+<tu tuid="_1219131560500" creationid="ROBIN_HUANG" creationdate="20070326T014021Z" changedate="20120227T182835Z">
+<prop type="Txt::Text Field">Neroc SPC1000 NC</prop>
+<tuv changedate="20120227T182835Z" creationdate="20120227T182835Z" xml:lang="en-US">
+<seg>Helps you set up the microphone volume level.</seg>
+</tuv><tuv changedate="20120227T182835Z" creationdate="20120227T182835Z" xml:lang="zh-CN">
+<seg>可帮助您设置麦克风的音量大小。</seg>
+</tuv></tu>
+<tu tuid="_1219131560515" creationid="CYNTHIA" creationdate="20070319T023521Z" changedate="20070320T054246Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182835Z" creationdate="20120227T182835Z" xml:lang="en-US">
+<seg>• Select the desired website by clicking the corresponding ‘<bpt i="1" type="bold">{\b </bpt>Launch<ept i="1">}</ept>’ button.</seg>
+</tuv><tuv changedate="20120227T182835Z" creationdate="20120227T182835Z" xml:lang="zh-CN">
+<seg>•<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept>单击相应的“<bpt i="2" type="bold">{\b </bpt>开始<ept i="2">}</ept>”‘<bpt i="3" type="font">{\f2 </bpt>(<ept i="3">}</ept><bpt i="4">{\b\f2 </bpt>Launch<ept i="4">}</ept><bpt i="5" type="font">{\f2 </bpt>) <ept i="5">}</ept>按钮，选择需要的网站。</seg>
+</tuv></tu>
+<tu tuid="_1219131560531" creationid="ROBIN_HUANG" creationdate="20070326T014058Z" changedate="20070326T015200Z">
+<prop type="Txt::Text Field">Neroc SPC1000 NC</prop>
+<tuv changedate="20120227T182835Z" creationdate="20120227T182835Z" xml:lang="en-US">
+<seg>• Test the microphone volume level by clicking the 'Start' button.</seg>
+</tuv><tuv changedate="20120227T182835Z" creationdate="20120227T182835Z" xml:lang="zh-CN">
+<seg>• 单击“开始”（<bpt i="1" type="font">{\f5 </bpt>Start<ept i="1">}</ept>）按钮，测试麦克风的音量大小。</seg>
+</tuv></tu>
+<tu tuid="_1219131560546" creationid="CYNTHIA" creationdate="20070319T023557Z" changedate="20070320T054246Z">
+<prop type="Txt::Text Field">TI-07196, TI-07196  Neroc SPC620NC</prop>
+<tuv changedate="20120227T182835Z" creationdate="20120227T182835Z" xml:lang="en-US">
+<seg>• Follow the on-screen instructions for live broadcasting of your videos on the selected website.</seg>
+</tuv><tuv changedate="20120227T182835Z" creationdate="20120227T182835Z" xml:lang="zh-CN">
+<seg>•<bpt i="1" type="font">{\f2 </bpt> <ept i="1">}</ept>按照屏幕上显示的说明，在所选网站上实时发布您的视频。</seg>
+</tuv></tu>
+</body>
+</tmx>

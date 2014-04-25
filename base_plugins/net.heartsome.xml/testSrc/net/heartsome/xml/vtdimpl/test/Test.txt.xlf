@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2"
+	xmlns:hs="http://www.heartsome.net.cn/2008/XLFExtension" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd  http://www.heartsome.net.cn/2008/XLFExtension XLFExtension.xsd">
+	<file datatype="plaintext" original="/data/john/Desktop/Test1.txt"
+		source-language="en-AU" target-language="zh-HK" tool="manual">
+		<header>
+			<skl>
+				<external-file crc="4626"
+					href="/data/john/Workspaces/CAT/HSTS7/./skl/Test1.txt.61659.skl" />
+			</skl>
+			<tool tool-id="XLFEditor auto-Quick Translation" tool-name="HSStudio" />
+
+			<hs:prop-group name="encoding">
+				<hs:prop prop-type="encoding">UTF-8</hs:prop>
+			</hs:prop-group>
+		</header>
+		<body>
+			<trans-unit approved="yes" id="0" merged-trans="yes"
+				reformat="yes" size-unit="pixel" translate="no" xml:space="preserve"><source
+				xml:lang="en-AU">This <ph id="1">&lt;b&gt;</ph>is the first <ph id="2">&lt;/b&gt;</ph>test.</source><target state="new"
+				xml:lang="zh-HK">这是<ph id="1">&lt;b&gt;</ph>第一个<ph id="1">&lt;/b&gt;</ph>测试。</target><alt-trans match-quality="100"
+				origin="autoFuzzy_0" tool-id="XLFEditor auto-Quick Translation"><source xml:lang="en-AU">This is a test.</source><target
+				state="new" xml:lang="zh-HK">这是一个测试吧。</target></alt-trans>
+				<alt-trans match-quality="90"
+				origin="autoFuzzy_0" tool-id="XLFEditor auto-Quick Translation"><source xml:lang="en-AU">This is a test.</source><target
+				state="new" xml:lang="zh-HK">这是一个测试吧。</target></alt-trans>
+				<alt-trans match-quality="95"
+				origin="autoFuzzy_0" tool-id="XLFEditor auto-Quick Translation"><source xml:lang="en-AU">This is a test!</source><target
+				state="new" xml:lang="zh-HK">这是一个测试!</target></alt-trans>
+				<note annotates="source" from="John1" xml:lang="zh-CN" priority="1">The note 1.</note>
+				<note annotates="general" from="John2" xml:lang="zh-CN" priority="1">The note 2.</note>
+				</trans-unit>
+			<trans-unit approved="yes" id="1" merged-trans="yes" xsi:test="test"
+				reformat="yes" size-unit="pixel" translate="yes" xml:space="preserve" hs:ext="yes"><source
+				xml:lang="en-AU">This is <ph id="1">&lt;b&gt;</ph> the second<ph id="2">&lt;/b&gt;</ph> test.</source><target state="new"
+				xml:lang="zh-HK">这是<ph id="1">&lt;b&gt;</ph>第二个<ph id="1">&lt;/b&gt;</ph>测试。</target><alt-trans match-quality="99"
+				origin="autoFuzzy_1" tool-id="XLFEditor auto-Quick Translation"><source xml:lang="en-AU">This is a test.</source><target
+				state="new" xml:lang="zh-HK">这是一个测试。</target></alt-trans>
+				<note annotates="target" from="John 1" xml:lang="zh-CN" priority="1">The 1 note.</note>
+				<note annotates="target" from="John 2" xml:lang="zh-CN" priority="2">The 2 note.</note>
+				<note annotates="target" from="John 3" xml:lang="zh-CN" priority="3">The 3 note.</note>
+				</trans-unit>
+		</body>
+	</file>
+		<file datatype="plaintext" original="/data/john/Desktop/Test2.txt"
+		source-language="en-AU" target-language="zh-HK" tool="manual">
+		<header>
+			<skl>
+				<external-file crc="4626"
+					href="/data/john/Workspaces/CAT/HSTS7/./skl/Test2.txt.61659.skl" />
+			</skl>
+			<tool tool-id="XLFEditor auto-Quick Translation" tool-name="HSStudio" />
+
+			<hs:prop-group name="encoding">
+				<hs:prop prop-type="encoding">UTF-8</hs:prop>
+			</hs:prop-group>
+		</header>
+		<body>
+			<trans-unit approved="yes" id="0" merged-trans="yes"
+				reformat="yes" size-unit="pixel" translate="no" xml:space="preserve"><source
+				xml:lang="en-AU">This <ph id="1">&lt;b&gt;</ph>is the first <ph id="2">&lt;/b&gt;</ph>test.</source><target state="new"
+				xml:lang="zh-HK">这是<ph id="1">&lt;b&gt;</ph>第一个<ph id="1">&lt;/b&gt;</ph>测试。</target><alt-trans match-quality="100"
+				origin="autoFuzzy_0" tool-id="XLFEditor auto-Quick Translation"><source xml:lang="en-AU">This is a test.</source><target
+				state="new" xml:lang="zh-HK">这是一个测试吧。</target></alt-trans>
+				<alt-trans match-quality="90"
+				origin="autoFuzzy_0" tool-id="XLFEditor auto-Quick Translation"><source xml:lang="en-AU">This is a test.</source><target
+				state="new" xml:lang="zh-HK">这是一个测试吧。</target></alt-trans>
+				<alt-trans match-quality="95"
+				origin="autoFuzzy_0" tool-id="XLFEditor auto-Quick Translation"><source xml:lang="en-AU">This is a test!</source><target
+				state="new" xml:lang="zh-HK">这是一个测试!</target></alt-trans>
+				<note annotates="source" from="John1" xml:lang="zh-CN" priority="1">The note 1.</note>
+				<note annotates="general" from="John2" xml:lang="zh-CN" priority="1">The note 2.</note>
+				</trans-unit>
+			<trans-unit approved="yes" id="1" merged-trans="yes"
+				reformat="yes" size-unit="pixel" translate="yes" xml:space="preserve"><source
+				xml:lang="en-AU">This is <ph id="1">&lt;b&gt;</ph> the second<ph id="2">&lt;/b&gt;</ph> test.</source><target state="new"
+				xml:lang="zh-HK">这是<ph id="1">&lt;b&gt;</ph>第二个<ph id="1">&lt;/b&gt;</ph>测试。</target><alt-trans match-quality="99"
+				origin="autoFuzzy_1" tool-id="XLFEditor auto-Quick Translation"><source xml:lang="en-AU">This is a test.</source><target
+				state="new" xml:lang="zh-HK">这是一个测试。</target></alt-trans>
+				<note annotates="target" from="John 1" xml:lang="zh-CN" priority="1">The 1 note.</note>
+				<note annotates="target" from="John 2" xml:lang="zh-CN" priority="2">The 2 note.</note>
+				<note annotates="target" from="John 3" xml:lang="zh-CN" priority="3">The 3 note.</note>
+				</trans-unit>
+		</body>
+	</file>
+</xliff>

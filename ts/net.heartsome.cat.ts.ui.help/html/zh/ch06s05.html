@@ -1,0 +1,318 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>5. 将术语库导出为 TBX</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<meta content="DocBook XSL Stylesheets V1.75.2 / ZoeeyDoc http://zoeeydoc.googlecode.com " name="generator">
+<link rel="home" href="index.html" title="用户手册">
+<link rel="up" href="ch06.html" title="记忆库和术语库的维护和管理">
+<link rel="prev" href="ch06s04.html" title="4. 术语库管理">
+<link rel="next" href="ch07.html" title="团队协作">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="sect1" title="5. 将术语库导出为 TBX">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title" style="clear: both">
+<a name="export-tbx"></a>5. 将术语库导出为 TBX</h2>
+</div>
+</div>
+</div>
+      
+
+      
+<p>与记忆库可以导出、导入 TMX 文件类似，术语库也可以通过导出、导入 TBX 文件在不同的 CAT
+      工具之间交换术语数据，方法如下：</p>
+
+      
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+          
+<p>点击<span class="guimenu">数据库</span>菜单 &gt; <span class="guimenuitem">导出
+          TBX</span>；</p>
+<div class="figure">
+<a name="N22647"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 140. 导出术语库为 TBX</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/export-tbx-1-1.png" align="middle" alt="导出术语库为 TBX"></div>
+              
+</div>
+            
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+        
+</li>
+<li class="listitem">
+          
+<p>在<code class="interfacename">导出术语库为 TBX
+          文件</code>对话框中，需要设置如下参数：</p>
+
+          
+<div class="figure">
+<a name="N22666"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 141. 导出术语库为 TBX</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/export-tbx-1-2.png" align="middle" alt="导出术语库为 TBX"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+
+          
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+              
+<p>术语库</p>
+
+              
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                  
+<p>
+<span class="guibutton">添加</span>
+</p>
+
+                  
+<p>点击该按钮后，先选择要添加的记忆库类型。</p>
+
+                  
+<p>若选择文件型记忆库，则弹出<code class="interfacename">打开文件</code>对话框，浏览并选择要导出的
+                  <span class="type">.hstm</span> 文件即可。</p>
+
+                  
+<div class="figure">
+<a name="N22697"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 142. 选择文件型术语库</b>
+</p>
+<div class="figure-contents">
+                    
+
+                    
+<div class="screenshot">
+                      
+<div class="mediaobject" align="center">
+<img src="images/export-tbx-1-2a.png" align="middle" alt="选择文件型术语库"></div>
+                    
+</div>
+                  
+</div>
+</div>
+<br class="figure-break">
+
+                  
+<p>若选择的是服务器型术语库，则将弹出<code class="interfacename">术语库管理</code>对话框，在其中选择要导出的术语库后<span class="guibutton">确定</span>即可。</p>
+
+                  
+<div class="figure">
+<a name="N226B6"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 143. 选择服务器型术语库</b>
+</p>
+<div class="figure-contents">
+                    
+
+                    
+<div class="screenshot">
+                      
+<div class="mediaobject" align="center">
+<img src="images/export-tbx-2.png" align="middle" alt="选择服务器型术语库"></div>
+                    
+</div>
+                  
+</div>
+</div>
+<br class="figure-break">
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guibutton">移除</span>
+</p>
+
+                  
+<p>将已添加到待导出列表中的术语库移出列表。</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">导出语言</span>
+</p>
+
+                  
+<p>选择列表中的术语库后，此处会列出该术语库中的语言，至少应选择两个语言才可以导出。默认全选。</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">源语言</span>
+</p>
+
+                  
+<p>导出的 TBX 应以哪个语言为源语言。</p>
+                
+</li>
+</ul>
+</div>
+            
+</li>
+<li class="listitem">
+              
+<p>
+<span class="guilabel">过滤规则</span>
+</p>
+
+              
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                  
+<p>
+<span class="guibutton">添加</span>
+</p>
+
+                  
+<p>选中的过滤规则为<span class="quote">&ldquo;<span class="quote">无</span>&rdquo;</span>的时候，点击<span class="guibutton">编辑</span>按钮即可添加一条新的过滤规则。一条过滤规则包含如下内容：</p>
+
+                  
+<div class="figure">
+<a name="N22704"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 144. 导出 TBX：过滤规则</b>
+</p>
+<div class="figure-contents">
+                    
+
+                    
+<div class="screenshot">
+                      
+<div class="mediaobject" align="center">
+<img src="images/export-tbx-3.png" align="middle" alt="导出 TBX：过滤规则"></div>
+                    
+</div>
+                  
+</div>
+</div>
+<br class="figure-break">
+
+                  
+<div class="itemizedlist">
+<ul class="itemizedlist" type="square">
+<li class="listitem">
+                      
+<p>
+<span class="guilabel">名称</span>
+</p>
+                    
+</li>
+<li class="listitem">
+                      
+<p>条件组合类型</p>
+
+                      
+<p>
+<span class="guilabel">满足以下所有条件</span>、<span class="guilabel">满足以下任一条件</span>
+</p>
+                    
+</li>
+<li class="listitem">
+                      
+<p>条件</p>
+
+                      
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                          
+<p>
+<span class="guilabel">术语内容</span>
+</p>
+                        
+</li>
+</ul>
+</div>
+                    
+</li>
+</ul>
+</div>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guibutton">编辑</span>
+</p>
+
+                  
+<p>选中已保存的过滤规则后，点击<span class="guibutton">编辑</span>按钮则为编辑该过滤规则。</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guibutton">删除</span>
+</p>
+
+                  
+<p>删除选中的过滤规则。</p>
+                
+</li>
+</ul>
+</div>
+            
+</li>
+<li class="listitem">
+              
+<p>
+<span class="guilabel">自定义编码</span>
+</p>
+
+              
+<p>指定 TBX 文件使用的编码，默认使用<span class="quote">&ldquo;<span class="quote">UTF-8</span>&rdquo;</span>，通常不需要修改。</p>
+            
+</li>
+<li class="listitem">
+              
+<p>
+<span class="guilabel">TBX 保存路径</span>
+</p>
+            
+</li>
+</ul>
+</div>
+        
+</li>
+</ol>
+</div>
+    
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="net.heartsome.cat.ts.configurationfile.feature"
+      label="Heartsome CAT Configuration File"
+      version="8.0.3.20130730"
+      provider-name="Heartsome Technologies Ltd.">
+
+   <description url="http://www.heartsome.net/">
+      Heartsome CAT Configuration File
+   </description>
+
+   <copyright url="http://www.heartsome.net/">
+      Copyright © Heartsome Technologies Ltd. All rights reserved.
+版权所有 © 瀚特盛科技有限公司 保留所有权利
+   </copyright>
+
+   <license url="http://www.heartsome.net/">
+      Please refer to Heartsome Software End User License Agreement (EULA).
+请参考 Heartsome 软件最终用户许可协议。
+   </license>
+
+</feature>

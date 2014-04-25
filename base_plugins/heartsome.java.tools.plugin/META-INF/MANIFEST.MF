@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Eclipse-BuddyPolicy: registered
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome Java Tools
+Bundle-SymbolicName: heartsome.java.tools.plugin
+Bundle-Version: 8.0.0.R8b_v20121025
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ClassPath: .,
+ lib/activation.jar,
+ lib/commons-codec-1.3.jar,
+ lib/commons-email-1.2.jar,
+ lib/hslibrary.jar,
+ lib/jsse.jar,
+ lib/mail.jar,
+ lib/nekohtml.jar,
+ lib/xercesImpl.jar
+Export-Package: cn.org.tools.utils.constant,
+ cn.org.tools.utils.date,
+ cn.org.tools.utils.encrypt,
+ cn.org.tools.utils.file,
+ cn.org.tools.utils.mail,
+ cn.org.tools.utils.math,
+ cn.org.tools.utils.regexp,
+ cn.org.tools.utils.string,
+ javax.mail,
+ javax.mail.event,
+ javax.mail.internet,
+ javax.mail.search,
+ javax.mail.util,
+ org.apache.commons.mail
+Bundle-Vendor: Heartsome Technologies Ltd.

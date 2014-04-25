@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="5. 工作流程" topic="html/zh/ch05.html">
+	<topic label="5.1. 项目准备" href="html/zh/ch05.html#ch5s1-preparation" >
+		<topic label="5.1.1. 源文件" href="html/zh/ch05.html#ch5s1a" />
+		<topic label="5.1.2. TMX 文件" href="html/zh/ch05.html#ch5s1b" />
+		<topic label="5.1.3. TBX 文件" href="html/zh/ch05.html#ch5s1c" />
+		<topic label="5.1.4. 数据库服务器" href="html/zh/ch05.html#ch5s1d" />
+	</topic>
+	<topic label="5.2. 创建项目" href="html/zh/ch05s02.html" >
+		<topic label="5.2.1. 项目信息" href="html/zh/ch05s02.html#create-project-wizard-project-info" />
+		<topic label="5.2.2. 语言对" href="html/zh/ch05s02.html#create-project-wizard-languages" />
+		<topic label="5.2.3. 记忆库" href="html/zh/ch05s02.html#create-project-wizard-tm" />
+		<topic label="5.2.4. 术语库" href="html/zh/ch05s02.html#create-project-wizard-tb" />
+		<topic label="5.2.5. 源文件" href="html/zh/ch05s02.html#create-project-wizard-source-file" />
+	</topic>
+	<topic label="5.3. 译前准备" href="html/zh/ch05s03.html" >
+		<topic label="5.3.1. 新建记忆库向导" href="html/zh/ch05s03.html#create-tm-wizard" />
+		<topic label="5.3.2. 新建术语库向导" href="html/zh/ch05s03.html#create-tb-wizard" />
+		<topic label="5.3.3. 添加源文件" href="html/zh/ch05s03.html#add-source-files-drag-and-drop" />
+		<topic label="5.3.4. 转换源文件为 XLIFF" href="html/zh/ch05s03.html#convert-source-to-xliff" />
+		<topic label="5.3.5. 锁定重复文本段" href="html/zh/ch05s03.html#lock-repetition" />
+		<topic label="5.3.6. 预翻译" href="html/zh/ch05s03.html#pre-translation" />
+		<topic label="5.3.7. 预存机器翻译" href="html/zh/ch05s03.html#prestore-mt" />
+		<topic label="5.3.8. 字数分析" href="html/zh/ch05s03.html#word-analysis" />
+		<topic label="5.3.9. 分割文件" href="html/zh/ch05s03.html#split-xliff-file" />
+		<topic label="5.3.10. 项目设置" href="html/zh/ch05s03.html#project-setting" />
+	</topic>
+	<topic label="5.4. 翻译" href="html/zh/ch05s04.html" >
+		<topic label="5.4.1. 打开文件" href="html/zh/ch05s04.html#open-xliff-file" />
+		<topic label="5.4.2. 输入译文" href="html/zh/ch05s04.html#edit-target" />
+		<topic label="5.4.3. 在译文中插入标记" href="html/zh/ch05s04.html#ch5s4c" />
+		<topic label="5.4.4. 修改文本段状态" href="html/zh/ch05s04.html#change-segment-status" />
+		<topic label="5.4.5. 记忆库" href="html/zh/ch05s04.html#ch5s4e" />
+		<topic label="5.4.6. 术语库" href="html/zh/ch05s04.html#ch5s4f" />
+		<topic label="5.4.7. 品质检查" href="html/zh/ch05s04.html#translation-qa-check" />
+		<topic label="5.4.8. 快速翻译" href="html/zh/ch05s04.html#ch5s4h" />
+		<topic label="5.4.9. 机器翻译" href="html/zh/ch05s04.html#ch5s4i" />
+		<topic label="5.4.10. 过滤文本段" href="html/zh/ch05s04.html#filter-segments" />
+		<topic label="5.4.11. 翻译进度分析" href="html/zh/ch05s04.html#translation-progress-analysis" />
+	</topic>
+	<topic label="5.5. 编辑与 QA" href="html/zh/ch05s05.html" >
+		<topic label="5.5.1. 打开文件" href="html/zh/ch05s05.html#ch5s5a" />
+		<topic label="5.5.2. 修改文本段状态" href="html/zh/ch05s05.html#ch5s5b" />
+		<topic label="5.5.3. 编辑译文" href="html/zh/ch05s05.html#ch5s5c" />
+		<topic label="5.5.4. 批注" href="html/zh/ch05s05.html#ch5s5d" />
+		<topic label="5.5.5. 批准进度分析" href="html/zh/ch05s05.html#edit-progress-analysis" />
+		<topic label="5.5.6. 外部校对" href="html/zh/ch05s05.html#ch5s5f" />
+		<topic label="5.5.7. 品质检查" href="html/zh/ch05s05.html#qa" />
+		<topic label="5.5.8. 预览翻译" href="html/zh/ch05s05.html#ch5s5h" />
+	</topic>
+	<topic label="5.6. 完成项目" href="html/zh/ch05s06.html" >
+		<topic label="5.6.1. 合并文件" href="html/zh/ch05s06.html#merge-xliff-files" />
+		<topic label="5.6.2. 解锁重复文本段" href="html/zh/ch05s06.html#ch5s6b" />
+		<topic label="5.6.3. 繁殖翻译" href="html/zh/ch05s06.html#propagated-translation" />
+		<topic label="5.6.4. 将 XLIFF 转换为目标文件" href="html/zh/ch05s06.html#ch5s6d" />
+	</topic>
+</toc>
+
+
+
+
+
+
+
+
+

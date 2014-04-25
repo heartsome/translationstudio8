@@ -1,0 +1,508 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Handling different file formats</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<meta content="DocBook XSL Stylesheets V1.75.2 / ZoeeyDoc http://zoeeydoc.googlecode.com " name="generator">
+<link rel="home" href="index.html" title="User manual">
+<link rel="up" href="index.html" title="User manual">
+<link rel="prev" href="ch07s05.html" title="5.&nbsp;Import external file">
+<link rel="next" href="ch09.html" title="FAQ">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="chapter" title="Handling different file formats">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title">
+<a name="ch8-file-formats"></a>Handling different file formats</h2>
+</div>
+</div>
+</div>
+    
+
+    
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+        
+<p>
+<span class="emphasis"><em>Microsoft Office 2003 files</em></span>
+</p>
+
+        
+<p>Microsoft Office 2003 files and earlier versions are examples of
+        source files that are <span class="emphasis"><em>indirectly supported</em></span>.
+        Please go to <a class="ulink" href="http://www.openoffice.org/" target="_top">www.openoffice.org</a> to
+        download and install OpenOffice for free. After that, go to
+        <span class="guimenu">Tools</span> &gt; <span class="guimenuitem">Options</span> &gt;
+        <span class="guimenuitem">Translation</span> to set the installation path
+        for OpenOffice and select the Enable checkbox (For Windows, the path
+        is <code class="filename">C:\Program Files\OpenOffice.org
+        3\program\soffice.exe</code> by default). Now you can convert
+        Microsoft Office 2003 files the way you convert directly supported
+        formats. For detailed conversion procedures, please see <a class="xref" href="ch05s03.html#convert-source-to-xliff" title="Convert Source Files to XLIFFs">the section called &ldquo;Convert Source Files to XLIFFs&rdquo;</a>.</p>
+
+        
+<div class="figure">
+<a name="N229BB"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;153.&nbsp;Options: Translate</b>
+</p>
+<div class="figure-contents">
+          
+
+          
+<div class="screenshot">
+            
+<div class="mediaobject" align="center">
+<img src="images/options-oo.png" align="middle" alt="Options: Translate"></div>
+          
+</div>
+        
+</div>
+</div>
+<br class="figure-break">
+      
+</li>
+<li class="listitem">
+        
+<p>
+<span class="emphasis"><em>Microsoft Office 2007/2010 files</em></span>
+</p>
+
+        
+<p>HSTS directly supports Microsoft Office 2007 (including Word,
+        Excel, and PowerPoint) files and later versions as source files. For
+        detailed conversion procedures, please see: <a class="xref" href="ch05s03.html#convert-source-to-xliff" title="Convert Source Files to XLIFFs">the section called &ldquo;Convert Source Files to XLIFFs&rdquo;</a>.</p>
+
+        
+<p>For Microsoft Excel 2007 / 2010, you can also choose whether to
+        exclude <span class="guilabel">Red font cells</span> or not:</p>
+
+        
+<div class="figure">
+<a name="N229E4"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;154.&nbsp;Options: Excel conversion settings</b>
+</p>
+<div class="figure-contents">
+          
+
+          
+<div class="screenshot">
+            
+<div class="mediaobject" align="center">
+<img src="images/options-excel.png" align="middle" alt="Options: Excel conversion settings"></div>
+          
+</div>
+        
+</div>
+</div>
+<br class="figure-break">
+
+        
+<p>For Microsoft PowerPoint 2007 / 2010, you can also choose
+        whether to exclude <span class="guilabel">Notes</span>or not (at this point,
+        masters and image paths are not handled):</p>
+
+        
+<div class="figure">
+<a name="N22A00"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;155.&nbsp;Option: PowerPoint conversion settings</b>
+</p>
+<div class="figure-contents">
+          
+
+          
+<div class="screenshot">
+            
+<div class="mediaobject" align="center">
+<img src="images/options-ppt.png" align="middle" alt="Option: PowerPoint conversion settings"></div>
+          
+</div>
+        
+</div>
+</div>
+<br class="figure-break">
+      
+</li>
+<li class="listitem">
+        
+<p>
+<span class="emphasis"><em>TTX</em></span>
+</p>
+
+        
+<p>For Trados 2007 bilingual file formats, HSTS only supports
+        <span class="emphasis"><em>segmented TTX files</em></span> as source files. For detailed
+        conversion procedures, please see: <a class="xref" href="ch05s03.html#convert-source-to-xliff" title="Convert Source Files to XLIFFs">the section called &ldquo;Convert Source Files to XLIFFs&rdquo;</a>.</p>
+      
+</li>
+<li class="listitem">
+        
+<p>
+<span class="emphasis"><em>SDLXLIFF</em></span>
+</p>
+
+        
+<p>HSTS directly supports bilingual XLIFF files from SDL Trados
+        2009/2011 as source files. For detailed conversion procedures, please
+        see: <a class="xref" href="ch05s03.html#convert-source-to-xliff" title="Convert Source Files to XLIFFs">the section called &ldquo;Convert Source Files to XLIFFs&rdquo;</a>.</p>
+      
+</li>
+<li class="listitem">
+        
+<p>
+<span class="emphasis"><em>D&eacute;j&agrave; Vu XLIFF</em></span>
+</p>
+
+        
+<p>HSTS directly supports bilingual XLIFF files exported from D&eacute;j&agrave;
+        Vu as source files. For detailed conversion procedures, please see:
+        <a class="xref" href="ch05s03.html#convert-source-to-xliff" title="Convert Source Files to XLIFFs">the section called &ldquo;Convert Source Files to XLIFFs&rdquo;</a>.</p>
+      
+</li>
+<li class="listitem">
+        
+<p>
+<span class="emphasis"><em>MemoQ XLIFF</em></span>
+</p>
+
+        
+<p>HSTS directly supports bilingual XLIFF files from MemoQ as
+        source files. For detailed conversion procedures, please see: <a class="xref" href="ch05s03.html#convert-source-to-xliff" title="Convert Source Files to XLIFFs">the section called &ldquo;Convert Source Files to XLIFFs&rdquo;</a>.</p>
+      
+</li>
+<li class="listitem">
+        
+<p>
+<span class="emphasis"><em>Wordfast Pro TXML</em></span>
+</p>
+
+        
+<p>HSTS directly supports Wordfast Pro bilingual TXML files as
+        source files. For detailed conversion procedures, please see: <a class="xref" href="ch05s03.html#convert-source-to-xliff" title="Convert Source Files to XLIFFs">the section called &ldquo;Convert Source Files to XLIFFs&rdquo;</a>.</p>
+      
+</li>
+<li class="listitem">
+        
+<p>
+<span class="emphasis"><em>MIF</em></span>
+</p>
+
+        
+<p>HSTS directly supports MIF files from Adobe Frame-Maker 7 and
+        later versions as source files. For detailed conversion procedures,
+        please see: <a class="xref" href="ch05s03.html#convert-source-to-xliff" title="Convert Source Files to XLIFFs">the section called &ldquo;Convert Source Files to XLIFFs&rdquo;</a>. If errors occur
+        when MIF files saved in FrameMaker 7 are being converted or processed
+        using HSTS, please use FrameMaker 8 or 9 to to save the MIF files
+        again before processing them with HSTS. If clients require FrameMaker
+        7 deliverables, then the translated files need to be saved again as
+        FrameMaker 7 MIF files.</p>
+
+        
+<p>In <code class="interfacename">Options</code>, you can set whether
+        to exclude <span class="guilabel">Master</span> content or not during MIF
+        conversion:</p>
+
+        
+<div class="figure">
+<a name="N22A70"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;156.&nbsp;Options: MIF conversion settings</b>
+</p>
+<div class="figure-contents">
+          
+
+          
+<div class="screenshot">
+            
+<div class="mediaobject" align="center">
+<img src="images/options-framemaker.png" align="middle" alt="Options: MIF conversion settings"></div>
+          
+</div>
+        
+</div>
+</div>
+<br class="figure-break">
+      
+</li>
+<li class="listitem">
+        
+<p>
+<span class="emphasis"><em>IDML</em></span>
+</p>
+
+        
+<p>HSTS directly supports IDML files from Adobe InDesign CS 5.0.1
+        and later versions as source files. For detailed conversion
+        procedures, please see: <a class="xref" href="ch05s03.html#convert-source-to-xliff" title="Convert Source Files to XLIFFs">the section called &ldquo;Convert Source Files to XLIFFs&rdquo;</a>.</p>
+      
+</li>
+<li class="listitem">
+        
+<p>
+<span class="emphasis"><em>RTF</em></span>
+</p>
+
+        
+<p>HSTS directly supports RTF files as source files. For detailed
+        conversion procedures, please see: <a class="xref" href="ch05s03.html#convert-source-to-xliff" title="Convert Source Files to XLIFFs">the section called &ldquo;Convert Source Files to XLIFFs&rdquo;</a>.</p>
+      
+</li>
+<li class="listitem">
+        
+<p>
+<span class="emphasis"><em>HTML</em></span>
+</p>
+
+        
+<p>HSTS directly supports HTML files as source files. For detailed
+        conversion procedures, please see: <a class="xref" href="ch05s03.html#convert-source-to-xliff" title="Convert Source Files to XLIFFs">the section called &ldquo;Convert Source Files to XLIFFs&rdquo;</a>.</p>
+      
+</li>
+<li class="listitem">
+        
+<p>
+<span class="emphasis"><em>XML</em></span>
+</p>
+
+        
+<p>HSTS directly supports XML files as source files. For detailed
+        conversion procedures, please see: <a class="xref" href="ch05s03.html#convert-source-to-xliff" title="Convert Source Files to XLIFFs">the section called &ldquo;Convert Source Files to XLIFFs&rdquo;</a>.</p>
+
+        
+<div class="itemizedlist">
+<a name="configure-xml-converter"></a>
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+            
+<p>
+<span class="emphasis"><em>Configure XML Converter</em></span>
+</p>
+
+            
+<p>For certain XML files, HSTS <span class="quote">&ldquo;<span class="quote">Professional</span>&rdquo;</span> and
+            <span class="quote">&ldquo;<span class="quote">Ultimate</span>&rdquo;</span> editions allow you to define how to deal
+            with each element and attribute value. See details below:</p>
+
+            
+<div class="orderedlist">
+<ol class="orderedlist" type="a">
+<li class="listitem">
+                
+<p>Click <span class="guimenu">Advanced</span> &gt;
+                <span class="guimenuitem">Configure XML Converter</span>.</p>
+
+                
+<div class="figure">
+<a name="N22AD9"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;157.&nbsp;Configure XML Converter</b>
+</p>
+<div class="figure-contents">
+                  
+
+                  
+<div class="screenshot">
+                    
+<div class="mediaobject" align="center">
+<img src="images/config-xml-converter-1-1.png" align="middle" alt="Configure XML Converter"></div>
+                  
+</div>
+                
+</div>
+</div>
+<br class="figure-break">
+              
+</li>
+<li class="listitem">
+                
+<p>Click <span class="guibutton">Analyze XML sample</span>, select
+                the XML file to analyze.</p>
+<div class="figure">
+<a name="N22AF7"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;158.&nbsp;Configure XML Converter</b>
+</p>
+<div class="figure-contents">
+                    
+
+                    
+<div class="screenshot">
+                      
+<div class="mediaobject" align="center">
+<img src="images/config-xml-converter-1-2.png" align="middle" alt="Configure XML Converter"></div>
+                    
+</div>
+                  
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>Change the analyzed configuration if needed: </p>
+<div class="figure">
+<a name="N22B12"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;159.&nbsp;Configure XML Element</b>
+</p>
+<div class="figure-contents">
+                    
+
+                    
+<div class="screenshot">
+                      
+<div class="mediaobject" align="center">
+<img src="images/config-xml-converter-2-1.png" align="middle" alt="Configure XML Element"></div>
+                    
+</div>
+                  
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>Select the element needs to configure, click
+                <span class="guibutton">Edit</span> button, you can configure the
+                following settings:</p>
+
+                
+<div class="figure">
+<a name="N22B31"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;160.&nbsp;Element configuration</b>
+</p>
+<div class="figure-contents">
+                  
+
+                  
+<div class="screenshot">
+                    
+<div class="mediaobject" align="center">
+<img src="images/config-xml-converter-2-2.png" align="middle" alt="Element configuration"></div>
+                  
+</div>
+                
+</div>
+</div>
+<br class="figure-break">
+
+                
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                    
+<p>
+<span class="guilabel">Element name</span>
+</p>
+                  
+</li>
+<li class="listitem">
+                    
+<p>
+<span class="guilabel">Element type</span>
+</p>
+
+                    
+<div class="itemizedlist">
+<ul class="itemizedlist" type="square">
+<li class="listitem">
+                        
+<p>
+<span class="guilabel">Segment</span>
+</p>
+
+                        
+<p>Extract as segment</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>
+<span class="guilabel">Inline</span>
+</p>
+
+                        
+<p>Extract as internal tags</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>
+<span class="guilabel">Ignore</span>
+</p>
+
+                        
+<p>Ignore</p>
+                      
+</li>
+</ul>
+</div>
+                  
+</li>
+<li class="listitem">
+                    
+<p>
+<span class="guilabel">Inline type</span>
+</p>
+
+                    
+<p>The option only available when element type is
+                    <span class="quote">&ldquo;<span class="quote">inline</span>&rdquo;</span>, the value can be:
+                    <span class="guilabel">image</span>, <span class="guilabel">pb</span>,
+                    <span class="guilabel">lb</span>, <span class="guilabel">x-bold</span>,
+                    <span class="guilabel">x-entry</span>, <span class="guilabel">x-font</span>,
+                    <span class="guilabel">x-italic</span>,
+                    <span class="guilabel">x-link</span>,
+                    <span class="guilabel">x-underlined</span>,
+                    <span class="guilabel">x-other</span>
+</p>
+                  
+</li>
+<li class="listitem">
+                    
+<p>
+<span class="guilabel">Translatable attributes</span>
+</p>
+
+                    
+<p>Name of the translation attribute to be extracted in
+                    the element</p>
+                  
+</li>
+<li class="listitem">
+                    
+<p>
+<span class="guilabel">Reserve spaces</span>
+</p>
+                  
+</li>
+</ul>
+</div>
+              
+</li>
+</ol>
+</div>
+          
+</li>
+</ul>
+</div>
+      
+</li>
+</ol>
+</div>
+  
+</div>
+</body>
+</html>

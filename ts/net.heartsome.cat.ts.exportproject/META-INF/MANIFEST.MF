@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome CAT TS Export Project
+Bundle-SymbolicName: net.heartsome.cat.ts.exportproject;singleton:=true
+Bundle-Version: 8.1.0.R8b_v20131119
+Bundle-Activator: net.heartsome.cat.ts.exportproject.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ net.heartsome.cat.thirdpartlibrary;bundle-version="8.0.0",
+ org.eclipse.ui.ide;bundle-version="3.7.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Localization: plugin
+Import-Package: net.heartsome.cat.common.bean,
+ net.heartsome.cat.common.ui.wizard,
+ net.heartsome.cat.common.util,
+ net.heartsome.cat.ts.core.file,
+ org.eclipse.core.resources,
+ org.eclipse.ui.internal.ide,
+ org.eclipse.ui.internal.wizards.datatransfer
+Bundle-ClassPath: lib/ant.jar,
+ .
+Bundle-Vendor: Heartsome Technologies Ltd.

@@ -1,0 +1,1200 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>常见问题</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<meta content="DocBook XSL Stylesheets V1.75.2 / ZoeeyDoc http://zoeeydoc.googlecode.com " name="generator">
+<link rel="home" href="index.html" title="用户手册">
+<link rel="up" href="index.html" title="用户手册">
+<link rel="prev" href="ch08.html" title="处理不同的文件格式">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="chapter" title="常见问题">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title">
+<a name="ch9-faq"></a>常见问题</h2>
+</div>
+</div>
+</div>
+    
+
+    
+<div class="qandaset" title="常见问题">
+<a name="N22BCB"></a>
+<table summary="Q and A Set" width="100%" border="0">
+<col align="left" width="1%">
+<col>
+<tbody>
+<tr class="toc">
+<td colspan="2" valign="top" align="left">
+<dl>
+<dt>1. <a href="ch09.html#N22BCF">默认分段不准确，如何解决？</a>
+</dt>
+<dt>2. <a href="ch09.html#how-to-use-mt">机器翻译如何使用？</a>
+</dt>
+<dt>3. <a href="ch09.html#N22EFC">源文有错误，如何改正？</a>
+</dt>
+<dt>4. <a href="ch09.html#N22F17">默认的文本段过滤规则不够用，怎么办？</a>
+</dt>
+<dt>5. <a href="ch09.html#N22F2C">如何识别文件编码？</a>
+</dt>
+<dt>6. <a href="ch09.html#N22FD8">更换电脑/重装系统后，许可证无法使用，如何解决？</a>
+</dt>
+<dt>7. <a href="ch09.html#N22FFD">添加、复制项目文件，有没有更方便的操作？</a>
+</dt>
+<dt>8. <a href="ch09.html#N2304E">对于文件的操作，有时会以在项目视图中选择的一个或多个文件为准，有时又是以当前正在编辑的文件为准，如何判断？</a>
+</dt>
+<dt>9. <a href="ch09.html#N23063">能否对文本段进行批量操作？</a>
+</dt>
+<dt>10. <a href="ch09.html#N2307D">有些文本段是不需要翻译的，应该怎样处理这些文本段最合适？</a>
+</dt>
+<dt>11. <a href="ch09.html#N23092">执行某些操作（如导出项目）时，出现&ldquo;资源不同步&rdquo; (resource out of sync)
+            的提示，应如何解决？</a>
+</dt>
+<dt>12. <a href="ch09.html#N230AA">HSTS 把项目文件保存在哪里了？</a>
+</dt>
+<dt>13. <a href="ch09.html#N230C5">使用 HSTS 时出现了问题，应如何向 Heartsome 寻求帮助？</a>
+</dt>
+<dt>14. <a href="ch09.html#N23112">HSTS 支持哪些版本的 XLIFF、TMX、TBX 标准？</a>
+</dt>
+<dt>15. <a href="ch09.html#N23136">从 HSTS 导出的 TMX 文件如何导入 Trados？</a>
+</dt>
+</dl>
+</td>
+</tr>
+          
+<tr class="question" title="1.">
+<td valign="top" align="left"><a name="N22BCF"></a><a name="N22BD1"></a>
+<p>
+<b>1.</b>
+</p>
+</td><td valign="top" align="left">
+<p>默认分段不准确，如何解决？</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>如果这种分段不准确的情况只是偶尔出现，而且没有明显的规律可循，可以用<span class="quote">&ldquo;<span class="quote">合并文本段</span>&rdquo;</span>或<span class="quote">&ldquo;<span class="quote">分割文本段</span>&rdquo;</span>来修正不正确的分段。否则，可以在<span class="quote">&ldquo;<span class="quote">分段规则</span>&rdquo;</span>中修正这类经常性、且有规律的分段问题。</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                
+<p>合并文本段</p>
+
+                
+<p>当文本段被过度分段时，用
+                <span class="keycap"><strong>Ctrl</strong></span>/<span class="keycap"><strong>Shift</strong></span>
+                及鼠标左键选择要合并的多个连续的文本段，点击<span class="guimenu">编辑</span>菜单 &gt;
+                <span class="guimenu">合并文本段</span>。每两个合并的文本段源文之间会用一个新生成的<span class="quote">&ldquo;<span class="quote">内部标记</span>&rdquo;</span>来连接。</p>
+<div class="figure">
+<a name="N22BFD"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 161. 合并文本段</b>
+</p>
+<div class="figure-contents">
+                    
+
+                    
+<div class="screenshot">
+                      
+<div class="mediaobject" align="center">
+<img src="images/merge-segments-1.png" align="middle" alt="合并文本段"></div>
+                    
+</div>
+                  
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+
+                
+<div class="figure">
+<a name="N22C13"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 162. 合并文本段结果</b>
+</p>
+<div class="figure-contents">
+                  
+
+                  
+<div class="screenshot">
+                    
+<div class="mediaobject" align="center">
+<img src="images/merge-segments-2.png" align="middle" alt="合并文本段结果"></div>
+                  
+</div>
+                
+</div>
+</div>
+<br class="figure-break">
+              
+</li>
+<li class="listitem">
+                
+<p>分割文本段</p>
+
+                
+<p>当文本段分段不足时，先将光标定位在源文中需要分割的位置上，然后点击<span class="guimenu">编辑</span>菜单
+                &gt; <span class="guimenu">分割文本段</span>。</p>
+<div class="figure">
+<a name="N22C37"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 163. 分割文本段</b>
+</p>
+<div class="figure-contents">
+                    
+
+                    
+<div class="screenshot">
+                      
+<div class="mediaobject" align="center">
+<img src="images/split-segment-1.png" align="middle" alt="分割文本段"></div>
+                    
+</div>
+                  
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+
+                
+<div class="figure">
+<a name="N22C4D"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 164. 分割文本段结果</b>
+</p>
+<div class="figure-contents">
+                  
+
+                  
+<div class="screenshot">
+                    
+<div class="mediaobject" align="center">
+<img src="images/split-segment-2.png" align="middle" alt="分割文本段结果"></div>
+                  
+</div>
+                
+</div>
+</div>
+<br class="figure-break">
+
+                
+<div class="note" title="注意" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+                  
+<p>只能合并、分割未锁定状态的文本段。</p>
+                
+</div>
+              
+</li>
+<li class="listitem">
+                
+<p>配置分段规则</p>
+
+                
+<p>对分段规则的配置通过<code class="interfacename">分段规则管理器</code>来完成，该功能仅在<span class="quote">&ldquo;<span class="quote">专业版</span>&rdquo;</span>及<span class="quote">&ldquo;<span class="quote">旗舰版</span>&rdquo;</span>中提供。要打开分段规则管理器，请点击<span class="guimenu">高级</span>菜单
+                &gt; <span class="guimenu">分段规则管理器</span>。</p>
+<div class="figure">
+<a name="N22C81"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 165. 分段规则管理器</b>
+</p>
+<div class="figure-contents">
+                    
+
+                    
+<div class="screenshot">
+                      
+<div class="mediaobject" align="center">
+<img src="images/segmentation-rule-manager-1-1.png" align="middle" alt="分段规则管理器"></div>
+                    
+</div>
+                  
+</div>
+</div>
+<p>
+<br class="figure-break">每个 SRX 文件都可以保存多个规则，可以在这里添加或编辑 SRX 分段规则文件。对 SRX
+                文件中的分段规则的配置分为如下两个部分：</p>
+
+                
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                    
+<p>语言规则</p>
+
+                    
+<p>即针对特定语言（例如中文）的分段规则，通常是与该语言的特定标点符号或字符相关的内容。</p>
+
+                    
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+                        
+<p>选择要编辑的分段规则 SRX
+                        文件，点击<span class="guibutton">编辑</span>按钮；</p>
+
+                        
+<div class="figure">
+<a name="N22CAC"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 166. 分段规则管理器对话框</b>
+</p>
+<div class="figure-contents">
+                          
+
+                          
+<div class="screenshot">
+                            
+<div class="mediaobject" align="center">
+<img src="images/segmentation-rule-manager-1-2.png" align="middle" alt="分段规则管理器对话框"></div>
+                          
+</div>
+                        
+</div>
+</div>
+<br class="figure-break">
+                      
+</li>
+<li class="listitem">
+                        
+<p>如果不打算修改<span class="guilabel">分段规则文件名</span>，直接点击<span class="guibutton">确定</span>按钮；</p>
+<div class="figure">
+<a name="N22CCD"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 167. 配置分段规则</b>
+</p>
+<div class="figure-contents">
+                            
+
+                            
+<div class="screenshot">
+                              
+<div class="mediaobject" align="center">
+<img src="images/segmentation-rule-manager-2-1.png" align="middle" alt="配置分段规则"></div>
+                            
+</div>
+                          
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>在<span class="quote">&ldquo;<span class="quote">语言规则</span>&rdquo;</span>中，选择要编辑的语言，点击<span class="guibutton">编辑语言规则</span>按钮，设置如下内容：</p>
+
+                        
+<div class="figure">
+<a name="N22CEF"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 168. 配置语言规则</b>
+</p>
+<div class="figure-contents">
+                          
+
+                          
+<div class="screenshot">
+                            
+<div class="mediaobject" align="center">
+<img src="images/segmentation-rule-manager-2-2.png" align="middle" alt="配置语言规则"></div>
+                          
+</div>
+                        
+</div>
+</div>
+<br class="figure-break">
+
+                        
+<div class="itemizedlist">
+<ul class="itemizedlist" type="square">
+<li class="listitem">
+                            
+<p>
+<span class="guilabel">需要分段</span>
+</p>
+
+                            
+<p>符合该规则的情况是否需要分段（不需要分段的时候，通常是要分段的情况中的个别例外）。</p>
+                          
+</li>
+<li class="listitem">
+                            
+<p>
+<span class="guilabel">分段之前</span>
+</p>
+
+                            
+<p>在该字符（正则表达式）之后分段/不分段</p>
+                          
+</li>
+<li class="listitem">
+                            
+<p>
+<span class="guilabel">分段之后</span>
+</p>
+
+                            
+<p>在该字符（正则表达式）之前分段/不分段</p>
+                          
+</li>
+</ul>
+</div>
+                      
+</li>
+<li class="listitem">
+                        
+<p>分别点击<span class="guibutton">确定</span>、<span class="guibutton">保存</span>按钮。</p>
+                      
+</li>
+</ol>
+</div>
+                  
+</li>
+<li class="listitem">
+                    
+<p>映射规则</p>
+
+                    
+<p>语言规则的复用规则，例如：配置 zh-CN、zh-HK、zh-TW 都使用 zh 规则</p>
+
+                    
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+                        
+<p>前 2 步与语言规则的 1~2 相同；</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>在<span class="quote">&ldquo;<span class="quote">映射规则</span>&rdquo;</span>中，选择要编辑的规则集，点击<span class="guibutton">编辑映射规则</span>按钮；</p>
+
+                        
+<div class="figure">
+<a name="N22D50"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 169. 配置映射规则</b>
+</p>
+<div class="figure-contents">
+                          
+
+                          
+<div class="screenshot">
+                            
+<div class="mediaobject" align="center">
+<img src="images/segmentation-rule-manager-3-1.png" align="middle" alt="配置映射规则"></div>
+                          
+</div>
+                        
+</div>
+</div>
+<br class="figure-break">
+                      
+</li>
+<li class="listitem">
+                        
+<p>选择具体的映射规则，点击<span class="guibutton">编辑</span>按钮，设置如下内容：</p>
+<div class="figure">
+<a name="N22D6E"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 170. 编辑映射规则</b>
+</p>
+<div class="figure-contents">
+                            
+
+                            
+<div class="screenshot">
+                              
+<div class="mediaobject" align="center">
+<img src="images/segmentation-rule-manager-3-2.png" align="middle" alt="编辑映射规则"></div>
+                            
+</div>
+                          
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+
+                        
+<div class="itemizedlist">
+<ul class="itemizedlist" type="square">
+<li class="listitem">
+                            
+<p>
+<span class="guilabel">语言模式</span>
+</p>
+
+                            
+<p>输入要匹配的语言代码的正则表达式</p>
+                          
+</li>
+<li class="listitem">
+                            
+<p>
+<span class="guilabel">语言规则</span>
+</p>
+
+                            
+<p>选择已添加的语言规则</p>
+                          
+</li>
+</ul>
+</div>
+                      
+</li>
+<li class="listitem">
+                        
+<p>设置完成后，保存所有设置，并关闭多余的对话框。</p>
+                      
+</li>
+</ol>
+</div>
+                  
+</li>
+</ul>
+</div>
+
+                
+<p>要使用自己添加或编辑后的 SRX 分段规则文件，请在<a class="link" href="ch05s03.html#convert-source-to-xliff" title="转换源文件为 XLIFF">转换源文件为 XLIFF</a> 时选择相应的
+                SRX 文件即可。</p>
+              
+</li>
+</ul>
+</div>
+</td>
+</tr>
+        
+          
+<tr class="question" title="2.">
+<td valign="top" align="left"><a name="how-to-use-mt"></a><a name="N22DB3"></a>
+<p>
+<b>2.</b>
+</p>
+</td><td valign="top" align="left">
+<p>机器翻译如何使用？</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>HSTS 目前支持 Google Translate 和 Bing Translator
+            两种机器翻译引擎，它们分别都需要申请密钥，并在 HSTS 中正确设置后才能使用。</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                
+<p>Google Translate</p>
+
+                
+<p>Google 现只提供收费版的 Google Translate v2
+                服务，所以必须要先购买相应的服务。</p>
+
+                
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                    
+<p>购买</p>
+
+                    
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+                        
+<p>若无 Google 帐户，请先访问 <a class="ulink" href="https://accounts.google.com/SignUp" target="_top">https://accounts.google.com/SignUp</a>
+                        注册；</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>访问 <a class="ulink" href="https://code.google.com/apis/console#:billing" target="_top">https://code.google.com/apis/console#:billing</a>
+                        ，点击 <span class="guibutton">Create Project</span>
+                        按钮创建项目；</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>从服务列表中找到<span class="quote">&ldquo;<span class="quote">Translate
+                        API</span>&rdquo;</span>，点击其后面显示为<span class="quote">&ldquo;<span class="quote">OFF</span>&rdquo;</span>的
+                        <span class="guibutton">Activate</span>
+                        按钮，依次同意弹出的两个服务条款；</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>在左边选择<span class="quote">&ldquo;<span class="quote">Billing</span>&rdquo;</span>分类，或重新访问<a class="ulink" href="https://code.google.com/apis/console#:billing" target="_top">上述网址</a>，点击
+                        <span class="guibutton">Google Checkout</span>
+                        支付，并根据提示添加支付方式，如信用卡信息等；</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>支付完成后，在左边选择<span class="quote">&ldquo;<span class="quote">API Access</span>&rdquo;</span>分类，选择并复制
+                        <span class="guilabel">API Key</span> 后面的值备用。</p>
+                      
+</li>
+</ol>
+</div>
+                  
+</li>
+<li class="listitem">
+                    
+<p>
+<a name="setting-google-translate"></a>设置</p>
+
+                    
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+                        
+<p>运行 HSTS，打开<span class="guimenu">工具</span>菜单 &gt;
+                        <span class="guimenuitem">选项</span> &gt;
+                        <span class="guimenuitem">翻译</span> &gt;
+                        <span class="guimenuitem">机器翻译</span>；</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>在 <span class="guilabel">Google Translate</span>
+                        分组的<span class="guilabel">密钥</span>文本框中，粘贴刚才复制的<span class="quote">&ldquo;<span class="quote">API
+                        Key</span>&rdquo;</span>，点击<span class="guibutton">测试可用性</span>按钮；</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>此外，还可以设置如下<span class="guilabel">自动机器翻译</span>策略（此策略同时应用于所有机器翻译引擎）：</p>
+
+                        
+<div class="itemizedlist">
+<ul class="itemizedlist" type="square">
+<li class="listitem">
+                            
+<p>
+<span class="guilabel">自动执行</span>
+</p>
+
+                            
+<p>只对未经机器翻译的文本段自动执行，不重复提交相同的文本段，节省机器翻译的流量费用。</p>
+                          
+</li>
+<li class="listitem">
+                            
+<p>
+<span class="guilabel">手动执行</span>
+</p>
+
+                            
+<p>不自动执行机器翻译，只在有需要的时候手动执行。</p>
+                          
+</li>
+</ul>
+</div>
+                      
+</li>
+<li class="listitem">
+                        
+<p>设置妥当后，点击<span class="guibutton">确定</span>按钮。</p>
+                      
+</li>
+</ol>
+</div>
+                  
+</li>
+</ul>
+</div>
+
+                
+<p>如果自动机器翻译没有设置为手动，则在跳转到文本段时，会自动得到 Google
+                翻译结果；否则，可以点击<span class="guimenu">翻译</span>菜单 &gt; <span class="guimenuitem">Google
+                机器翻译</span>，手动获取 Google Translate
+                的翻译。不管机器翻译结果是自动还是手动获取的，都会被自动预存起来，供下次查看时直接从 XLIFF
+                文件中读取，无须重复访问机器翻译引擎。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>Bing Translator</p>
+
+                
+<p>Microsoft 提供的 Bing Translator 服务，免费用户每月可以使用 2000000
+                个字符的流量。</p>
+
+                
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                    
+<p>申请</p>
+
+                    
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+                        
+<p>访问 <a class="ulink" href="http://msdn.microsoft.com/en-us/library/hh454950.aspx" target="_top">http://msdn.microsoft.com/en-us/library/hh454950.aspx</a>
+                        ，点击右上角的 <span class="guibutton">Sign In</span> 登录或注册 Microsoft
+                        Live 帐号；</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>登录后自动返回上一个页面，点击 <a class="ulink" href="http://go.microsoft.com/?linkid=9782667" target="_top">Azure
+                        Marketplace</a> 链接，点击 <span class="guibutton">Sign
+                        Up</span> 注册微软 Azure 市场；</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>输入必填信息、并在 <span class="guilabel">Country / Region</span>
+                        中选择<span class="quote">&ldquo;<span class="quote">Worldwide
+                        (简体中文)</span>&rdquo;</span>，然后点击<span class="guibutton">继续</span>按钮；</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>同意 Windows Azure Marketplace
+                        的服务条款，点击<span class="guibutton">注册</span>按钮；</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>同意 Microsoft Translator
+                        服务条款，点击<span class="guibutton">注册</span>订阅 Microsoft
+                        Translator 服务；</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>访问 <a class="ulink" href="https://datamarket.azure.com/developer/applications/" target="_top">https://datamarket.azure.com/developer/applications/</a>
+                        ，点击<span class="guibutton">注册</span>按钮；</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>输入必填信息，除<span class="guilabel">客户端密钥</span>不要修改之外，其他信息可以随便输入，将<span class="guilabel">客户端
+                        ID</span>
+                        和<span class="guilabel">客户端密钥</span>分别复制并保存起来备用，点击<span class="guibutton">创建</span>按钮。</p>
+                      
+</li>
+</ol>
+</div>
+                  
+</li>
+<li class="listitem">
+                    
+<p>设置</p>
+
+                    
+<p>Bing Translator 在 HSTS 中的设置及使用均与 Google Translate
+                    几乎完全一样，唯一的区别是 Bing Translator 需要输入<span class="guilabel">客户端
+                    ID</span> 和<span class="guilabel">密钥</span>，而 Google Translate
+                    只要输入密钥。详情请参考 <a class="link" href="ch09.html#setting-google-translate">Google Translate
+                    的设置</a>。</p>
+                  
+</li>
+</ul>
+</div>
+              
+</li>
+</ul>
+</div>
+</td>
+</tr>
+        
+          
+<tr class="question" title="3.">
+<td valign="top" align="left"><a name="N22EFC"></a><a name="N22EFE"></a>
+<p>
+<b>3.</b>
+</p>
+</td><td valign="top" align="left">
+<p>源文有错误，如何改正？</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>默认情况下，HSTS
+            不允许编辑文本段的源文，以防止误操作。但如果源文中确实有错误需要改正，则可以使用<span class="guimenu">编辑</span>菜单
+            &gt; <span class="guisubmenu">编辑源文</span> &gt;
+            <span class="guimenuitem">编辑当前源文</span>或<span class="guimenuitem">编辑所有源文</span>，临时解除对源文的锁定。使用编辑当前源文，则在编辑完当前源文后会自动回到禁止编辑源文的状态；而使用编辑所有源文，则需要手动取消编辑源文，否则所有文本段的源文都一直处于可编辑状态。</p>
+</td>
+</tr>
+        
+          
+<tr class="question" title="4.">
+<td valign="top" align="left"><a name="N22F17"></a><a name="N22F19"></a>
+<p>
+<b>4.</b>
+</p>
+</td><td valign="top" align="left">
+<p>默认的文本段过滤规则不够用，怎么办？</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>可以点击文本段过滤器右边的<span class="guibutton">自定义过滤器</span>按钮，添加自定义的文本段过滤规则，详情请见<a class="xref" href="ch05s04.html#filter-segments" title="过滤文本段">&ldquo;过滤文本段&rdquo;一节</a>。</p>
+</td>
+</tr>
+        
+          
+<tr class="question" title="5.">
+<td valign="top" align="left"><a name="N22F2C"></a><a name="N22F2E"></a>
+<p>
+<b>5.</b>
+</p>
+</td><td valign="top" align="left">
+<p>如何识别文件编码？</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>如下基于文本文件的类型，可以使用 EmEditor
+            或其他支持多种文件编码的文本编辑器打开，查看其正确的编码：</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                
+<p>
+<span class="type">.html</span>, <span class="type">.htm</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.inx</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.js</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.mif</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.po</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.properties</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.rc</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.resx</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.rtf</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.sdlxliff</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.ttx</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.txt</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.xlf</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.xml</span>
+</p>
+              
+</li>
+</ul>
+</div>
+<p>如下基于 XML 的压缩包格式，则通常为 UTF-8：</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                
+<p>
+<span class="type">.doc</span>, <span class="type">.ppt</span>,
+                <span class="type">.xls</span>（通过 OpenOffice 间接转换支持）</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.docx</span>, <span class="type">.pptx</span>,
+                <span class="type">.xlsx</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.idml</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.odt</span>, <span class="type">.odp</span>,
+                <span class="type">.ods</span>
+</p>
+              
+</li>
+</ul>
+</div>
+</td>
+</tr>
+        
+          
+<tr class="question" title="6.">
+<td valign="top" align="left"><a name="N22FD8"></a><a name="N22FDA"></a>
+<p>
+<b>6.</b>
+</p>
+</td><td valign="top" align="left">
+<p>更换电脑/重装系统后，许可证无法使用，如何解决？</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>在更换电脑/重装系统之前，应先在旧电脑/原系统中使用<span class="guimenu">帮助</span>菜单 &gt;
+            <span class="guimenuitem">许可证管理</span> &gt;
+            <span class="guibutton">取消激活</span>的功能，先取消激活许可证。完成更换/重装之后，第一次运行软件会提示激活许可证，按屏幕的向导操作即可。</p>
+<p>若已经完成了更换电脑/重装系统，但之前未先取消激活许可证，则请<a class="ulink" href="mailto:tech_support@heartsome.net" target="_top">联系技术支持人员</a>，以<span class="emphasis"><em>人工方式</em></span>取消许可证在旧电脑/原系统中的激活，然后才可以重新在新电脑/新系统中激活该许可证。详情见<a class="xref" href="ch03.html" title="许可证"><i>许可证</i></a>。</p>
+</td>
+</tr>
+        
+          
+<tr class="question" title="7.">
+<td valign="top" align="left"><a name="N22FFD"></a><a name="N22FFF"></a>
+<p>
+<b>7.</b>
+</p>
+</td><td valign="top" align="left">
+<p>添加、复制项目文件，有没有更方便的操作？</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>HSTS 的<code class="interfacename">项目</code>视图，与 Windows
+            系统的<span class="quote">&ldquo;<span class="quote">资源管理器</span>&rdquo;</span>，或 Mac OS 的<span class="quote">&ldquo;<span class="quote">Finder</span>&rdquo;</span>、Linux 的
+            <span class="quote">&ldquo;<span class="quote">Nautilus</span>&rdquo;</span>等（下面统称<span class="quote">&ldquo;<span class="quote">文件管理器</span>&rdquo;</span>）类似，在项目中对子文件夹进行创建、重命名、删除等操作，分别与上述文件管理器有同样的作用。</p>
+<p>所以，可以将操作系统<span class="quote">&ldquo;<span class="quote">文件管理器</span>&rdquo;</span>中的文件直接<span class="emphasis"><em>拖放</em></span>到项目中，完成将文件复制到项目中的操作。反之，将文件从项目中拖到文件管理器中，则可以将项目文件复制或移动到拖放的目标位置。在项目的不同文件夹之间拖动文件/文件夹，则为直接移动。此外，也可以使用<span class="guimenu">编辑</span>菜单
+            &gt;
+            <span class="guimenuitem">复制</span>、<span class="guimenuitem">剪切</span>、<span class="guimenuitem">粘贴</span>等功能来操作项目中的文件、文件夹。</p>
+<div class="note" title="注意" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+              
+<p>从项目中将文件拖出来的时候，如果目标位置与<span class="quote">&ldquo;<span class="quote">Heartsome
+              Workspace</span>&rdquo;</span>处于同一个磁盘分区，则<span class="emphasis"><em>默认的操作是移动</em></span>而不是复制。故推荐使用快捷键
+              <span class="keycap"><strong>Ctrl</strong></span>/<span class="keycap"><strong>Command</strong></span>+<span class="keycap"><strong>C</strong></span>、<span class="keycap"><strong>Ctrl</strong></span>/<span class="keycap"><strong>Command</strong></span>+<span class="keycap"><strong>V</strong></span>
+              从项目中复制文件，以避免意外地将文件从项目中移走。</p>
+            
+</div>
+</td>
+</tr>
+        
+          
+<tr class="question" title="8.">
+<td valign="top" align="left"><a name="N2304E"></a><a name="N23050"></a>
+<p>
+<b>8.</b>
+</p>
+</td><td valign="top" align="left">
+<p>对于文件的操作，有时会以在项目视图中选择的一个或多个文件为准，有时又是以当前正在编辑的文件为准，如何判断？</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>当<code class="interfacename">项目</code>视图被激活（带有不同颜色的外框）时，操作的文件即为<code class="interfacename">项目</code>视图中选择的文件；当编辑器被激活时，操作的文件即为正在编辑的文件。</p>
+</td>
+</tr>
+        
+          
+<tr class="question" title="9.">
+<td valign="top" align="left"><a name="N23063"></a><a name="N23065"></a>
+<p>
+<b>9.</b>
+</p>
+</td><td valign="top" align="left">
+<p>能否对文本段进行批量操作？</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>
+<span class="guimenu">编辑</span>、<span class="guimenu">翻译</span>菜单下的大部分针对文本段的功能（如修改文本段状态、添加/删除批注等）都支持同时对多个文本段进行批量操作，方法是使用
+            <span class="keycap"><strong>Ctrl</strong></span> 或
+            <span class="keycap"><strong>Shift</strong></span>＋鼠标左键单击来选择，然后执行相应的功能，就会对所有选中的文本段生效。</p>
+</td>
+</tr>
+        
+          
+<tr class="question" title="10.">
+<td valign="top" align="left"><a name="N2307D"></a><a name="N2307F"></a>
+<p>
+<b>10.</b>
+</p>
+</td><td valign="top" align="left">
+<p>有些文本段是不需要翻译的，应该怎样处理这些文本段最合适？</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>有其他 CAT
+            工具使用习惯的用户可能会使用<span class="quote">&ldquo;<span class="quote">复制源文到目标</span>&rdquo;</span>、<span class="quote">&ldquo;<span class="quote">批准文本段</span>&rdquo;</span>等一系列功能来实现所需的效果。而在
+            HSTS 中，更简单的推荐做法是：将这些不需要翻译的文本段锁定、并保留其译文为空白。在转换 XLIFF
+            为目标文件的时候，对于译文为空白的文本段，HSTS 会自动取其源文。</p>
+</td>
+</tr>
+        
+          
+<tr class="question" title="11.">
+<td valign="top" align="left"><a name="N23092"></a><a name="N23094"></a>
+<p>
+<b>11.</b>
+</p>
+</td><td valign="top" align="left">
+<p>执行某些操作（如导出项目）时，出现<span class="quote">&ldquo;<span class="quote">资源不同步</span>&rdquo;</span> (resource out of sync)
+            的提示，应如何解决？</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>在<code class="interfacename">项目</code>视图中选择被操作的文件所属的项目，点击右键菜单
+            &gt; <span class="guimenu">刷新</span>，然后再重新执行导出项目等操作。</p>
+</td>
+</tr>
+        
+          
+<tr class="question" title="12.">
+<td valign="top" align="left"><a name="N230AA"></a><a name="N230AC"></a>
+<p>
+<b>12.</b>
+</p>
+</td><td valign="top" align="left">
+<p>HSTS 把项目文件保存在哪里了？</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>首次运行 HSTS 的时候，软件会自动在当前用户目录（在 Windows
+            中为系统环境变量<span class="quote">&ldquo;<span class="quote">%USERPROFILE%</span>&rdquo;</span>、在 Mac OS/Linux
+            中则为<span class="quote">&ldquo;<span class="quote">$HOME</span>&rdquo;</span>所指向的文件夹路径）中创建一个名为<span class="quote">&ldquo;<span class="quote">Heartsome
+            Workspace</span>&rdquo;</span>的文件夹，称为<span class="quote">&ldquo;<span class="quote">Heartsome 工作空间</span>&rdquo;</span>目录。在 HSTS
+            中创建的所有项目及其所有子文件夹、文件都保存在该目录中。</p>
+</td>
+</tr>
+        
+          
+<tr class="question" title="13.">
+<td valign="top" align="left"><a name="N230C5"></a><a name="N230C7"></a>
+<p>
+<b>13.</b>
+</p>
+</td><td valign="top" align="left">
+<p>使用 HSTS 时出现了问题，应如何向 Heartsome 寻求帮助？</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>可以发邮件到 Heartsome 技术支持邮箱：<code class="email">&lt;<a class="email" href="mailto:tech_support@heartsome.net">tech_support@heartsome.net</a>&gt;</code>，并在邮件中尽可能多地提供如下信息，以便支持人员能更高效地了解您面临的问题：</p>
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+                
+<p>操作系统及版本，例如 Windows XP 32-bit SP3；</p>
+              
+</li>
+<li class="listitem">
+                
+<p>Java 运行时环境 (Java Runtime Environment, JRE) 版本，例如 Java
+                1.7.0_05-b05；</p>
+              
+</li>
+<li class="listitem">
+                
+<p>Heartsome 产品版本类型及版本号，例如 Translation Studio 旗舰版 8.0.0
+                Build 20120907；</p>
+              
+</li>
+<li class="listitem">
+                
+<p>详细的操作步骤；</p>
+              
+</li>
+<li class="listitem">
+                
+<p>实际得到的结果；</p>
+              
+</li>
+<li class="listitem">
+                
+<p>预期想要得到的结果；</p>
+              
+</li>
+<li class="listitem">
+                
+<p>样本文件，因有些问题只在特定的文件中出现；</p>
+              
+</li>
+<li class="listitem">
+                
+<p>错误现象截图；</p>
+              
+</li>
+<li class="listitem">
+                
+<p>其他能帮助支持人员定位问题的任何信息。</p>
+              
+</li>
+</ol>
+</div>
+</td>
+</tr>
+        
+          
+<tr class="question" title="14.">
+<td valign="top" align="left"><a name="N23112"></a><a name="N23114"></a>
+<p>
+<b>14.</b>
+</p>
+</td><td valign="top" align="left">
+<p>HSTS 支持哪些版本的 XLIFF、TMX、TBX 标准？</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>HSTS 支持的标准版本分别如下：</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                
+<p>XLIFF v1.2</p>
+              
+</li>
+<li class="listitem">
+                
+<p>TMX v1.4、v1.4b</p>
+              
+</li>
+<li class="listitem">
+                
+<p>TBX v0.2</p>
+              
+</li>
+</ul>
+</div>
+</td>
+</tr>
+        
+          
+<tr class="question" title="15.">
+<td valign="top" align="left"><a name="N23136"></a><a name="N23138"></a>
+<p>
+<b>15.</b>
+</p>
+</td><td valign="top" align="left">
+<p>从 HSTS 导出的 TMX 文件如何导入 Trados？</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>请在使用 HSTS 导出记忆库为 TMX 时选择<span class="guilabel">一级
+            TMX（不含标记）</span>、<span class="guilabel">自定义编码</span>复选框，并在下拉列表中选择
+            <span class="guilabel">UTF-16LE</span>，并使用<span class="guimenu">工具</span>菜单 &gt;
+            <span class="guimenuitem">TMX Validator</span> &gt;
+            <span class="guimenu">文件</span>菜单 &gt; <span class="guimenuitem">清理 TMX
+            文件</span>，处理完成后再导入 Trados。</p>
+</td>
+</tr>
+        
+</tbody>
+</table>
+</div>
+  
+</div>
+</body>
+</html>

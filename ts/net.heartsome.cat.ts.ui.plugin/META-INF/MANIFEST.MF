@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome CAT TS UI Plugin
+Bundle-SymbolicName: net.heartsome.cat.ts.ui.plugin;singleton:=true
+Bundle-Version: 8.0.3.R8b_v20130912
+Bundle-Activator: net.heartsome.cat.ts.ui.plugin.Activator
+Require-Bundle: net.heartsome.xml;bundle-version="1.0.0",
+ org.eclipse.ui;bundle-version="3.7.0",
+ org.eclipse.core.resources;bundle-version="3.7.100",
+ org.eclipse.core.runtime;bundle-version="3.7.0",
+ net.heartsome.cat.common.core,
+ net.heartsome.cat.ts.ui.xliffeditor.nattable;bundle-version="1.0.0",
+ org.eclipse.ui.ide;bundle-version="3.7.0",
+ org.eclipse.nebula.widgets.tablecombo;bundle-version="1.0.0",
+ net.heartsome.cat.ts.core;bundle-version="8.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Import-Package: net.heartsome.cat.common.locale,
+ net.heartsome.cat.ts.ui.composite,
+ net.heartsome.cat.ts.util,
+ net.heartsome.dialogs,
+ net.heartsome.util,
+ net.heartsome.xml,
+ org.eclipse.jface.text,
+ org.slf4j
+Export-Package: net.heartsome.cat.ts.ui.plugin,
+ net.heartsome.cat.ts.ui.plugin.bean
+Bundle-Localization: plugin
+Bundle-Vendor: Heartsome Technologies Ltd.

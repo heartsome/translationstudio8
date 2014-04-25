@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="4. Overview of the interfaces" topic="html/en/ch04.html" >
+	<topic label="4.1. Main interface" href="html/en/ch04.html#ch4s1-main-interface" />
+	<topic label="4.2. View" href="html/en/ch04s02.html" >
+		<topic label="4.2.1. Learn about the different window components" href="html/en/ch04s02.html#ch4s2a" />
+		<topic label="4.2.2. Using windows" href="html/en/ch04s02.html#using-view" />
+	</topic>
+	<topic label="4.3. XLIFF Editor" href="html/en/ch04s03.html" />
+</toc>

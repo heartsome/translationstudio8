@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="4. 界面概览" topic="html/zh/ch04.html" >
+	<topic label="4.1. 主界面" href="html/zh/ch04.html#ch4s1-main-interface" />
+	<topic label="4.2. 视图" href="html/zh/ch04s02.html" >
+		<topic label="4.2.1. 认识视图" href="html/zh/ch04s02.html#ch4s2a" />
+		<topic label="4.2.2. 使用视图" href="html/zh/ch04s02.html#using-view" />
+	</topic>
+	<topic label="4.3. XLIFF 编辑器" href="html/zh/ch04s03.html" />
+</toc>

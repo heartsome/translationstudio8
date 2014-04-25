@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE TBXXCS SYSTEM "tbxxcsdtd.dtd">
+<TBXXCS name="master" version="0.4" lang="en">
+    <!-- Last updated: November 17, 2008. Address enquiries to: arle@lisa.org -->
+    <header>
+        <title>TBX default XCS (extensible constraint specification) file Version 02. (Filename:
+            TBXXCSV02.xcs)</title>
+        <!--If the default XCS file is modified to include additional data categories,
+you must list them in a commented-out section in the header of the XCS file.-->
+    </header>
+    <!-- All languages used in a TBX document instance must be declared in the elements below.
+The following declarations are for demonstration purposes, and the simple two character language
+code is used so that this XCS file works with the sample TBX files. You can use any
+language code format that is allowed by IETF RFC 4646 or its successor. -->
+    <languages>
+        <langInfo>
+            <langCode>en</langCode>
+            <langName>English</langName>
+        </langInfo>
+        <langInfo>
+            <langCode>de</langCode>
+            <langName>German</langName>
+        </langInfo>
+        <langInfo>
+            <langCode>es</langCode>
+            <langName>Spanish</langName>
+        </langInfo>
+        <langInfo>
+            <langCode>hu</langCode>
+            <langName>Hungarian</langName>
+        </langInfo>
+        <langInfo>
+            <langCode>fr</langCode>
+            <langName>French</langName>
+        </langInfo>
+        <langInfo>
+            <langCode>it</langCode>
+            <langName>Italian</langName>
+        </langInfo> 
+        <langInfo>
+            <langCode>da</langCode>
+            <langName>Danish</langName>
+        </langInfo>  
+        <langInfo>
+            <langCode>nl</langCode>
+            <langName>Dutch</langName>
+        </langInfo>  
+        <langInfo>
+            <langCode>fi</langCode>
+            <langName>Finnish</langName>
+        </langInfo> 
+        <langInfo>
+            <langCode>pl</langCode>
+            <langName>Polish</langName>
+        </langInfo>   
+        <langInfo>
+            <langCode>no</langCode>
+            <langName>Norwegian</langName>
+        </langInfo>      
+        <langInfo>
+            <langCode>pt</langCode>
+            <langName>Portuguese</langName>
+        </langInfo> 
+        <langInfo>
+            <langCode>sv</langCode>
+            <langName>Slovenian</langName>
+        </langInfo> 
+        <langInfo>
+            <langCode>el</langCode>
+            <langName>Greek</langName>
+        </langInfo> 
+        <langInfo>
+            <langCode>cs</langCode>
+            <langName>Czech</langName>
+        </langInfo> 
+    </languages>
+    <datCatSet>
+        <!--Data-category constraint specifications are arranged in alphabetial order by the
+value of the name attribute. -->
+        <termNoteSpec name="abbreviatedFormFor" datcatId="ISO12620A-02013002">
+            <contents datatype="basicText" targetType="term"/>
+        </termNoteSpec>
+        <termNoteSpec name="administrativeStatus" datcatId="ISO12620A-020903">
+            <contents datatype="picklist"> standardizedTerm-admn-sts preferredTerm-admn-sts
+                admittedTerm-admn-sts deprecatedTerm-admn-sts supersededTerm-admn-sts legalTermadmn-
+                sts regulatedTerm-admn-sts </contents>
+        </termNoteSpec>
+        <termNoteSpec name="animacy" datcatId="ISO12620A-020204">
+            <contents datatype="picklist" forTermComp="yes">animate inanimate
+            otherAnimacy</contents>
+        </termNoteSpec>
+        <adminSpec name="annotatedNote" datcatId="">
+            <contents/>
+        </adminSpec>
+        <descripSpec name="antonymConcept" datcatId="ISO12620A-10180602">
+            <contents datatype="basicText" targetType="entry"/>
+            <levels>termEntry</levels>
+        </descripSpec>
+        <termNoteSpec name="antonymTerm" datcatId="ISO12620A-10180601">
+            <contents datatype="basicText" targetType="term"/>
+        </termNoteSpec>
+        <adminSpec name="applicationSubset" datcatId="ISO12620A-100306">
+            <contents datatype="plainText"/>
+        </adminSpec>
+        <descripSpec name="associatedConcept" datcatId="ISO12620A-070210">
+            <contents datatype="basicText" targetType="entry"/>
+            <levels>langSet termEntry</levels>
+        </descripSpec>
+        <descripSpec name="audio" datcatId="ISO12620A-050502">
+            <contents datatype="plainText" targetType="binaryData"/>
+            <levels>langSet termEntry term</levels>
+        </descripSpec>
+        <hiSpec name="bold" datcatId="">
+            <contents/>
+        </hiSpec>
+        <descripSpec name="broaderConceptGeneric" datcatId="ISO12620A-070201">
+            <contents datatype="basicText" targetType="entry"/>
+            <levels>langSet termEntry</levels>
+        </descripSpec>
+        <descripSpec name="broaderConceptPartitive" datcatId="ISO12620A-070202">
+            <contents datatype="basicText" targetType="entry"/>
+            <levels>langSet termEntry</levels>
+        </descripSpec>
+        <adminSpec name="businessUnitSubset" datcatId="ISO12620A-100308">
+            <contents datatype="plainText"/>
+        </adminSpec>
+        <descripSpec name="characteristic" datcatId="ISO12620A-0508">
+            <contents datatype="plainText"/>
+            <levels>term</levels>
+        </descripSpec>
+        <descripSpec name="classificationCode" datcatId="ISO12620A-0402">
+            <contents datatype="plainText" targetType="bibl"/>
+            <levels>langSet termEntry term</levels>
+        </descripSpec>
+        <adminSpec name="conceptOrigin" datcatId="ISO12620A-0509">
+            <contents datatype="plainText"/>
+        </adminSpec>
+        <descripSpec name="conceptPosition" datcatId="ISO12620A-0702">
+            <contents datatype="plainText" targetType="conceptSysDescrip"/>
+            <levels>langSet termEntry</levels>
+        </descripSpec>
+        <descripSpec name="context" datcatId="ISO12620A-0503">
+            <contents/>
+            <levels>term</levels>
+        </descripSpec>
+        <descripNoteSpec name="contextType" datcatId="ISO12620A-0803">
+            <contents datatype="picklist">definingContext explanatoryContext associativeContext
+                linguisticContext metalinguisticContext translatedContext </contents>
+        </descripNoteSpec>
+        <descripSpec name="coordinateConceptGeneric" datcatId="ISO12620A-07020401">
+            <contents datatype="basicText" targetType="entry"/>
+            <levels>langSet termEntry</levels>
+        </descripSpec>
+        <descripSpec name="coordinateConceptPartitive" datcatId="ISO12620A-07020402">
+            <contents datatype="basicText" targetType="entry"/>
+            <levels>langSet termEntry</levels>
+        </descripSpec>
+        <xrefSpec name="corpusTrace" datcatId="ISO12620A-101808">
+            <contents targetType="external"/>
+        </xrefSpec>
+        <refSpec name="crossReference" datcatId="ISO12620A-1018">
+            <contents targetType="element"/>
+        </refSpec>
+        <adminSpec name="customerSubset" datcatId="ISO12620A-100301">
+            <contents datatype="plainText"/>
+        </adminSpec>
+        <adminSpec name="databaseType" datcatId="ISO12620A-10220301">
+            <contents datatype="plainText"/>
+        </adminSpec>
+        <descripSpec name="definition" datcatId="ISO12620A-0501">
+            <contents/>
+            <levels>langSet termEntry term</levels>
+        </descripSpec>
+        <descripNoteSpec name="definitionType" datcatId="ISO12620A-0802">
+            <contents datatype="picklist">intensionalDefinition extensionalDefinition
+                partitiveDefinition translatedDefinition</contents>
+        </descripNoteSpec>
+        <descripNoteSpec name="descriptionType" datcatId="ISO12620A-0801">
+            <contents datatype="picklist" targetType="element"/>
+        </descripNoteSpec>
+        <termNoteSpec name="directionality" datcatId="">
+            <contents datatype="picklist" targetType="term">monodirectional bidirectional
+                incommensurate undetermined</contents>
+        </termNoteSpec>
+        <adminSpec name="domainExpert" datcatId="ISO12620A-1025">
+            <contents datatype="plainText" targetType="bibl"/>
+        </adminSpec>
+        <adminSpec name="elementWorkingStatus" datcatId="ISO12620A-1011">
+            <contents datatype="picklist">starterElement workingElement consolidatedElement
+                archiveElement importedElement exportedElement</contents>
+        </adminSpec>
+        <hiSpec name="entailedTerm" datcatId="ISO12620A-100601">
+            <contents/>
+        </hiSpec>
+        <adminSpec name="entrySource" datcatId="ISO12620A-1013">
+            <contents datatype="plainText"/>
+        </adminSpec>
+        <adminSpec name="environmentSubset" datcatId="ISO12620A-100307">
+            <contents datatype="plainText"/>
+        </adminSpec>
+        <termNoteSpec name="etymology" datcatId="ISO12620A-020402">
+            <contents forTermComp="yes"/>
+        </termNoteSpec>
+        <descripSpec name="example" datcatId="ISO12620A-0504">
+            <contents/>
+            <levels>langSet termEntry term</levels>
+        </descripSpec>
+        <descripSpec name="explanation" datcatId="ISO12620A-0502">
+            <contents/>
+            <levels>langSet termEntry term</levels>
+        </descripSpec>
+        <xrefSpec name="externalCrossReference" datcatId="ISO12620A-101807">
+            <contents targetType="external"/>
+        </xrefSpec>
+        <termNoteSpec name="falseFriend" datcatId="ISO12620A-0302">
+            <contents datatype="basicText" targetType="term"/>
+        </termNoteSpec>
+        <descripSpec name="figure" datcatId="ISO12620A-050501">
+            <contents datatype="plainText" targetType="binaryData"/>
+            <levels>langSet termEntry term</levels>
+        </descripSpec>
+        <termNoteSpec name="frequency" datcatId="ISO12620A-020304">
+            <contents datatype="picklist">commonlyUsed infrequentlyUsed rarelyUsed</contents>
+        </termNoteSpec>
+        <termNoteSpec name="geographicalUsage" datcatId="ISO12620A-020302">
+            <contents datatype="plainText"/>
+        </termNoteSpec>
+        <termNoteSpec name="grammaticalGender" datcatId="ISO12620A-020202">
+            <contents datatype="picklist" forTermComp="yes">masculine feminine neuter
+            otherGender</contents>
+        </termNoteSpec>
+        <termNoteSpec name="grammaticalNumber" datcatId="ISO12620A-020203">
+            <contents datatype="picklist" forTermComp="yes">singular plural dual mass
+            otherNumber</contents>
+        </termNoteSpec>
+        <termNoteSpec name="grammaticalValency" datcatId="ISO12620A-020207">
+            <contents datatype="plainText"/>
+        </termNoteSpec>
+        <termNoteSpec name="homograph" datcatId="ISO12620A-101805">
+            <contents datatype="basicText" targetType="term"/>
+        </termNoteSpec>
+        <hiSpec name="hotkey" datcatId="ISO12620A-100604">
+            <contents/>
+        </hiSpec>
+        <termCompListSpec name="hyphenation" datcatId="ISO12620A-0207">
+            <contents forTermComp="yes"/>
+        </termCompListSpec>
+        <adminSpec name="indexHeading" datcatId="ISO12620A-0905">
+            <contents datatype="plainText"/>
+        </adminSpec>
+        <hiSpec name="italics" datcatId="">
+            <contents/>
+        </hiSpec>
+        <adminSpec name="keyword" datcatId="ISO12620A-0904">
+            <contents datatype="plainText"/>
+        </adminSpec>
+        <termNoteSpec name="language-planningQualifier" datcatId="ISO12620A-020902">
+            <contents datatype="picklist">recommendedTerm nonstandardizedTerm proposedTerm
+            newTerm</contents>
+        </termNoteSpec>
+        <termCompListSpec name="lemma" datcatId="ISO12620A-020803">
+            <contents forTermComp="yes"/>
+        </termCompListSpec>
+        <termNoteSpec name="lionHotkey" datcatId="">
+            <contents datatype="plainText"/>
+        </termNoteSpec>
+        <hiSpec name="math" datcatId="">
+            <contents/>
+        </hiSpec>
+        <termCompListSpec name="morphologicalElement" datcatId="ISO12620A-020801">
+            <contents forTermComp="yes"/>
+        </termCompListSpec>
+        <termNoteSpec name="normativeAuthorization" datcatId="ISO12620A-020901">
+            <contents datatype="picklist">standardizedTerm preferredTerm admittedTerm deprecatedTerm
+                supersededTerm legalTerm regulatedTerm</contents>
+        </termNoteSpec>
+        <adminNoteSpec name="noteSource" datcatId="">
+            <contents/>
+        </adminNoteSpec>
+        <adminSpec name="originatingDatabase" datcatId="ISO12620A-102203">
+            <contents datatype="plainText"/>
+        </adminSpec>
+        <adminSpec name="originatingInstitution" datcatId="ISO12620A-102202">
+            <contents datatype="plainText"/>
+        </adminSpec>
+        <adminSpec name="originatingPerson" datcatId="ISO12620A-102201">
+            <contents datatype="plainText"/>
+        </adminSpec>
+        <descripSpec name="otherBinaryData" datcatId="ISO12620A-050505">
+            <contents datatype="plainText" targetType="binaryData"/>
+            <levels>langSet termEntry term</levels>
+        </descripSpec>
+        <termNoteSpec name="partOfSpeech" datcatId="ISO12620A-020201">
+            <contents datatype="plainText" forTermComp="yes"/>
+        </termNoteSpec>
+        <termNoteSpec name="processStatus" datcatId="ISO12620A-020904">
+            <contents datatype="picklist">unprocessed provisionallyProcessed finalized</contents>
+        </termNoteSpec>
+        <adminSpec name="productSubset" datcatId="ISO12620A-100305">
+            <contents datatype="plainText"/>
+        </adminSpec>
+        <adminSpec name="projectSubset" datcatId="ISO12620A-100303">
+            <contents datatype="plainText"/>
+        </adminSpec>
+        <termNoteSpec name="pronunciation" datcatId="ISO12620A-0205">
+            <contents datatype="basicText" forTermComp="yes"/>
+        </termNoteSpec>
+        <termNoteSpec name="proprietaryRestriction" datcatId="ISO12620A-020307">
+            <contents datatype="picklist">trademark serviceMark tradeName</contents>
+        </termNoteSpec>
+        <descripSpec name="quantity" datcatId="ISO12620A-050701">
+            <contents datatype="plainText"/>
+            <levels>term</levels>
+        </descripSpec>
+        <descripSpec name="range" datcatId="ISO12620A-0507">
+            <contents datatype="plainText"/>
+            <levels>term</levels>
+        </descripSpec>
+        <termNoteSpec name="register" datcatId="ISO12620A-020303">
+            <contents datatype="picklist">colloquialRegister neutralRegister technicalRegister
+                in-houseRegister bench-levelRegister slangRegister vulgarRegister</contents>
+        </termNoteSpec>
+        <descripSpec name="relatedConcept" datcatId="ISO12620A-070205">
+            <contents datatype="basicText" targetType="entry"/>
+            <levels>langSet termEntry</levels>
+        </descripSpec>
+        <descripSpec name="relatedConceptBroader" datcatId="ISO12620A-07020501">
+            <contents datatype="basicText" targetType="entry"/>
+            <levels>langSet termEntry</levels>
+        </descripSpec>
+        <descripSpec name="relatedConceptNarrower" datcatId="ISO12620A-07020502">
+            <contents datatype="basicText" targetType="entry"/>
+            <levels>langSet termEntry</levels>
+        </descripSpec>
+        <descripSpec name="reliabilityCode" datcatId="ISO12620A-0304">
+            <contents datatype="picklist">1 2 3 4 5 6 7 8 9 10</contents>
+            <levels>langSet termEntry term</levels>
+        </descripSpec>
+        <transacNoteSpec name="responsibility" datcatId="ISO12620A-100202">
+            <contents targetType="respPerson"/>
+        </transacNoteSpec>
+        <descripSpec name="sampleSentence" datcatId="ISO12620A-050302">
+            <contents/>
+            <levels>term</levels>
+        </descripSpec>
+        <adminSpec name="searchTerm" datcatId="ISO12620A-100603">
+            <contents datatype="plainText"/>
+        </adminSpec>
+        <adminSpec name="securitySubset" datcatId="ISO12620A-100309">
+            <contents datatype="picklist">public confidential</contents>
+        </adminSpec>
+        <refSpec name="see" datcatId="ISO12620A-101801">
+            <contents targetType="element" forTermComp="yes"/>
+        </refSpec>
+        <descripSpec name="sequentiallyRelatedConcept" datcatId="ISO12620A-070206">
+            <contents datatype="basicText" targetType="entry"/>
+            <levels>langSet termEntry</levels>
+        </descripSpec>
+        <termNoteSpec name="shortFormFor" datcatId="ISO12620A-02013004">
+            <contents datatype="basicText" targetType="term"/>
+        </termNoteSpec>
+        <adminSpec name="sortKey" datcatId="ISO12620A-100602">
+            <contents datatype="plainText"/>
+        </adminSpec>
+        <adminSpec name="source" datcatId="ISO12620A-1019">
+            <contents/>
+        </adminSpec>
+        <adminSpec name="sourceIdentifier" datcatId="ISO12620A-1020">
+            <contents datatype="plainText" targetType="bibl"/>
+        </adminSpec>
+        <adminNoteSpec name="sourceType" datcatId="ISO12620A-102001">
+            <contents datatype="picklist">parallelText backgroundText</contents>
+        </adminNoteSpec>
+        <descripSpec name="spatiallyRelatedConcept" datcatId="ISO12620A-070208">
+            <contents datatype="basicText" targetType="entry"/>
+            <levels>langSet termEntry</levels>
+        </descripSpec>
+        <descripSpec name="subjectField" datcatId="ISO12620A-04">
+            <contents datatype="plainText"/>
+            <levels>termEntry</levels>
+        </descripSpec>
+        <descripSpec name="subordinateConceptGeneric" datcatId="ISO12620A-07020301">
+            <contents datatype="basicText" targetType="entry"/>
+            <levels>langSet termEntry</levels>
+        </descripSpec>
+        <descripSpec name="subordinateConceptPartitive" datcatId="ISO12620A-07020302">
+            <contents datatype="basicText" targetType="entry"/>
+            <levels>langSet termEntry</levels>
+        </descripSpec>
+        <hiSpec name="subscript" datcatId="">
+            <contents/>
+        </hiSpec>
+        <adminSpec name="subsetOwner" datcatId="ISO12620A-10020210">
+            <contents datatype="plainText"/>
+        </adminSpec>
+        <descripSpec name="superordinateConceptGeneric" datcatId="ISO12620A-07020202">
+            <contents datatype="basicText" targetType="entry"/>
+            <levels>langSet termEntry</levels>
+        </descripSpec>
+        <descripSpec name="superordinateConceptPartitive" datcatId="ISO12620A-07020203">
+            <contents datatype="basicText" targetType="entry"/>
+            <levels>langSet termEntry</levels>
+        </descripSpec>
+        <hiSpec name="superscript" datcatId="">
+            <contents/>
+        </hiSpec>
+        <termCompListSpec name="syllabification" datcatId="ISO12620A-0206">
+            <contents forTermComp="yes"/>
+        </termCompListSpec>
+        <descripSpec name="table" datcatId="ISO12620A-050504">
+            <contents datatype="plainText" targetType="binaryData"/>
+            <levels>langSet termEntry term</levels>
+        </descripSpec>
+        <termNoteSpec name="temporalQualifier" datcatId="ISO12620A-020305">
+            <contents datatype="picklist">archaicTerm outdatedTerm obsoleteTerm</contents>
+        </termNoteSpec>
+        <descripSpec name="temporallyRelatedConcept" datcatId="ISO12620A-070207">
+            <contents datatype="basicText" targetType="entry"/>
+            <levels>langSet termEntry</levels>
+        </descripSpec>
+        <termCompListSpec name="termElement" datcatId="ISO12620A-020802">
+            <contents forTermComp="yes"/>
+        </termCompListSpec>
+        <termNoteSpec name="termLocation" datcatId="n/a">
+            <contents datatype="plainText"/>
+        </termNoteSpec>
+        <termNoteSpec name="termProvenance" datcatId="ISO12620A-020401">
+            <contents datatype="picklist">transdisciplinaryBorrowing translingualBorrowing
+                loanTranslation neologism</contents>
+        </termNoteSpec>
+        <termNoteSpec name="termStructure" datcatId="ISO12620A-020804">
+            <contents datatype="plainText" forTermComp="yes"/>
+        </termNoteSpec>
+        <termNoteSpec name="termType" datcatId="ISO12620A-0201">
+            <contents datatype="picklist">abbreviation acronym clippedTerm commonName entryTerm
+                equation formula fullForm initialism internationalScientificTerm internationalism
+                logicalExpression phraseologicalUnit partNumber shortForm shortcut sku symbol
+                synonym synonymousPhrase standardText string transliteratedForm transcribedForm
+                variant </contents>
+        </termNoteSpec>
+        <descripSpec name="thesaurusDescriptor" datcatId="ISO12620A-0902">
+            <contents datatype="plainText" targetType="thesaurusDescrip"/>
+            <levels>termEntry</levels>
+        </descripSpec>
+        <termNoteSpec name="timeRestriction" datcatId="ISO12620A-020306">
+            <contents datatype="plainText"/>
+        </termNoteSpec>
+        <transacSpec name="transactionType" datcatId="ISO12620A-1001">
+            <contents datatype="picklist">origination input modification check approval withdrawal
+                standardization exportation importation proposal userAccess</contents>
+        </transacSpec>
+        <termNoteSpec name="transferComment" datcatId="ISO12620A-0305">
+            <contents targetType="term"/>
+        </termNoteSpec>
+        <descripSpec name="unit" datcatId="ISO12620A-0506">
+            <contents datatype="plainText"/>
+            <levels>term</levels>
+        </descripSpec>
+        <transacNoteSpec name="usageCount" datcatId="ISO12620A-100203">
+            <contents/>
+        </transacNoteSpec>
+        <termNoteSpec name="usageNote" datcatId="ISO12620A-020301">
+            <contents/>
+        </termNoteSpec>
+        <descripSpec name="video" datcatId="ISO12620A-050503">
+            <contents datatype="plainText" targetType="binaryData"/>
+            <levels>langSet termEntry term</levels>
+        </descripSpec>
+        <xrefSpec name="xAudio" datcatId="ISO12620A-050502">
+            <contents targetType="external"/>
+        </xrefSpec>
+        <xrefSpec name="xGraphic" datcatId="ISO12620A-050501">
+            <contents targetType="external"/>
+        </xrefSpec>
+        <xrefSpec name="xMathML" datcatId="">
+            <contents targetType="external"/>
+        </xrefSpec>
+        <xrefSpec name="xSource" datcatId="ISO12620A-1019">
+            <contents targetType="external"/>
+        </xrefSpec>
+        <xrefSpec name="xVideo" datcatId="ISO12620A-050503">
+            <contents targetType="external"/>
+        </xrefSpec>
+    </datCatSet>
+    <refObjectDefSet>
+        <refObjectDef>
+            <refObjectType>binaryData</refObjectType>
+            <itemSpecSet type="validItemTypes">
+                <itemSpec type="validItemType">format</itemSpec>
+                <itemSpec type="validitemType">fileName</itemSpec>
+                <itemSpec type="validItemType">fileDateTime</itemSpec>
+                <itemSpec type="validItemType">fileAttributes</itemSpec>
+                <itemSpec type="validItemType">fileOSName</itemSpec>
+                <itemSpec type="validItemType">fileOSNumber</itemSpec>
+                <itemSpec type="validItemType">codePage</itemSpec>
+                <itemSpec type="validItemType">fileSize</itemSpec>
+                <itemSpec type="validItemType">data</itemSpec>
+                <itemSpec type="validItemType">description</itemSpec>
+            </itemSpecSet>
+        </refObjectDef>
+    </refObjectDefSet>
+</TBXXCS>

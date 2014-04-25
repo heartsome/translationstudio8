@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="net.heartsome.cat.ts.tb.match.extension" name="TbMatch" schema="schema/net.heartsome.cat.ts.tb.match.extension.exsd"/>
+   <extension-point id="net.heartsome.cat.ts.tb.importer.extension" name="TbImporter" schema="schema/net.heartsome.cat.ts.tb.importer.extension.exsd"/>
+
+</plugin>

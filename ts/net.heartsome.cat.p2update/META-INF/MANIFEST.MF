@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome CAT P2 Update
+Bundle-SymbolicName: net.heartsome.cat.p2update;singleton:=true
+Bundle-Version: 8.0.2.R8b_v20130613
+Bundle-Activator: net.heartsome.cat.p2update.Activator
+Bundle-Vendor: Heartsome Technologies Ltd.
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.equinox.p2.ui,
+ org.eclipse.equinox.p2.core,
+ org.eclipse.equinox.p2.repository,
+ net.heartsome.cat.thirdpartlibrary,
+ net.heartsome.xml,
+ net.heartsome.cat.common.ui;bundle-version="8.0.0"
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ActivationPolicy: lazy
+Bundle-Localization: plugin
+Import-Package: javax.xml.parsers,
+ net.heartsome.cat.common.util,
+ org.eclipse.core.expressions,
+ org.eclipse.equinox.internal.p2.engine,
+ org.eclipse.equinox.p2.engine;version="[2.0.0,3.0.0)",
+ org.eclipse.equinox.p2.engine.query;version="[2.0.0,3.0.0)",
+ org.eclipse.equinox.p2.metadata;version="[2.0.0,3.0.0)",
+ org.eclipse.equinox.p2.operations;version="[2.0.0,3.0.0)",
+ org.eclipse.equinox.p2.query;version="[2.0.0,3.0.0)",
+ org.eclipse.osgi.util;version="1.1.0",
+ org.osgi.framework;version="1.6.0",
+ org.w3c.dom,
+ org.xml.sax
+Export-Package: net.heartsome.cat.p2update.autoupdate

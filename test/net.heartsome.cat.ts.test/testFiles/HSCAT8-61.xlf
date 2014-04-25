@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:hs="http://www.heartsome.net.cn/2008/XLFExtension" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd  http://www.heartsome.net.cn/2008/XLFExtension XLFExtension.xsd">
+  <file datatype="plaintext" original="D:/ts.win32.win32.x86/workspace/test/Source/test file.txt" source-language="en-US" target-language="zh-CN">
+    <header>
+      <skl>
+        <external-file href="D:/ts.win32.win32.x86/workspace/test/SKL/test file.txt.skl"/>
+      </skl>
+      <tool tool-id="XLFEditor auto-Quick Translation" tool-name="HSStudio"/>
+      <hs:prop-group name="encoding">
+        <hs:prop prop-type="encoding">UTF-8</hs:prop>
+      </hs:prop-group>
+    </header>
+    <body>
+      <trans-unit approved="no" id="1" translate="yes" xml:space="preserve">
+        <source xml:lang="en-US">Test segment 1.</source>
+        <target state="new" xml:lang="zh-CN"/>
+      </trans-unit>
+      <trans-unit approved="no" id="2" translate="yes" xml:space="preserve">
+        <source xml:lang="en-US">Test segment 2.</source>
+        <target state="new" xml:lang="zh-CN"/>
+        <note>Test Note 1.</note>
+      </trans-unit>
+      <trans-unit approved="no" id="3" translate="yes" xml:space="preserve">
+        <source xml:lang="en-US">Test segment 3.</source>
+        <target state="new" xml:lang="zh-CN"/>
+        <note>Test Note 1.</note>
+        <note>Test Note 2.</note>
+        <note>Test Note 3.</note>
+      </trans-unit>
+      <trans-unit approved="yes" id="4" translate="no" xml:space="preserve">
+        <source xml:lang="en-US">Test segment 4.</source>
+        <target state="new" xml:lang="zh-CN"/>
+      </trans-unit>
+      <trans-unit approved="yes" id="5" translate="no" xml:space="preserve">
+        <source xml:lang="en-US">Test segment 5.</source>
+        <target state="new" xml:lang="zh-CN"/>
+        <note>Test Note 1.</note>
+      </trans-unit>
+      <trans-unit approved="yes" id="6" translate="no" xml:space="preserve">
+        <source xml:lang="en-US">Test segment 6.</source>
+        <target state="new" xml:lang="zh-CN"/>
+        <note>Test Note 1.</note>
+        <note>Test Note 2.</note>
+        <note>Test Note 3.</note>
+      </trans-unit>
+      <trans-unit approved="no" id="7" translate="yes" xml:space="preserve">
+        <source xml:lang="en-US">Test segment 7.</source>
+        <target state="new" xml:lang="zh-CN"/>
+      </trans-unit>
+      <trans-unit approved="no" id="8" translate="yes" xml:space="preserve">
+        <source xml:lang="en-US">Test segment 8.</source>
+        <target state="new" xml:lang="zh-CN"/>
+        <note>Test Note 1.</note>
+      </trans-unit>
+      <trans-unit approved="no" id="9" translate="yes" xml:space="preserve">
+        <source xml:lang="en-US">Test segment 9.</source>
+        <target state="new" xml:lang="zh-CN"/>
+        <note>Test Note 1.</note>
+        <note>Test Note 2.</note>
+        <note>Test Note 3.</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

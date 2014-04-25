@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome CAT TS UI Help
+Bundle-SymbolicName: net.heartsome.cat.ts.ui.help;singleton:=true
+Bundle-Version: 8.1.0.R8b_v20131119
+Bundle-Activator: net.heartsome.cat.ts.ui.help.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.help.ui;bundle-version="3.5.100",
+ net.heartsome.cat.common.core;bundle-version="8.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Localization: plugin
+Bundle-ClassPath: .,
+ src/
+Bundle-Vendor: Heartsome Technologies Ltd.

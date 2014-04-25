@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: net.heartsome.cat.ts.test
+Bundle-SymbolicName: net.heartsome.cat.ts.test
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Heartsome
+Require-Bundle: net.heartsome.cat.ts.test.basecase;bundle-version="1.0.0",
+ net.heartsome.cat.ts.test.ui;bundle-version="1.0.0",
+ net.heartsome.test.swtbot;bundle-version="1.0.0",
+ net.heartsome.test.thirdpartylibrary;bundle-version="1.0.0",
+ net.heartsome.test.utilities;bundle-version="1.0.0",
+ org.eclipse.swtbot.go,
+ org.apache.log4j
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Eclipse-RegisterBuddy: org.apache.log4j
+Export-Package: net.heartsome.cat.ts.test.basecase
+Import-Package: org.eclipse.swtbot.mockdialogs.factory

@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome CAT TS UI TM
+Bundle-SymbolicName: net.heartsome.cat.ts.ui.translation;singleton:=true
+Bundle-Version: 8.1.0.R8b_v20131121
+Bundle-Activator: net.heartsome.cat.ts.ui.translation.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.ui.ide;bundle-version="3.7.0",
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources;bundle-version="3.7.100",
+ org.eclipse.compare.core;bundle-version="3.5.200",
+ org.eclipse.jface.text;bundle-version="3.7.0",
+ org.eclipse.nebula.widgets.grid;bundle-version="1.0.0",
+ net.heartsome.cat.common.core;bundle-version="1.0.0",
+ net.heartsome.cat.thirdpartlibrary;bundle-version="1.0.0",
+ net.heartsome.cat.ts.core;bundle-version="1.0.0",
+ net.heartsome.cat.ts.ui;bundle-version="1.0.0",
+ net.heartsome.cat.common.ui;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: net.heartsome.cat.ts.ui.translation,
+ net.heartsome.cat.ts.ui.translation.bean,
+ net.heartsome.cat.ts.ui.translation.view
+Import-Package: net.heartsome.cat.ts.tm.bean,
+ net.heartsome.cat.ts.tm.complexMatch,
+ net.heartsome.cat.ts.tm.match,
+ net.heartsome.cat.ts.tm.simpleMatch
+Bundle-Localization: plugin
+Bundle-Vendor: Heartsome Technologies Ltd.

@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<!-- ========================================================================================== -->
+<!-- 品质检查     菜单，robert	2011-11-04      	=============================================== -->
+<!-- ========================================================================================== -->
+
+<!--
+下面是各个检查项，检查项名称，检查项的类名,这些是在QAModel中进行配置的，一定要与QAModel中的同步
+	qaItemId		qaItemName			qaItemClassName
+	batch			批量检查				net.heartsome.cat.ts.ui.qa.TermConsistenceQA
+ 	term			术语一致性检查			
+ 	paragraph		文本段一致性检查
+  	number			数字一致性检查
+  	tag				标记一致性检查
+  	nonTranslation	非译元素检查
+-->
+<plugin>
+   <extension
+         id="net.heartsome.cat.ui.QA.commands"
+         name="QAMenu"
+         point="org.eclipse.ui.commands">
+     <category
+        description="%qa.plugin.qa"
+        id="net.heartsome.cat.ts.ui.qa.category.Command"
+        name="%qa.plugin.qa"/>
+      <command
+            categoryId="net.heartsome.cat.ts.ui.qa.category.Command"
+            id="net.heartsome.cat.ts.ui.qa.handlers.BatchQA"
+            name="%qa.plugin.batchQA">
+      </command>
+      <command
+            categoryId="net.heartsome.cat.ts.ui.qa.category.Command"
+            id="net.heartsome.cat.ts.ui.qa.handlers.numberConsistenceQA"
+            name="%qa.plugin.numberQA">
+            <commandParameter
+                  id="qaItemId"
+                  name="qaItemId"
+                  optional="false">
+            </commandParameter>
+      </command>
+      <command
+            categoryId="net.heartsome.cat.ts.ui.qa.category.Command"
+            id="net.heartsome.cat.ts.ui.qa.handlers.tagConsistenceQA"
+            name="%qa.plugin.tagQA">
+            <commandParameter
+                  id="qaItemId"
+                  name="qaItemId"
+                  optional="false">
+            </commandParameter>
+      </command>
+   </extension>
+   
+<!-- 质量检查菜单的handler定义 -->   
+<!-- 质量检查菜单菜单定义 --> 	
+	<extension
+		 	id="net.heartsome.cat.ts.ui.qa.menus"
+		    name="Menus"
+		    point="org.eclipse.ui.menus">
+	    <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu?after=qa">
+            <menu
+	               id="net.heartsome.cat.ts.ui.menus.QAMenu"
+	               label="%qa.plugin.menu.qa">
+            	<command
+                   commandId="net.heartsome.cat.ts.ui.qa.handlers.BatchQA"
+                   id="net.heartsome.cat.ts.ui.qa.handlers.BatchQA"
+                   label="%qa.plugin.batchQA"
+                   mnemonic="S"
+                   style="push">
+            	</command>
+            	<separator
+		      		name="net.heartsome.cat.ts.ui.qa.handlers.BatchQA.separator1"
+		      		visible="true">
+		 		</separator>
+		 		
+            	<command
+                   commandId="net.heartsome.cat.ts.ui.qa.handlers.numberConsistenceQA"
+                   id="net.heartsome.cat.ts.ui.qa.handlers.numberConsistenceQA"
+                   label="%menu.numberQA"
+                   mnemonic="S"
+                   style="push">
+                   <parameter 
+              	   		name="qaItemId" 
+              	   		value="number">
+        		   </parameter>
+            	</command>
+            	<command
+                   commandId="net.heartsome.cat.ts.ui.qa.handlers.tagConsistenceQA"
+                   id="net.heartsome.cat.ts.ui.qa.handlers.tagConsistenceQA"
+                   label="%menu.tagQA"
+                   mnemonic="S"
+                   style="push">
+                   <parameter 
+              	   		name="qaItemId" 
+              	   		value="tag">
+        		   </parameter>
+            	</command>
+             <separator
+                   name="net.heartsome.cat.ts.ui.qa.separator.jump">
+             </separator>
+            	
+            </menu>
+        </menuContribution>
+	</extension>
+	
+	
+	<!-- 导航窗体中右键菜单定义 -->
+	
+	<extension
+         point="org.eclipse.ui.handlers">
+    <handler
+          class="net.heartsome.cat.ts.ui.qa.handlers.BatchQAHandler"
+          commandId="net.heartsome.cat.ts.ui.qa.handlers.BatchQA">
+       <enabledWhen>
+          <test
+                property="navigatorPopup.projectOrXLIFF">
+          </test>
+       </enabledWhen>
+    </handler>
+      <handler
+            class="net.heartsome.cat.ts.ui.qa.handlers.NumberOrTagConsisQAHandler"
+            commandId="net.heartsome.cat.ts.ui.qa.handlers.numberConsistenceQA">
+         <enabledWhen>
+            <with
+                  variable="activeEditorId">
+               <equals
+                     value="net.heartsome.cat.ts.ui.xliffeditor.nattable.editor">
+               </equals>
+            </with>
+         </enabledWhen>
+      </handler>
+      <handler
+            class="net.heartsome.cat.ts.ui.qa.handlers.NumberOrTagConsisQAHandler"
+            commandId="net.heartsome.cat.ts.ui.qa.handlers.tagConsistenceQA">
+         <enabledWhen>
+            <with
+                  variable="activeEditorId">
+               <equals
+                     value="net.heartsome.cat.ts.ui.xliffeditor.nattable.editor">
+               </equals>
+            </with>
+         </enabledWhen>
+      </handler>
+	</extension>
+	
+	<extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="popup:net.heartsome.cat.common.ui.navigator.view#PopupMenu?after=group.qa">
+         <command
+               commandId="net.heartsome.cat.ts.ui.qa.handlers.BatchQA"
+               label="%qa.plugin.subMenu.qa"
+               style="push">
+         </command>
+      </menuContribution>
+   </extension>
+   
+<!-- =========================================================================== -->
+<!-- 品质检查结果视图的相关配置，比如将显示品质结果视图添加到查看菜单中，robert	2011-11-12   -->
+<!-- =========================================================================== -->
+ <extension
+ 		point="org.eclipse.ui.commands">
+        <command
+            categoryId="net.heartsome.cat.ts.viewMenu.category1"
+            id="net.heartsome.cat.ts.ui.qa.handlers.OpenQAResultViewCommand"
+            name="%qa.plugin.displayQAResultViewer">
+         <commandParameter
+               id="ViewId"
+               name="ViewId"
+               optional="false"></commandParameter>
+      </command>
+ 		
+ </extension>
+ 
+ <extension
+         point="org.eclipse.ui.handlers">
+ 	  <handler
+            class="net.heartsome.cat.common.ui.handlers.OpenViewHandler"
+            commandId="net.heartsome.cat.ts.ui.qa.handlers.OpenQAResultViewCommand">
+      </handler>
+ </extension>
+ 
+ <extension
+ 		point="org.eclipse.ui.menus">
+	<menuContribution
+        locationURI="menu:net.heartsome.cat.ts.menu.viewMenu?after=net.heartsome.cat.ts.qaSeparator">
+        <command
+              commandId="net.heartsome.cat.ts.ui.qa.handlers.OpenQAResultViewCommand"
+              icon="icons/disabled_co.png"
+              id="net.heartsome.cat.ts.ui.qa.handlers.OpenQAResultViewCommand"
+              label="%qa.plugin.displayQAResultViewer"
+              style="push">
+	        <parameter
+		          name="ViewId"
+		          value="net.heartsome.cat.ts.ui.qa.views.QAResultViewPart">
+		    </parameter>
+	    </command>
+    </menuContribution>
+ </extension>
+ 
+ 
+ 
+ <extension
+       point="org.eclipse.ui.views">
+    <view
+          class="net.heartsome.cat.ts.ui.qa.views.QAResultViewPart"
+          icon="images/qa.png"
+          id="net.heartsome.cat.ts.ui.qa.views.QAResultViewPart"
+          name="%qa.plugin.qaResultViewer"
+          restorable="true">
+    </view>
+ </extension>
+ 
+<!-- =========================================================================== -->
+<!-- 品质检查首选项设置界面配置，robert	2011-12-02								     -->
+<!-- =========================================================================== --> 
+ <extension
+       point="org.eclipse.ui.preferencePages">
+    <page
+          class="net.heartsome.cat.ts.ui.qa.preference.QAInstalPage"
+          id="net.heartsome.cat.ts.ui.qa.preference.QAPage"
+          name="%qa.plugin.qa">
+    </page>
+    <page
+          category="net.heartsome.cat.ts.ui.qa.preference.QAPage"
+          class="net.heartsome.cat.ts.ui.qa.preference.NonTranslationQAPage"
+          id="net.heartsome.cat.ts.ui.qa.preference.NonTranslationQAPage"
+          name="%qa.plugin.nonTransElement">
+    </page>
+    <page
+          category="net.heartsome.cat.ts.ui.qa.preference.QAPage"
+          class="net.heartsome.cat.ts.ui.qa.preference.QAPage"
+          id="net.heartsome.cat.ts.ui.qa.preference.QAInstalPage"
+          name="%qa.plugin.qaInstal">
+    </page>
+    <page
+          class="net.heartsome.cat.ts.ui.qa.preference.FileAnalysisInstalPage"
+          id="net.heartsome.cat.ts.ui.qa.preference.FileAnalysisInstalPage"
+          name="%preferencePages.FileAnalysisInstalPage">
+    </page>
+    <page             
+    	 category="net.heartsome.cat.ts.ui.qa.preference.FileAnalysisInstalPage"
+         class="net.heartsome.cat.ts.ui.qa.preference.EquivalentPage"
+         id="net.heartsome.cat.ts.ui.qa.preference.EquivalentPage"
+         name="%preferencePages.EquivalentPage">
+   	</page>
+    <page
+          category="net.heartsome.cat.ts.ui.qa.preference.QAPage"
+          class="net.heartsome.cat.ts.ui.qa.preference.SpellPage"
+          id="net.heartsome.cat.ts.ui.qa.preference.SpellPage"
+          name="%preferencePages.SpellPage">
+    </page>
+ </extension>
+ <extension
+       point="org.eclipse.core.runtime.preferences">
+    <initializer
+          class="net.heartsome.cat.ts.ui.qa.preference.QAInitializer">
+    </initializer>
+ </extension>
+ 
+ 
+ 
+<!-- =================================================================================================== -->
+<!-- 文件分析菜单配置，robert	2011-12-06				==================================================== -->
+<!-- =================================================================================================== -->
+	<extension
+			point="org.eclipse.ui.menus">
+		<menuContribution
+        		locationURI="menu:net.heartsome.cat.ts.ui.menu.project?after=net.heartsome.cat.ts.ui.analysisSeparator">
+     <command
+           commandId="net.heartsome.cat.ts.ui.qa.handlers.WordsAnalysisCommand"
+           id="net.heartsome.cat.ts.ui.qa.handlers.WordsAnalysisCommand"
+           label="%qa.plugin.wordsFA">
+        <parameter
+              name="faItemId"
+              value="faWordsAnalysis">
+        </parameter>
+     </command>
+     <command
+           commandId="net.heartsome.cat.ts.ui.qa.handlers.TranslationProgressAnalysisCommand"
+           id="net.heartsome.cat.ts.ui.qa.handlers.TranslationProgressAnalysisCommand"
+           label="%qa.plugin.transProgressFA">
+        <parameter
+              name="faItemId"
+              value="faTranslationProgressAnalysis">
+        </parameter>
+     </command>
+     <command
+           commandId="net.heartsome.cat.ts.ui.qa.handlers.EditingProgressAnalysisCommand"
+           id="net.heartsome.cat.ts.ui.qa.handlers.EditingProgressAnalysisCommand"
+           label="%qa.plugin.editProgressFA">
+        <parameter
+              name="faItemId"
+              value="faEditingProgressAnalysis">
+        </parameter>
+     </command>
+     <separator
+           name="net.heartsome.cat.ts.ui.qa.separator13"
+           visible="true">
+     </separator>
+    	</menuContribution>
+  <menuContribution
+        allPopups="false"
+        locationURI="popup:net.heartsome.cat.common.ui.navigator.view#PopupMenu?after=group.wordsAnalysis">
+  	<command
+           commandId="net.heartsome.cat.ts.ui.qa.handlers.WordsAnalysisCommand"
+           id="net.heartsome.cat.ts.ui.qa.handlers.WordsAnalysisCommand"
+           label="%qa.plugin.wordsFA">
+        <parameter
+              name="faItemId"
+              value="faWordsAnalysis">
+        </parameter>
+     </command>
+  </menuContribution>
+	</extension>
+
+<!-- 项目菜单下的文件分析子菜单下的各项菜单的command -->
+	<extension
+			point="org.eclipse.ui.commands">
+		<command
+			categoryId="org.eclipse.ui.category.project"
+			id="net.heartsome.cat.ts.ui.qa.handlers.WordsAnalysisCommand"
+			name="%qa.plugin.wordsFA_1">
+			<commandParameter
+         id="faItemId"
+         name="faItemId"
+         optional="false"></commandParameter>
+		</command>
+		<command
+			categoryId="org.eclipse.ui.category.project"
+			id="net.heartsome.cat.ts.ui.qa.handlers.TranslationProgressAnalysisCommand"
+			name="%qa.plugin.transProgressFA_1">
+			<commandParameter
+         id="faItemId"
+         name="faItemId"
+         optional="false"></commandParameter>
+		</command>
+		<command
+			categoryId="org.eclipse.ui.category.project"
+			id="net.heartsome.cat.ts.ui.qa.handlers.EditingProgressAnalysisCommand"
+			name="%qa.plugin.editProgressFA_1">
+			<commandParameter
+         id="faItemId"
+         name="faItemId"
+         optional="false"></commandParameter>
+		</command>
+		
+	</extension>
+<!-- 项目菜单下的文件分析子菜单下的各项菜单的handler -->
+	<extension
+			point="org.eclipse.ui.handlers">
+		<handler
+			class="net.heartsome.cat.ts.ui.qa.handlers.FileAnalysisHandler"
+			commandId="net.heartsome.cat.ts.ui.qa.handlers.WordsAnalysisCommand">
+     <enabledWhen>
+        <test
+              property="navigatorPopup.projectOrXLIFF">
+        </test>
+     </enabledWhen>
+		</handler>
+		<handler
+			class="net.heartsome.cat.ts.ui.qa.handlers.FileAnalysisHandler"
+			commandId="net.heartsome.cat.ts.ui.qa.handlers.TranslationProgressAnalysisCommand">
+     <enabledWhen>
+        <test
+              property="navigatorPopup.projectOrXLIFF">
+        </test>
+     </enabledWhen>
+		</handler>
+		<handler
+			class="net.heartsome.cat.ts.ui.qa.handlers.FileAnalysisHandler"
+			commandId="net.heartsome.cat.ts.ui.qa.handlers.EditingProgressAnalysisCommand">
+     <enabledWhen>
+        <test
+              property="navigatorPopup.projectOrXLIFF">
+        </test>
+     </enabledWhen>
+		</handler>
+	</extension>
+ <extension
+       point="org.eclipse.ui.bindings">
+       <!--
+    <key
+          commandId="net.heartsome.cat.ts.ui.qa.handlers.OpenQAResultViewCommand"
+          contextId="org.eclipse.ui.contexts.window"
+          schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+          sequence="M3+Q">
+       <parameter
+             id="ViewId"
+             value="net.heartsome.cat.ts.ui.qa.views.QAResultViewPart">
+       </parameter>
+    </key>
+    -->
+    <key
+          commandId="net.heartsome.cat.ts.ui.qa.handlers.BatchQA"
+          contextId="org.eclipse.ui.contexts.window"
+          schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+          sequence="M1+M2+B">
+    </key>
+    <key
+          commandId="net.heartsome.cat.ts.ui.qa.handlers.WordsAnalysisCommand"
+          contextId="org.eclipse.ui.contexts.window"
+          schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+          sequence="M2+F6">
+       <parameter
+             id="faItemId"
+             value="faWordsAnalysis">
+       </parameter>
+    </key>
+    <key
+          commandId="net.heartsome.cat.ts.ui.qa.handlers.TranslationProgressAnalysisCommand"
+          contextId="org.eclipse.ui.contexts.window"
+          schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+          sequence="M2+F7">
+       <parameter
+             id="faItemId"
+             value="faTranslationProgressAnalysis">
+       </parameter>
+    </key>
+    <key
+          commandId="net.heartsome.cat.ts.ui.qa.handlers.EditingProgressAnalysisCommand"
+          contextId="org.eclipse.ui.contexts.window"
+          schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+          sequence="M2+F8">
+       <parameter
+             id="faItemId"
+             value="faEditingProgressAnalysis">
+       </parameter>
+    </key>
+ </extension>
+ <extension
+       point="org.eclipse.ui.commandImages">
+    <image
+          commandId="net.heartsome.cat.ts.ui.qa.handlers.OpenQAResultViewCommand"
+          icon="images/qa.png">
+    </image>
+    <image
+          commandId="net.heartsome.cat.ts.ui.qa.handlers.BatchQA"
+          icon="images/qa.png">
+    </image>
+    <image
+          commandId="net.heartsome.cat.ts.ui.qa.handlers.WordsAnalysisCommand"
+          icon="icons/words_fa.png">
+    </image>
+    <image
+          commandId="net.heartsome.cat.ts.ui.qa.handlers.TranslationProgressAnalysisCommand"
+          icon="icons/translation_fa.png">
+    </image>
+    <image
+          commandId="net.heartsome.cat.ts.ui.qa.handlers.EditingProgressAnalysisCommand"
+          icon="icons/edition_fa.png">
+    </image>
+ </extension>
+ <extension
+       point="net.heartsome.cat.ts.ui.xliffeditor.nattable.extension.automaticQA">
+    <AutomaticQA
+          class="net.heartsome.cat.ts.ui.qa.AutomaticQA">
+    </AutomaticQA>
+ </extension>
+ <extension
+       point="org.eclipse.ui.perspectiveExtensions">
+    <perspectiveExtension
+          targetID="net.heartsome.cat.ts.perspective">
+       <view
+             id="net.heartsome.cat.ts.ui.qa.views.QAResultViewPart"
+             minimized="false"
+             relationship="stack"
+             relative="net.heartsome.cat.ts.ui.translation.view.matchview"
+             standalone="false"
+             visible="true">
+       </view>
+    </perspectiveExtension>
+ </extension>
+ <extension
+       point="net.heartsome.cat.ts.ui.xliffeditor.nattable.extension.realTimeSpellCheck">
+    <RealTimeSpellCheck
+          class="net.heartsome.cat.ts.ui.qa.spell.RealTimeSpellCheck"></RealTimeSpellCheck>
+ </extension>
+</plugin>

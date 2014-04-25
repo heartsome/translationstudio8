@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome CAT Converter IDML
+Bundle-SymbolicName: net.heartsome.cat.converter.idml; singleton:=true
+Bundle-Version: 8.0.4.R8b_v20130729
+Bundle-Activator: net.heartsome.cat.converter.idml.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ net.heartsome.cat.converter;bundle-version="1.0.0",
+ net.heartsome.xml;bundle-version="1.0.0",
+ net.heartsome.cat.thirdpartlibrary;bundle-version="1.0.0",
+ net.heartsome.cat.common.core;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Vendor: Heartsome Technologies Ltd.

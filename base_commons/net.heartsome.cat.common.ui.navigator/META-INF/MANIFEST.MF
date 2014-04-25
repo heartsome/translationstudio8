@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome Common UI Nagivator
+Bundle-SymbolicName: net.heartsome.cat.common.ui.navigator;singleton:=true
+Bundle-Version: 8.0.0.R8b_v20121115
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Require-Bundle: org.eclipse.ui;bundle-version="3.5.0",
+ org.eclipse.core.runtime;bundle-version="3.5.0",
+ org.eclipse.ui.navigator;bundle-version="3.4.0",
+ net.heartsome.cat.common.ui.navigator.resources
+Import-Package: net.heartsome.cat.common.ui.handlers
+Bundle-Localization: plugin
+Bundle-Vendor: Heartsome Technologies Ltd.

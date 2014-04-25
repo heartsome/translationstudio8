@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome CAT TS Help
+Bundle-SymbolicName: net.heartsome.cat.ts.help;singleton:=true
+Bundle-Version: 8.1.0.R8b_v20131108
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.ui;bundle-version="3.7.0",
+ net.heartsome.cat.common.ui;bundle-version="8.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ClassPath: lib/bcprov-jdk14-136.jar,
+ .,
+ lib/jug.jar,
+ lib/xfire-all-1.2.6.jar,
+ lib/activation.jar,
+ lib/commons-attributes-api-2.1.jar,
+ lib/commons-beanutils-1.7.0.jar,
+ lib/commons-codec-1.3.jar,
+ lib/commons-discovery-0.2.jar,
+ lib/commons-httpclient-3.0.jar,
+ lib/commons-logging-1.0.4.jar,
+ lib/dom4j-1.6.1.jar,
+ lib/jaxen-1.1-beta-7.jar,
+ lib/jaxen-1.1-beta-9.jar,
+ lib/jaxrpc.jar,
+ lib/jdom-1.0.jar,
+ lib/log4j-1.2.14.jar,
+ lib/mail.jar,
+ lib/saaj.jar,
+ lib/spring.jar,
+ lib/wsdl4j-1.5.1.jar
+Export-Package: net.heartsome.cat.ts.help
+Bundle-Localization: plugin
+Bundle-Vendor: Heartsome Technologies Ltd.

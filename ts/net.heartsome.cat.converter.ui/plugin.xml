@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="net.heartsome.converter.extension.pretranslation" name="ExecutePretranslation" schema="schema/net.heartsome.converter.extension.pretranslation.exsd"/>
+    <!-- 下面是替换的术语 robert 2012-01-12 
+    	Convert File...	:	源文件转换为XLIFF文件
+    	Reverse Convert File...	:	XLIFF文件转换为目标文件
+    	
+    
+    -->
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            categoryId="org.eclipse.ui.category.file"
+            id="net.heartsome.cat.convert.ui.commands.openConvertDialogCommand"
+            name="%category.xliffConverter">
+      </command>
+      <command
+            categoryId="org.eclipse.ui.category.file"
+            id="net.heartsome.cat.convert.ui.commands.openReverseConvertDialogCommand"
+            name="%category.xliffReverseConverter">
+      </command>
+      <command
+            categoryId="net.heartsome.cat.ts.ui.category.translation"
+            id="net.heartsome.cat.converter.ui.command.previewTranslation"
+            name="%command.previewTranslation">
+      </command>
+
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:file?after=xliff.switch">
+         <separator
+               name="net.heartsome.cat.converter.ui.separator1"
+               visible="true">
+         </separator>
+         <command
+               commandId="net.heartsome.cat.convert.ui.commands.openConvertDialogCommand"
+               id="net.heartsome.cat.convert.ui.menus.converterCommand"
+               label="%menu.file.xliffConverter"
+               mnemonic="S"
+               style="push">
+         </command>
+         <command
+               commandId="net.heartsome.cat.convert.ui.commands.openReverseConvertDialogCommand"
+               id="net.heartsome.cat.convert.ui.menus.reverseConverterCommand"
+               label="%menu.file.xliffReverseConverter"
+               style="push">
+         </command>
+            <!--
+         <separator
+		      name="net.heartsome.cat.convert.ui.menus.convertSeparator"
+		      visible="true">
+		 </separator>-->
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=group.preview">
+            
+            <toolbar
+                  id="net.heartsome.cat.converter.ui.toolbar.previewTranslation">
+               <command
+                     commandId="net.heartsome.cat.converter.ui.command.previewTranslation"
+                     icon="images/tool/view-translation.png"
+                     id="net.heartsome.cat.converter.ui.command.previewTranslation"
+                     label="%toolbar.previewTranslation"
+                     style="push">
+               </command>
+            </toolbar>
+    
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:net.heartsome.cat.ts.menu.translation?after=net.heartsome.cat.ts.ui.xliffeditor.nattable.previewTranslationSeparator">
+         <separator
+               name="net.heartsome.cat.converter.ui.separator2"
+               visible="true">
+         </separator>
+         <command
+               commandId="net.heartsome.cat.converter.ui.command.previewTranslation"
+               label="%toolbar.previewTranslation"
+               style="push">
+         </command>
+         <separator
+               name="net.heartsome.cat.converter.ui.separator3"
+               visible="true">
+         </separator>
+      </menuContribution>
+      <!-- 按照设计文档要求更改工具栏
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=net.heartsome.cat.ts.ui.handlers.ChangeSourceEditableCommand">
+         <toolbar
+               id="net.heartsome.cat.ts.ui.toolbar">
+            <command
+                  commandId="net.heartsome.cat.convert.ui.commands.openConvertDialogCommand"
+                  tooltip="源文件转换为 XLIFF 文件..."
+                  id="net.heartsome.cat.convert.ui.toolbars.converterCommand">
+            </command>
+         </toolbar>
+      </menuContribution> -->
+   </extension>
+   <extension
+         point="org.eclipse.ui.commandImages">
+      <image
+            commandId="net.heartsome.cat.convert.ui.commands.openConvertDialogCommand"
+            icon="icons/convert-to xliff.png">
+      </image>
+      <image
+            commandId="net.heartsome.cat.convert.ui.commands.openReverseConvertDialogCommand"
+            icon="icons/convert-xliff to.png">
+      </image>
+      <image
+            commandId="net.heartsome.cat.converter.ui.command.previewTranslation"
+            icon="images/view-translation_16.png">
+      </image>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="net.heartsome.cat.convert.ui.handler.PreviewTranslationHandler"
+            commandId="net.heartsome.cat.converter.ui.command.previewTranslation">
+         <enabledWhen>
+            <with
+                  variable="activeEditorId">
+               <equals
+                     value="net.heartsome.cat.ts.ui.xliffeditor.nattable.editor">
+               </equals>
+            </with>
+         </enabledWhen>
+      </handler>
+   </extension>
+   <extension
+         point="net.heartsome.cat.ts.ui.extension.converter">
+      <ConverterCaller
+            class="net.heartsome.cat.convert.ui.extension.IConverterCallerImpl">
+      </ConverterCaller>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="net.heartsome.cat.convert.ui.preference.FileTypePreferencePage"
+            id="net.heartsome.cat.convert.ui.preference.FileTypePreferencePage"
+            name="%preferencePages.FileTypePreferencePage">
+      </page>
+   </extension>
+</plugin>

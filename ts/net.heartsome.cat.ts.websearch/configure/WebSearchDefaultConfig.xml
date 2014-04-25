@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<WebSearchInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<Providers>
+		<ProviderInfo isDefault="true" id="1">
+			<Used>true</Used>
+			<Name>Google</Name>
+			<Url>http://www.google.com/search?q=[{}]</Url>
+		</ProviderInfo>
+		<ProviderInfo isDefault="true" id="2">
+			<Used>true</Used>
+			<Name>Microsoft Language Portal</Name>
+			<Url>http://www.microsoft.com/Language/en-US/Search.aspx?sString=[{}]&amp;langID=zh-CN</Url>
+		</ProviderInfo>
+		<ProviderInfo isDefault="true" id="3">
+			<Used>true</Used>
+			<Name>Yahoo</Name>
+			<Url>http://search.yahoo.com/search?p=[{}]&amp;ei=UTF-8</Url>
+		</ProviderInfo>
+
+		<ProviderInfo isDefault="true" id="4">
+			<Used>true</Used>
+			<Name>Baidu</Name>
+			<Url>http://www.baidu.com/s?wd=[{}]</Url>
+		</ProviderInfo>
+		
+		<ProviderInfo isDefault="true" id="5">
+			<Used>true</Used>
+			<Name>Unterm</Name>
+			<Url>http://unterm.un.org/DGAACS/unterm.nsf/WebView?SearchView&amp;Query=[{}]&amp;SearchMax=250&amp;SearchWV=TRUE&amp;SearchOrder=1&amp;Seq=1&amp;SearchFuzzy=FALSE</Url>
+		</ProviderInfo>
+	</Providers>
+
+</WebSearchInfo>

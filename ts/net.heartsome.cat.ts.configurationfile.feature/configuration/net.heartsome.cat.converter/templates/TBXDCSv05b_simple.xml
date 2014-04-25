@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TBXXCS name='simple' version="0.4" lang="en">
+<header>
+	<title>TBX master XCS (extensible constraint specification) file</title>
+</header>
+<languages>
+	<langInfo>
+		<langCode>cs</langCode>
+		<langName>Czech</langName>
+	</langInfo>
+	<langInfo>
+		<langCode>da</langCode>
+		<langName>Danish</langName>
+	</langInfo>
+	<langInfo>
+		<langCode>de</langCode>
+		<langName>German</langName>
+	</langInfo>
+	<langInfo>
+		<langCode>el</langCode>
+		<langName>Greek</langName>
+	</langInfo>
+	<langInfo>
+		<langCode>en</langCode>
+		<langName>English</langName>
+	</langInfo>
+	<langInfo>
+		<langCode>en-us</langCode>
+		<langName>English (United States)</langName>
+	</langInfo>
+	<langInfo>
+		<langCode>es</langCode>
+		<langName>Spanish</langName>
+	</langInfo>
+	<langInfo>
+		<langCode>fi</langCode>
+		<langName>Finnish</langName>
+	</langInfo>
+	<langInfo>
+		<langCode>fr</langCode>
+		<langName>French</langName>
+	</langInfo>
+	<langInfo>
+		<langCode>hu</langCode>
+		<langName>Hungarian</langName>
+	</langInfo>
+	<langInfo>
+		<langCode>it</langCode>
+		<langName>Italian</langName>
+	</langInfo>
+	<langInfo>
+		<langCode>nl</langCode>
+		<langName>Dutch</langName>
+	</langInfo>
+	<langInfo>
+		<langCode>no</langCode>
+		<langName>Norwegian</langName>
+	</langInfo>
+	<langInfo>
+		<langCode>pl</langCode>
+		<langName>Polish</langName>
+	</langInfo>
+	<langInfo>
+		<langCode>pt</langCode>
+		<langName>Portuguese</langName>
+	</langInfo>
+	<langInfo>
+		<langCode>sv</langCode>
+		<langName>Swedish</langName>
+	</langInfo>
+</languages>
+<datCatSet>
+	<termNoteSpec name="abbreviatedFormFor" datcatId="ISO12620A-02013002">
+		<contents datatype="noteText" targetType="term"/>
+	</termNoteSpec>
+	<termNoteSpec name="administrativeStatus" datcatId="ISO12620A-020903">
+		<contents datatype="picklist" targetType="none">standardizedTerm-admn-sts preferredTerm-admn-sts admittedTerm-admn-sts deprecatedTerm-admn-sts supersededTerm-admn-sts legalTerm-admn-sts regulatedTerm-admn-sts </contents>
+	</termNoteSpec>
+	<adminSpec name="businessUnitSubset" datcatId="ISO12620A-100308">
+		<contents datatype="noteText" targetType="none"/>
+	</adminSpec>
+	<descripSpec name="context" datcatId="ISO12620A-0503">
+		<contents datatype="noteText" targetType="none"/>
+		<levels>term </levels>
+	</descripSpec>
+	<adminSpec name="corpusTrace" datcatId="ISO12620A-101808">
+		<contents datatype="noteText" targetType="external"/>
+	</adminSpec>
+	<descripSpec name="definition" datcatId="ISO12620A-0501">
+		<contents datatype="noteText" targetType="none"/>
+		<levels>langSet termEntry term </levels>
+	</descripSpec>
+	<termNoteSpec name="grammaticalGender" datcatId="ISO12620A-020202">
+		<contents datatype="picklist" targetType="none" forTermComp="yes">masculine feminine neuter otherGender </contents>
+	</termNoteSpec>
+	<termNoteSpec name="partOfSpeech" datcatId="ISO12620A-020201">
+		<contents datatype="plainText" targetType="none" forTermComp="yes"/>
+	</termNoteSpec>
+	<adminSpec name="productSubset" datcatId="ISO12620A-100305">
+		<contents datatype="noteText" targetType="none"/>
+	</adminSpec>
+	<adminSpec name="projectSubset" datcatId="ISO12620A-100303">
+		<contents datatype="noteText" targetType="none"/>
+	</adminSpec>
+	<descripSpec name="relatedConcept" datcatId="ISO12620A-070205">
+		<contents datatype="noteText" targetType="entry"/>
+		<levels>langSet termEntry </levels>
+	</descripSpec>
+	<descripSpec name="relatedConceptBroader" datcatId="ISO12620A-07020501">
+		<contents datatype="noteText" targetType="entry"/>
+		<levels>langSet termEntry </levels>
+	</descripSpec>
+	<descripSpec name="relatedConceptNarrower" datcatId="ISO12620A-07020502">
+		<contents datatype="noteText" targetType="entry"/>
+		<levels>langSet termEntry </levels>
+	</descripSpec>
+	<transacNoteSpec name="responsibility" datcatId="ISO12620A-100202">
+		<contents datatype="noteText" targetType="respPerson" forTermComp="yes"/>
+	</transacNoteSpec>
+	<adminSpec name="sourceIdentifier" datcatId="ISO12620A-1020">
+		<contents datatype="noteText" targetType="bibl"/>
+	</adminSpec>
+	<descripSpec name="subjectField" datcatId="ISO12620A-04">
+		<contents datatype="plainText" targetType="none"/>
+		<levels>langSet termEntry term </levels>
+	</descripSpec>
+	<termNoteSpec name="termType" datcatId="ISO12620A-0201">
+		<contents datatype="picklist" targetType="none">entryTerm synonym internationalScientificTerm fullForm transcribedForm symbol formula equation logicalExpression commonName abbreviatedFormOfTerm variant shortFormOfTerm transliteratedForm sku partNumber phraseologicalUnit synonymousPhrase standardText string internationalism </contents>
+	</termNoteSpec>
+	<transacSpec name="terminologyManagementTransactions" datcatId="ISO12620A-1001">
+		<contents datatype="picklist" targetType="none" forTermComp="yes">origination input modification check approval withdrawal standardization exportation importation proposal userAccess </contents>
+	</transacSpec>
+	<termNoteSpec name="usageNote" datcatId="ISO12620A-020301">
+		<contents datatype="noteText" targetType="none"/>
+	</termNoteSpec>
+</datCatSet>
+</TBXXCS>

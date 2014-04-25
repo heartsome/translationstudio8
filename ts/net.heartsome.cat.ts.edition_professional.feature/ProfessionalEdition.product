@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="Heartsome Translation Studio" id="net.heartsome.cat.ts.professional_product" application="net.heartsome.cat.ts.application" version="8.3.0.20131121" useFeatures="true" includeLaunchers="true">
+
+   <aboutInfo>
+      <image path="/net.heartsome.cat.ts/images/xliff_128.png"/>
+      <text>
+         %aboutF
+      </text>
+   </aboutInfo>
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <vmArgs>-Dfile.encoding=UTF-8
+-Xms512m
+-Xmx512m
+-XX:PermSize=96m
+-XX:MaxPermSize=96m
+-Xmn256m
+-Dversion=8.3.0
+-Ddate=20131121</vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+   </launcherArgs>
+
+   <windowImages i16="/net.heartsome.cat.ts/images/xliff_16.png" i32="/net.heartsome.cat.ts/images/xliff_32.png" i48="/net.heartsome.cat.ts/images/xliff_48.png" i64="/net.heartsome.cat.ts/images/xliff_64.png" i128="/net.heartsome.cat.ts/images/xliff_128.png"/>
+
+   <splash
+      location="net.heartsome.cat.ts"
+      startupProgressRect="0,225,425,15"
+      startupMessageRect="0,250,445,20"
+      startupForegroundColor="000000" />
+   <launcher name="Heartsome Translation Studio">
+      <linux icon="/net.heartsome.cat.ts.edition_professional.feature/icons/linux/xliff.xpm"/>
+      <macosx icon="/net.heartsome.cat.ts.edition_professional.feature/icons/macosx/xliff.icns"/>
+      <solaris/>
+      <win useIco="false">
+         <bmp
+            winSmallHigh="/net.heartsome.cat.ts.edition_professional.feature/icons/win32/xliff_16.bmp"
+            winMediumHigh="/net.heartsome.cat.ts.edition_professional.feature/icons/win32/xliff_32.bmp"
+            winLargeHigh="/net.heartsome.cat.ts.edition_professional.feature/icons/win32/xliff_48.bmp"/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="net.heartsome.cat.ts.edition_professional.feature"/>
+   </features>
+
+   <configurations>
+      <plugin id="net.heartsome.cat.common.ui.navigator" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.converter.DejaVuX2" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.converter.MIF" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.converter.html" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.converter.idml" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.converter.inx" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.converter.javaproperties" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.converter.javascript" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.converter.memoQ6" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.converter.msexcel2007" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.converter.msoffice2003" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.converter.openoffice" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.converter.po" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.converter.pptx" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.converter.rc" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.converter.resx" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.converter.rtf" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.converter.taggedrtf" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.converter.text" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.converter.trados2009" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.converter.ttx" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.converter.word2007" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.converter.wordfast3" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.converter.xml" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.database.hsql" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.database.mssql" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.database.mysql" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.database.oracle" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.database.postgreSQL" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.database.sqlite" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.ts.ui.help" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.ts.ui.qa" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.ts.ui.term" autoStart="true" startLevel="0" />
+      <plugin id="net.heartsome.cat.ts.ui.translation" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.core.net" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+      <plugin id="org.eclipse.update.configurator" autoStart="true" startLevel="4" />
+      <property name="osgi.clean" value="true" />
+      <property name="osgi.instance.area.default" value="@user.home/Heartsome Workspace" />
+      <property name="osgi.nl" value="en" />
+   </configurations>
+
+</product>

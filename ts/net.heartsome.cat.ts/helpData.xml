@@ -1,0 +1,30 @@
+<extensions>
+ <tocOrder>
+  <toc id="/net.heartsome.cat.ts.ui.help/toc/en/indexToc.xml"/>
+  <toc id="/net.heartsome.cat.ts.ui.help/toc/en/ch1Toc.xml"/>
+  <toc id="/net.heartsome.cat.ts.ui.help/toc/en/ch2Toc.xml"/>
+  <toc id="/net.heartsome.cat.ts.ui.help/toc/en/ch3Toc.xml"/>
+  <toc id="/net.heartsome.cat.ts.ui.help/toc/en/ch4Toc.xml"/>
+  <toc id="/net.heartsome.cat.ts.ui.help/toc/en/ch5Toc.xml"/>
+  <toc id="/net.heartsome.cat.ts.ui.help/toc/en/ch6Toc.xml"/>
+  <toc id="/net.heartsome.cat.ts.ui.help/toc/en/ch7Toc.xml"/>
+  <toc id="/net.heartsome.cat.ts.ui.help/toc/en/ch8Toc.xml"/>
+  <toc id="/net.heartsome.cat.ts.ui.help/toc/en/ch9Toc.xml"/>
+  <toc id="/net.heartsome.cat.ts.ui.help/toc/en/imagToc.xml"/>
+  <toc id="/net.heartsome.cat.ts.ui.help/toc/en/demoToc.xml"/>
+  
+  <toc id="/net.heartsome.cat.ts.ui.help/toc/zh/indexToc.xml"/>
+  <toc id="/net.heartsome.cat.ts.ui.help/toc/zh/ch1Toc.xml"/>
+  <toc id="/net.heartsome.cat.ts.ui.help/toc/zh/ch2Toc.xml"/>
+  <toc id="/net.heartsome.cat.ts.ui.help/toc/zh/ch3Toc.xml"/>
+  <toc id="/net.heartsome.cat.ts.ui.help/toc/zh/ch4Toc.xml"/>
+  <toc id="/net.heartsome.cat.ts.ui.help/toc/zh/ch5Toc.xml"/>
+  <toc id="/net.heartsome.cat.ts.ui.help/toc/zh/ch6Toc.xml"/>
+  <toc id="/net.heartsome.cat.ts.ui.help/toc/zh/ch7Toc.xml"/>
+  <toc id="/net.heartsome.cat.ts.ui.help/toc/zh/ch8Toc.xml"/>
+  <toc id="/net.heartsome.cat.ts.ui.help/toc/zh/ch9Toc.xml"/>
+  <toc id="/net.heartsome.cat.ts.ui.help/toc/zh/imagToc.xml"/>
+  <toc id="/net.heartsome.cat.ts.ui.help/toc/zh/demoToc.xml"/>
+
+ </tocOrder>
+</extensions>

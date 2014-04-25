@@ -1,0 +1,680 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <language>
+    <isoCode>ar</isoCode>
+    <dict>ar</dict>
+  </language>
+  <language>
+    <isoCode>fa</isoCode>
+    <dict>fa</dict>
+  </language>
+  <language>
+    <isoCode>bg-BG</isoCode>
+    <dict>bg_BG</dict>
+  </language>
+  <language>
+    <isoCode>ca-ES</isoCode>
+    <dict>ca_ES</dict>
+  </language>
+  <language>
+    <isoCode>cs-CZ</isoCode>
+    <dict>cs_CZ</dict>
+  </language>
+  <language>
+    <isoCode>da-DK</isoCode>
+    <dict>da_DK</dict>
+  </language>
+  <language>
+    <isoCode>de-DE</isoCode>
+    <dict>de_DE</dict>
+  </language>
+  <language>
+    <isoCode>el-GR</isoCode>
+    <dict>el_GR</dict>
+  </language>
+  <language>
+    <isoCode>en-US</isoCode>
+    <dict>en_US</dict>
+  </language>
+  <language>
+    <isoCode>fr-FR</isoCode>
+    <dict>fr_FR</dict>
+  </language>
+  <language>
+    <isoCode>fr-BE</isoCode>
+    <dict>fr_FR</dict>
+  </language>
+  <language>
+    <isoCode>fr-CA</isoCode>
+    <dict>fr_FR</dict>
+  </language>
+  <language>
+    <isoCode>fr-LU</isoCode>
+    <dict>fr_FR</dict>
+  </language>
+  <language>
+    <isoCode>fr-MC</isoCode>
+    <dict>fr_FR</dict>
+  </language>
+  <language>
+    <isoCode>fr-CH</isoCode>
+    <dict>fr_FR</dict>
+  </language>
+  <language>
+    <isoCode>he-IL</isoCode>
+    <dict>he_IL</dict>
+  </language>
+  <language>
+    <isoCode>hu-HU</isoCode>
+    <dict>hu_HU</dict>
+  </language>
+  <language>
+    <isoCode>is-IS</isoCode>
+    <dict>is_IS</dict>
+  </language>
+  <language>
+    <isoCode>it-IT</isoCode>
+    <dict>it_IT</dict>
+  </language>
+  <language>
+    <isoCode>nl-NL</isoCode>
+    <dict>nl_NL</dict>
+  </language>
+  <language>
+    <isoCode>nb-NO</isoCode>
+    <dict>nb_NO</dict>
+  </language>
+  <language>
+    <isoCode>pl-PL</isoCode>
+    <dict>pl_PL</dict>
+  </language>
+  <language>
+    <isoCode>pt-BR</isoCode>
+    <dict>pt_BR</dict>
+  </language>
+  <language>
+	<isoCode>pt-PT</isoCode>
+	<dict>pt_PT</dict>
+  </language>
+  <language>
+    <isoCode>ro-RO</isoCode>
+    <dict>ro_RO</dict>
+  </language>
+  <language>
+    <isoCode>ru-RU</isoCode>
+    <dict>ru_RU</dict>
+  </language>
+  <language>
+    <isoCode>hr-HR</isoCode>
+    <dict>hr_HR</dict>
+  </language>
+  <language>
+    <isoCode>sk-SK</isoCode>
+    <dict>sk_SK</dict>
+  </language>
+  <language>
+    <isoCode>sv-SE</isoCode>
+    <dict>sv_SE</dict>
+  </language>
+  <language>
+    <isoCode>id-ID</isoCode>
+    <dict>id_ID</dict>
+  </language>
+  <language>
+    <isoCode>uk-UA</isoCode>
+    <dict>uk_UA</dict>
+  </language>
+  <language>
+    <isoCode>sl-SI</isoCode>
+    <dict>sl_SI</dict>
+  </language>
+  <language>
+    <isoCode>et-EE</isoCode>
+    <dict>et_EE</dict>
+  </language>
+  <language>
+    <isoCode>lv-LV</isoCode>
+    <dict>lv_LV</dict>
+  </language>
+  <language>
+    <isoCode>lt-LT</isoCode>
+    <dict>lt_LT</dict>
+  </language>
+  <language>
+    <isoCode>fa-IR</isoCode>
+    <dict>fa_IR</dict>
+  </language>
+  <language>
+    <isoCode>hy-AM</isoCode>
+    <dict>hy_AM</dict>
+  </language>
+  <language>
+    <isoCode>az-Latn-AZ</isoCode>
+    <dict>az-Latn-AZ</dict>
+  </language>
+  <language>
+    <isoCode>eu-ES</isoCode>
+    <dict>eu-ES</dict>
+  </language>
+  <language>
+    <isoCode>af-ZA</isoCode>
+    <dict>af_ZA</dict>
+  </language>
+  <language>
+    <isoCode>fo-FO</isoCode>
+    <dict>fo_FO</dict>
+  </language>
+  <language>
+    <isoCode>hi-IN</isoCode>
+    <dict>hi_IN</dict>
+  </language>
+  <language>
+    <isoCode>ms-MY</isoCode>
+    <dict>ms_MY</dict>
+  </language>
+  <language>
+    <isoCode>sw-KE</isoCode>
+    <dict>sw_KE</dict>
+  </language>
+  <language>
+    <isoCode>mr-IN</isoCode>
+    <dict>mr_IN</dict>
+  </language>
+  <language>
+    <isoCode>mn-MN</isoCode>
+    <dict>mn_MN</dict>
+  </language>
+  <language>
+    <isoCode>gl-ES</isoCode>
+    <dict>gl_ES</dict>
+  </language>
+  <language>
+    <isoCode>de-CH</isoCode>
+    <dict>de_CH</dict>
+  </language>
+  <language>
+    <isoCode>en-GB</isoCode>
+    <dict>en_GB</dict>
+  </language>
+  <language>
+    <isoCode>es-MX</isoCode>
+    <dict>es_MX</dict>
+  </language>
+  <language>
+    <isoCode>nn-NO</isoCode>
+    <dict>nn_NO</dict>
+  </language>
+  <language>
+    <isoCode>de-AT</isoCode>
+    <dict>de_AT</dict>
+  </language>
+  <language>
+    <isoCode>en-AU</isoCode>
+    <dict>en_AU</dict>
+  </language>
+  <language>
+    <isoCode>es-ES</isoCode>
+    <dict>es_ES</dict>
+  </language>
+  <language>
+    <isoCode>en-CA</isoCode>
+    <dict>en_CA</dict>
+  </language>
+  <language>
+    <isoCode>en-NZ</isoCode>
+    <dict>en_NZ</dict>
+  </language>
+  <language>
+    <isoCode>en-ZA</isoCode>
+    <dict>en_ZA</dict>
+  </language>
+  <language>
+    <isoCode>zu-ZA</isoCode>
+    <dict>zu_ZA</dict>
+  </language>
+  <language>
+    <isoCode>xh-ZA</isoCode>
+    <dict>xh_ZA</dict>
+  </language>
+  <language>
+    <isoCode>tn-ZA</isoCode>
+    <dict>tn_ZA</dict>
+  </language>
+  <!-- Welsh (cy-GB) encoding does not seem to be supported in .NET - the affix file lists encoding ISO8859-14 but this cannot be found  -->
+  <!--<language>
+    <isoCode>cy-GB</isoCode>
+    <dict>cy_GB</dict>
+  </language>-->
+  <language>
+    <isoCode>mi-NZ</isoCode>
+    <dict>mi_NZ</dict>
+  </language>
+  <language>
+    <isoCode>ns-ZA</isoCode>
+    <dict>ns_ZA</dict>
+  </language>
+  <language>
+	<isoCode>uz-Cyrl-UZ</isoCode>
+	<dict>uz-Cyrl-UZ</dict>
+  </language>
+  <language>
+    <isoCode>sr-Cyrl-BA</isoCode>
+    <dict>sr_Cyrl</dict>
+  </language>
+  <language>
+    <isoCode>sr-Cyrl-CS</isoCode>
+    <dict>sr_Cyrl</dict>
+  </language>
+  <language>
+    <isoCode>sr-Latn-BA</isoCode>
+    <dict>sr_Latn</dict>
+  </language>
+  <language>
+    <isoCode>sr-Latn-CS</isoCode>
+    <dict>sr_Latn</dict>
+  </language>
+  <language>
+    <isoCode>fi-FI</isoCode>
+    <dict>fi_FI</dict>
+  </language>
+  <language>
+    <isoCode>lb-LU</isoCode>
+    <dict>lb_LU</dict>
+  </language>
+  <language>
+    <isoCode>sq-AL</isoCode>
+    <dict>sq_AL</dict>
+  </language>
+  <language>
+    <isoCode>tr-TR</isoCode>
+    <dict>tr</dict>
+  </language>
+  
+  <!-- 下面是自定义配对的东西 robert 2013-01-17-->
+  <language type="custom">
+    <isoCode>af</isoCode>
+    <dict>af_ZA</dict>
+  </language>
+  <language type="custom">
+    <isoCode>sq</isoCode>
+    <dict>sq_AL</dict>
+  </language>
+  
+  <language type="custom">
+    <isoCode>ar-DZ</isoCode>
+    <dict>ar</dict>
+  </language>
+  <language type="custom">
+    <isoCode>ar-BH</isoCode>
+    <dict>ar</dict>
+  </language>
+  <language type="custom">
+    <isoCode>ar-EG</isoCode>
+    <dict>ar</dict>
+  </language>
+  <language type="custom">
+    <isoCode>ar-IQ</isoCode>
+    <dict>ar</dict>
+  </language>
+  <language type="custom">
+    <isoCode>ar-JO</isoCode>
+    <dict>ar</dict>
+  </language>  
+  <language type="custom">
+    <isoCode>ar-KW</isoCode>
+    <dict>ar</dict>
+  </language>
+  <language type="custom">
+    <isoCode>ar-LB</isoCode>
+    <dict>ar</dict>
+  </language>
+  <language type="custom">
+    <isoCode>ar-LY</isoCode>
+    <dict>ar</dict>
+  </language>
+  <language type="custom">
+    <isoCode>ar-MA</isoCode>
+    <dict>ar</dict>
+  </language>  
+  <language type="custom">
+    <isoCode>ar-OM</isoCode>
+    <dict>ar</dict>
+  </language>
+  <language type="custom">
+    <isoCode>ar-QA</isoCode>
+    <dict>ar</dict>
+  </language>
+  <language type="custom">
+    <isoCode>ar-SA</isoCode>
+    <dict>ar</dict>
+  </language>
+  <language type="custom">
+    <isoCode>ar-SY</isoCode>
+    <dict>ar</dict>
+  </language>  <language type="custom">
+    <isoCode>ar-TN</isoCode>
+    <dict>ar</dict>
+  </language>
+  <language type="custom">
+    <isoCode>ar-AE</isoCode>
+    <dict>ar</dict>
+  </language>
+  <language type="custom">
+    <isoCode>ar-YE</isoCode>
+    <dict>ar</dict>
+  </language>
+  
+  <language type="custom">
+    <isoCode>hy</isoCode>
+    <dict>hy_AM</dict>
+  </language>  
+  <language type="custom">
+    <isoCode>az</isoCode>
+    <dict>az-Latn-AZ</dict>
+  </language>
+  <language type="custom">
+    <isoCode>bg</isoCode>
+    <dict>bg_BG</dict>
+  </language>
+  <language type="custom">
+    <isoCode>eu</isoCode>
+    <dict>eu-ES</dict>
+  </language>
+  <language type="custom">
+    <isoCode>ca</isoCode>
+    <dict>ca_ES</dict>
+  </language>  
+  <language type="custom">
+    <isoCode>cs</isoCode>
+    <dict>cs_CZ</dict>
+  </language>
+  <language type="custom">
+    <isoCode>hr</isoCode>
+    <dict>hr_HR</dict>
+  </language>
+  <language type="custom">
+    <isoCode>da</isoCode>
+    <dict>da_DK</dict>
+  </language>
+  <language type="custom">
+    <isoCode>nl</isoCode>
+    <dict>nl_NL</dict>
+  </language>  
+  <language type="custom">
+    <isoCode>de-LI</isoCode>
+    <dict>de_DE_comb</dict>
+  </language>
+  <language type="custom">
+    <isoCode>de-LU</isoCode>
+    <dict>de_DE_comb</dict>
+  </language>
+  <language type="custom">
+    <isoCode>de</isoCode>
+    <dict>de_DE_comb</dict>
+  </language>
+  <language type="custom">
+    <isoCode>el</isoCode>
+    <dict>el_GR</dict>
+  </language>
+  
+  <language type="custom">
+    <isoCode>en-BZ</isoCode>
+    <dict>en_GB</dict>
+  </language>
+  <language type="custom">
+    <isoCode>en-CB</isoCode>
+    <dict>en_US</dict>
+  </language>
+  <language type="custom">
+    <isoCode>en-IE</isoCode>
+    <dict>en_US</dict>
+  </language>
+  <language type="custom">
+    <isoCode>en-JM</isoCode>
+    <dict>en_US</dict>
+  </language>  
+  <language type="custom">
+    <isoCode>en-TT</isoCode>
+    <dict>en_US</dict>
+  </language>
+  <language type="custom">
+    <isoCode>en</isoCode>
+    <dict>en_US</dict>
+  </language>
+  
+  <language type="custom">
+    <isoCode>et</isoCode>
+    <dict>et_EE</dict>
+  </language>
+  <language type="custom">
+    <isoCode>fi</isoCode>
+    <dict>fi_FI</dict>
+  </language>  
+  <language type="custom">
+    <isoCode>fo</isoCode>
+    <dict>fo_FO</dict>
+  </language>
+  
+  <language type="custom">
+    <isoCode>fr</isoCode>
+    <dict>fr_FR-1990</dict>
+  </language>
+  
+  <language type="custom">
+    <isoCode>gl</isoCode>
+    <dict>gl_ES</dict>
+  </language>
+  <language type="custom">
+    <isoCode>he</isoCode>
+    <dict>he_IL</dict>
+  </language>  <language type="custom">
+    <isoCode>hi</isoCode>
+    <dict>hi_IN</dict>
+  </language>
+  <language type="custom">
+    <isoCode>hu</isoCode>
+    <dict>hu_HU</dict>
+  </language>
+  <language type="custom">
+    <isoCode>is</isoCode>
+    <dict>is_IS</dict>
+  </language>
+  <language type="custom">
+    <isoCode>id</isoCode>
+    <dict>id_ID</dict>
+  </language>  
+  <language type="custom">
+    <isoCode>in</isoCode>
+    <dict>id_ID</dict>
+  </language>
+  <language type="custom">
+    <isoCode>it</isoCode>
+    <dict>it_IT</dict>
+  </language>
+  
+  <language type="custom" allName="Luxembourgish;Letzeburgesch lb">
+    <isoCode>lb</isoCode>
+    <dict>lb_LU</dict>
+  </language>
+  <language type="custom" allName="Lithuanian lt">
+    <isoCode>lt</isoCode>
+    <dict>lt_LT</dict>
+  </language>
+  <language type="custom" allName="Lativan lv">
+    <isoCode>lv</isoCode>
+    <dict>lv_LV</dict>
+  </language>
+    <language type="custom" allName="Maori mi">
+    <isoCode>mi</isoCode>
+    <dict>mi_NZ</dict>
+  </language>
+  <language type="custom" allName="Mongolian mn">
+    <isoCode>mn</isoCode>
+    <dict>mn_MN</dict>
+  </language>
+  <language type="custom" allName="Marathi mr">
+    <isoCode>mr</isoCode>
+    <dict>mr_IN</dict>
+  </language>
+  <language type="custom" allName="Malay ms">
+    <isoCode>ms</isoCode>
+    <dict>ms_MY</dict>
+  </language>
+  
+  <language type="custom" allName="Norwegian Bokmål nn">
+    <isoCode>nn</isoCode>
+    <dict>nn_NO</dict>
+  </language>
+  <language type="custom" allName="Norwegian Nynorsk nb">
+    <isoCode>nb</isoCode>
+    <dict>nb_NO</dict>
+  </language>
+  
+  <language type="custom" allName="Norwegian no">
+    <isoCode>no</isoCode>
+    <dict>nn_NO</dict>
+  </language>
+  <language type="custom" allName="Polish pl">
+    <isoCode>pl</isoCode>
+    <dict>pl_PL</dict>
+  </language>
+  <language type="custom" allName="Portuguese pt">
+    <isoCode>pt</isoCode>
+    <dict>pt_PT_NewSpelling</dict>
+  </language>
+  <language type="custom" allName="Romanian ro">
+    <isoCode>ro</isoCode>
+    <dict>ro_RO</dict>
+  </language>
+  <language type="custom" allName="Russian ru">
+    <isoCode>ru</isoCode>
+    <dict>ru_RU</dict>
+  </language>
+  <language type="custom" allName="Serbian sr">
+    <isoCode>sr</isoCode>
+    <dict>sr_Cyrl</dict>
+  </language>
+    <language type="custom" allName="Slovak sk">
+    <isoCode>sk</isoCode>
+    <dict>sk_SK</dict>
+  </language>
+  <language type="custom" allName="Slovenian sl">
+    <isoCode>sl</isoCode>
+    <dict>sl_SI</dict>
+  </language>
+  
+  <language type="custom" allName="Spanish es">
+    <isoCode>es</isoCode>
+    <dict>es_ES</dict>
+  </language>
+  <language type="custom" allName="Spanish (Argentina) es-AR">
+    <isoCode>es-AR</isoCode>
+    <dict>es_ES</dict>
+  </language>
+    <language type="custom" allName="Spanish (Bolivia) es-BO">
+    <isoCode>es-BO</isoCode>
+    <dict>es_ES</dict>
+  </language>
+  <language type="custom" allName="Spanish (Chile) es-CL">
+    <isoCode>es-CL</isoCode>
+    <dict>es_ES</dict>
+  </language>
+    <language type="custom" allName="Spanish (Colombia) es-CO">
+    <isoCode>es-CO</isoCode>
+    <dict>es_ES</dict>
+  </language>
+  <language type="custom" allName="Spanish (Costa Rica) es-CR">
+    <isoCode>es-CR</isoCode>
+    <dict>es_ES</dict>
+  </language>
+  <language type="custom" allName="Spanish (Dominican Republic) es-DO">
+    <isoCode>es-DO</isoCode>
+    <dict>es_ES</dict>
+  </language>
+  <language type="custom" allName="Spanish (Ecuador) es-EC">
+    <isoCode>es-EC</isoCode>
+    <dict>es_ES</dict>
+  </language>
+  <language type="custom" allName="Spanish (El Salvador) es-SV">
+    <isoCode>es-SV</isoCode>
+    <dict>es_ES</dict>
+  </language>
+  <language type="custom" allName="Spanish (Guatemala) es-GT">
+    <isoCode>es-GT</isoCode>
+    <dict>es_ES</dict>
+  </language>
+    <language type="custom" allName="Spanish (Honduras) es-HN">
+    <isoCode>es-HN</isoCode>
+    <dict>es_ES</dict>
+  </language>
+  <language type="custom" allName="Spanish (Nicaragua) es-NI">
+    <isoCode>es-NI</isoCode>
+    <dict>es_ES</dict>
+  </language>
+  <language type="custom" allName="Spanish (Panama) es-PA">
+    <isoCode>es-PA</isoCode>
+    <dict>es_ES</dict>
+  </language>
+  <language type="custom" allName="Spanish (Peru) es-PE">
+    <isoCode>es-PE</isoCode>
+    <dict>es_ES</dict>
+  </language>
+  <language type="custom" allName="Spanish (Puerto Rico) es-PR">
+    <isoCode>es-PR</isoCode>
+    <dict>es_ES</dict>
+  </language>
+  <language type="custom" allName="Spanish (Paraguay) es-PY">
+    <isoCode>es-PY</isoCode>
+    <dict>es_ES</dict>
+  </language>
+    <language type="custom" allName="Spanish (Uruguay) es-UY">
+    <isoCode>es-UY</isoCode>
+    <dict>es_ES</dict>
+  </language>
+  <language type="custom" allName="Spanish (Venezuela) es-VE">
+    <isoCode>es-VE</isoCode>
+    <dict>es_ES</dict>
+  </language>
+  
+  <language type="custom" allName="Swedish (Finland) sv-FI">
+    <isoCode>sv-FI</isoCode>
+    <dict>sv_SE</dict>
+  </language>
+  <language type="custom" allName="Swedish sv">
+    <isoCode>sv</isoCode>
+    <dict>sv_SE</dict>
+  </language>
+  <language type="custom" allName="Swahili sw">
+    <isoCode>sw</isoCode>
+    <dict>sw_KE</dict>
+  </language>
+  <language type="custom" allName="Thai th">
+    <isoCode>th</isoCode>
+    <dict>th_TH</dict>
+  </language>
+    <language type="custom" allName="Tswana tn">
+    <isoCode>tn</isoCode>
+    <dict>tn_ZA</dict>
+  </language>
+  <language type="custom" allName="Ukrainian uk">
+    <isoCode>uk</isoCode>
+    <dict>uk_UA</dict>
+  </language>
+  <language type="custom" allName="Uzbek uz">
+    <isoCode>uz</isoCode>
+    <dict>uz-Cyrl-UZ</dict>
+  </language>
+  <language type="custom" allName="Xhosa xh">
+    <isoCode>xh</isoCode>
+    <dict>xh_ZA</dict>
+  </language>
+    <language type="custom" allName="Zulu zu">
+    <isoCode>zu</isoCode>
+    <dict>zu_ZA</dict>
+  </language>
+  <language type="custom" allName="Welsh cy">
+    <isoCode>cy</isoCode>
+    <dict>cy_GB</dict>
+  </language>
+  
+</config>

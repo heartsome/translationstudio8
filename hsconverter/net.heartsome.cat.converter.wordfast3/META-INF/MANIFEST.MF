@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome CAT Converter WordfastPro3
+Bundle-SymbolicName: net.heartsome.cat.converter.wordfast3
+Bundle-Version: 8.0.2.R8b_v20130609
+Bundle-Activator: net.heartsome.cat.converter.wordfast3.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ net.heartsome.cat.converter;bundle-version="8.0.0",
+ net.heartsome.xml;bundle-version="8.0.0",
+ net.heartsome.cat.thirdpartlibrary;bundle-version="8.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Vendor: Heartsome Technologies Ltd.

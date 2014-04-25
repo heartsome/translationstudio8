@@ -1,0 +1,261 @@
+<document>
+  <properties>
+    <author email="peter.kliem@jaret.de">Peter Kliem</author>
+    <title>jaret table changelog</title>
+  </properties>
+ <body>
+    <section name="changelog for de.jaret.util.ui.table">
+	<subsection name="2008-03-22 version 0.85">
+		<ul>
+			<li>
+				Default header renderer: improved settings 
+			</li>
+			<li>
+				New example: month view (to be found in the timebars.addon package!) 
+			</li>
+		</ul>
+		</subsection>
+	<subsection name="11/03/2007 version 0.84">
+		<ul>
+			<li>
+				Reflected small change in the datechooser component 
+			</li>
+			<li>
+				Corrected some bugs that got apparnet when adding/removing nodes in a hierarchical models that have children and are expanded. 
+			</li>
+			<li>
+				Added a very simple DND routine to the TableHierarchicalModel (move only, drag on hierarchy tree; enable in the source code!). 
+			</li>
+		</ul>
+		</subsection>
+	<subsection name="18/07/2007 version 0.83">
+		<ul>
+			<li>
+				<b>Still a snapshot version (but approaching a stable state)</b>
+			</li>
+			<li>
+				Reflected small refactoring in the datechooser component 
+			</li>
+		</ul>
+		</subsection>
+	<subsection name="06/05/2007 version 0.82">
+		<ul>
+			<li>
+				<b>Still a snapshot version (but approaching a stable state)</b>
+			</li>
+			<li>
+				Fixed the scroll optimizations (hopefully). If you encounter artefacts while doing scroll operations, disable the optimizations. 
+				OptimizeScrolling now defaults to ENABLED.
+			</li>
+			<li>
+				Improved prpoerty observation to support synchronizing with a timebar viewer
+			</li>
+			<li>
+				Fixed a small bug when scrolling while displaying autofilter components (sometimes components remained visible) 
+			</li>
+			<li>
+				Fixed the building of the jar: resources have no tbeen included (Thanks Dmytro!).
+			</li>
+		</ul>
+		</subsection>
+	<subsection name="05/01/2007 version 0.81">
+		<ul>
+			<li>
+				<b>Still a snapshot version (but approaching a stable state)</b>
+			</li>
+			<li>
+				More Enhancements to the documentation, more code cleanup.
+			</li>
+			<li>
+				Included scroll optimizations: seems to work fine on windows but fails with Linux and OSX -> default disabled
+			</li>
+			<li>
+				New class IndexColumn for displaying a row header containing the index in the rowlist of the table.
+			</li>
+			<li>
+				Added convenience methods to the CellStyleProvider making it much easier to deal with styles (simply set colors
+				on cells without handling the CellStyles itself). Also added the possibility to add a strategy for providing
+				styles. This supports alternate coloring of the background or highlighting rows/columns depending
+				on their respective contents.
+			</li>
+			<li>
+				New cell renderer using an ILabelProvider for text conversion
+			</li>
+			<li>
+				Moved the autofilter definition to be configurable. Now it is possible to implement custom autofilters (see the TableExmaple
+				for two special implementations).
+			</li>
+			<li>
+				lots of small bugfixes and enhancements.
+			</li>
+			<li>
+				improved addon package
+			</li>
+			
+		</ul>
+		</subsection>
+	<subsection name="02/18/2007 version 0.80">
+		<ul>
+			<li>
+				<b>Still a snapshot version (but approaching a stable state)</b>
+			</li>
+			<li>
+				Enhancements to the documentation, code cleanup.
+			</li>
+			
+		</ul>
+	</subsection>
+	<subsection name="01/06/2007 version 0.73">
+		<ul>
+			<li>
+				<b>Still a snapshot version</b>
+			</li>
+			<li>
+				Small enhancements to editing (focus change after edit stop, tab moves focus right)
+			</li>
+			<li>
+				Some enhancements concerning thread safety (access from non gui threads)
+			</li>
+			<li>
+				PropCol now supports property paths for property access
+			</li>
+			<li>
+				Fixed little redraw bug that occurred when removing rows
+			</li>
+			<li>
+				New renderer: Object instance to image (i.e. for enum instances)
+			</li>
+			<li>
+				New renderer: Class to image (i.e. for lists of different object types)
+			</li>
+			<li>
+				Improved renderer/editor lookup to support interfaces and superclasses
+			</li>
+			<li>
+				Added the SimpleJaretTableModel: quick use of the jaret table possible with this model. Example is SimleModelExample
+			</li>
+			
+		</ul>
+	</subsection>
+	<subsection name="08/22/2006 version 0.72">
+		<ul>
+			<li>
+				<b>Still a snapshot version</b>
+			</li>
+			<li>
+				Worked on the selection (dragging, keyboard control) -- still not 100% perfect but near to excel
+			</li>
+			<li>
+				Added support for cut/copy/paste (implemented in a strategy)
+			</li>
+			<li>
+				Improved parts of the javadoc
+			</li>
+			<li>
+				Improved the example by adding a new fancy renderer/editor.
+			</li>
+			<li>
+				Added support for a fill drag (dragging a little box and use a strategy - default: copy - to fill cells;
+				implementation pattern is a strategy)
+			</li>
+			<li>
+				Changed build to SWT 3.2 (will most probably continue to work with 3.1)
+			</li>
+		</ul>
+	</subsection>
+	<subsection name="05/03/2006 version 0.71">
+		<ul>
+			<li>
+				<b>Still a snapshot version</b>
+			</li>
+			<li>
+				Added an editor using a combobox to select one of a list of objects
+			</li>
+			<li>
+				further improved handling of hierarchical models (keyboard control, rendering, selection)
+			</li>
+			<li>
+				introduced utils: ISelectionProvider adapter
+			</li>
+			<li>
+				refactored the standard actions out of the table (->util.actions)
+			</li>
+		</ul>
+	</subsection>
+	<subsection name="04/12/2006 version 0.7">
+		<ul>
+			<li>
+				<b>Still a snapshot version</b>
+			</li>
+			<li>
+				First version that can be considered to be seriously used. However testing the application is highly recommended. 
+			</li>
+			<li>
+				RowHeigth modes now fully supported: OPTIMAL will always set the row height to an optimal value, OPTANDVAR uses optimal height unless
+				first manual change occurred, FIXED and VARIABLE are self explanatory.
+			</li>
+			<li>
+				Added support for different column resize modes.
+			</li>
+			<li>
+				Added a combox cell editor for enumerations, an integer editor using a spinner, a double editor and a smiley renderer (fun)
+			</li>
+			<li>
+				Revisited the hierarchical mode and enhanced it
+			</li>
+			<li>
+				Cleared some todos and bugs (read only cells)
+			</li>
+			<li>
+				Added extra package supporting saving of the viewstate in an IMemento
+			</li>
+			<li>
+				Did a quick test on MacOSX, see status
+			</li>
+		</ul>
+	</subsection>
+	<subsection name="03/04/2006 version 0.61">
+		<ul>
+			<li>
+				Ongoing work. <b>Version 0.61 is a snapshot only</b>.
+			</li>
+			<li>
+				Cared for the cell editors and multi line rendering. See JavaDoc of the editors for details.
+			</li>
+		</ul>
+	</subsection>
+	<subsection name="02/17/2006 version 0.6">
+		<ul>
+			<li>
+				Ongoing work. <b>Version 0.6 is a snapshot only</b>. Many changes; some documented here
+			</li>
+			<li>
+				Changed license from GPL to CPL
+			</li>
+			<li>
+				did a lot refactoring
+			</li>
+			
+			<li>
+				RowFilter and RowSorter are now PropertyObservables (extend PropertyObservableBase when implementing or for inner classes
+				extend AbstractRow*).
+			</li>
+		</ul>
+	</subsection>
+	<subsection name="10/21/2005 version 0.5">
+		<ul>
+			<li>
+				Ongoing work. Still unstable. And: too many changes to document.
+			</li>
+		</ul>
+	</subsection>
+	<subsection name="10/03/2005 version 0.4">
+		<ul>
+			<li>
+				Initial publication.
+			</li>
+		</ul>
+	</subsection>
+    </section>
+  </body>
+</document>

@@ -1,0 +1,29 @@
+<document>
+  <properties>
+    <author email="peter.kliem@jaret.de">Peter Kliem</author>
+    <title>jaret table screenshots</title>
+  </properties>
+  <body>
+    <section name="de.jaret.util.ui.table: Screenshots">
+		<p>
+			Jarettable in action.
+		</p>
+		<p>
+		<img src="images/tableexample.gif"/>
+		</p>
+		<p>
+			Jarettable in action (hierarchical model).
+		</p>
+		<p>
+		<img src="images/hierarchy.gif"/>
+		</p>
+		<p>
+			Tweaked rendering showing a month view. This is taken from the calendar example located in the timebars.addon package (since it 
+			also uses the timebars)
+		</p>
+		<p>
+		<img src="images/monthview.png"/>
+		</p>
+    </section>
+  </body>
+</document>

@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome CAT Database UI
+Bundle-SymbolicName: net.heartsome.cat.database.ui;singleton:=true
+Bundle-Version: 8.0.2.R8b_v20130701
+Bundle-Activator: net.heartsome.cat.database.ui.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ heartsome.java.tools.plugin;bundle-version="1.0.0",
+ net.heartsome.xml;bundle-version="1.0.0",
+ net.heartsome.cat.thirdpartlibrary;bundle-version="1.0.0",
+ net.heartsome.cat.database;bundle-version="1.0.0",
+ org.eclipse.core.databinding;bundle-version="1.4.0",
+ org.eclipse.core.databinding.beans;bundle-version="1.2.100",
+ org.eclipse.jface.databinding;bundle-version="1.5.0",
+ org.eclipse.core.resources;bundle-version="3.7.100",
+ org.eclipse.core.databinding.property;bundle-version="1.4.0",
+ net.heartsome.cat.common.core;bundle-version="1.0.0",
+ net.heartsome.cat.ts.ui;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: net.heartsome.cat.database.ui.bean,
+ net.heartsome.cat.database.ui.core,
+ net.heartsome.cat.database.ui.dialog
+Bundle-Localization: plugin
+Bundle-Vendor: Heartsome Technologies Ltd.

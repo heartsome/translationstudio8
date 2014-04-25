@@ -1,0 +1,150 @@
+XPath for VTD-XML 
+
+1.0 Objective
+ This document provides an overview of the XPath feature
+supported in VTD-XML.
+
+2.0 Sample Code
+ 
+Let us begin by looking the code snippet showing XPath in 
+action:
+   
+   try{
+   	...
+   	AutoPilot ap = new AutoPilot();
+	ap.bind(vn);
+	ap.declareXPathNameSpace("ns1",
+	   "http://www.w3.org/2003/05/soap-envelope");
+	ap.selectXPath(
+	   "/ns1:Envelope/ns1:Header/*[@ns1:mustUnderstand]");
+	System.out.println("expr string is " 
+		+ ap.getExprString());
+	while(ap.evalXPath()!= -1){
+		// application logic goes here
+		...
+	}
+	ap.resetXPath();
+	...
+    }catch(XPathParseException e){
+
+    }catch(XPathEvalException e){
+
+    }...
+
+Notice that the C# version works pretty much the same way. And the C
+version also is quite similar.
+
+3. API Overview
+
+Basicly, AutoPilot added a few methods that allows for XPath 
+selection and evaluation.
+
+   * selectXPath() compiles XPath into internal data structure.
+   * declareXPathNameSpace() maps prefixes of XPath expression 
+     into corresponding URLs.
+   * evalXPath() moves the cursor across node sets matched by 
+     the xpath expression.
+   * evalXPathToString() is a new function that allows one to
+     evaluate XPath to a String
+   * evalXPathToNumber() is a new function that allows one to
+     evaluate XPath to a double
+   * evalXPathToBoolean() is a new function that allows one to
+     evaluate XPath to a boolean
+   * resetXPath() reset the internal states of the XPath data 
+     structure so it can be reused.
+
+Two more exception types are defined.
+
+   * XPathParseException is thrown if XPath expression string
+     is not valid.
+   * XPathEvalException is thrown if there is error during XPath
+     evaluation.
+
+Notice that when using evalXPath(), users must be sure that
+the cursor object doesn't change positions, one way this can 
+be done is by using the combination of push() and pop().
+
+	while(ap.evalXPath()!= -1){
+		// application logic goes here
+
+		// one must be sure that cursor position
+		// enter the loop equals that exiting the
+		// the loop
+		...
+	}
+
+Also notice that the following always returns true
+        int i; 
+	while((i=ap.evalXPath())!=-1){
+            // i always equals vn.getCurrentIndex()!!!!
+	    if (i==vn.getCurrentIndex()){
+	    }
+	}
+
+
+Because in many cases, XPath expression is compiled well before 
+XMLs are actually processed, so autoPilot must support delayed 
+binding of VTDNav object, which is supported by the following
+methods.
+
+   * AutoPilot has a new, argumentless constructor that does not 
+     initially bind to an VTDNav object.
+   * bind() allows the autoPilot to bind to a VTDNav object.
+
+Union Expression support was introduced in version 1.7.
+
+4. Limitation
+
+   The list of built-in XPath functions supported in this release:
+
+   *last
+   *position
+   *count
+   *sum
+   *floor
+   *ceiling
+   *string-length,
+   *round
+   *true
+   *false
+   *boolean
+   *not
+   *string
+   *lang
+   *number
+   *local-name (since v1.7)
+   *name (since v1.7)
+   *namespace-uri (since v1.7)
+   *substring (since v1.8)
+   *substring-after (since v 1.8)
+   *substring-before (since v 1.8)
+   *concat (since v1.8)
+   *starts-with (since v1.8)
+   *contains (since v1.8)
+   *normalize-space (since v1.8)   
+
+   2.0 functions
+   *ends-with
+   *abs
+   *upper-case
+   *lower-case
+   *round-half-to-even
+	
+   * Mixed-content type is fully supported since 2.4.
+   * Comments and processing instructions are fully supported.
+   
+
+5. Performance considerations
+   There is no VTD-XML specific performance consideration of XPath.
+   For example, "//" operator is quite expensive, last() is also
+   quite expensive.
+   
+6. Future Work 
+   In future releases more built-in functions will be implemented.
+
+7. Example
+
+   In the example directory, XPath versions of the orginal examples
+are provided.
+   
+   

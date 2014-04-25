@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hs="http://www.heartsome.net.cn/2008/XLFExtension" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd http://www.heartsome.net.cn/2008/XLFExtension XLFExtension.xsd">
+  <file original="D:/ts.win32.win32.x86/workspace/test/Source/test file.txt" source-language="en-US" datatype="plaintext" target-language="zh-CN">
+    <header>
+      <skl>
+        <external-file href="D:/ts.win32.win32.x86/workspace/test/SKL/test file.txt.skl"/>
+      </skl>
+      <tool tool-id="XLFEditor auto-Quick Translation" tool-name="HSStudio"/>
+      <hs:prop-group name="encoding">
+        <hs:prop prop-type="encoding">UTF-8</hs:prop>
+      </hs:prop-group>
+    </header>
+    <body>
+      <trans-unit id="1" xml:space="preserve" approved="no" translate="yes">
+        <source xml:lang="en-US">Test segment 1.</source>
+      </trans-unit>
+      <trans-unit id="2" xml:space="preserve" approved="no" translate="yes">
+        <source xml:lang="en-US">Test segment 2a.<ph id="hs-merge2~3"/>Test segment 2b.</source>
+      </trans-unit>
+      <trans-unit id="3" xml:space="preserve" approved="yes" translate="no">
+        <source xml:lang="en-US"/>
+      </trans-unit>
+      <trans-unit id="4" xml:space="preserve" approved="yes" translate="no">
+        <source xml:lang="en-US"/>
+      </trans-unit>
+      <trans-unit id="5" xml:space="preserve" approved="no" translate="yes">
+        <source xml:lang="en-US">Test segment 3a.<ph id="hs-merge4~5"/>Test segment 3b.</source>
+      </trans-unit>
+      <group id="6" ts="hs-split" xml:space="preserve">
+        <trans-unit id="6-1" xml:space="preserve" approved="no" translate="yes">
+          <source xml:lang="en-US">Test segment 4a.</source>
+        </trans-unit>
+        <trans-unit id="6-2" xml:space="preserve" approved="no" translate="yes">
+          <source xml:lang="en-US">Test segment 4b.</source>
+        </trans-unit>
+      </group>
+      <group id="7" ts="hs-split" xml:space="preserve">
+        <trans-unit id="7-1" xml:space="preserve" approved="no" translate="yes">
+          <source xml:lang="en-US">Test segment 5a.<ph id="hs-merge7-1~7-2"/>Test segment 5b.</source>
+        </trans-unit>
+        <trans-unit id="7-2" xml:space="preserve" approved="yes" translate="no">
+          <source xml:lang="en-US"/>
+        </trans-unit>
+      </group>
+      <group id="8" ts="hs-split" xml:space="preserve">
+        <trans-unit id="8-1" xml:space="preserve" approved="no" translate="yes">
+          <source xml:lang="en-US">Test segment 6a.<ph id="hs-merge8-1~8-2"/>Test segment 6b.</source>
+        </trans-unit>
+        <trans-unit id="8-2" xml:space="preserve" approved="yes" translate="no">
+          <source xml:lang="en-US"/>
+        </trans-unit>
+      </group>
+      <group id="9" ts="hs-split" xml:space="preserve">
+        <trans-unit id="9-1" xml:space="preserve" approved="no" translate="yes">
+          <source xml:lang="en-US">Test segment 7a. - Ignore</source>
+        </trans-unit>
+        <trans-unit id="9-2" xml:space="preserve" approved="no" translate="yes">
+          <source xml:lang="en-US">Test segment 7b.<ph id="hs-merge9-2~10"/>Test segment 7c.</source>
+        </trans-unit>
+      </group>
+      <trans-unit id="10" xml:space="preserve" approved="yes" translate="no">
+        <source xml:lang="en-US"/>
+      </trans-unit>
+      <group id="11" ts="hs-split" xml:space="preserve">
+        <trans-unit id="11-1" xml:space="preserve" approved="no" translate="yes">
+          <source xml:lang="en-US">Test segment 8a. - Ignore</source>
+        </trans-unit>
+        <trans-unit id="11-2" xml:space="preserve" approved="no" translate="yes">
+          <source xml:lang="en-US">Test segment 8b.<ph id="hs-merge11-2~12"/>Test segment 8c.</source>
+        </trans-unit>
+      </group>
+      <trans-unit id="12" xml:space="preserve" approved="yes" translate="no">
+        <source xml:lang="en-US"/>
+      </trans-unit>
+      <trans-unit id="13" xml:space="preserve" approved="no" translate="yes">
+        <source xml:lang="en-US">Test segment 9a.<ph id="hs-merge13~14-1"/>Test segment 9b.</source>
+      </trans-unit>
+      <group id="14" ts="hs-split" xml:space="preserve">
+        <trans-unit id="14-1" xml:space="preserve" approved="yes" translate="no">
+          <source xml:lang="en-US"/>
+        </trans-unit>
+        <trans-unit id="14-2" xml:space="preserve" approved="no" translate="yes">
+          <source xml:lang="en-US">Test segment 9c. - Ignore</source>
+        </trans-unit>
+      </group>
+      <trans-unit id="15" xml:space="preserve" approved="no" translate="yes">
+        <source xml:lang="en-US">Test segment 10a.<ph id="hs-merge15~16-1"/>Test segment 10b.</source>
+      </trans-unit>
+      <group id="16" ts="hs-split" xml:space="preserve">
+        <trans-unit id="16-1" xml:space="preserve" approved="yes" translate="no">
+          <source xml:lang="en-US"/>
+        </trans-unit>
+        <trans-unit id="16-2" xml:space="preserve" approved="no" translate="yes">
+          <source xml:lang="en-US">Test segment 10c. - Ignore</source>
+        </trans-unit>
+      </group>
+      <group id="17" ts="hs-split" xml:space="preserve">
+        <trans-unit id="17-1" xml:space="preserve" approved="no" translate="yes">
+          <source xml:lang="en-US">Test segment 11a. - Ignore</source>
+        </trans-unit>
+        <trans-unit id="17-2" xml:space="preserve" approved="no" translate="yes">
+          <source xml:lang="en-US">Test segment 11b.<ph id="hs-merge17~18"/>Test segment 11c.</source>
+        </trans-unit>
+      </group>
+      <trans-unit id="18" xml:space="preserve" approved="yes" translate="no">
+        <source xml:lang="en-US"/>
+      </trans-unit>
+      <group id="19" ts="hs-split" xml:space="preserve">
+        <trans-unit id="19-1" xml:space="preserve" approved="no" translate="yes">
+          <source xml:lang="en-US">Test segment 12a. - Ignore</source>
+        </trans-unit>
+        <trans-unit id="19-2" xml:space="preserve" approved="no" translate="yes">
+          <source xml:lang="en-US">Test segment 12b.<ph id="hs-merge19~20"/>Test segment 12c.</source>
+        </trans-unit>
+      </group>
+      <trans-unit id="20" xml:space="preserve" approved="yes" translate="no">
+        <source xml:lang="en-US"/>
+      </trans-unit>
+      <group id="21" ts="hs-split" xml:space="preserve">
+        <trans-unit id="21-1" xml:space="preserve" approved="no" translate="yes">
+          <source xml:lang="en-US">Test segment 13a.<ph id="hs-merge21~22"/>Test segment 13b.</source>
+        </trans-unit>
+        <trans-unit id="21-2" xml:space="preserve" approved="no" translate="yes">
+          <source xml:lang="en-US">Test segment 13c. - Ignore</source>
+        </trans-unit>
+      </group>
+      <trans-unit id="22" xml:space="preserve" approved="yes" translate="no">
+        <source xml:lang="en-US"/>
+      </trans-unit>
+      <group id="23" ts="hs-split" xml:space="preserve">
+        <trans-unit id="23-1" xml:space="preserve" approved="no" translate="yes">
+          <source xml:lang="en-US">Test segment 14a.<ph id="hs-merge23~24"/>Test segment 14b.</source>
+        </trans-unit>
+        <trans-unit id="23-2" xml:space="preserve" approved="no" translate="yes">
+          <source xml:lang="en-US">Test segment 14c. - Ignore</source>
+        </trans-unit>
+      </group>
+      <trans-unit id="24" xml:space="preserve" approved="yes" translate="no">
+        <source xml:lang="en-US"/>
+      </trans-unit>
+      <trans-unit id="25" xml:space="preserve" approved="no" translate="yes">
+        <source xml:lang="en-US">Test segment 15.</source>
+      </trans-unit>
+      <trans-unit id="26" xml:space="preserve" approved="no" translate="yes">
+        <source xml:lang="en-US">Test segment 16.</source>
+      </trans-unit>
+      <trans-unit id="27" xml:space="preserve" approved="no" translate="yes">
+        <source xml:lang="en-US">Test segment 17.</source>
+      </trans-unit>
+      <trans-unit id="28" xml:space="preserve" approved="no" translate="yes">
+        <source xml:lang="en-US">Test segment 18.</source>
+      </trans-unit>
+      <trans-unit id="29" xml:space="preserve" approved="no" translate="yes">
+        <source xml:lang="en-US">Test segment 19.</source>
+      </trans-unit>
+      <trans-unit id="30" xml:space="preserve" approved="no" translate="yes">
+        <source xml:lang="en-US">Test segment 20.</source>
+      </trans-unit>
+      <trans-unit id="31" xml:space="preserve" approved="no" translate="yes">
+        <source xml:lang="en-US">Test segment 21.</source>
+      </trans-unit>
+      <trans-unit id="32" xml:space="preserve" approved="no" translate="no">
+        <source xml:lang="en-US">Test segment 22.</source>
+      </trans-unit>
+      <trans-unit id="33" xml:space="preserve" approved="yes" translate="yes">
+        <source xml:lang="en-US">Test segment 23.</source>
+      </trans-unit>
+      <trans-unit id="34" xml:space="preserve" approved="yes" translate="no">
+        <source xml:lang="en-US">Test segment 24.</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

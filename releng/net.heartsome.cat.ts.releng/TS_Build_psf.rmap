@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rmap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.eclipse.org/buckminster/RMap-1.0"
+	xmlns:bc="http://www.eclipse.org/buckminster/Common-1.0" xmlns:psf="http://www.eclipse.org/buckminster/PSFProvider-1.0">
+
+	<searchPath name="ts_ultimate_psf_cvs">
+		<provider xsi:type="psf:PSFProvider" readerType="cvs"
+			componentTypes="osgi.bundle,eclipse.feature" mutable="false" source="true">
+			<uri
+				format=":pserver:felix:vqf5nuah@192.168.0.13:/data/cvs,
+				CAT8NEW/ts/net.heartsome.cat.ts.ultimate.feature/projectSet.psf" />
+		</provider>
+	</searchPath>
+
+	<searchPath name="ts_ultimate_psf_local">
+		<provider xsi:type="psf:PSFProvider" readerType="local"
+			componentTypes="osgi.bundle,eclipse.feature" mutable="true" source="true">
+			<uri
+				format="file:///{0}/CAT8NEW/ts/net.heartsome.cat.ts.ultimate.feature/projectSet.psf">
+				<bc:propertyRef key="workspace.root" />
+			</uri>
+		</provider>
+	</searchPath>
+
+	<locator searchPathRef="ts_ultimate_psf_local" failOnError="false" />
+	<locator searchPathRef="ts_ultimate_psf_cvs" failOnError="true" />
+</rmap>

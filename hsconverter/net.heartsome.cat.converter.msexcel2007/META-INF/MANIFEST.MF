@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome CAT Converter MS Excel
+Bundle-SymbolicName: net.heartsome.cat.converter.msexcel2007;singleton:=true
+Bundle-Version: 8.0.3.R8b_v20130409
+Bundle-Activator: net.heartsome.cat.converter.msexcel2007.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ net.heartsome.xml;bundle-version="1.0.0",
+ net.heartsome.cat.converter;bundle-version="1.0.0",
+ net.heartsome.cat.thirdpartlibrary;bundle-version="1.0.0",
+ org.eclipse.ui.workbench;bundle-version="3.7.0",
+ org.eclipse.ui;bundle-version="3.7.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ClassPath: .
+Import-Package: net.heartsome.cat.common.ui
+Bundle-Localization: plugin
+Bundle-Vendor: Heartsome Technologies Ltd.

@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome CAT Converter Resx
+Bundle-SymbolicName: net.heartsome.cat.converter.resx
+Bundle-Version: 8.0.3.R8b_v20130609
+Bundle-Activator: net.heartsome.cat.converter.resx.Activator
+Require-Bundle: org.junit4;resolution:=optional,
+ net.heartsome.cat.converter;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Import-Package: net.heartsome.cat.converter.xml,
+ org.eclipse.core.runtime;version="3.4.0",
+ org.osgi.framework;version="1.5.0",
+ org.osgi.util.tracker;version="1.4.2",
+ org.slf4j
+Bundle-Vendor: Heartsome Technologies Ltd.

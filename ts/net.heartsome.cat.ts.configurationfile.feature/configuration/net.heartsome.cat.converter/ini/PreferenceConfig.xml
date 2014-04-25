@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+	<product shortname="COMMON">
+		<tree/>
+		<configfiles>
+			<configfile id="langcodes" filename="lib/langCodes.xml">
+				<![CDATA[<?xml version="1.0" encoding="UTF-8" ?>
+<languages>
+<lang bidi="No" code="aa">Afar</lang>
+<lang bidi="No" code="ab">Abkhazian</lang>
+<lang bidi="No" code="ae">Avestan</lang>
+<lang bidi="No" code="af">Afrikaans</lang>
+<lang bidi="No" code="ak">Akan</lang>
+<lang bidi="No" code="am">Amharic</lang>
+<lang bidi="No" code="an">Aragonese</lang>
+<lang bidi="Yes" code="ar">Arabic</lang>
+<lang bidi="Yes" code="ar-AE">Arabic (U.A.E.)</lang>
+<lang bidi="Yes" code="ar-BH">Arabic (Bahrain)</lang>
+<lang bidi="Yes" code="ar-DZ">Arabic (Algeria)</lang>
+<lang bidi="Yes" code="ar-EG">Arabic (Egypt)</lang>
+<lang bidi="Yes" code="ar-IQ">Arabic (Iraq)</lang>
+<lang bidi="Yes" code="ar-JO">Arabic (Jordan)</lang>
+<lang bidi="Yes" code="ar-KW">Arabic (Kuwait)</lang>
+<lang bidi="Yes" code="ar-LB">Arabic (Lebanon)</lang>
+<lang bidi="Yes" code="ar-LY">Arabic (Libya)</lang>
+<lang bidi="Yes" code="ar-MA">Arabic (Morocco)</lang>
+<lang bidi="Yes" code="ar-OM">Arabic (Oman)</lang>
+<lang bidi="Yes" code="ar-QA">Arabic (Qatar)</lang>
+<lang bidi="Yes" code="ar-SA">Arabic (Saudi Arabia)</lang>
+<lang bidi="Yes" code="ar-SY">Arabic (Syria)</lang>
+<lang bidi="Yes" code="ar-TN">Arabic (Tunisia)</lang>
+<lang bidi="Yes" code="ar-YE">Arabic (Yemen)</lang>
+<lang bidi="No" code="as">Assamese</lang>
+<lang bidi="No" code="av">Avaric</lang>
+<lang bidi="No" code="ay">Aymara</lang>
+<lang bidi="No" code="az">Azerbaijani</lang>
+<lang bidi="No" code="ba">Bashkir</lang>
+<lang bidi="No" code="be">Belarusian</lang>
+<lang bidi="No" code="bg">Bulgarian</lang>
+<lang bidi="No" code="bh">Bihari</lang>
+<lang bidi="No" code="bi">Bislama</lang>
+<lang bidi="No" code="bm">Bambara</lang>
+<lang bidi="No" code="bn">Bengali</lang>
+<lang bidi="No" code="bo">Tibetan</lang>
+<lang bidi="No" code="br">Breton</lang>
+<lang bidi="No" code="bs">Bosnian</lang>
+<lang bidi="No" code="ca">Catalan</lang>
+<lang bidi="No" code="ce">Chechen</lang>
+<lang bidi="No" code="ch">Chamorro</lang>
+<lang bidi="No" code="co">Corsican</lang>
+<lang bidi="No" code="cr">Cree</lang>
+<lang bidi="No" code="cs">Czech</lang>
+<lang bidi="No" code="cu">Church Slavic; Old Bulgarian</lang>
+<lang bidi="No" code="cv">Chuvash</lang>
+<lang bidi="No" code="cy">Welsh</lang>
+<lang bidi="No" code="da">Danish</lang>
+<lang bidi="No" code="de">German</lang>
+<lang bidi="No" code="de-AT">German (Austrian)</lang>
+<lang bidi="No" code="de-CH">German (Swiss)</lang>
+<lang bidi="No" code="de-DE">German (Germany)</lang>
+<lang bidi="No" code="de-LI">German (Liechtenstein)</lang>
+<lang bidi="No" code="de-LU">German (Luxembourg)</lang>
+<lang bidi="No" code="dv">Divehi</lang>
+<lang bidi="No" code="dz">Dzongkha</lang>
+<lang bidi="No" code="ee">Ewe</lang>
+<lang bidi="No" code="el">Greek</lang>
+<lang bidi="No" code="en">English</lang>
+<lang bidi="No" code="en-AU">English (Australian)</lang>
+<lang bidi="No" code="en-BZ">English (Belize)</lang>
+<lang bidi="No" code="en-CA">English (Canadian)</lang>
+<lang bidi="No" code="en-CB">English (Caribbean)</lang>
+<lang bidi="No" code="en-GB">English (British)</lang>
+<lang bidi="No" code="en-IE">English (Ireland)</lang>
+<lang bidi="No" code="en-JM">English (Jamaica)</lang>
+<lang bidi="No" code="en-NZ">English (New Zealand)</lang>
+<lang bidi="No" code="en-TT">English (Trinidad)</lang>
+<lang bidi="No" code="en-US">English (United States)</lang>
+<lang bidi="No" code="en-ZA">English (South Africa)</lang>
+<lang bidi="No" code="eo">Esperanto</lang>
+<lang bidi="No" code="es">Spanish</lang>
+<lang bidi="No" code="es-AR">Spanish (Argentina)</lang>
+<lang bidi="No" code="es-BO">Spanish (Bolivia)</lang>
+<lang bidi="No" code="es-CL">Spanish (Chile)</lang>
+<lang bidi="No" code="es-CO">Spanish (Colombia)</lang>
+<lang bidi="No" code="es-CR">Spanish (Costa Rica)</lang>
+<lang bidi="No" code="es-DO">Spanish (Dominican Republic)</lang>
+<lang bidi="No" code="es-EC">Spanish (Ecuador)</lang>
+<lang bidi="No" code="es-ES">Spanish (Spain)</lang>
+<lang bidi="No" code="es-GT">Spanish (Guatemala)</lang>
+<lang bidi="No" code="es-HN">Spanish (Honduras)</lang>
+<lang bidi="No" code="es-MX">Spanish (Mexican)</lang>
+<lang bidi="No" code="es-NI">Spanish (Nicaragua)</lang>
+<lang bidi="No" code="es-PA">Spanish (Panama)</lang>
+<lang bidi="No" code="es-PE">Spanish (Peru)</lang>
+<lang bidi="No" code="es-PR">Spanish (Puerto Rico)</lang>
+<lang bidi="No" code="es-PY">Spanish (Paraguay)</lang>
+<lang bidi="No" code="es-SV">Spanish (El Salvador)</lang>
+<lang bidi="No" code="es-UY">Spanish (Uruguay)</lang>
+<lang bidi="No" code="es-VE">Spanish (Venezuela)</lang>
+<lang bidi="No" code="et">Estonian</lang>
+<lang bidi="No" code="eu">Basque</lang>
+<lang bidi="Yes" code="fa">Farsi</lang>
+<lang bidi="No" code="ff">Fulah</lang>
+<lang bidi="No" code="fi">Finnish</lang>
+<lang bidi="No" code="fj">Fijian</lang>
+<lang bidi="No" code="fo">Faeroese</lang>
+<lang bidi="No" code="fr">French</lang>
+<lang bidi="No" code="fr-BE">French (Belgium)</lang>
+<lang bidi="No" code="fr-CA">French (Canadian)</lang>
+<lang bidi="No" code="fr-CH">French (Swiss)</lang>
+<lang bidi="No" code="fr-FR">French (France)</lang>
+<lang bidi="No" code="fr-LU">French (Luxembourg)</lang>
+<lang bidi="No" code="fy">Frisian</lang>
+<lang bidi="No" code="ga">Irish</lang>
+<lang bidi="No" code="gd">Gaelic; Scottish Gaelic</lang>
+<lang bidi="No" code="gl">Galician</lang>
+<lang bidi="No" code="gn">Guarani</lang>
+<lang bidi="No" code="gu">Gujarati</lang>
+<lang bidi="No" code="gv">Manx</lang>
+<lang bidi="No" code="ha">Hausa</lang>
+<lang bidi="Yes" code="he">Hebrew</lang>
+<lang bidi="Yes" code="he-IL">Hebrew (Israel)</lang>
+<lang bidi="No" code="hi">Hindi</lang>
+<lang bidi="No" code="ho">Hiri Motu</lang>
+<lang bidi="No" code="hr">Croatian</lang>
+<lang bidi="No" code="ht">Haitian; Haitian Creole</lang>
+<lang bidi="No" code="hu">Hungarian</lang>
+<lang bidi="No" code="hy">Armenian</lang>
+<lang bidi="No" code="hz">Herero</lang>
+<lang bidi="No" code="ia">Interlingua</lang>
+<lang bidi="No" code="id">Indonesian</lang>
+<lang bidi="No" code="ie">Interlingue</lang>
+<lang bidi="No" code="ig">Igbo</lang>
+<lang bidi="No" code="ii">Sichuan Yi</lang>
+<lang bidi="No" code="ik">Inupiaq</lang>
+<lang bidi="No" code="in">Indonesian</lang>
+<lang bidi="No" code="io">Ido</lang>
+<lang bidi="No" code="is">Icelandic</lang>
+<lang bidi="No" code="it">Italian</lang>
+<lang bidi="No" code="it-CH">Italian (Swiss)</lang>
+<lang bidi="No" code="it-IT">Italian (Italy)</lang>
+<lang bidi="No" code="iu">Inuktitut</lang>
+<lang bidi="No" code="ja">Japanese</lang>
+<lang bidi="No" code="jv">Javanese</lang>
+<lang bidi="No" code="ka">Georgian</lang>
+<lang bidi="No" code="kg">Kongo</lang>
+<lang bidi="No" code="ki">Kikuyu; Gikuyu</lang>
+<lang bidi="No" code="kj">Kuanyama; Kwanyama</lang>
+<lang bidi="Yes" code="kk">Kazakh</lang>
+<lang bidi="No" code="kl">Kalaallisut; Greenlandic</lang>
+<lang bidi="No" code="km">Khmer</lang>
+<lang bidi="No" code="kn">Kannada</lang>
+<lang bidi="No" code="ko">Korean</lang>
+<lang bidi="No" code="ko-JB">Korean (Johab)</lang>
+<lang bidi="No" code="kr">Kanuri</lang>
+<lang bidi="No" code="ks">Kashmiri</lang>
+<lang bidi="No" code="ku">Kurdish</lang>
+<lang bidi="No" code="kv">Komi</lang>
+<lang bidi="No" code="kw">Cornish</lang>
+<lang bidi="No" code="ky">Kirghiz</lang>
+<lang bidi="No" code="la">Latin</lang>
+<lang bidi="No" code="lb">Luxembourgish; Letzeburgesch</lang>
+<lang bidi="No" code="lg">Ganda</lang>
+<lang bidi="No" code="li">Limburgan; Limburger; Limburgish</lang>
+<lang bidi="No" code="ln">Lingala</lang>
+<lang bidi="No" code="lo">Lao</lang>
+<lang bidi="No" code="lt">Lithuanian</lang>
+<lang bidi="No" code="lu">Luba-Katanga</lang>
+<lang bidi="No" code="lv">Latvian</lang>
+<lang bidi="No" code="mg">Malagasy</lang>
+<lang bidi="No" code="mh">Marshallese</lang>
+<lang bidi="No" code="mi">Maori</lang>
+<lang bidi="No" code="mk">Macedonian</lang>
+<lang bidi="No" code="ml">Malayalam</lang>
+<lang bidi="No" code="mn">Mongolian</lang>
+<lang bidi="No" code="mo">Moldavian</lang>
+<lang bidi="No" code="mr">Marathi</lang>
+<lang bidi="No" code="ms">Malay</lang>
+<lang bidi="No" code="mt">Maltese</lang>
+<lang bidi="No" code="my">Burmese</lang>
+<lang bidi="No" code="na">Nauru</lang>
+<lang bidi="No" code="nb">Norwegian Bokmål</lang>
+<lang bidi="No" code="nd">Ndebele, North</lang>
+<lang bidi="No" code="ne">Nepali</lang>
+<lang bidi="No" code="ng">Ndonga</lang>
+<lang bidi="No" code="nl">Dutch</lang>
+<lang bidi="No" code="nl-BE">Dutch (Belgium)</lang>
+<lang bidi="No" code="nn">Norwegian Nynorsk</lang>
+<lang bidi="No" code="no">Norwegian</lang>
+<lang bidi="No" code="nr">Ndebele, South</lang>
+<lang bidi="No" code="nv">Navajo; Navaho</lang>
+<lang bidi="No" code="ny">Chichewa; Chewa; Nyanja</lang>
+<lang bidi="No" code="oc">Occitan; Provençal</lang>
+<lang bidi="No" code="oj">Ojibwa</lang>
+<lang bidi="No" code="om">Oromo</lang>
+<lang bidi="No" code="or">Oriya</lang>
+<lang bidi="No" code="os">Ossetian; Ossetic</lang>
+<lang bidi="No" code="pa">Panjabi; Punjabi</lang>
+<lang bidi="No" code="pi">Pali</lang>
+<lang bidi="No" code="pl">Polish</lang>
+<lang bidi="No" code="ps">Pushto</lang>
+<lang bidi="No" code="pt">Portuguese</lang>
+<lang bidi="No" code="pt-BR">Portuguese (Brazilian)</lang>
+<lang bidi="No" code="qu">Quechua</lang>
+<lang bidi="No" code="rm">Raeto-Romance</lang>
+<lang bidi="No" code="rn">Rundi</lang>
+<lang bidi="No" code="ro">Romanian</lang>
+<lang bidi="No" code="ru">Russian</lang>
+<lang bidi="No" code="rw">Kinyarwanda</lang>
+<lang bidi="No" code="sa">Sanskrit</lang>
+<lang bidi="No" code="sc">Sardinian</lang>
+<lang bidi="No" code="sd">Sindhi</lang>
+<lang bidi="No" code="se">Northern Sami</lang>
+<lang bidi="No" code="sg">Sango</lang>
+<lang bidi="No" code="si">Sinhala; Sinhalese</lang>
+<lang bidi="No" code="sk">Slovak</lang>
+<lang bidi="No" code="sl">Slovenian</lang>
+<lang bidi="No" code="sm">Samoan</lang>
+<lang bidi="No" code="sn">Shona</lang>
+<lang bidi="No" code="so">Somali</lang>
+<lang bidi="No" code="sq">Albanian</lang>
+<lang bidi="No" code="sr">Serbian</lang>
+<lang bidi="No" code="ss">Swati</lang>
+<lang bidi="No" code="st">Sotho, Southern</lang>
+<lang bidi="No" code="su">Sundanese</lang>
+<lang bidi="No" code="sv">Swedish</lang>
+<lang bidi="No" code="sv-FI">Swedish (Finland)</lang>
+<lang bidi="No" code="sw">Swahili</lang>
+<lang bidi="No" code="ta">Tamil</lang>
+<lang bidi="No" code="te">Telugu</lang>
+<lang bidi="No" code="tg">Tajik</lang>
+<lang bidi="No" code="th">Thai</lang>
+<lang bidi="No" code="ti">Tigrinya</lang>
+<lang bidi="No" code="tk">Turkmen</lang>
+<lang bidi="No" code="tl">Tagalog</lang>
+<lang bidi="No" code="tn">Tswana</lang>
+<lang bidi="No" code="to">Tonga</lang>
+<lang bidi="No" code="tr">Turkish</lang>
+<lang bidi="No" code="ts">Tsonga</lang>
+<lang bidi="No" code="tt">Tatar</lang>
+<lang bidi="No" code="tw">Twi</lang>
+<lang bidi="No" code="ty">Tahitian</lang>
+<lang bidi="Yes" code="ug">Uighur; Uyghur</lang>
+<lang bidi="No" code="uk">Ukrainian</lang>
+<lang bidi="Yes" code="ur">Urdu</lang>
+<lang bidi="No" code="uz">Uzbek</lang>
+<lang bidi="No" code="ve">Venda</lang>
+<lang bidi="No" code="vi">Vietnamese</lang>
+<lang bidi="No" code="vo">Volapük</lang>
+<lang bidi="No" code="wa">Walloon</lang>
+<lang bidi="No" code="wo">Wolof</lang>
+<lang bidi="No" code="xh">Xhosa</lang>
+<lang bidi="No" code="yi">Yiddish</lang>
+<lang bidi="No" code="yo">Yoruba</lang>
+<lang bidi="No" code="za">Zhuang; Chuang</lang>
+<lang bidi="No" code="zh">Chinese</lang>
+<lang bidi="No" code="zh-CN">Chinese (People's Republic)</lang>
+<lang bidi="No" code="zh-HK">Chinese (Hong Kong)</lang>
+<lang bidi="No" code="zh-SG">Chinese (Singapore)</lang>
+<lang bidi="No" code="zh-TW">Chinese (Taiwan)</lang>
+<lang bidi="No" code="zu">Zulu</lang>
+</languages>]]>
+			</configfile>
+		</configfiles>
+	</product>
+	<product shortname="HSTS">
+		<tree>
+			<node id="SystemSetting" title="System Setting" icon="" classname="net.heartsome.preference.SystemSettingComposite">
+				<node id="LangCodesSetting" title="Language Codes Configuration" icon="" classname="net.heartsome.preference.LanguageCodesConfigurationComposite" />
+				<node id="DefaultViewersSetting" title="Default Viewers for Target Format" icon="" classname="net.heartsome.preference.DefaultViewersforTargetFormatComposite" />
+				<node id="DefaultColorSetting" title="Default Colors" icon="" classname="net.heartsome.preference.DefaultColorComposite" />
+				<node id="AspellDictionariesSetting" title="Aspell Dictionaries" icon="" classname="net.heartsome.preference.AspellDectionariesComposite" />
+				<node id="InternalDictionariesSetting" title="Internal Dictionaries" icon="" classname="net.heartsome.preference.InternalDictionaresComposite" />
+				<node id="ShortcutsSetting" title="Shortcuts Configuration" icon="" classname="net.heartsome.preference.ShortcutsSettingComposite" />
+			</node>
+			<node id="TMDBSetting" title="TM Database Setting" icon="" classname="net.heartsome.preference.TMSettingComposite">
+				<node id="GeneralMatchSetting" title="General Match Settings" icon="" classname="net.heartsome.preference.GeneralMatchSettingsComposite" />
+			</node>
+			<node id="TranslationSetting" title="Translation Setting" icon="" classname="net.heartsome.preference.TranslationSettingComposite">
+			</node>
+		</tree>
+
+		<!-- relative attribute indication whether relate to installation folder, default value is true-->
+		<configfiles>
+			<configfile id="xlfeditcfg" filename="xeditcfg.xml" relative="false">
+				<![CDATA[<?xml version="1.0" encoding="UTF-8" ?>
+				<preferences>
+				</preferences>]]>
+			</configfile>
+			<configfile id="xlfplugin" filename="lib/xlfplugins.xml">
+				<![CDATA[<?xml version="1.0" encoding="UTF-8" ?>
+<plugins/>]]>
+			</configfile>
+			<configfile id="xlfshortcuts" filename="lib/xlfshortcuts.xml">
+				<![CDATA[<?xml version="1.0" encoding="UTF-8" ?>
+<shortcuts>
+	<!--              File Menu              -->
+	<function alt="no" cmd="no" ctrl="yes" key="O" method="file.open" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="F4" method="file.close" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="S" method="file.save" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="file.saveAs" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="file.properties" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="file.convert" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="file.reverse" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="file.split" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="file.merge" shift="no"/>
+	<function alt="yes" cmd="no" ctrl="no" key="F4" method="file.exit.windows" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="Q" method="file.exit.linux" shift="no"/>
+	<function alt="yes" cmd="no" ctrl="no" key="Q" method="file.exit.mac" shift="no"/>
+	<!--              Edit Menu              -->
+	<function alt="no" cmd="no" ctrl="yes" key="Z" method="edit.undo" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="F1" method="edit.store1" shift="yes"/>
+	<function alt="no" cmd="no" ctrl="yes" key="F2" method="edit.store2" shift="yes"/>
+	<function alt="no" cmd="no" ctrl="yes" key="F3" method="edit.store3" shift="yes"/>
+	<function alt="no" cmd="no" ctrl="yes" key="F4" method="edit.store4" shift="yes"/>
+	<function alt="no" cmd="no" ctrl="yes" key="F5" method="edit.store5" shift="yes"/>
+	<function alt="no" cmd="no" ctrl="no" key="F1" method="edit.retrieve1" shift="yes"/>
+	<function alt="no" cmd="no" ctrl="no" key="F2" method="edit.retrieve2" shift="yes"/>
+	<function alt="no" cmd="no" ctrl="no" key="F3" method="edit.retrieve3" shift="yes"/>
+	<function alt="no" cmd="no" ctrl="no" key="F4" method="edit.retrieve4" shift="yes"/>
+	<function alt="no" cmd="no" ctrl="no" key="F5" method="edit.retrieve5" shift="yes"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="edit.viewBuffers" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="M" method="edit.merge" shift="yes"/>
+	<function alt="no" cmd="no" ctrl="yes" key="N" method="edit.mergeNext" shift="yes"/>
+	<function alt="no" cmd="no" ctrl="yes" key="S" method="edit.split" shift="yes"/>
+	<function alt="no" cmd="no" ctrl="yes" key="F" method="edit.searchReplace" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="edit.editAdvSearch" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="Y" method="edit.concordance" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="T" method="edit.copysource" shift="no"/>
+	<function alt="yes" cmd="no" ctrl="yes" key="C" method="edit.togglecase" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="I" method="edit.insertTag" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="1" method="edit.insertTag1" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="2" method="edit.insertTag2" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="3" method="edit.insertTag3" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="4" method="edit.insertTag4" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="5" method="edit.insertTag5" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="6" method="edit.insertTag6" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="7" method="edit.insertTag7" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="8" method="edit.insertTag8" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="9" method="edit.insertTag9" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="0" method="edit.insertTag10" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="I" method="edit.nextTag" shift="yes"/>
+	<function alt="no" cmd="no" ctrl="yes" key="R" method="edit.removetags" shift="yes"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="edit.preference" shift="no"/>
+
+	<!--              Projects Menu             -->
+	<function alt="no" cmd="no" ctrl="no" key="" method="project.new" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="project.open" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="project.convert" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="project.reverse" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="project.merge" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="project.split" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="project.analysis" shift="no"/>
+	<!--              View Menu             -->
+	<function alt="no" cmd="no" ctrl="no" key="" method="view.toolbar" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="view.tmmatches" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="view.qtwindow" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="view.terms" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="view.workspace" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="F2" method="view.notes" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="K" method="view.tags" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="L" method="view.defaultSettings" shift="no"/>
+	<!--              Go To Menu              -->
+	<function alt="no" cmd="no" ctrl="yes" key="PgDn" method="goto.addTmGotoNext" shift="no"></function>
+	<function alt="no" cmd="no" ctrl="no" key="PgDn" method="goto.next" shift="no"></function>
+	<function alt="no" cmd="no" ctrl="no" key="PgUp" method="goto.previous" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="Home" method="goto.first" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="End" method="goto.last" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="G" method="goto.goto" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="PgDn" method="goto.nextMatch" shift="yes"/>
+	<function alt="no" cmd="no" ctrl="no" key="PgUp" method="goto.previousMatch" shift="yes"/>
+	<function alt="yes" cmd="no" ctrl="no" key="PgDn" method="goto.nextQT" shift="no"/>
+	<function alt="yes" cmd="no" ctrl="no" key="PgUp" method="goto.previousQT" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="goto.nextNote" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="goto.previousNote" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="N" method="goto.nextFuzzy" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="P" method="goto.previousFuzzy" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="U" method="goto.nextUntranslated" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="U" method="goto.previousUntranslated" shift="yes"/>
+	<function alt="no" cmd="no" ctrl="yes" key="J" method="goto.nextUnapproved" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="J" method="goto.previousUnapproved" shift="yes"/>
+	<!--              Options Menu
+	<function alt="no" cmd="no" ctrl="no" key="" method="options.english" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="options.polish" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="options.schinese" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="options.japanese" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="options.caseSensitiveSearch" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="options.donotApplyTMWhenMatch" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="options.automaticQT" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="options.autoqa" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="options.correctSpaces" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="options.autoCopy" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="options.contextSetting" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="options.minimumMatch" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="options.prefetchCacheSize" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="options.autosave" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="options.autoCheckUpdate" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="options.showChooseTMDialog" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="options.defaultViewers" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="options.languageCodes" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="options.shortcuts" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="options.font" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="options.defaultColors" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="options.defaultSpellChecker" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="options.aspell" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="options.internal" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="options.autoOOConversion" shift="no"/>
+	 -->
+
+	<!--              Tasks Menu              -->
+	<function alt="no" cmd="no" ctrl="no" key="" method="tasks.changeLanguages" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="tasks.applyTMCurrent" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="tasks.applyTM" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="R" method="tasks.quickTranslation" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="tasks.applyQT" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="W" method="tasks.addSegmentToTM" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="E" method="tasks.approveSegment" shift="no"/>
+	<function alt="yes" cmd="no" ctrl="no" key="A" method="tasks.acceptSuggestion" shift="no"/>
+	<function alt="yes" cmd="no" ctrl="no" key="A" method="tasks.acceptTextOnly" shift="yes"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="tasks.acceptQT" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="tasks.acceptQTtext" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="tasks.flagMatch" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="tasks.targetLength" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="F4" method="tasks.setUntranslatable" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="tasks.markRepetitions" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="tasks.allTranslatable" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="tasks.approveAll" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="tasks.unapproveAll" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="tasks.removeMatches" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="tasks.removeTranslations" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="tasks.acceptAll" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="tasks.acceptAndApprove" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="tasks.exportAsTMX" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="tasks.exportSources" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="tasks.exportTarget" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="tasks.exportAsHTML" shift="no"/>
+
+	<!--              Terminology Menu              -->
+	<function alt="no" cmd="no" ctrl="yes" key="A" method="terminology.addSelectionToTM" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="B" method="terminology.newEntryToTM" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="D" method="terminology.searchTerm" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="terminology.insertTerm" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="1" method="terminology.term1" shift="yes"/>
+	<function alt="no" cmd="no" ctrl="yes" key="2" method="terminology.term2" shift="yes"/>
+	<function alt="no" cmd="no" ctrl="yes" key="3" method="terminology.term3" shift="yes"/>
+	<function alt="no" cmd="no" ctrl="yes" key="4" method="terminology.term4" shift="yes"/>
+	<function alt="no" cmd="no" ctrl="yes" key="5" method="terminology.term5" shift="yes"/>
+	<function alt="no" cmd="no" ctrl="yes" key="6" method="terminology.term6" shift="yes"/>
+	<function alt="no" cmd="no" ctrl="yes" key="7" method="terminology.term7" shift="yes"/>
+	<function alt="no" cmd="no" ctrl="yes" key="8" method="terminology.term8" shift="yes"/>
+	<function alt="no" cmd="no" ctrl="yes" key="9" method="terminology.term9" shift="yes"/>
+	<function alt="no" cmd="no" ctrl="yes" key="0" method="terminology.term10" shift="yes"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="terminology.selectDatabases" shift="no"/>
+
+	<!--              Database Menu              -->
+	<function alt="no" cmd="no" ctrl="no" key="" method="database.create" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="database.browse" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="database.add" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="database.remove" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="database.importTMX" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="database.importCSV" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="database.exportDBasTMX" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="database.exportAllDBs" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="database.importTBX" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="database.exportDBasTBX" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="database.selectTM" shift="no"/>
+
+		<!--              QA Menu                   -->
+	<function alt="no" cmd="no" ctrl="no" key="F5" method="tasks.previewTranslation" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="tasks.bilingualView" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="F6" method="tasks.translationStatus" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="tasks.statusHistory" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="F7" method="tasks.tagAnalysis" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="F8" method="tasks.concordanceAnalysis" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="F9" method="tasks.spaceAnalysis" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="H" method="edit.spellcheck" shift="no"/>
+	<function alt="no" cmd="no" ctrl="yes" key="H" method="edit.spellcheckDoc" shift="yes"/>
+
+	<!--              Advanced Menu            -->
+	<function alt="no" cmd="no" ctrl="no" key="" method="advanced.catalog" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="advanced.xmlConverter" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="advanced.segmenter" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="advanced.matchconfig" shift="no"/>
+
+	<!--              Plugins Menu              -->
+	<function alt="no" cmd="no" ctrl="no" key="" method="plugins.configure" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="plugins.xsltTransformation" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="plugin.tbxmaker" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="plugin.csvconverter" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="plugin.martif2tbx" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="plugin.propviewer" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="plugin.rtfcleaner" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="plugin.tmx2txt" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="plugin.tmxvalidator" shift="no"/>
+
+	<!--              Help Menu              -->
+	<function alt="no" cmd="no" ctrl="no" key="F1" method="help.contents" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="help.gscontents" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="help.howto" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="help.license" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="help.updates" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="help.about" shift="no"/>
+</shortcuts>]]>
+			</configfile>
+			<configfile id="dictionaries" filename="dictionaries/dictionaries.xml">
+				<![CDATA[<?xml version="1.0" encoding="UTF-8" ?>
+				<dictionaries>
+				</dictionaries>]]>
+			</configfile>
+		</configfiles>
+	</product>
+	<product shortname="HSTE">
+		<tree>
+			<node id="SystemSetting" title="System Setting" icon="" classname="net.heartsome.preference.SystemSettingComposite">
+				<node id="LangCodesSetting" title="Language Codes Configuration" icon="" classname="net.heartsome.preference.LanguageCodesConfigurationComposite" />
+				<node id="DefaultViewersSetting" title="Default Viewers for Target Format" icon="" classname="net.heartsome.preference.DefaultViewersforTargetFormatComposite" />
+				<node id="DefaultColorSetting" title="Default Colors" icon="" classname="net.heartsome.preference.DefaultColorComposite" />
+				<node id="AspellDictionariesSetting" title="Aspell Dictionaries" icon="" classname="net.heartsome.preference.AspellDectionariesComposite" />
+				<node id="InternalDictionariesSetting" title="Internal Dictionaries" icon="" classname="net.heartsome.preference.InternalDictionaresComposite" />
+				<node id="ShortcutsSetting" title="Shortcuts Configuration" icon="" classname="net.heartsome.preference.ShortcutsSettingComposite" />
+			</node>
+			<node id="TMDBSetting" title="TM Database Setting" icon="" classname="net.heartsome.preference.TMSettingComposite" />
+		</tree>
+		<configfiles>
+		<configfile id="tmxplugin" filename="lib/tmxplugins.xml">
+				<![CDATA[<?xml version="1.0" encoding="UTF-8" ?>
+<plugins/>]]>
+			</configfile>
+			<configfile id="tmxeditcfg" filename="tmxedcfg.xml" relative="false" >
+				<![CDATA[<?xml version="1.0" encoding="UTF-8" ?>
+<preferences>
+</preferences>]]>
+			</configfile>
+			<configfile id="tmxshortcuts" filename="lib/tmxshortcuts.xml">
+				<![CDATA[<?xml version="1.0" encoding="UTF-8" ?>
+<shortcuts>
+	<!--          File Menu          -->
+	<function alt="no" ctrl="yes" key="N" method="file.new" shift="no"/>
+	<function alt="no" ctrl="yes" key="O" method="file.open" shift="no"/>
+	<function alt="no" ctrl="yes" key="F4" method="file.close" shift="no"/>
+	<function alt="no" ctrl="yes" key="S" method="file.save" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="file.saveAs" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="file.convertTmx2Csv" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="file.properties" shift="no"/>
+
+	<!--          Edit Menu          -->
+	<function alt="no" ctrl="yes" key="F" method="edit.searchReplace" shift="no"/>
+	<function alt="no" ctrl="yes" key="Y" method="edit.concordance" shift="no"/>
+	<function alt="no" ctrl="yes" key="H" method="edit.spellcheck" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="edit.togglecase" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="edit.preference" shift="no"/>
+
+	<!--          View Menu         -->
+	<function alt="no" ctrl="no" key="" method="view.toolbar" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="view.statusbar" shift="no"/>
+	<function alt="no" ctrl="yes" key="K" method="view.tags" shift="no"/>
+
+	<!--          Translation Units Menu         -->
+	<function alt="no" ctrl="yes" key="M" method="tu.mergeCells" shift="no"/>
+	<function alt="no" ctrl="yes" key="L" method="tu.splitCells" shift="no"/>
+	<function alt="no" ctrl="yes" key="R" method="tu.deleteRow" shift="no"/>
+	<function alt="no" ctrl="yes" key="R" method="tu.deleteCell" shift="yes"/>
+	<function alt="no" ctrl="yes" key="T" method="tu.removeTags" shift="no"/>
+	<function alt="no" ctrl="yes" key="I" method="tu.addCol" shift="no"/>
+	<function alt="no" ctrl="yes" key="I" method="tu.removeCol" shift="yes"/>
+	<function alt="no" ctrl="yes" key="E" method="tu.addRows" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="tu.changeLangs" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="tu.addRemoveFlag" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="tu.rowProps" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="tu.rowNotes" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="tu.addProp" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="tu.removeProp" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="tu.addNote" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="tu.removeNotes" shift="no"/>
+
+	<!--          Go To Menu          -->
+	<function alt="no" ctrl="yes" key="PgUp" method="goto.firstRow" shift="no"/>
+	<function alt="no" ctrl="yes" key="PgDn" method="goto.lastRow" shift="no"/>
+	<function alt="no" ctrl="yes" key="G" method="goto.goto" shift="no"/>
+
+	<!--          Options Menu
+	<function alt="no" ctrl="no" key="" method="options.font" shift="no"/>
+	<function alt="no" ctrl="yes" key="W" method="options.visibleCols" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="options.languageCodes" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="options.defaultViewers" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="options.defaultColors" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="options.idProps" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="options.autosave" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="options.autoCheckUpdate" shift="no"/>
+    -->
+
+	<!--          Tasks Menu          -->
+	<function alt="no" ctrl="no" key="" method="tasks.alignFiles" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="tasks.batchAlign" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="tasks.setSourceLang" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="tasks.generateTuIds" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="tasks.removeTags" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="tasks.removeEmptyTus" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="tasks.verifyTags" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="tasks.removeDups" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="tasks.removeSegDupCols" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="tasks.spaceAnalysis" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="tasks.reorganize" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="tasks.changeSeg" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="exportMultiTransRows" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="tasks.splitTmx" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="tasks.mergeTmx" shift="no"/>
+
+
+
+	<!--          Quik TM Menu          -->
+	<function alt="no" ctrl="yes" key="A" method="quicktm.addSelectionToTM" shift="no"/>
+	<function alt="no" ctrl="yes" key="B" method="quicktm.newEntryToTM" shift="no"/>
+	<function alt="no" ctrl="yes" key="D" method="quicktm.searchTerm" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="quicktm.caseSensitiveSearch" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="quicktm.importTBX" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="quicktm.exportDBasTBX" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="quicktm.selectDBforQT" shift="no"/>
+
+	<!--          Database Menu          -->
+	<function alt="no" ctrl="no" key="" method="database.create" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="database.browse" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="database.add" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="database.remove" shift="no"/>
+	<function alt="no" ctrl="no" key="F3" method="database.editTMX" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="database.importTMX" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="database.exportDBasTMX" shift="no"/>
+
+	<!--          Advance Menu           -->
+	<function alt="no" ctrl="no" key="" method="advanced.catalog" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="advanced.xmlConverter" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="advanced.segmenter" shift="no"/>
+
+	<!--          Plugins Menu          -->
+	<function alt="no" ctrl="no" key="" method="plugins.configure" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="plugins.xsltTransformation" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="plugin.csvconverter" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="plugin.tmx2txt" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="plugin.tmxvalidator" shift="no"/>
+
+	<!--          Help Menu          -->
+	<function alt="no" ctrl="no" key="F1" method="help.contents" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="help.gscontents" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="help.license" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="help.updates" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="help.about" shift="no"/>
+
+</shortcuts>]]>
+			</configfile>
+			<configfile id="dictionaries" filename="dictionaries/dictionaries.xml">
+				<![CDATA[<?xml version="1.0" encoding="UTF-8" ?>
+				<dictionaries>
+				</dictionaries>]]>
+			</configfile>
+		</configfiles>
+	</product>
+	<product shortname="HSDE">
+		<tree>
+			<node id="SystemSetting" title="System Setting" icon="" classname="net.heartsome.preference.SystemSettingComposite">
+				<node id="LangCodesSetting" title="Language Codes Configuration" icon="" classname="net.heartsome.preference.LanguageCodesConfigurationComposite" />
+				<node id="DefaultViewersSetting" title="Default Viewers for Target Format" icon="" classname="net.heartsome.preference.DefaultViewersforTargetFormatComposite" />
+				<node id="ShortcutsSetting" title="Shortcuts Configuration" icon="" classname="net.heartsome.preference.ShortcutsSettingComposite" />
+			</node>
+			<node id="TMDBSetting" title="TM Database Setting" icon="" classname="net.heartsome.preference.TMSettingComposite" />
+		</tree>
+		<configfiles>
+			<configfile id="tbxeditcfg" filename="tbxeditcfg.xml" relative="false" >
+				<![CDATA[<?xml version="1.0" encoding="UTF-8" ?>
+				<preferences>
+				</preferences>]]>
+			</configfile>
+			<configfile id="tbxplugin" filename="lib/tbxplugins.xml">
+				<![CDATA[<?xml version="1.0" encoding="UTF-8" ?>
+				<plugins/>]]>
+			</configfile>
+			<configfile id="tbxshortcuts" filename="lib/tbxshortcuts.xml">
+				<![CDATA[<?xml version="1.0" encoding="UTF-8" ?>
+<shortcuts>
+	<!--           File Menu           -->
+	<function alt="no" ctrl="yes" key="N" method="file.new" shift="no"/>
+	<function alt="no" ctrl="yes" key="O" method="file.open" shift="no"/>
+	<function alt="no" ctrl="yes" key="F4" method="file.close" shift="no"/>
+	<function alt="no" ctrl="yes" key="S" method="file.save" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="file.saveAs" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="file.properties" shift="no"/>
+
+	<!--           Edit Menu           -->
+	<function alt="no" ctrl="no" key="" method="options.templates" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="options.stopwords" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="edit.preference" shift="no"/>
+
+	<!--           Concepts Menu          -->
+	<function alt="no" ctrl="yes" key="T" method="concepts.addConcept" shift="no"/>
+	<function alt="no" ctrl="yes" key="T" method="concepts.removeConcept" shift="yes"/>
+	<function alt="no" ctrl="yes" key="I" method="concepts.addTrans" shift="no"/>
+	<function alt="no" ctrl="yes" key="I" method="concepts.removeTrans" shift="yes"/>
+	<function alt="no" ctrl="no" key="PgUp" method="concepts.prevConcept" shift="no"/>
+	<function alt="no" ctrl="no" key="PgDn" method="concepts.nextConcept" shift="no"/>
+	<function alt="no" ctrl="no" key="PgUp" method="concepts.prevTrans" shift="yes"/>
+	<function alt="no" ctrl="no" key="PgDn" method="concepts.nextTrans" shift="yes"/>
+
+	<function alt="no" ctrl="yes" key="F" method="concepts.searchReplace" shift="no"/>
+	<function alt="no" ctrl="yes" key="F" method="concepts.fuzzySearch" shift="yes"/>
+	<function alt="no" ctrl="yes" key="Y" method="concepts.concordanceSearch" shift="no"/>
+	<function alt="no" ctrl="yes" key="B" method="concepts.browse" shift="no"/>
+
+	<function alt="no" ctrl="yes" key="A" method="concepts.addConceptToDb" shift="no"/>
+	<function alt="no" ctrl="yes" key="D" method="concepts.quickSearch" shift="no"/>
+
+	<function alt="no" ctrl="no" key="" method="concepts.conceptProps" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="concepts.conceptNotes" shift="no"/>
+
+	<!--           Options Menu
+	<function alt="no" ctrl="no" key="" method="options.font" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="options.templates" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="options.stopwords" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="options.languageCodes" shift="no"/>
+	<function alt="no" cmd="no" ctrl="no" key="" method="options.autoCheckUpdate" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="options.defaultViewers" shift="no"/>
+	-->
+
+	<!--           Tasks Menu           -->
+	<function alt="no" ctrl="no" key="" method="tasks.extractTerms" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="tasks.tmxExtractTerms" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="tasks.viewHTML" shift="no"/>
+
+	<!--           Database Menu           -->
+	<function alt="no" ctrl="no" key="" method="database.create" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="database.browse" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="database.add" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="database.remove" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="database.importTBX" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="database.exportDBasTBX" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="database.importTMX" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="database.exportDBasTMX" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="database.select" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="database.exportAllDBs" shift="no"/>
+
+	<!--           Advanced Menu           -->
+	<function alt="no" ctrl="no" key="" method="advanced.catalog" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="advanced.xmlConverter" shift="no"/>
+    <function alt="no" ctrl="no" key="" method="advanced.xsltransformation" shift="no"/>
+
+	<!--           Plugins Menu           -->
+	<function alt="no" ctrl="no" key="" method="plugins.configure" shift="no"/>
+
+	<!--           Help Menu           -->
+	<function alt="no" ctrl="no" key="F1" method="help.contents" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="help.gscontents" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="help.license" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="help.updates" shift="no"/>
+	<function alt="no" ctrl="no" key="" method="help.about" shift="no"/>
+
+</shortcuts>]]>
+			</configfile>
+		</configfiles>
+	</product>
+</configuration>

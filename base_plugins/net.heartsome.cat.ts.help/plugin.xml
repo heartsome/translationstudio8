@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:help?after=help.license">
+         <command
+               commandId="net.heartsome.license.licensemanage"
+               label="%menu.licensemanage"
+               style="push">
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            categoryId="org.eclipse.ui.category.help"
+            defaultHandler="net.heartsome.license.handler.LicenseManageHandler"
+            id="net.heartsome.license.licensemanage"
+            name="%menu.licensemanage">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commandImages">
+      <image
+            commandId="net.heartsome.license.licensemanage"
+            icon="images/help/license.png">
+      </image>
+   </extension>
+</plugin>

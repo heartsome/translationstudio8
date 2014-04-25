@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome CAT Database MS SQL
+Bundle-SymbolicName: net.heartsome.cat.database.mssql
+Bundle-Version: 8.0.2.R8b_v20130722
+Bundle-Activator: net.heartsome.cat.database.mssql.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ net.heartsome.cat.database;bundle-version="1.0.0",
+ net.heartsome.cat.common.core;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ClassPath: lib/jtds-1.1.jar,
+ .
+Bundle-Vendor: Heartsome Technologies Ltd.
+

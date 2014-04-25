@@ -1,0 +1,475 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>处理不同的文件格式</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<meta content="DocBook XSL Stylesheets V1.75.2 / ZoeeyDoc http://zoeeydoc.googlecode.com " name="generator">
+<link rel="home" href="index.html" title="用户手册">
+<link rel="up" href="index.html" title="用户手册">
+<link rel="prev" href="ch07s05.html" title="5. 导入外部文件">
+<link rel="next" href="ch09.html" title="常见问题">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="chapter" title="处理不同的文件格式">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title">
+<a name="ch8-file-formats"></a>处理不同的文件格式</h2>
+</div>
+</div>
+</div>
+    
+
+    
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+        
+<p>
+<span class="emphasis"><em>Microsoft Office 2003 文件</em></span>
+</p>
+
+        
+<p>Microsoft Office 2003
+        及更早版本的文档为<span class="emphasis"><em>间接支持</em></span>的源文件类型，请先到 <a class="ulink" href="http://www.openoffice.org/" target="_top">www.openoffice.org</a>
+        网站免费下载、并安装 OpenOffice 程序，然后在<span class="guimenu">工具</span>菜单 &gt;
+        <span class="guimenuitem">选项</span> &gt; <span class="guimenuitem">翻译</span>中设置
+        OpenOffice 的安装路径（Windows 下默认为 ﻿<code class="filename">C:\Program
+        Files\OpenOffice.org
+        3\program\soffice.exe</code>）。此后就可以像其他直接支持的格式一样转换 Microsoft Office
+        2003 文档了，详细的转换步骤请参考：<a class="xref" href="ch05s03.html#convert-source-to-xliff" title="转换源文件为 XLIFF">&ldquo;转换源文件为 XLIFF&rdquo;一节</a>。</p>
+
+        
+<div class="figure">
+<a name="N229C5"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 153. 选项：翻译</b>
+</p>
+<div class="figure-contents">
+          
+
+          
+<div class="screenshot">
+            
+<div class="mediaobject" align="center">
+<img src="images/options-oo.png" align="middle" alt="选项：翻译"></div>
+          
+</div>
+        
+</div>
+</div>
+<br class="figure-break">
+      
+</li>
+<li class="listitem">
+        
+<p>
+<span class="emphasis"><em>Microsoft Office 2007/2010 文件</em></span>
+</p>
+
+        
+<p>HSTS 直接支持以 Microsoft Office 2007（包括 Word、Excel、PowerPoint
+        在内）及更新版本的文件作为源文件，详细的转换步骤请参考：<a class="xref" href="ch05s03.html#convert-source-to-xliff" title="转换源文件为 XLIFF">&ldquo;转换源文件为 XLIFF&rdquo;一节</a>。</p>
+
+        
+<p>对于 Microsoft Excel
+        2007/2010，还可以设置是否排除<span class="guilabel">红色字体单元格</span>：</p>
+
+        
+<div class="figure">
+<a name="N229EE"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 154. 选项：Excel 转换参数</b>
+</p>
+<div class="figure-contents">
+          
+
+          
+<div class="screenshot">
+            
+<div class="mediaobject" align="center">
+<img src="images/options-excel.png" align="middle" alt="选项：Excel 转换参数"></div>
+          
+</div>
+        
+</div>
+</div>
+<br class="figure-break">
+
+        
+<p>对于 Microsoft PowerPoint
+        2007/2010，也可以设置是否排除<span class="guilabel">备注</span>（目前暂未处理母版内容及图片路径）：</p>
+
+        
+<div class="figure">
+<a name="N22A0A"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 155. 选项：PowerPoint 转换参数</b>
+</p>
+<div class="figure-contents">
+          
+
+          
+<div class="screenshot">
+            
+<div class="mediaobject" align="center">
+<img src="images/options-ppt.png" align="middle" alt="选项：PowerPoint 转换参数"></div>
+          
+</div>
+        
+</div>
+</div>
+<br class="figure-break">
+      
+</li>
+<li class="listitem">
+        
+<p>
+<span class="emphasis"><em>TTX</em></span>
+</p>
+
+        
+<p>对于 Trados 2007 双语文档格式，HSTS 仅支持以<span class="emphasis"><em>预分割的 TTX</em></span>
+        为源文件，详细的转换步骤请参考：<a class="xref" href="ch05s03.html#convert-source-to-xliff" title="转换源文件为 XLIFF">&ldquo;转换源文件为 XLIFF&rdquo;一节</a>。</p>
+      
+</li>
+<li class="listitem">
+        
+<p>
+<span class="emphasis"><em>SDLXLIFF</em></span>
+</p>
+
+        
+<p>HSTS 直接支持以 SDL Trados 2009/2011 双语 XLIFF 文件为源文件，详细的转换步骤请参考：<a class="xref" href="ch05s03.html#convert-source-to-xliff" title="转换源文件为 XLIFF">&ldquo;转换源文件为 XLIFF&rdquo;一节</a>。</p>
+      
+</li>
+<li class="listitem">
+        
+<p>
+<span class="emphasis"><em>D&eacute;j&agrave; Vu XLIFF</em></span>
+</p>
+
+        
+<p>HSTS 直接支持以 D&eacute;j&agrave; Vu 导出的双语 XLIFF 文件为源文件，详细的转换步骤请参考：<a class="xref" href="ch05s03.html#convert-source-to-xliff" title="转换源文件为 XLIFF">&ldquo;转换源文件为 XLIFF&rdquo;一节</a>。</p>
+      
+</li>
+<li class="listitem">
+        
+<p>
+<span class="emphasis"><em>MemoQ XLIFF</em></span>
+</p>
+
+        
+<p>HSTS 直接支持以 MemoQ 的双语 XLIFF 文件为源文件，详细的转换步骤请参考：<a class="xref" href="ch05s03.html#convert-source-to-xliff" title="转换源文件为 XLIFF">&ldquo;转换源文件为 XLIFF&rdquo;一节</a>。</p>
+      
+</li>
+<li class="listitem">
+        
+<p>
+<span class="emphasis"><em>Wordfast Pro TXML</em></span>
+</p>
+
+        
+<p>HSTS 直接支持以 Wordfast Pro 的双语 TXML 文件为源文件，详细的转换步骤请参考：<a class="xref" href="ch05s03.html#convert-source-to-xliff" title="转换源文件为 XLIFF">&ldquo;转换源文件为 XLIFF&rdquo;一节</a>。</p>
+      
+</li>
+<li class="listitem">
+        
+<p>
+<span class="emphasis"><em>MIF</em></span>
+</p>
+
+        
+<p>HSTS 直接支持以 Adobe FrameMaker 7 及更新版本的 MIF 文件为源文件，详细的转换步骤请参考：<a class="xref" href="ch05s03.html#convert-source-to-xliff" title="转换源文件为 XLIFF">&ldquo;转换源文件为 XLIFF&rdquo;一节</a>。如果 FrameMaker 7 版本保存的 MIF 文件在使用
+        HSTS 转换或处理时出现了错误，请使用 FrameMaker 8 或 9 版本程序另存一次 MIF 文件，再用 HSTS
+        来处理。如果客户要求交稿的文件版本为 FrameMaker 7，则在翻译完成后再将目标文件另存为 FrameMaker 7 版本的 MIF
+        格式。</p>
+
+        
+<p>在<code class="interfacename">选项</code>中可以设置转换 MIF
+        文件时是否排除<span class="guilabel">母版</span>内容：</p>
+
+        
+<div class="figure">
+<a name="N22A7A"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 156. 选项：MIF 转换参数</b>
+</p>
+<div class="figure-contents">
+          
+
+          
+<div class="screenshot">
+            
+<div class="mediaobject" align="center">
+<img src="images/options-framemaker.png" align="middle" alt="选项：MIF 转换参数"></div>
+          
+</div>
+        
+</div>
+</div>
+<br class="figure-break">
+      
+</li>
+<li class="listitem">
+        
+<p>
+<span class="emphasis"><em>IDML</em></span>
+</p>
+
+        
+<p>HSTS 直接支持以 Adobe InDesign CS 5.0.1 及更新版本的 IDML
+        文件为源文件，详细的转换步骤请参考：<a class="xref" href="ch05s03.html#convert-source-to-xliff" title="转换源文件为 XLIFF">&ldquo;转换源文件为 XLIFF&rdquo;一节</a>。</p>
+      
+</li>
+<li class="listitem">
+        
+<p>
+<span class="emphasis"><em>RTF</em></span>
+</p>
+
+        
+<p>HSTS 直接支持以 RTF 为源文件，详细的转换步骤请参考：<a class="xref" href="ch05s03.html#convert-source-to-xliff" title="转换源文件为 XLIFF">&ldquo;转换源文件为 XLIFF&rdquo;一节</a>。</p>
+      
+</li>
+<li class="listitem">
+        
+<p>
+<span class="emphasis"><em>HTML</em></span>
+</p>
+
+        
+<p>HSTS 直接支持以 HTML 为源文件，详细的转换步骤请参考：<a class="xref" href="ch05s03.html#convert-source-to-xliff" title="转换源文件为 XLIFF">&ldquo;转换源文件为 XLIFF&rdquo;一节</a>。</p>
+      
+</li>
+<li class="listitem">
+        
+<p>
+<span class="emphasis"><em>XML</em></span>
+</p>
+
+        
+<p>HSTS 直接支持以 XML 为源文件，详细的转换步骤请参考：<a class="xref" href="ch05s03.html#convert-source-to-xliff" title="转换源文件为 XLIFF">&ldquo;转换源文件为 XLIFF&rdquo;一节</a>。</p>
+
+        
+<div class="itemizedlist">
+<a name="configure-xml-converter"></a>
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+            
+<p>
+<span class="emphasis"><em>配置 XML 转换器</em></span>
+</p>
+
+            
+<p>对于特定的 XML
+            文件，在<span class="quote">&ldquo;<span class="quote">专业版</span>&rdquo;</span>及<span class="quote">&ldquo;<span class="quote">旗舰版</span>&rdquo;</span>中可以定义其每个节点和属性值应如何处理，具体如下：</p>
+
+            
+<div class="orderedlist">
+<ol class="orderedlist" type="a">
+<li class="listitem">
+                
+<p>点击<span class="guimenu">高级</span>菜单 &gt; <span class="guimenuitem">配置 XML
+                转换器</span>；</p>
+
+                
+<div class="figure">
+<a name="N22AE3"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 157. 配置 XML 转换器</b>
+</p>
+<div class="figure-contents">
+                  
+
+                  
+<div class="screenshot">
+                    
+<div class="mediaobject" align="center">
+<img src="images/config-xml-converter-1-1.png" align="middle" alt="配置 XML 转换器"></div>
+                  
+</div>
+                
+</div>
+</div>
+<br class="figure-break">
+              
+</li>
+<li class="listitem">
+                
+<p>点击<span class="guibutton">分析 XML 文件样本</span>按钮，选择要分析的 XML
+                文件；</p>
+<div class="figure">
+<a name="N22B01"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 158. XML 转换器配置对话框</b>
+</p>
+<div class="figure-contents">
+                    
+
+                    
+<div class="screenshot">
+                      
+<div class="mediaobject" align="center">
+<img src="images/config-xml-converter-1-2.png" align="middle" alt="XML 转换器配置对话框"></div>
+                    
+</div>
+                  
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>根据需要，对分析后的结果进行配置：</p>
+<div class="figure">
+<a name="N22B1C"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 159. 配置 XML 元素</b>
+</p>
+<div class="figure-contents">
+                    
+
+                    
+<div class="screenshot">
+                      
+<div class="mediaobject" align="center">
+<img src="images/config-xml-converter-2-1.png" align="middle" alt="配置 XML 元素"></div>
+                    
+</div>
+                  
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>选择要配置的元素，点击<span class="guibutton">编辑</span>按钮，可以设置如下内容：</p>
+
+                
+<div class="figure">
+<a name="N22B3B"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 160. 元素配置</b>
+</p>
+<div class="figure-contents">
+                  
+
+                  
+<div class="screenshot">
+                    
+<div class="mediaobject" align="center">
+<img src="images/config-xml-converter-2-2.png" align="middle" alt="元素配置"></div>
+                  
+</div>
+                
+</div>
+</div>
+<br class="figure-break">
+
+                
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                    
+<p>
+<span class="guilabel">元素名称</span>
+</p>
+                  
+</li>
+<li class="listitem">
+                    
+<p>
+<span class="guilabel">元素类型</span>
+</p>
+
+                    
+<div class="itemizedlist">
+<ul class="itemizedlist" type="square">
+<li class="listitem">
+                        
+<p>
+<span class="guilabel">segment</span>
+</p>
+
+                        
+<p>提取为文本段</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>
+<span class="guilabel">inline</span>
+</p>
+
+                        
+<p>提取为内部标记</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>
+<span class="guilabel">ignore</span>
+</p>
+
+                        
+<p>忽略</p>
+                      
+</li>
+</ul>
+</div>
+                  
+</li>
+<li class="listitem">
+                    
+<p>
+<span class="guilabel">内联类型</span>
+</p>
+
+                    
+<p>仅元素类型为<span class="quote">&ldquo;<span class="quote">inline</span>&rdquo;</span>时可定义此项，可选内容包括：<span class="guilabel">image</span>、<span class="guilabel">pb</span>、<span class="guilabel">lb</span>、<span class="guilabel">x-bold</span>、<span class="guilabel">x-entry</span>、<span class="guilabel">x-font</span>、<span class="guilabel">x-italic</span>、<span class="guilabel">x-link</span>、<span class="guilabel">x-underlined</span>、<span class="guilabel">x-other</span>
+</p>
+                  
+</li>
+<li class="listitem">
+                    
+<p>
+<span class="guilabel">可翻译属性</span>
+</p>
+
+                    
+<p>该元素中需要提取出来翻译的属性名称</p>
+                  
+</li>
+<li class="listitem">
+                    
+<p>
+<span class="guilabel">保留空格</span>
+</p>
+                  
+</li>
+</ul>
+</div>
+              
+</li>
+</ol>
+</div>
+          
+</li>
+</ul>
+</div>
+      
+</li>
+</ol>
+</div>
+  
+</div>
+</body>
+</html>

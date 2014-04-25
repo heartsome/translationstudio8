@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter version="5.0" xml:id="quickstart" xml:lang="zh-CN"
+         xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xi="http://www.w3.org/2001/XInclude"
+         xmlns:svg="http://www.w3.org/2000/svg"
+         xmlns:m="http://www.w3.org/1998/Math/MathML"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:db="http://docbook.org/ns/docbook">
+  <title>快速入门<indexterm>
+      <primary>quickstart</primary>
+    </indexterm></title>
+
+  <para>ZoeeyDoc.Jar 运行参数说明<indexterm>
+      <primary>help</primary>
+    </indexterm></para>
+
+  <variablelist>
+    <varlistentry>
+      <term>-h/--help</term>
+
+      <listitem>
+        <para>打印帮助文档</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>-c/--clean</term>
+
+      <listitem>
+        <para>清理缓存文件。</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>-t/--type</term>
+
+      <listitem>
+        <para>转换目标类型（chm,html,single/singlehtml），默认为 html。</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>-b/--book</term>
+
+      <listitem>
+        <para>文档目录。 "config.kv" 为配置文件。</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>下面举几个简单的例子。</para>
+
+  <example>
+    <title>示例</title>
+
+    <programlisting># 获取帮助
+java -jar ZoeeyDoc.jar -h
+
+# 生成 html
+java -jar ZoeeyDoc.jar -b docs/books/zoeeydoc -t html
+
+
+# 生成 single html
+java -jar ZoeeyDoc.jar -b docs/books/zoeeydoc -t single
+
+
+# 生成 chm （需要指定hhc目录）
+java -jar ZoeeyDoc.jar -b docs/books/zoeeydoc -t chm</programlisting>
+  </example>
+
+  <para>以生成ZoeeyDoc的使用手册为例，在第一次运行时：</para>
+
+  <example>
+    <title>生成zoeeydoc.chm</title>
+
+    <programlisting>d:\dist&gt;java -jar ZoeeyDoc.jar -t chm -b docs/books/zoeeydoc
+
+-----------------------------------
+生成类型：Chm
+拷贝文件：
+来源：d:\dist\docs\books\zoeeydoc\images
+目标：d:\dist\docs\target\zoeeydoc\chm\images
+拷贝文件：
+来源：d:\dist\docs\books\zoeeydoc\css\html
+目标：d:\dist\docs\target\zoeeydoc\chm\css
+Cannot find CatalogManager.properties
+file:/d:/dist/docs/zips/cache/docbook-xsl/common/utility.xsl
+; 行号189; 列号16; Note: namesp. cut : stripped namespace before processing
+      ZoeeyDoc
+file:/d:/dist/docs/zips/cache/docbook-xsl/common/utility.xsl
+; 行号189; 列号16; Note: namesp. cut : processing stripped document
+      ZoeeyDoc
+file:/d:/dist/docs/zips/cache/docbook-xsl/html/chunker.xsl;
+行号98; 列号18; Writing task.list.html for preface(task.list)
+file:/d:/dist/docs/zips/cache/docbook-xsl/html/chunker.xsl;
+行号98; 列号18; Writing index.html for book
+file:/d:/dist/docs/zips/cache/docbook-xsl/html/chunker.xsl;
+行号98; 列号18; Writing htmlhelp.hhp
+file:/d:/dist/docs/zips/cache/docbook-xsl/html/chunker.xsl;
+行号98; 列号18; Writing toc.hhc
+file:/d:/dist/docs/zips/cache/docbook-xsl/html/chunker.xsl;
+行号98; 列号18; Writing index.hhk
+-----------------------------------
+编译CHM：
+d:\dist\docs\target\zoeeydoc\chm\htmlhelp.hhp
+编译完成。
+-----------------------------------
+zoeeydoc.chm 校验码生成完毕：
+checksum
+md5:710179fccb5941a68face3e3191a3ca7
+sha1:9a057b91347979d2f57db66a2a6ccde452f09023
+-----------------------------------</programlisting>
+  </example>
+</chapter>

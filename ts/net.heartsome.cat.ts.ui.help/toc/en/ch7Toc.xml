@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="7. Collaborating with teams" topic="html/en/ch07.html">
+	<topic label="7.1. Sharing databases" href="html/en/ch07.html#ch7s1-db-sharing" />
+	<topic label="7.2. Export Project" href="html/en/ch07s02.html" >
+		<topic label="7.2.1. Passing the different stages of the process between team members" href="html/en/ch07s02.html#ch7s2a" />
+		<topic label="7.2.2. Assign project" href="html/en/ch07s02.html#ch7s2b" />
+	</topic>
+	<topic label="7.3. Import Project" href="html/en/ch07s03.html" >
+		<topic label="7.3.1. Passing the different stages of the process between team members" href="html/en/ch07s03.html#ch7s3a" />
+		<topic label="7.3.2. Integrate and update" href="html/en/ch07s03.html#summarizing-update-project" />
+	</topic>
+	<topic label="7.4. External proofreading" href="html/en/ch07s04.html" />
+</toc>
+

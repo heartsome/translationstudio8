@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ini-file PUBLIC "-//HEARTSOME//Converters 2.0.0//EN" "configuration.dtd" >
+<ini-file><tag hard-break="segment">p</tag>
+<tag ctype="x-other" hard-break="inline">c</tag>
+<tag hard-break="segment">br</tag>
+<tag hard-break="segment">pbr</tag>
+<tag hard-break="segment">cbr</tag>
+</ini-file>

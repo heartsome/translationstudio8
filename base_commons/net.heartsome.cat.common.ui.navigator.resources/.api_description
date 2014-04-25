@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component name="org.eclipse.ui.navigator.resources_3.4.300.I20110421-1800" version="1.2">
+    <plugin id="org.eclipse.ui.navigator.resources_3.4.300.I20110421-1800"/>
+    <package name="org.eclipse.ui.navigator.resources" visibility="1">
+        <type name="ProjectExplorer" restrictions="0">
+            <method name="getFrameToolTipText" restrictions="8" signature="(Ljava/lang/Object;)Ljava/lang/String;"/>
+            <method name="getRootMode" restrictions="8" signature="()I"/>
+            <method name="getWorkingSetLabel" restrictions="8" signature="()Ljava/lang/String;"/>
+            <method name="setRootMode" restrictions="8" signature="(I)V"/>
+            <method name="setWorkingSetLabel" restrictions="8" signature="(Ljava/lang/String;)V"/>
+            <method name="updateTitle" restrictions="8" signature="()V"/>
+        </type>
+        <type name="ResourceDragAdapterAssistant" restrictions="2"/>
+    </package>
+</component>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book version="5.0" xml:lang="zh_CN" xmlns="http://docbook.org/ns/docbook"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      xmlns:svg="http://www.w3.org/2000/svg"
+      xmlns:m="http://www.w3.org/1998/Math/MathML"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:db="http://docbook.org/ns/docbook">
+  <info>
+    <title>ZoeeyDoc 用户手册</title>
+
+    <author>
+      <personname>zoeey.org@gmail.com</personname>
+    </author>
+
+    <pubdate>2011-03-04</pubdate>
+
+    <productname></productname>
+
+    <legalnotice>
+      <para></para>
+    </legalnotice>
+  </info>
+
+  <preface xml:id="task.list">
+    <title>项目介绍</title>
+
+    <para>ZoeeyDoc是一个docbook文档构建工具，支持 single-html、html、chm、pdf
+    等格式导出。对中文支持良好。</para>
+
+    <simplesect>
+      <title>优点</title>
+
+      <variablelist>
+        <varlistentry>
+          <term>纯文本格式</term>
+
+          <listitem>
+            <para>基于xml，纯文本格式方便版本控制。章节可分为独立的文件和目录进行编辑。</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>多格式发布</term>
+
+          <listitem>
+            <para>经过一次书写便可以输出html、chm、pdf等众多格式，极大的方便了阅读。</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>排版格式</term>
+
+          <listitem>
+            <para>排版格式精良。docbook与专业排版工具TeX实力相当。常用来制作出版发行物、专业论文、软件手册等。</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>格式规范</term>
+
+          <listitem>
+            <para>纯xml格式，有众多编辑工具，格式规范便于自动检验。</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>中文支持</term>
+
+          <listitem>
+            <para>良好的中文支持自动引用系统字体生成pdf所需的字体描述文件。</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>自动化支持</term>
+
+          <listitem>
+            <para>采用纯命令行形式，可方便的加入到各类自动构建工具中。</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>人工服务</term>
+
+          <listitem>
+            <para>本地化，中文在线问题疑难解答。</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>其他</term>
+
+          <listitem>
+            <para>生成single-html、html等格式会自动打包为zip文件。且zip、pdf、chm等文件会自动生成checksum
+            校验文件。</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </simplesect>
+
+    <simplesect>
+      <title>示例项目 </title>
+
+      <para><link
+      xlink:href="http://code.google.com/p/cnphpdocs/">http://code.google.com/p/cnphpdocs/
+      </link>【含文档源码、各格式下载】</para>
+
+      <para><link
+      xlink:href="http://code.google.com/p/yafphp/">http://code.google.com/p/yafphp/
+      </link>【含文档源码】</para>
+    </simplesect>
+  </preface>
+
+  <xi:include href="quickstart.xml" xpointer="element(/1)" />
+
+  <xi:include href="manual.xml" xpointer="element(/1)" />
+</book>

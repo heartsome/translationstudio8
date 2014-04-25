@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+     <menuContribution
+    	locationURI="menu:net.heartsome.cat.ts.menu.translation?after=net.heartsome.cat.ts.ui.xliffeditor.nattable.separator7">
+         <command
+              commandId="net.heartsome.cat.ts.ui.xliffeditor.nattable.command.ExecuteFuzzyTranslation"
+              label="%menu.translation.FuzzyTranslation"
+              style="push">
+         </command>
+     </menuContribution>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            id="net.heartsome.cat.ts.ui.category.translation"
+            name="%category.translation">
+      </category>
+		<command
+			categoryId="net.heartsome.cat.ts.ui.category.translation"
+			id="net.heartsome.cat.ts.ui.xliffeditor.nattable.command.ExecuteFuzzyTranslation"
+			name="%command.FuzzyTranslation">
+		</command>   
+	</extension>
+   
+   <extension
+         point="org.eclipse.ui.handlers">
+     <handler
+        class="net.heartsome.cat.ts.fuzzytranslation.handler.ExecuteFuzzyTranslationHandler"
+        commandId="net.heartsome.cat.ts.ui.xliffeditor.nattable.command.ExecuteFuzzyTranslation">
+	     <activeWhen>
+	        <with
+	              variable="activeEditor">
+	           <instanceof
+	                 value="net.heartsome.cat.ts.ui.xliffeditor.nattable.editor.XLIFFEditorImplWithNatTable">
+	           </instanceof>
+	        </with>
+	     </activeWhen>
+     </handler>
+   </extension>
+   
+   
+   <extension
+         point="org.eclipse.ui.bindings">
+       <key
+             commandId="net.heartsome.cat.ts.ui.xliffeditor.nattable.command.ExecuteFuzzyTranslation"
+             contextId="org.eclipse.ui.contexts.window"
+             schemeId="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+             sequence="F8">
+       </key>
+   </extension>
+   
+   <extension
+          point="org.eclipse.ui.commandImages">
+	   <image
+	         commandId="net.heartsome.cat.ts.ui.xliffeditor.nattable.command.ExecuteFuzzyTranslation"
+	         icon="images/multi_trans.png">
+	   </image>
+   </extension>
+
+</plugin>

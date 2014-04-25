@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="6. Maintenance and management of TMs and termbases" topic="html/en/ch06.html">
+	<topic label="6.1. Update Translation Memory" href="html/en/ch06.html#update-tm" />
+	<topic label="6.2. Translation Memory Management" href="html/en/ch06s02.html" >
+		<topic label="6.2.1. Create" href="html/en/ch06s02.html#ch6s2a" />
+		<topic label="6.2.2. Delete" href="html/en/ch06s02.html#ch6s2b" />
+	</topic>
+	<topic label="6.3. Export TM as TMX" href="html/en/ch06s03.html" />
+	<topic label="6.4. Termbase Management" href="html/en/ch06s04.html" />
+	<topic label="6.5. Export TM as TBX" href="html/en/ch06s05.html" />
+</toc>

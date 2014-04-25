@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="net.heartsome.cat.ts.edition_personal.feature"
+      label="Heartsome Translation Studio Personal"
+      version="8.3.0.20131121"
+      provider-name="Heartsome Technologies Ltd.">
+
+   <description url="http://www.heartsome.net/">
+      [-en-]
+New Features:
+1. New Web online search function.
+2. EXCEL and TXT files can now be directly imported into TMs.
+3. New method for splitting files, split files by your specified word count.
+4. New TMX export functions from HSXLIFF or projects.
+5. New Trados Unclean file export and import functions from and to HSXLIFF files.
+6. New file counter that displays the number of files of each folder of a project.
+------------------------------------
+Improvements:
+1. Match panel and match differences are now clearer and more intuitive.
+2. QA view and QA report are now more intuitive.
+3. Improved text segment status icons and tips display.
+------------------------------------
+Fixes:
+1. Fixed unusual behavior while maximizing or minimizing the editor.
+2. Fixed problem with some terms in the source text not being highlighted.
+[-zh-]
+新功能：
+1、新增“WEB 在线搜索”功能；
+2、新增向记忆库直接导入 EXCEL 和 TXT 文件；
+3、增加 HSXLIFF 文件分割点设置的新方式——按预设字数设置分割点；
+4、增加由项目或 HSXLIFF 文件直接导出 TMX 记忆库内容；
+5、增加由项目或 HSXLIFF 文件导出 Trados Unclean 文件格式以及由 Trados Unclean 更新 HSXLIFF 的功能；
+6、在项目文件夹上增加了文件个数的显示；
+------------------------------------
+改进：
+1、调整了匹配视图和匹配差异的显示方式，更加直观明了；
+2、调整了 QA 视图和 QA 报告的显示格式，更具可操作性，对比更加直观；
+3、调整了文本段状态图标的 Tip 显示方式。
+------------------------------------
+修复：
+1、修复了因软件最大化或最小化等操作，导致文本内容在编辑器中显示异常的问题；
+2、修复了部分术语在原文中没有高亮显示的问题。
+   </description>
+
+   <copyright url="http://www.heartsome.net/">
+      Copyright © Heartsome Technologies Ltd. All rights reserved.
+版权所有 © 瀚特盛科技有限公司 保留所有权利
+   </copyright>
+
+   <license url="http://www.heartsome.net/">
+      Please refer to Heartsome Software End User License Agreement (EULA).
+请参考 Heartsome 软件最终用户许可协议。
+   </license>
+
+   <includes
+         id="net.heartsome.cat.ts.edition_lite.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="net.heartsome.cat.converter.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="net.heartsome.cat.database.feature"
+         version="0.0.0"/>
+
+   <plugin
+         id="net.heartsome.cat.ts.pretranslation"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.cat.ts.ui.qa"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.cat.ts.quicktranslation"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.cat.ts.importproject"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.cat.ts.jumpsegment"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.heartsome.cat.ts.machinetranslation"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

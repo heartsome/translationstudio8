@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbtype>
+	<!-- 参数配置 -->
+	<driver>net.sourceforge.jtds.jdbc.Driver</driver>
+	<url>jdbc:jtds:sqlserver://__SERVER_NAME__:__PORT_NUMBER__/__DATABASE_NAME__
+	</url>
+	<default>
+		<property name="server">localhost</property>
+		<property name="type">MsSQL2005</property>
+		<property name="port">1433</property>
+	</default>
+	<config-property>
+		<property name="user">__USER__</property>
+		<property name="password">__PASSWORD__</property>		
+	</config-property>
+	<create-hssysdb>CREATE DATABASE __DATABASE_NAME__</create-hssysdb>
+	
+	<!-- 系统库匹配 -->	
+	<create-hssystables>
+		<step>
+			CREATE TABLE HSCATSYSDB
+			(
+			   DBNAME               varchar(150) not null,
+			   QUALITY              char(1) not null,
+			   USERS                nvarchar(4000),
+			   TYPE				    int not null,			  
+			   primary key (DBNAME)
+			)
+		</step>
+	</create-hssystables>
+	<insert-db>INSERT INTO HSCATSYSDB (DBNAME,QUALITY,TYPE) VALUES (?,?,?)</insert-db>
+	<remove-db>DELETE FROM HSCATSYSDB WHERE DBNAME=?</remove-db>
+	<get-dblist>SELECT DBNAME, QUALITY, USERS FROM HSCATSYSDB WHERE TYPE=?</get-dblist>
+
+	<!-- 记忆库／术语库表结构匹配 -->
+	<create-tables>
+		<!-- 创建TMX部分相关的表 -->
+		<step>
+		CREATE TABLE MHEADER
+		(
+			MHPKID               int IDENTITY(1,1) not null,
+			CREATIONTOOL         varchar(200),
+			CTVERSION            varchar(200),
+			TMF                  varchar(255),
+			SRCLANG              varchar(6),
+			ADMINLANG            varchar(6),
+			DATATYPE             varchar(10),
+			SEGTYPE              varchar(10),
+			CREATIONID           varchar(40),
+			CREATIONDATE         varchar(28),
+			CHANGEID             varchar(40),
+			CHANGEDATE           varchar(28),
+			ENCODING             varchar(15),
+			primary key (MHPKID)
+		)
+		</step>
+		<step>
+		CREATE TABLE MHEADERNODE
+		(
+			MHNPKID              int IDENTITY(1,1) not null,
+			MHPKID               int not null,
+			NNAME                varchar(100) not null,
+			NTYPE                char(1) not null,
+			CONTENT              varchar(max) not null,
+			primary key (MHNPKID)
+		)
+		</step>
+		<step>
+		create table MTU
+		(
+		   MTUPKID              int IDENTITY(1,1) not null,
+		   MHPKID               int not null,
+		   TUID                 varchar(100),
+		   CREATIONID           varchar(40),
+		   CREATIONDATE         datetime,
+		   CHANGEID             varchar(40),
+		   CHANGEDATE           datetime,
+		   CREATIONTOOL         varchar(200),
+		   CTVERSION            varchar(200),
+		   CLIENT               varchar(255),
+		   PROJECTREF           varchar(255),
+		   JOBREF               varchar(255),
+		   primary key (MTUPKID)
+		)
+		</step>
+		<step>
+		CREATE TABLE LANG
+		(
+		   LANGCODE             varchar(6) not null,
+		   primary key (LANGCODE)
+		)
+		</step>
+		<step>
+		CREATE TABLE MPROP
+		(
+		   MPPKID               int IDENTITY(1,1) not null,
+		   PARENTNAME           varchar(30) not null,
+		   PARENTID             int not null,
+		   PNAME                varchar(100) not null,
+		   LANG                 varchar(6),
+		   ENCODING             varchar(15),
+		   CONTENT              nvarchar(max) not null,
+		   primary key (MPPKID)
+		)
+		</step>
+
+		<step>
+		CREATE TABLE MEXTRA
+		(
+		   MEPKID               int IDENTITY(1,1) not null,
+		   PARENTNAME           varchar(30) not null,
+		   PARENTID             int not null,
+		   NTYPE                char(1) not null,
+		   NNAME                varchar(100) not null,
+		   CONTENT              nvarchar(max) not null,
+		   primary key (MEPKID)
+		)
+		</step>
+		<step>
+		CREATE TABLE MNOTE
+		(
+		   MNPKID               int IDENTITY(1,1) not null,
+		   PARENTNAME           varchar(30) not null,
+		   PARENTID             int not null,
+		   CONTENT              nvarchar(max) not null,
+		   CREATIONID           varchar(40),
+		   CREATIONDATE         varchar(28),
+		   CHANGEID             varchar(40),
+		   CHANGEDATE           varchar(28),
+		   ENCODING             varchar(15),
+		   LANG                 varchar(6),
+		   primary key (MNPKID)
+		)
+		</step>
+		<step>
+		CREATE TABLE TEXTDATA
+		(
+		   TPKID                int IDENTITY(1,1) not null,
+		   TYPE                 char(1) not null,
+		   GROUPID              int not null,
+		   HASH                 int not null,
+		   PURE                 nvarchar(max) not null,
+		   CONTENT              nvarchar(max) not null,
+		   LANG                 varchar(6) not null,
+		   PRECONTEXT           varchar(100),
+		   NEXTCONTEXT          varchar(100),
+		   primary key (TPKID)
+		)
+		</step>
+		<!-- 创建TMX相关表结束 -->
+		
+		<!-- 创建TBX相关表 存储TBX共用TEXTDATA表，参考E-R模型-->
+		<step>
+		create table BATTRIBUTE
+		(
+			BAPKID               int IDENTITY(1,1) not null,
+			BMTHPKID             int not null,
+			ANAME                varchar(100) not null,
+			AVALUE               varchar(255) not null,
+			PARENTNAME           varchar(100) not null,
+			primary key (BAPKID)
+		)
+		</step>
+		<step>
+		create table BMARTIFHEADER
+		(
+			BMTHPKID             int IDENTITY(1,1) not null,
+			HID                  varchar(100),
+			CONTENT              nvarchar(max) not null,
+			primary key (BMTHPKID)
+		)
+		</step>
+		<step>
+		create table BREFOBJECTLIST
+		(
+		   BROLPKID             int IDENTITY(1,1) not null,
+		   BMTHPKID             int not null,
+		   ROLID                varchar(100),
+		   CONTENT              varchar(max) not null,
+		   primary key (BROLPKID)
+		)
+		</step>
+		<step>
+		create table BTERMENTRY
+		(
+		   BTEPKID              int IDENTITY(1,1) not null,
+		   BMTHPKID             int not null,
+		   CID                  varchar(100),
+		   CONTENT              varchar(max) not null,
+		   primary key (BTEPKID)
+		)
+		</step>	
+		<step>
+		create table BNODE
+		(
+		   NPKID                int IDENTITY(1,1) not null,
+		   PARENTPKID           int not null,
+		   PARENTNAME           varchar(100) not null,
+		   NTYPE                char not null,
+		   NNAME                varchar(100) not null,
+		   NID                  varchar(100),
+		   CONTENT              varchar(max) not null,
+		   primary key (NPKID)
+		)
+		</step>	
+		
+		<!-- 创建正则表达式函数 -->
+		<step>
+		CREATE FUNCTION dbo.find_regular_expression
+(
+  @source nvarchar(max),   <!-- 需要匹配的源字符串 -->
+  @regexp nvarchar(1000),  <!-- 正则表达式 -->
+  @ignorecase bit = 0  <!-- 是否区分大小写，默认为false -->
+)
+RETURNS bit  <!-- 返回结果0-false，1-true -->
+AS
+BEGIN
+
+<!-- 0（成功）或非零数字（失败），是由 OLE 自动化对象返回的 HRESULT 的整数值。 -->
+  DECLARE @hr integer 
+
+<!-- 用于保存返回的对象令牌，以便之后对该对象进行操作 -->
+  DECLARE @objRegExp integer   DECLARE @objMatches integer
+
+<!--保存结果 -->
+  DECLARE @results bit
+  
+<!-- 
+创建 OLE 对象实例,只有 sysadmin 固定服务器角色的成员才能执行 sp_OACreate,并确定机器中有VBScript.RegExp类库
+ -->
+  EXEC @hr = sp_OACreate 'VBScript.RegExp', @objRegExp OUTPUT
+  IF @hr &lt;&gt; 0 BEGIN
+   SET @results = 0
+   RETURN @results
+  END
+
+  EXEC @hr = sp_OASetProperty @objRegExp, 'Pattern', @regexp
+  IF @hr &lt;&gt; 0 BEGIN
+   SET @results = 0
+   RETURN @results
+  END
+  EXEC @hr = sp_OASetProperty @objRegExp, 'Global', false
+  IF @hr &lt;&gt; 0 BEGIN
+   SET @results = 0
+   RETURN @results
+  END
+  EXEC @hr = sp_OASetProperty @objRegExp, 'IgnoreCase', @ignorecase
+  IF @hr &lt;&gt; 0 BEGIN
+   SET @results = 0
+   RETURN @results
+  END 
+<!-- 调用对象方法 -->
+  EXEC @hr = sp_OAMethod @objRegExp, 'Test', @results OUTPUT, @source
+  IF @hr &lt;&gt; 0 BEGIN
+   SET @results = 0
+   RETURN @results
+  END
+<!-- 释放已创建的 OLE 对象 -->
+  EXEC @hr = sp_OADestroy @objRegExp
+  IF @hr &lt;&gt; 0 BEGIN
+   SET @results = 0
+   RETURN @results
+  END
+RETURN @results
+END
+		</step>
+	</create-tables>
+
+	<!-- 创建索引 -->
+	<create-index>
+		<step>CREATE INDEX IDX_TEXTDATA_GROUPID ON TEXTDATA (GROUPID)</step>
+		<step>CREATE INDEX IDX_TEXTDATA_HASH ON TEXTDATA (HASH)</step>
+		<step>CREATE INDEX IDX_MPROP_PARENTID ON MPROP (PARENTID)</step>
+		<step>CREATE INDEX IDX_MEXTRA_PARENTID ON MEXTRA (PARENTID)</step>
+		<step>CREATE INDEX IDX_MNOTE_PARENTID ON MNOTE (PARENTID)</step>
+	</create-index>
+
+	<!-- Matrix_Lang表相关SQL	 -->
+	<matrix-operation>
+		<create-table>
+			<step>
+			create table MATRIX___LANG__
+				(
+				   MPKID                int IDENTITY(1,1) not null,
+				   TPKID                int not null,
+				   NGRAM                int not null,
+				   SEGSIZE              smallint not null,
+				   primary key (MPKID)				  
+				)
+			</step>
+		</create-table>
+		
+		<create-index>
+			<step>CREATE INDEX IDX___LANG___NGRAM_SEGSIZE ON MATRIX___LANG__ (NGRAM,SEGSIZE)</step>
+		</create-index>
+		
+		<insert>
+			INSERT INTO MATRIX___LANG__
+			(TPKID,NGRAM,SEGSIZE)
+			VALUES (?,?,?)
+		</insert>
+		<delete>
+			DELETE FROM MATRIX___LANG__
+			WHERE __WHERE__
+		</delete>
+		<search>
+			SELECT TPKID FROM MATRIX___LANG__ 
+			WHERE  SEGSIZE &gt;=? AND SEGSIZE &lt;=? AND NGRAM IN (__SET__)
+		</search>
+		<search-1>
+			SELECT 
+			    TPKID
+			  FROM
+			    MATRIX_ENUS 
+			  WHERE SEGSIZE &gt;=? AND SEGSIZE &lt;=? AND NGRAM IN (__SET__)
+			  GROUP BY TPKID HAVING COUNT(TPKID) BETWEEN ? AND ?
+		</search-1>
+	</matrix-operation>
+	
+	<!-- 操作数据库相关SQL -->
+	<operate-db>
+		<getTMMatch1>
+			SELECT B.GROUPID, LANG, PURE, CONTENT, PRECONTEXT,NEXTCONTEXT, TUID, CREATIONID, CREATIONDATE, 
+				CHANGEID, CHANGEDATE, PROJECTREF, JOBREF, CLIENT 
+			FROM 	
+				(SELECT GROUPID FROM TEXTDATA WHERE TPKID IN (__SET__)) A	
+			LEFT JOIN TEXTDATA B ON A.GROUPID = B.GROUPID 
+			LEFT JOIN MTU C ON C.MTUPKID=A.GROUPID 
+			WHERE B.TYPE='M' AND B.LANG=? OR B.LANG=? 
+		</getTMMatch1>
+		<!--<search-Corcondance>
+		 相关搜索
+		SELECT TOP __MAX__ * FROM (SELECT TOP __MAX__ C.MTUPKID TUID,C.CLIENT,C.PROJECTREF,C.JOBREF,C.CREATIONID,C.CREATIONDATE, C.CHANGEID, C.CHANGEDATE,D.MPPKID,B.LANG,__IGNORE_MARK__ 
+FROM (SELECT GROUPID FROM TEXTDATA WHERE TYPE = 'M' __CONDITION__) A 
+LEFT JOIN TEXTDATA B ON A.GROUPID = B.GROUPID AND B.TYPE='M' __LANGUAGE_LIST__
+LEFT JOIN MTU C ON A.GROUPID = C.MTUPKID 
+LEFT JOIN MPROP D ON A.GROUPID = D.PARENTID AND D.PARENTNAME = 'TU' AND D.PNAME = 'x-flag' AND D.CONTENT = 'HS-Flag' 
+ORDER BY C.CHANGEDATE DESC,B.GROUPID) B
+		</search-Corcondance> -->
+		<getTerm>
+			SELECT A.TPKID, A.PURE, B.PURE, C.CONTENT FROM TEXTDATA A 
+				LEFT JOIN TEXTDATA  B ON A.GROUPID=B.GROUPID  AND B.LANG=? AND B.TYPE='B' 
+				LEFT JOIN BNODE C ON A.GROUPID = C.PARENTPKID AND C.PARENTNAME = 'termEntry' 
+				AND C.NTYPE = 'E' AND C.NNAME = 'note' AND (C.NID = ? OR C.NID = ?) 
+				WHERE A.TYPE='B' AND  A.LANG=? AND PATINDEX(STUFF('%%',2,0,CAST(A.PURE AS NVARCHAR(4000))),?) &gt; 0 
+				AND B.PURE IS NOT NULL
+		</getTerm>
+	</operate-db>
+</dbtype>

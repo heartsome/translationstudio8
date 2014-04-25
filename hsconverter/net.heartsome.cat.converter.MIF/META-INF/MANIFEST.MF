@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome CAT Converter MIF
+Bundle-SymbolicName: net.heartsome.cat.converter.MIF;singleton:=true
+Bundle-Version: 8.0.4.R8b_v20130609
+Bundle-Activator: net.heartsome.cat.converter.mif.Activator
+Require-Bundle: org.junit4;resolution:=optional,
+ net.heartsome.cat.converter;bundle-version="1.0.0",
+ org.eclipse.jface;bundle-version="3.7.0",
+ org.eclipse.ui.workbench;bundle-version="3.7.0",
+ net.heartsome.cat.common.ui;bundle-version="1.0.0",
+ org.eclipse.ui;bundle-version="3.7.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Import-Package: org.eclipse.core.runtime;version="3.4.0",
+ org.eclipse.core.runtime.preferences,
+ org.osgi.framework;version="1.5.0"
+Bundle-Localization: plugin
+Bundle-Vendor: Heartsome Technologies Ltd.

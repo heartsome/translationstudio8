@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="6. 记忆库和术语库的维护和管理" topic="html/zh/ch06.html">
+	<topic label="6.1. 更新记忆库" href="html/zh/ch06.html#update-tm" />
+	<topic label="6.2. 记忆库管理" href="html/zh/ch06s02.html" >
+		<topic label="6.2.1. 创建" href="html/zh/ch06s02.html#ch6s2a" />
+		<topic label="6.2.2. 删除" href="html/zh/ch06s02.html#ch6s2b" />
+	</topic>
+	<topic label="6.3. 将记忆库导出为 TMX" href="html/zh/ch06s03.html" />
+	<topic label="6.4. 术语库管理" href="html/zh/ch06s04.html" />
+	<topic label="6.5. 将术语库导出为 TBX" href="html/zh/ch06s05.html" />
+</toc>

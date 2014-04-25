@@ -1,0 +1,2278 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>3. 译前准备</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<meta content="DocBook XSL Stylesheets V1.75.2 / ZoeeyDoc http://zoeeydoc.googlecode.com " name="generator">
+<link rel="home" href="index.html" title="用户手册">
+<link rel="up" href="ch05.html" title="工作流程">
+<link rel="prev" href="ch05s02.html" title="2. 创建项目">
+<link rel="next" href="ch05s04.html" title="4. 翻译">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="sect1" title="3. 译前准备">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title" style="clear: both">
+<a name="preparation-of-translation"></a>3. 译前准备</h2>
+</div>
+</div>
+</div>
+      
+
+      
+<p>在开始进行真正的翻译工作之前，还需要做如下准备工作，以达到事半功倍的效果：</p>
+
+      
+<div class="sect2" title="新建记忆库向导">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="create-tm-wizard"></a>新建记忆库向导</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>为了更好地利用 CAT
+        的辅助翻译特性，推荐每个用户在完成翻译项目的过程中使用记忆库。如果在创建项目时没有创建或添加记忆库，在创建完成后还可以通过<span class="guimenu">文件</span>菜单或右键菜单
+        &gt; <span class="guisubmenu">新建</span> &gt;
+        <span class="guimenuitem">记忆库</span>来打开<code class="interfacename">新建记忆库向导</code>。</p>
+
+        
+<div class="sect3" title="记忆库基本信息">
+<div class="titlepage">
+<div>
+<div>
+<h4 class="title">
+<a name="N20CD8"></a>记忆库基本信息</h4>
+</div>
+</div>
+</div>
+          
+
+          
+<div class="figure">
+<a name="N20CDE"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 39. 新建记忆库：记忆库信息</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/create-tm-1-basic-info.png" align="middle" alt="新建记忆库：记忆库信息"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+
+          
+<p>新建记忆库向导的第一步，需要选择创建的记忆库类型，选择不同的数据库类型，需要输入的基本信息也有所不同，具体分别如下：</p>
+
+          
+<div class="sect4" title="文件型记忆库">
+<div class="titlepage">
+<div>
+<div>
+<h5 class="title">
+<a name="N20CF7"></a>文件型记忆库</h5>
+</div>
+</div>
+</div>
+            
+
+            
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                
+<p>
+<span class="guilabel">路径</span>
+</p>
+
+                
+<p>保存 <span class="type">.hstm</span> 记忆库文件的目录。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">名称</span>
+</p>
+
+                
+<p>记忆库的名称。</p>
+              
+</li>
+</ul>
+</div>
+          
+</div>
+
+          
+<div class="sect4" title="MS SQL Server">
+<div class="titlepage">
+<div>
+<div>
+<h5 class="title">
+<a name="N20D17"></a>MS SQL Server</h5>
+</div>
+</div>
+</div>
+            
+
+            
+<div class="tip" title="提示" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">提示</h3>
+              
+<p>以下信息可能需要请相关的 IT 管理人员协助提供，或参考相应数据库服务器软件的用户文档。</p>
+            
+</div>
+
+            
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                
+<p>
+<span class="guilabel">地址</span>
+</p>
+
+                
+<p>MS SQL Server 数据库服务器的主机名、域名或 IP 地址。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">端口</span>
+</p>
+
+                
+<p>MS SQL Server 数据库服务器的访问端口，默认情况下为 1433。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">用户名</span>
+</p>
+
+                
+<p>访问 MS SQL Server 数据库服务器的用户名，需要有创建数据库的权限。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">密码</span>
+</p>
+
+                
+<p>与用户名对应的密码。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">名称</span>
+</p>
+
+                
+<p>记忆库的名称。</p>
+              
+</li>
+</ul>
+</div>
+          
+</div>
+
+          
+<div class="sect4" title="MySQL">
+<div class="titlepage">
+<div>
+<div>
+<h5 class="title">
+<a name="N20D58"></a>MySQL</h5>
+</div>
+</div>
+</div>
+            
+
+            
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                
+<p>
+<span class="guilabel">地址</span>
+</p>
+
+                
+<p>MySQL 数据库服务器的主机名、域名或 IP 地址。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">端口</span>
+</p>
+
+                
+<p>MySQL 数据库服务器的访问端口，默认情况下为 3306。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">用户名</span>
+</p>
+
+                
+<p>访问 MySQL 数据库服务器的用户名，需要有创建数据库的权限。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">密码</span>
+</p>
+
+                
+<p>与用户名对应的密码。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">名称</span>
+</p>
+
+                
+<p>记忆库的名称。</p>
+              
+</li>
+</ul>
+</div>
+          
+</div>
+
+          
+<div class="sect4" title="Oracle">
+<div class="titlepage">
+<div>
+<div>
+<h5 class="title">
+<a name="N20D93"></a>Oracle</h5>
+</div>
+</div>
+</div>
+            
+
+            
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                
+<p>
+<span class="guilabel">地址</span>
+</p>
+
+                
+<p>Oracle 数据库服务器的主机名、域名或 IP 地址。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">端口</span>
+</p>
+
+                
+<p>Oracle 数据库服务器的访问端口，默认情况下为 1521。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">实例</span>
+</p>
+
+                
+<p>Oracle 数据库服务器的实例。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">用户名</span>
+</p>
+
+                
+<p>访问 Oracle 数据库服务器的用户名，需要有创建数据库的权限。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">密码</span>
+</p>
+
+                
+<p>与用户名对应的密码。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">名称</span>
+</p>
+
+                
+<p>记忆库的名称。</p>
+              
+</li>
+</ul>
+</div>
+          
+</div>
+
+          
+<div class="sect4" title="PostgreSQL">
+<div class="titlepage">
+<div>
+<div>
+<h5 class="title">
+<a name="N20DD8"></a>PostgreSQL</h5>
+</div>
+</div>
+</div>
+            
+
+            
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                
+<p>
+<span class="guilabel">地址</span>
+</p>
+
+                
+<p>PostgreSQL 数据库服务器的主机名、域名或 IP 地址。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">端口</span>
+</p>
+
+                
+<p>PostgreSQL 数据库服务器的访问端口，默认情况下为 5432。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">用户名</span>
+</p>
+
+                
+<p>访问 PostgreSQL 数据库服务器的用户名，需要有创建数据库的权限。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">密码</span>
+</p>
+
+                
+<p>与用户名对应的密码。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">名称</span>
+</p>
+
+                
+<p>记忆库的名称。</p>
+              
+</li>
+</ul>
+</div>
+          
+</div>
+
+          
+<div class="sect4" title="Internal DB">
+<div class="titlepage">
+<div>
+<div>
+<h5 class="title">
+<a name="N20E13"></a>Internal DB</h5>
+</div>
+</div>
+</div>
+            
+
+            
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                
+<p>
+<span class="guilabel">路径</span>
+</p>
+
+                
+<p>保存记忆库的目录。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">名称</span>
+</p>
+
+                
+<p>记忆库的名称。</p>
+              
+</li>
+</ul>
+</div>
+
+            
+<div class="note" title="注意" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+              
+<p>对于上述所有类型的数据库，在同一台数据库服务器（路径、服务器＋端口、服务器＋端口＋实例）上，分别都允许创建多个记忆库/术语库。</p>
+            
+</div>
+          
+</div>
+        
+</div>
+
+        
+<div class="sect3" title="导入 TMX/TXT/EXCEL 文件">
+<div class="titlepage">
+<div>
+<div>
+<h4 class="title">
+<a name="create-tm-wizard-import-tmx"></a>导入 TMX/TXT/EXCEL 文件</h4>
+</div>
+</div>
+</div>
+          
+
+          
+<div class="figure">
+<a name="N20E3D"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 40. 新建记忆库：导入 TMX/TXT/EXCEL 文件</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/create-tm-2-import-tmx.png" align="middle" alt="新建记忆库：导入 TMX/TXT/EXCEL 文件"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+
+          
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+              
+<p>TMX文件</p>
+
+              
+<p>符合TMX 1.4版本及以下标准的TMX文件均可导入。</p>
+            
+</li>
+<li class="listitem">
+              
+<p>TXT文件</p>
+
+              
+<p>支持多语言的TXT文件导入。文件第一行应为&ldquo;语言代码&rdquo;，第一列默认为源语言。要求列之间以&ldquo;TAB&rdquo;键隔开。如下图：</p>
+
+              
+<div class="figure">
+<a name="N20E66"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 41. 支持导入的 TXT 文件格式</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="mediaobject" align="center">
+<img src="images/import_txt_into_tm.png" align="middle" alt="支持导入的 TXT 文件格式"></div>
+              
+</div>
+</div>
+<br class="figure-break">
+            
+</li>
+<li class="listitem">
+              
+<p>EXCEL文件</p>
+
+              
+<p>同样支持多语言的EXCEL文件导入。文件第一行应为&ldquo;语言代码&rdquo;，第一列默认为源语言。多语之间按列排列。如下图：</p>
+
+              
+<div class="figure">
+<a name="N20E82"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 42. 支持导入的 EXCEL 文件格式</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="mediaobject" align="center">
+<img src="images/import_excel_into_tm.png" align="middle" alt="支持导入的 EXCEL 文件格式"></div>
+              
+</div>
+</div>
+<br class="figure-break">
+            
+</li>
+</ul>
+</div>
+
+          
+<p>在新建记忆库向导的第二步，可以选择将 TMX
+          文件导入到新创建的记忆库中。点击<span class="guibutton">选项</span>按钮，设置重复项的处理策略。</p>
+
+          
+<div class="figure">
+<a name="N20E9D"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 43. 选项：记忆库 重复项处理</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/create-tm-3-import-option.png" align="middle" alt="选项：记忆库 重复项处理"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+
+          
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+              
+<p>重复项处理</p>
+
+              
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">新增</span>
+</p>
+
+                  
+<p>导入速度最快，适用于库中已有的内容与当前导入的 TMX
+                  内容之间无重复项、或需要保留所有重复项的情况。</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">覆盖</span>
+</p>
+
+                  
+<p>导入速度较慢，适用于当前导入的 TMX 内容比库中的内容更新的情况。</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">忽略</span>
+</p>
+
+                  
+<p>导入速度中等，适用于库中的内容比当前导入的 TMX 内容更新的情况。</p>
+                
+</li>
+</ul>
+</div>
+            
+</li>
+</ul>
+</div>
+        
+</div>
+      
+</div>
+
+      
+<div class="sect2" title="新建术语库向导">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="create-tb-wizard"></a>新建术语库向导</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<div class="sect3" title="术语库基本信息">
+<div class="titlepage">
+<div>
+<div>
+<h4 class="title">
+<a name="N20EE5"></a>术语库基本信息</h4>
+</div>
+</div>
+</div>
+          
+
+          
+<div class="figure">
+<a name="N20EEA"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 44. 新建术语库：基本信息</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/create-tb-1-basic-info.png" align="middle" alt="新建术语库：基本信息"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+
+          
+<p>和创建记忆库一样，新建术语库向导的第一步也是选择术语库类型，具体每种数据库类型需要输入的信息，请参考<a class="xref" href="ch05s03.html#create-tm-wizard" title="新建记忆库向导">&ldquo;新建记忆库向导&rdquo;一节</a>。文件型术语库的扩展名为 <span class="type">.hstb</span>。</p>
+        
+</div>
+
+        
+<div class="sect3" title="导入 TBX 文件">
+<div class="titlepage">
+<div>
+<div>
+<h4 class="title">
+<a name="create-tb-wizard-import-tbx"></a>导入 TBX 文件</h4>
+</div>
+</div>
+</div>
+          
+
+          
+<div class="figure">
+<a name="N20F11"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 45. 新建术语库：导入 TBX 文件</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/create-tb-2-import-tbx.png" align="middle" alt="新建术语库：导入 TBX 文件"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+
+          
+<p>在新建术语库向导的第二步，也和记忆库一样可以选择将 TBX
+          文件导入到新创建的术语库中。点击<span class="guibutton">选项</span>按钮，设置重复术语的处理策略。</p>
+
+          
+<div class="figure">
+<a name="N20F2D"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 46. 选项：术语库 重复项处理</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/create-tb-3-import-option.png" align="middle" alt="选项：术语库 重复项处理"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+
+          
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+              
+<p>重复项处理</p>
+
+              
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">新增</span>
+</p>
+
+                  
+<p>导入速度最快，适用于库中已有的内容与当前导入的 TBX
+                  内容之间无重复项、或需要保留所有重复项的情况。</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">覆盖</span>
+</p>
+
+                  
+<p>导入速度较慢，适用于当前导入的 TBX 内容比库中的内容更新的情况。</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">合并</span>
+</p>
+
+                  
+<p>导入速度较慢，适用于当前导入的 TBX 内容与库中的内容需要同时保留的情况。</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">忽略</span>
+</p>
+
+                  
+<p>导入速度中等，适用于库中的内容比当前导入的 TBX 内容更新的情况。</p>
+                
+</li>
+</ul>
+</div>
+            
+</li>
+</ul>
+</div>
+        
+</div>
+      
+</div>
+
+      
+<div class="sect2" title="添加源文件">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="add-source-files-drag-and-drop"></a>添加源文件</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>若在创建项目时跳过了添加源文件的步骤，或未添加完全，可以在创建项目后直接将源文件（一个或多个文件或文件夹）从操作系统的文件管理器中直接拖放到项目视图中该项目的<span class="quote">&ldquo;<span class="quote">Source</span>&rdquo;</span>文件夹中。若拖放的是文件夹，则其中的所有子文件夹结构也将被保留。拖放文件夹的操作过程请见下图：</p>
+
+        
+<div class="figure">
+<a name="N20F85"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 47. 拖放文件夹</b>
+</p>
+<div class="figure-contents">
+          
+
+          
+<div class="screenshot">
+            
+<div class="mediaobject" align="center">
+<img src="images/drag-and-drop-file.png" align="middle" alt="拖放文件夹"></div>
+          
+</div>
+        
+</div>
+</div>
+<br class="figure-break">
+
+        
+<p>除了拖放，在操作系统的文件管理器中直接复制（快捷键
+        <span class="keycap"><strong>Ctrl</strong></span>/<span class="keycap"><strong>Command</strong></span> + <span class="keycap"><strong>C</strong></span>
+        或右键菜单复制均可）一个或多个文件或文件夹，然后在项目视图中选择该项目的<span class="quote">&ldquo;<span class="quote">Source</span>&rdquo;</span>文件夹，使用快捷键
+        <span class="keycap"><strong>Ctrl</strong></span>/<span class="keycap"><strong>Command</strong></span>+<span class="keycap"><strong>V</strong></span>
+        或<span class="guimenu">编辑</span>菜单 &gt;
+        <span class="guimenuitem">粘贴</span>，也可以实现添加源文件的操作。</p>
+
+        
+<p>若要删除源文件，则可以在选中一个或多个文件/文件夹后，点击<span class="guimenu">编辑</span>菜单 &gt;
+        <span class="guimenuitem">删除</span>，或直接按键盘上的 <span class="keycap"><strong>Delete</strong></span>
+        键来删除。</p>
+      
+</div>
+
+      
+<div class="sect2" title="转换源文件为 XLIFF">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="convert-source-to-xliff"></a>转换源文件为 XLIFF</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>由于 HSTS 只能直接编辑 XLIFF 文件，所以所有非 XLIFF 格式的源文件都需要转换为 XLIFF 之后才能使用
+        HSTS 来翻译。如果在创建项目的最后一步，添加了源文件并选择了<span class="guilabel">转换源文件为
+        XLIFF</span>，则自动进入此步骤；否则，请展开项目目录，选择<span class="quote">&ldquo;<span class="quote">Source</span>&rdquo;</span>目录或其中的一个或多个文件/文件夹，然后在右键菜单或<span class="guimenu">文件</span>菜单中选择<span class="guimenuitem">转换为
+        XLIFF 文件</span>。</p>
+
+        
+<div class="figure">
+<a name="N20FDB"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 48. 转换源文件为 XLIFF</b>
+</p>
+<div class="figure-contents">
+          
+
+          
+<div class="screenshot">
+            
+<div class="mediaobject" align="center">
+<img src="images/convert-source-to-xliff-1.png" align="middle" alt="转换源文件为 XLIFF"></div>
+          
+</div>
+        
+</div>
+</div>
+<br class="figure-break">
+
+        
+<p>在<code class="interfacename">转换源文件为 XLIFF</code>
+        对话框中，有如下参数可供设置：</p>
+<div class="figure">
+<a name="N20FF6"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 49. 转换源文件为 XLIFF 对话框</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/convert-source-to-xliff-2.png" align="middle" alt="转换源文件为 XLIFF 对话框"></div>
+            
+</div>
+          
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+
+        
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+            
+<p>文件属性</p>
+
+            
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                
+<p>
+<span class="guilabel">格式</span>
+</p>
+
+                
+<p>源文件的格式类型。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">编码</span>
+</p>
+
+                
+<p>源文件的内容编码。</p>
+              
+</li>
+</ul>
+</div>
+          
+</li>
+<li class="listitem">
+            
+<p>转换选项</p>
+
+            
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                
+<p>
+<span class="guilabel">覆盖同名文件</span>
+</p>
+
+                
+<p>默认情况下，HSTS 不会覆盖已存在的文件。若待生成的 XLIFF
+                文件已经存在，则只有选择覆盖才可以继续转换。请在选择此项前确认将被覆盖的文件中不包含有用的内容，或已将其备份。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">预翻译</span>
+</p>
+
+                
+<p>对转换后生成的 XLIFF 文件进行预翻译，为后面的翻译提供便利。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">目标语言</span>
+</p>
+
+                
+<p>可以一次性将源文件转换为多个目标语言的 XLIFF 文件，在这里通过
+                <span class="keycap"><strong>Ctrl</strong></span>/<span class="keycap"><strong>Shift</strong></span> 加鼠标左键选择。</p>
+              
+</li>
+</ul>
+</div>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="guilabel">分段规则</span>
+</p>
+
+            
+<p>SRX
+            分段规则文件定义了如何将一段话拆分为句子，用户可以选择不同的分段规则以适应某些特定客户、语言或文件的分段要求。对分段规则的定制可参考&ldquo;<a class="link" href="ch09.html#segmentation-rule-manager">配置分段规则</a>&rdquo;。</p>
+          
+</li>
+</ul>
+</div>
+      
+</div>
+
+      
+<div class="sect2" title="锁定重复文本段">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="lock-repetition"></a>锁定重复文本段</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>在一个项目中，相同的句子（文本段）可能会出现多次。为使这些重复文本段有一致的译文、同时节省处理重复文本段的时间，推荐的做法是：先将重复文本段锁定，再在翻译完成后统一用繁殖翻译功能，为重复文本段应用一个译文。</p>
+
+        
+<p>HSTS
+        提供了方便的自动锁定重复文本段功能，该功能会保留重复文本段中的第一个为未锁定状态，而只锁定第二次及之后出现的重复文本段，方便在其第一次出现时进行翻译。具体操作步骤如下：</p>
+
+        
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+            
+<p>选择项目<span class="quote">&ldquo;<span class="quote">XLIFF</span>&rdquo;</span>目录中的一个或多个文件或文件夹，从右键菜单或<span class="guimenu">翻译</span>菜单中选择<span class="guimenuitem">锁定重复文本段</span>。</p>
+<div class="figure">
+<a name="N21083"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 50. 锁定重复文本段</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="screenshot">
+                  
+<div class="mediaobject" align="center">
+<img src="images/lock-repetition-1.png" align="middle" alt="锁定重复文本段"></div>
+                
+</div>
+              
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+          
+</li>
+<li class="listitem">
+            
+<p>弹出<code class="interfacename">锁定重复文本段</code>对话框，其中会列出刚才选中的所有
+            XLIFF 文件，选择要锁定的重复文本段类型：</p>
+<div class="figure">
+<a name="N210A1"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 51. 锁定重复文本段对话框</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="screenshot">
+                  
+<div class="mediaobject" align="center">
+<img src="images/lock-repetition-2.png" align="middle" alt="锁定重复文本段对话框"></div>
+                
+</div>
+              
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+
+            
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                
+<p>
+<span class="guilabel">内部重复</span>
+</p>
+
+                
+<p>在同一个文件中及选中的文件之间，源文相同的文本段。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">完全匹配</span>
+</p>
+
+                
+<p>有记忆库 100% 匹配的文本段。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">上下文匹配</span>
+</p>
+
+                
+<p>有记忆库 101% 匹配的文本段。</p>
+              
+</li>
+</ul>
+</div>
+          
+</li>
+<li class="listitem">
+            
+<p>点击<span class="guibutton">确定</span>按钮，开始锁定重复文本段，完成后会显示提示。</p>
+          
+</li>
+</ol>
+</div>
+      
+</div>
+
+      
+<div class="sect2" title="预翻译">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="pre-translation"></a>预翻译</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>预翻译可以一次性为选中的 XLIFF 中所有文本段添加 TM
+        匹配，使基于匹配的相关功能更加准确地判断，如字数分析、编辑器文本段过滤器中的<span class="quote">&ldquo;<span class="quote">重复文本段</span>&rdquo;</span>。预翻译的使用步骤如下：</p>
+
+        
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+            
+<p>在使用基于记忆库的预翻译之前，应至少为项目设置一个记忆库，且其内容非空（通过导入 TMX
+            或已翻译文本段入库添加了匹配）。</p>
+<div class="figure">
+<a name="N210F6"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 52. 打开项目设置</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="screenshot">
+                  
+<div class="mediaobject" align="center">
+<img src="images/pre-translate-1-tm-1.png" align="middle" alt="打开项目设置"></div>
+                
+</div>
+              
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+
+            
+<div class="figure">
+<a name="project-setting-tm"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 53. 项目设置：记忆库</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/pre-translate-1-tm-2.png" align="middle" alt="项目设置：记忆库"></div>
+              
+</div>
+            
+</div>
+</div>
+<br class="figure-break">
+          
+</li>
+<li class="listitem">
+            
+<p>选择项目<span class="quote">&ldquo;<span class="quote">XLIFF</span>&rdquo;</span>目录中的一个或多个文件或文件夹，从右键菜单或<span class="guimenu">翻译</span>菜单中选择<span class="guimenuitem">预翻译</span>。</p>
+<div class="figure">
+<a name="N21131"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 54. 预翻译</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="screenshot">
+                  
+<div class="mediaobject" align="center">
+<img src="images/pre-translate-2-1.png" align="middle" alt="预翻译"></div>
+                
+</div>
+              
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+          
+</li>
+<li class="listitem">
+            
+<p>在<code class="interfacename">预翻译</code>对话框中，将列出刚才选中的所有 XLIFF
+            文件。可以为预翻译设置如下选项：</p>
+
+            
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                
+<p>预翻译选项：</p>
+
+                
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                    
+<p>
+<span class="guilabel">最低匹配率</span>
+</p>
+                  
+</li>
+<li class="listitem">
+                    
+<p>
+<span class="guilabel">忽略大小写</span>
+</p>
+                  
+</li>
+<li class="listitem">
+                    
+<p>
+<span class="guilabel">忽略标记</span>
+</p>
+
+                    
+<div class="itemizedlist">
+<ul class="itemizedlist" type="square">
+<li class="listitem">
+                        
+<p>
+<span class="guilabel">标记不一致罚分</span>
+</p>
+                      
+</li>
+</ul>
+</div>
+
+                    
+<p>如果未勾选<span class="bold"><strong>忽略标记</strong></span>，&ldquo;标记不一致罚分&rdquo;复选框将被激活。</p>
+                  
+</li>
+</ul>
+</div>
+              
+</li>
+<li class="listitem">
+                
+<p>锁定如下文本段：</p>
+
+                
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                    
+<p>
+<span class="guilabel">完全匹配</span>
+</p>
+                  
+</li>
+<li class="listitem">
+                    
+<p>
+<span class="guilabel">上下文匹配</span>
+</p>
+                  
+</li>
+</ul>
+</div>
+              
+</li>
+<li class="listitem">
+                
+<p>覆盖现有译文：</p>
+
+                
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                    
+<p>
+<span class="guilabel">不覆盖</span>
+</p>
+                  
+</li>
+<li class="listitem">
+                    
+<p>
+<span class="guilabel">仅匹配率更高时覆盖</span>
+</p>
+                  
+</li>
+<li class="listitem">
+                    
+<p>
+<span class="guilabel">始终覆盖</span>
+</p>
+                  
+</li>
+</ul>
+</div>
+              
+</li>
+</ul>
+</div>
+
+            
+<div class="figure">
+<a name="N211B7"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 55. 预翻译对话框</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/pre-translate-2-2.png" align="middle" alt="预翻译对话框"></div>
+              
+</div>
+            
+</div>
+</div>
+<br class="figure-break">
+          
+</li>
+<li class="listitem">
+            
+<p>点击<span class="guibutton">确定</span>按钮，开始预翻译。视所选择的 XLIFF
+            中的文本段多少、及是否预存机器翻译，可能需要等待一段时间才能完成。预翻译完成后，显示如下结果对话框。</p>
+
+            
+<div class="figure">
+<a name="N211D6"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 56. 预翻译结果</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/pre-translate-4-result.png" align="middle" alt="预翻译结果"></div>
+              
+</div>
+            
+</div>
+</div>
+<br class="figure-break">
+          
+</li>
+</ol>
+</div>
+      
+</div>
+
+      
+<div class="sect2" title="预存机器翻译">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="prestore-mt"></a>预存机器翻译</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>将机器翻译结果预存到 XLIFF 中，相对于在查看 XLIFF
+        时实时从机器翻译引擎获取翻译来说，主要有如下两大好处：一、避免重复地访问机器翻译引擎，而造成不必要的重复流量费用，特别是在多人协作完成一个大项目的时候；二、大幅提高查看
+        XLIFF 内容时的速度，因为机器翻译结果直接从本地 XLIFF 文件中读取，毫无因网络延迟带来的迟滞感。</p>
+
+        
+<p>为 XLIFF 预存机器翻译的步骤如下：</p>
+
+        
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+            
+<p>在<span class="guimenu">工具</span> &gt; <span class="guimenuitem">选项</span>
+            &gt; <span class="guimenuitem">机器翻译</span>中设置 Google Translate 与 Bing
+            Translator 的访问密钥：</p>
+
+            
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                
+<p>Google Translate</p>
+
+                
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                    
+<p>
+<span class="guilabel">密钥</span>
+</p>
+
+                    
+<p>需要向 Google 购买，详情请参考<a class="xref" href="ch09.html#how-to-use-mt" title="1.2.">问： 1.2</a>。</p>
+                  
+</li>
+</ul>
+</div>
+              
+</li>
+<li class="listitem">
+                
+<p>Bing Translator</p>
+
+                
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                    
+<p>
+<span class="guilabel">客户端 ID</span>
+</p>
+                  
+</li>
+<li class="listitem">
+                    
+<p>
+<span class="guilabel">密钥</span>
+</p>
+
+                    
+<p>以上两项信息可以从微软免费申请，详情请参考<a class="xref" href="ch09.html#how-to-use-mt" title="1.2.">问： 1.2</a>。</p>
+                  
+</li>
+</ul>
+</div>
+
+                
+<p>输入完上述两个
+                ID/密钥后，分别都需要点击<span class="guibutton">测试可用性</span>按钮以确认它们可用，否则将无法使用相应的机器翻译引擎。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>忽略如下文本段</p>
+
+                
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                    
+<p>完全匹配/上下文匹配</p>
+                  
+</li>
+<li class="listitem">
+                    
+<p>已锁定</p>
+                  
+</li>
+</ul>
+</div>
+
+                
+<p>在点击文本段或预存机器翻译的时候，均会自动忽略上述状态的文本段。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>自动机器翻译</p>
+
+                
+<p>设置在查看文本段时，若文本段无预存的机器翻译，是否自动执行机器翻译并将结果预存起来。</p>
+              
+</li>
+</ul>
+</div>
+
+            
+<div class="figure">
+<a name="N21268"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 57. 选项：机器翻译</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/options-mt.png" align="middle" alt="选项：机器翻译"></div>
+              
+</div>
+            
+</div>
+</div>
+<br class="figure-break">
+          
+</li>
+<li class="listitem">
+            
+<p>在<code class="interfacename">项目</code>视图中，选择要预存机器翻译的一个或多个 XLIFF
+            文件或文件夹，点击右键或从<span class="guimenu">翻译</span>菜单中选择<span class="guimenuitem">预存机器翻译</span>；</p>
+
+            
+<div class="figure">
+<a name="N2128D"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 58. 预存机器翻译</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/prestore-mt-1.png" align="middle" alt="预存机器翻译"></div>
+              
+</div>
+            
+</div>
+</div>
+<br class="figure-break">
+          
+</li>
+<li class="listitem">
+            
+<p>在<code class="interfacename">预存机器翻译</code>对话框中，有如下选项可供设置：</p>
+
+            
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                
+<p>
+<span class="guilabel">机器翻译类型</span>，可以选择如下两个机器翻译引擎之一，或把二者均选上：</p>
+
+                
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                    
+<p>
+<span class="guilabel">Google Translate</span>
+</p>
+                  
+</li>
+<li class="listitem">
+                    
+<p>
+<span class="guilabel">Bing Translator</span>
+</p>
+
+                    
+<p>如果尚未为选中的机器翻译引擎设置必需的密钥，请点击下方的<span class="guibutton">选项</span>按钮进行设置。</p>
+                  
+</li>
+</ul>
+</div>
+              
+</li>
+</ul>
+</div>
+
+            
+<div class="figure">
+<a name="N212CE"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 59. 预存机器翻译对话框</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/prestore-mt-2.png" align="middle" alt="预存机器翻译对话框"></div>
+              
+</div>
+            
+</div>
+</div>
+<br class="figure-break">
+          
+</li>
+<li class="listitem">
+            
+<p>上述选项设置完毕后，点击确定按钮即可开始预存机器翻译。预存机器翻译所需的时间长短，将取决于网络状况及文本段数量的多少，完成后会显示预存结果。</p>
+          
+</li>
+</ol>
+</div>
+      
+</div>
+
+      
+<div class="sect2" title="字数分析">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="word-analysis"></a>字数分析</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>对翻译项目进行字数分析，能帮助用户了解一个翻译项目的工作量，以及方便与客户计价收费、或将翻译工作分发给多个译员。HSTS
+        还可以按用户设置的匹配率区间及对应的加权系数来计算翻译项目的加权字数、并自动将结果按各级文件夹汇总。要进行字数分析，请按如下步骤操作：</p>
+
+        
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+            
+<p>在<code class="interfacename">项目</code>视图中选择项目，然后从右键菜单或<span class="guimenu">项目</span>菜单中打开<span class="guimenuitem">项目设置</span>
+            &gt;
+            <span class="guimenuitem">记忆库</span>，确认已设置非空的记忆库；若未设置，则应先设置。详情请见<a class="xref" href="ch05s03.html#project-setting-tm" title="图 53. 项目设置：记忆库">图 53 &ldquo;项目设置：记忆库&rdquo;</a>。</p>
+          
+</li>
+<li class="listitem">
+            
+<p>选择项目或<span class="quote">&ldquo;<span class="quote">XLIFF</span>&rdquo;</span>子目录中的任一个或多个文件夹或
+            <span class="type">.hsxliff</span>
+            文件，从右键菜单或<span class="guimenu">项目</span>菜单中选择<span class="guimenuitem">字数分析</span>。</p>
+<div class="figure">
+<a name="N2131D"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 60. 字数分析</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="screenshot">
+                  
+<div class="mediaobject" align="center">
+<img src="images/word-analysis-1-1.png" align="middle" alt="字数分析"></div>
+                
+</div>
+              
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+
+            
+<div class="figure">
+<a name="N21333"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 61. 字数分析对话框</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/word-analysis-1-2.png" align="middle" alt="字数分析对话框"></div>
+              
+</div>
+            
+</div>
+</div>
+<br class="figure-break">
+          
+</li>
+<li class="listitem">
+            
+<p>在<code class="interfacename">字数分析</code>对话框上，可以选择如下附加操作：</p>
+
+            
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                
+<p>
+<span class="guilabel">锁定上下文匹配</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">锁定完全匹配</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">锁定重复文本段</span>
+</p>
+              
+</li>
+</ul>
+</div>
+          
+</li>
+<li class="listitem">
+            
+<p>点击<span class="guibutton">选项</span>按钮，还可以设置如下字数分析参数：</p>
+
+            
+<div class="figure">
+<a name="N21373"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 62. 选项：字数分析</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/word-analysis-2-option.png" align="middle" alt="选项：字数分析"></div>
+              
+</div>
+            
+</div>
+</div>
+<br class="figure-break">
+
+            
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                
+<p>
+<span class="guilabel">忽略大小写</span>
+</p>
+
+                
+<p>默认忽略。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">忽略标记</span>
+</p>
+
+                
+<p>默认忽略。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">上下文文本段数量</span>
+</p>
+
+                
+<p>有效值为 1～100，默认为 1。即上文考虑前一个非空文本段，下文考虑后一个非空文本段。</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">分析报告</span>
+</p>
+
+                
+<p>是否在字数分析报告中包含内部重复与内部模糊匹配字数：</p>
+
+                
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                    
+<p>
+<span class="guilabel">内部重复</span>
+</p>
+                  
+</li>
+<li class="listitem">
+                    
+<p>
+<span class="guilabel">内部模糊匹配</span>
+</p>
+                  
+</li>
+</ul>
+</div>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">加权系数</span>
+</p>
+
+                
+<p>匹配率区间、加权系数。此设置用于在计算加权字数时，将指定匹配率的文本段字数折算为加权字数，如通常把重复文本段中的每
+                1 个字计算为 0.5 个字。不同的客户、翻译公司，可能对此项设置会有不同的要求，用户可以视自身的需求来修改。</p>
+<div class="figure">
+<a name="N213CC"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 63. 选项：加权系数</b>
+</p>
+<div class="figure-contents">
+                    
+
+                    
+<div class="screenshot">
+                      
+<div class="mediaobject" align="center">
+<img src="images/word-analysis-2-option-equivalent.png" align="middle" alt="选项：加权系数"></div>
+                    
+</div>
+                  
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+              
+</li>
+</ul>
+</div>
+
+            
+<div class="note" title="注意" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+              
+<p>此处的匹配率区间下限将成为字数分析时的最低匹配率。</p>
+            
+</div>
+          
+</li>
+<li class="listitem">
+            
+<p>设置完成后，点击<span class="guibutton">确定</span>按钮，将会在<span class="quote">&ldquo;<span class="quote">Intermediate/Report</span>&rdquo;</span>目录下生成
+            HTML 格式的分析报告，并自动打开。</p>
+
+            
+<div class="figure">
+<a name="N213F6"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 64. 字数分析结果</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/word-analysis-3-result.png" align="middle" alt="字数分析结果"></div>
+              
+</div>
+            
+</div>
+</div>
+<br class="figure-break">
+          
+</li>
+</ol>
+</div>
+      
+</div>
+
+      
+<div class="sect2" title="分割文件">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="split-xliff-file"></a>分割文件</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>如果单个待翻译文件中的内容较多，为缩短项目周期，可以将该文件转换而成的 XLIFF
+        分割为多个小文件，分发给不同的翻译人员同时翻译。其他 CAT 工具通常是使用直接指定文本段序号的方式来分割文件，而 HSTS
+        使用了更加合理、人性化、可视化的操作方式：通过设置分割点来分割文件。更令人兴奋的是，HSTS不仅支持<span class="bold"><strong>手动设置</strong></span>分割点，还可根据您想要规划的字数来<span class="bold"><strong>智能设置</strong></span>分割点。</p>
+
+        
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+            
+<p>在执行分割操作之前，您需要设置好分割点。</p>
+
+            
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                
+<p>手动设置分割点</p>
+
+                
+<p>（1）根据上下文判断需要以哪个文本段作为分割 XLIFF
+                文件的结束点，选择该文本段，使用右键菜单中的<span class="bold"><strong>设置/取消分割点</strong></span>为其加上分割标记。</p>
+
+                
+<div class="figure">
+<a name="N21435"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 65. 手动设置分割点</b>
+</p>
+<div class="figure-contents">
+                  
+
+                  
+<div class="mediaobject" align="center">
+<img src="images/split-xliff-file-1.png" align="middle" alt="手动设置分割点"></div>
+                
+</div>
+</div>
+<br class="figure-break">
+
+                
+<p>（2）重复上一步，直至所有待分割的文本段都已经加上分割标记。</p>
+              
+</li>
+</ul>
+</div>
+
+            
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                
+<p>按字数设置分割点</p>
+
+                
+<p>（1）选中需要分割的XLIFF文件，选择菜单&ldquo;文件&rdquo;-&ldquo;按字数设置分割点&rdquo;，或点击右键选择&ldquo;按字数设置分割点&rdquo;，将针对选中的XLIFF文件或当前打开的XLIFF文件进行分割点设置。</p>
+
+                
+<div class="figure">
+<a name="N21457"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 66. 按字数设置分割点</b>
+</p>
+<div class="figure-contents">
+                  
+
+                  
+<div class="mediaobject" align="center">
+<img src="images/split-xliff-file-3.png" align="middle" alt="按字数设置分割点"></div>
+                
+</div>
+</div>
+<br class="figure-break">
+
+                
+<p>（2）您可以选择&ldquo;按平均字数&rdquo;并设置好要分割成的&ldquo;片段数&rdquo;来智能设置分割点；也可以选择&ldquo;按指定字数&rdquo;并设置好&ldquo;片段数&rdquo;及&ldquo;每一个片段要分配的字数&rdquo;完成智能设置。</p>
+              
+</li>
+</ul>
+</div>
+          
+</li>
+<li class="listitem">
+            
+<p>完成分割点设置后，在<code class="interfacename">项目</code>视图中选中该 XLIFF
+            文件，然后点击右键菜单或<span class="guimenu">文件</span>菜单中的<span class="guimenuitem">分割
+            XLIFF</span>。</p>
+
+            
+<div class="figure">
+<a name="N2147E"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 67. 分割 XLIFF 文件</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/split-xliff-file-2-1.png" align="middle" alt="分割 XLIFF 文件"></div>
+              
+</div>
+            
+</div>
+</div>
+<br class="figure-break">
+          
+</li>
+<li class="listitem">
+            
+<p>在弹出的<code class="interfacename">分割 XLIFF
+            文件</code>对话框中，确认分段信息准确无误后，点击<span class="guibutton">确定</span>按钮即可完成
+            XLIFF 文件的分割。分割后的 XLIFF 文件将被保存到原 XLIFF 文件所在的目录中、在原 XLIFF
+            文件名上加<span class="quote">&ldquo;<span class="quote">_split</span>&rdquo;</span>后缀的新文件夹里。可以从该文件夹中找到已分割好的 XLIFF
+            分发给不同的翻译人员。</p>
+<div class="figure">
+<a name="N214A2"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 68. 分割 XLIFF 文件结果</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="screenshot">
+                  
+<div class="mediaobject" align="center">
+<img src="images/split-xliff-file-2-2.png" align="middle" alt="分割 XLIFF 文件结果"></div>
+                
+</div>
+              
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+          
+</li>
+</ol>
+</div>
+
+        
+<p>分割后的 XLIFF 文件，在项目完成前需要合并，以便最终转为目标文件，详情见<a class="xref" href="ch05s06.html#merge-xliff-files" title="合并文件">&ldquo;合并文件&rdquo;一节</a>。</p>
+      
+</div>
+
+      
+<div class="sect2" title="项目设置">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="project-setting"></a>项目设置</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>如果在<a class="link" href="ch05s02.html#create-project-wizard-project-info" title="项目信息">新建项目向导</a>中，跳过了一些信息没有输入或设置，可以在创建完成后补充或修改，操作步骤如下：</p>
+
+        
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+            
+<p>在<code class="interfacename">项目</code>视图中选择要设置的项目，从右键菜单或<span class="guimenu">项目</span>菜单中打开<span class="guimenuitem">项目设置</span>。</p>
+
+            
+<div class="figure">
+<a name="N214DE"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 69. 项目设置</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/project-setting-1.png" align="middle" alt="项目设置"></div>
+              
+</div>
+            
+</div>
+</div>
+<br class="figure-break">
+          
+</li>
+<li class="listitem">
+            
+<p>
+<code class="interfacename">项目设置</code>对话框提供了新建项目向导中出现过的大部分信息：</p>
+
+            
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                
+<p>
+<span class="guilabel">项目信息</span>（注：下图中的 Client、Subject
+                为自定义的项目属性，详情请见<a class="xref" href="ch05s02.html#create-project-wizard-project-info" title="项目信息">&ldquo;项目信息&rdquo;一节</a>）</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">项目语言</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">记忆库</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">术语库</span>
+</p>
+              
+</li>
+</ul>
+</div>
+          
+</li>
+</ol>
+</div>
+
+        
+<div class="figure">
+<a name="N21521"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 70. 项目设置：项目信息</b>
+</p>
+<div class="figure-contents">
+          
+
+          
+<div class="screenshot">
+            
+<div class="mediaobject" align="center">
+<img src="images/project-setting-2-basic-info.png" align="middle" alt="项目设置：项目信息"></div>
+          
+</div>
+        
+</div>
+</div>
+<br class="figure-break">
+
+        
+<div class="figure">
+<a name="N21537"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 71. 项目设置：项目语言</b>
+</p>
+<div class="figure-contents">
+          
+
+          
+<div class="screenshot">
+            
+<div class="mediaobject" align="center">
+<img src="images/project-setting-3-language-pair.png" align="middle" alt="项目设置：项目语言"></div>
+          
+</div>
+        
+</div>
+</div>
+<br class="figure-break">
+
+        
+<div class="figure">
+<a name="N2154D"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 72. 项目设置：记忆库</b>
+</p>
+<div class="figure-contents">
+          
+
+          
+<div class="screenshot">
+            
+<div class="mediaobject" align="center">
+<img src="images/project-setting-4-tm.png" align="middle" alt="项目设置：记忆库"></div>
+          
+</div>
+        
+</div>
+</div>
+<br class="figure-break">
+
+        
+<div class="figure">
+<a name="project-setting-tb"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 73. 项目设置：术语库</b>
+</p>
+<div class="figure-contents">
+          
+
+          
+<div class="screenshot">
+            
+<div class="mediaobject" align="center">
+<img src="images/project-setting-5-tb.png" align="middle" alt="项目设置：术语库"></div>
+          
+</div>
+        
+</div>
+</div>
+<br class="figure-break">
+
+        
+<p>上述信息的修改和设置方式也与创建项目向导中相同，故不再重复。</p>
+
+        
+<p>创建项目向导中有，而项目设置中没有提供的两个功能是：<span class="emphasis"><em>修改项目名称</em></span>、<span class="emphasis"><em>添加/删除源文件</em></span>。其中，添加/删除源文件的方式已经在前面的<a class="xref" href="ch05s03.html#add-source-files-drag-and-drop" title="添加源文件">&ldquo;添加源文件&rdquo;一节</a>中描述；修改项目名称则可以在选中要重命名的项目后，使用<span class="guimenu">编辑</span>菜单下的<span class="guimenuitem">重命名</span>功能来完成。</p>
+
+        
+<div class="figure">
+<a name="N2158F"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 74. 项目重命名</b>
+</p>
+<div class="figure-contents">
+          
+
+          
+<div class="screenshot">
+            
+<div class="mediaobject" align="center">
+<img src="images/project-rename-1.png" align="middle" alt="项目重命名"></div>
+          
+</div>
+        
+</div>
+</div>
+<br class="figure-break">
+      
+</div>
+    
+</div>
+</body>
+</html>

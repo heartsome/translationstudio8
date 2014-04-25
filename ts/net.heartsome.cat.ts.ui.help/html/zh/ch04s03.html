@@ -1,0 +1,206 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>3. XLIFF 编辑器</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<meta content="DocBook XSL Stylesheets V1.75.2 / ZoeeyDoc http://zoeeydoc.googlecode.com " name="generator">
+<link rel="home" href="index.html" title="用户手册">
+<link rel="up" href="ch04.html" title="界面概览">
+<link rel="prev" href="ch04s02.html" title="2. 视图">
+<link rel="next" href="ch05.html" title="工作流程">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="sect1" title="3. XLIFF 编辑器">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title" style="clear: both">
+<a name="xliff-editor"></a>3. XLIFF 编辑器</h2>
+</div>
+</div>
+</div>
+      
+
+      
+<p>
+<code class="interfacename">XLIFF 编辑器</code>是 HSTS
+      中最常用的界面组件，所有对源文、译文的操作都在编辑器中完成。</p>
+
+      
+<p>对编辑器的改变大小、最小化、最大化、拖动位置等操作，和其他视图类似，详情请参考<a class="link" href="ch04s02.html#using-view" title="使用视图">上一节</a>。</p>
+
+      
+<div class="figure">
+<a name="N207AF"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 25. XLIFF 编辑器</b>
+</p>
+<div class="figure-contents">
+        
+
+        
+<div class="screenshot">
+          
+<div class="mediaobject" align="center">
+<img src="images/xliff-editor.png" align="middle" alt="XLIFF 编辑器"></div>
+        
+</div>
+      
+</div>
+</div>
+<br class="figure-break">
+
+      
+<p>编辑器提供了两种布局，上图为默认的<span class="emphasis"><em>水平布局</em></span>，而下图则为<span class="emphasis"><em>垂直布局</em></span>，打开文件后可以在二者之间切换。</p>
+
+      
+<div class="figure">
+<a name="N207CE"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 26. XLIFF 编辑器：垂直布局</b>
+</p>
+<div class="figure-contents">
+        
+
+        
+<div class="screenshot">
+          
+<div class="mediaobject" align="center">
+<img src="images/xliff-editor-vertical.png" align="middle" alt="XLIFF 编辑器：垂直布局"></div>
+        
+</div>
+      
+</div>
+</div>
+<br class="figure-break">
+
+      
+<p>单击 XLIFF 编辑器的列首可以按源文、译文等内容对文本段进行排序。其中状态列提供了四个图标，分别表示如下状态：</p>
+
+      
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+          
+<p>
+<span class="emphasis"><em>文本段状态</em></span>
+</p>
+
+          
+<p>该文本段在翻译流程中的处理状态，分别有如下六种：</p>
+
+          
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+              
+<p>
+<span class="guilabel">未翻译</span>
+</p>
+
+              
+<p>译文为空时的默认状态。</p>
+            
+</li>
+<li class="listitem">
+              
+<p>
+<span class="guilabel">草稿</span>
+</p>
+
+              
+<p>添加或编辑译文后的默认状态。</p>
+            
+</li>
+<li class="listitem">
+              
+<p>
+<span class="guilabel">已翻译</span>
+</p>
+
+              
+<p>执行<span class="guimenuitem">完成翻译</span>操作后的状态，同时会将文本段入库。通常由翻译人员执行此操作。</p>
+            
+</li>
+<li class="listitem">
+              
+<p>
+<span class="guilabel">已批准</span>
+</p>
+
+              
+<p>执行<span class="guimenuitem">批准</span>操作后的状态，同时也会将文本段入库。通常由编辑/校对人员执行此操作。</p>
+            
+</li>
+<li class="listitem">
+              
+<p>
+<span class="guilabel">已签发</span>
+</p>
+
+              
+<p>执行<span class="guimenuitem">签发</span>操作后的状态。用来表示该文本段的译文为最终确认的终稿。</p>
+            
+</li>
+<li class="listitem">
+              
+<p>
+<span class="guilabel">已锁定</span>
+</p>
+
+              
+<p>
+<span class="guimenuitem">锁定文本段</span>后的状态。锁定文本段可以避免意外修改不应修改的内容，例如不需要翻译的文本段。锁定后的文本段暂时看不到其在被锁定之前的流程处理状态，解锁文本段后会自动恢复为其在被锁定之前的状态。</p>
+            
+</li>
+</ul>
+</div>
+        
+</li>
+<li class="listitem">
+          
+<p>
+<span class="emphasis"><em>不添加到记忆库</em></span>
+</p>
+
+          
+<p>为文本段设置<span class="guimenuitem">不添加到记忆库</span>标记后的状态。默认所有文本段都会添加到记忆库，但有些情况下，可能需要指定某些文本段始终不需要添加到记忆库中，就可以使用此标记。</p>
+        
+</li>
+<li class="listitem">
+          
+<p>
+<span class="emphasis"><em>有疑问</em></span>
+</p>
+
+          
+<p>为文本段设置<span class="guimenuitem">有疑问</span>标记后的状态。对文本段的源文或译文有疑问，需要再次确认的，可以添加此标记，方便过滤出来统一处理。</p>
+        
+</li>
+<li class="listitem">
+          
+<p>
+<span class="emphasis"><em>有批注</em></span>
+</p>
+
+          
+<p>
+<span class="guimenuitem">添加批注</span>后的文本段就会显示此图标。</p>
+        
+</li>
+</ul>
+</div>
+
+      
+<div class="tip" title="提示" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">提示</h3>
+        
+<p>编辑器的字体可以在<span class="guimenu">工具</span> &gt;
+        <span class="guimenuitem">选项</span> &gt;
+        <span class="guimenuitem">系统</span>中设置，可以与记忆库/术语库使用不同的字体。</p>
+      
+</div>
+    
+</div>
+</body>
+</html>

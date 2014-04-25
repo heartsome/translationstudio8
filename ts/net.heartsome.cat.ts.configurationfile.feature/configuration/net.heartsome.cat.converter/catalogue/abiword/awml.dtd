@@ -1,0 +1,164 @@
+<!--
+
+          AbiWord Markup Language DTD
+	  (not quite) Current as of Aug 8, 2002
+
+	  Currently, this document is intend for reference purposes only, 
+	  and should not be interpreted as an absolute guide to the 
+	  AbiWord file format.  A more comprehsive view can be gained 
+	  from the code in files ie_exp_AbiWord_1.cpp and 
+	  ie_imp_AbiWord_1.cpp  These are currently definitve.  Other 
+	  documentation is availible in docs/AbiWord_DocumentFormat.abw
+
+	  Sam Tobin-Hochstadt
+	  Christian Biesinger (updated in August 2002)
+
+-->
+
+
+<!ELEMENT abiword (metadata?, ignoredwords?, styles?, lists?, pagesize*, section+, data?)>
+<!ATTLIST abiword
+          version     CDATA "unnumbered"
+          fileformat  CDATA "">
+<!-- This is the root element, with an attribute 
+     representing the version number, and an 
+     attribute representing the file format 
+     version. -->
+
+<!-- awml is an alias for abiword. copying above declaration. -->
+<!ELEMENT awml (metadata?, ignoredwords?, styles?, lists?, pagesize*, section+, data?)>
+<!ATTLIST awml
+          version     CDATA "unnumbered"
+          fileformat  CDATA "">
+
+<!ELEMENT metadata (m+)>
+<!ELEMENT m (#PCDATA)>
+<!ATTLIST m
+	  key CDATA #REQUIRED>
+
+<!ELEMENT ignoredwords (iw+)>
+<!ELEMENT iw (#PCDATA)>
+<!-- Each iw element contains a single word which 
+     is to be ignored when spell-checking the 
+     document. -->
+
+<!ELEMENT styles (s*)>
+<!ELEMENT s  EMPTY>
+<!ATTLIST s
+          basedon  CDATA #IMPLIED
+	  name     CDATA #REQUIRED
+	  type     CDATA #IMPLIED
+	  parentid CDATA #IMPLIED
+	  level    CDATA #IMPLIED
+	  style    CDATA #IMPLIED
+          props    CDATA #IMPLIED>
+<!-- Styles allow for paragraph level formatting.  
+     The basedon attribute specifies inheritance
+     and the props attribute specifies features 
+     of the style. -->
+
+<!ELEMENT lists (l*)>
+<!ELEMENT l  EMPTY>
+<!ATTLIST l
+          id           ID    #REQUIRED
+	  parentid     CDATA #REQUIRED
+	  type         CDATA #REQUIRED
+          start-value  CDATA #REQUIRED
+	  list-decimal CDATA #REQUIRED
+          list-delim   CDATA #REQUIRED>
+<!-- Styles allow for paragraph level formatting.  
+     The basedon attribute specifies inheritance
+     and the props attribute specifies features 
+     of the style. -->
+
+<!ELEMENT pagesize EMPTY>
+<!ATTLIST pagesize
+          pagetype     CDATA #REQUIRED
+	  orientation  CDATA #REQUIRED
+	  width        CDATA #REQUIRED  
+	  height       CDATA #REQUIRED
+	  units        CDATA #REQUIRED
+	  page-scale   CDATA #REQUIRED>
+<!-- pagesizes specify different page sizes that can
+     be used in the document.  -->
+
+<!ELEMENT section   (p+)>
+<!ATTLIST section
+          props  CDATA            #IMPLIED
+	  type   (footer | CDATA) #IMPLIED
+	  id     ID               #IMPLIED
+	  header CDATA            #IMPLIED
+	  footer CDATA            #IMPLIED
+	  num_columns CDATA       #IMPLIED
+	  column_gap CDATA        #IMPLIED>
+<!-- Sections are collections of paragraphs.  
+     They may specify footers to be attached, 
+     or formatting properties. -->
+
+<!ELEMENT p      (#PCDATA | c | field | f | image | i | cbr | pbr | br | bookmark | a)*>
+<!ATTLIST p
+          props    CDATA                            #IMPLIED
+	  level    (0|1|2|3|4|5|6|7|8|9|10 | CDATA) #IMPLIED
+	  style    CDATA                            #IMPLIED
+	  listid   CDATA			    #IMPLIED
+	  parentid CDATA			    #IMPLIED
+	  id       ID                               #IMPLIED>
+<!-- p element contain text, images, fields or character 
+     spans.  Level is used for lists, style for styles
+     and props for formatting. listid and parentid are 
+     both used in lists. -->
+
+<!ELEMENT c      (#PCDATA | cbr | pbr | br)*>
+<!ATTLIST c
+          props CDATA                #IMPLIED
+	  type  (list_label | CDATA) #IMPLIED
+	  style CDATA                #IMPLIED>
+<!-- c is used to specify character based formatting
+     which is done with the props attribute.
+     type is used for lists. style can specify 
+     predefined styles. -->
+
+<!ELEMENT field      EMPTY>
+<!ATTLIST field
+          type CDATA #REQUIRED>
+<!-- fields represent calculated data on the page. -->
+<!ELEMENT f      EMPTY>
+<!ATTLIST f
+          type CDATA #REQUIRED>
+<!-- f is an alias for field -->
+
+<!ELEMENT image     EMPTY>
+<!ATTLIST image 
+          dataid CDATA #REQUIRED
+	  props  CDATA #IMPLIED>
+<!-- image refers to an image in 
+     d section.  it is used much
+     the same as in HTML. -->
+
+<!ELEMENT i     EMPTY>
+<!ATTLIST i 
+          dataid CDATA #REQUIRED
+	  props  CDATA #IMPLIED>
+<!-- i is an alias for image -->
+
+<!ELEMENT br      EMPTY>
+<!ELEMENT pbr     EMPTY>
+<!ELEMENT cbr     EMPTY>
+<!-- These represent line,
+     page and column breaks. -->
+
+<!ELEMENT data      (d+)>
+<!ELEMENT d    (#PCDATA)>
+<!ATTLIST d
+          name CDATA #REQUIRED>
+<!-- d is used to store actual 
+     data, which currently means
+     images. -->
+
+<!ELEMENT bookmark EMPTY>
+<!ATTLIST bookmark type (start|end) #REQUIRED
+                   name CDATA       #REQUIRED>
+
+<!ELEMENT a (c)>
+<!ATTLIST a href CDATA #REQUIRED>
+<!-- link to bookmark -->

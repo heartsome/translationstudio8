@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter version="5.0" xml:id="manual" xml:lang="zh_CN"
+         xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xi="http://www.w3.org/2001/XInclude"
+         xmlns:svg="http://www.w3.org/2000/svg"
+         xmlns:m="http://www.w3.org/1998/Math/MathML"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:db="http://docbook.org/ns/docbook">
+  <title>使用说明</title>
+
+  <section>
+    <title>目录与文件</title>
+
+    <programlisting>ZoeeyDoc\ 
+│ README.TXT
+│ ZoeeyDoc.jar                           主执行文件
+├─docs
+│ ├─books                              文档总目录
+│ │ └─zoeeydoc                       文档项目
+│ │   │ config.kv                  <link linkend="config">配置文件</link>
+│ │   │ copyright.xml
+│ │   │ glossary.xml
+│ │   │ manual.xml
+│ │   │ quickstart.xml
+│ │   │ userguide.xml
+│ │   ├─build                       发布时，建议存储文档的目录
+│ │   ├─css                         各格式CSS样式目录
+│ │   │ ├─html 
+│ │   │ └─single 
+│ │   ├─images                      图片目录
+│ │   └─xsl                         生成各所需样式和设置
+│ │     ├─chm                     <link linkend="chm.name.set">设置chm文件名</link>
+│ │     ├─html 
+│ │     ├─pdf 
+│ │     ├─single 
+│ │     ├─site 
+│ │     └─wiki 
+│ ├─target                              生成文件目录
+│ │ └─zoeeydoc                        项目名
+│ │   └─chm                         生成格式
+│ │     │ htmlhelp.hhp
+│ │     │ htmlhelp.hhp.log
+│ │     │ index.hhk
+│ │     │ index.html
+│ │     │ quickstart.html
+│ │     │ task.list.html
+│ │     │ toc.hhc
+│ │     │ zoeeydoc.chm            目标文件
+│ │     │ zoeeydoc.chm.checksum   校验文件
+│ │     ├─css 
+│ │     └─images 
+│ └─zips                                打包的字体与xsl
+│   │ docbook-xsl.zip                 生成样式
+│   │ Docbook2Wiki.zip                wiki样式
+│   │ fonts.zip                       pdf嵌入字体
+│   │ readme.txt                      当前目录注意项
+│   └─cache                           缓存目录        
+└─lib                                     依赖库
+
+</programlisting>
+
+    <simplesect xml:id="chm.name.set">
+      <title>设置chm文件名</title>
+
+      <para>文档项目下 xsl/chm 文件夹内的 chm-style.xsl 文件。</para>
+
+      <programlisting>&lt;xsl:param name="htmlhelp.chm"&gt;zoeeydoc.chm&lt;/xsl:param&gt;
+
+修改为生成 example.chm 则为：
+
+&lt;xsl:param name="htmlhelp.chm"&gt;example.chm&lt;/xsl:param&gt; </programlisting>
+    </simplesect>
+  </section>
+
+  <section xml:id="config">
+    <title>配置文件</title>
+
+    <para>文档项目下config.kv 文件为项目配置文件。</para>
+
+    <example>
+      <title>生成single-html的配置</title>
+
+      <programlisting># single html
+
+single.in = "docs/books/zoeeydoc/userguide.xml"                主文档，一般为 book。
+single.xsl = "docs/books/zoeeydoc/xsl/single/htmlsingle.xsl"   xsl转换定义文件，其引入docbook-xsl
+single.file = "docs/target/zoeeydoc/single/userguide.html"     输出目标文件
+single.outdir = "docs/target/zoeeydoc/single/"                 输出目标文件夹
+single.zip = "docs/target/zoeeydoc/single/zoeeydoc.zip"        压缩文件文件名
+single.header = "docs/books/zoeeydoc/xsl/single/header.html"   在输出的html中，在generator后自动填充的内容
+# 文件拷贝
+single.copy[image] = "docs/books/zoeeydoc/images"
+single.target[image] = "docs/target/zoeeydoc/single/images"
+single.copy[css] = "docs/books/zoeeydoc/css/single"
+single.target[css] = "docs/target/zoeeydoc/single/css"</programlisting>
+    </example>
+
+    <example>
+      <title>生成html的配置</title>
+
+      <programlisting># html
+
+html.in = "docs/books/zoeeydoc/userguide.xml"            主文档，一般为 book。
+html.xsl = "docs/books/zoeeydoc/xsl/html/html.xsl"       xsl转换定义文件，其引入docbook-xsl
+html.outdir = "docs/target/zoeeydoc/html"                输出目标文件夹
+html.zip = "docs/target/zoeeydoc/html/zoeeydoc.zip"      压缩文件文件名
+html.header = "docs/books/zoeeydoc/xsl/html/header.html" 在输出的html中，在generator后自动填充的内容
+# 文件拷贝
+html.copy[image] = "docs/books/zoeeydoc/images"
+html.target[image] = "docs/target/zoeeydoc/html/images"
+html.copy[css] = "docs/books/zoeeydoc/css/html"
+html.target[css] = "docs/target/zoeeydoc/html/css"</programlisting>
+    </example>
+
+    <example>
+      <title>生成chm的配置</title>
+
+      <programlisting># chm
+
+chm.in = "docs/books/zoeeydoc/userguide.xml"            主文档，一般为 book。
+chm.xsl = "docs/books/zoeeydoc/xsl/chm/chm.xsl"         xsl转换定义文件，其引入docbook-xsl
+chm.outdir = "docs/target/zoeeydoc/chm"                 输出目标文件夹
+chm.header = "docs/books/zoeeydoc/xsl/chm/header.html"  在输出的html中，在generator后自动填充的内容
+# hhc.exe 的路径
+chm.hhc =  "C:/Program Files/HTML Help Workshop/hhc.exe"
+# 文件拷贝
+chm.copy[image] = "docs/books/zoeeydoc/images"
+chm.target[image] = "docs/target/zoeeydoc/chm/images"
+chm.copy[css] = "docs/books/zoeeydoc/css/html"
+chm.target[css] = "docs/target/zoeeydoc/chm/css"</programlisting>
+    </example>
+
+    <warning>
+      <para>hhc.exe的路径为绝对路径，请依照自身的情况进行修改。</para>
+
+      <para>下载 hhc： <link xlink:href="???">Microsoft HTML Help
+      Downloads</link></para>
+    </warning>
+
+    <example>
+      <title>生成pdf的配置</title>
+
+      <programlisting># single html
+
+pdf.outdir = "docs/target/zoeeydoc/pdf/"            输出目标文件夹
+pdf.fop = "docs/books/zoeeydoc/xsl/pdf/fop.xml"     输入fop配置文件（字体设置在内）
+pdf.in = "docs/books/zoeeydoc/userguide.xml"        主文档，一般为 book
+pdf.xsl = "docs/books/zoeeydoc/xsl/pdf/pdf.xsl"     xsl转换定义文件，其引入docbook-xsl
+pdf.pdf = "docs/target/zoeeydoc/pdf/zoeeydoc.pdf"   输出目标文件
+
+# 文件拷贝
+pdf.copy[fonts.georgia] = "%SystemRoot%/Fonts/georgia.ttf"      %SystemRoot% 为系统变量 SystemRoot
+pdf.target[fonts.georgia] = "docs/zips/cache/fonts/georgia.ttf" 拷贝到fonts文件夹下的ttf字体将会被自动生成描述文件</programlisting>
+    </example>
+  </section>
+</chapter>

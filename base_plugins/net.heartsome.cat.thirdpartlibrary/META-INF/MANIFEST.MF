@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome CAT Third-party Library
+Bundle-SymbolicName: net.heartsome.cat.thirdpartlibrary
+Bundle-Version: 8.1.0.R8b_v20131111
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ClassPath: lib/slf4j-api-1.5.8.jar,
+ .,
+ lib/slf4j-log4j12-1.5.8.jar,
+ lib/log4j-1.2.15.jar
+Export-Package: org.slf4j
+Bundle-Vendor: Heartsome Technologies Ltd.

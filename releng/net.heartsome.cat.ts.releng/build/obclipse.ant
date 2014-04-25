@@ -1,0 +1,53 @@
+<!--
+ * This file is part of Oblicpse.
+ * Obclipse - Obfuscating Eclipse Products
+ * Copyright (c) 2007 Marco Bluemel (mfb2@users.sourceforge.net)
+ * Website: http://obclipse.sourceforge.net/
+ *
+ * Obclipse is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Obclipse is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Obclipse.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<project name="obclipse" default="obclipse.launch" basedir=".">
+
+	<!--
+		base dir of obclipse
+		define it here or pass the property to this ant script
+	-->
+	<property name="obclipseBaseDir" value="/Users/felix_lu/bin/obclipse" />
+
+	<path id="project.classpath">
+		<pathelement path="${obclipseBaseDir}/bin" />
+		<pathelement path="${obclipseBaseDir}/obclipse.jar" />
+		<pathelement path="${obclipseBaseDir}/lib/proguard.jar" />
+		<pathelement path="${obclipseBaseDir}/lib/ant.jar" />
+	</path>
+
+	<!--
+	    define the obclipse task
+	-->
+	<taskdef name="obclipse" classname="mfb2.tools.obclipse.ant.ObclipseTask" classpathref="project.classpath" />
+
+	<!--
+    	launch obclipse
+	-->
+	<target name="obclipse.launch">
+		<property name="baseDir" value="/Users/felix_lu/tmp/hscat/net.heartsome.cat.ts.releng_1.0.0-eclipse.feature" />
+		<property name="projectName" value="site.obfuscated" />
+		<obclipse>
+			<property name="propertyFile" value="${obclipseBaseDir}/obclipse.properties" />
+			<property name="baseDir" value="${baseDir}" />
+			<property name="projectName" value="${projectName}" />
+		</obclipse>
+	</target>
+
+</project>

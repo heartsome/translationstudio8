@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+    <!-- 下面是替换的术语 robert 2012-01-12 
+    	Convert File...	:	源文件转换为XLIFF文件
+    	Reverse Convert File...	:	XLIFF文件转换为目标文件
+    	
+    
+    -->
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            name="XLIFF 文件转换"
+            id="net.heartsome.cat.convert.ui.commands.category">
+      </category>
+      <command
+            categoryId="net.heartsome.cat.convert.ui.commands.category"
+            id="net.heartsome.cat.convert.ui.commands.openConvertDialogCommand"
+            name="源文件转换为 XLIFF 文件">
+      </command>
+      <command
+            categoryId="net.heartsome.cat.convert.ui.commands.category"
+            id="net.heartsome.cat.convert.ui.commands.openReverseConvertDialogCommand"
+            name="XLIFF 文件转换为目标文件">
+      </command>
+
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:file?after=saveAll">
+         <separator
+		      name="net.heartsome.cat.convert.ui.menus.convertSeparator"
+		      visible="true">
+		 </separator>
+         <menu
+               icon="icons/convert file.png"
+               id="net.heartsome.cat.convert.ui.commands.converterXLIFFMenu"
+               label="XLIFF 文件转换">
+            <command
+                  commandId="net.heartsome.cat.convert.ui.commands.openConvertDialogCommand"
+                  id="net.heartsome.cat.convert.ui.menus.converterCommand"
+                  mnemonic="S"
+                  style="push">
+            </command>
+            <command
+                  commandId="net.heartsome.cat.convert.ui.commands.openReverseConvertDialogCommand"
+                  id="net.heartsome.cat.convert.ui.menus.reverseConverterCommand"
+                  style="push">
+            </command>
+         </menu>
+      </menuContribution>
+      <!-- 按照设计文档要求更改工具栏
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=net.heartsome.cat.ts.ui.handlers.ChangeSourceEditableCommand">
+         <toolbar
+               id="net.heartsome.cat.ts.ui.toolbar">
+            <command
+                  commandId="net.heartsome.cat.convert.ui.commands.openConvertDialogCommand"
+                  tooltip="源文件转换为 XLIFF 文件..."
+                  id="net.heartsome.cat.convert.ui.toolbars.converterCommand">
+            </command>
+         </toolbar>
+      </menuContribution> -->
+   </extension>
+   <extension
+         point="org.eclipse.ui.commandImages">
+      <image
+            commandId="net.heartsome.cat.convert.ui.commands.openConvertDialogCommand"
+            icon="icons/convert-to xliff.png">
+      </image>
+      <image
+            commandId="net.heartsome.cat.convert.ui.commands.openReverseConvertDialogCommand"
+            icon="icons/convert-xliff to.png">
+      </image>
+   </extension>
+   
+
+</plugin>

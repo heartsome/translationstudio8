@@ -1,0 +1,1362 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>FAQ</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<meta content="DocBook XSL Stylesheets V1.75.2 / ZoeeyDoc http://zoeeydoc.googlecode.com " name="generator">
+<link rel="home" href="index.html" title="User manual">
+<link rel="up" href="index.html" title="User manual">
+<link rel="prev" href="ch08.html" title="Handling different file formats">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="chapter" title="FAQ">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title">
+<a name="ch9-faq"></a>FAQ</h2>
+</div>
+</div>
+</div>
+    
+
+    
+<div class="qandaset" title="Frequently Asked Questions">
+<a name="N22BC1"></a>
+<table summary="Q and A Set" width="100%" border="0">
+<col align="left" width="1%">
+<col>
+<tbody>
+<tr class="toc">
+<td colspan="2" valign="top" align="left">
+<dl>
+<dt>1. <a href="ch09.html#N22BC5">What if the default segmentation is incorrect?</a>
+</dt>
+<dt>2. <a href="ch09.html#how-to-use-mt">How can I use machine translation?</a>
+</dt>
+<dt>3. <a href="ch09.html#N22EEF">How do I correct source text mistakes?</a>
+</dt>
+<dt>4. <a href="ch09.html#N22F0A">The default segmentation filter rules are not enough, what
+            can I do?</a>
+</dt>
+<dt>5. <a href="ch09.html#N22F1F">How do I find out what encoding my file is in?</a>
+</dt>
+<dt>6. <a href="ch09.html#N22FCB">What if my license doesn't work after I replace my computer
+            or reinstall the operating system?</a>
+</dt>
+<dt>7. <a href="ch09.html#N22FF0">Is there any easier way to add or copy project files?</a>
+</dt>
+<dt>8. <a href="ch09.html#N23041">Sometimes file operations work on the file(s) selected in
+            Project view, and at other times they only work on the file
+            currently being edited. How do I tell?</a>
+</dt>
+<dt>9. <a href="ch09.html#N23056">Can I apply batch operations to segments?</a>
+</dt>
+<dt>10. <a href="ch09.html#N23071">What's the best way to deal with segments that do not need
+            to be translated?</a>
+</dt>
+<dt>11. <a href="ch09.html#N23086">When I get a &ldquo;resource out of sync&rdquo; message
+            during a certain operation (e.g., exporting a project), what can I
+            do to fix it?</a>
+</dt>
+<dt>12. <a href="ch09.html#N2309E">Where does HSTS save my project files?</a>
+</dt>
+<dt>13. <a href="ch09.html#N230B9">How do I get help from Heartsome when I have problems using
+            HSTS?</a>
+</dt>
+<dt>14. <a href="ch09.html#N23106">What versions of the XLIFF, TMX, and TBX standards are
+            supported by HSTS?</a>
+</dt>
+<dt>15. <a href="ch09.html#N2312A">With a TMX file exported from HSTS, how do I import it to
+            Trados?</a>
+</dt>
+</dl>
+</td>
+</tr>
+          
+<tr class="question" title="1.">
+<td valign="top" align="left"><a name="N22BC5"></a><a name="N22BC7"></a>
+<p>
+<b>1.</b>
+</p>
+</td><td valign="top" align="left">
+<p>What if the default segmentation is incorrect?</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>If there are just a few instances of incorrect segmentation
+            occurs and there is no obvious pattern, this can be fixed using
+            <span class="quote">&ldquo;<span class="quote">merge segments</span>&rdquo;</span> or <span class="quote">&ldquo;<span class="quote">split segments</span>&rdquo;</span>. If
+            the incorrect segmentation occurs frequently and follows a certain
+            pattern, the problem can be fixed using <span class="quote">&ldquo;<span class="quote">segmentation
+            rules</span>&rdquo;</span> instead.</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                
+<p>Merge Segment</p>
+
+                
+<p>In cases where text has been over segmented, use
+                <span class="keycap"><strong>Ctrl</strong></span>/<span class="keycap"><strong>Shift</strong></span> and the left
+                mouse button to select the consecutive segments to be merged,
+                then click <span class="guimenu">Edit</span> &gt; <span class="guimenu">Merge
+                Segment</span>. Every two segments merged will be connected
+                by a newly generated <span class="quote">&ldquo;<span class="quote">internal tag</span>&rdquo;</span> between the
+                original source text segments.</p>
+<div class="figure">
+<a name="N22BF3"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;161.&nbsp;Merge Segment</b>
+</p>
+<div class="figure-contents">
+                    
+
+                    
+<div class="screenshot">
+                      
+<div class="mediaobject" align="center">
+<img src="images/merge-segments-1.png" align="middle" alt="Merge Segment"></div>
+                    
+</div>
+                  
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+
+                
+<div class="figure">
+<a name="N22C09"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;162.&nbsp;Merge segments</b>
+</p>
+<div class="figure-contents">
+                  
+
+                  
+<div class="screenshot">
+                    
+<div class="mediaobject" align="center">
+<img src="images/merge-segments-2.png" align="middle" alt="Merge segments"></div>
+                  
+</div>
+                
+</div>
+</div>
+<br class="figure-break">
+              
+</li>
+<li class="listitem">
+                
+<p>Split Segment</p>
+
+                
+<p>In cases where text has not been segmented enough, place
+                the cursor at the point where you want the text to be
+                segmented and then click <span class="guimenu">Edit</span> &gt;
+                <span class="guimenu">Split Segment</span>.</p>
+<div class="figure">
+<a name="N22C2D"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;163.&nbsp;Split Segment</b>
+</p>
+<div class="figure-contents">
+                    
+
+                    
+<div class="screenshot">
+                      
+<div class="mediaobject" align="center">
+<img src="images/split-segment-1.png" align="middle" alt="Split Segment"></div>
+                    
+</div>
+                  
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+
+                
+<div class="figure">
+<a name="N22C43"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;164.&nbsp;Split segments</b>
+</p>
+<div class="figure-contents">
+                  
+
+                  
+<div class="screenshot">
+                    
+<div class="mediaobject" align="center">
+<img src="images/split-segment-2.png" align="middle" alt="Split segments"></div>
+                  
+</div>
+                
+</div>
+</div>
+<br class="figure-break">
+
+                
+<div class="note" title="Note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Note</h3>
+                  
+<p>Only unlocked segments can be merged or split.</p>
+                
+</div>
+              
+</li>
+<li class="listitem">
+                
+<p>Segmentation Rule Configuration</p>
+
+                
+<p>Segmentation rules configuration can be done using the
+                <code class="interfacename">Segmentation Rule Manager</code>, a
+                feature only available in the <span class="quote">&ldquo;<span class="quote">Professional</span>&rdquo;</span> and
+                <span class="quote">&ldquo;<span class="quote">Ultimate</span>&rdquo;</span> editions. To open Segmentation Rules
+                Manager, please click <span class="guimenu">Advanced</span> menu &gt;
+                <span class="guimenu">Segmentation Rules Manager</span>.</p>
+<div class="figure">
+<a name="N22C77"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;165.&nbsp;Segmentation Rule Manager</b>
+</p>
+<div class="figure-contents">
+                    
+
+                    
+<div class="screenshot">
+                      
+<div class="mediaobject" align="center">
+<img src="images/segmentation-rule-manager-1-1.png" align="middle" alt="Segmentation Rule Manager"></div>
+                    
+</div>
+                  
+</div>
+</div>
+<p>
+<br class="figure-break">Every SRX file can save many segmentation rules,
+                and SRX files can be added and edited here. Configuration of
+                segmentation rules in SRX files involves two parts:</p>
+
+                
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                    
+<p>Language Rules</p>
+
+                    
+<p>These are the segmentation rules for a specific
+                    language (e.g., Chinese) and usually deal with the
+                    punctuation, symbols or characters specific to that
+                    language.</p>
+
+                    
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+                        
+<p>Select the SRX file to be edited and click the
+                        <span class="guibutton">Edit</span> button.</p>
+
+                        
+<div class="figure">
+<a name="N22CA2"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;166.&nbsp;Segmentation Rule Manager</b>
+</p>
+<div class="figure-contents">
+                          
+
+                          
+<div class="screenshot">
+                            
+<div class="mediaobject" align="center">
+<img src="images/segmentation-rule-manager-1-2.png" align="middle" alt="Segmentation Rule Manager"></div>
+                          
+</div>
+                        
+</div>
+</div>
+<br class="figure-break">
+                      
+</li>
+<li class="listitem">
+                        
+<p>If you do not intend to change the
+                        <span class="guilabel">Segmentation rule Name</span>, just
+                        click the <span class="guibutton">OK</span>.</p>
+<div class="figure">
+<a name="N22CC3"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;167.&nbsp;Segmentation Rule</b>
+</p>
+<div class="figure-contents">
+                            
+
+                            
+<div class="screenshot">
+                              
+<div class="mediaobject" align="center">
+<img src="images/segmentation-rule-manager-2-1.png" align="middle" alt="Segmentation Rule"></div>
+                            
+</div>
+                          
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>In <span class="quote">&ldquo;<span class="quote">Language rules</span>&rdquo;</span>, select the
+                        language to edit, and click the <span class="guibutton">Edit
+                        Language Rule</span> button to configure the
+                        following settings:</p>
+
+                        
+<div class="figure">
+<a name="N22CE5"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;168.&nbsp;Language Rule Configuration</b>
+</p>
+<div class="figure-contents">
+                          
+
+                          
+<div class="screenshot">
+                            
+<div class="mediaobject" align="center">
+<img src="images/segmentation-rule-manager-2-2.png" align="middle" alt="Language Rule Configuration"></div>
+                          
+</div>
+                        
+</div>
+</div>
+<br class="figure-break">
+
+                        
+<div class="itemizedlist">
+<ul class="itemizedlist" type="square">
+<li class="listitem">
+                            
+<p>
+<span class="guilabel">Segmentation
+                            required</span>
+</p>
+
+                            
+<p>Whether segmentation is required or not when
+                            the rule is satisfied (if not required, it is
+                            usually an exception to the rule).</p>
+                          
+</li>
+<li class="listitem">
+                            
+<p>
+<span class="guilabel">Before
+                            segmentation</span>
+</p>
+
+                            
+<p>Segmentation/no segmentation after the
+                            character (regex)</p>
+                          
+</li>
+<li class="listitem">
+                            
+<p>
+<span class="guilabel">After segmentation</span>
+</p>
+
+                            
+<p>Segmentation/no segmentation before the
+                            character (regex)</p>
+                          
+</li>
+</ul>
+</div>
+                      
+</li>
+<li class="listitem">
+                        
+<p>Click <span class="guibutton">OK</span> and then
+                        <span class="guibutton">Save</span>.</p>
+                      
+</li>
+</ol>
+</div>
+                  
+</li>
+<li class="listitem">
+                    
+<p>Mapping rule</p>
+
+                    
+<p>Language mapping rules, e.g., can be configured so
+                    that zh-CN, zh-HK, and zh-TW all use zh rules.</p>
+
+                    
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+                        
+<p>The first two steps are the same as with
+                        language rules:</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>In <span class="quote">&ldquo;<span class="quote">mapping rules</span>&rdquo;</span>, select the rule
+                        to be edited and click the <span class="guibutton">Edit Mapping
+                        Rule</span> button.</p>
+
+                        
+<div class="figure">
+<a name="N22D46"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;169.&nbsp;Mapping Rule Configuration</b>
+</p>
+<div class="figure-contents">
+                          
+
+                          
+<div class="screenshot">
+                            
+<div class="mediaobject" align="center">
+<img src="images/segmentation-rule-manager-3-1.png" align="middle" alt="Mapping Rule Configuration"></div>
+                          
+</div>
+                        
+</div>
+</div>
+<br class="figure-break">
+                      
+</li>
+<li class="listitem">
+                        
+<p>Select the specific mapping rule and click the
+                        <span class="guibutton">Edit</span> button to proceed with the
+                        following settings: </p>
+<div class="figure">
+<a name="N22D64"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;170.&nbsp;Edit mapping rules</b>
+</p>
+<div class="figure-contents">
+                            
+
+                            
+<div class="screenshot">
+                              
+<div class="mediaobject" align="center">
+<img src="images/segmentation-rule-manager-3-2.png" align="middle" alt="Edit mapping rules"></div>
+                            
+</div>
+                          
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+
+                        
+<div class="itemizedlist">
+<ul class="itemizedlist" type="square">
+<li class="listitem">
+                            
+<p>
+<span class="guilabel">Language module</span>
+</p>
+
+                            
+<p>Enter the regular expression for the language
+                            code to be matched</p>
+                          
+</li>
+<li class="listitem">
+                            
+<p>
+<span class="guilabel">Language Rules</span>
+</p>
+
+                            
+<p>Select the language rules that have been
+                            added</p>
+                          
+</li>
+</ul>
+</div>
+                      
+</li>
+<li class="listitem">
+                        
+<p>When you are done, save all the settings and
+                        close unwanted dialog boxes.</p>
+                      
+</li>
+</ol>
+</div>
+                  
+</li>
+</ul>
+</div>
+
+                
+<p>To use SRX files you have added or edited, select the
+                appropriate SRX files when you <a class="link" href="ch05s03.html#convert-source-to-xliff" title="Convert Source Files to XLIFFs">convert source files to
+                XLIFF</a>.</p>
+              
+</li>
+</ul>
+</div>
+</td>
+</tr>
+        
+          
+<tr class="question" title="2.">
+<td valign="top" align="left"><a name="how-to-use-mt"></a><a name="N22DA9"></a>
+<p>
+<b>2.</b>
+</p>
+</td><td valign="top" align="left">
+<p>How can I use machine translation?</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>HSTS currently supports Google Translate and Bing Translator
+            as machine translation engines. Both engines require a private key
+            and can only be used after configuring the appropriate settings in
+            HSTS.</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                
+<p>Google Translate</p>
+
+                
+<p>At present, Google only provides Google Translate v2 as
+                a paid service, so you need to purchase the service
+                first.</p>
+
+                
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                    
+<p>How do I buy it?</p>
+
+                    
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+                        
+<p>If you don't have a Google account, please sign
+                        up for one at <a class="ulink" href="https://accounts.google.com/SignUp" target="_top">https://accounts.google.com/SignUp</a>
+</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>Visit <a class="ulink" href="https://code.google.com/apis/console#:billing" target="_top">https://code.google.com/apis/console#:billing</a>
+                        and click the <span class="guibutton">Create Project</span>
+                        button to create a project.</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>Find <span class="quote">&ldquo;<span class="quote">Translate API</span>&rdquo;</span> from the list
+                        of services and click the <span class="quote">&ldquo;<span class="quote">Activate</span>&rdquo;</span>
+                        button next to it, which is shown as
+                        <span class="guibutton">OFF</span>. Click to agree the two
+                        sets of Terms of Use that pop up one after the
+                        other.</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>Select the <span class="quote">&ldquo;<span class="quote">Billing</span>&rdquo;</span> category to
+                        the left or visit the <a class="ulink" href="https://code.google.com/apis/console#:billing" target="_top">above
+                        website</a> again and click <span class="guibutton">Google
+                        Checkout</span> to pay. Follow instructions to
+                        add your payment method, e.g., by entering your credit
+                        card information.</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>After the payment is made, select the <span class="quote">&ldquo;<span class="quote">API
+                        Access</span>&rdquo;</span> category to the left. Select and copy
+                        the value after the <span class="guilabel">API Key</span> for
+                        later use.</p>
+                      
+</li>
+</ol>
+</div>
+                  
+</li>
+<li class="listitem">
+                    
+<p>
+<a name="setting-google-translate"></a>Settings</p>
+
+                    
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+                        
+<p>Run HSTS and then open <span class="guimenu">Tools</span>
+                        &gt; <span class="guimenuitem">Options</span> &gt;
+                        <span class="guimenuitem">Translation</span> &gt;
+                        <span class="guimenuitem">Machine Translation</span>.</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>In the <span class="guilabel">Key</span> field of Google
+                        Translate, paste the <span class="guilabel">API Key</span> you
+                        copied earlier on, then click the <span class="quote">&ldquo;<span class="quote">Test</span>&rdquo;</span>
+                        button.<span class="guibutton"></span>
+</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>In addition, <span class="guilabel">you can also set the
+                        following automatic machine translation
+                        policy</span> (this policy also applies to all
+                        machine translation engine):</p>
+
+                        
+<div class="itemizedlist">
+<ul class="itemizedlist" type="square">
+<li class="listitem">
+                            
+<p>
+<span class="guilabel">Automatic</span>
+</p>
+
+                            
+<p>This option saves traffic-based costs
+                            associated with MT by only implementing MT
+                            translations for segments that have not yet been
+                            translated by MT without submitting the same
+                            segments repeatedly.</p>
+                          
+</li>
+<li class="listitem">
+                            
+<p>
+<span class="guilabel">Manual</span>
+</p>
+
+                            
+<p>This option does not automatically implement
+                            MT translation, but allows manual implementation
+                            when needed.</p>
+                          
+</li>
+</ul>
+</div>
+                      
+</li>
+<li class="listitem">
+                        
+<p>Click the <span class="guibutton">OK</span> button when
+                        you finished configuring settings.</p>
+                      
+</li>
+</ol>
+</div>
+                  
+</li>
+</ul>
+</div>
+
+                
+<p>If machine translation is not set to be implemented
+                manually, you will get Google-translated results when moving
+                between segments. If this does not happen, you may click
+                <span class="guimenu">Translation</span> &gt; <span class="guimenuitem">Google
+                Machine Translation</span> to manually get translations
+                by Google Translate. Regardless of machine translation results
+                are obtained automatically or manually, it will be
+                automatically stored up for reference without repeatedly
+                access a machine translation engine.</p>
+              
+</li>
+<li class="listitem">
+                
+<p>Bing Translator</p>
+
+                
+<p>Bing Translator is a service provided by Microsoft which
+                offers 2,000,000 characters of free translation per
+                month.</p>
+
+                
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                    
+<p>Sign up</p>
+
+                    
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+                        
+<p>Visit <a class="ulink" href="http://msdn.microsoft.com/en-us/library/hh454950.aspx" target="_top">http://msdn.microsoft.com/en-us/library/hh454950.aspx</a>,
+                        and click the <span class="guibutton">Sign In</span> button in
+                        the upper right corner to log in or sign up for a
+                        Microsoft Live account.</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>When logged in you will be automatically
+                        directed back to the last screen. From there, click
+                        the <a class="ulink" href="http://go.microsoft.com/?linkid=9782667" target="_top">Azure
+                        Marketplace</a> link and then the <span class="guibutton">Sign
+                        Up</span> button to subscribe to the Windows
+                        Azure Marketplace.</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>Enter the required information, go to
+                        <span class="guilabel">Country / Region</span> and select
+                        <span class="quote">&ldquo;<span class="quote">Worldwide (English)</span>&rdquo;</span> and then click the
+                        <span class="guibutton">Continue</span> button.</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>Agree to the Windows Azure Marketplace Terms of
+                        Use and click the <span class="guibutton">Register</span>
+                        button.</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>Agree to the Microsoft Translator Terms of Use
+                        and click <span class="guibutton">Register</span> to subscribe
+                        to the Microsoft Translator service.</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>Go to <a class="ulink" href="https://datamarket.azure.com/developer/applications/" target="_top">https://datamarket.azure.com/developer/applications/</a>
+                        and click the <span class="guibutton">Register</span>
+                        button.</p>
+                      
+</li>
+<li class="listitem">
+                        
+<p>Enter the required information as you like
+                        except that you should not change the <span class="guilabel">Client
+                        key</span>. Copy the <span class="guilabel">Client
+                        ID</span> and <span class="guilabel">Key</span> separately
+                        and save them for later use. Click the
+                        <span class="guibutton">Create</span> button.</p>
+                      
+</li>
+</ol>
+</div>
+                  
+</li>
+<li class="listitem">
+                    
+<p>Settings</p>
+
+                    
+<p>Bing Translator is configured and used in HSTS in
+                    the same way as Google Translate. The only difference is
+                    that Bing Translator requires a <span class="guilabel">Client
+                    ID</span> and <span class="guilabel">Key</span>, while Google
+                    Translate only requires the private key. Please refer to
+                    the <a class="link" href="ch09.html#setting-google-translate">Google
+                    Translate settings</a> for details.</p>
+                  
+</li>
+</ul>
+</div>
+              
+</li>
+</ul>
+</div>
+</td>
+</tr>
+        
+          
+<tr class="question" title="3.">
+<td valign="top" align="left"><a name="N22EEF"></a><a name="N22EF1"></a>
+<p>
+<b>3.</b>
+</p>
+</td><td valign="top" align="left">
+<p>How do I correct source text mistakes?</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>By default HSTS does not allow editing of source text in
+            order to avoid incorrect operation. However, if there are source
+            text mistakes that have to be corrected, you can go to the
+            <span class="guimenu">Edit</span> menu &gt; <span class="guisubmenu">Edit
+            Source</span> &gt; <span class="guimenuitem">Edit Current
+            Source</span> or <span class="guimenuitem">Edit All Source</span>
+            to temporarily unlock the source text. If you choose Edit Current
+            Source, you will be automatically prevented from editing source
+            text when you finish editing the current source text segment. If
+            you choose Edit All Source, then you will need to manually disable
+            editing source text, otherwise all source text segments will
+            remain editable.</p>
+</td>
+</tr>
+        
+          
+<tr class="question" title="4.">
+<td valign="top" align="left"><a name="N22F0A"></a><a name="N22F0C"></a>
+<p>
+<b>4.</b>
+</p>
+</td><td valign="top" align="left">
+<p>The default segmentation filter rules are not enough, what
+            can I do?</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>You can add custom filter rules by clicking the
+            <span class="guibutton">Customize Filters</span> button to the right of
+            the segment filter. For details, please see <a class="xref" href="ch05s04.html#filter-segments" title="Filter segments">the section called &ldquo;Filter segments&rdquo;</a>.</p>
+</td>
+</tr>
+        
+          
+<tr class="question" title="5.">
+<td valign="top" align="left"><a name="N22F1F"></a><a name="N22F21"></a>
+<p>
+<b>5.</b>
+</p>
+</td><td valign="top" align="left">
+<p>How do I find out what encoding my file is in?</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>The following types of text-based files can be opened using
+            EmEditor, or any other text editors that support a variety of
+            encodings:</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                
+<p>
+<span class="type">.html</span>, <span class="type">.htm</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.inx</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.js</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.mif</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.po</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.properties</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.rc</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.resx</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.rtf</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.sdlxliff</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.ttx</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.txt</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.xlf</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.xml</span>
+</p>
+              
+</li>
+</ul>
+</div>
+<p>The following XML-based compressed formats are usually
+            UTF-8:</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                
+<p>
+<span class="type">.doc</span>, <span class="type">.ppt</span>, <span class="type">.xls</span>
+                (converted using OpenOffice for indirect support)</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.docx</span>, <span class="type">.pptx</span>,
+                <span class="type">.xlsx</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.idml</span>
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="type">.odt</span>, <span class="type">.odp</span>,
+                <span class="type">.ods</span>
+</p>
+              
+</li>
+</ul>
+</div>
+</td>
+</tr>
+        
+          
+<tr class="question" title="6.">
+<td valign="top" align="left"><a name="N22FCB"></a><a name="N22FCD"></a>
+<p>
+<b>6.</b>
+</p>
+</td><td valign="top" align="left">
+<p>What if my license doesn't work after I replace my computer
+            or reinstall the operating system?</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>Before replacing your computer or reinstalling the operating
+            system, you should use <span class="guimenu">Help</span> &gt;
+            <span class="guimenuitem">License Management</span> &gt;
+            <span class="guibutton">Deactivate</span> on your old computer/system to
+            deactivate your license. When you finish the
+            replacement/re-installation, you will be prompted to activate your
+            license the first time you run the software. Simply follow the
+            instructions in the wizard.</p>
+<p>If you have finished replacing your computer or installing
+            the system without first deactivating your license, please <a class="ulink" href="mailto:tech_support@heartsome.net" target="_top">contact technical
+            support</a> who will need to deactivate your license from the
+            old computer/system <span class="emphasis"><em>manually</em></span> before you can
+            activate the license again in your new computer/system. For
+            details, see <a class="xref" href="ch03.html" title="License"><i>License</i></a>.</p>
+</td>
+</tr>
+        
+          
+<tr class="question" title="7.">
+<td valign="top" align="left"><a name="N22FF0"></a><a name="N22FF2"></a>
+<p>
+<b>7.</b>
+</p>
+</td><td valign="top" align="left">
+<p>Is there any easier way to add or copy project files?</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>HSTS's <code class="interfacename">Project</code> window is
+            similar to Windows <span class="quote">&ldquo;<span class="quote">Explorer</span>&rdquo;</span>,Mac OS's
+            <span class="quote">&ldquo;<span class="quote">Finder</span>&rdquo;</span>, or Linux's <span class="quote">&ldquo;<span class="quote">Nautilus</span>&rdquo;</span> (all
+            referred to as a <span class="quote">&ldquo;<span class="quote">file manager</span>&rdquo;</span> hereinafter).
+            Operations in a project such as creating, renaming, and deleting
+            sub-folders work the same way as in the file managers mentioned
+            above.</p>
+<p>Therefore, files from the operating system's <span class="quote">&ldquo;<span class="quote">file
+            manager</span>&rdquo;</span> can be copied into a project by directly
+            <span class="emphasis"><em>dragging and dropping</em></span> them into the project.
+            Likewise, to move files to a file manager, you can copy or paste
+            project files or drag-and-drop them to the desired location. You
+            can also directly move files/folders between projects by dragging
+            and dropping. In addition, you can use the <span class="guimenu">Edit</span>
+            menu &gt; <span class="guimenuitem">Copy</span>,
+            <span class="guimenuitem">Cut</span>, <span class="guimenuitem">Paste</span>
+            and other functions to organize files/folders.</p>
+<div class="note" title="Note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Note</h3>
+              
+<p>When files are dragged from a project and if the target
+              location is in the same disk partition as <span class="quote">&ldquo;<span class="quote">Heartsome
+              Workspace</span>&rdquo;</span>, the <span class="emphasis"><em>default operation will be to
+              move</em></span> rather than to copy the files. Therefore, it is
+              recommended to use the hotkeys
+              <span class="keycap"><strong>Ctrl</strong></span>/<span class="keycap"><strong>Command</strong></span>+<span class="keycap"><strong>C</strong></span>
+              and
+              <span class="keycap"><strong>Ctrl</strong></span>/<span class="keycap"><strong>Command</strong></span>+<span class="keycap"><strong>V</strong></span>
+              to copy files from the project to avoid accidentally removing
+              files from the project.</p>
+            
+</div>
+</td>
+</tr>
+        
+          
+<tr class="question" title="8.">
+<td valign="top" align="left"><a name="N23041"></a><a name="N23043"></a>
+<p>
+<b>8.</b>
+</p>
+</td><td valign="top" align="left">
+<p>Sometimes file operations work on the file(s) selected in
+            Project view, and at other times they only work on the file
+            currently being edited. How do I tell?</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>When the <code class="interfacename">Project</code> window is
+            active (title bar and frame have a different color), operations
+            will work on the file(s) selected in the
+            <code class="interfacename">Project</code> window; when the editor is
+            active, operations work on the one being edited.</p>
+</td>
+</tr>
+        
+          
+<tr class="question" title="9.">
+<td valign="top" align="left"><a name="N23056"></a><a name="N23058"></a>
+<p>
+<b>9.</b>
+</p>
+</td><td valign="top" align="left">
+<p>Can I apply batch operations to segments?</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>Most segment-specific features in the
+            <span class="guimenu">Edit</span> and <span class="guimenu">Translation</span> menus
+            (e.g., change segment status, add/delete comments, etc.) can be
+            applied to multiple segments as a batch operation. To do this, use
+            <span class="keycap"><strong>Ctrl</strong></span> or <span class="keycap"><strong>Shift</strong></span> + left mouse
+            button to select segments and complete the desired function, which
+            will then apply to all selected segments.</p>
+</td>
+</tr>
+        
+          
+<tr class="question" title="10.">
+<td valign="top" align="left"><a name="N23071"></a><a name="N23073"></a>
+<p>
+<b>10.</b>
+</p>
+</td><td valign="top" align="left">
+<p>What's the best way to deal with segments that do not need
+            to be translated?</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>Users with experience of other CAT tools might choose to use
+            features like <span class="quote">&ldquo;<span class="quote">copy source to target</span>&rdquo;</span> and then
+            <span class="quote">&ldquo;<span class="quote">approve segment</span>&rdquo;</span> to get the desired result. In HSTS,
+            however, we recommend an easier way: lock the segments that do not
+            need to be translated, and keep their translations empty. When the
+            XLIFFs are converted to target files, HSTS will automatically
+            extract the source text for segments with empty
+            translations.</p>
+</td>
+</tr>
+        
+          
+<tr class="question" title="11.">
+<td valign="top" align="left"><a name="N23086"></a><a name="N23088"></a>
+<p>
+<b>11.</b>
+</p>
+</td><td valign="top" align="left">
+<p>When I get a <span class="quote">&ldquo;<span class="quote">resource out of sync</span>&rdquo;</span> message
+            during a certain operation (e.g., exporting a project), what can I
+            do to fix it?</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>In the <code class="interfacename">Project</code> window, select
+            the project the current file belongs to, then from the right-click
+            menu choose <span class="guimenu">Refresh</span> before starting the
+            operation (e.g., exporting file) again.</p>
+</td>
+</tr>
+        
+          
+<tr class="question" title="12.">
+<td valign="top" align="left"><a name="N2309E"></a><a name="N230A0"></a>
+<p>
+<b>12.</b>
+</p>
+</td><td valign="top" align="left">
+<p>Where does HSTS save my project files?</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>When HSTS is run for the first time, a folder named
+            <span class="quote">&ldquo;<span class="quote">Heartsome Workspace</span>&rdquo;</span> will be created in the current
+            user directory (which is the folder path the system environment
+            variable <span class="quote">&ldquo;<span class="quote">%USERPROFILE%</span>&rdquo;</span> in Windows points to
+            [<span class="quote">&ldquo;<span class="quote">$HOME</span>&rdquo;</span> in MAC OS / Linux]). The directory is
+            referred to as the <span class="quote">&ldquo;<span class="quote">Heartsome Workspace folder</span>&rdquo;</span>. All
+            projects and all of its sub-folders/files created in HSTS are
+            saved in this folder.</p>
+</td>
+</tr>
+        
+          
+<tr class="question" title="13.">
+<td valign="top" align="left"><a name="N230B9"></a><a name="N230BB"></a>
+<p>
+<b>13.</b>
+</p>
+</td><td valign="top" align="left">
+<p>How do I get help from Heartsome when I have problems using
+            HSTS?</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>You may e-mail Heartsome technical support at <code class="email">&lt;<a class="email" href="mailto:tech_support@heartsome.net">tech_support@heartsome.net</a>&gt;</code>
+            providing as much of the following information as possible in your
+            email, so that support staff can understand your issues more
+            effectively:</p>
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+                
+<p>Your operating system and its version, e.g., Windows XP
+                32-bit SP3</p>
+              
+</li>
+<li class="listitem">
+                
+<p>Your Java Runtime Environment (JRE) version, e.g., Java
+                1.7.0_05-b05</p>
+              
+</li>
+<li class="listitem">
+                
+<p>Your Heartsome product type and edition, e.g.,
+                Translation Studio Ultimate 8.0.0 Build 20120907</p>
+              
+</li>
+<li class="listitem">
+                
+<p>Detailed steps that led to the problem</p>
+              
+</li>
+<li class="listitem">
+                
+<p>Actual results</p>
+              
+</li>
+<li class="listitem">
+                
+<p>Expected/desired results</p>
+              
+</li>
+<li class="listitem">
+                
+<p>Sample files (as some problems only occur in certain
+                files)</p>
+              
+</li>
+<li class="listitem">
+                
+<p>Screenshots of errors</p>
+              
+</li>
+<li class="listitem">
+                
+<p>Any other information that may help support staff
+                identify the problems</p>
+              
+</li>
+</ol>
+</div>
+</td>
+</tr>
+        
+          
+<tr class="question" title="14.">
+<td valign="top" align="left"><a name="N23106"></a><a name="N23108"></a>
+<p>
+<b>14.</b>
+</p>
+</td><td valign="top" align="left">
+<p>What versions of the XLIFF, TMX, and TBX standards are
+            supported by HSTS?</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>HSTS supports the following versions of these
+            standards:</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                
+<p>XLIFF v1.2</p>
+              
+</li>
+<li class="listitem">
+                
+<p>TMX v1.4 and v1.4b</p>
+              
+</li>
+<li class="listitem">
+                
+<p>TBX v0.2</p>
+              
+</li>
+</ul>
+</div>
+</td>
+</tr>
+        
+          
+<tr class="question" title="15.">
+<td valign="top" align="left"><a name="N2312A"></a><a name="N2312C"></a>
+<p>
+<b>15.</b>
+</p>
+</td><td valign="top" align="left">
+<p>With a TMX file exported from HSTS, how do I import it to
+            Trados?</p>
+</td>
+</tr>
+
+          
+<tr class="answer">
+<td valign="top" align="left"></td><td valign="top" align="left">
+<p>When you are using HSTS to export a TM as a TMX file, please
+            select the <span class="guilabel">TMX level 1</span> (without tags) and
+            <span class="guilabel">Custom Encoding</span> check boxes, select
+            <span class="guilabel">UTF-16LE</span> from the drop down list, and use
+            <span class="guimenu">Tools</span> &gt; <span class="guimenuitem">TMX
+            Validator</span> &gt; <span class="guimenu">File menu</span> &gt;
+            <span class="guimenuitem">Clean TMX file</span>. When you are finished,
+            import the file to Trados.</p>
+</td>
+</tr>
+        
+</tbody>
+</table>
+</div>
+  
+</div>
+</body>
+</html>

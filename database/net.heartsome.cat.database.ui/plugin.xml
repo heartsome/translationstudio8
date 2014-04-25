@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:org.eclipse.ui.main.menu?after=database">
+         <menu
+               id="net.heartsome.cat.ts.menu.database"
+               label="%menu.database">
+            <separator
+                  name="net.heartsome.cat.database.ui.TMSeparator">
+            </separator>
+            <separator
+                  name="net.heartsome.cat.database.ui.TBSeparator">
+            </separator>            
+         </menu>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=group.search">
+         <toolbar
+               id="net.heartsome.cat.database.ui.toolbar.search">
+            <separator
+                  name="net.heartsome.cat.database.ui.separator.TMSearch">
+            </separator>
+            <separator
+                  name="net.heartsome.cat.database.ui.separator.TBSearch">
+            </separator>
+         </toolbar>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            id="net.heartsome.cat.database.ui.menu.database.category"
+            name="%category.database">
+      </category>      
+   </extension>   
+</plugin>

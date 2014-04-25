@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:help?after=help.updatePlugin">
+         <command
+               commandId="net.heartsome.cat.ts.ui.p2update.command.checkupdate"
+               id="net.heartsome.cat.ts.ui.p2update.menu.checkupdate"
+               style="push">
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            categoryId="org.eclipse.ui.category.help"
+            id="net.heartsome.cat.ts.ui.p2update.command.checkupdate"
+            name="%menu.checkupdate">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="net.heartsome.cat.p2update.handler.CheckUpdateHandler"
+            commandId="net.heartsome.cat.ts.ui.p2update.command.checkupdate">
+      </handler>
+   </extension>
+
+</plugin>

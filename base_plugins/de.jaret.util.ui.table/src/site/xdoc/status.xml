@@ -1,0 +1,50 @@
+<document>
+	<properties>
+		<author email="peter.kliem@jaret.de">Peter Kliem</author>
+		<title>jaret table status</title>
+	</properties>
+	<body>
+		<section name="status and plans">
+			<p>This page contains information about the current state of the distribution and future plans.</p>
+
+			<subsection name="State">
+				<ul>
+			<li>
+				 Jaret table is work in progress.    
+			</li>
+				</ul>
+			
+			</subsection>
+			<subsection name="platforms">
+				<ul>
+			<li>
+				 win XP is the main development    
+			</li>
+			<li>
+				 OSX intel: checked basic functionality    
+			</li>
+			<li>
+				 Linux GTK: checked basic functionality 
+			</li>
+			
+				</ul>
+			
+			</subsection>
+			<subsection name="plans">
+				<ul>
+			<li>
+				 revisit and correct printing    
+			</li>
+			<li>
+				 check merged/spanned cells    
+			</li>
+			<li>
+				 visual enhancements (lots of things todo)    
+			</li>
+				</ul>
+			
+			</subsection>
+
+		</section>
+	</body>
+</document>

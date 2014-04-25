@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome CAT Database
+Bundle-SymbolicName: net.heartsome.cat.database
+Bundle-Version: 8.1.0.R8b_v20131119
+Bundle-Activator: net.heartsome.cat.database.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ net.heartsome.cat.thirdpartlibrary;bundle-version="1.0.0",
+ heartsome.java.tools.plugin;bundle-version="1.0.0",
+ net.heartsome.xml;bundle-version="1.0.0",
+ net.heartsome.cat.common.core;bundle-version="1.0.0",
+ org.eclipse.ui;bundle-version="3.7.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: net.heartsome.cat.database,
+ net.heartsome.cat.database.bean,
+ net.heartsome.cat.database.service,
+ net.heartsome.cat.database.tmx,
+ net.heartsome.cat.document
+Bundle-Vendor: Heartsome Technologies Ltd.
+Bundle-ClassPath: .,
+ lib/poi-3.9-20121203.jar,
+ lib/poi-excelant-3.9-20121203.jar,
+ lib/poi-ooxml-3.9-20121203.jar,
+ lib/poi-ooxml-schemas-3.9-20121203.jar,
+ lib/poi-scratchpad-3.9-20121203.jar,
+ lib/xmlbeans-2.3.0.jar

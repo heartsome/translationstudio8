@@ -1,0 +1,407 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>3. 将记忆库导出为 TMX</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<meta content="DocBook XSL Stylesheets V1.75.2 / ZoeeyDoc http://zoeeydoc.googlecode.com " name="generator">
+<link rel="home" href="index.html" title="用户手册">
+<link rel="up" href="ch06.html" title="记忆库和术语库的维护和管理">
+<link rel="prev" href="ch06s02.html" title="2. 记忆库管理">
+<link rel="next" href="ch06s04.html" title="4. 术语库管理">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="sect1" title="3. 将记忆库导出为 TMX">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title" style="clear: both">
+<a name="export-tmx"></a>3. 将记忆库导出为 TMX</h2>
+</div>
+</div>
+</div>
+      
+
+      
+<p>TMX 文件被广泛用于在不同的 CAT 工具之间交换记忆库，HSTS 支持 TMX文件的导入和导出。其中，导入 TMX
+      文件的功能已经在创建项目的阶段介绍过，详情请见<a class="xref" href="ch05s03.html#create-tm-wizard-import-tmx" title="导入 TMX/TXT/EXCEL 文件">&ldquo;导入 TMX/TXT/EXCEL 文件&rdquo;一节</a>，下面是将记忆库导出为 TMX 的操作步骤：</p>
+
+      
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+          
+<p>点击<span class="guimenu">数据库</span>菜单 &gt; <span class="guimenuitem">导出
+          TMX</span>；</p>
+
+          
+<div class="figure">
+<a name="N2247C"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 133. 将记忆库导出为 TMX</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/export-tm-to-tmx-1-1.png" align="middle" alt="将记忆库导出为 TMX"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+        
+</li>
+<li class="listitem">
+          
+<p>在<code class="interfacename">导出记忆库为 TMX
+          文件</code>对话框中，需要设置如下参数：</p>
+<div class="figure">
+<a name="N2249A"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 134. 将记忆库导出为 TMX</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/export-tm-to-tmx-1-2.png" align="middle" alt="将记忆库导出为 TMX"></div>
+              
+</div>
+            
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+
+          
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+              
+<p>记忆库</p>
+
+              
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                  
+<p>
+<span class="guibutton">添加</span>
+</p>
+
+                  
+<p>点击该按钮后，先选择要添加的记忆库类型。</p>
+
+                  
+<p>若选择文件型记忆库，则弹出<code class="interfacename">打开文件</code>对话框，浏览并选择要导出的
+                  <span class="type">.hstm</span> 文件即可。</p>
+
+                  
+<div class="figure">
+<a name="N224CB"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 135. 选择文件型记忆库</b>
+</p>
+<div class="figure-contents">
+                    
+
+                    
+<div class="screenshot">
+                      
+<div class="mediaobject" align="center">
+<img src="images/export-tm-to-tmx-1-2a.png" align="middle" alt="选择文件型记忆库"></div>
+                    
+</div>
+                  
+</div>
+</div>
+<br class="figure-break">
+
+                  
+<p>若选择的是服务器型记忆库，则将弹出<code class="interfacename">记忆库管理</code>对话框，在其中选择要导出的记忆库后<span class="guibutton">确定</span>即可。</p>
+
+                  
+<div class="figure">
+<a name="N224EA"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 136. 选择服务器型记忆库</b>
+</p>
+<div class="figure-contents">
+                    
+
+                    
+<div class="screenshot">
+                      
+<div class="mediaobject" align="center">
+<img src="images/export-tm-to-tmx-2-select-tm.png" align="middle" alt="选择服务器型记忆库"></div>
+                    
+</div>
+                  
+</div>
+</div>
+<br class="figure-break">
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guibutton">移除</span>
+</p>
+
+                  
+<p>将已添加到待导出列表中的记忆库移出列表。</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">导出语言</span>
+</p>
+
+                  
+<p>选择列表中的记忆库后，此处会列出该记忆库中的语言，至少应选择两个语言才可以导出。默认全选。</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">源语言</span>
+</p>
+
+                  
+<p>导出的 TMX
+                  应以哪个语言为源语言，如果不确定，可以选择<span class="quote">&ldquo;<span class="quote">*all*</span>&rdquo;</span>。</p>
+
+                  
+<div class="figure">
+<a name="N22521"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 137. 导出 TMX 选项</b>
+</p>
+<div class="figure-contents">
+                    
+
+                    
+<div class="screenshot">
+                      
+<div class="mediaobject" align="center">
+<img src="images/export-tm-to-tmx-3-lang.png" align="middle" alt="导出 TMX 选项"></div>
+                    
+</div>
+                  
+</div>
+</div>
+<br class="figure-break">
+                
+</li>
+</ul>
+</div>
+            
+</li>
+<li class="listitem">
+              
+<p>
+<span class="guilabel">过滤规则</span>
+</p>
+
+              
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                  
+<p>
+<span class="guibutton">添加</span>
+</p>
+
+                  
+<p>选中的过滤规则为<span class="quote">&ldquo;<span class="quote">无</span>&rdquo;</span>的时候，点击<span class="guibutton">编辑</span>按钮即可添加一条新的过滤规则。一条过滤规则包含如下内容：</p>
+
+                  
+<div class="figure">
+<a name="N22551"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 138. 导出 TMX：过滤规则</b>
+</p>
+<div class="figure-contents">
+                    
+
+                    
+<div class="screenshot">
+                      
+<div class="mediaobject" align="center">
+<img src="images/export-tm-to-tmx-4-filter-rule.png" align="middle" alt="导出 TMX：过滤规则"></div>
+                    
+</div>
+                  
+</div>
+</div>
+<br class="figure-break">
+
+                  
+<div class="itemizedlist">
+<ul class="itemizedlist" type="square">
+<li class="listitem">
+                      
+<p>
+<span class="guilabel">名称</span>
+</p>
+                    
+</li>
+<li class="listitem">
+                      
+<p>条件组合类型</p>
+
+                      
+<p>
+<span class="guilabel">满足以下所有条件</span>、<span class="guilabel">满足以下任一条件</span>
+</p>
+                    
+</li>
+<li class="listitem">
+                      
+<p>条件</p>
+
+                      
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                          
+<p>
+<span class="guilabel">文本段</span>
+</p>
+                        
+</li>
+<li class="listitem">
+                          
+<p>
+<span class="guilabel">创建时间</span>
+</p>
+                        
+</li>
+<li class="listitem">
+                          
+<p>
+<span class="guilabel">修改时间</span>
+</p>
+                        
+</li>
+<li class="listitem">
+                          
+<p>
+<span class="guilabel">创建者</span>
+</p>
+                        
+</li>
+<li class="listitem">
+                          
+<p>
+<span class="guilabel">修改者</span>
+</p>
+                        
+</li>
+<li class="listitem">
+                          
+<p>
+<span class="guilabel">批注</span>
+</p>
+                        
+</li>
+</ul>
+</div>
+                    
+</li>
+</ul>
+</div>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guibutton">编辑</span>
+</p>
+
+                  
+<p>选中已保存的过滤规则后，点击<span class="guibutton">编辑</span>按钮则为编辑该过滤规则。</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guibutton">删除</span>
+</p>
+
+                  
+<p>删除选中的过滤规则。</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">仅导出带旗标的文本段</span>
+</p>
+
+                  
+<p>在满足上述过滤规则的基础上，仅导出其中带有旗标的文本段内容。</p>
+                
+</li>
+</ul>
+</div>
+            
+</li>
+<li class="listitem">
+              
+<p>
+<span class="guilabel">导出选项</span>
+</p>
+
+              
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">一级 TMX</span>
+</p>
+
+                  
+<p>去除所有内部标记，若要将该 TMX 导入 Trados 则需要选中此项。</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">自定义编码</span>
+</p>
+
+                  
+<p>指定 TMX 文件使用的编码，默认使用<span class="quote">&ldquo;<span class="quote">UTF-8</span>&rdquo;</span>，通常不需要修改。若要将该
+                  TMX 导入 Trados 则需要选择<span class="quote">&ldquo;<span class="quote">UTF-16LE</span>&rdquo;</span>编码。</p>
+                
+</li>
+</ul>
+</div>
+            
+</li>
+<li class="listitem">
+              
+<p>TMX 保存路径</p>
+            
+</li>
+</ul>
+</div>
+        
+</li>
+</ol>
+</div>
+    
+</div>
+</body>
+</html>

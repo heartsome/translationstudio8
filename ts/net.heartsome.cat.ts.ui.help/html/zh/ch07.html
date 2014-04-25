@@ -1,0 +1,79 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>团队协作</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<meta content="DocBook XSL Stylesheets V1.75.2 / ZoeeyDoc http://zoeeydoc.googlecode.com " name="generator">
+<link rel="home" href="index.html" title="用户手册">
+<link rel="up" href="index.html" title="用户手册">
+<link rel="prev" href="ch06s05.html" title="5. 将术语库导出为 TBX">
+<link rel="next" href="ch07s02.html" title="2. 导出项目">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="chapter" title="团队协作">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title">
+<a name="ch7-teamwork"></a>团队协作</h2>
+</div>
+</div>
+</div>
+    
+
+    
+<p>一个翻译项目通常是由一个团队来完成工作，因此不可避免会涉及到团队协作的问题，HSTS 为团队协作提供了良好的支持。</p>
+
+    
+<div class="sect1" title="1. 数据库的共享">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title" style="clear: both">
+<a name="ch7s1-db-sharing"></a>1. 数据库的共享</h2>
+</div>
+</div>
+</div>
+      
+
+      
+<p>与大部分 CAT 工具将服务器共享功能做成单独的产品、并以高昂的价格出售的做法不同，HSTS
+      的<span class="quote">&ldquo;<span class="quote">专业版</span>&rdquo;</span>和<span class="quote">&ldquo;<span class="quote">旗舰版</span>&rdquo;</span>均支持服务器型数据库服务器（详细的数据库支持类型请参考<a class="xref" href="ch05s03.html#create-tm-wizard" title="新建记忆库向导">&ldquo;新建记忆库向导&rdquo;一节</a>），并允许在团队成员之间共享使用建立在这些数据库服务器之上的记忆库和术语库。</p>
+
+      
+<p>按照前面建议的<a class="link" href="ch06.html" title="记忆库和术语库的维护和管理">数据库维护和管理方案</a>，可以在任意一台作为服务器的电脑上创建<span class="quote">&ldquo;<span class="quote">终稿库</span>&rdquo;</span>和<span class="quote">&ldquo;<span class="quote">过程库</span>&rdquo;</span>（分别均包括记忆库和术语库），翻译团队的成员只要在项目中添加已创建好的记忆库/术语库即可。</p>
+
+      
+<p>如果您的团队需要跨地域进行记忆库或术语库共享，也可以使用数据库云，HSTS 同时支持 Amazon RDS 和
+      ClearDB，详细信息可以查看各厂商的产品网站。</p>
+
+      
+<div class="note" title="注意" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+        
+<p>
+<span class="emphasis"><em>默认库与非默认库的区别</em></span>
+</p>
+
+        
+<p>在 HSTS
+        中，每个项目都可以设置一个<span class="quote">&ldquo;<span class="quote">默认</span>&rdquo;</span>的记忆库/术语库，另外还可以有不限个数的<span class="quote">&ldquo;<span class="quote">非默认库</span>&rdquo;</span>（也称为<span class="quote">&ldquo;<span class="quote">参考库</span>&rdquo;</span>）。默认库与参考库的区别是：<span class="emphasis"><em>参考库为只读</em></span>，即可以查询该库中的匹配、但不可以将文本段入库到其中；而<span class="emphasis"><em>默认库不但可以读、还可以将文本段入库</em></span>。</p>
+
+        
+<p>除此之外，对数据库的权限控制还可以结合数据库服务器本身的用户管理机制来实现，详情请参考相应的数据库服务器的管理文档。</p>
+      
+</div>
+    
+</div>
+
+    
+
+    
+
+    
+
+    
+  
+</div>
+</body>
+</html>

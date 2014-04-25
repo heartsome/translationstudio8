@@ -1,0 +1,507 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>工作流程</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<meta content="DocBook XSL Stylesheets V1.75.2 / ZoeeyDoc http://zoeeydoc.googlecode.com " name="generator">
+<link rel="home" href="index.html" title="用户手册">
+<link rel="up" href="index.html" title="用户手册">
+<link rel="prev" href="ch04s03.html" title="3. XLIFF 编辑器">
+<link rel="next" href="ch05s02.html" title="2. 创建项目">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="chapter" title="工作流程">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title">
+<a name="ch5-workflow"></a>工作流程</h2>
+</div>
+</div>
+</div>
+    
+
+    
+<p>使用 Heartsome Translation Studio 进行翻译的流程如下：</p>
+
+    
+<div class="figure">
+<a name="N2087E"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 27. Heartsome Translation Studio 项目翻译流程</b>
+</p>
+<div class="figure-contents">
+      
+
+      
+<div class="mediaobject" align="center">
+<img src="images/workflow.png" align="middle" alt="Heartsome Translation Studio 项目翻译流程"></div>
+    
+</div>
+</div>
+<br class="figure-break">
+
+    
+<div class="sect1" title="1. 项目准备">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title" style="clear: both">
+<a name="ch5s1-preparation"></a>1. 项目准备</h2>
+</div>
+</div>
+</div>
+      
+
+      
+<p>在开始使用 Heartsome Translation Studio 翻译项目之前，用户需要在 HSTS
+      之外完成如下一些准备工作，以帮助用户更好地完成翻译项目。</p>
+
+      
+<div class="sect2" title="源文件">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="ch5s1a"></a>源文件</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>在翻译项目中，需要翻译的源文件通常都会带有一些特定的格式信息，例如对字体样式、大小、颜色、段落布局等外观进行定义。CAT
+        工具在处理这些文件时，需要把真正要翻译的文本内容从源文件中提取出来，使翻译人员能够专注于待翻译的内容本身，而不会受到格式信息的干扰。</p>
+
+        
+<p>客户提供的待翻译文件通常有两种类型：一种是未经转换的原始源文件；另一种是已经从源文件转换好的文件，如 SDL
+        Trados、D&eacute;j&agrave; Vu、Wordfast Pro 和 MemoQ 等工具的双语文件。</p>
+
+        
+<p>Heartsome Translation Studio 支持如下格式的第一种类型的源文件：</p>
+
+        
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+            
+<p>
+<span class="type">.docx</span>, <span class="type">.xlsx</span>,
+            <span class="type">.pptx</span>
+</p>
+
+            
+<p>Microsoft Office 文档</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="type">.doc</span>, <span class="type">.xls</span>,
+            <span class="type">.ppt</span>
+</p>
+
+            
+<p>Microsoft Office 97-2004 文档</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="type">.html</span>, <span class="type">.htm</span>
+</p>
+
+            
+<p>网页文件</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="type">.idml</span>
+</p>
+
+            
+<p>Adobe InDesign 标记</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="type">.inx</span>
+</p>
+
+            
+<p>Adobe InDesign 交换文档</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="type">.js</span>
+</p>
+
+            
+<p>JavaScript 脚本</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="type">.mif</span>
+</p>
+
+            
+<p>Adobe FrameMaker 交换格式</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="type">.odt</span>, <span class="type">.ods</span>, <span class="type">.odp</span>,
+            <span class="type">.odg</span>
+</p>
+
+            
+<p>OpenOffice 文档</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="type">.po</span>
+</p>
+
+            
+<p>GNU gettext 可移植对象</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="type">.properties</span>
+</p>
+
+            
+<p>Java 资源文件</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="type">.rc</span>
+</p>
+
+            
+<p>Windows C/C++ 资源文件</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="type">.resx</span>
+</p>
+
+            
+<p>Windows .NET 资源文件</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="type">.rtf</span>
+</p>
+
+            
+<p>富文本格式</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="type">.rtf</span>
+</p>
+
+            
+<p>SDL Trados 双语 RTF 文件</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="type">.txt</span>
+</p>
+
+            
+<p>文本文件</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="type">.xml</span>
+</p>
+
+            
+<p>XML 文件</p>
+          
+</li>
+</ul>
+</div>
+
+        
+<p>HSTS 支持将如下第二种类型的文件当作源文件处理：</p>
+
+        
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+            
+<p>
+<span class="type">.mqxlz</span>
+</p>
+
+            
+<p>MemoQ 6.x 文档</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="type">.sdlxliff</span>
+</p>
+
+            
+<p>SDL Trados XLIFF 文件</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="type">.ttx</span>
+</p>
+
+            
+<p>SDL Trados TagEditor TRADOStag 双语文件</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="type">.txml</span>
+</p>
+
+            
+<p>Wordfast Pro TXML 双语文件</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="type">.xlf</span>
+</p>
+
+            
+<p>D&eacute;j&agrave; Vu XLIFF 文件</p>
+          
+</li>
+</ul>
+</div>
+
+        
+<p>第二种类型的文件中，HSTS 还可以直接打开如下格式的文件：</p>
+
+        
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+            
+<p>
+<span class="type">.hsxliff</span>
+</p>
+
+            
+<p>Heartsome Translation Studio R8 XLIFF 文件</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="type">.xlf</span>, <span class="type">.xliff</span>
+</p>
+
+            
+<p>标准的 XLIFF 文档</p>
+
+            
+<div class="note" title="注意" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+              
+<p>如果该 XLIFF 文件不是由 HSTS R8 生成的，则可能无法完全使用 HSTS R8 的所有特性。建议只用
+              HSTS 打开相同版本的程序所生成的 XLIFF 文件（扩展名为 <span class="type">.hsxliff</span>）。</p>
+            
+</div>
+          
+</li>
+</ul>
+</div>
+
+        
+<p>如果您手上的源文件不是上述列表中的任一种格式，则可能需要先通过转换或人工处理等方式，得到上述任一种类型的文件，然后才可以用
+        HSTS
+        来翻译。对于一个项目，至少需要准备上述两种类型的待翻译文件中的任一种、或它们的组合，<span class="emphasis"><em>建议优先使用第一类原始格式的源文件</em></span>。</p>
+
+        
+<p>如果源文件数量较多、且有一些特定的目录结构，用户不需要人工移动文件或改变其保存路径，HSTS
+        能很好地处理这些源文件，在翻译过程中能始终保持该固定的目录结构、并提供方便的批量操作。</p>
+      
+</div>
+
+      
+<div class="sect2" title="TMX 文件">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="ch5s1b"></a>TMX 文件</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<div class="tip" title="提示" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">提示</h3>
+          
+<p>可选</p>
+        
+</div>
+
+        
+<p>若客户提供了 TMX 文件，或用户所在公司或个人拥有从任何途径得到的 TMX
+        文件，则需要在创建项目前准备好，以便在创建项目时将其导入到新项目的记忆库中。导入 HSTS 的 TMX 文件应使用 UTF-8
+        编码保存，否则其内容将可能无法被正确识别。</p>
+      
+</div>
+
+      
+<div class="sect2" title="TBX 文件">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="ch5s1c"></a>TBX 文件</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<div class="tip" title="提示" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">提示</h3>
+          
+<p>可选</p>
+        
+</div>
+
+        
+<p>若客户提供了 TBX 文件，或用户所在公司或个人拥有从任何途径得到的 TBX
+        文件，则需要在创建项目前准备好，以便在创建项目时将其导入到新项目的术语库中。导入 HSTS 的 TBX 文件应使用 UTF-8
+        编码保存，否则其内容将可能无法被正确识别。</p>
+      
+</div>
+
+      
+<div class="sect2" title="数据库服务器">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="ch5s1d"></a>数据库服务器</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<div class="tip" title="提示" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">提示</h3>
+          
+<p>可选</p>
+        
+</div>
+
+        
+<p>HSTS
+        个人版及更高版本提供了内置的文件型数据库，可用于创建记忆库和术语库，而专业版和旗舰版则额外提供了服务器型数据库的支持。使用服务器型数据库服务器，除了可以获得更佳的数据库性能体验之外，还可以通过网络与团队的其他成员共享使用记忆库和术语库，实现团队协作。</p>
+
+        
+<p>HSTS 目前支持如下四种类型的服务器型数据库服务器：</p>
+
+        
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+            
+<p>MySQL</p>
+
+            
+<p>免费、开放源代码、跨平台，支持 Windows、Mac OS、Linux，主页：<a class="ulink" href="http://www.mysql.com/" target="_top">www.mysql.com</a>
+</p>
+          
+</li>
+<li class="listitem">
+            
+<p>PostgreSQL</p>
+
+            
+<p>免费、开放源代码、跨平台，支持 Windows、Mac OS、Linux，主页：<a class="ulink" href="http://www.postgresql.org/" target="_top">www.postgresql.org</a>
+</p>
+          
+</li>
+<li class="listitem">
+            
+<p>Microsoft SQL Server</p>
+
+            
+<p>商业软件、仅支持 Windows，主页：<a class="ulink" href="http://www.microsoft.com/sqlserver/" target="_top">www.microsoft.com/sqlserver</a>
+</p>
+          
+</li>
+<li class="listitem">
+            
+<p>Oracle</p>
+
+            
+<p>商业软件、支持 Windows、Linux，主页：<a class="ulink" href="http://www.oracle.com/" target="_top">www.oracle.com</a>
+</p>
+          
+</li>
+</ul>
+</div>
+
+        
+<p>要在 HSTS
+        中使用上述任一种服务器型数据库作为记忆库或术语库，用户需要先下载并在电脑上（本机或专门的服务器）安装对应的数据库服务器软件，然后创建或设置一个具有创建数据库权限的数据库用户、并获得其密码，具体的安装和设置步骤请参考上述网站中提供的官方文档。</p>
+
+        
+<p>除了在本地安装与配置上述数据库作为记忆库或术语库服务器，您也可以使用云数据库，例如 Amazon RDS、ClearDB
+        等，详情请查看各产品网站。</p>
+      
+</div>
+    
+</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+  
+</div>
+</body>
+</html>

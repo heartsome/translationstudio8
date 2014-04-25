@@ -1,0 +1,29 @@
+increase the lc level from 4 to 6
+
+This document summarizes the list of methods that needs to be changed to increase
+
+the depth of location cache from 4 to 6
+VTDGen:
+loadIndex()
+writeIndex()
+writeVTD();
+finishUp();
+setDoc_BR();
+setDoc_BR();
+getNav();
+clear();
+change l3Buffer to FastLongBuffer
+add l4Buffer (IntBuffer)
+
+VTDNav:
+add l4Buffer
+add l4Lower,l4Upper, l4Index
+VTDNav();
+iterate();
+iterateNS();
+pop();pop2();
+push();push2();
+resolveLC();
+toElement(); //2 of them
+toElementNS();
+

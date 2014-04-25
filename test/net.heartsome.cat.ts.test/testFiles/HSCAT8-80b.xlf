@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:hs="http://www.heartsome.net.cn/2008/XLFExtension" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd  http://www.heartsome.net.cn/2008/XLFExtension XLFExtension.xsd">
+  <file datatype="plaintext" original="D:/ts.win32.win32.x86/workspace/test/Source/test file.txt" source-language="en-US" target-language="zh-CN">
+    <header>
+      <skl>
+        <external-file href="D:/ts.win32.win32.x86/workspace/test/SKL/test file.txt.skl"/>
+      </skl>
+      <tool tool-id="XLFEditor auto-Quick Translation" tool-name="HSStudio"/>
+      <hs:prop-group name="encoding">
+        <hs:prop prop-type="encoding">UTF-8</hs:prop>
+      </hs:prop-group>
+    </header>
+    <body>
+      <trans-unit approved="no" id="1" translate="yes" xml:space="preserve">
+        <source xml:lang="en-US">Test segment 1.</source>
+        <target state="needs-review-translation" xml:lang="zh-CN">Translation of test segment 1.</target>
+        <alt-trans match-quality="100" origin="test tm">
+          <source xml:lang="en-US"> Test segment 1. - Leading</source>
+          <target xml:lang="zh-CN">文本段 1。</target>
+        </alt-trans>
+      </trans-unit>
+      <trans-unit approved="no" id="2" translate="yes" xml:space="preserve">
+        <source xml:lang="en-US">Test segment 2. - Tailing </source>
+        <target state="new" xml:lang="zh-CN">Translation of test segment 2. </target>
+        <alt-trans match-quality="100" origin="test tm">
+          <source xml:lang="en-US">Test segment 2.</source>
+          <target xml:lang="zh-CN">文本段 1。</target>
+        </alt-trans>
+      </trans-unit>
+      <trans-unit approved="no" id="3" translate="yes" xml:space="preserve">
+        <source xml:lang="en-US"> Test segment 3. - Leading</source>
+        <target state="new" xml:lang="zh-CN"> Translation of test segment 3.</target>
+        <alt-trans match-quality="101" origin="test tm">
+          <source xml:lang="en-US">Test segment 3. - Tailing </source>
+          <target xml:lang="zh-CN">文本段 1。</target>
+        </alt-trans>
+      </trans-unit>
+      <trans-unit approved="no" id="4" translate="yes" xml:space="preserve">
+        <source xml:lang="en-US">3 test segments, 5 of them have 3</source>
+        <target state="new" xml:lang="zh-CN">Translation of 3 test segments, 5 of them have 6</target>
+        <alt-trans match-quality="100" origin="test tm">
+          <source xml:lang="en-US">44 test segments, 5 of them have 6</source>
+          <target xml:lang="zh-CN">44 个测试文本段，其中 5 个有 6</target>
+        </alt-trans>
+      </trans-unit>
+      <trans-unit approved="no" id="5" translate="yes" xml:space="preserve">
+        <source xml:lang="en-US">3 test segments, 4 of them have 55</source>
+        <target state="new" xml:lang="zh-CN">Translation of 3 test segments, 4 of them have 55</target>
+        <alt-trans match-quality="100" origin="test tm">
+          <source xml:lang="en-US">3 test segments, 4 of them have 6</source>
+          <target xml:lang="zh-CN">3 个测试文本段，其中 4 个有 6</target>
+        </alt-trans>
+      </trans-unit>
+      <trans-unit approved="no" id="6" translate="yes" xml:space="preserve">
+        <source xml:lang="en-US">5 test segments, 66 of them have 3</source>
+        <target state="new" xml:lang="zh-CN">Translation of 5 test segments, 66 of them have 3</target>
+        <alt-trans match-quality="101" origin="test tm">
+          <source xml:lang="en-US">77 test segments, 8 of them have 99</source>
+          <target xml:lang="zh-CN">77 个测试文本段，其中 8 个有 99</target>
+        </alt-trans>
+      </trans-unit>
+      <trans-unit approved="no" id="7" translate="yes" xml:space="preserve">
+        <source xml:lang="en-US">2011-03-29 12:05:36 a test segment which was created on 2011-02-04 13:45:48 is updated to 2012-06-07 23:59:59</source>
+        <target state="new" xml:lang="zh-CN">Translation of 2011-03-29 12:05:36 a test segment which was created on 2011-02-04 13:45:48 is updated to 2012-06-07 23:59:59</target>
+        <alt-trans match-quality="101" origin="test tm2">
+          <source xml:lang="en-US">2010-12-31 00:54:26 (different) a test segment which was created on 2011-02-04 13:45:48 is updated to 2012-06-07 23:59:59</source>
+          <target xml:lang="zh-CN">2010-12-31 00:54:26 一个创建于 2011-02-04 13:45:48 的文本段被更新到 2012-06-07 23:59:59</target>
+        </alt-trans>
+      </trans-unit>
+      <trans-unit approved="no" id="8" translate="yes" xml:space="preserve">
+        <source xml:lang="en-US">2011-03-29 12:05:36 a test segment which was created on 2011-02-04 13:45:48 is updated to 2012-06-07 23:59:59</source>
+        <target state="new" xml:lang="zh-CN">Translation of 2011-03-29 12:05:36 a test segment which was created on 2011-02-04 13:45:48 is updated to 2012-06-07 23:59:59</target>
+        <alt-trans match-quality="100" origin="test tm">
+          <source xml:lang="en-US">2011-03-29 12:05:36 a test segment which was created on 2010-12-31 00:54:26 (different) is updated to 2012-06-07 23:59:59</source>
+          <target xml:lang="zh-CN">2011-03-29 12:05:36 一个创建于 2010-12-31 00:54:26 的文本段被更新到 2012-06-07 23:59:59</target>
+        </alt-trans>
+      </trans-unit>
+      <trans-unit approved="no" id="9" translate="yes" xml:space="preserve">
+        <source xml:lang="en-US">2011-03-29 12:05:36 a test segment which was created on 2011-02-04 13:45:48 is updated to 2012-06-07 23:59:59</source>
+        <target state="new" xml:lang="zh-CN">Translation of 2011-03-29 12:05:36 a test segment which was created on 2011-02-04 13:45:48 is updated to 2012-06-07 23:59:59</target>
+        <alt-trans match-quality="101" origin="test tm">
+          <source xml:lang="en-US">2011-03-29 12:05:36 a test segment which was created on 2011-02-04 13:45:48 is updated to (different) 2010-12-31 00:54:26</source>
+          <target xml:lang="zh-CN">2011-03-29 12:05:36 一个创建于 2011-02-04 13:45:48 的文本段被更新到 2010-12-31 00:54:26</target>
+        </alt-trans>
+      </trans-unit>
+      <trans-unit approved="no" id="10" translate="yes" xml:space="preserve">
+        <source xml:lang="en-US"> 2011-03-29 12:05:36 test segments 1 of which was created on 2011-02-04 13:45:48 is updated to 2012-06-07 23:59:59 - Leading</source>
+        <alt-trans match-quality="100" origin="test tm">
+          <source xml:lang="en-US">2011-03-29 12:05:36 test segments 2 of which was created on 2010-12-31 00:54:26 (different) is updated to 2012-06-07 23:59:59 - Tailing </source>
+          <target xml:lang="zh-CN">2011-03-29 12:05:36 有 2 个创建于 2010-12-31 00:54:26 的文本段被更新到 2012-06-07 23:59:59 </target>
+        </alt-trans>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

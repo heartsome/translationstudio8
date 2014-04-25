@@ -1,0 +1,433 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>3.&nbsp;Export TM as TMX</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<meta content="DocBook XSL Stylesheets V1.75.2 / ZoeeyDoc http://zoeeydoc.googlecode.com " name="generator">
+<link rel="home" href="index.html" title="User manual">
+<link rel="up" href="ch06.html" title="Maintenance and management of TMs and termbases">
+<link rel="prev" href="ch06s02.html" title="2.&nbsp;Translation Memory Management">
+<link rel="next" href="ch06s04.html" title="4.&nbsp;Termbase Management">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="sect1" title="3.&nbsp;Export TM as TMX">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title" style="clear: both">
+<a name="export-tmx"></a>3.&nbsp;Export TM as TMX</h2>
+</div>
+</div>
+</div>
+      
+
+      
+<p>TMX files are widely used across different CAT tools for
+      exchanging TMs, and HSTS supports both import and export of TMX files.
+      Importing TMX files is detailed in the project creation section (see
+      <a class="xref" href="ch05s03.html#create-tm-wizard-import-tmx" title="Import TMX/TXT/EXCEL files">the section called &ldquo;Import TMX/TXT/EXCEL files&rdquo;</a>). The procedure for
+      exporting TMs as TMX files is detailed below:</p>
+
+      
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+          
+<p>Click <span class="guimenu">Databases</span> &gt; <span class="guimenuitem">Export
+          TMX</span>.</p>
+
+          
+<div class="figure">
+<a name="N22473"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;133.&nbsp;Export TM as TMX</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/export-tm-to-tmx-1-1.png" align="middle" alt="Export TM as TMX"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+        
+</li>
+<li class="listitem">
+          
+<p>In the <code class="interfacename">Export TM To TMX files</code>
+          dialog box, the following settings need to be configured:</p>
+<div class="figure">
+<a name="N22491"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;134.&nbsp;Export TM To TMX files</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/export-tm-to-tmx-1-2.png" align="middle" alt="Export TM To TMX files"></div>
+              
+</div>
+            
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+
+          
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+              
+<p>Translation Memory</p>
+
+              
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                  
+<p>
+<span class="guibutton">Add</span>
+</p>
+
+                  
+<p>Click the button, then select the type of TM to
+                  add.</p>
+
+                  
+<p>If you choose file-based TM, the
+                  <code class="interfacename">Open</code> dialog will pop pu. Then
+                  browse to and select <span class="type">.hstm</span> file to be
+                  exported.</p>
+
+                  
+<div class="figure">
+<a name="N224C2"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;135.&nbsp;Select file-based TM</b>
+</p>
+<div class="figure-contents">
+                    
+
+                    
+<div class="screenshot">
+                      
+<div class="mediaobject" align="center">
+<img src="images/export-tm-to-tmx-1-2a.png" align="middle" alt="Select file-based TM"></div>
+                    
+</div>
+                  
+</div>
+</div>
+<br class="figure-break">
+
+                  
+<p>If you select server-based TM,
+                  <code class="interfacename">Translation Memory Management</code>
+                  dialog box will pop up. From there, select the TM to be
+                  exported and click <span class="guibutton">OK</span>.</p>
+
+                  
+<div class="figure">
+<a name="N224E1"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;136.&nbsp;Select server-based TM</b>
+</p>
+<div class="figure-contents">
+                    
+
+                    
+<div class="screenshot">
+                      
+<div class="mediaobject" align="center">
+<img src="images/export-tm-to-tmx-2-select-tm.png" align="middle" alt="Select server-based TM"></div>
+                    
+</div>
+                  
+</div>
+</div>
+<br class="figure-break">
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guibutton">Remove</span>
+</p>
+
+                  
+<p>Remove a TM from the list of "TMs to be
+                  exported".</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">Export Languages</span>
+</p>
+
+                  
+<p>When a TM from the list is selected, the languages of
+                  the TM will be shown here. You must select at least two
+                  languages to export the TM. Select all by default.</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">Source Language</span>
+</p>
+
+                  
+<p>If you are not sure about the source language of the
+                  exported TMX file you may select
+                  <span class="quote">&ldquo;<span class="quote">*all*</span>&rdquo;</span>.</p>
+
+                  
+<div class="figure">
+<a name="N22518"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;137.&nbsp;Export TMX options</b>
+</p>
+<div class="figure-contents">
+                    
+
+                    
+<div class="screenshot">
+                      
+<div class="mediaobject" align="center">
+<img src="images/export-tm-to-tmx-3-lang.png" align="middle" alt="Export TMX options"></div>
+                    
+</div>
+                  
+</div>
+</div>
+<br class="figure-break">
+                
+</li>
+</ul>
+</div>
+            
+</li>
+<li class="listitem">
+              
+<p>
+<span class="guilabel">Filter Rules</span>
+</p>
+
+              
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                  
+<p>
+<span class="guibutton">Add</span>
+</p>
+
+                  
+<p>When the selected filter rule is <span class="quote">&ldquo;<span class="quote">N/A</span>&rdquo;</span>,
+                  click <span class="guibutton">Edit</span> to add a new filter rule.
+                  A filter rule includes the following information:</p>
+
+                  
+<div class="figure">
+<a name="N22548"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;138.&nbsp;Export TMX: Filter rules</b>
+</p>
+<div class="figure-contents">
+                    
+
+                    
+<div class="screenshot">
+                      
+<div class="mediaobject" align="center">
+<img src="images/export-tm-to-tmx-4-filter-rule.png" align="middle" alt="Export TMX: Filter rules"></div>
+                    
+</div>
+                  
+</div>
+</div>
+<br class="figure-break">
+
+                  
+<div class="itemizedlist">
+<ul class="itemizedlist" type="square">
+<li class="listitem">
+                      
+<p>
+<span class="guilabel">Name</span>
+</p>
+                    
+</li>
+<li class="listitem">
+                      
+<p>Type of criteria combination</p>
+
+                      
+<p>
+<span class="guilabel">Meet all of the following
+                      conditions</span>, <span class="guilabel">meet one of the
+                      following conditions</span>
+</p>
+                    
+</li>
+<li class="listitem">
+                      
+<p>Criteria</p>
+
+                      
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                          
+<p>
+<span class="guilabel">Segment</span>
+</p>
+                        
+</li>
+<li class="listitem">
+                          
+<p>
+<span class="guilabel">Created on</span>
+</p>
+                        
+</li>
+<li class="listitem">
+                          
+<p>
+<span class="guilabel">Modified on</span>
+</p>
+                        
+</li>
+<li class="listitem">
+                          
+<p>
+<span class="guilabel">Created by</span>
+</p>
+                        
+</li>
+<li class="listitem">
+                          
+<p>
+<span class="guilabel">Modified by</span>
+</p>
+                        
+</li>
+<li class="listitem">
+                          
+<p>
+<span class="guilabel">Comments</span>
+</p>
+                        
+</li>
+</ul>
+</div>
+                    
+</li>
+</ul>
+</div>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guibutton">Edit</span>
+</p>
+
+                  
+<p>When you select a filter rule that has already been
+                  saved, you can click the <span class="guibutton">Edit</span> button
+                  to edit the rule.</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guibutton">Delete</span>
+</p>
+
+                  
+<p>Delete the selected filter rule.</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">Only export flagged
+                  segments</span>
+</p>
+
+                  
+<p>Only export flagged segments that meet the criteria of
+                  the specified filter rules.</p>
+                
+</li>
+</ul>
+</div>
+            
+</li>
+<li class="listitem">
+              
+<p>
+<span class="guilabel">Export Options</span>
+</p>
+
+              
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">TMX level 1</span>
+</p>
+
+                  
+<p>Remove all internal tags. The options should be
+                  enabled if you want to import the exported TMX into
+                  Trados.</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">Custom Coding</span>
+</p>
+
+                  
+<p>Specify the encoding used for TMX files. The default
+                  coding is <span class="quote">&ldquo;<span class="quote">UTF-8</span>&rdquo;</span> and usually does not need to
+                  be changed. If you want to import the exported TMX into
+                  Trados, custom encoding <span class="quote">&ldquo;<span class="quote">UTF-16LE</span>&rdquo;</span> should be
+                  selected.</p>
+                
+</li>
+</ul>
+</div>
+            
+</li>
+<li class="listitem">
+              
+<p>TMX save path</p>
+            
+</li>
+</ul>
+</div>
+        
+</li>
+</ol>
+</div>
+    
+</div>
+</body>
+</html>

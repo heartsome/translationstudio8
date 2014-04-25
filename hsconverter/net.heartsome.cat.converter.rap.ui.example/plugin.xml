@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.rap.ui.entrypoint">
+      <entrypoint
+            class="net.heartsome.cat.converter.rap.ui.Application"
+            parameter="view"
+            id="net.heartsome.cat.converter.rap.ui.Application">
+      </entrypoint>
+   </extension>
+
+</plugin>

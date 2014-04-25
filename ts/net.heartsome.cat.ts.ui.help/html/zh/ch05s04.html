@@ -1,0 +1,1908 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>4. 翻译</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<meta content="DocBook XSL Stylesheets V1.75.2 / ZoeeyDoc http://zoeeydoc.googlecode.com " name="generator">
+<link rel="home" href="index.html" title="用户手册">
+<link rel="up" href="ch05.html" title="工作流程">
+<link rel="prev" href="ch05s03.html" title="3. 译前准备">
+<link rel="next" href="ch05s05.html" title="5. 编辑与 QA">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="sect1" title="4. 翻译">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title" style="clear: both">
+<a name="ch5s4-translate"></a>4. 翻译</h2>
+</div>
+</div>
+</div>
+      
+
+      
+<p>翻译过程是翻译项目中最为重要的工作环节，CAT
+      工具的作用也主要体现于此。做完了前面提到的准备工作之后，就可以正式开始进行翻译了。当然，前面提到的都只是建议的步骤，在实际过程中可以根据自己的需要来选择，也可以随时在翻译过程中回去做那些操作。</p>
+
+      
+<div class="sect2" title="打开文件">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="open-xliff-file"></a>打开文件</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>HSTS 提供了两种方式来打开 XLIFF 文件（扩展名为 <span class="type">.hsxliff</span>）：</p>
+
+        
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+            
+<p>单独打开</p>
+
+            
+<p>双击要打开的文件，或选择一个或多个文件后使用右键菜单中的<span class="guimenuitem">打开文件</span>，即可以单独打开的方式打开
+            XLIFF 文件，也就是每个 XLIFF 文件分别用一个 XLIFF 编辑器打开。</p>
+          
+</li>
+<li class="listitem">
+            
+<p>合并打开</p>
+
+            
+<p>选择两个以上 XLIFF 文件、或选择包含至少两个 XLIFF
+            文件的一个或多个文件夹、或上述两种情况的组合，然后点击右键菜单中的<span class="guimenuitem">合并打开</span>，可以将所有选中的
+            XLIFF 文件合并在一个 XLIFF 编辑器中打开&mdash;&mdash;就像它们是一个 XLIFF 文件一样。</p>
+<div class="figure">
+<a name="N215D4"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 75. 合并打开</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="screenshot">
+                  
+<div class="mediaobject" align="center">
+<img src="images/merging-open-1.png" align="middle" alt="合并打开"></div>
+                
+</div>
+              
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+
+            
+<div class="figure">
+<a name="N215EA"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 76. 合并打开的效果</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/merging-open-2.png" align="middle" alt="合并打开的效果"></div>
+              
+</div>
+            
+</div>
+</div>
+<br class="figure-break">
+          
+</li>
+</ul>
+</div>
+
+        
+<p>单独打开文件的方式，适合文件不多的翻译项目；而合并打开的方式，则尤其适用于项目中的文件比较小、比较多、而且有多级目录结构的情况。</p>
+      
+</div>
+
+      
+<div class="sect2" title="输入译文">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="edit-target"></a>输入译文</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>XLIFF
+        编辑器的使用比较直观，用鼠标点击译文所在的单元格，会出现一个闪动的光标，这时就可以直接输入译文了。输入完成后，用鼠标点击输入框之外的区域，或按方向键<span class="keycap"><strong>&uarr;</strong></span>、<span class="keycap"><strong>&darr;</strong></span>转到上一个、下一个文本段，均可以将输入的内容实时地保存到
+        XLIFF 文件中。</p>
+      
+</div>
+
+      
+<div class="sect2" title="在译文中插入标记">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="ch5s4c"></a>在译文中插入标记</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>源文件中的一些样式信息（如加粗、斜体、下划线、前景色、背景色等等）在转换为 XLIFF
+        后，会以内部标记的形式保存，便于在转换为目标文件时能准确还原每个部分的内容所对应的样式。</p>
+
+        
+<p>因此，在翻译过程中，若源文中包含有内部标记，则需要在译文中相应的译文位置上也插入同样的标记。HSTS
+        中的标记按其在源文中的出现顺序编号，在译文中插入标记时主要通过标记序号来标识。</p>
+
+        
+<div class="figure">
+<a name="N21622"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 77. 插入内部标记</b>
+</p>
+<div class="figure-contents">
+          
+
+          
+<div class="screenshot">
+            
+<div class="mediaobject" align="center">
+<img src="images/insert-tag.png" align="middle" alt="插入内部标记"></div>
+          
+</div>
+        
+</div>
+</div>
+<br class="figure-break">
+
+        
+<p>插入下一标记的意思，是指在译文中插入源文有、而译文没有的最小序号的标记。<span class="emphasis"><em>强烈建议使用对应的快捷键来执行</em></span>，将大幅提高操作效率。</p>
+
+        
+<p>一些特定的内部标记是<span class="emphasis"><em>成对出现</em></span>的，即两个标记一起出现，先出现的称为<span class="quote">&ldquo;<span class="quote">开始标记</span>&rdquo;</span>、后出现的称为<span class="quote">&ldquo;<span class="quote">结束标记</span>&rdquo;</span>（如加粗字体的开始和结束位置）。而在成对标记的<span class="quote">&ldquo;<span class="quote">开始标记</span>&rdquo;</span>与<span class="quote">&ldquo;<span class="quote">结束标记</span>&rdquo;</span>之间，可能还会嵌套有其他标记（如在一段加粗文字中，还有部分单词增加了斜体样式）。成对标记会使用相同的序号。</p>
+
+        
+<p>除了上述这两种类型（<span class="emphasis"><em>成对标记</em></span>、<span class="emphasis"><em>嵌套标记</em></span>）的有特定顺序结构的标记之外，其他标记则没有严格的顺序限制，即<span class="emphasis"><em>译文中的标记顺序可以和源文不同</em></span>。确定标记应该放在何处的主要依据是源文和译文的内容对应关系：如果被标记包围的源文单词在句首，而其对应的译文单词却在句末，则标记通常也应该同步地加在译文的句末（包围与源文中被同样标记包围的单词所对应的译文单词）。</p>
+
+        
+<div class="tip" title="提示" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">提示</h3>
+          
+<p>如果先选中部分译文，再插入<span class="emphasis"><em>成对标记</em></span>，则选中的文本会自动放在这一对标记的中间。如果插入成对标记时没有选择译文，则光标默认会放在这一对标记中间，以方便在其中输入内容。</p>
+        
+</div>
+
+        
+<div class="tip" title="提示" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">提示</h3>
+          
+<p>标记的颜色可以在<span class="guimenu">工具</span> &gt;
+          <span class="guimenuitem">选项</span> &gt;
+          <span class="guimenuitem">颜色设置</span>中修改。其中，错误标记是指在译文中出现、而源文中没有出现过的标记，需要从译文中删除这些标记。</p>
+        
+</div>
+      
+</div>
+
+      
+<div class="sect2" title="修改文本段状态">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="change-segment-status"></a>修改文本段状态</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>文本段状态可以用来表示该文本段所处的翻译流程，HSTS 提供了以下几种文本段的翻译流程状态：</p>
+
+        
+<div class="figure">
+<a name="N2167E"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 78. 右键菜单：文本段状态</b>
+</p>
+<div class="figure-contents">
+          
+
+          
+<div class="screenshot">
+            
+<div class="mediaobject" align="center">
+<img src="images/xliff-editor-segment-status.png" align="middle" alt="右键菜单：文本段状态"></div>
+          
+</div>
+        
+</div>
+</div>
+<br class="figure-break">
+
+        
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+            
+<p>
+<code class="interfacename">未翻译</code>
+</p>
+
+            
+<p>未添加译文的文本段。若把其他状态下的文本段译文删除或清空，则文本段状态自动改为此状态。</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<code class="interfacename">草稿</code>
+</p>
+
+            
+<p>添加了译文、但未确认是否已翻译好的文本段。若对非草稿状态的译文进行了改动、且译文非空，则自动改为此状态。</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<code class="interfacename">已翻译</code>
+</p>
+
+            
+<p>添加了译文、且已经翻译人员自我确认已翻译完成的文本段。用户可将文本段从未翻译之外的其他状态使用<span class="guimenuitem">完成翻译</span>功能改为此状态。</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<code class="interfacename">已批准</code>
+</p>
+
+            
+<p>译文已经编辑或校对人员初步确认翻译无误的文本段，<span class="emphasis"><em>隐含已翻译</em></span>。用户可将文本段从未翻译之外的其他状态使用<span class="guimenuitem">批准</span>功能改为此状态。</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<code class="interfacename">已签发</code>
+</p>
+
+            
+<p>译文已经编辑或校对人员最终确认可作为终稿的文本段，<span class="emphasis"><em>隐含已批准</em></span>。用户可将文本段从已批准状态使用<span class="guimenuitem">签发</span>功能改为此状态。</p>
+          
+</li>
+</ul>
+</div>
+
+        
+<p>其中，将文本段状态修改为<span class="quote">&ldquo;<span class="quote">已翻译</span>&rdquo;</span>或<span class="quote">&ldquo;<span class="quote">已批准</span>&rdquo;</span>时，若项目正确设置了默认记忆库，则同时还会<span class="emphasis"><em>自动将文本段入库</em></span>，否则只修改状态而不入库。</p>
+      
+</div>
+
+      
+<div class="sect2" title="记忆库">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="ch5s4e"></a>记忆库</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>在翻译过程中，使用频率较高的记忆库相关功能如下：</p>
+
+        
+<div class="sect3" title="文本段入库">
+<div class="titlepage">
+<div>
+<div>
+<h4 class="title">
+<a name="add-segment-to-tm"></a>文本段入库</h4>
+</div>
+</div>
+</div>
+          
+
+          
+<p>将文本段的源文及其译文保存到记忆库，可以在类似的句子中复用部分译文，并使不同文本段的译文语言风格尽量一致。</p>
+
+          
+<p>如前面所述，将文本段状态修改为<span class="quote">&ldquo;<span class="quote">已翻译</span>&rdquo;</span>或<span class="quote">&ldquo;<span class="quote">已批准</span>&rdquo;</span>时，若项目正确设置了默认记忆库，同时还会自动将文本段入库，否则只修改状态而不入库。若需要在项目完成时统一将所有文本段入库，则可以参考<a class="xref" href="ch06.html#update-tm" title="1. 更新记忆库">第 1 节 &ldquo;更新记忆库&rdquo;</a>的内容。</p>
+
+          
+<p>以上述两种方式将文本段入库时，对于被判定为重复（即源文相同）的条目，与导入 TMX
+          时一样可以设置其处理策略，详情见<a class="xref" href="ch05s03.html#create-tm-wizard-import-tmx" title="导入 TMX/TXT/EXCEL 文件">&ldquo;导入 TMX/TXT/EXCEL 文件&rdquo;一节</a>。</p>
+        
+</div>
+
+        
+<div class="sect3" title="获取当前文本段的匹配">
+<div class="titlepage">
+<div>
+<div>
+<h4 class="title">
+<a name="N2170A"></a>获取当前文本段的匹配</h4>
+</div>
+</div>
+</div>
+          
+
+          
+<p>若已正确地为项目设置了记忆库，则在每次选择一个文本段时，HSTS
+          会自动地从记忆库中获取当前文本段的匹配，并显示在<code class="interfacename">记忆库</code>视图中。选择具体的匹配项，还可以在记忆库视图的状态栏中看到该匹配的相关信息：修改时间、修改者、记忆库名称。</p>
+
+          
+<div class="figure">
+<a name="N21715"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 79. 记忆库匹配</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/tm-matches.png" align="middle" alt="记忆库匹配"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+
+          
+<p>把鼠标放在该状态栏上，则可以看到更多属性信息：创建者、创建时间、自定义项目属性（其设置方法请参考<a class="xref" href="ch05s02.html#create-project-wizard-project-info" title="项目信息">&ldquo;项目信息&rdquo;一节</a>、<a class="xref" href="ch05s03.html#project-setting" title="项目设置">&ldquo;项目设置&rdquo;一节</a>）。</p>
+
+          
+<p>用户可以在<span class="guimenu">工具</span>菜单 &gt;
+          <span class="guimenuitem">选项</span> &gt; <span class="guimenuitem">翻译</span>
+          &gt; <span class="guimenuitem">记忆库</span>中设置查询记忆库时的参数：</p>
+
+          
+<div class="figure">
+<a name="N21743"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 80. 选项：记忆库</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/options-tm.png" align="middle" alt="选项：记忆库"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+
+          
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+              
+<p>
+<span class="guilabel">区分大小写</span>
+</p>
+            
+</li>
+<li class="listitem">
+              
+<p>
+<span class="guilabel">忽略标记</span>
+</p>
+            
+</li>
+<li class="listitem">
+              
+<p>
+<span class="guilabel">最低匹配率</span>
+</p>
+
+              
+<p>记忆库中与当前文本段之间的匹配低于此数字的匹配将不会被显示。</p>
+            
+</li>
+<li class="listitem">
+              
+<p>
+<span class="guilabel">上下文文本段数量</span>
+</p>
+
+              
+<p>参与计算上下文匹配的上文及下文的文本段数量。</p>
+            
+</li>
+<li class="listitem">
+              
+<p>
+<span class="guilabel">匹配显示数量</span>
+</p>
+
+              
+<p>若满足最低匹配率的匹配数量达到此数字，则不会继续在记忆库中查找匹配。</p>
+            
+</li>
+<li class="listitem">
+              
+<p>
+<span class="guilabel">匹配优先级</span>
+</p>
+
+              
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">默认记忆库</span>
+</p>
+
+                  
+<p>即默认记忆库的记录排在非默认记忆库的记录之前。</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">最近更新</span>
+</p>
+
+                  
+<p>即越新的记录排在越前面。</p>
+                
+</li>
+</ul>
+</div>
+            
+</li>
+</ul>
+</div>
+
+          
+<p>在<code class="interfacename">记忆库</code>视图中，不同的匹配类型用不同的颜色来表示，方便用户直观地区分它们，这些颜色的设置可以在<span class="guimenu">工具</span>菜单
+          &gt; <span class="guimenuitem">选项</span> &gt;
+          <span class="guimenuitem">系统</span> &gt;
+          <span class="guimenuitem">颜色设置</span>中修改。</p>
+
+          
+<div class="figure">
+<a name="N217B8"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 81. 选项：颜色设置</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/options-color.png" align="middle" alt="选项：颜色设置"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+        
+</div>
+
+        
+<div class="sect3" title="将匹配应用到译文">
+<div class="titlepage">
+<div>
+<div>
+<h4 class="title">
+<a name="N217CF"></a>将匹配应用到译文</h4>
+</div>
+</div>
+</div>
+          
+
+          
+<p>在<code class="interfacename">记忆库</code>视图中，双击匹配可将该匹配的译文应用到当前文本段，同时，文本段中对应的匹配率数字的背景色也与该匹配的背景色一致。另外，也可以使用快捷键
+          <span class="keycap"><strong>Alt</strong></span>+<span class="keycap"><strong>1</strong></span>、<span class="keycap"><strong>Alt</strong></span>+<span class="keycap"><strong>2</strong></span>、<span class="keycap"><strong>Alt</strong></span>+<span class="keycap"><strong>3</strong></span>
+          分别取第 1、2、3 个匹配的译文。</p>
+
+          
+<div class="figure">
+<a name="N217EC"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 82. 接受匹配</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/apply-tm-match.png" align="middle" alt="接受匹配"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+
+          
+<div class="tip" title="提示" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">提示</h3>
+            
+<p>如果将匹配应用到译文之后修改了译文，则该文本段的匹配率数字的背景色会自动消失（仅保留数字而无背景色），以示区别。</p>
+          
+</div>
+
+          
+<p>如果已经输入了部分译文，又想从记忆库匹配中选择部分内容应用到译文中，则可以直接用鼠标在匹配的译文中选择需要的内容，然后用
+          <span class="keycap"><strong>Ctrl</strong></span>/<span class="keycap"><strong>Command</strong></span>+<span class="keycap"><strong>C</strong></span>
+          复制，再用
+          <span class="keycap"><strong>Ctrl</strong></span>/<span class="keycap"><strong>Command</strong></span>+<span class="keycap"><strong>V</strong></span>
+          粘贴到文本段中。</p>
+
+          
+<div class="figure">
+<a name="N2181D"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 83. 记忆库匹配：选择部分译文</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/tm-matches-select.png" align="middle" alt="记忆库匹配：选择部分译文"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+        
+</div>
+
+        
+<div class="sect3" title="编辑匹配、删除匹配">
+<div class="titlepage">
+<div>
+<div>
+<h4 class="title">
+<a name="N21834"></a>编辑匹配、删除匹配</h4>
+</div>
+</div>
+</div>
+          
+
+          
+<p>如果发现<code class="interfacename">记忆库</code>视图中的匹配有错误需要更正，或有重复入库的句子需要删除，则可以分别使用<code class="interfacename">记忆库</code>视图上的<span class="guibutton">编辑匹配</span>和<span class="guibutton">删除匹配</span>两个按钮来进行操作。</p>
+
+          
+<div class="figure">
+<a name="N21848"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 84. 记忆库：编辑匹配</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/tm-matches-edit-1.png" align="middle" alt="记忆库：编辑匹配"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+
+          
+<p>在<code class="interfacename">记忆库</code>视图中选中要编辑的匹配、点击<span class="guibutton">编辑匹配</span>按钮，弹出如下<code class="interfacename">编辑匹配</code>对话框：</p>
+
+          
+<div class="figure">
+<a name="N2186A"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 85. 编辑匹配</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/tm-matches-edit-2.png" align="middle" alt="编辑匹配"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+
+          
+<p>编辑完成后点击确定即可将改动实时地保存到记忆库中。</p>
+
+          
+<div class="figure">
+<a name="N21883"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 86. 记忆库：删除匹配</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/tm-matches-delete.png" align="middle" alt="记忆库：删除匹配"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+
+          
+<p>删除匹配的操作与编辑类似，选中匹配后点击删除匹配按钮，然后确认删除即可。</p>
+
+          
+<div class="tip" title="提示" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">提示</h3>
+            
+<p>编辑或删除匹配的操作对象均仅限于实时地从默认记忆库中查询到的匹配，而无法对<span class="emphasis"><em>预存的</em></span>记忆库匹配、机器翻译匹配或快速翻译匹配进行编辑和删除。</p>
+          
+</div>
+
+          
+<div class="warning" title="警告" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">警告</h3>
+            
+<p>对记忆库匹配的编辑和删除操作都是<span class="emphasis"><em>直接生效、且无法撤销</em></span>，请谨慎操作。</p>
+          
+</div>
+        
+</div>
+
+        
+<div class="sect3" title="相关搜索">
+<div class="titlepage">
+<div>
+<div>
+<h4 class="title">
+<a name="concordance-search"></a>相关搜索</h4>
+</div>
+</div>
+</div>
+          
+
+          
+<p>相关搜索主要用于搜索记忆库中与指定源文内容相关的译文，方法如下：</p>
+
+          
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+              
+<p>确认项目已正确设置记忆库，详情请参考<a class="xref" href="ch05s03.html#project-setting-tm" title="图 53. 项目设置：记忆库">图 53 &ldquo;项目设置：记忆库&rdquo;</a>；</p>
+            
+</li>
+<li class="listitem">
+              
+<p>选择源文或译文中的内容，点击右键菜单或<span class="guimenu">翻译</span>菜单中的<span class="guimenuitem">相关搜索</span>；</p>
+<div class="tip" title="提示" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">提示</h3>
+                  
+<p>选中的内容也将自动复制到系统剪贴板，如果在记忆库中没有找到想要的结果，想在网络上继续搜索，可直接使用快捷键
+                  <span class="keycap"><strong>Ctrl</strong></span>/<span class="keycap"><strong>Command</strong></span>+<span class="keycap"><strong>V</strong></span>
+                  将刚才选中的内容粘贴到浏览器的搜索框中。</p>
+                
+</div>
+
+              
+<div class="figure">
+<a name="N218DC"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 87. XLIFF 编辑器：选择待搜索内容</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="screenshot">
+                  
+<div class="mediaobject" align="center">
+<img src="images/concordance-search-1.png" align="middle" alt="XLIFF 编辑器：选择待搜索内容"></div>
+                
+</div>
+              
+</div>
+</div>
+<br class="figure-break">
+            
+</li>
+<li class="listitem">
+              
+<p>在弹出的<code class="interfacename">相关搜索</code>对话框中，根据需要调整如下设置：</p>
+
+              
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">区分大小写</span>
+</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">忽略标记</span>
+</p>
+
+                  
+<p>即不搜索文本段中的标记代码。</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">正则表达式</span>
+</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">记忆库</span>
+</p>
+
+                  
+<p>选择要在哪个记忆库中搜索。</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">目标语言</span>
+</p>
+
+                  
+<p>默认只在当前 XLIFF
+                  文件的源语言中搜索，只显示其目标语言的内容，也可以选择同一语言的不同国家语言版本的译文作为参考。</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">附加过滤条件</span>
+</p>
+
+                  
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                      
+<p>
+<span class="guilabel">源文/译文</span>
+</p>
+                    
+</li>
+<li class="listitem">
+                      
+<p>
+<span class="guilabel">包含/不包含</span>
+</p>
+                    
+</li>
+<li class="listitem">
+                      
+<p>
+<span class="guilabel">文本内容</span>
+</p>
+                    
+</li>
+</ul>
+</div>
+                
+</li>
+</ul>
+</div>
+
+              
+<div class="figure">
+<a name="N21949"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 88. 相关搜索</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="screenshot">
+                  
+<div class="mediaobject" align="center">
+<img src="images/concordance-search-2.png" align="middle" alt="相关搜索"></div>
+                
+</div>
+              
+</div>
+</div>
+<br class="figure-break">
+            
+</li>
+<li class="listitem">
+              
+<p>点击<span class="guibutton">搜索</span>按钮，查看结果。</p>
+            
+</li>
+</ol>
+</div>
+
+          
+<p>双击相关搜索结果中的译文后，可以选择其中的内容，复制到剪贴板中备用。</p>
+        
+</div>
+      
+</div>
+
+      
+<div class="sect2" title="术语库">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="ch5s4f"></a>术语库</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>和记忆库对应的，术语库相关的常用功能也类似：</p>
+
+        
+<div class="sect3" title="添加术语">
+<div class="titlepage">
+<div>
+<div>
+<h4 class="title">
+<a name="add-terminology"></a>添加术语</h4>
+</div>
+</div>
+</div>
+          
+
+          
+<p>要将术语添加到术语库，可以按如下步骤操作：</p>
+
+          
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+              
+<p>确认已为项目设置了默认术语库，详情请参考<a class="xref" href="ch05s03.html#project-setting-tb" title="图 73. 项目设置：术语库">图 73 &ldquo;项目设置：术语库&rdquo;</a>；</p>
+            
+</li>
+<li class="listitem">
+              
+<p>在打开的 XLIFF
+              文件中，<span class="emphasis"><em>同时选中</em></span>要添加的术语的源文和译文；</p>
+
+              
+<div class="figure">
+<a name="N21994"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 89. 添加术语</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="screenshot">
+                  
+<div class="mediaobject" align="center">
+<img src="images/add-terminology-1.png" align="middle" alt="添加术语"></div>
+                
+</div>
+              
+</div>
+</div>
+<br class="figure-break">
+            
+</li>
+<li class="listitem">
+              
+<p>点击<span class="guimenu">翻译</span>菜单 &gt;
+              <span class="guimenuitem">添加术语</span>（或使用快捷键
+              <span class="keycap"><strong>Ctrl</strong></span>/<span class="keycap"><strong>Command</strong></span>+<span class="keycap"><strong>T</strong></span>），在弹出的<code class="interfacename">添加术语到术语库</code>对话框中，上一步选中的<span class="guilabel">源文</span>和<span class="guilabel">译文</span>已经自动填写到相应的位置；</p>
+
+              
+<div class="figure">
+<a name="N219C8"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 90. 添加术语对话框</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="screenshot">
+                  
+<div class="mediaobject" align="center">
+<img src="images/add-terminology-3.png" align="middle" alt="添加术语对话框"></div>
+                
+</div>
+              
+</div>
+</div>
+<br class="figure-break">
+            
+</li>
+<li class="listitem">
+              
+<p>如有必要，还可以填写<span class="guilabel">属性</span>字段，便于区分不同客户或题材对同一术语有不同翻译的情况；</p>
+            
+</li>
+<li class="listitem">
+              
+<p>确认所有信息无误后点击<span class="guibutton">确定</span>按钮，完成术语的添加。</p>
+            
+</li>
+</ol>
+</div>
+
+          
+<p>用户可以在<span class="guimenu">工具</span>菜单 &gt;
+          <span class="guimenuitem">选项</span> &gt; <span class="guimenuitem">翻译</span>
+          &gt; <span class="guimenuitem">术语库</span>中设置被判定为重复的术语的处理策略，详情见<a class="xref" href="ch05s03.html#create-tb-wizard-import-tbx" title="导入 TBX 文件">&ldquo;导入 TBX 文件&rdquo;一节</a>。</p>
+        
+</div>
+
+        
+<div class="sect3" title="获取当前文本段的术语">
+<div class="titlepage">
+<div>
+<div>
+<h4 class="title">
+<a name="N21A05"></a>获取当前文本段的术语</h4>
+</div>
+</div>
+</div>
+          
+
+          
+<p>若已正确地为项目设置了术语库，则在每次选择一个文本段时，HSTS
+          会自动地从术语库中获取当前文本段的术语，并显示在<code class="interfacename">术语</code>视图中。</p>
+
+          
+<div class="figure">
+<a name="N21A10"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 91. 术语匹配</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/term-matches.png" align="middle" alt="术语匹配"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+        
+</div>
+
+        
+<div class="sect3" title="在译文中插入术语">
+<div class="titlepage">
+<div>
+<div>
+<h4 class="title">
+<a name="N21A27"></a>在译文中插入术语</h4>
+</div>
+</div>
+</div>
+          
+
+          
+<p>将光标定位在译文中，双击<code class="interfacename">术语</code>视图中的术语，即可以将该术语的译文插入到光标所在位置。另外，也可以使用快捷键
+          <span class="keycap"><strong>Ctrl</strong></span>+<span class="keycap"><strong>Shift</strong></span>+<span class="keycap"><strong>1</strong></span>~<span class="keycap"><strong>0</strong></span>
+          来插入序号为 1~10 的术语。</p>
+
+          
+<div class="figure">
+<a name="N21A3E"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 92. 插入术语</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/insert-term.png" align="middle" alt="插入术语"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+        
+</div>
+
+        
+<div class="sect3" title="搜索术语">
+<div class="titlepage">
+<div>
+<div>
+<h4 class="title">
+<a name="search-terminology"></a>搜索术语</h4>
+</div>
+</div>
+</div>
+          
+
+          
+<p>在术语库中搜索术语的步骤如下：</p>
+
+          
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+              
+<p>确认已为项目设置了术语库，详情请参考<a class="xref" href="ch05s03.html#project-setting-tb" title="图 73. 项目设置：术语库">图 73 &ldquo;项目设置：术语库&rdquo;</a>；</p>
+            
+</li>
+<li class="listitem">
+              
+<p>在打开的 XLIFF 文件源文或译文中，选择要搜索的术语；</p>
+
+              
+<div class="figure">
+<a name="N21A6E"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 93. XLIFF 编辑器：选择待搜索内容</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="screenshot">
+                  
+<div class="mediaobject" align="center">
+<img src="images/search-term-1.png" align="middle" alt="XLIFF 编辑器：选择待搜索内容"></div>
+                
+</div>
+              
+</div>
+</div>
+<br class="figure-break">
+            
+</li>
+<li class="listitem">
+              
+<p>点击<span class="guimenu">翻译</span>菜单 &gt;
+              <span class="guimenuitem">搜索术语</span>；</p>
+            
+</li>
+<li class="listitem">
+              
+<p>在弹出的<code class="interfacename">术语搜索</code>对话框中，若之前选择了术语，也会自动填写在搜索框中；若未选择，则需要自己填写。另外还可根据需要设置如下参数：</p>
+
+              
+<div class="figure">
+<a name="N21A99"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 94. 搜索术语</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="screenshot">
+                  
+<div class="mediaobject" align="center">
+<img src="images/search-term-2.png" align="middle" alt="搜索术语"></div>
+                
+</div>
+              
+</div>
+</div>
+<br class="figure-break">
+
+              
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">区分大小写</span>
+</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">忽略标记</span>
+</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">正则表达式</span>
+</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">相似度</span>
+</p>
+
+                  
+<p>与文本段的匹配率类似，即两个术语之间的相似程度</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">术语库</span>
+</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">目标语言</span>
+</p>
+                
+</li>
+</ul>
+</div>
+            
+</li>
+<li class="listitem">
+              
+<p>点击<span class="guibutton">搜索</span>按钮，查看结果。</p>
+            
+</li>
+</ol>
+</div>
+        
+</div>
+      
+</div>
+
+      
+<div class="sect2" title="品质检查">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="translation-qa-check"></a>品质检查</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>HSTS 提供了丰富的品质检查功能，从各方面为用户提高翻译质量提供了帮助。在<span class="guimenu">工具</span>菜单
+        &gt; <span class="guimenuitem">选项</span> &gt;
+        <span class="guimenuitem">品质检查</span> &gt;
+        <span class="guimenuitem">品质检查</span>中，可以启用如下检查项：</p>
+
+        
+<div class="figure">
+<a name="N21B01"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 95. 选项：品质检查</b>
+</p>
+<div class="figure-contents">
+          
+
+          
+<div class="screenshot">
+            
+<div class="mediaobject" align="center">
+<img src="images/options-qa.png" align="middle" alt="选项：品质检查"></div>
+          
+</div>
+        
+</div>
+</div>
+<br class="figure-break">
+
+        
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+            
+<p>
+<span class="guilabel">术语一致性</span>
+</p>
+
+            
+<p>术语库中的术语被正确翻译。</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="guilabel">数字一致性</span>
+</p>
+
+            
+<p>源文中的数字在译文中正确输入。</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="guilabel">标记一致性</span>
+</p>
+
+            
+<p>源文中的标记在译文中正确插入。</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="guilabel">非译元素</span>
+</p>
+
+            
+<p>源文中的非译元素在译文中正确输入。</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="guilabel">段首/段末空格</span>
+</p>
+
+            
+<p>译文句首/句末的空格与源文一致。</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="guilabel">文本段完整性</span>
+</p>
+
+            
+<p>译文非空、且与源文不一样。</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="guilabel">译文字数限制</span>
+</p>
+
+            
+<p>译文字数在允许范围内，常用于软件 UI、视频字幕等场景中。</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="guilabel">拼写检查</span>
+</p>
+
+            
+<p>译文的拼写正确。</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="guilabel">文本段一致性</span>
+</p>
+
+            
+<p>源文和译文分别都一致。</p>
+          
+</li>
+</ul>
+</div>
+
+        
+<p>上述品质检查项中，除<span class="guilabel">文本段一致性</span>之外，其余检查项均支持<span class="quote">&ldquo;<span class="quote">自动检查</span>&rdquo;</span>，即可以设置在<span class="guilabel">完成翻译时</span>或<span class="guilabel">批准文本段时</span>自动执行指定的一项或多项品质检查。在翻译过程中，建议启用自动品质检查，以便在第一时间发现问题、并尽早解决。</p>
+
+        
+<p>未通过品质检查的文本段将在<code class="interfacename">品质检查结果</code>视图中列出，双击结果视图中的问题项，即可直接跳转到该文本段。由于该结果的展示形式是一行对应一个问题，故当一个文本段同时有多个品质检查问题时，会有多个结果。此外，还可以根据需要将品质检查结果导出给其他人员参考，详情请见<a class="xref" href="ch05s05.html#export-qa-report" title="导出 QA 报告">&ldquo;导出 QA 报告&rdquo;一节</a>。</p>
+
+        
+<div class="note" title="注意" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+          
+<p>QA完成后，可能会出现一些误报。您可以视情况将它们忽略。</p>
+        
+</div>
+      
+</div>
+
+      
+<div class="sect2" title="快速翻译">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="ch5s4h"></a>快速翻译</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>HSTS 的快速翻译是<span class="emphasis"><em>基于样例的机器翻译</em></span> (Example Based Machine
+        Translation,
+        EBMT)，它可以把记忆库匹配中的术语替换成当前文本段的术语，自动组装成质量较高的译文。快速翻译将记忆库匹配与术语结合，既有记忆库的高质量、又减少了手工替换术语的繁琐操作。下面举例说明快速翻译功能的使用场景：</p>
+
+        
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+            
+<p>前提条件</p>
+
+            
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+                
+<p>记忆库中有文本段<span class="quote">&ldquo;<span class="quote">This is a black
+                keyboard.</span>&rdquo;</span>及其译文<span class="quote">&ldquo;<span class="quote">这是一个黑色的键盘。</span>&rdquo;</span>
+</p>
+
+                
+<div class="figure">
+<a name="N21BB2"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 96. 快速翻译：记忆库</b>
+</p>
+<div class="figure-contents">
+                  
+
+                  
+<div class="screenshot">
+                    
+<div class="mediaobject" align="center">
+<img src="images/quick-translation-1-tm.png" align="middle" alt="快速翻译：记忆库"></div>
+                  
+</div>
+                
+</div>
+</div>
+<br class="figure-break">
+              
+</li>
+<li class="listitem">
+                
+<p>术语库中有如下术语：<span class="quote">&ldquo;<span class="quote">black-黑色的</span>&rdquo;</span>、<span class="quote">&ldquo;<span class="quote">keyboard-键盘</span>&rdquo;</span>、<span class="quote">&ldquo;<span class="quote">white-白色的</span>&rdquo;</span>、<span class="quote">&ldquo;<span class="quote">mouse-鼠标</span>&rdquo;</span>
+</p>
+
+                
+<div class="figure">
+<a name="N21BD9"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 97. 快速翻译：术语库</b>
+</p>
+<div class="figure-contents">
+                  
+
+                  
+<div class="screenshot">
+                    
+<div class="mediaobject" align="center">
+<img src="images/quick-translation-2-tb.png" align="middle" alt="快速翻译：术语库"></div>
+                  
+</div>
+                
+</div>
+</div>
+<br class="figure-break">
+              
+</li>
+</ol>
+</div>
+          
+</li>
+<li class="listitem">
+            
+<p>当前文本段源文</p>
+
+            
+<p>
+<span class="quote">&ldquo;<span class="quote">This is a white mouse.</span>&rdquo;</span>
+</p>
+          
+</li>
+<li class="listitem">
+            
+<p>快速翻译得到译文</p>
+
+            
+<p>
+<span class="quote">&ldquo;<span class="quote">这是一个白色的鼠标。</span>&rdquo;</span>
+</p>
+
+            
+<div class="figure">
+<a name="N21C05"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 98. 快速翻译</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/quick-translation-3.png" align="middle" alt="快速翻译"></div>
+              
+</div>
+            
+</div>
+</div>
+<br class="figure-break">
+          
+</li>
+</ul>
+</div>
+
+        
+<p>快速翻译有两个必要条件：</p>
+
+        
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+            
+<p>当前文本段在记忆库中有匹配（需满足<span class="guimenu">工具</span>菜单 &gt;
+            <span class="guimenuitem">选项</span> &gt; <span class="guimenuitem">翻译</span>
+            &gt;
+            <span class="guimenuitem">记忆库</span>中的<span class="guilabel">最低匹配率</span>，在上例中已设置为最低
+            35%）；</p>
+          
+</li>
+<li class="listitem">
+            
+<p>该记忆库匹配与当前源文的差异处均在术语库中有术语。</p>
+          
+</li>
+</ol>
+</div>
+
+        
+<p>建议在<span class="guimenu">工具</span>菜单 &gt; <span class="guimenuitem">选项</span>
+        &gt;
+        <span class="guimenuitem">翻译</span>中启用<span class="guilabel">自动快速翻译</span>功能，若未启用此选项，也可以通过<span class="guimenu">翻译</span>菜单
+        &gt; <span class="guimenuitem">快速翻译</span>来手动执行快速翻译。</p>
+
+        
+<div class="note" title="注意" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+          
+<p>如果当前文本段不满足快速翻译的上述两个条件，则执行此操作不会有任何可见的效果。</p>
+        
+</div>
+      
+</div>
+
+      
+<div class="sect2" title="机器翻译">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="ch5s4i"></a>机器翻译</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>HSTS 提供了 Bing Translator 和 Google Translate
+        两种机器翻译引擎的支持，前者目前可以免费申请，后者则需要付费购买。机器翻译的使用详情请参考<a class="xref" href="ch05s03.html#prestore-mt" title="预存机器翻译">&ldquo;预存机器翻译&rdquo;一节</a>和<a class="xref" href="ch09.html#how-to-use-mt" title="1.2.">问： 1.2</a>。</p>
+      
+</div>
+
+      
+<div class="sect2" title="过滤文本段">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="filter-segments"></a>过滤文本段</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>在翻译过程中有时需要根据文本段的某些特征（如状态、匹配情况等）来过滤文本段，以缩小查找范围或方便排除干扰、批量操作。HSTS
+        内置了如下文本段过滤器：</p>
+
+        
+<div class="figure">
+<a name="xliff-editor-filter-segments"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 99. XLIFF 编辑器：文本段过滤器</b>
+</p>
+<div class="figure-contents">
+          
+
+          
+<div class="screenshot">
+            
+<div class="mediaobject" align="center">
+<img src="images/xliff-editor-filter-segments.png" align="middle" alt="XLIFF 编辑器：文本段过滤器"></div>
+          
+</div>
+        
+</div>
+</div>
+<br class="figure-break">
+
+        
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+            
+<p>已锁定</p>
+          
+</li>
+<li class="listitem">
+            
+<p>未锁定</p>
+          
+</li>
+<li class="listitem">
+            
+<p>疑问</p>
+          
+</li>
+<li class="listitem">
+            
+<p>不添加到记忆库</p>
+          
+</li>
+<li class="listitem">
+            
+<p>带批注</p>
+          
+</li>
+<li class="listitem">
+            
+<p>未翻译</p>
+          
+</li>
+<li class="listitem">
+            
+<p>草稿</p>
+          
+</li>
+<li class="listitem">
+            
+<p>已翻译</p>
+          
+</li>
+<li class="listitem">
+            
+<p>翻译未完成</p>
+          
+</li>
+<li class="listitem">
+            
+<p>已批准</p>
+          
+</li>
+<li class="listitem">
+            
+<p>未批准</p>
+          
+</li>
+<li class="listitem">
+            
+<p>已签发</p>
+          
+</li>
+<li class="listitem">
+            
+<p>未签发</p>
+          
+</li>
+<li class="listitem">
+            
+<p>重复</p>
+          
+</li>
+<li class="listitem">
+            
+<p>上下文匹配</p>
+          
+</li>
+<li class="listitem">
+            
+<p>完全匹配</p>
+          
+</li>
+<li class="listitem">
+            
+<p>模糊匹配</p>
+          
+</li>
+</ul>
+</div>
+
+        
+<p>此外，还可以点击文本段过滤器下拉列表右边的<span class="guibutton">自定义过滤器</span>按钮来添加自定义过滤器：</p>
+<div class="figure">
+<a name="N21CF8"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 100. XLIFF 编辑器：添加自定义文本段过滤器</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/xliff-editor-add-filter-1.png" align="middle" alt="XLIFF 编辑器：添加自定义文本段过滤器"></div>
+            
+</div>
+          
+</div>
+</div>
+<p>
+<br class="figure-break">
+<span class="emphasis"><em>自定义过滤器</em></span>可以按如下条件设置：</p>
+
+        
+<div class="figure">
+<a name="N21D11"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 101. 管理自定义过滤器</b>
+</p>
+<div class="figure-contents">
+          
+
+          
+<div class="screenshot">
+            
+<div class="mediaobject" align="center">
+<img src="images/xliff-editor-add-filter-2.png" align="middle" alt="管理自定义过滤器"></div>
+          
+</div>
+        
+</div>
+</div>
+<br class="figure-break">
+
+        
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+            
+<p>如下条件的组合类型</p>
+
+            
+<p>
+<span class="guilabel">满足以下所有条件</span>、<span class="guilabel">满足以下任一条件</span>
+</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="guilabel">关键字</span>
+</p>
+
+            
+<p>
+<span class="guilabel">包含</span>/<span class="guilabel">不包含</span>：指定文本</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="guilabel">批注</span>
+</p>
+
+            
+<p>
+<span class="guilabel">包含</span>/<span class="guilabel">不包含</span>/<span class="guilabel">等于</span>/<span class="guilabel">不等于</span>：指定文本</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="guilabel">属性</span>
+</p>
+
+            
+<p>
+<span class="guilabel">属性名</span><span class="emphasis"><em>等于</em></span>指定文本、且<span class="guilabel">属性值</span><span class="emphasis"><em>等于</em></span>指定文本</p>
+          
+</li>
+</ul>
+</div>
+
+        
+<p>成功添加后，新增加的文本段自定义过滤器将在文本段过滤器列表的最下方显示。</p>
+<div class="figure">
+<a name="N21D70"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 102. 文本段自定义过滤器</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/xliff-editor-add-filter-3.png" align="middle" alt="文本段自定义过滤器"></div>
+            
+</div>
+          
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+      
+</div>
+
+      
+<div class="sect2" title="翻译进度分析">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="translation-progress-analysis"></a>翻译进度分析</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>进行翻译进度分析的操作步骤与字数分析类似：</p>
+
+        
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+            
+<p>选择项目或<span class="quote">&ldquo;<span class="quote">XLIFF</span>&rdquo;</span>子目录中的任一个或多个 <span class="type">.hsxliff</span>
+            文件/文件夹，从右键菜单或<span class="guimenu">项目</span>菜单中选择<span class="guimenuitem">翻译进度分析</span>；</p>
+<div class="figure">
+<a name="N21DA2"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 103. 翻译进度分析</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="screenshot">
+                  
+<div class="mediaobject" align="center">
+<img src="images/translation-analysis-1-1.png" align="middle" alt="翻译进度分析"></div>
+                
+</div>
+              
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+          
+</li>
+<li class="listitem">
+            
+<p>确认要分析的文件列表，点击<span class="guibutton">确定</span>按钮。</p>
+<div class="figure">
+<a name="N21DC0"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 104. 翻译进度分析对话框</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="screenshot">
+                  
+<div class="mediaobject" align="center">
+<img src="images/translation-analysis-1-2.png" align="middle" alt="翻译进度分析对话框"></div>
+                
+</div>
+              
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+          
+</li>
+<li class="listitem">
+            
+<p>分析完成后，自动打开分析结果报告。</p>
+
+            
+<div class="figure">
+<a name="N21DDC"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 105. 翻译进度分析结果</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/translation-analysis-2-result.png" align="middle" alt="翻译进度分析结果"></div>
+              
+</div>
+            
+</div>
+</div>
+<br class="figure-break">
+          
+</li>
+</ol>
+</div>
+      
+</div>
+    
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+
+# 分页 html
+
+html.in = "docs/books/HSStudio8_Help_CN/ts8help_zh.xml"
+html.outdir = "output/HSStudio8_Help_CN/html/"
+html.xsl = "docs/books/HSStudio8_Help_CN/xsl/html/html.xsl"
+html.header = "docs/books/HSStudio8_Help_CN/xsl/html/header.html"
+#html.zip = "docs/target/HSStudio8_Help_CN/html/HSStudio8_Help_CN.zip"
+# 编译前复制文件
+#html.copy[css] = "docs/books/HSStudio8_Help_CN/css"
+#html.target[css] = "docs/target/HSStudio8_Help_CN/html/css"
+#html.copy[image] = "../../ts/net.heartsome.cat.ts.ui.help/html/zh/images"
+#html.target[image] = "docs/books/HSStudio8_Help_CN/images"
+html.copy[xml] = "../../ts/net.heartsome.cat.ts.ui.help/src/docbook/zh/ts8help_zh.xml"
+html.target[xml] = "docs/books/HSStudio8_Help_CN/ts8help_zh.xml"
+
+
+# pdf
+
+pdf.in = "docs/books/HSStudio8_Help_CN/ts8help_zh.xml"
+pdf.outdir = "output/HSStudio8_Help_CN/pdf"
+pdf.pdf = "output/HSStudio8_Help_CN/pdf/HSStudio8_Help_CN.pdf"
+pdf.fop = "docs/books/HSStudio8_Help_CN/xsl/pdf/fop.xml"
+pdf.xsl = "docs/books/HSStudio8_Help_CN/xsl/pdf/pdf.xsl"
+# 编译前复制文件
+#pdf.copy[image] = "../../ts/net.heartsome.cat.ts.ui.help/html/zh/images"
+#pdf.target[image] = "docs/books/HSStudio8_Help_CN/images"
+pdf.copy[xml] = "../../ts/net.heartsome.cat.ts.ui.help/src/docbook/zh/ts8help_zh.xml"
+pdf.target[xml] = "docs/books/HSStudio8_Help_CN/ts8help_zh.xml"
+
+
+# single html
+
+single.in = "../../ts/net.heartsome.cat.ts.ui.help/src/docbook/zh/ts8help_zh.xml"
+single.outdir = "output/HSStudio8_Help_CN/single"
+single.file = "output/HSStudio8_Help_CN/single/HSStudio8_Help_CN.html"
+single.xsl = "docs/books/HSStudio8_Help_CN/xsl/single/htmlsingle.xsl"
+single.header = "docs/books/HSStudio8_Help_CN/xsl/single/header.html"
+#single.zip = "docs/target/HSStudio8_Help_CN/single/HSStudio8_Help_CN.zip"
+# 文件拷贝
+#single.copy[css] = "docs/books/HSStudio8_Help_CN/css"
+#single.target[css] = "docs/target/HSStudio8_Help_CN/single/css"
+#single.copy[image] = "../../ts/net.heartsome.cat.ts.ui.help/html/zh/images"
+#single.target[image] = "docs/books/HSStudio8_Help_CN/images"
+single.copy[xml] = "../../ts/net.heartsome.cat.ts.ui.help/src/docbook/zh/ts8help_zh.xml"
+single.target[xml] = "docs/books/HSStudio8_Help_CN/ts8help_zh.xml"

@@ -1,0 +1,501 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>6. 完成项目</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<meta content="DocBook XSL Stylesheets V1.75.2 / ZoeeyDoc http://zoeeydoc.googlecode.com " name="generator">
+<link rel="home" href="index.html" title="用户手册">
+<link rel="up" href="ch05.html" title="工作流程">
+<link rel="prev" href="ch05s05.html" title="5. 编辑与 QA">
+<link rel="next" href="ch06.html" title="记忆库和术语库的维护和管理">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="sect1" title="6. 完成项目">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title" style="clear: both">
+<a name="ch5s6-finishing"></a>6. 完成项目</h2>
+</div>
+</div>
+</div>
+      
+
+      
+<p>按照前面的步骤将所有文本段都翻译完成、并经过相关的 QA 修正后，项目已经接近尾声了，剩下的就是如下一些收尾工作。</p>
+
+      
+<div class="sect2" title="合并文件">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="merge-xliff-files"></a>合并文件</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>如果在之前的项目<a class="link" href="ch05s03.html" title="3. 译前准备">译前准备</a>阶段，因为单个 XLIFF
+        文件太大而使用了<a class="link" href="ch05s03.html#split-xliff-file" title="分割文件">分割文件</a>功能来分发任务的话，就需要将分割后的多个 XLIFF
+        合并为一个文件。操作步骤如下：</p>
+
+        
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+            
+<p>在<code class="interfacename">项目</code>中选择<span class="emphasis"><em>由同一个 XLIFF
+            分割出来的</em></span>多个 XLIFF 文件；</p>
+
+            
+<div class="figure">
+<a name="N220AC"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 119. 合并 XLIFF 文件</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/merge-xliff-file-1-1.png" align="middle" alt="合并 XLIFF 文件"></div>
+              
+</div>
+            
+</div>
+</div>
+<br class="figure-break">
+          
+</li>
+<li class="listitem">
+            
+<p>确认待合并的 XLIFF 文件刚好是由同一个 XLIFF
+            分割而成、<span class="emphasis"><em>且没有重复或丢失的部分</em></span>，如下面这个例子：</p>
+<div class="example">
+<a name="N220CA"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>例 1. 合并 XLIFF 文件</b>
+</p>
+<div class="example-contents">
+                
+
+                
+<p>以分割两次的情况举例：</p>
+
+                
+<div class="orderedlist">
+<ol class="orderedlist" type="a">
+<li class="listitem">
+                    
+<p>某文件<span class="quote">&ldquo;<span class="quote">File.hsxliff</span>&rdquo;</span>先分割为<span class="quote">&ldquo;<span class="quote">File_1.hsxliff</span>&rdquo;</span>、<span class="quote">&ldquo;<span class="quote">File_2.hsxliff</span>&rdquo;</span>两个文件；</p>
+                  
+</li>
+<li class="listitem">
+                    
+<p>把<span class="quote">&ldquo;<span class="quote">File_2.hsxliff</span>&rdquo;</span>再次分割为<span class="quote">&ldquo;<span class="quote">File_2_1.hsxliff</span>&rdquo;</span>、<span class="quote">&ldquo;<span class="quote">File_2_2.hsxliff</span>&rdquo;</span>两个更小的文件；</p>
+                  
+</li>
+<li class="listitem">
+                    
+<p>合并时只需要选择<span class="quote">&ldquo;<span class="quote">File_1.hsxliff</span>&rdquo;</span>、<span class="quote">&ldquo;<span class="quote">File_2_1.hsxliff</span>&rdquo;</span>、<span class="quote">&ldquo;<span class="quote">File_2_2.hsxliff</span>&rdquo;</span>这三个文件就可以。</p>
+                  
+</li>
+</ol>
+</div>
+              
+</div>
+</div>
+<p>
+<br class="example-break">
+</p>
+          
+</li>
+<li class="listitem">
+            
+<p>点击<span class="guibutton">完成</span>按钮；</p>
+<div class="figure">
+<a name="N2210B"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 120. 合并 XLIFF 文件对话框</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="screenshot">
+                  
+<div class="mediaobject" align="center">
+<img src="images/merge-xliff-file-1-2.png" align="middle" alt="合并 XLIFF 文件对话框"></div>
+                
+</div>
+              
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+          
+</li>
+<li class="listitem">
+            
+<p>合并成功后的 XLIFF
+            文件将存放在与分割前的文件同一目录中，文件名中添加<span class="quote">&ldquo;<span class="quote">_merged</span>&rdquo;</span>后缀以示区分。</p>
+
+            
+<div class="figure">
+<a name="N2212A"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 121. 已合并的 XLIFF 文件</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/merge-xliff-file-2.png" align="middle" alt="已合并的 XLIFF 文件"></div>
+              
+</div>
+            
+</div>
+</div>
+<br class="figure-break">
+          
+</li>
+</ol>
+</div>
+      
+</div>
+
+      
+<div class="sect2" title="解锁重复文本段">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="ch5s6b"></a>解锁重复文本段</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>解锁重复文本段同样是与项目<a class="link" href="ch05s03.html" title="3. 译前准备">译前准备</a>阶段的<a class="link" href="ch05s03.html#lock-repetition" title="锁定重复文本段">锁定重复文本段</a>相对应的，将之前锁定的重复文本段解锁是为了要将已翻译好的译文应用到这些重复文本段中。解锁后，应用重复文本段译文操作请见下一节<a class="link" href="ch05s06.html#propagated-translation" title="繁殖翻译">繁殖翻译</a>。</p>
+
+        
+<p>解锁所有已锁定的文本段只需要如下简单的几个步骤：</p>
+
+        
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+            
+<p>打开或合并打开要解锁的 XLIFF 文件；</p>
+          
+</li>
+<li class="listitem">
+            
+<p>在编辑器中选择文本段过滤器<span class="quote">&ldquo;<span class="quote">已锁定文本段</span>&rdquo;</span>；</p>
+
+            
+<div class="figure">
+<a name="N2216B"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 122. 解锁文本段：过滤已锁定文本段</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/unlock-segments.png" align="middle" alt="解锁文本段：过滤已锁定文本段"></div>
+              
+</div>
+            
+</div>
+</div>
+<br class="figure-break">
+          
+</li>
+<li class="listitem">
+            
+<p>选择要解锁的文本段；</p>
+<div class="tip" title="提示" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">提示</h3>
+                
+<p>可以用 <span class="keycap"><strong>Ctrl</strong></span>/<span class="keycap"><strong>Shift</strong></span>
+                与鼠标左键多选</p>
+              
+</div>
+          
+</li>
+<li class="listitem">
+            
+<p>点击右键 &gt; <span class="guimenuitem">锁定文本段</span>。</p>
+
+            
+<div class="figure">
+<a name="N2219B"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 123. 解锁文本段</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/unlock-segments-2.png" align="middle" alt="解锁文本段"></div>
+              
+</div>
+            
+</div>
+</div>
+<br class="figure-break">
+          
+</li>
+</ol>
+</div>
+      
+</div>
+
+      
+<div class="sect2" title="繁殖翻译">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="propagated-translation"></a>繁殖翻译</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>繁殖翻译主要是用于处理重复文本段，将一个已翻译好的文本段译文应用到所有与其有相同源文的文本段中，主要与前面提到的锁定/解锁重复文本段配合使用。步骤如下：</p>
+
+        
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+            
+<p>打开或<span class="quote">&ldquo;<span class="quote">合并打开</span>&rdquo;</span>要执行繁殖翻译的 XLIFF 文件；</p>
+          
+</li>
+<li class="listitem">
+            
+<p>点击<span class="guimenu">翻译</span>菜单 &gt;
+            <span class="guimenuitem">繁殖翻译</span>；</p>
+
+            
+<div class="figure">
+<a name="N221D3"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 124. 繁殖翻译</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/propagation-translation.png" align="middle" alt="繁殖翻译"></div>
+              
+</div>
+            
+</div>
+</div>
+<br class="figure-break">
+          
+</li>
+<li class="listitem">
+            
+<p>在编辑器中选择文本段过滤器<span class="guimenuitem">重复文本段</span>；</p>
+          
+</li>
+<li class="listitem">
+            
+<p>检查应用了译文的文本段是否需要手动调整内部标记。</p>
+          
+</li>
+</ol>
+</div>
+
+        
+<div class="note" title="注意" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+          
+<p>繁殖翻译默认<span class="emphasis"><em>不会</em></span>覆盖文本段中已有的译文，若原有的译文已经不再需要，应先使用<span class="guimenu">编辑</span>菜单
+          &gt;
+          <span class="guimenuitem">删除译文</span>功能将译文删除，然后再执行<span class="guimenuitem">繁殖翻译</span>。</p>
+        
+</div>
+      
+</div>
+
+      
+<div class="sect2" title="将 XLIFF 转换为目标文件">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="ch5s6d"></a>将 XLIFF 转换为目标文件</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>完成了上述所有步骤之后，建议再进行一次<span class="guimenuitem">品质检查</span>，以确认译文中没有明显的错误（特别是内部标记），然后就可以生成目标文件了。生成包含译文的目标文件步骤如下：</p>
+
+        
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+            
+<p>在<code class="interfacename">项目</code>中选择要转换为目标文件的一个或多个 XLIFF
+            文件/文件夹；</p>
+          
+</li>
+<li class="listitem">
+            
+<p>点击右键/<span class="guimenu">文件</span>菜单 &gt;
+            <span class="guimenuitem">转换为目标文件</span>；</p>
+
+            
+<div class="figure">
+<a name="N2222F"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 125. 转换 XLIFF 为目标文件</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/convert-xliff-to-target-1-1.png" align="middle" alt="转换 XLIFF 为目标文件"></div>
+              
+</div>
+            
+</div>
+</div>
+<br class="figure-break">
+          
+</li>
+<li class="listitem">
+            
+<p>在<code class="interfacename">转换 XLIFF
+            为目标文件</code>对话框中，确认如下参数的设置：</p>
+<div class="figure">
+<a name="N2224D"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 126. 转换 XLIFF 为目标文件对话框</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="screenshot">
+                  
+<div class="mediaobject" align="center">
+<img src="images/convert-xliff-to-target-1-2.png" align="middle" alt="转换 XLIFF 为目标文件对话框"></div>
+                
+</div>
+              
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+
+            
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                
+<p>
+<span class="guilabel">文件编码</span>
+</p>
+
+                
+<p>在使用<span class="emphasis"><em>非</em></span><span class="quote">&ldquo;<span class="quote">Unicode</span>&rdquo;</span>编码时，有些目标语言的字符可能无法正常显示，需要为目标文件指定编码，例如：</p>
+<div class="example">
+<a name="N22272"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>例 2. 为目标文件选择编码</b>
+</p>
+<div class="example-contents">
+                    
+
+                    
+<p>源文件是<span class="quote">&ldquo;<span class="quote">ASCII</span>&rdquo;</span>编码的英文文件，翻译为中文后就不可以使用<span class="quote">&ldquo;<span class="quote">ASCII</span>&rdquo;</span>编码，而建议使用<span class="quote">&ldquo;<span class="quote">UTF-8</span>&rdquo;</span>或<span class="quote">&ldquo;<span class="quote">GBK</span>&rdquo;</span>编码保存目标文件。</p>
+                  
+</div>
+</div>
+<p>
+<br class="example-break">
+</p>
+              
+</li>
+<li class="listitem">
+                
+<p>
+<span class="guilabel">覆盖同名文件</span>
+</p>
+
+                
+<p>若将要生成的目标文件已存在同名文件，将无法继续转换。若用户确认已存在的同名目标文件已经<span class="emphasis"><em>不再需要</em></span>，则选中此项；否则用户应先移动或重命名已存在的目标文件，然后重新尝试转换。</p>
+              
+</li>
+</ul>
+</div>
+          
+</li>
+<li class="listitem">
+            
+<p>点击<span class="guibutton">确定</span>按钮。转换出来的目标文件如下：</p>
+
+            
+<div class="figure">
+<a name="N2229F"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 127. 由 XLIFF 转换而成的目标文件</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/convert-xliff-to-target-2.png" align="middle" alt="由 XLIFF 转换而成的目标文件"></div>
+              
+</div>
+            
+</div>
+</div>
+<br class="figure-break">
+          
+</li>
+</ol>
+</div>
+
+        
+<p>转换完成后的目标文件将保持<span class="quote">&ldquo;<span class="quote">XLIFF</span>&rdquo;</span>文件夹中的目录结构（该目录结构又是继承自<span class="quote">&ldquo;<span class="quote">源文件</span>&rdquo;</span>的目录结构），存放在<span class="quote">&ldquo;<span class="quote">/Target/目标语言代码</span>&rdquo;</span>目录下面。</p>
+      
+</div>
+    
+</div>
+</body>
+</html>

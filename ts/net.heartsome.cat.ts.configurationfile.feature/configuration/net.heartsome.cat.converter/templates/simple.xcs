@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<TBXXCS lang="en" name="master" version="0.4" xmlns="x-schema:TBXdsV1-0.xml"> <header> <title>TBX master XCS (extensible constraint specification) file</title>
+  </header>
+  <languages> <langInfo> <langCode>en</langCode>
+  <langName>English</langName>
+  </langInfo>
+  <langInfo> <langCode>de</langCode>
+  <langName>German</langName>
+  </langInfo>
+  </languages>
+  <datCatSet>           <termNoteSpec datcatId="ISO12620A-02013002" name="abbreviatedFormFor"> <contents datatype="noteText" targetType="term"/> </termNoteSpec>
+<termNoteSpec datcatId="ISO12620A-0201" name="termType"> <contents datatype="picklist" targetType="none">entryTerm synonym internationalScientificTerm fullForm transcribedForm symbol formula equation logicalExpression commonName abbreviatedFormOfTerm variant shortFormOfTerm transliteratedForm sku partNumber phraseologicalUnit synonymousPhrase standardText string internationalism </contents>
+  </termNoteSpec>
+<termNoteSpec datcatId="ISO12620A-020903" name="administrativeStatus"> <contents datatype="picklist" targetType="none">standardizedTerm-admn-sts preferredTerm-admn-sts admittedTerm-admn-sts deprecatedTerm-admn-sts supersededTerm-admn-sts legalTerm-admn-sts regulatedTerm-admn-sts </contents>
+  </termNoteSpec>
+<adminSpec datcatId="ISO12620A-0509" name="conceptOrigin"> <contents datatype="noteText" targetType="none"/> </adminSpec>
+<descripNoteSpec datcatId="ISO12620A-0803" name="contextType"> <contents datatype="picklist" targetType="none">definingContext explanatoryContext associativeContext linguisticContext metalinguisticContext translatedContext </contents>
+  </descripNoteSpec>
+<adminSpec datcatId="ISO12620A-102203" name="originatingDatabase"> <contents datatype="noteText" targetType="none"/> </adminSpec>
+<termNoteSpec datcatId="ISO12620A-0205" name="pronunciation"> <contents datatype="noteText" forTermComp="yes" targetType="none"/> </termNoteSpec>
+<descripSpec datcatId="ISO12620A-070205" name="relatedConcept"> <contents datatype="noteText" targetType="entry"/> <levels>langSet termEntry </levels>
+  </descripSpec>
+<descripSpec datcatId="ISO12620A-070206" name="sequentiallyRelatedConcept"> <contents datatype="noteText" targetType="entry"/> <levels>langSet termEntry </levels>
+  </descripSpec>
+<termNoteSpec datcatId="ISO12620A-020301" name="usageNote"> <contents datatype="noteText" targetType="none"/> </termNoteSpec>
+</datCatSet>
+  <refObjectSet> <refObjectDef> <refObjectType>bibl</refObjectType>
+  <itemSet type="validItemTypes"> <item type="validItemType">author</item>
+  <item type="validItemType">category</item>
+  <item type="validItemType">biblType</item>
+  <item type="validItemType">city</item>
+  <item type="validItemType">CODEN</item>
+  <item type="validItemType">corpauth</item>
+  <item type="validItemType">cpyrtnme</item>
+  <item type="validItemType">country</item>
+  <item type="validItemType">publicationDate</item>
+  <item type="validItemType">edition</item>
+  <item type="validItemType">editor</item>
+  <item type="validItemType">extent</item>
+  <item type="validItemType">glossary</item>
+  <item type="validItemType">ISBN</item>
+  <item type="validItemType">ISSN</item>
+  <item type="validItemType">issueno</item>
+  <item type="validItemType">lccardno</item>
+  <item type="validItemType">pages</item>
+  <item type="validItemType">publisher</item>
+  <item type="validItemType">reportid</item>
+  <item type="validItemType">role</item>
+  <item type="validItemType">sertitle</item>
+  <item type="validItemType">title</item>
+  <item type="validItemType">volid</item>
+  </itemSet>
+  </refObjectDef>
+  <refObjectDef> <refObjectType>respPerson</refObjectType>
+  <itemSet type="validItemTypes"> <item type="validItemType">fname</item>
+  <item type="validItemType">surname</item>
+  <item type="validItemType">email</item>
+  <item type="validItemType">role</item>
+  <item type="validItemType">name</item>
+  </itemSet>
+  </refObjectDef>
+  <refObjectDef> <refObjectType>respOrg</refObjectType>
+  <itemSet type="validItemTypes"> <item type="validItemType">organizationName</item>
+  <item type="validItemType">email</item>
+  <item type="validItemType">role</item>
+  <item type="validItemType">name</item>
+  </itemSet>
+  </refObjectDef>
+  <refObjectDef> <refObjectType>binaryData</refObjectType>
+  <itemSet type="validItemTypes"> <item type="validItemType">format</item>
+  <item type="validItemType">fileName</item>
+  <item type="validItemType">fileDateTime</item>
+  <item type="validItemType">fileAttributes</item>
+  <item type="validItemType">fileOSName</item>
+  <item type="validItemType">fileOSNumber</item>
+  <item type="validItemType">codePage</item>
+  <item type="validItemType">fileSize</item>
+  <item type="validItemType">data</item>
+  <item type="validItemType">description</item>
+  </itemSet>
+  </refObjectDef>
+  <refObjectDef> <refObjectType>classSystemDescrip</refObjectType>
+  <itemSet type="validItemTypes"> <item type="validItemType">systemName</item>
+  <item type="validItemType">systemType</item>
+  <item type="validItemType">description</item>
+  </itemSet>
+  </refObjectDef>
+  <refObjectDef> <refObjectType>conceptSysDescrip</refObjectType>
+  <itemSet type="validItemTypes"> <item type="validItemType">systemName</item>
+  <item type="validItemType">systemType</item>
+  <item type="validItemType">description</item>
+  </itemSet>
+  </refObjectDef>
+  <refObjectDef> <refObjectType>thesaurusDescrip</refObjectType>
+  <itemSet type="validItemTypes"> <item type="validItemType">thesaurusName</item>
+  <item type="validItemType">description</item>
+  <item type="validItemType">location</item>
+  </itemSet>
+  </refObjectDef>
+  </refObjectSet>
+  </TBXXCS>

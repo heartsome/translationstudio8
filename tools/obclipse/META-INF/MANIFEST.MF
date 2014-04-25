@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Obclipse Plug-in
+Bundle-SymbolicName: mfb2.tools.obclipse;singleton:=true
+Bundle-Version: 0.1.0
+Bundle-ClassPath: obclipse.jar,
+ lib/ant.jar,
+ lib/proguard.jar
+Bundle-RequiredExecutionEnvironment: J2SE-1.5

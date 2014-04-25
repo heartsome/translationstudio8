@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbtype>
+	<!-- 参数配置 -->
+	<driver>com.mysql.jdbc.Driver</driver>
+	<url>jdbc:mysql://__SERVER_NAME__:__PORT_NUMBER__/__DATABASE_NAME__
+	</url>
+	<default>
+		<property name="server">localhost</property>
+		<property name="type">MySQL 5.x</property>
+		<property name="port">3306</property>
+	</default>
+	<config-property>
+		<property name="user">__USER__</property>
+		<property name="password">__PASSWORD__</property>
+		<property name="useUnicode">true</property>
+		<property name="characterEncoding">UTF-8</property>
+	</config-property>
+	<create-database>CREATE DATABASE __DATABASE_NAME__ CHARACTER SET utf8</create-database>
+	<drop-database>DROP DATABASE __DATABASE_NAME__</drop-database>
+	
+	<!-- 系统库匹配 -->	
+	<create-hssystables>
+		<step>
+			CREATE TABLE HSCATSYSDB
+			(
+			   DBNAME               varchar(150) not null,
+			   QUALITY              char(1) not null,
+			   USERS                text,
+			   TYPE				    int not null,
+			   primary key (DBNAME)
+			)ENGINE = InnoDB
+		</step>
+	</create-hssystables>
+	<insert-db>INSERT INTO HSCATSYSDB (DBNAME,QUALITY,TYPE) VALUES (?,?,?)</insert-db>
+	<remove-db>DELETE FROM HSCATSYSDB WHERE DBNAME=?</remove-db>
+	<get-dblist>SELECT DBNAME, QUALITY, USERS FROM HSCATSYSDB WHERE TYPE = ?</get-dblist>
+
+	<!-- 记忆库／术语库表结构匹配 -->
+	<create-tables>
+		<!-- 创建TMX部分相关的表 -->
+		<step>
+		CREATE TABLE MHEADER
+		(
+			MHPKID               int not null AUTO_INCREMENT,
+			CREATIONTOOL         varchar(200),
+			CTVERSION            varchar(200),
+			TMF                  varchar(255),
+			SRCLANG              varchar(6),
+			ADMINLANG            varchar(6),
+			DATATYPE             varchar(10),
+			SEGTYPE              varchar(10),
+			CREATIONID           varchar(40),
+			CREATIONDATE         varchar(28),
+			CHANGEID             varchar(40),
+			CHANGEDATE           varchar(28),
+			ENCODING             varchar(15),
+			primary key (MHPKID)
+		)ENGINE = InnoDB
+		</step>
+		<step>
+		CREATE TABLE MHEADERNODE
+		(
+			MHNPKID              int not null AUTO_INCREMENT,
+			MHPKID               int not null,
+			NNAME                varchar(100) not null,
+			NTYPE                char(1) not null,
+			CONTENT              text not null,
+			primary key (MHNPKID)
+		)ENGINE = InnoDB
+		</step>
+		<step>
+		create table MTU
+		(
+		   MTUPKID              int not null AUTO_INCREMENT,
+		   MHPKID               int not null,
+		   TUID                 varchar(100),
+		   CREATIONID           varchar(40),
+		   CREATIONDATE         datetime,
+		   CHANGEID             varchar(40),
+		   CHANGEDATE          	datetime,
+		   CREATIONTOOL         varchar(200),
+		   CTVERSION            varchar(200),
+		   CLIENT               varchar(255),
+		   PROJECTREF           varchar(255),
+		   JOBREF               varchar(255),
+		   primary key (MTUPKID)
+		)ENGINE = InnoDB
+		</step>
+		<step>
+		CREATE TABLE LANG
+		(
+		   LANGCODE             varchar(6) not null,
+		   primary key (LANGCODE)
+		)ENGINE = InnoDB
+		</step>
+		<step>
+		CREATE TABLE MPROP
+		(
+		   MPPKID               int not null AUTO_INCREMENT,
+		   PARENTNAME           varchar(30) not null,
+		   PARENTID             int not null,
+		   PNAME                varchar(100) not null,
+		   LANG                 varchar(6),
+		   ENCODING             varchar(15),
+		   CONTENT              longtext not null,
+		   primary key (MPPKID),
+		   KEY IDX_PARENTID (PARENTID)
+		)ENGINE = InnoDB
+		</step>
+
+		<step>
+		CREATE TABLE MEXTRA
+		(
+		   MEPKID               int not null AUTO_INCREMENT,
+		   PARENTNAME           varchar(30) not null,
+		   PARENTID             int not null,
+		   NTYPE                char(1) not null,
+		   NNAME                varchar(100) not null,
+		   CONTENT              text not null,
+		   primary key (MEPKID),
+		   KEY IDX_PARENTID (PARENTID)
+		)ENGINE = InnoDB
+		</step>
+		<step>
+		CREATE TABLE MNOTE
+		(
+		   MNPKID               int not null AUTO_INCREMENT,
+		   PARENTNAME           varchar(30) not null,
+		   PARENTID             int not null,
+		   CONTENT              text not null,
+		   CREATIONID           varchar(40),
+		   CREATIONDATE         varchar(28),
+		   CHANGEID             varchar(40),
+		   CHANGEDATE           varchar(28),
+		   ENCODING             varchar(15),
+		   LANG                 varchar(6),
+		   primary key (MNPKID),
+		   KEY IDX_PARENTID (PARENTID)
+		)ENGINE = InnoDB
+		</step>
+		<step>
+		CREATE TABLE TEXTDATA
+		(
+		   TPKID                int not null AUTO_INCREMENT,
+		   TYPE                 char(1) not null,
+		   GROUPID              int not null,
+		   HASH                 int not null,
+		   PURE                 text not null,
+		   CONTENT              text not null,
+		   LANG                 varchar(6) not null,
+		   PRECONTEXT           varchar(100),
+		   NEXTCONTEXT          varchar(100),
+		   primary key (TPKID),
+		   KEY IDX_GROUPID (GROUPID),
+		   KEY IDX_HASH (HASH)
+		)ENGINE = InnoDB
+		</step>
+		<!-- 创建TMX相关表结束 -->
+		
+		<!-- 创建TBX相关表 存储TBX共用TEXTDATA表，参考E-R模型-->
+		<step>
+		create table BATTRIBUTE
+		(
+			BAPKID               int not null AUTO_INCREMENT,
+			BMTHPKID             int not null,
+			ANAME                varchar(100) not null,
+			AVALUE               varchar(255) not null,
+			PARENTNAME           varchar(100) not null,
+			primary key (BAPKID)
+		)ENGINE = InnoDB
+		</step>
+		<step>
+		create table BMARTIFHEADER
+		(
+			BMTHPKID             int not null AUTO_INCREMENT,
+			HID                  varchar(100),
+			CONTENT              text not null,
+			primary key (BMTHPKID)
+		)ENGINE = InnoDB
+		</step>
+		<step>
+		create table BREFOBJECTLIST
+		(
+		   BROLPKID             int not null AUTO_INCREMENT,
+		   BMTHPKID             int not null,
+		   ROLID                varchar(100),
+		   CONTENT              text not null,
+		   primary key (BROLPKID)
+		)ENGINE = InnoDB
+		</step>
+		<step>
+		create table BTERMENTRY
+		(
+		   BTEPKID              int not null AUTO_INCREMENT,
+		   BMTHPKID             int not null,
+		   CID                  varchar(100),
+		   CONTENT              text not null,
+		   primary key (BTEPKID)
+		)ENGINE = InnoDB
+		</step>
+		<step>
+		CREATE TABLE BNODE
+		(
+		   NPKID                int not null AUTO_INCREMENT,
+		   PARENTPKID           int not null,
+		   PARENTNAME           varchar(100) not null,
+		   NTYPE                char not null,
+		   NNAME                varchar(100) not null,
+		   NID                  varchar(100),
+		   CONTENT              text not null,
+		   PRIMARY KEY (NPKID)
+		) ENGINE=INNODB
+		</step>	
+
+	</create-tables>
+
+	<!-- Matrix_Lang表相关SQL	 -->
+	<matrix-operation>
+		<create-table>
+			<step>
+			create table MATRIX___LANG__
+				(
+				   MPKID                int not null AUTO_INCREMENT,
+				   TPKID                int not null,
+				   NGRAM                int not null,
+				   SEGSIZE              smallint not null,
+				   primary key (MPKID),
+				   KEY IDX_NGRAM_SEGSIZE (NGRAM,SEGSIZE)
+				)ENGINE = InnoDB
+			</step>
+		</create-table>
+		<create-index />
+		<insert>
+			INSERT INTO MATRIX___LANG__
+			(TPKID,NGRAM,SEGSIZE)
+			VALUES (?,?,?)
+		</insert>
+		<delete>
+			DELETE FROM MATRIX___LANG__
+			WHERE __WHERE__
+		</delete>
+		<search>
+			SELECT TPKID FROM MATRIX___LANG__ 
+			WHERE  SEGSIZE &gt;=? AND SEGSIZE &lt;=? AND NGRAM IN (__SET__)
+		</search>
+		<search-1>
+			SELECT 
+			    TPKID
+			  FROM
+			    MATRIX_ENUS 
+			  WHERE SEGSIZE &gt;=? AND SEGSIZE &lt;=? AND NGRAM IN (__SET__)
+			  GROUP BY TPKID HAVING COUNT(TPKID) BETWEEN ? AND ?
+		</search-1>
+	</matrix-operation>
+
+	<!-- 操作数据库相关SQL -->
+	<operate-db>
+		<!--getTextData-bygroupidAndLang和getTMMatch　组合完成匹配结果查询，即获取TUV -->
+		<getTextData-bygroupidAndLang>
+			SELECT LANG, PURE, CONTENT, PRECONTEXT,NEXTCONTEXT FROM TEXTDATA 
+					WHERE GROUPID =? AND TYPE=? AND LANG=?
+		</getTextData-bygroupidAndLang>
+		<getTMMatch>
+			SELECT B.GROUPID, LANG, PURE, CONTENT, PRECONTEXT,NEXTCONTEXT, TUID, CREATIONID, CREATIONDATE, 
+				CHANGEID, CHANGEDATE, PROJECTREF, JOBREF, CLIENT 
+			FROM 	
+				(SELECT GROUPID FROM TEXTDATA WHERE TPKID=?) A	
+			LEFT JOIN TEXTDATA B ON A.GROUPID = B.GROUPID 
+			LEFT JOIN MTU C ON C.MTUPKID=A.GROUPID 
+			WHERE B.TYPE='M' AND B.LANG=? OR B.LANG=? 
+		</getTMMatch>
+		<getTMMatch1>
+			SELECT B.GROUPID, LANG, PURE, CONTENT, PRECONTEXT,NEXTCONTEXT, TUID, CREATIONID, CREATIONDATE, 
+				CHANGEID, CHANGEDATE, PROJECTREF, JOBREF, CLIENT 
+			FROM 	
+				(SELECT GROUPID FROM TEXTDATA WHERE TPKID IN (__SET__)) A	
+			LEFT JOIN TEXTDATA B ON A.GROUPID = B.GROUPID 
+			LEFT JOIN MTU C ON C.MTUPKID=A.GROUPID 
+			WHERE B.TYPE='M' AND B.LANG=? OR B.LANG=? 
+		</getTMMatch1>
+		<getTerm>
+			SELECT A.TPKID, A.PURE, B.PURE, C.CONTENT FROM TEXTDATA  A 
+				LEFT JOIN TEXTDATA  B ON A.GROUPID=B.GROUPID  AND B.LANG=? AND B.TYPE='B' 
+				LEFT JOIN BNODE C ON A.GROUPID = C.PARENTPKID AND C.PARENTNAME = 'termEntry' 
+				AND C.NTYPE = 'E' AND C.NNAME = 'note' AND (C.NID = ? OR C.NID = ?)
+				WHERE A.TYPE='B' AND  A.LANG=? AND LOCATE(LOWER(A.PURE), BINARY LOWER(?)) AND B.PURE IS NOT NULL;
+		</getTerm>
+		<!--<search-Corcondance>
+		 相关搜索 
+ SELECT C.MTUPKID TUID,C.CLIENT,C.PROJECTREF,C.JOBREF,C.CREATIONID,C.CREATIONDATE, C.CHANGEID, C.CHANGEDATE,D.MPPKID,B.LANG,__IGNORE_MARK__ 
+FROM (SELECT GROUPID FROM TEXTDATA WHERE TYPE = 'M' __CONDITION__) A 
+LEFT JOIN TEXTDATA B ON A.GROUPID = B.GROUPID AND B.TYPE='M' __LANGUAGE_LIST__
+LEFT JOIN MTU C ON A.GROUPID = C.MTUPKID 
+LEFT JOIN MPROP D ON A.GROUPID = D.PARENTID AND D.PARENTNAME = 'TU' AND D.PNAME = 'x-flag' AND D.CONTENT = 'HS-Flag' 
+ORDER BY C.CHANGEDATE DESC
+
+SELECT C.MTUPKID TUID,C.CLIENT,C.PROJECTREF,C.JOBREF,C.CREATIONID,C.CREATIONDATE, C.CHANGEID, C.CHANGEDATE,D.MPPKID,B.LANG,__IGNORE_MARK__ 
+FROM (SELECT * FROM TEXTDATA WHERE __GROUPID_LIST__ TYPE = 'M' __LANGUAGE_LIST__) B 
+LEFT JOIN MTU C ON B.GROUPID = C.MTUPKID 
+LEFT JOIN MPROP D ON B.GROUPID = D.PARENTID AND D.PARENTNAME = 'TU' AND D.PNAME = 'x-flag' AND D.CONTENT = 'HS-Flag' 
+ORDER BY C.CHANGEDATE DESC
+		</search-Corcondance>
+		<search-corcondance-groupid>
+SELECT GROUPID FROM (
+SELECT GROUPID FROM TEXTDATA WHERE TYPE = 'M' __CONDITION__) A
+LEFT JOIN MTU C ON A.GROUPID = C.MTUPKID 
+ORDER BY C.CHANGEDATE DESC
+		</search-corcondance-groupid>-->
+	</operate-db>
+</dbtype>

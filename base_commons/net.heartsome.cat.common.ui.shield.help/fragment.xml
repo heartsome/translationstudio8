@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<fragment>
+   <extension
+         point="org.eclipse.ui.activities">
+      <activityPatternBinding
+            activityId="net.heartsome.cat.common.ui.shield.preference"
+            isEqualityPattern="true"
+            pattern="org.eclipse.help.ui/org.eclipse.help.ui.browsersPreferencePage">
+      </activityPatternBinding>
+   </extension>
+
+</fragment>

@@ -1,0 +1,282 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Maintenance and management of TMs and termbases</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<meta content="DocBook XSL Stylesheets V1.75.2 / ZoeeyDoc http://zoeeydoc.googlecode.com " name="generator">
+<link rel="home" href="index.html" title="User manual">
+<link rel="up" href="index.html" title="User manual">
+<link rel="prev" href="ch05s06.html" title="6.&nbsp;Finish project">
+<link rel="next" href="ch06s02.html" title="2.&nbsp;Translation Memory Management">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="chapter" title="Maintenance and management of TMs and termbases">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title">
+<a name="database-management"></a>Maintenance and management of TMs and termbases</h2>
+</div>
+</div>
+</div>
+    
+
+    
+<p>Databases (including TMs and termbases) are among the most essential
+    components of CAT tools. Their function is to store all translated content
+    (including sentences and terms) and to display them for users' reference
+    when appropriate. Databases keep a record of a user's translation history
+    and associated expertise. Maintenance and management of databases is
+    therefore an important task.</p>
+
+    
+<p>With regard to maintenance and management of databases, we suggest
+    the following:</p>
+
+    
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+        
+<p>Distinguish between a <span class="emphasis"><em>final database</em></span> and a
+        <span class="emphasis"><em>draft database.</em></span>
+</p>
+
+        
+<p>
+<span class="emphasis"><em>A final</em></span> database is a collection of
+        finalized translations that have been delivered to clients after
+        thorough translation, editing and proofreading. This database
+        represents higher translation quality and greater value for reference.
+        These finalized translations should be saved and backed up for
+        long-term archival. <span class="emphasis"><em>A final database</em></span> is one way
+        these translations can be saved. Such translations can also be saved
+        as <span class="type">TMX</span>/<span class="type">TBX</span> files or other formats, and
+        backed up for future use.</p>
+
+        
+<p>
+<span class="emphasis"><em>An draft database</em></span> is used to keep the draft
+        translations done by translators throughout the project. Since they
+        are not yet approved, these translations might include some improperly
+        translated text or mistakes. However, a draft database can be more
+        useful than a final database in the sense that the draft database may
+        contain translations that are more relevant to the current project and
+        more up to date.</p>
+      
+</li>
+<li class="listitem">
+        
+<p>Categorise databases</p>
+
+        
+<p>Final databases can be divided into various categories by
+        industry sector, subject matter, language pair or project, etc.
+        Translations that fall into the same category can be saved in the same
+        database. During a translation project, final databases of the same
+        category can be provided to translators for reference.</p>
+
+        
+<p>Draft databases can be created based on the project and made
+        available to all translators, editors and proofreaders to refer to and
+        make changes to over the project life cycle. The finalized
+        translations can be obtained at the end. When the finalized
+        translations have been saved in the final databases, the draft
+        databases can be saved or deleted.</p>
+      
+</li>
+</ol>
+</div>
+
+    
+<div class="sect1" title="1.&nbsp;Update Translation Memory">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title" style="clear: both">
+<a name="update-tm"></a>1.&nbsp;Update Translation Memory</h2>
+</div>
+</div>
+</div>
+      
+
+      
+<p>Updating a TM means to save all the source segments and
+      corresponding translations from a bilingual XLIFF file into the TM upon
+      translation completion. Usually this is to save all final translations
+      of a project into the final database. Follow these steps:</p>
+
+      
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+          
+<p>Select the project, from the right-click
+          menu/<span class="guimenu">Project</span> menu, select <span class="guimenuitem">Project
+          Settings</span> &gt; <span class="guimenuitem">Translation
+          Memory</span>. Make sure a <span class="emphasis"><em>default TM</em></span>
+          has been set for the project (for details, see <a class="xref" href="ch05s03.html#project-setting-tm" title="Figure&nbsp;53.&nbsp;Project Settings: TM">Figure&nbsp;53, &ldquo;Project Settings: TM&rdquo;</a>). </p>
+<div class="tip" title="Tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Tip</h3>
+              
+<p>For finalized translations, <span class="emphasis"><em>we recommend
+              creating a new database or using an existing final database to
+              save them instead of using an draft database</em></span>.</p>
+            
+</div>
+        
+</li>
+<li class="listitem">
+          
+<p>Select one or multiple XLIFF files/folders from the project,
+          from the right click menu/<span class="guimenu">Project</span> menu, click
+          <span class="guimenuitem">Update Translation Memory</span>. </p>
+
+          
+<div class="figure">
+<a name="N22329"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;128.&nbsp;Update Translation Memory</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/update-tm-1.png" align="middle" alt="Update Translation Memory"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+        
+</li>
+<li class="listitem">
+          
+<p>In the <code class="interfacename">Update Translation
+          Memory</code> dialog box, configure the following settings
+          as appropriate:</p>
+<div class="figure">
+<a name="N22347"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;129.&nbsp;Update Translation Memory</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/update-tm-2.png" align="middle" alt="Update Translation Memory"></div>
+              
+</div>
+            
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+
+          
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+              
+<p>
+<span class="guilabel">Range</span>
+</p>
+
+              
+<p>The segment status(es) to be saved in the database</p>
+
+              
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">Draft</span>
+</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">Translated</span>
+</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">Approved</span>
+</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">Signed-off</span>
+</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">Locked</span>
+</p>
+                
+</li>
+</ul>
+</div>
+            
+</li>
+<li class="listitem">
+              
+<p>
+<span class="guibutton">Options</span>
+</p>
+
+              
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">Repetitions processing</span>: Please
+                  see <a class="xref" href="ch05s03.html#create-tm-wizard-import-tmx" title="Import TMX/TXT/EXCEL files">the section called &ldquo;Import TMX/TXT/EXCEL files&rdquo;</a>.</p>
+                
+</li>
+</ul>
+</div>
+            
+</li>
+</ul>
+</div>
+        
+</li>
+<li class="listitem">
+          
+<p>Click the <span class="guibutton">OK</span> button.</p>
+        
+</li>
+</ol>
+</div>
+    
+</div>
+
+    
+
+    
+
+    
+
+    
+  
+</div>
+</body>
+</html>

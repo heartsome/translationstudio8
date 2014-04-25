@@ -1,0 +1,138 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>3. 导入项目</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<meta content="DocBook XSL Stylesheets V1.75.2 / ZoeeyDoc http://zoeeydoc.googlecode.com " name="generator">
+<link rel="home" href="index.html" title="用户手册">
+<link rel="up" href="ch07.html" title="团队协作">
+<link rel="prev" href="ch07s02.html" title="2. 导出项目">
+<link rel="next" href="ch07s04.html" title="4. 导出外部文件">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="sect1" title="3. 导入项目">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title" style="clear: both">
+<a name="import-project"></a>3. 导入项目</h2>
+</div>
+</div>
+</div>
+      
+
+      
+<p>根据不同的导入目的，在导入项目时的操作也有所区别：</p>
+
+      
+<div class="sect2" title="流程传递">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="ch7s3a"></a>流程传递</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>把项目从前一个工作流程传递到后一个流程时，负责后一个流程的项目成员不需要创建项目，只要导入前一个流程的成员导出的项目即可在前一流程的基础上继续工作。步骤如下：</p>
+
+        
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+            
+<p>点击<span class="guimenu">项目</span>菜单 &gt;
+            <span class="guimenuitem">导入项目</span>；</p>
+<div class="figure">
+<a name="N228D1"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 149. 导入项目</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="screenshot">
+                  
+<div class="mediaobject" align="center">
+<img src="images/import-project-1.png" align="middle" alt="导入项目"></div>
+                
+</div>
+              
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+          
+</li>
+<li class="listitem">
+            
+<p>点击<span class="guibutton">浏览</span>按钮，选择要导入的项目包 <span class="type">.hszip</span>
+            文件；</p>
+
+            
+<div class="figure">
+<a name="N228F3"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 150. 导入项目对话框</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/import-project-2.png" align="middle" alt="导入项目对话框"></div>
+              
+</div>
+            
+</div>
+</div>
+<br class="figure-break">
+          
+</li>
+<li class="listitem">
+            
+<p>默认自动选择项目包文件中的所有项目准备导入，确认无误后点击<span class="guibutton">完成</span>按钮。</p>
+          
+</li>
+</ol>
+</div>
+
+        
+<div class="warning" title="警告" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">警告</h3>
+          
+<p>如果待导入项目已存在，则会在右边列出已存在的同名文件，在右边选中的文件将在导入项目时<span class="emphasis"><em>被覆盖</em></span>为项目包中的版本。</p>
+        
+</div>
+      
+</div>
+
+      
+<div class="sect2" title="汇总更新">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="summarizing-update-project"></a>汇总更新</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>对于分发给多个项目成员的项目，在项目完成前需要将所有已完成的文件统一汇总到某个成员（通常是负责分发项目的人员，如项目经理这一类角色）的已有项目中。这时，项目成员可以将项目导出为项目包
+        <span class="type">.hszip</span> 文件，然后再由汇总人员导入并覆盖更新过的文件（通常只要覆盖 XLIFF
+        文件夹下的内容即可）。</p>
+      
+</div>
+    
+</div>
+</body>
+</html>

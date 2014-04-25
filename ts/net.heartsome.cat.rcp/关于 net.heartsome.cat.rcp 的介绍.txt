@@ -1,0 +1,16 @@
+author	robert	2013-11-13
+
+这个　feature 主要是为了替换　org.eclipse.rcp,　里面的一些插件与　org.eclipse.rcp 的相差不大，只是针对其中的　mac 下　deal pack 的插件做了修改。
+
+修改原因：mac 系统升级到　10.9 时，3.7 的　swt jar 包中的　FileDialog 与　DirectionDialog 只能运行一次，并且无法显示正确的路径。因此将　org.eclipse.swt.cocoa.macosx.x86_64 从 3.7 升级到　4.3。
+
+其他修改：org.eclipse.rcp 里面的 deal pack 还有　32 位的，以及　carbon 类型的　swt 架包，由于　r8　只打　mac 64 位　cocoa 类型的，故其他都已经删除。
+
+相关　mac 下打包的几个参数讲解：
+window systems: 分　cocoa 与　carbon，cocoa 和 carbon 是 Mac 的两套不同的 API ，cocoa 比较新，carbon 是老旧版本的系统上用的
+
+Architecture : 分　ppc 与　x86, ppc 和 x86 是 CPU 类型吧，以前的苹果机用的 PowerPC CPU 是 Motorola 还是 IBM 做的了，现在都用 Intel 的 x86 CPU 了。
+
+
+deal pack 的插件，其中这些插件的下载网址为：
+eclipse 相关架包下载地址：http://download.eclipse.org/eclipse/downloads/drops4/R-4.3-201306052000/#SWT

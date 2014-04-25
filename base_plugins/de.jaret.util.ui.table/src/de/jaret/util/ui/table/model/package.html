@@ -1,0 +1,18 @@
+<html><body>
+<p>
+This package contains the model and model listeners for the jaret table.
+</p>
+<p>
+The JaretTableModel is a flat table model consisting of IRow and IColumn objects.
+There is an abstract base implementation AbstractJaretTableModel supplying the usual listener helper methods leaving a hole for the oncrete data
+supplying model. The DefaultTableModel is ready to use. As Rows any POJO can do. Combined with the PropCol implementation of IColumn properties of the POJO can
+easily projected to table columns.
+</p>
+The IHierarchicalTableModel is a hierarchy of ITableNodes (extends IRow) supplying the base for a hierarchy. The DefaultHierarchicalTableModel is a 
+plain default implementation. The StdHierarchicalTableModel does the job of projecting the hierarchy to the flat model. It is specially handled by the
+jaret table in some aspects (folding and unfolding).
+<p>
+The TableViewState is the central interface for controlling visual representation. There is an extension handling the hierachical aspects of a hierarchical
+model. 
+</p>
+</body></html>

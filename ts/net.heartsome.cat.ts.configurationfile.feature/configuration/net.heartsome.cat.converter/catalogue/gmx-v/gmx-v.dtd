@@ -1,0 +1,139 @@
+<!--
+   Document        : gmx-v.dtd
+   Version         : 1.0
+   Created on      : 20 January 2006 13:10
+   Authors         : azydron@xml-intl.com rmraya@heartsome.net
+   Description     : This DTD defines the structure of the GIM Metrics Volume vocabulary
+
+  Copyright © The Localisation Industry Standards Association [LISA] 2006. 
+  All Rights Reserved.
+  
+-->
+
+
+<!-- The main element -->
+<!ELEMENT metrics ((project+)|(stage+)) >
+
+<!ATTLIST metrics 
+                version             NMTOKEN     #FIXED    "1.0"
+                source-language     NMTOKEN     #REQUIRED
+                target-language     NMTOKEN     #IMPLIED
+                tool-name           NMTOKEN     #REQUIRED
+                tool-version        NMTOKEN     #REQUIRED
+                reference           CDATA       #IMPLIED
+>
+                                                        
+<!-- The project element -->                                
+<!ELEMENT project (resource+)>
+
+<!ATTLIST project
+                identifier          NMTOKEN     #REQUIRED
+>
+                                                            
+<!-- The resource element -->
+<!ELEMENT resource (stage)+ >
+
+<!ATTLIST resource
+                identifier          NMTOKEN     #REQUIRED
+>
+                                                            
+<!-- The stage element -->
+<!ELEMENT stage (notes?,count-group+) >
+
+<!ATTLIST stage
+                date                NMTOKEN     #REQUIRED
+                phase               NMTOKEN     #REQUIRED
+                source-language     NMTOKEN     #REQUIRED
+                target-language     NMTOKEN     #IMPLIED
+>
+
+<!-- The notes element -->
+<!ELEMENT notes (#PCDATA) >
+
+<!ATTLIST notes
+                date                NMTOKEN     #IMPLIED
+                from                NMTOKEN     #IMPLIED
+                                                            >
+
+    
+<!-- The count group element -->
+<!ELEMENT count-group (count)+ >
+
+<!ATTLIST count-group
+                name               (verifiable | non-verifiable) #REQUIRED
+                state              (final   |
+                                    needs-adaptation  |
+                                    needs-l10n  |
+                                    needs-review-adaptation |
+                                    needs-review-l10n |
+                                    needs-review-translation |
+                                    needs-translation |
+                                    new |
+                                    signed-off |
+                                    translated)        #IMPLIED
+>
+<!-- The count element -->
+<!ELEMENT count EMPTY >
+
+<!ATTLIST count 
+                type               (ScreenCount  |
+                                    FileCount  |
+                                    PageCount  |
+                                    OC-OtherCountCategories  |
+                                    SentenceCount  |
+                                    TextUnitCount  |
+                                    TotalWordCount  |
+                                    TotalNumericWordCount  |
+                                    WhiteSpaceCharacterCount |
+                                    AlphanumericOnlyTextUnitWordCount  |
+                                    MeasurementOnlyTextUnitWordCount  |
+                                    MeasurementOnlyTextUnitNumericWordCount  |
+                                    NumericOnlyTextUnitWordCount  |
+                                    ExactMatchedWordCount  |
+                                    ExactMatchedNumericWordCount  |
+                                    LeveragedMatchedWordCount  |
+                                    RepetionMatchedWordCount  |
+                                    ProjectRepetionMatchedWordCount |
+                                    LeveragedMatchedNumericWordCount  |
+                                    FuzzyMatchedWordCount  |
+                                    ProjectFuzzyMatchedWordCount  |
+                                    FuzzyMatchedNumericWordCount  |
+                                    W-OtherNonTranslatableTextUnitWordCount  |
+                                    OtherNonTranslatableTextUnitNumericWordCount  |
+                                    TotalCharacterCount  |
+                                    TotalNumericCharacterCount  |
+                                    AlphanumericOnlyTextUnitCharacterCount  |
+                                    MeasurementOnlyTextUnitCharacterCount  |
+                                    MeasurementOnlyTextUnitNumericCharacterCount  |
+                                    NumericOnlyTextUnitCharacterCount  |
+                                    PunctuationOnlyTextUnitCharacterCount  |
+                                    ExactMatchedCharacterCount  |
+                                    ExactMatchedNumericCharacterCount  |
+                                    LeveragedMatchedCharacterCount  |
+                                    RepetionMatchedCharacterCount  |
+                                    ProjectRepetionMatchedCharacterCount  |
+                                    LeveragedMatchedNumericCharacterCount  |
+                                    FuzzyMatchedCharacterCount  |
+                                    ProjectFuzzyMatchedCharacterCount  |
+                                    FuzzyMatchedNumericCharacterCount  |
+                                    C-OtherNonTranslatableTextUnitCharacterCount  |
+                                    SimpleNumericAutoTextWordCount  |
+                                    ComplexNumericAutoTextWordCount  |
+                                    MeasurementAutoTextWordCount  |
+                                    AlphaNumericAutoTextWordCount  |
+                                    DateAutoTextWordCount  |
+                                    TMAutoTextWordCount  |
+                                    AW-OtherAutoTextWordCount  |
+                                    SimpleNumericAutoTextCharacterCount  |
+                                    ComplexNumericAutoTextCharacterCount  |
+                                    MeasurementAutoTextCharacterCount  |
+                                    AlphaNumericAutoTextCharacterCount  |
+                                    DateAutoTextCharacterCount  |
+                                    TMAutoTextCharacterCount  |
+                                    AC-OtherAutoTextCharacterCount  |
+                                    OtherNonTranslatableTextUnitNumericCharacterCount  |
+                                    TranslatableInlineCount  |
+                                    TranslatableLinkingInlineCount)     #REQUIRED
+                value              NMTOKEN                              "0"
+>
+

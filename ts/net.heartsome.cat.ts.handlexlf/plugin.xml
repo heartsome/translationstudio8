@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:file?after=xliff.split">
+         <separator
+               name="net.heartsome.cat.ts.ui.xliffeditor.nattable.separator3"
+               visible="true">
+         </separator>
+         <command
+               commandId="net.heartsome.cat.ts.handlexlf.commands.setSplitPointByWordNumCommand"
+               label="%command.setSplitPoint"
+               style="push">
+         </command>
+         <command
+               commandId="net.heartsome.cat.ts.handlexlf.commands.nextSplitPointCommand"
+               label="%command.nextSplitPoint"
+               style="push">
+         </command>
+         <command
+               commandId="net.heartsome.cat.ts.handlexlf.commands.splitXliffCommand"
+               label="%menu.file.splitXLIFF"
+               style="push">
+         </command>
+         <command
+               commandId="net.heartsome.cat.ts.ui.handlexlf.commands.mergeXliffCommand"
+               label="%menu.file.mergeXLIFF"
+               style="push">
+         </command>
+      </menuContribution>
+      <menuContribution
+            locationURI="popup:net.heartsome.cat.common.ui.navigator.view#PopupMenu?after=group.xliffSplitOrMerge">
+         <separator
+               name="net.heartsome.cat.ts.ui.xliffeditor.nattable.gotoSeparator9"
+               visible="true">
+         </separator>
+         <command
+               commandId="net.heartsome.cat.ts.handlexlf.commands.setSplitPointByWordNumCommand"
+               label="%command.setSplitPoint"
+               style="push">
+         </command>
+         <command
+               commandId="net.heartsome.cat.ts.handlexlf.commands.splitXliffCommand"
+               label="%menu.file.splitXLIFF"
+               style="push">
+         </command>
+         <command
+               commandId="net.heartsome.cat.ts.ui.handlexlf.commands.mergeXliffCommand"
+               label="%menu.file.mergeXLIFF"
+               style="push">
+         </command>
+         <separator
+               name="net.heartsome.cat.ts.ui.xliffeditor.nattable.gotoSeparator10"
+               visible="true">
+         </separator>
+      </menuContribution>
+   </extension>
+   
+   
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            categoryId="org.eclipse.ui.category.file"
+            id="net.heartsome.cat.ts.handlexlf.commands.setSplitPointByWordNumCommand"
+            name="%command.splitXLIFF">
+      </command>
+      <command
+            categoryId="org.eclipse.ui.category.file"
+            id="net.heartsome.cat.ts.handlexlf.commands.nextSplitPointCommand"
+            name="%command.nextSplitPoint">
+      </command>
+      <command
+            categoryId="org.eclipse.ui.category.file"
+            id="net.heartsome.cat.ts.handlexlf.commands.splitXliffCommand"
+            name="%command.splitXLIFF">
+      </command>
+      <command
+            categoryId="org.eclipse.ui.category.file"
+            id="net.heartsome.cat.ts.ui.handlexlf.commands.mergeXliffCommand"
+            name="%command.mergeXLIFF">
+      </command>
+   </extension>
+   
+   
+   
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="net.heartsome.cat.ts.handlexlf.handler.SetSplitPointByWordNumHandler"
+            commandId="net.heartsome.cat.ts.handlexlf.commands.setSplitPointByWordNumCommand">
+		<activeWhen>
+			<or>
+            	<with  variable="selection">
+              		<iterate operator="and">
+                  		<instanceof
+                        	value="org.eclipse.core.resources.IFile">
+                  		</instanceof>
+              		</iterate>
+            	</with>
+            	<with  variable="activeEditor">
+               		<instanceof
+                    	value="net.heartsome.cat.ts.ui.xliffeditor.nattable.editor.XLIFFEditorImplWithNatTable">
+               		</instanceof>
+            	</with>
+            </or>
+         </activeWhen>
+         <enabledWhen>
+            <with
+                  variable="selection">
+               <count value="1">
+               </count>
+            </with>
+         </enabledWhen>
+      </handler>
+      <handler
+            class="net.heartsome.cat.ts.handlexlf.handler.NextSplitPointHandler"
+            commandId="net.heartsome.cat.ts.handlexlf.commands.nextSplitPointCommand">
+		<activeWhen>
+			<and>
+            	<with  variable="activeEditor">
+               		<instanceof
+                    	value="net.heartsome.cat.ts.ui.xliffeditor.nattable.editor.XLIFFEditorImplWithNatTable">
+               		</instanceof>
+            	</with>
+            </and>
+         </activeWhen>
+         <enabledWhen>
+            <with
+                  variable="selection">
+               <count value="1">
+               </count>
+            </with>
+         </enabledWhen>
+      </handler>
+      <handler
+            class="net.heartsome.cat.ts.handlexlf.handler.SplitXliffHandler"
+            commandId="net.heartsome.cat.ts.handlexlf.commands.splitXliffCommand">
+		<activeWhen>
+			<or>
+            	<with  variable="selection">
+              		<iterate operator="and">
+                  		<instanceof
+                        	value="org.eclipse.core.resources.IFile">
+                  		</instanceof>
+              		</iterate>
+            	</with>
+            	<with  variable="activeEditor">
+               		<instanceof
+                    	value="net.heartsome.cat.ts.ui.xliffeditor.nattable.editor.XLIFFEditorImplWithNatTable">
+               		</instanceof>
+            	</with>
+            </or>
+         </activeWhen>
+         <enabledWhen>
+            <with
+                  variable="selection">
+               <count value="1">
+               </count>
+            </with>
+         </enabledWhen>
+      </handler>
+      <handler
+            class="net.heartsome.cat.ts.handlexlf.handler.MergeXliffHandler"
+            commandId="net.heartsome.cat.ts.ui.handlexlf.commands.mergeXliffCommand">
+		<activeWhen>
+            <with
+                  variable="selection">
+               <iterate
+                     operator="and">
+                  <instanceof
+                        value="org.eclipse.core.resources.IFile">
+                  </instanceof>
+               </iterate>
+               <not>
+	               <count value="1">
+	               </count>
+	           </not>
+            </with>
+         </activeWhen>
+         <enabledWhen>
+            <with
+                  variable="selection">
+               <not>
+	               <count value="0">
+	               </count>
+	           </not>
+            </with>
+         </enabledWhen>
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commandImages">
+         <image
+             commandId="net.heartsome.cat.ts.handlexlf.commands.splitXliffCommand"
+             icon="images/file/cut xliff.png">
+       </image>
+       <image
+             commandId="net.heartsome.cat.ts.ui.handlexlf.commands.mergeXliffCommand"
+             icon="images/file/merge xliff.png">
+       </image>
+   </extension>
+
+
+</plugin>

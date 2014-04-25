@@ -1,0 +1,7 @@
+rtf-export.png, rtf-import.png, rtf-convert.png 三个图片已放到 net.heartsome.cat.ts.ui.rtf 插件的 icons 目录下
+
+merge xliff.png, cut xliff.png, xliff-cut.png 三个图片已放到 net.heartsome.cat.ts.ui.xliffeditor.nattable 插件的 images/file 目录下
+
+convert file.png, convert-to xliff.png, convert-xliff to.png 三个图片已放到 net.heartsome.cat.converter.ui 插件的 icons 目录下
+
+net.heartsome.cat.ts/imags/file 下的相应图片是为了在首选项的快捷键页面显示对应图片

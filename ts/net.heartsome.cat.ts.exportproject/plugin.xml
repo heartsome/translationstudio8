@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:net.heartsome.cat.ts.ui.menu.project?after=net.heartsome.cat.ts.ui.exportSeparator">
+         <command
+               commandId="net.heartsome.cat.ts.exportproject.command.exportProject"
+               label="%menu.project.export"
+               style="push">
+         </command>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:net.heartsome.cat.common.ui.navigator.view#PopupMenu?before=navigator.popmenu.importProject">
+         <command
+               commandId="net.heartsome.cat.ts.exportproject.command.exportProject"
+               label="%menu.project.export"
+               style="push">
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            categoryId="org.eclipse.ui.category.project"
+            defaultHandler="net.heartsome.cat.ts.exportproject.handler.ExportProjectHandler"
+            id="net.heartsome.cat.ts.exportproject.command.exportProject"
+            name="%command.project.export">
+      </command>
+   </extension>
+
+
+</plugin>

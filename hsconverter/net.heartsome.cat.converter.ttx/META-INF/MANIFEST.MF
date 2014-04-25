@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome CAT Converter TTX
+Bundle-SymbolicName: net.heartsome.cat.converter.ttx
+Bundle-Version: 8.0.5.R8b_v20130925
+Bundle-Activator: net.heartsome.cat.converter.ttx.Activator
+Require-Bundle: org.junit4;resolution:=optional,
+ net.heartsome.cat.converter;bundle-version="1.0.0",
+ net.heartsome.xml;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Import-Package: net.heartsome.cat.common.util,
+ org.eclipse.core.runtime;version="3.4.0",
+ org.osgi.framework;version="1.5.0"
+Bundle-Vendor: Heartsome Technologies Ltd.

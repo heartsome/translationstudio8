@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome Common UI
+Bundle-SymbolicName: net.heartsome.cat.common.ui
+Bundle-Version: 8.1.0.R8b_v20131114
+Bundle-Activator: net.heartsome.cat.common.ui.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ net.heartsome.cat.thirdpartlibrary;bundle-version="1.0.0",
+ org.eclipse.core.filesystem;bundle-version="1.3.100",
+ org.eclipse.ui.ide
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: net.heartsome.cat.common.ui,
+ net.heartsome.cat.common.ui.dialog,
+ net.heartsome.cat.common.ui.handlers,
+ net.heartsome.cat.common.ui.innertag,
+ net.heartsome.cat.common.ui.listener,
+ net.heartsome.cat.common.ui.utils,
+ net.heartsome.cat.common.ui.wizard
+Import-Package: net.heartsome.cat.common.bean,
+ net.heartsome.cat.common.innertag,
+ net.heartsome.cat.common.innertag.factory,
+ net.heartsome.cat.common.resources,
+ net.heartsome.cat.common.util,
+ net.sourceforge.nattable.util,
+ org.apache.commons.lang.builder,
+ org.eclipse.core.resources,
+ org.eclipse.jface.text,
+ org.eclipse.text.undo,
+ org.eclipse.ui.ide
+Bundle-Vendor: Heartsome Technologies Ltd.

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.activities">
+      <category
+            description="shield unused views"
+            id="net.heartsome.cat.common.ui.shield.viewCategory"
+            name="Shield Views Category">
+      </category>
+      <category
+            description="shield unused menus"
+            id="net.heartsome.cat.common.ui.shield.menuCategory"
+            name="Shield Menus Category">
+      </category>
+      <category
+            description="shield unused preferences"
+            id="net.heartsome.cat.common.ui.shield.preferenceCategory"
+            name="Shield Preferences Category">
+      </category>
+      <categoryActivityBinding
+            activityId="net.heartsome.cat.common.ui.shield.view"
+            categoryId="net.heartsome.cat.common.ui.shield.viewCategory">
+      </categoryActivityBinding>
+      <categoryActivityBinding
+            activityId="net.heartsome.cat.common.ui.shield.menu"
+            categoryId="net.heartsome.cat.common.ui.shield.menuCategory">
+      </categoryActivityBinding>
+      <categoryActivityBinding
+            activityId="net.heartsome.cat.common.ui.shield.preference"
+            categoryId="net.heartsome.cat.common.ui.shield.preferenceCategory">
+      </categoryActivityBinding>
+      <activity
+            description="shield unused views"
+            id="net.heartsome.cat.common.ui.shield.view"
+            name="Shield Views">
+      </activity>
+      <activity
+            description="shield unused menus"
+            id="net.heartsome.cat.common.ui.shield.menu"
+            name="Shield Menus">
+      </activity>
+      <activity
+            description="shield unused preferences"
+            id="net.heartsome.cat.common.ui.shield.preference"
+            name="Shield Preferences">
+      </activity>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <scheme
+            description="default key scheme"
+            id="net.heartsome.cat.common.ui.shield.defaultAcceleratorConfiguration"
+            name="Default">
+      </scheme>
+   </extension>
+   <extension
+         point="org.eclipse.ui.startup">
+      <startup
+            class="net.heartsome.cat.common.ui.shield.ShieldStartup">
+      </startup>
+   </extension>
+   
+   <!-- 禁用 Editor菜单中的“new Editor”菜单项 -->
+   <extension 
+   		 point="org.eclipse.ui.handlers">
+      <handler
+            class="net.heartsome.cat.common.ui.shield.handlers.DisabledNewEditorHandler"
+            commandId="org.eclipse.ui.window.newEditor">
+         <enabledWhen>
+            <count value="-1">
+            </count>
+         </enabledWhen>
+         <activeWhen>
+            <not>
+               <count value="-1">
+               </count>
+            </not>
+         </activeWhen>
+      </handler>
+   </extension>
+
+</plugin>

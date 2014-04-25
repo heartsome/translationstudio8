@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<hshelp title="TBXMaker" url="help.html">
+    <book title="Table of Contents" url="help.html">
+        <item url="help-1.html">Step 1: Import a CSV file</item>
+        <item url="help-2.html">Step 2: Remove Unnecessary Columns</item>
+        <item url="help-3.html">Step 3: Select Column Properties</item>
+        <item url="help-4.html">Step 4: Export as TBX</item>
+        <item url="help-5.html">Glossary</item>
+    </book>
+</hshelp>

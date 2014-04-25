@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome CAT Database SQLite
+Bundle-SymbolicName: net.heartsome.cat.database.sqlite
+Bundle-Version: 8.1.0.R8b_v20131116
+Bundle-Activator: net.heartsome.cat.database.sqlite.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ net.heartsome.cat.database;bundle-version="8.0.1",
+ net.heartsome.cat.thirdpartlibrary;bundle-version="8.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Vendor: Heartsome Technologies Ltd.
+Bundle-ClassPath: .,
+ lib/sqlite-jdbc-3.7.15-SNAPSHOT.jar
+Import-Package: net.heartsome.cat.common.bean,
+ net.heartsome.cat.common.util

@@ -1,0 +1,2134 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>4.&nbsp;Translation</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<meta content="DocBook XSL Stylesheets V1.75.2 / ZoeeyDoc http://zoeeydoc.googlecode.com " name="generator">
+<link rel="home" href="index.html" title="User manual">
+<link rel="up" href="ch05.html" title="Workflow">
+<link rel="prev" href="ch05s03.html" title="3.&nbsp;Prepare before translating">
+<link rel="next" href="ch05s05.html" title="5.&nbsp;Edit &amp; QA">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="sect1" title="4.&nbsp;Translation">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title" style="clear: both">
+<a name="ch5s4-translate"></a>4.&nbsp;Translation</h2>
+</div>
+</div>
+</div>
+      
+
+      
+<p>Translation is obviously the most important part of a translation
+      project. It is also where CAT tools are at their most useful. As soon as
+      the aforementioned preparation work has been done, you are ready to
+      start translating. The preparation steps are just suggestions and you
+      may choose to adapt them to your particular needs, or go back to perform
+      those steps any time during the translation process.</p>
+
+      
+<div class="sect2" title="Open">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="open-xliff-file"></a>Open</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>In HSTS, an XLIFF file (with an <span class="type">.hsxliff</span> extension)
+        can be opened in one of two ways:</p>
+
+        
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+            
+<p>Open separately</p>
+
+            
+<p>Double-click the file you want to open,<span class="guimenuitem"></span> or
+            select one or multiple files and use the right-click menu to open
+            them. You can open individual XLIFF files one after another in
+            XLIFF editor.</p>
+          
+</li>
+<li class="listitem">
+            
+<p>Open in One Tab</p>
+
+            
+<p>Select two or more XLIFF files, one or more folders
+            containing at least two XLIFF files each, or a combination of
+            files and folders. Then click <span class="guimenuitem">Open in One
+            Tab</span> in the right-click menu to open and merge all
+            selected XLIFF files in just one XLIFF editor as if they were a
+            single XLIFF file.</p>
+<div class="figure">
+<a name="N215CD"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;75.&nbsp;Open in One Tab</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="screenshot">
+                  
+<div class="mediaobject" align="center">
+<img src="images/merging-open-1.png" align="middle" alt="Open in One Tab"></div>
+                
+</div>
+              
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+
+            
+<div class="figure">
+<a name="N215E3"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;76.&nbsp;The effect of opening files in one tab</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/merging-open-2.png" align="middle" alt="The effect of opening files in one tab"></div>
+              
+</div>
+            
+</div>
+</div>
+<br class="figure-break">
+          
+</li>
+</ul>
+</div>
+
+        
+<p>Opening files separately is the best option for a translation
+        project consisting of just a few files, while the merge and open
+        option is ideal for a project where there are a large number of small
+        files and multiple folder levels.</p>
+      
+</div>
+
+      
+<div class="sect2" title="Enter translation">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="edit-target"></a>Enter translation</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>Click any target segment, a flashing cursor appears and you can
+        enter your translation. When you have finished typing, click an area
+        outside the input box, or press arrow keys
+        (<span class="keycap"><strong>&uarr;</strong></span>、<span class="keycap"><strong>&darr;</strong></span>) to go to previous segment or
+        next segment, the content you have just entered will be saved
+        automatically in the Heartsome XLIFF.</p>
+      
+</div>
+
+      
+<div class="sect2" title="Inserting tags into the translation">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="ch5s4c"></a>Inserting tags into the translation</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>Some formatting elements (e.g., bold, italic, underlined,
+        foreground color, background color, etc.) will be saved as internal
+        tags when the file is converted to XLIFF. This means the original
+        formatting will be restored when the translated file is converted to a
+        target file.</p>
+
+        
+<p>Therefore, internal tags in the source text have to be inserted
+        in the translated text at the appropriate places. HSTS's tags are
+        numbered according to the order in which they appear in the source,
+        and tags inserted into the translation are identified by these same
+        ordinal numbers.</p>
+
+        
+<div class="figure">
+<a name="N2161B"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;77.&nbsp;Insert internal tags</b>
+</p>
+<div class="figure-contents">
+          
+
+          
+<div class="screenshot">
+            
+<div class="mediaobject" align="center">
+<img src="images/insert-tag.png" align="middle" alt="Insert internal tags"></div>
+          
+</div>
+        
+</div>
+</div>
+<br class="figure-break">
+
+        
+<p>Insert Next Tag refer to inserting the tag in natural order from
+        source to target.<span class="emphasis"><em>it is strongly recommended to use the
+        respective hot keys</em></span>, which will improve efficiency
+        significantly.</p>
+
+        
+<p>Some internal tags <span class="emphasis"><em>come in pairs</em></span>. The first
+        one is called the <span class="quote">&ldquo;<span class="quote">opening tag</span>&rdquo;</span> and the second one is
+        called the <span class="quote">&ldquo;<span class="quote">closing tag</span>&rdquo;</span> (like the starting and finishing
+        points of the bold text in this sentence). Between the <span class="quote">&ldquo;<span class="quote">opening
+        tag</span>&rdquo;</span> and <span class="quote">&ldquo;<span class="quote">closing tag</span>&rdquo;</span> of such a pair, other tags
+        might also be embedded (e.g., within a bold section of text, some of
+        the bold words might also appear as italics). A tag pair share the
+        same ordinal number.</p>
+
+        
+<p>Other than these two types of tags (<span class="emphasis"><em>tag
+        pairs</em></span> and <span class="emphasis"><em>embedded tags</em></span>), there are no
+        strict ordinal restrictions for other tags,<span class="emphasis"><em> meaning that the
+        tags in the translation do not have to be in exactly the same order as
+        they are in the source</em></span>. Where a tag should be placed
+        depends mainly on how the source and the translation correspond. If
+        the word surrounded by the tags is at the beginning of the sentence in
+        the source, while the translated word is at the end of the target
+        sentence, then the tags should also be added at the end of the
+        translation (generally speaking, the same word should be surrounded by
+        the tags, no matter where in the sentence it appears).</p>
+
+        
+<div class="tip" title="Tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Tip</h3>
+          
+<p>If you select part of the translation and insert a
+          <span class="emphasis"><em>tag pair </em></span>，the selected text will be
+          automatically placed in the middle of this tag pair. If you did not
+          choose the translation while inserting a tag pair,the cursor will be
+          placed in the middle of the tag pair, in which you can enter your
+          translation.</p>
+        
+</div>
+
+        
+<div class="tip" title="Tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Tip</h3>
+          
+<p>To change the color of tags, go to<span class="guimenu">Tools</span>
+          &gt; <span class="guimenuitem">Options</span> &gt; <span class="guimenuitem">Color
+          Settins</span>. Tag error means tags in target does not
+          appear in source, you may need to remove these tags.</p>
+        
+</div>
+      
+</div>
+
+      
+<div class="sect2" title="Change segment status">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="change-segment-status"></a>Change segment status</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>The segment status is used to indicate what stage the segment is
+        at in relation to the overall translation process. Below are the
+        different statuses a segment can have in HSTS:</p>
+
+        
+<div class="figure">
+<a name="N21677"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;78.&nbsp;Right-click menu: Segment status </b>
+</p>
+<div class="figure-contents">
+          
+
+          
+<div class="screenshot">
+            
+<div class="mediaobject" align="center">
+<img src="images/xliff-editor-segment-status.png" align="middle" alt="Right-click menu: Segment status "></div>
+          
+</div>
+        
+</div>
+</div>
+<br class="figure-break">
+
+        
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+            
+<p>
+<code class="interfacename">Untranslated</code>
+</p>
+
+            
+<p>A segment where no translation has been added. When you
+            delete or clear the translation in a segment with a different
+            status, it will automatically take on this status.</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<code class="interfacename">Draft</code>
+</p>
+
+            
+<p>A segment where a translation has been added, but not yet
+            confirmed as the final translation. When a segment, with a status
+            other than "draft", gets changed but is not empty, it will
+            automatically take on this status.</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<code class="interfacename">Translated</code>
+</p>
+
+            
+<p>A segment where a translation has been added and confirmed
+            by the translator as the final translation. Users can use the
+            <span class="guimenuitem">Confirm Translation</span> feature to change a
+            segment to this status from a different status, except when it is
+            "not translated".</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<code class="interfacename">Approved</code>
+</p>
+
+            
+<p>A segment where the translation has been edited or
+            tentatively confirmed by a proofreader as correct,
+            <span class="emphasis"><em>implying that it has been translated</em></span>. Users
+            can use the <span class="guimenuitem">Approve Translation</span> feature
+            to change a segment to this status from a different status, except
+            when it is "not translated".</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<code class="interfacename">Signed-off</code>
+</p>
+
+            
+<p>A segment where the translation has been edited or confirmed
+            by a proofreader and therefore the <span class="emphasis"><em>translation is
+            considered final</em></span>. Users can use the <span class="guimenuitem">Sign
+            off</span> feature to change a segment to this status from
+            "Approved".</p>
+          
+</li>
+</ul>
+</div>
+
+        
+<p>If the default TM has been set up correctly, when the segment
+        status is changed to <span class="quote">&ldquo;<span class="quote">Translated</span>&rdquo;</span> or
+        <span class="quote">&ldquo;<span class="quote">Approved</span>&rdquo;</span>, <span class="emphasis"><em>Auto-sending segments to
+        TM</em></span> will also be implemented at the same time. Otherwise,
+        the status of the translated segment will change but the text will not
+        be saved in the TM.</p>
+      
+</div>
+
+      
+<div class="sect2" title="Translation Memory">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="ch5s4e"></a>Translation Memory</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>During translation, the most frequently used functions related
+        to translation memory is as follows:</p>
+
+        
+<div class="sect3" title="Send segments to TM">
+<div class="titlepage">
+<div>
+<div>
+<h4 class="title">
+<a name="add-segment-to-tm"></a>Send segments to TM</h4>
+</div>
+</div>
+</div>
+          
+
+          
+<p>This feature saves the source text and translated text in the
+          TM. Once saved in the TM, it enables repeated use of the translation
+          for a similar sentence and therefore keeps translation as consistent
+          as possible across files and projects.</p>
+
+          
+<p>As mentioned earlier, if the default TM has been set up
+          correctly, when the segment status is changed to
+          <span class="quote">&ldquo;<span class="quote">Translated</span>&rdquo;</span> or <span class="quote">&ldquo;<span class="quote">Approved</span>&rdquo;</span>, the text
+          segment will be automatically saved in the TM. Otherwise, the status
+          of the translated segment will change but the text will not be saved
+          in the TM. If you would like to save all segments in the TM all at
+          once upon completion of the project, please refer to <a class="xref" href="ch06.html#update-tm" title="1.&nbsp;Update Translation Memory">Section&nbsp;1, &ldquo;Update Translation Memory&rdquo;</a>.</p>
+
+          
+<p>When saving segments in the TM in any of the ways described
+          above, entries identified as repetitions (i.e. having identical
+          sources) can be handled using the same options that are available
+          for importing TMX files. For details please see <a class="xref" href="ch05s03.html#create-tm-wizard-import-tmx" title="Import TMX/TXT/EXCEL files">the section called &ldquo;Import TMX/TXT/EXCEL files&rdquo;</a>.</p>
+        
+</div>
+
+        
+<div class="sect3" title="Get match for current segment">
+<div class="titlepage">
+<div>
+<div>
+<h4 class="title">
+<a name="N21703"></a>Get match for current segment</h4>
+</div>
+</div>
+</div>
+          
+
+          
+<p>When the TM has been correctly set up, every time you select a
+          segment HSTS will automatically retrieve a match (if available) from
+          the TM and display it in the <code class="interfacename">Translation
+          Memory</code> window. By selecting a match, you can see
+          information about the match in Translation Memory window status bar:
+          modification date and time, modified by, name of the TM.</p>
+
+          
+<div class="figure">
+<a name="N2170E"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;79.&nbsp;Translation Memory Match</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/tm-matches.png" align="middle" alt="Translation Memory Match"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+
+          
+<p>When you mouse over the status bar, more attribute information
+          will pop up: created by, created on, custom attributes (please see
+          <a class="xref" href="ch05s02.html#create-project-wizard-project-info" title="Project Information">the section called &ldquo;Project Information&rdquo;</a>, <a class="xref" href="ch05s03.html#project-setting" title="Project Settings">the section called &ldquo;Project Settings&rdquo;</a>for how to set this).</p>
+
+          
+<p>Users can go to <span class="guimenu">Tools</span> menu &gt;
+          <span class="guimenuitem">Options</span> &gt;
+          <span class="guimenuitem">Translation</span> &gt; <span class="guimenuitem">Translation
+          Memory</span> to configure settings for TM searches:</p>
+
+          
+<div class="figure">
+<a name="N2173C"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;80.&nbsp;Options: TM</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/options-tm.png" align="middle" alt="Options: TM"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+
+          
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+              
+<p>
+<span class="guilabel">Case-sensitive</span>
+</p>
+            
+</li>
+<li class="listitem">
+              
+<p>
+<span class="guilabel">Ignore tags</span>
+</p>
+            
+</li>
+<li class="listitem">
+              
+<p>
+<span class="guilabel">Minimum match value</span>
+</p>
+
+              
+<p>Matches with lower match values in the TM than this will
+              not be displayed.</p>
+            
+</li>
+<li class="listitem">
+              
+<p>
+<span class="guilabel">Number of context segments</span>
+</p>
+
+              
+<p>The number of segments that are taken into account when
+              calculating context matches.</p>
+            
+</li>
+<li class="listitem">
+              
+<p>
+<span class="guilabel">Number of matches displayed</span>
+</p>
+
+              
+<p>Once the number of matches meeting the specified minimum
+              match value reaches the value entered here, the search will
+              stop.</p>
+            
+</li>
+<li class="listitem">
+              
+<p>
+<span class="guilabel">Priority</span>
+</p>
+
+              
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">Default translation memory</span>
+</p>
+
+                  
+<p>Matches from default translation memory will take
+                  priority over the matches from non-default translation
+                  memory.</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">Most recently updated</span>
+</p>
+
+                  
+<p>More recent translations are shown closer to the
+                  top.</p>
+                
+</li>
+</ul>
+</div>
+            
+</li>
+</ul>
+</div>
+
+          
+<p>In the <code class="interfacename">Translation Memory</code>
+          window, different types of matches are displayed in different
+          colors, which makes it easier for users to identify them. These
+          color settings can be changed in <span class="guimenu">Tools</span> menu &gt;
+          <span class="guimenuitem">Options</span> &gt;
+          <span class="guimenuitem">System</span> &gt; <span class="guimenuitem">Color
+          Settings</span>.</p>
+
+          
+<div class="figure">
+<a name="N217B1"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;81.&nbsp;Options: Color Settings</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/options-color.png" align="middle" alt="Options: Color Settings"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+        
+</div>
+
+        
+<div class="sect3" title="Apply match to translation">
+<div class="titlepage">
+<div>
+<div>
+<h4 class="title">
+<a name="N217C8"></a>Apply match to translation</h4>
+</div>
+</div>
+</div>
+          
+
+          
+<p>In the Translation <code class="interfacename">Memory</code>
+          window, double-clicking on a match will apply the translation to the
+          current segment. At the same time, the background color of match
+          value of the segment will change to be the same as the match. In
+          addition, you can also use shortcut keys <span class="keycap"><strong>Alt
+          </strong></span>+<span class="keycap"><strong> 1</strong></span>, <span class="keycap"><strong>Alt </strong></span>+<span class="keycap"><strong>
+          2</strong></span>, <span class="keycap"><strong>Alt</strong></span> + <span class="keycap"><strong>3</strong></span> to get the
+          first, second and third match from the translation memory
+          window.</p>
+
+          
+<div class="figure">
+<a name="N217E5"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;82.&nbsp;Accept match </b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/apply-tm-match.png" align="middle" alt="Accept match "></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+
+          
+<div class="tip" title="Tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Tip</h3>
+            
+<p>When you applied match to target and changes the
+            translation, then backgrou color of the match value of the segment
+            will disappear.</p>
+          
+</div>
+
+          
+<p>If you want to copy and paste any portion of matches to
+          target, you can select part of mathces, then press
+          <span class="keycap"><strong>Ctrl</strong></span>/<span class="keycap"><strong>Command</strong></span>+<span class="keycap"><strong>C</strong></span>
+          and
+          <span class="keycap"><strong>Ctrl</strong></span>/<span class="keycap"><strong>Command</strong></span>+<span class="keycap"><strong>V</strong></span> to
+          copy and paste it to the target。</p>
+
+          
+<div class="figure">
+<a name="N21816"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;83.&nbsp;TM Match: select the part of the translation</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/tm-matches-select.png" align="middle" alt="TM Match: select the part of the translation"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+        
+</div>
+
+        
+<div class="sect3" title="Edit match, delete match">
+<div class="titlepage">
+<div>
+<div>
+<h4 class="title">
+<a name="N2182D"></a>Edit match, delete match</h4>
+</div>
+</div>
+</div>
+          
+
+          
+<p>If you find wrong sentence or repeated sentence in
+          <code class="interfacename">Translaiton Memory</code> panel, you can
+          edit them with <code class="interfacename"></code><span class="guibutton">Edit Match</span> and
+          <span class="guibutton">Delete Match</span> button。</p>
+
+          
+<div class="figure">
+<a name="N2183F"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;84.&nbsp;TM: editing match</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/tm-matches-edit-1.png" align="middle" alt="TM: editing match"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+
+          
+<p>Select desired match in <code class="interfacename">Translation
+          Memory</code> and click<span class="guibutton">Edit Match</span>
+          button, the <code class="interfacename">Edit Match</code> dialog will
+          pop up.</p>
+
+          
+<div class="figure">
+<a name="N21861"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;85.&nbsp;Edit Match</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/tm-matches-edit-2.png" align="middle" alt="Edit Match"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+
+          
+<p>Once finish editing, click OK to save changes into TM in
+          real-time.</p>
+
+          
+<div class="figure">
+<a name="N2187A"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;86.&nbsp;TM: Delete Match</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/tm-matches-delete.png" align="middle" alt="TM: Delete Match"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+
+          
+<p>To delete a match, select it and click Delete Match button,
+          and finally click OK.</p>
+
+          
+<div class="tip" title="Tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Tip</h3>
+            
+<p>You can only edit the match retrieved from TM in real-time,
+            rather than <span class="emphasis"><em>pre-stored</em></span>TM match、MT match or QT
+            match.</p>
+          
+</div>
+
+          
+<div class="warning" title="Warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+            
+<p>Editing match <span class="emphasis"><em>can not be undone</em></span>. Please
+            keep cautious for this.</p>
+          
+</div>
+        
+</div>
+
+        
+<div class="sect3" title="Concordance">
+<div class="titlepage">
+<div>
+<div>
+<h4 class="title">
+<a name="concordance-search"></a>Concordance</h4>
+</div>
+</div>
+</div>
+          
+
+          
+<p>Concordance is mainly used to search for translations that are
+          relevant to specific source text. This is how it works:</p>
+
+          
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+              
+<p>Check that the TM has been set up correctly for the
+              project. For details about this, please see <a class="xref" href="ch05s03.html#project-setting-tm" title="Figure&nbsp;53.&nbsp;Project Settings: TM">Figure&nbsp;53, &ldquo;Project Settings: TM&rdquo;</a>;</p>
+            
+</li>
+<li class="listitem">
+              
+<p>Select text in either the source or translation column,
+              use the Context Menu or the <span class="guimenu">Translation</span>menu
+              and click <span class="guimenuitem">Concordance</span>; </p>
+<div class="tip" title="Tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Tip</h3>
+                  
+<p>The selected text will also be automatically copied to
+                  the system clipboard. If you do not find the results in TM,
+                  and want to continue to search it in the Internet, you can
+                  paste the selected text to browser's search box directly by
+                  <span class="keycap"><strong>Ctrl</strong></span>/<span class="keycap"><strong>Command</strong></span>+<span class="keycap"><strong>V</strong></span>.</p>
+                
+</div>
+
+              
+<div class="figure">
+<a name="N218D3"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;87.&nbsp;XLIFF editor: Select text to search</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="screenshot">
+                  
+<div class="mediaobject" align="center">
+<img src="images/concordance-search-1.png" align="middle" alt="XLIFF editor: Select text to search"></div>
+                
+</div>
+              
+</div>
+</div>
+<br class="figure-break">
+            
+</li>
+<li class="listitem">
+              
+<p>In the <code class="interfacename">Concordance</code> dialog
+              box that pops up, adjust the following settings as
+              appropriate:</p>
+
+              
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">Case-sensitive</span>
+</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">Ignore tags</span>
+</p>
+
+                  
+<p>This means to skip tags in segments during the
+                  search.</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">Regular expressions</span>
+</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">Translation Memory</span>
+</p>
+
+                  
+<p>This is the TM you want to conduct the search
+                  in.</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">Target Language</span>
+</p>
+
+                  
+<p>This limits the search to finding source text in the
+                  current XLIFF file and only text in the chosen target
+                  language will be displayed. It is also possible to show
+                  translated text in different language locales for
+                  reference.</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">Add Filters</span>
+</p>
+
+                  
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                      
+<p>
+<span class="guilabel">Source/Target</span>
+</p>
+                    
+</li>
+<li class="listitem">
+                      
+<p>
+<span class="guilabel">Contain/Exclude</span>
+</p>
+                    
+</li>
+<li class="listitem">
+                      
+<p>
+<span class="guilabel">Text content</span>
+</p>
+                    
+</li>
+</ul>
+</div>
+                
+</li>
+</ul>
+</div>
+
+              
+<div class="figure">
+<a name="N21940"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;88.&nbsp;Concordance</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="screenshot">
+                  
+<div class="mediaobject" align="center">
+<img src="images/concordance-search-2.png" align="middle" alt="Concordance"></div>
+                
+</div>
+              
+</div>
+</div>
+<br class="figure-break">
+            
+</li>
+<li class="listitem">
+              
+<p>Click the <span class="guibutton">Search</span> button to see
+              results.</p>
+            
+</li>
+</ol>
+</div>
+
+          
+<p>Double-click translation on conconrdance search dialoge to
+          select part of its content to copy to the clipboard for later
+          use.</p>
+        
+</div>
+      
+</div>
+
+      
+<div class="sect2" title="Termbase">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="ch5s4f"></a>Termbase</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>Most termbase features work in a similar way to a TM.</p>
+
+        
+<div class="sect3" title="Add Term">
+<div class="titlepage">
+<div>
+<div>
+<h4 class="title">
+<a name="add-terminology"></a>Add Term</h4>
+</div>
+</div>
+</div>
+          
+
+          
+<p>To add a term to your termbase, follow these steps:</p>
+
+          
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+              
+<p>Check that the default termbase has been set up for the
+              project. For details about this, please see <a class="xref" href="ch05s03.html#project-setting-tb" title="Figure&nbsp;73.&nbsp;Project Settings: Termbase ">Figure&nbsp;73, &ldquo;Project Settings: Termbase &rdquo;</a>:</p>
+            
+</li>
+<li class="listitem">
+              
+<p>Select source term and target term <span class="emphasis"><em>at the same
+              time</em></span>in one opened XLIFF.</p>
+
+              
+<div class="figure">
+<a name="N2198B"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;89.&nbsp;Add Term</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="screenshot">
+                  
+<div class="mediaobject" align="center">
+<img src="images/add-terminology-1.png" align="middle" alt="Add Term"></div>
+                
+</div>
+              
+</div>
+</div>
+<br class="figure-break">
+            
+</li>
+<li class="listitem">
+              
+<p>Click <span class="guimenu">Translation </span>menu &gt;
+              <span class="guimenuitem">Add Term</span> (Or use the shortcut
+              keys<span class="keycap"><strong>Ctrl</strong></span>/<span class="keycap"><strong>Command</strong></span>+<span class="keycap"><strong>T</strong></span>);
+              In the <code class="interfacename">Add Terms to
+              Termbase</code>dialog box, the selected
+              <span class="guilabel">source term</span> and <span class="guilabel">target
+              term</span> will be automatically entered in the
+              corresponding field;</p>
+
+              
+<div class="figure">
+<a name="N219BF"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;90.&nbsp;Add Term dialog box</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="screenshot">
+                  
+<div class="mediaobject" align="center">
+<img src="images/add-terminology-3.png" align="middle" alt="Add Term dialog box"></div>
+                
+</div>
+              
+</div>
+</div>
+<br class="figure-break">
+            
+</li>
+<li class="listitem">
+              
+<p>You can also fill in the <span class="guilabel">Attribute</span>
+              field, so that it is easier to distinguish the different
+              translations for one term depending on the client or subject
+              matter.</p>
+            
+</li>
+<li class="listitem">
+              
+<p>Finally, click <span class="guibutton">OK</span> to finish adding
+              the term.</p>
+            
+</li>
+</ol>
+</div>
+
+          
+<p>Users can go to <span class="guimenu">Tools</span> menu &gt;
+          <span class="guimenuitem">Options</span> &gt;
+          <span class="guimenuitem">Translation</span> &gt;
+          <span class="guimenuitem">Termbase</span> to change settings for term
+          repetitions. Details can be found at <a class="xref" href="ch05s03.html#create-tb-wizard-import-tbx" title="Import TBX files">the section called &ldquo;Import TBX files&rdquo;</a>.</p>
+        
+</div>
+
+        
+<div class="sect3" title="Get term for current segment">
+<div class="titlepage">
+<div>
+<div>
+<h4 class="title">
+<a name="N219FC"></a>Get term for current segment</h4>
+</div>
+</div>
+</div>
+          
+
+          
+<p>When the termbase has been correctly set up, every time a
+          segment is selected, HSTS will automatically retrieve terms from the
+          termbase and display them in the
+          <code class="interfacename">Termbase</code> window.</p>
+
+          
+<div class="figure">
+<a name="N21A07"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;91.&nbsp;Term match</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/term-matches.png" align="middle" alt="Term match"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+        
+</div>
+
+        
+<div class="sect3" title="Insert term into translation">
+<div class="titlepage">
+<div>
+<div>
+<h4 class="title">
+<a name="N21A1E"></a>Insert term into translation</h4>
+</div>
+</div>
+</div>
+          
+
+          
+<p>Place the cursor in the translation field and double-click the
+          term in the <code class="interfacename">Termbase</code> window. The
+          translation for the term will be inserted where the cursor is. In
+          addition, you can also use shortcut keys <span class="keycap"><strong>Ctrl</strong></span> +
+          <span class="keycap"><strong>Shift </strong></span> + <span class="keycap"><strong>1</strong></span> ~ <span class="keycap"><strong>0</strong></span> to
+          insert the term 1 ~ 10.</p>
+
+          
+<div class="figure">
+<a name="N21A35"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;92.&nbsp;Insert term</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/insert-term.png" align="middle" alt="Insert term"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+        
+</div>
+
+        
+<div class="sect3" title="Search term">
+<div class="titlepage">
+<div>
+<div>
+<h4 class="title">
+<a name="search-terminology"></a>Search term</h4>
+</div>
+</div>
+</div>
+          
+
+          
+<p>Follow these steps to search for a term in the
+          termbase:</p>
+
+          
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+              
+<p>Check that the termbase has been set up for the project.
+              For details about this please see <a class="xref" href="ch05s03.html#project-setting-tb" title="Figure&nbsp;73.&nbsp;Project Settings: Termbase ">Figure&nbsp;73, &ldquo;Project Settings: Termbase &rdquo;</a>.</p>
+            
+</li>
+<li class="listitem">
+              
+<p>Select the term you would like to search for in either the
+              source or translation column of the opened XLIFF file.</p>
+
+              
+<div class="figure">
+<a name="N21A65"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;93.&nbsp;XLIFF editor: Select text to search</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="screenshot">
+                  
+<div class="mediaobject" align="center">
+<img src="images/search-term-1.png" align="middle" alt="XLIFF editor: Select text to search"></div>
+                
+</div>
+              
+</div>
+</div>
+<br class="figure-break">
+            
+</li>
+<li class="listitem">
+              
+<p>Click <span class="guimenu">Translation</span> menu &gt;
+              <span class="guimenuitem">Search Term</span>.</p>
+            
+</li>
+<li class="listitem">
+              
+<p>In the <code class="interfacename">Search Term</code> dialog
+              box that pops up, type in the term in the search box. If you had
+              previously selected the term, it will be automatically filled in
+              the search box. You may also need to configure the following
+              settings as appropriate:</p>
+
+              
+<div class="figure">
+<a name="N21A90"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;94.&nbsp;Search term</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="screenshot">
+                  
+<div class="mediaobject" align="center">
+<img src="images/search-term-2.png" align="middle" alt="Search term"></div>
+                
+</div>
+              
+</div>
+</div>
+<br class="figure-break">
+
+              
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">Case-sensitive</span>
+</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">Ignore tags</span>
+</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">Regular expressions</span>
+</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">Match value</span>
+</p>
+
+                  
+<p>Similarity to the searched term in terms of match
+                  value.</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">Termbase</span>
+</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">Target Language</span>
+</p>
+                
+</li>
+</ul>
+</div>
+            
+</li>
+<li class="listitem">
+              
+<p>Click the <span class="guibutton">Search</span> button to see
+              results.</p>
+            
+</li>
+</ol>
+</div>
+        
+</div>
+      
+</div>
+
+      
+<div class="sect2" title="QA">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="translation-qa-check"></a>QA</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>HSTS provides a wide range of QA features to help users improve
+        translation quality in various ways. From <span class="guimenu">Tools</span>
+        &gt; <span class="guimenuitem">Options</span> &gt;
+        <span class="guimenuitem">QA</span> &gt; <span class="guimenuitem">QA</span>, you
+        can activate the following QA items:</p>
+
+        
+<div class="figure">
+<a name="N21AF8"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;95.&nbsp;Options: QA</b>
+</p>
+<div class="figure-contents">
+          
+
+          
+<div class="screenshot">
+            
+<div class="mediaobject" align="center">
+<img src="images/options-qa.png" align="middle" alt="Options: QA"></div>
+          
+</div>
+        
+</div>
+</div>
+<br class="figure-break">
+
+        
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+            
+<p>
+<span class="guilabel">Term consistency</span>
+</p>
+
+            
+<p>Check that terms are translated correctly as per the
+            termbase.</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="guilabel">Numeral consistency</span>
+</p>
+
+            
+<p>Check that numerals in the source are correctly transferred
+            to the translation.</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="guilabel">Tag consistency</span>
+</p>
+
+            
+<p>Check that tags in the source are correctly transferred to
+            the translation.</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="guilabel">Non-translatable text</span>
+</p>
+
+            
+<p>Check that placeables in the source are correctly
+            transferred to the translation.</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="guilabel">Leading/trailing spaces</span>
+</p>
+
+            
+<p>Check that spacing at the beginning/end of the translation
+            is consistent with the source.</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="guilabel">Segment completeness</span>
+</p>
+
+            
+<p>Check that there are no empty translation fields or
+            different fields from the source.</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="guilabel">Target length limit</span>
+</p>
+
+            
+<p>Check that the translation is within the word count limit.
+            This is typically a requirement for software UIs or subtitles for
+            videos, etc.</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="guilabel">Spell check</span>
+</p>
+
+            
+<p>Check that there are no spelling mistakes in the
+            translation.</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="guilabel">Segment consistency</span>
+</p>
+
+            
+<p>Check for translation consistency and inconsistency.</p>
+          
+</li>
+</ul>
+</div>
+
+        
+<p>Among these QA items, all except <span class="guilabel">Segment
+        consistency</span> can be checked using <span class="quote">&ldquo;<span class="quote">Auto-check
+        Policy</span>&rdquo;</span>. This means you can choose to automate one or multiple
+        QA checks <span class="guilabel">upon completing</span> or <span class="guilabel">approving
+        segments</span>. We recommend activating automatic QA checks
+        during translation, in order to identify problems immediately and to
+        solve them as soon as possible.</p>
+
+        
+<p>Segments that fail to pass the <code class="interfacename">QA
+        checks</code> will be displayed in the QA Results window. A
+        double-click on a QA issue will direct you to that particular segment.
+        Each line in the results corresponds to one problem. Therefore, there
+        will be multiple results shown for one segment if it is found to have
+        multiple QA problems. In addition, you can also export QA results as
+        necessary for delivery to other ones, please see the <a class="xref" href="ch05s05.html#export-qa-report" title="Export QA Report">the section called &ldquo;Export QA Report&rdquo;</a>.</p>
+
+        
+<div class="note" title="Note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Note</h3>
+          
+<p>After QA is completed, there may be some false positives. You
+          can ignore them as appropriate. For example, spaces at the beginning
+          and ends of paragraphs are necessary in Latin languages, but not in
+          Asian languages. Therefore, translators should decide whether the QA
+          problems identified need to be corrected depending on the particular
+          requirements of the target language.</p>
+        
+</div>
+      
+</div>
+
+      
+<div class="sect2" title="Quick Translation">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="ch5s4h"></a>Quick Translation</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>HSTS's quick translation feature is called <span class="emphasis"><em>Example
+        Based Machine Translation</em></span> (EBMT). This feature can replace
+        terms in the current segment with matching terms from the TM,
+        automatically making a fairly good translation. When combining TM
+        matches and terms, quick translation can produce as high quality
+        translation as a TM, while reducing the cumbersome job of replacing
+        terms manually. The example below shows a scenario where fast
+        translation can be of use:</p>
+
+        
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+            
+<p>Precondition</p>
+
+            
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+                
+<p>The segment <span class="quote">&ldquo;<span class="quote">This is a black keyboard. </span>&rdquo;</span>and
+                its translation <span class="quote">&ldquo;<span class="quote">这是一只黑色的键盘。 both exist in the
+                TM.</span>&rdquo;</span>
+</p>
+
+                
+<div class="figure">
+<a name="N21BA9"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;96.&nbsp;Quick translation: TM</b>
+</p>
+<div class="figure-contents">
+                  
+
+                  
+<div class="screenshot">
+                    
+<div class="mediaobject" align="center">
+<img src="images/quick-translation-1-tm.png" align="middle" alt="Quick translation: TM"></div>
+                  
+</div>
+                
+</div>
+</div>
+<br class="figure-break">
+              
+</li>
+<li class="listitem">
+                
+<p>These terms exist in the termbase:
+                <span class="quote">&ldquo;<span class="quote">black-黑色的</span>&rdquo;</span>, <span class="quote">&ldquo;<span class="quote">keyboard-键盘</span>&rdquo;</span>,
+                <span class="quote">&ldquo;<span class="quote">white-白色的</span>&rdquo;</span> and <span class="quote">&ldquo;<span class="quote">mouse-鼠标</span>&rdquo;</span>
+</p>
+
+                
+<div class="figure">
+<a name="N21BD0"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;97.&nbsp;Quick translation: Termbase</b>
+</p>
+<div class="figure-contents">
+                  
+
+                  
+<div class="screenshot">
+                    
+<div class="mediaobject" align="center">
+<img src="images/quick-translation-2-tb.png" align="middle" alt="Quick translation: Termbase"></div>
+                  
+</div>
+                
+</div>
+</div>
+<br class="figure-break">
+              
+</li>
+</ol>
+</div>
+          
+</li>
+<li class="listitem">
+            
+<p>Source of current segment</p>
+
+            
+<p>
+<span class="quote">&ldquo;<span class="quote">This is a white mouse.</span>&rdquo;</span>
+</p>
+          
+</li>
+<li class="listitem">
+            
+<p>Translation generated through quick translation</p>
+
+            
+<p>
+<span class="quote">&ldquo;<span class="quote">这是一只白色的鼠标。</span>&rdquo;</span>
+</p>
+
+            
+<div class="figure">
+<a name="N21BFC"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;98.&nbsp;Quick Translation</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/quick-translation-3.png" align="middle" alt="Quick Translation"></div>
+              
+</div>
+            
+</div>
+</div>
+<br class="figure-break">
+          
+</li>
+</ul>
+</div>
+
+        
+<p>There are two prerequisites for quick translation:</p>
+
+        
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+            
+<p>There is a match in TM for the current segment (meeting the
+            minimum match value set in <span class="guimenu">Tools</span> menu &gt;
+            <span class="guimenuitem">Options</span> &gt;
+            <span class="guimenuitem">Translation</span> &gt;
+            <span class="guimenuitem">Translation Memory</span>,<span class="guilabel"></span> which
+            was set at 35% in the example above).</p>
+          
+</li>
+<li class="listitem">
+            
+<p>Apart from TM matches, the rest of the current source text
+            has matching terms in the termbase.</p>
+          
+</li>
+</ol>
+</div>
+
+        
+<p>We recommend going to <span class="guimenu">Tools</span> menu &gt;
+        <span class="guimenuitem">Options</span> &gt;
+        <span class="guimenuitem">Translation</span> and activating the
+        <span class="guilabel">Auto Quick Translation</span> feature. If this has not
+        been activated, it is also possible to implement quick translation
+        manually by going to <span class="guimenu">Translation</span> menu &gt;
+        <span class="guimenuitem">Quick Translation</span>.</p>
+
+        
+<div class="note" title="Note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Note</h3>
+          
+<p>If the current segment does not meet the prerequisites for
+          quick translation, activating this feature will not bring any
+          visible results.</p>
+        
+</div>
+      
+</div>
+
+      
+<div class="sect2" title="Machine Translation">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="ch5s4i"></a>Machine Translation</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>HSTS provides support for Bing Translator and Google Translate
+        for machine translation (MT). The former MT engine can be used for
+        free while the latter requires payment. For more information about
+        machine translation please refer to <a class="xref" href="ch05s03.html#prestore-mt" title="Pre-store Machine Translation">the section called &ldquo;Pre-store Machine Translation&rdquo;</a> and
+        <a class="xref" href="ch09.html#how-to-use-mt" title="1.2.">Q:&nbsp;1.2</a>.</p>
+      
+</div>
+
+      
+<div class="sect2" title="Filter segments">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="filter-segments"></a>Filter segments</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>Sometimes during translation, it is necessary to filter segments
+        by certain characteristics (e.g. statuses, matches) so as to narrow
+        down the search scope, eliminate interruptions and facilitate batch
+        operations. HSTS provides following segment filter:</p>
+
+        
+<div class="figure">
+<a name="xliff-editor-filter-segments"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;99.&nbsp;XLIFF editor: Segments filter</b>
+</p>
+<div class="figure-contents">
+          
+
+          
+<div class="screenshot">
+            
+<div class="mediaobject" align="center">
+<img src="images/xliff-editor-filter-segments.png" align="middle" alt="XLIFF editor: Segments filter"></div>
+          
+</div>
+        
+</div>
+</div>
+<br class="figure-break">
+
+        
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+            
+<p>Locked</p>
+          
+</li>
+<li class="listitem">
+            
+<p>Unlocked</p>
+          
+</li>
+<li class="listitem">
+            
+<p>Pending</p>
+          
+</li>
+<li class="listitem">
+            
+<p>Not Sent to TM</p>
+          
+</li>
+<li class="listitem">
+            
+<p>Segments with comments</p>
+          
+</li>
+<li class="listitem">
+            
+<p>Untranslated</p>
+          
+</li>
+<li class="listitem">
+            
+<p>Draft</p>
+          
+</li>
+<li class="listitem">
+            
+<p>Translated</p>
+          
+</li>
+<li class="listitem">
+            
+<p>Unfinished</p>
+          
+</li>
+<li class="listitem">
+            
+<p>Approved</p>
+          
+</li>
+<li class="listitem">
+            
+<p>Unapproved</p>
+          
+</li>
+<li class="listitem">
+            
+<p>Signed-off</p>
+          
+</li>
+<li class="listitem">
+            
+<p>Not Signed-off</p>
+          
+</li>
+<li class="listitem">
+            
+<p>Internal repetitions</p>
+          
+</li>
+<li class="listitem">
+            
+<p>Context Matches</p>
+          
+</li>
+<li class="listitem">
+            
+<p>Exact Matches</p>
+          
+</li>
+<li class="listitem">
+            
+<p>Fuzzy match</p>
+          
+</li>
+</ul>
+</div>
+
+        
+<p>In addition, you can also click on <span class="guibutton">Customize
+        Filters</span> button on the right of segment filter drop-down
+        list to add a custom filter: </p>
+<div class="figure">
+<a name="N21CEE"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;100.&nbsp;XLIFF editor: Add your own custom segment filter</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/xliff-editor-add-filter-1.png" align="middle" alt="XLIFF editor: Add your own custom segment filter"></div>
+            
+</div>
+          
+</div>
+</div>
+<p>
+<br class="figure-break">You can add <span class="emphasis"><em>custom filter</em></span> as following
+        conditions:</p>
+
+        
+<div class="figure">
+<a name="N21D08"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;101.&nbsp;Manage custom filters</b>
+</p>
+<div class="figure-contents">
+          
+
+          
+<div class="screenshot">
+            
+<div class="mediaobject" align="center">
+<img src="images/xliff-editor-add-filter-2.png" align="middle" alt="Manage custom filters"></div>
+          
+</div>
+        
+</div>
+</div>
+<br class="figure-break">
+
+        
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+            
+<p>Combination of the following types of criteria</p>
+
+            
+<p>
+<span class="guilabel">Meet all of the following conditions</span>,
+            <span class="guilabel">meet one of the following conditions</span>
+</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="guilabel">Keyword</span>
+</p>
+
+            
+<p>
+<span class="guilabel">Contain</span>/<span class="guilabel">Exclude</span>:
+            Specified text</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="guilabel">Comments</span>
+</p>
+
+            
+<p>
+<span class="guilabel">Contain</span>/<span class="guilabel">Exclude</span>/<span class="guilabel">Equal</span>/<span class="guilabel">Not
+            Equal To</span>: Specified text</p>
+          
+</li>
+<li class="listitem">
+            
+<p>
+<span class="guilabel">Attribute</span>
+</p>
+
+            
+<p>
+<span class="guilabel">Property
+            name</span><span class="emphasis"><em>equals</em></span> specified text and
+            <span class="guilabel">property value </span><span class="emphasis"><em>equals</em></span>
+            specified text</p>
+          
+</li>
+</ul>
+</div>
+
+        
+<p>Successfully added new segment filter will display at the bottom
+        of the segment filter list.</p>
+<div class="figure">
+<a name="N21D67"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;102.&nbsp;Segment custom filters</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/xliff-editor-add-filter-3.png" align="middle" alt="Segment custom filters"></div>
+            
+</div>
+          
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+      
+</div>
+
+      
+<div class="sect2" title="Translation Progress Analysis">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">
+<a name="translation-progress-analysis"></a>Translation Progress Analysis</h3>
+</div>
+</div>
+</div>
+        
+
+        
+<p>Translation progress analysis is performed in a similar way to
+        the word count analysis:</p>
+
+        
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+            
+<p>From the <span class="quote">&ldquo;<span class="quote">Project</span>&rdquo;</span> or XLIFF sub-folder, choose
+            one or multiple <span class="type">.hsxliff</span> files/folders, and from
+            either the right-click menu or the <span class="guimenu">Project</span>
+            menu, select <span class="guimenuitem">Translation Progress
+            Analysis</span>; </p>
+<div class="figure">
+<a name="N21D99"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;103.&nbsp;Translation Progress Analysis.</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="screenshot">
+                  
+<div class="mediaobject" align="center">
+<img src="images/translation-analysis-1-1.png" align="middle" alt="Translation Progress Analysis."></div>
+                
+</div>
+              
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+          
+</li>
+<li class="listitem">
+            
+<p>To confirm the files you want to analyze, click
+            <span class="guibutton">OK</span> button。</p>
+<div class="figure">
+<a name="N21DB7"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;104.&nbsp;Translation progress analysis</b>
+</p>
+<div class="figure-contents">
+                
+
+                
+<div class="screenshot">
+                  
+<div class="mediaobject" align="center">
+<img src="images/translation-analysis-1-2.png" align="middle" alt="Translation progress analysis"></div>
+                
+</div>
+              
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+          
+</li>
+<li class="listitem">
+            
+<p>When the analysis has finished, a report of the analysis
+            results will open automatically.</p>
+
+            
+<div class="figure">
+<a name="N21DD3"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>Figure&nbsp;105.&nbsp;Results of translation progress analysis</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/translation-analysis-2-result.png" align="middle" alt="Results of translation progress analysis"></div>
+              
+</div>
+            
+</div>
+</div>
+<br class="figure-break">
+          
+</li>
+</ol>
+</div>
+      
+</div>
+    
+</div>
+</body>
+</html>

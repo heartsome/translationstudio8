@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hs="http://www.heartsome.net.cn/2008/XLFExtension" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd http://www.heartsome.net.cn/2008/XLFExtension XLFExtension.xsd">
+  <file original="D:/ts.win32.win32.x86/workspace/test/Source/test file.txt" source-language="en-US" datatype="plaintext" target-language="zh-CN">
+    <header>
+      <skl>
+        <external-file href="D:/ts.win32.win32.x86/workspace/test/SKL/test file.txt.skl"/>
+      </skl>
+      <tool tool-id="XLFEditor auto-Quick Translation" tool-name="HSStudio"/>
+      <hs:prop-group name="encoding">
+        <hs:prop prop-type="encoding">UTF-8</hs:prop>
+      </hs:prop-group>
+    </header>
+    <body>
+      <trans-unit id="1" xml:space="preserve" approved="no" translate="yes">
+        <source xml:lang="en-US">Test segment 1.</source>
+        <alt-trans  match-quality="100" origin="test tm" tool-id="HSCAT TS">
+          <source xml:lang="en-US">Test segment 1.</source>
+          <target xml:lang="zh-CN">文本段1。</target>
+        </alt-trans>
+      </trans-unit>
+      <trans-unit id="2" xml:space="preserve" approved="no" translate="yes">
+        <source xml:lang="en-US">Test segment 1b.</source>
+      </trans-unit>
+      <trans-unit id="3" xml:space="preserve" approved="no" translate="yes">
+        <source xml:lang="en-US">Test segment 2a.</source>
+        <target xml:lang="zh-CN" state="new"/>
+      </trans-unit>
+      <trans-unit id="4" xml:space="preserve" approved="no" translate="yes">
+        <source xml:lang="en-US">Test segment 2b.</source>
+        <target xml:lang="zh-CN" state="new"/>
+      </trans-unit>
+      <trans-unit id="5" xml:space="preserve" approved="no" translate="yes">
+        <source xml:lang="en-US">Test segment 3a.</source>
+        <target xml:lang="zh-CN" state="new">Translation of test segment 3a.</target>
+      </trans-unit>
+      <trans-unit id="6" xml:space="preserve" approved="no" translate="yes">
+        <source xml:lang="en-US">Test segment 3b.</source>
+        <target xml:lang="zh-CN" state="new"/>
+      </trans-unit>
+      <trans-unit id="7" xml:space="preserve" approved="no" translate="yes">
+        <source xml:lang="en-US">Test segment 4a.</source>
+        <target xml:lang="zh-CN" state="new"/>
+      </trans-unit>
+      <trans-unit id="8" xml:space="preserve" approved="no" translate="yes">
+        <source xml:lang="en-US">Test segment 4b.</source>
+        <target xml:lang="zh-CN" state="new">Translation of test segment 4b.</target>
+      </trans-unit>
+      <trans-unit id="9" xml:space="preserve" approved="no" translate="yes">
+        <source xml:lang="en-US">Test segment 5a.</source>
+        <target xml:lang="zh-CN" state="new">Translation of test segment 5a.</target>
+      </trans-unit>
+      <trans-unit id="10" xml:space="preserve" approved="no" translate="yes">
+        <source xml:lang="en-US">Test segment 5b.</source>
+        <target xml:lang="zh-CN" state="new">Translation of test segment 5b.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

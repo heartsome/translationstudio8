@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="net.heartsome.cat.convert.ui.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="Perspective"
+            class="net.heartsome.cat.convert.ui.Perspective"
+            id="net.heartsome.cat.convert.ui.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            name="View"
+            class="net.heartsome.cat.convert.ui.View"
+            id="net.heartsome.cat.convert.ui.view">
+      </view>
+   </extension>
+
+</plugin>

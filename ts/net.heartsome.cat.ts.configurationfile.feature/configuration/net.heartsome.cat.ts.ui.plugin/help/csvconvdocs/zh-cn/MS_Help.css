@@ -1,0 +1,105 @@
+/*=(===============================================================)*/
+
+/*=(===============================================================)*/
+/*=(Created with RoboEditor.)=======================================*/
+/*=(===============================================================)*/
+
+BODY {
+	background-color: #ffffff;
+}
+
+P /*begin!kadov{{*/ ,LI.kadov-P /*}}end!kadov*/   {
+	font-family: '宋体';
+	font-size: 10.0pt;
+	color: #000000;
+}
+
+H1 /*begin!kadov{{*/ ,LI.kadov-H1 /*}}end!kadov*/   {
+	font-family: '宋体';
+	font-weight: bold;
+	font-size: 12.0pt;
+	color: #000000;
+}
+
+H2 /*begin!kadov{{*/ ,LI.kadov-H2 /*}}end!kadov*/   {
+	font-family: '宋体';
+	font-weight: bold;
+	font-size: 10.0pt;
+	color: #000000;
+}
+
+H3 /*begin!kadov{{*/ ,LI.kadov-H3 /*}}end!kadov*/   {
+	font-family: '宋体';
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+}
+
+H4 /*begin!kadov{{*/ ,LI.kadov-H4 /*}}end!kadov*/   {
+	font-family: '宋体';
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+}
+
+H5 /*begin!kadov{{*/ ,LI.kadov-H5 /*}}end!kadov*/   {
+	font-family: '宋体';
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+}
+
+H6 /*begin!kadov{{*/ ,LI.kadov-H6 /*}}end!kadov*/   {
+	font-family: '宋体';
+	font-weight: normal;
+	font-size: 10.0pt;
+	color: #000000;
+}
+
+A:link {
+	x-text-underline: normal;/*begin!kadov{{*/ text-decoration: underline; /*}}end!kadov*/ 
+	color: #0000ff;
+}
+
+A:visited {
+	x-text-underline: normal;/*begin!kadov{{*/ text-decoration: underline; /*}}end!kadov*/ 
+	color: #0000ff;
+}
+
+A.expandspot {
+	color: #008000;
+	cursor: hand;
+	font-style: italic;
+	text-decoration: none;
+}
+
+SPAN.expandtext {
+	font-style: italic;
+	font-weight: normal;
+	color: #ff0000;
+}
+
+A.dropspot {
+	cursor: hand;
+	color: #008000;
+	font-style: italic;
+	text-decoration: none;
+}
+
+A.glossterm {
+	color: #800000;
+	cursor: hand;
+	font-style: italic;
+	text-decoration: none;
+}
+
+SPAN.glosstext {
+	font-style: italic;
+	font-weight: normal;
+	color: #0000ff;
+}
+
+OL, UL { 
+	margin-top: 0px; 
+	margin-bottom: 0px;
+}

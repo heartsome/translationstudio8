@@ -1,0 +1,7 @@
+org.eclipse.osgi
+org.eclipse.equinox.app
+org.eclipse.equinox.simpleconfigurator
+org.eclipse.update
+org.eclipse.core.runtime
+dev.properties
+config.ini

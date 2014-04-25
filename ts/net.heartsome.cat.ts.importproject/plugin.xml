@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:net.heartsome.cat.ts.ui.menu.project?after=net.heartsome.cat.ts.ui.importSeparator">
+         <command
+               commandId="net.heartsome.cat.ts.importproject.command.importProject"
+               label="%menu.project.import"
+               style="push">
+         </command>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:net.heartsome.cat.common.ui.navigator.view#PopupMenu?before=navigator.popmenu.projectsetting">
+         <command
+               commandId="net.heartsome.cat.ts.importproject.command.importProject"
+               id="navigator.popmenu.importProject"
+               label="%menu.project.import"
+               style="push">
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            categoryId="org.eclipse.ui.category.project"
+            defaultHandler="net.heartsome.cat.ts.importproject.handler.ImportProjectHandler"
+            id="net.heartsome.cat.ts.importproject.command.importProject"
+            name="%command.project.import">
+      </command>
+   </extension>
+
+
+</plugin>

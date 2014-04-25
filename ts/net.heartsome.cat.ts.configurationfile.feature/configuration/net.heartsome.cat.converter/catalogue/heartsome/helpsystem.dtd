@@ -1,0 +1,29 @@
+
+<!-- ======================================================= -->
+<!-- Use with the following identifiers:                     -->
+<!--                                                         -->
+<!--  "-//HEARTSOME//DTD HelpSystem 1.0.0//EN"                   -->
+<!--                                                         -->
+<!-- ======================================================= -->
+
+<!ELEMENT hshelp ((toc|item|book)*)>
+<!ATTLIST hshelp
+	title		CDATA #REQUIRED
+    url			CDATA #REQUIRED
+>
+
+<!ELEMENT toc (#PCDATA)>
+<!ATTLIST toc
+    url			CDATA #REQUIRED
+>
+
+<!ELEMENT book ((toc|item|book)*)>
+<!ATTLIST book
+	title		CDATA #REQUIRED
+	url			CDATA #IMPLIED
+>
+
+<!ELEMENT item (#PCDATA)>
+<!ATTLIST item
+	url			CDATA #REQUIRED	
+>

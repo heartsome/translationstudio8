@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<glossary>
+    <title>术语表</title>
+
+    <glossdiv>
+        <title>Z</title>
+
+        <glossentry>
+            <glossterm>Zoeey Framework</glossterm>
+            <glossdef>
+                <para>面向中小型Web项目的开发框架，对Phper亲切友好，提供大量常用的Php操作替代方案。 </para>
+            </glossdef>
+        </glossentry>
+
+        <glossentry>
+            <glossterm>Zoeey</glossterm>
+            <glossdef>
+                <para>面向中小型Web项目的开发框架，对Phper亲切友好，提供大量常用的Php操作替代方案。 </para>
+            </glossdef>
+        </glossentry>
+    </glossdiv>
+
+</glossary>

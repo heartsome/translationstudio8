@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ini-file PUBLIC "-//HEARTSOME//Converters 2.0.0//EN" "configuration.dtd" >
+<ini-file>
+	<tag hard-break="segment">?</tag>
+	<tag hard-break="segment">!--</tag>
+	<tag hard-break="segment" attributes="title">body</tag>
+	<tag hard-break="segment" attributes="title">p</tag>
+	<tag hard-break="segment">br</tag>
+	<tag hard-break="segment">title</tag>
+	<tag hard-break="segment">caption</tag>
+	<tag hard-break="segment" attributes="title">table</tag>
+	<tag hard-break="segment" attributes="title">tr</tag>
+	<tag hard-break="segment" attributes="title">td</tag>
+	<tag hard-break="segment" attributes="title">th</tag>
+	<tag hard-break="segment">dd</tag>
+	<tag hard-break="segment" attributes="title">div</tag>
+	<tag hard-break="segment" attributes="title">h1</tag>
+	<tag hard-break="segment" attributes="title">h2</tag>
+	<tag hard-break="segment" attributes="title">h3</tag>
+	<tag hard-break="segment" attributes="title">h4</tag>
+	<tag hard-break="segment" attributes="title">h5</tag>
+	<tag hard-break="segment" attributes="title">h6</tag>
+	<tag hard-break="segment">ol</tag>
+	<tag hard-break="segment">ul</tag>
+	<tag hard-break="segment">li</tag>
+	<tag hard-break="segment">label</tag>
+	<tag hard-break="segment">legend</tag>
+	<tag hard-break="segment" keep-format="yes" attributes="title">code</tag>
+	<tag hard-break="segment" attributes="value">param</tag>
+	<tag hard-break="segment" attributes="value">option</tag>
+	<tag hard-break="segment" attributes="value">input</tag>
+	<tag hard-break="segment" attributes="title;value">button</tag>
+	<tag hard-break="segment" attributes="content">meta</tag>
+	<tag hard-break="segment" keep-format="yes" attributes="title">pre</tag>
+	<tag hard-break="segment">blockquote</tag>
+	<tag hard-break="segment">address</tag>
+	
+	<tag hard-break="inline" ctype="image" attributes="alt;title">img</tag>
+	<tag hard-break="inline" ctype="x-link" attributes="title">a</tag>
+	<tag hard-break="inline" ctype="x-bold">b</tag>
+	<tag hard-break="inline" ctype="x-italic">i</tag>
+	<tag hard-break="inline" ctype="x-underlined">u</tag>
+	
+	<entity char_code="160" name="nbsp">&#160;</entity>
+	<entity char_code="161" name="iexcl">&#161;</entity>
+	<entity char_code="162" name="cent">&#162;</entity>
+	<entity char_code="163" name="pound">&#163;</entity>
+	<entity char_code="164" name="curren">&#164;</entity>
+	<entity char_code="165" name="yen">&#165;</entity>
+	<entity char_code="166" name="brvbar">&#166;</entity>
+	<entity char_code="167" name="sect">&#167;</entity>
+	<entity char_code="168" name="uml">&#168;</entity>
+	<entity char_code="169" name="copy">&#169;</entity>
+	<entity char_code="170" name="ordf">&#170;</entity>
+	<entity char_code="171" name="laquo">&#171;</entity>
+	<entity char_code="172" name="not">&#172;</entity>
+	<entity char_code="173" name="shy">&#173;</entity>
+	<entity char_code="174" name="reg">&#174;</entity>
+	<entity char_code="175" name="macr">&#175;</entity>
+	<entity char_code="176" name="deg">&#176;</entity>
+	<entity char_code="177" name="plusmn">&#177;</entity>
+	<entity char_code="178" name="sup2">&#178;</entity>
+	<entity char_code="179" name="sup3">&#179;</entity>
+	<entity char_code="180" name="acute">&#180;</entity>
+	<entity char_code="181" name="micro">&#181;</entity>
+	<entity char_code="182" name="para">&#182;</entity>
+	<entity char_code="183" name="middot">&#183;</entity>
+	<entity char_code="184" name="cedil">&#184;</entity>
+	<entity char_code="185" name="sup1">&#185;</entity>
+	<entity char_code="186" name="ordm">&#186;</entity>
+	<entity char_code="187" name="raquo">&#187;</entity>
+	<entity char_code="188" name="frac14">&#188;</entity>
+	<entity char_code="189" name="frac12">&#189;</entity>
+	<entity char_code="190" name="frac34">&#190;</entity>
+	<entity char_code="191" name="iquest">&#191;</entity>
+	<entity char_code="192" name="Agrave">&#192;</entity>
+	<entity char_code="193" name="Aacute">&#193;</entity>
+	<entity char_code="194" name="Acirc">&#194;</entity>
+	<entity char_code="195" name="Atilde">&#195;</entity>
+	<entity char_code="196" name="Auml">&#196;</entity>
+	<entity char_code="197" name="Aring">&#197;</entity>
+	<entity char_code="198" name="AElig">&#198;</entity>
+	<entity char_code="199" name="Ccedil">&#199;</entity>
+	<entity char_code="200" name="Egrave">&#200;</entity>
+	<entity char_code="201" name="Eacute">&#201;</entity>
+	<entity char_code="202" name="Ecirc">&#202;</entity>
+	<entity char_code="203" name="Euml">&#203;</entity>
+	<entity char_code="204" name="Igrave">&#204;</entity>
+	<entity char_code="205" name="Iacute">&#205;</entity>
+	<entity char_code="206" name="Icirc">&#206;</entity>
+	<entity char_code="207" name="Iuml">&#207;</entity>
+	<entity char_code="208" name="ETH">&#208;</entity>
+	<entity char_code="209" name="Ntilde">&#209;</entity>
+	<entity char_code="210" name="Ograve">&#210;</entity>
+	<entity char_code="211" name="Oacute">&#211;</entity>
+	<entity char_code="212" name="Ocirc">&#212;</entity>
+	<entity char_code="213" name="Otilde">&#213;</entity>
+	<entity char_code="214" name="Ouml">&#214;</entity>
+	<entity char_code="215" name="times">&#215;</entity>
+	<entity char_code="216" name="Oslash">&#216;</entity>
+	<entity char_code="217" name="Ugrave">&#217;</entity>
+	<entity char_code="218" name="Uacute">&#218;</entity>
+	<entity char_code="219" name="Ucirc">&#219;</entity>
+	<entity char_code="220" name="Uuml">&#220;</entity>
+	<entity char_code="221" name="Yacute">&#221;</entity>
+	<entity char_code="222" name="THORN">&#222;</entity>
+	<entity char_code="223" name="szlig">&#223;</entity>
+	<entity char_code="224" name="agrave">&#224;</entity>
+	<entity char_code="225" name="aacute">&#225;</entity>
+	<entity char_code="226" name="acirc">&#226;</entity>
+	<entity char_code="227" name="atilde">&#227;</entity>
+	<entity char_code="228" name="auml">&#228;</entity>
+	<entity char_code="229" name="aring">&#229;</entity>
+	<entity char_code="230" name="aelig">&#230;</entity>
+	<entity char_code="231" name="ccedil">&#231;</entity>
+	<entity char_code="232" name="egrave">&#232;</entity>
+	<entity char_code="233" name="eacute">&#233;</entity>
+	<entity char_code="234" name="ecirc">&#234;</entity>
+	<entity char_code="235" name="euml">&#235;</entity>
+	<entity char_code="236" name="igrave">&#236;</entity>
+	<entity char_code="237" name="iacute">&#237;</entity>
+	<entity char_code="238" name="icirc">&#238;</entity>
+	<entity char_code="239" name="iuml">&#239;</entity>
+	<entity char_code="240" name="eth">&#240;</entity>
+	<entity char_code="241" name="ntilde">&#241;</entity>
+	<entity char_code="242" name="ograve">&#242;</entity>
+	<entity char_code="243" name="oacute">&#243;</entity>
+	<entity char_code="244" name="ocirc">&#244;</entity>
+	<entity char_code="245" name="otilde">&#245;</entity>
+	<entity char_code="246" name="ouml">&#246;</entity>
+	<entity char_code="247" name="divide">&#247;</entity>
+	<entity char_code="248" name="oslash">&#248;</entity>
+	<entity char_code="249" name="ugrave">&#249;</entity>
+	<entity char_code="250" name="uacute">&#250;</entity>
+	<entity char_code="251" name="ucirc">&#251;</entity>
+	<entity char_code="252" name="uuml">&#252;</entity>
+	<entity char_code="253" name="yacute">&#253;</entity>
+	<entity char_code="254" name="thorn">&#254;</entity>
+	<entity char_code="255" name="yuml">&#255;</entity>
+	
+	<!-- General Punctuation -->
+	<entity char_code="8194" name="ensp">&#8194;</entity> <!-- en space, U+2002 ISOpub -->
+	<entity char_code="8195" name="emsp">&#8195;</entity> <!-- em space, U+2003 ISOpub -->
+	<entity char_code="8201" name="thinsp">&#8201;</entity> <!-- thin space, U+2009 ISOpub -->
+	<entity char_code="8204" name="zwnj">&#8204;</entity> <!-- zero width non-joiner, U+200C NEW RFC 2070 -->
+	<entity char_code="8205" name="zwj">&#8205;</entity> <!-- zero width joiner, U+200D NEW RFC 2070 -->
+	<entity char_code="8206" name="lrm">&#8206;</entity> <!-- left-to-right mark, U+200E NEW RFC 2070 -->
+	<entity char_code="8207" name="rlm">&#8207;</entity> <!-- right-to-left mark, U+200F NEW RFC 2070 -->
+	<entity char_code="8211" name="ndash">&#8211;</entity> <!-- en dash, U+2013 ISOpub -->
+	<entity char_code="8212" name="mdash">&#8212;</entity> <!-- em dash, U+2014 ISOpub -->
+	<entity char_code="8216" name="lsquo">&#8216;</entity> <!-- left single quotation mark, U+2018 ISOnum -->
+	<entity char_code="8217" name="rsquo">&#8217;</entity> <!-- right single quotation mark, U+2019 ISOnum -->
+	<entity char_code="8218" name="sbquo">&#8218;</entity> <!-- single low-9 quotation mark, U+201A NEW -->
+	<entity char_code="8220" name="ldquo">&#8220;</entity> <!-- left double quotation mark, U+201C ISOnum -->
+	<entity char_code="8221" name="rdquo">&#8221;</entity> <!-- right double quotation mark, U+201D ISOnum -->
+	<entity char_code="8222" name="bdquo">&#8222;</entity> <!-- double low-9 quotation mark, U+201E NEW -->
+    <entity char_code="8226" name="bull">&#8226;</entity> <!-- bullet = black small circle, U+2022 ISOpub  -->
+    <entity char_code="8230" name="hellip">&#8230;</entity> <!-- horizontal ellipsis = three dot leader, U+2026 ISOpub  -->
+	<entity char_code="8240" name="permil">&#8240;</entity> <!-- per mille sign, U+2030 ISOtech -->
+	<entity char_code="8249" name="lsaquo">&#8249;</entity> <!-- single left-pointing angle quotation mark, U+2039 ISO proposed -->
+	<entity char_code="8250" name="rsaquo">&#8250;</entity> <!-- single right-pointing angle quotation mark, U+203A ISO proposed -->
+	<entity char_code="8364" name="euro">&#8364;</entity> <!--  euro sign, U+20AC NEW -->
+	
+</ini-file>

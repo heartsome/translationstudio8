@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome CAT TS TermBase
+Bundle-SymbolicName: net.heartsome.cat.ts.tb;singleton:=true
+Bundle-Version: 8.0.1.R8b_v20130625
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Require-Bundle: org.eclipse.core.resources;bundle-version="3.7.100",
+ net.heartsome.cat.thirdpartlibrary;bundle-version="1.0.0",
+ org.eclipse.core.runtime;bundle-version="3.7.0"
+Export-Package: net.heartsome.cat.ts.tb.importer,
+ net.heartsome.cat.ts.tb.importer.extension,
+ net.heartsome.cat.ts.tb.match,
+ net.heartsome.cat.ts.tb.match.extension
+Bundle-Vendor: Heartsome Technologies Ltd.
+Import-Package: net.heartsome.cat.common.core.exception

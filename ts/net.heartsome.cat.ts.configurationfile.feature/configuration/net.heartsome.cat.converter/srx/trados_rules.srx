@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!DOCTYPE srx PUBLIC "-//SRX//DTD SRX//EN" "srx.dtd">
+<srx version="1.0">
+	<header segmentsubflows="yes">
+		<formathandle type="start" include="no"/>
+		<formathandle type="end" include="yes"/>
+		<formathandle type="isolated" include="yes"/>
+	</header>
+	<body>
+		<languagerules>
+
+			<!-- Rules common to all Languages -->
+
+			<languagerule languagerulename="Default">
+				<rule break="yes">
+					<beforebreak>[\.\?!]+</beforebreak>
+					<afterbreak>\s</afterbreak>
+				</rule>
+				<rule break="no">
+					<beforebreak>^\s*[0-9]+\.</beforebreak>
+					<afterbreak>\s</afterbreak>
+				</rule>
+				<rule break="no">
+					<beforebreak>[Ee][Tt][Cc]\.</beforebreak>
+					<afterbreak>\s[a-z]</afterbreak>
+				</rule>
+				<rule break="yes">
+					<beforebreak></beforebreak>
+					<afterbreak>\n</afterbreak>
+				</rule>
+				<rule break="no">
+					<beforebreak>\sU.K.</beforebreak>
+					<afterbreak>\s</afterbreak>
+				</rule>
+				<rule break="no">
+					<beforebreak>\sMr.</beforebreak>
+					<afterbreak>\s</afterbreak>
+				</rule>
+			</languagerule>
+
+			<!-- Language Specific Rules-->
+
+			<languagerule languagerulename="Japanese">
+				<rule break="no">
+					<beforebreak>^\s*[0-9]+\.</beforebreak>
+					<afterbreak>\s</afterbreak>
+				</rule>
+				<rule break="no">
+					<beforebreak>[Ee][Tt][Cc]\.</beforebreak>
+					<afterbreak></afterbreak>
+				</rule>
+				<rule break="yes">
+					<beforebreak>[\.\?!]+</beforebreak>
+					<afterbreak>\s</afterbreak>
+				</rule>
+				<rule break="yes">
+					<beforebreak>[｡。．？！]+</beforebreak>
+					<afterbreak></afterbreak>
+				</rule>
+				<rule break="yes">
+					<beforebreak></beforebreak>
+					<afterbreak>\n</afterbreak>
+				</rule>
+			</languagerule>
+
+		</languagerules>
+
+		<!-- Rules Map -->
+
+		<maprules>
+			<maprule maprulename="Default">
+				<languagemap languagepattern="[Jj][Aa].*" languagerulename="Japanese"/>
+				<languagemap languagepattern=".*" languagerulename="Default"/>
+			</maprule>
+		</maprules>
+	</body>
+</srx>

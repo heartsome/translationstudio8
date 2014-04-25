@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome CAT Converter UI RCP
+Bundle-SymbolicName: net.heartsome.cat.converter.ui.rcp;singleton:=true
+Bundle-Version: 8.0.3.R8b_v20130609
+Bundle-Vendor: Heartsome Technologies Ltd.
+Fragment-Host: net.heartsome.cat.converter.ui;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Require-Bundle: org.eclipse.core.resources;bundle-version="3.5.0"
+Import-Package: net.heartsome.cat.common.util,
+ net.heartsome.cat.ts.core.file,
+ org.eclipse.core.filesystem,
+ org.eclipse.ui.internal.ide.dialogs
+Bundle-Localization: plugin

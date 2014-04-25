@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   
+   <extension
+         point="org.eclipse.help.toc">
+         
+      <toc
+            file="%help.toc.index"
+            primary="true">
+      </toc>
+      <toc
+            file="%help.toc.ch1"
+            primary="true" >
+      </toc>
+      <toc
+            file="%help.toc.ch2"
+            primary="true">
+      </toc>
+      <toc
+            file="%help.toc.ch3"
+            primary="true">
+      </toc>
+      <toc
+            file="%help.toc.ch4"
+            primary="true">
+      </toc>
+      <toc
+            file="%help.toc.ch5"
+            primary="true">
+      </toc>
+      <toc
+            file="%help.toc.ch6"
+            primary="true">
+      </toc>
+      <toc
+            file="%help.toc.ch7"
+            primary="true">
+      </toc>
+      <toc
+            file="%help.toc.ch8"
+            primary="true">
+      </toc>
+      <toc
+            file="%help.toc.ch9"
+            primary="true">
+      </toc>
+   <!--
+      <toc
+            file="%help.toc.imag"
+            primary="true">
+      </toc>
+      <toc
+            file="%help.toc.demo"
+            primary="true">
+      </toc>
+    -->
+     
+   </extension>
+   
+
+   <extension
+         id="selfHelp"
+         name="selfHelp"
+         point="org.eclipse.ui.helpSupport">
+      <config 
+            class="net.heartsome.cat.ts.ui.help.AbstractSelfHelpUI" >
+      </config>
+      
+   </extension>
+
+</plugin>

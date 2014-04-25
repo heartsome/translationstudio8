@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome Library3
+Bundle-SymbolicName: net.heartsome.library3
+Bundle-Version: 3.0.1.R8b_v20130408
+Bundle-ClassPath: resolver.jar,
+ xercesImpl.jar,
+ hslibrary3.jar
+Export-Package: com.wutka.dtd,
+ net.heartsome.catalogue,
+ net.heartsome.dialogs,
+ net.heartsome.myspell,
+ net.heartsome.plugins,
+ net.heartsome.spell,
+ net.heartsome.util,
+ net.heartsome.viewers,
+ net.heartsome.xml
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Vendor: Heartsome Technologies Ltd.

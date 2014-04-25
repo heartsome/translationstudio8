@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome CAT TS Bing
+Bundle-SymbolicName: net.heartsome.cat.ts.bingtrans;singleton:=true
+Bundle-Version: 8.0.3.R8b_v20130708
+Bundle-Activator: net.heartsome.cat.ts.bingtrans.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ net.heartsome.cat.ts.tm;bundle-version="1.0.0",
+ net.heartsome.cat.ts.ui;bundle-version="1.0.0",
+ net.heartsome.cat.ts.ui.translation;bundle-version="1.0.0",
+ net.heartsome.cat.ts.core;bundle-version="1.0.0",
+ net.heartsome.cat.common.core;bundle-version="1.0.0",
+ net.heartsome.cat.thirdpartlibrary;bundle-version="8.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ClassPath: .,
+ lib/microsoft-translator-java-api-0.6.1-jar-with-dependencies.jar
+Bundle-Localization: plugin
+Import-Package: net.heartsome.cat.common.ui
+Bundle-Vendor: Heartsome Technologies Ltd.

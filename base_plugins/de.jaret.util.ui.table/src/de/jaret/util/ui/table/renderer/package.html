@@ -1,0 +1,17 @@
+<html><body>
+<p>
+This package contains renderers for the jaret table. 
+</p>
+<p>
+The renderers should support printing (but need not). See the interface for details.
+</p>
+<p>
+It is quite useful to extend RendererBase since it contains some useful methods to support printing (scaling from screen to printer
+resolution) and for border painting (see below).
+</p>
+<p>
+<b>Border painting:</b> CellRenderes are responsible for painting their borders. The clipping rect will always be one pixel wider
+and one pixel higher tha the drawing area, thus allowing to paint a complete border with widht 1. However, if the border becomes thicker
+the cell renderer has to use the space of the cell. Most probably it is the best to use the method for borer painting supplied by RendererBase. 
+</p>
+</body></html>

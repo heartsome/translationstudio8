@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome CAT TS Machine Translation
+Bundle-SymbolicName: net.heartsome.cat.ts.machinetranslation;singleton:=true
+Bundle-Version: 8.1.0.R8b_v20131121
+Bundle-Activator: net.heartsome.cat.ts.machinetranslation.Activator
+Require-Bundle: org.eclipse.ui;bundle-version="3.7.0",
+ org.eclipse.jface.text;bundle-version="3.7.0",
+ org.eclipse.core.runtime;bundle-version="3.7.0",
+ net.heartsome.cat.common.core;bundle-version="1.0.0",
+ net.heartsome.cat.ts.tm;bundle-version="1.0.0",
+ net.heartsome.cat.ts.ui;bundle-version="1.0.0",
+ net.heartsome.cat.ts.core;bundle-version="1.0.0",
+ net.heartsome.cat.ts.ui.translation;bundle-version="1.0.0",
+ org.eclipse.ui.ide;bundle-version="3.7.0",
+ net.heartsome.cat.thirdpartlibrary;bundle-version="8.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ClassPath: lib/google-api-translate-java-0.97.jar,
+ lib/json-20090211.jar,
+ lib/microsoft-translator-java-api-0.6.1-jar-with-dependencies.jar,
+ .
+Import-Package: com.ximpleware,
+ net.heartsome.cat.common.ui,
+ net.heartsome.cat.common.ui.handlers,
+ net.heartsome.cat.ts.ui.xliffeditor.nattable.editor,
+ net.heartsome.xml.vtdimpl,
+ org.eclipse.core.resources
+Bundle-Vendor: Heartsome Technologies Ltd.

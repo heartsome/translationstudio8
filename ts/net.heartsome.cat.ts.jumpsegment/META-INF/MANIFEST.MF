@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Heartsome CAT TS Jump Segment
+Bundle-SymbolicName: net.heartsome.cat.ts.jumpsegment;singleton:=true
+Bundle-Version: 8.0.2.R8b_v20130424
+Bundle-Activator: net.heartsome.cat.ts.jumpsegment.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ net.heartsome.cat.ts.core;bundle-version="8.0.0",
+ net.heartsome.cat.ts.ui;bundle-version="8.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Import-Package: net.heartsome.cat.ts.ui.xliffeditor.nattable.editor,
+ net.heartsome.cat.ts.ui.xliffeditor.nattable.propertyTester,
+ net.heartsome.cat.ts.ui.xliffeditor.nattable.utils
+Bundle-Localization: plugin
+Bundle-Vendor: Heartsome Technologies Ltd.

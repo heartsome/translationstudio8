@@ -1,0 +1,206 @@
+/*
+Product: Heartsome Translation Studio
+Author: Jacky Zeng
+Date: 2012-11-25
+Version: 1.1
+*/
+
+
+body {
+	font-size: 14px;
+	color: #000;
+	font-family: Arial, Helvetica, 宋体, simsun, sans-serif;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+	color: #ff0000;
+}
+
+p {
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+em {
+	font-style: normal;
+}
+/*
+Page Header
+*/
+.navheader {
+	font-size: 14px;
+}
+.navheader a:link {
+	text-decoration: none;
+	font-size: 14px;
+	color: #000;
+}
+.navheader a:hover {
+	text-decoration: underline;
+	color: #ff0000;
+	font-size: 14px;
+}
+.navheader  a:visited {
+	text-decoration: none;
+	color: #000;
+	font-size: 14px;
+}
+
+.navheader th {
+	color: #1B5874;
+	font-size: 20px;
+}
+/*
+Page Footer 
+*/
+.navfooter {
+	font-size: 14px;
+}
+
+.navfooter table tr th td {
+	font-size: 14px;
+	color: #000;
+}
+.navfooter a:link {
+	text-decoration: none;
+	color: #000;
+	font-size: 14px;
+}
+.navfooter a:hover {
+	text-decoration: underline;
+	color: #ff0000;
+	font-size: 14px;
+}
+.navfooter  a:visited {
+	text-decoration: none;
+	color: #000;
+	font-size: 14px;
+}
+
+/*
+Chapter title
+Level 1
+*/
+h1 {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	color: #1B5874;
+}
+
+/*
+Section title
+Level 2
+*/
+h2 {
+	font-size: 18px;
+	font-weight: bold;
+	color: #1B5874;
+}
+
+h2.title {
+	font-size: 18px;
+	font-weight: bold;
+	color: #1B5874;
+}
+/*
+Section title
+Level 3
+*/
+h3 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #1B5874;
+}
+
+h3.title {
+	font-weight: bold;
+	font-size: 16px;
+	color: #1B5874;
+
+}
+
+/*
+Section title
+Level 4
+*/
+h4 {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+h4.title {
+	font-weight: bold;
+	font-size: 14px;
+	color: #1B5874;
+}
+
+.sect2 {
+	margin-left: 20px;
+}
+
+.sect3 {
+	margin-left: 30px;
+}
+
+span.emphasis, .emphasis {
+	font-weight: bold;
+	line-height: 1.0;
+}
+
+div.glosslist {
+	margin-left: 40px;
+}
+
+div.glossary_item_title {
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: 22px;
+	margin-bottom: -10px;
+}
+
+
+
+div.note, div.warning {
+	background-image: url(../images/mark-icons-warn.png);
+	background-repeat: no-repeat;
+	background-position: 0px center;
+	padding-left: 45px;
+	margin-left: -10px;
+}
+
+div.tip {
+	background-image: url(../images/mark-icons-info.png);
+	background-repeat: no-repeat;
+	background-position: 0px center;
+	padding-left: 45px;
+	margin-left: -10px;
+}
+
+div.question {
+	background-image: url(../images/mark-icons-questions.png);
+	background-repeat: no-repeat;
+	background-position: 0px center;
+	padding-left: 45px;
+	margin-left: -10px;
+}
+
+ol.orderedlist, li.listitem {
+	margin-left: 0px;
+}
+
+.interfacename {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+span.guilabel, span.type {
+	font-size: 14px;
+	font-weight: normal;
+}

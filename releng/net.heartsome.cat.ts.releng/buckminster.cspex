@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cspecExtension xmlns:com="http://www.eclipse.org/buckminster/Common-1.0"
+	xmlns="http://www.eclipse.org/buckminster/CSpec-1.0">
+	<actions>
+
+		<!-- 旗舰版 -->
+		<public name="create.product.ultimate" actor="ant">
+			<actorProperties>
+				<property key="buildFile" value="build/product.ant" />
+				<property key="targets" value="create.product" />
+			</actorProperties>
+			<properties>
+				<property key="profile" value="HSTS8Ultimate" />
+				<property key="iu" value="net.heartsome.cat.ts.ultimate_product" />
+			</properties>
+			<prerequisites alias="repository">
+				<attribute name="site.p2" />
+			</prerequisites>
+			<products alias="destination" base="${buckminster.output}">
+				<path path="ts.ultimate.${target.os}.${target.ws}.${target.arch}/" />
+			</products>
+		</public>
+		<public name="create.product.ultimate.zip" actor="ant">
+			<actorProperties>
+				<property key="buildFileId" value="buckminster.pdetasks" />
+				<property key="targets" value="create.zip" />
+			</actorProperties>
+			<prerequisites alias="action.requirements">
+				<attribute name="create.product.ultimate" />
+			</prerequisites>
+			<products alias="action.output" base="${buckminster.output}">
+				<path path="ts.ultimate.${target.os}.${target.ws}.${target.arch}.zip" />
+			</products>
+		</public>
+
+		<!-- 专业版 -->
+		<public name="create.product.professional" actor="ant">
+			<actorProperties>
+				<property key="buildFile" value="build/product.ant" />
+				<property key="targets" value="create.product" />
+			</actorProperties>
+			<properties>
+				<property key="profile" value="HSTS8Professional" />
+				<property key="iu" value="net.heartsome.cat.ts.professional_product" />
+			</properties>
+			<prerequisites alias="repository">
+				<attribute name="site.p2" />
+			</prerequisites>
+			<products alias="destination" base="${buckminster.output}">
+				<path path="ts.professional.${target.os}.${target.ws}.${target.arch}/" />
+			</products>
+		</public>
+		<public name="create.product.professional.zip" actor="ant">
+			<actorProperties>
+				<property key="buildFileId" value="buckminster.pdetasks" />
+				<property key="targets" value="create.zip" />
+			</actorProperties>
+			<prerequisites alias="action.requirements">
+				<attribute name="create.product.professional" />
+			</prerequisites>
+			<products alias="action.output" base="${buckminster.output}">
+				<path path="ts.professional.${target.os}.${target.ws}.${target.arch}.zip" />
+			</products>
+		</public>
+
+		<!-- 个人版 -->
+		<public name="create.product.personal" actor="ant">
+			<actorProperties>
+				<property key="buildFile" value="build/product.ant" />
+				<property key="targets" value="create.product" />
+			</actorProperties>
+			<properties>
+				<property key="profile" value="HSTS8Personal" />
+				<property key="iu" value="net.heartsome.cat.ts.personal_product" />
+			</properties>
+			<prerequisites alias="repository">
+				<attribute name="site.p2" />
+			</prerequisites>
+			<products alias="destination" base="${buckminster.output}">
+				<path path="ts.personal.${target.os}.${target.ws}.${target.arch}/" />
+			</products>
+		</public>
+		<public name="create.product.personal.zip" actor="ant">
+			<actorProperties>
+				<property key="buildFileId" value="buckminster.pdetasks" />
+				<property key="targets" value="create.zip" />
+			</actorProperties>
+			<prerequisites alias="action.requirements">
+				<attribute name="create.product.personal" />
+			</prerequisites>
+			<products alias="action.output" base="${buckminster.output}">
+				<path path="ts.personal.${target.os}.${target.ws}.${target.arch}.zip" />
+			</products>
+		</public>
+
+		<!-- 精简版 -->
+		<public name="create.product.lite" actor="ant">
+			<actorProperties>
+				<property key="buildFile" value="build/product.ant" />
+				<property key="targets" value="create.product" />
+			</actorProperties>
+			<properties>
+				<property key="profile" value="HSTS8Lite" />
+				<property key="iu" value="net.heartsome.cat.ts.lite_product" />
+			</properties>
+			<prerequisites alias="repository">
+				<attribute name="site.p2" />
+			</prerequisites>
+			<products alias="destination" base="${buckminster.output}">
+				<path path="ts.lite.${target.os}.${target.ws}.${target.arch}/" />
+			</products>
+		</public>
+		<public name="create.product.lite.zip" actor="ant">
+			<actorProperties>
+				<property key="buildFileId" value="buckminster.pdetasks" />
+				<property key="targets" value="create.zip" />
+			</actorProperties>
+			<prerequisites alias="action.requirements">
+				<attribute name="create.product.lite" />
+			</prerequisites>
+			<products alias="action.output" base="${buckminster.output}">
+				<path path="ts.lite.${target.os}.${target.ws}.${target.arch}.zip" />
+			</products>
+		</public>
+
+		<!-- 使用 Obclipse 作代码混淆 -->
+
+		<private name="copy.site.obfuscated" actor="ant">
+			<actorProperties>
+				<property key="buildFileId" value="buckminster.pdetasks" />
+				<property key="targets" value="copy.group" />
+			</actorProperties>
+			<prerequisites alias="action.requirements">
+				<attribute name="site.feature.exports" />
+			</prerequisites>
+			<products alias="action.output" upToDatePolicy="MAPPER">
+				<path path="site.obfuscated" />
+			</products>
+		</private>
+		<public name="site.obfuscated" actor="ant">
+			<actorProperties>
+				<property key="buildFile" value="build/obclipse.ant" />
+				<property key="targets" value="obclipse.launch" />
+			</actorProperties>
+			<prerequisites>
+				<attribute alias="source" name="copy.site.obfuscated" />
+			</prerequisites>
+			<products upToDatePolicy="MAPPER">
+				<public name="site.feature.exports.obfuscated" alias="action.output"
+					base="${buckminster.output}/site.obfuscated/" />
+				<public name="obfuscate.map" alias="mappingFile" path="obfuscate.map" />
+			</products>
+		</public>
+
+		<public name="site.p2.obfuscated" actor="p2SiteGenerator">
+			<prerequisites>
+				<attribute name="site.feature.exports.obfuscated" alias="site"
+					filter="(&amp;(!(site.signing=true))(!(site.pack200=true))) " />
+				<attribute name="site.obfuscated.packed" alias="site"
+					filter="(site.pack200=true)" />
+				<attribute name="site.obfuscated.signed" alias="site"
+					filter="(&amp;(site.signing=true)(!(site.pack200=true))) " />
+				<attribute name="manifest" alias="site.definer" />
+				<attribute name="product.configuration.exports" alias="product.configs" />
+			</prerequisites>
+			<products base="${buckminster.output}/site.p2.obfuscated/" />
+		</public>
+		<public name="site.p2.obfuscated.zip" actor="ant">
+			<actorProperties>
+				<property key="buildFileId" value="buckminster.pdetasks" />
+				<property key="targets" value="create.site.zip" />
+			</actorProperties>
+			<prerequisites>
+				<attribute name="manifest" alias="manifest" />
+				<attribute name="site.p2.obfuscated" alias="action.requirements" />
+			</prerequisites>
+			<products alias="action.output" base="${buckminster.output}/" />
+		</public>
+
+		<public name="site.obfuscated.packed" actor="jarProcessor"
+			always="true">
+			<properties>
+				<property key="command" value="pack" />
+			</properties>
+			<prerequisites>
+				<attribute name="site.feature.exports.obfuscated" alias="jar.folder"
+					filter="(!(site.signing=true))" />
+				<attribute name="site.obfuscated.signed" alias="jar.folder"
+					filter="(site.signing=true)" />
+			</prerequisites>
+			<products base="${buckminster.output}/site.obfuscated.packed/" />
+		</public>
+		<public name="site.obfuscated.signed" actor="ant" always="true">
+			<actorProperties>
+				<property key="buildFileId" value="buckminster.signing" />
+				<property key="targets" value="sign.jars" />
+			</actorProperties>
+			<prerequisites alias="action.requirements">
+				<attribute name="site.obfuscated.repacked" filter="(site.pack200=true)" />
+				<attribute name="site.feature.exports.obfuscated" filter="(!(site.pack200=true))" />
+			</prerequisites>
+			<products alias="action.output"
+				base="${buckminster.output}/site.obfuscated.signed/" />
+		</public>
+		<private name="site.obfuscated.repacked" actor="jarProcessor"
+			always="true">
+			<properties>
+				<property key="command" value="repack" />
+			</properties>
+			<prerequisites>
+				<attribute name="site.feature.exports.obfuscated" alias="jar.folder" />
+			</prerequisites>
+			<products base="${buckminster.output}/site.obfuscated.repacked/" />
+		</private>
+	</actions>
+
+	<groups>
+		<public name="site.p2">
+			<attribute name="site.p2.unobfuscated" filter="(!(site.obfuscate=true))" />
+			<attribute name="site.p2.obfuscated" filter="(site.obfuscate=true)" />
+		</public>
+	</groups>
+	<alterGroups>
+		<rename newName="site.p2.unobfuscated" oldName="site.p2" />
+	</alterGroups>
+</cspecExtension>

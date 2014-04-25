@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="net.heartsome.cat.converter.mif.preference.ConverterPreferenceInitializer">
+      </initializer>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            category="net.heartsome.cat.convert.ui.preference.FileTypePreferencePage"
+            class="net.heartsome.cat.converter.mif.preference.FrameMakerPreferencePage"
+            id="net.heartsome.cat.converter.mif.preference.FrameMakerPreferencePage"
+            name="%preferencePages.FrameMakerPreferencePage">
+      </page>
+   </extension>
+</plugin>

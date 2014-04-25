@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<root>
+	<encoding codePage="0">1252</encoding>   
+	<encoding codePage="1">Default</encoding>
+	<encoding codePage="2">Symbol</encoding>
+	<encoding codePage="3">Invalid</encoding>
+	<encoding codePage="77">10000</encoding> 
+	<encoding codePage="78">10001</encoding> 
+	<encoding codePage="79">10003</encoding> 
+	<encoding codePage="80">10008</encoding> 
+	<encoding codePage="81">10002</encoding> 
+	<encoding codePage="82">Mac Johab (old)</encoding> 
+	<encoding codePage="83">10005</encoding> 
+	<encoding codePage="84">10004</encoding> 
+	<encoding codePage="85">10006</encoding> 
+	<encoding codePage="86">10081</encoding> 
+	<encoding codePage="87">10021</encoding> 
+	<encoding codePage="88">10029</encoding> 
+	<encoding codePage="89">10007</encoding> 
+	<encoding codePage="128">Shift_JIS</encoding>
+	<encoding codePage="129">949</encoding>  
+	<encoding codePage="130">1361</encoding>
+	<encoding codePage="134">936</encoding>  
+	<encoding codePage="136">950</encoding>  
+	<encoding codePage="161">1253</encoding> 
+	<encoding codePage="162">1254</encoding> 
+	<encoding codePage="163">1258</encoding> 
+	<encoding codePage="177">1255</encoding> 
+	<encoding codePage="178">1256</encoding> 
+	<encoding codePage="179">1256</encoding> 
+	<encoding codePage="180">1256</encoding> 
+	<encoding codePage="181">1255</encoding> 
+	<encoding codePage="186">1257</encoding> 
+	<encoding codePage="204">1251</encoding> 
+	<encoding codePage="222">874</encoding>  
+	<encoding codePage="238">1250</encoding> 
+	<encoding codePage="254">437</encoding>  
+	<encoding codePage="255">OEM</encoding>
+	<encoding codePage="256">10000</encoding>
+</root>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<psf version="2.0">
+<provider id="org.eclipse.team.cvs.core.cvsnature">
+<project reference="1.0,:pserver:192.168.0.13:/data/cvs,CAT8NEW/test/net.heartsome.cat.ts.test.feature,net.heartsome.cat.ts.test.feature"/>
+<project reference="1.0,:pserver:192.168.0.13:/data/cvs,CAT8NEW/test/net.heartsome.cat.ts.test,net.heartsome.cat.ts.test"/>
+<project reference="1.0,:pserver:192.168.0.13:/data/cvs,CAT8NEW/test/net.heartsome.cat.ts.test.basecase,net.heartsome.cat.ts.test.basecase"/>
+<project reference="1.0,:pserver:192.168.0.13:/data/cvs,CAT8NEW/test/net.heartsome.cat.ts.test.ui,net.heartsome.cat.ts.test.ui"/>
+<project reference="1.0,:pserver:192.168.0.13:/data/cvs,TestAutomation/net.heartsome.test.swtbot,net.heartsome.test.swtbot"/>
+<project reference="1.0,:pserver:192.168.0.13:/data/cvs,TestAutomation/net.heartsome.test.thirdpartylibrary,net.heartsome.test.thirdpartylibrary"/>
+<project reference="1.0,:pserver:192.168.0.13:/data/cvs,TestAutomation/net.heartsome.test.utilities,net.heartsome.test.utilities"/>
+</provider>
+<workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1337568390873_10" label="test" name="test">
+<item elementID="=net.heartsome.cat.ts.test" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.ts.test.basecase" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.cat.ts.test.ui" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.test.swtbot" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.test.thirdpartylibrary" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=net.heartsome.test.utilities" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/net.heartsome.cat.ts.test.feature" type="4"/>
+</workingSets>
+</psf>

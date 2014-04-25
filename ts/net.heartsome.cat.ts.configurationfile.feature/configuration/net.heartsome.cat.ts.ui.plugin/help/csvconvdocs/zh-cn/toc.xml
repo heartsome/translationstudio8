@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<hshelp title="CSV 到 TMX 转换器" url="help.html"> <book title="目录" url="help.html"> <item url="help-1.html">第 1 步：导入一个 CSV 文件</item> <item url="help-2.html">第 2 步：删除不必要的列</item> <item url="help-3.html">第 3 步：选择语言代码</item> <item url="help-4.html">第 4 步：导出为 TMX</item> <item url="help-5.html">词汇表</item> </book> </hshelp>

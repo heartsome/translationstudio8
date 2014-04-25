@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<TBXXCS xmlns="x-schema:TBXdsV1-0.xml"><header/>
+	<datCatSet>
+		<descripSpec name="Status"><contents datatype="noteText"/><level>termEntry </level></descripSpec>
+		<descripSpec name="Project"><contents datatype="noteText"/><level>termEntry </level></descripSpec>
+		<descripSpec name="OLE"><contents datatype="noteText"/><level>termEntry </level></descripSpec>
+		<descripSpec name="EnteredBy"><contents datatype="noteText"/><level>termEntry </level></descripSpec>
+		<descripSpec name="DateOfEntry"><contents datatype="noteText"/><level>termEntry </level></descripSpec>
+		<descripSpec name="LastUpdateBy"><contents datatype="noteText"/><level>termEntry </level></descripSpec>
+		<descripSpec name="DateOfLastUpdate"><contents datatype="noteText"/><level>termEntry </level></descripSpec>
+		<descripSpec name="Remarks"><contents datatype="noteText"/><level>termEntry </level></descripSpec>
+		<descripSpec name="Subject"><contents datatype="noteText"/><level>termEntry </level></descripSpec>
+		<descripSpec name="User1"><contents datatype="noteText"/><level>termEntry </level></descripSpec>
+		<descripSpec name="User2"><contents datatype="noteText"/><level>termEntry </level></descripSpec>
+		<descripSpec name="User3"><contents datatype="noteText"/><level>termEntry </level></descripSpec>
+		<descripSpec name="Definition"><contents datatype="noteText"/><level>langSet </level></descripSpec>
+		<termNoteSpec name="Attributes"><contents datatype="noteText"/></termNoteSpec>
+		<termNoteSpec name="Abbreviations"><contents datatype="noteText"/></termNoteSpec>
+		<termNoteSpec name="Alternatives"><contents datatype="noteText"/></termNoteSpec>
+		<termNoteSpec name="Synonyms"><contents datatype="noteText"/></termNoteSpec>
+		<termNoteSpec name="Declensions"><contents datatype="noteText"/></termNoteSpec>
+		<termNoteSpec name="Remarks"><contents datatype="noteText"/></termNoteSpec>
+		<termNoteSpec name="Subject"><contents datatype="noteText"/></termNoteSpec>
+		<termNoteSpec name="PhoneticSpelling"><contents datatype="noteText"/></termNoteSpec>
+		<termNoteSpec name="CrossReference"><contents datatype="noteText"/></termNoteSpec>
+		<termNoteSpec name="PartOfSpeech"><contents datatype="noteText"/></termNoteSpec>
+		<termNoteSpec name="Gender"><contents datatype="noteText"/></termNoteSpec>
+		<termNoteSpec name="Context"><contents datatype="noteText"/></termNoteSpec>
+		<termNoteSpec name="Source"><contents datatype="noteText"/></termNoteSpec>
+		<termNoteSpec name="Status"><contents datatype="noteText"/></termNoteSpec>
+		<termNoteSpec name="EnteredBy"><contents datatype="noteText"/></termNoteSpec>
+		<termNoteSpec name="DateOfEntry"><contents datatype="noteText"/></termNoteSpec>
+		<termNoteSpec name="LastUpdateBy"><contents datatype="noteText"/></termNoteSpec>
+		<termNoteSpec name="DateOfLastUpdate"><contents datatype="noteText"/></termNoteSpec>
+		<termNoteSpec name="User1"><contents datatype="noteText"/></termNoteSpec>
+		<termNoteSpec name="User2"><contents datatype="noteText"/></termNoteSpec>
+		<termNoteSpec name="User3"><contents datatype="noteText"/></termNoteSpec>
+		<termNoteSpec name="User4"><contents datatype="noteText"/></termNoteSpec>
+		<termNoteSpec name="UserIndex"><contents datatype="noteText"/></termNoteSpec>		
+	</datCatSet>
+</TBXXCS>

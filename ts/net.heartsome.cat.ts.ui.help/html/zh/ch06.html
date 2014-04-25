@@ -1,0 +1,244 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>记忆库和术语库的维护和管理</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<meta content="DocBook XSL Stylesheets V1.75.2 / ZoeeyDoc http://zoeeydoc.googlecode.com " name="generator">
+<link rel="home" href="index.html" title="用户手册">
+<link rel="up" href="index.html" title="用户手册">
+<link rel="prev" href="ch05s06.html" title="6. 完成项目">
+<link rel="next" href="ch06s02.html" title="2. 记忆库管理">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="chapter" title="记忆库和术语库的维护和管理">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title">
+<a name="database-management"></a>记忆库和术语库的维护和管理</h2>
+</div>
+</div>
+</div>
+    
+
+    
+<p>数据库（包括记忆库和术语库）是 CAT
+    工具工作过程中最为重要的部分之一，它负责保存所有翻译过的内容（包括句子和术语），并在适当的时候展示出来供用户参考。数据库既是用户翻译的历史，也是用户智慧的结晶。显而易见，对数据库的维护和管理是极为重要的一项工作。</p>
+
+    
+<p>对于数据库的维护和管理，我们有如下建议：</p>
+
+    
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+        
+<p>在操作上区分<span class="emphasis"><em>终稿库</em></span>和<span class="emphasis"><em>过程库</em></span>
+</p>
+
+        
+<p>
+<span class="emphasis"><em>终稿</em></span>是指经过翻译、编辑、校对等步骤之后，交付给客户的最终译文，具有较高的翻译质量和参考价值。这类译文终稿应作为项目的最终存档、以多种形式长期保存。<span class="emphasis"><em>终稿库</em></span>只是其中一种保存形式，另外还可以以
+        <span class="type">TMX</span>/<span class="type">TBX</span> 文件等格式存档备份。</p>
+
+        
+<p>
+<span class="emphasis"><em>过程库</em></span>则用以保存翻译人员在翻译项目的过程中的译文草稿，由于未经审核，其中可能存在一些不够恰当的翻译和错误。但过程库也有终稿库不可比拟的优势：过程库中的译文更加贴近于当前正在翻译的项目、内容的更新更加及时。</p>
+      
+</li>
+<li class="listitem">
+        
+<p>对数据库进行分类</p>
+
+        
+<p>终稿库通常可以按行业领域或题材、客户、语言对、项目等分类，同一分类的内容保存在同一个数据库中。在翻译同一分类的项目的时候，终稿库可以作为参考库提供给翻译人员参考。</p>
+
+        
+<p>过程库则可以按项目来创建，在整个项目的生命周期内可以供所有翻译、编辑、校对等人员参考和修改&mdash;&mdash;并在最后得到终稿。在将终稿存档到终稿库之后，即可将过程库也同时存档或删除。</p>
+      
+</li>
+</ol>
+</div>
+
+    
+<div class="sect1" title="1. 更新记忆库">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title" style="clear: both">
+<a name="update-tm"></a>1. 更新记忆库</h2>
+</div>
+</div>
+</div>
+      
+
+      
+<p>更新记忆库是将翻译好的双语 XLIFF
+      文件中的所有句子源文和译文保存到记忆库中。通常用于将一个翻译项目的所有译文终稿存档到终稿库中。步骤如下：</p>
+
+      
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+<li class="listitem">
+          
+<p>选择项目，点击右键菜单/<span class="guimenu">项目</span>菜单 &gt;
+          <span class="guimenuitem">项目设置</span> &gt;
+          <span class="guimenuitem">记忆库</span>，确认项目已设置<span class="emphasis"><em>默认记忆库</em></span>，详情请参考<a class="xref" href="ch05s03.html#project-setting-tm" title="图 53. 项目设置：记忆库">图 53 &ldquo;项目设置：记忆库&rdquo;</a>；</p>
+<div class="tip" title="提示" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">提示</h3>
+              
+<p>对于终稿，建议使用全新创建的数据库或已有的终稿库，而<span class="emphasis"><em>不要使用过程库</em></span>。</p>
+            
+</div>
+        
+</li>
+<li class="listitem">
+          
+<p>在项目中选择一个或多个 XLIFF 文件或文件夹，点击右键/<span class="guimenu">项目</span>菜单 &gt;
+          <span class="guimenuitem">更新记忆库</span>；</p>
+
+          
+<div class="figure">
+<a name="N22332"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 128. 更新记忆库</b>
+</p>
+<div class="figure-contents">
+            
+
+            
+<div class="screenshot">
+              
+<div class="mediaobject" align="center">
+<img src="images/update-tm-1.png" align="middle" alt="更新记忆库"></div>
+            
+</div>
+          
+</div>
+</div>
+<br class="figure-break">
+        
+</li>
+<li class="listitem">
+          
+<p>在<code class="interfacename">更新记忆库</code>对话框中，根据需要可设置如下参数：</p>
+<div class="figure">
+<a name="N22350"></a>
+<p xmlns:xlink="http://www.w3.org/1999/xlink" align="center" class="title">
+<b>图 129. 更新记忆库对话框</b>
+</p>
+<div class="figure-contents">
+              
+
+              
+<div class="screenshot">
+                
+<div class="mediaobject" align="center">
+<img src="images/update-tm-2.png" align="middle" alt="更新记忆库对话框"></div>
+              
+</div>
+            
+</div>
+</div>
+<p>
+<br class="figure-break">
+</p>
+
+          
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+              
+<p>
+<span class="guilabel">范围</span>
+</p>
+
+              
+<p>需要入库的文本段状态：</p>
+
+              
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">草稿</span>
+</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">已翻译</span>
+</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">已批准</span>
+</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">已签发</span>
+</p>
+                
+</li>
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">已锁定</span>
+</p>
+                
+</li>
+</ul>
+</div>
+            
+</li>
+<li class="listitem">
+              
+<p>
+<span class="guibutton">选项</span>
+</p>
+
+              
+<div class="itemizedlist">
+<ul class="itemizedlist" type="circle">
+<li class="listitem">
+                  
+<p>
+<span class="guilabel">重复项处理</span>：请参考<a class="xref" href="ch05s03.html#create-tm-wizard-import-tmx" title="导入 TMX/TXT/EXCEL 文件">&ldquo;导入 TMX/TXT/EXCEL 文件&rdquo;一节</a>。</p>
+                
+</li>
+</ul>
+</div>
+            
+</li>
+</ul>
+</div>
+        
+</li>
+<li class="listitem">
+          
+<p>点击<span class="guibutton">确定</span>按钮。</p>
+        
+</li>
+</ol>
+</div>
+    
+</div>
+
+    
+
+    
+
+    
+
+    
+  
+</div>
+</body>
+</html>
