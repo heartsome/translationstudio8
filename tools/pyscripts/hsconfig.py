@@ -13,6 +13,7 @@ import getpass
 #            CheckProperties.py
 #            CheckVersions.py
 workspace_pathes = {
+                    'jacky': '/Users/jacky/Documents/Eclipse/CAT8/workspace',
                     'felix_lu': '/Volumes/iMac-User/Documents/eclipse_ws/ts8',
                     'kevin': 'D:\\development\\workspace_git',
                     'Mac': '/Workspaces/tsPackForIndigo',
@@ -40,6 +41,7 @@ update_types = {
 #            CheckProperties.py
 #            CheckVersions.py
 git_repo_pathes = {
+                   'jacky': '/Users/jacky/Documents/Heartsome/github/ts-github',
                    'felix_lu': '/Volumes/iMac-User/Projects/hsgit/translation-studio-ts',
                    'kevin': 'D:\\development\\git\\translation-studio',
                    'Mac': '/Users/Mac/r8PackGit/translation-studio',
@@ -49,7 +51,7 @@ git_repo_pathes = {
 # 用于如下脚本：
 #            CheckProperties.py
 #            CheckVersions.py
-git_last_version_tag = 'v8.3.0'
+git_last_version_tag = 'v8.3.1'
 
 # 要打包的 Git 代码分支
 # 用于如下脚本：

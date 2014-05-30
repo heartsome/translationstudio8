@@ -1,3 +1,17 @@
 .DS_Store
 bin/
 __pycache__/
+._.DS_Store
+base_commons/._.DS_Store
+base_plugins/._.DS_Store
+database/._.DS_Store
+hsconverter/._.DS_Store
+i18n/._.DS_Store
+others/._.DS_Store
+releng/._.DS_Store
+targetPlatform/._.DS_Store
+targetPlatform/features/._.DS_Store
+test/._.DS_Store
+tools/._.DS_Store
+tools/pyscripts/._.DS_Store
+ts/._.DS_Store
