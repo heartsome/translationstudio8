@@ -14,7 +14,7 @@ Heartsome Translation Studio 8.0 has incorporated feedback based on practical ex
 
 ## System Requirements
 
-- **Operating System: **Microsoft Windows XP/2003/Vista/7/8, Mac OS X 10.4+ (Universal), a variety of Linux versions Java Runtime: Sun Microsystems Java 1.6.x or later- **Disk space:** at least 100 MB of free space, 200 MB free space recommended if on system partition, 1GB or more of free space recommended in data partitions depending on your data volume.- **System Memory:** 1GB or higher- **Processor:** 1 Ghz or faster x86 or x64 processor
+- **Operating System:** Microsoft Windows XP/2003/Vista/7/8, Mac OS X 10.4+ (Universal), a variety of Linux versions Java Runtime: Sun Microsystems Java 1.6.x or later- **Disk space:** at least 100 MB of free space, 200 MB free space recommended if on system partition, 1GB or more of free space recommended in data partitions depending on your data volume.- **System Memory:** 1GB or higher- **Processor:** 1 Ghz or faster x86 or x64 processor
 
 ## Features
 
