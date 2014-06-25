@@ -15,3 +15,6 @@ test/._.DS_Store
 tools/._.DS_Store
 tools/pyscripts/._.DS_Store
 ts/._.DS_Store
+*.class
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
