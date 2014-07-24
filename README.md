@@ -89,11 +89,11 @@ Heartsome Translation Studio 8.0 supports both Google Translate API v2 and Bing 
 
 ## Download open-source version
 
-- All installer: [Dropbox](https://www.dropbox.com/sh/8ok8y75js1h8nu3/AAB0cFbn2KXCd9-SkrF9v-22a), [OneDrive](https://onedrive.live.com/redir?resid=A132898840765207!115&authkey=!ALekA5Gc2y8cIWY&ithint=folder%2c)
-- Microsoft Windows XP/Vista/7/8(**Recommend**): [32bit with JRE](https://www.dropbox.com/s/s7y8a5eqt8ycco0/HSStudio_UE_8_3_1_Win_x86_JRE.zip), [64bit with JRE](https://www.dropbox.com/s/j40jn92a0o638cr/HSStudio_UE_8_3_1_Win_x64_JRE.zip)
-- Microsoft Windows XP/Vista/7/8: [32bit without JRE](https://www.dropbox.com/s/8o70qpwpzl6d0yy/HSStudio_UE_8_3_1_Win_x86.zip), [64bit without JRE](https://www.dropbox.com/s/ae52luuzd38da6j/HSStudio_UE_8_3_1_Win_x64.zip)
-- Linux(Ubuntu Desktop/Fedora/openSuSE/etc...):[32bit](https://www.dropbox.com/s/6sar2q8d9nk0wkc/HSStudio_UE_8_3_1_Linux_x86.zip), [64bit](https://www.dropbox.com/s/5x0awd7pqp1835h/HSStudio_UE_8_3_1_Linux_x64.zip)
-- Mac OS X 10.6+(Universal): [Download now](https://www.dropbox.com/s/4pa0dmf3zrxf33n/HSStudio_UE_8_3_1_Mac_x64.zip), [Mac OS X 32bit(Older)](https://www.dropbox.com/s/yf1ptpwx435mcdt/HSStudio_UE_8_3_1_Mac_x86.zip)
+- All installer: [Microsoft OneDrive](https://onedrive.live.com/redir?resid=A132898840765207!115&authkey=!ALekA5Gc2y8cIWY&ithint=folder%2c), [Dropbox](https://www.dropbox.com/sh/8ok8y75js1h8nu3/AAB0cFbn2KXCd9-SkrF9v-22a)
+- Microsoft Windows XP/Vista/7/8(**Recommend**): [32bit with JRE](http://1drv.ms/1qBzhKb), [64bit with JRE](http://1drv.ms/1qBzcX5)
+- Microsoft Windows XP/Vista/7/8: [32bit without JRE](http://1drv.ms/1qBzm0l), [64bit without JRE](http://1drv.ms/1sW1Dim)
+- Linux(Ubuntu Desktop/Fedora/openSuSE/etc...):[32bit](http://1drv.ms/1mHlb1E), [64bit](http://1drv.ms/1mHl8Ty)
+- Mac OS X 10.6+(Universal): [Download now](http://1drv.ms/1mHlhq8), [Mac OS X 32bit(Older)](http://1drv.ms/1mHlsl9)
 
 
 ## Resources
